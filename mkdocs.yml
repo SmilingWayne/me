@@ -1,1 +1,29 @@
-site_name: My Docs
+site_name: 笑笑的书
+site_url: https://smilingwayne.github.io/Readingxiaoxiao/
+
+nav:
+  - Home: index.md
+  - 诗集: poetry.md
+  - 哲学: philosophy.md
+
+theme:
+  name: material
+  # locale: 
+  palette:
+    # accent: deep orange
+
+    - media: "(prefers-color-scheme: light)"
+      # Palette toggle for light mode
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  palette: 
+    accent: deep orange
