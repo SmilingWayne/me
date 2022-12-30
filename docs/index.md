@@ -26,7 +26,6 @@
 
 <center> <font color = Crisma Face = "Palatino bold" size = 6>很高兴在这里看到你，陌生人。</font></center> 
 
-
 <!-- ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.

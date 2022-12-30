@@ -3,27 +3,39 @@ site_url: https://smilingwayne.github.io/Readingxiaoxiao/
 
 nav:
   - Home: index.md
-  - 诗集: poetry.md
+  - 诗:
+      - 外国诗: foreignPoetry.md
+      - 中国诗: chinesePoetry.md
   - 哲学: philosophy.md
+  - 浪漫主义: romanticism.md
+  - 碎碎念: pieces.md
+  - 考研:
+      - 我的规划: yan/yanPlans.md
+      - 我的用书: yan/yanBooks.md
+      - 闲聊: yan/yanTalks.md
 
 theme:
   name: material
-  # locale: 
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
   palette:
-    # accent: deep orange
-
     - media: "(prefers-color-scheme: light)"
-      # Palette toggle for light mode
+
       scheme: default
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
 
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-  palette: 
-    accent: deep orange
+  # palette:
+  #   accent: deep orange
+
+plugins:
+  - search
