@@ -13,6 +13,9 @@ nav:
       - 我的规划: yan/yanPlans.md
       - 我的用书: yan/yanBooks.md
       - 闲聊: yan/yanTalks.md
+  - 想/在做的事:
+      - 书: ToDo/ToRead.md
+      - 术: ToDo/ToCode.md
 
 theme:
   name: material
@@ -39,3 +42,11 @@ theme:
 
 plugins:
   - search
+extra:
+  social:
+    - icon: fontawesome/brands/zhihu
+      link: https://www.zhihu.com/people/wang-zhi-xiao-49-5
+    - icon: fontawesome/brands/github
+      link: https://github.com/SmilingWayne
+
+copyright: Copyright &copy; 2001 - 2022 xiaoxiaoWayne
