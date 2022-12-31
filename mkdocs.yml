@@ -4,8 +4,36 @@ site_url: https://smilingwayne.github.io/Readingxiaoxiao/
 nav:
   - Home: index.md
   - 诗:
-      - 外国诗: foreignPoetry.md
-      - 中国诗: chinesePoetry.md
+      - 外国诗:
+          - 愤怒与神秘: Poems/Anger_and_mystery.md
+          - 恶之花: Poems/Fleurs_du_mal.md
+          - 是你在歌唱？是我在遐想: Poems/Yesenin.md
+          - 穿裤子的云: Poems/Mayakovsky.md
+          - 卢济塔尼亚人之歌: Poems/Luzitania.md
+          - 生命与希望之歌: Poems/Poems_de_life_hope.md
+          - 伊利亚特: Poems/Illiad.md
+          - 德国，一个冬天的童话: Poems/German_winter_fairytale.md
+          - 坎特伯雷故事集: Poems/Canterbery.md
+          - 我用古典的方式爱过你: Poems/Emily.md
+          - 散落碎片: Poems/Middle_east.md
+      - 中国诗:
+          - 辛弃疾词: Poems/Xinqiji_ci.md
+          - 木心诗选: Poems/Muxin.md
+
+  - 戏剧:
+      - 浮士德: Plays/Faust.md
+      - 广岛之恋: Plays/Hiroshima.md
+      - 爱的徒劳: Plays/Loves_labors_lost.md
+      - 奥赛罗: Plays/Othello.md
+      - 麦克白: Plays/Macbeth.md
+      - 哈姆雷特: Plays/Hamlet.md
+      - 亨利四世: Plays/HenryIV.md
+      - 暴风雨: Plays/Storms.md
+      - 海鸥: Plays/Seagull.md
+      - 美狄亚: Plays/Media.md
+      - 牡丹亭: Plays/Mu_dan_ting.md
+      - 桃花扇: Plays/Tao_hua_shan.md
+
   - 哲学: philosophy.md
   - 浪漫主义: romanticism.md
   - 碎碎念: pieces.md
