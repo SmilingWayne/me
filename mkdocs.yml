@@ -4,7 +4,9 @@ site_url: https://smilingwayne.github.io/Readingxiaoxiao/
 nav:
   - Home: index.md
   - 诗:
+      - Poems/index.md
       - 外国诗:
+          # - Poems/index.md
           - 愤怒与神秘: Poems/Anger_and_mystery.md
           - 恶之花: Poems/Fleurs_du_mal.md
           - 是你在歌唱？是我在遐想: Poems/Yesenin.md
@@ -34,8 +36,38 @@ nav:
       - 牡丹亭: Plays/Mu_dan_ting.md
       - 桃花扇: Plays/Tao_hua_shan.md
 
-  - 哲学: philosophy.md
-  - 浪漫主义: romanticism.md
+  - 艺术:
+      - 拉斐尔前派的梦: Arts/Pre_Raphael.md
+      - 黑夜的蝴蝶: Arts/Butterfly_at_night.md
+      - 左岸,从人民阵线到冷战作家: Arts/Left_bank.md
+      - 非主流艺术史: Arts/Art_history_unfashioned.md
+      - 艺术引导人生——德拉克洛瓦私人日记: Arts/Delacroix.md
+      - 法国制造——法国文化关键词: Arts/Made_in_French.md
+      - 达达和超现实主义: Arts/Dada_surrealism.md
+      - 贝多芬的骰子: Arts/Beethoven.md
+      - 爱的艺术: Arts/Arts_of_love.md
+      - 艺术的故事: Arts/Stories_of_art.md
+
+  - 哲学:
+      - 相似之书: Philosophy/Book_of_resemblance.md
+      - 政治学与女性主义: Philosophy/Politics_feminism.md
+      - 民族国家间的和平与战争: Philosophy/Peace_war_in_nation_state.md
+      - 福柯(牛津通识读本): Philosophy/Facult.md
+      - 浪漫主义(牛津通识读本): Philosophy/Romanticism.md
+      - 论政府: Philosophy/Government.md
+      - 哲思与海——一部诗意的哲学随笔: Philosophy/Phi_and_sea.md
+      - 记忆之场: Philosophy/Field_of_memory.md
+      - 倦怠社会: Philosophy/Society_of_fatigue.md
+      - 法国知识分子的世纪: Philosophy/Century_of_intellects_in_France.md
+      - 东风——法国知识分子与60年代的遗产: Philosophy/Eastern_wind.md
+      - 利奥波德国王的鬼魂: Philosophy/King_leopolds_ghost.md
+      - 禅与摩托车维修艺术: Philosophy/Zen_motor_maintanence.md
+      - 法国资产阶级史(上): Philosophy/Bourgeoisie.md
+      - 西太平洋上的航海者: Philosophy/Voyagers_western_pacific_ocean.md
+
+  - 文学:
+      - 西方正典: Literature/Western_classic.md
+
   - 碎碎念: pieces.md
   - 考研:
       - 我的规划: yan/yanPlans.md
@@ -49,9 +81,10 @@ theme:
   name: material
   features:
     - navigation.tabs
-    - navigation.sections
+    # - navigation.sections
     - navigation.expand
-    - navigation.top
+    # - navigation.top
+    - navigation.indexes
   palette:
     - media: "(prefers-color-scheme: light)"
 
