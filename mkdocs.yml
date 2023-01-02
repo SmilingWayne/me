@@ -22,6 +22,7 @@ nav:
       - 中国诗:
           - 辛弃疾词: Poems/Xinqiji_ci.md
           - 木心诗选: Poems/Muxin.md
+          - 月光停在左手上: Poems/Moonlight_left_hand.md
 
   - 戏剧:
       - 浮士德: Plays/Faust.md
@@ -77,6 +78,7 @@ nav:
       - 性存在: Philosophy/Sexuality_existence.md
       - 犹太人与犹太教(牛津通识读本): Philosophy/Jews.md
       - 女权主义简史(牛津通识读本): Philosophy/Feminism_brief_history.md
+      - 后殖民主义与世界格局(牛津通识读本): Philosophy/Postcolonialism.md
       - 世界宗教: Philosophy/World_religion.md
       - 马克思主义宗教观研究: Philosophy/Marxism_religion.md
       - 乡土中国: Philosophy/Rural_china.md
@@ -106,6 +108,7 @@ nav:
       - 天朝遥远: Literature/Dynasty.md
       - 女人的食指: Literature/Womens_index_finger.md
       - 中国文学常识: Literature/Literature_knowledge.md
+      - 五号屠场: Literature/Slaughterhouse_five.md
 
   - 碎碎念: pieces.md
   - 考研:
