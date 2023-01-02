@@ -18,6 +18,7 @@ nav:
           - 坎特伯雷故事集: Poems/Canterbery.md
           - 我用古典的方式爱过你: Poems/Emily.md
           - 散落碎片: Poems/Middle_east.md
+          - 疑问集: Poems/Collections_of_doubt.md
       - 中国诗:
           - 辛弃疾词: Poems/Xinqiji_ci.md
           - 木心诗选: Poems/Muxin.md
@@ -35,12 +36,15 @@ nav:
       - 美狄亚: Plays/Media.md
       - 牡丹亭: Plays/Mu_dan_ting.md
       - 桃花扇: Plays/Tao_hua_shan.md
+      - 铸剑·哈姆雷特: Plays/Swords_hamlet.md
+      - 长明: Plays/Long_daylight.md
 
   - 艺术:
       - 拉斐尔前派的梦: Arts/Pre_Raphael.md
       - 黑夜的蝴蝶: Arts/Butterfly_at_night.md
       - 左岸,从人民阵线到冷战作家: Arts/Left_bank.md
       - 非主流艺术史: Arts/Art_history_unfashioned.md
+      - 巴黎神话——从启蒙运动到超现实主义: Arts/Parisian_myth.md
       - 艺术引导人生——德拉克洛瓦私人日记: Arts/Delacroix.md
       - 法国制造——法国文化关键词: Arts/Made_in_French.md
       - 达达和超现实主义: Arts/Dada_surrealism.md
@@ -54,6 +58,7 @@ nav:
       - 民族国家间的和平与战争: Philosophy/Peace_war_in_nation_state.md
       - 福柯(牛津通识读本): Philosophy/Facult.md
       - 浪漫主义(牛津通识读本): Philosophy/Romanticism.md
+      - 浪漫主义的根源: Philosophy/Root_of_romanticism.md
       - 论政府: Philosophy/Government.md
       - 哲思与海——一部诗意的哲学随笔: Philosophy/Phi_and_sea.md
       - 记忆之场: Philosophy/Field_of_memory.md
@@ -64,9 +69,43 @@ nav:
       - 禅与摩托车维修艺术: Philosophy/Zen_motor_maintanence.md
       - 法国资产阶级史(上): Philosophy/Bourgeoisie.md
       - 西太平洋上的航海者: Philosophy/Voyagers_western_pacific_ocean.md
+      - 阿拉伯伊斯兰文化史: Philosophy/Arabian_islamic_history.md
+      - 良知对抗暴力: Philosophy/Verse_violence.md
+      - 穆斯林与激进主义: Philosophy/Muslim_radicalism.md
+      - 圣战与文明: Philosophy/Gihad_civilization.md
+      - 性学三论: Philosophy/Sexuality_freud.md
+      - 性存在: Philosophy/Sexuality_existence.md
+      - 犹太人与犹太教(牛津通识读本): Philosophy/Jews.md
+      - 女权主义简史(牛津通识读本): Philosophy/Feminism_brief_history.md
+      - 世界宗教: Philosophy/World_religion.md
+      - 马克思主义宗教观研究: Philosophy/Marxism_religion.md
+      - 乡土中国: Philosophy/Rural_china.md
 
   - 文学:
       - 西方正典: Literature/Western_classic.md
+      - 失明症漫记: Literature/Ensaio_sobre_a_cegueira.md
+      - 蛙: Literature/Frog.md
+      - 东方快车谋杀案: Literature/Oriental_express.md
+      - 尼罗河上的惨案: Literature/Tragedy_niro.md
+      - 双城记: Literature/Stories_of_two_cities.md
+      - 罗生门: Literature/Rashomon.md
+      - 查令十字街84号: Literature/Charline_84.md
+      - 卡拉马佐夫兄弟: Literature/Kara_Mazov_brothers.md
+      - 格列佛游记: Literature/Gulliver.md
+      - 面纱: Literature/Veil.md
+      - 了不起的盖茨比: Literature/Gatsby.md
+      - 达芬奇密码: Literature/Davinci_code.md
+      - 文学回忆录: Literature/Literature_memo.md
+      - 鼠疫: Literature/Plague.md
+      - 朝闻道: Literature/Zhao_wen_dao.md
+      - 野棕榈: Literature/Wild_palm.md
+      - 华氏451: Literature/Fahrenheit_451.md
+      - 沉默的病人: Literature/Silent_patient.md
+      - 小于一: Literature/Less_than_one.md
+      - 作家笔记: Literature/Writers_notes.md
+      - 天朝遥远: Literature/Dynasty.md
+      - 女人的食指: Literature/Womens_index_finger.md
+      - 中国文学常识: Literature/Literature_knowledge.md
 
   - 碎碎念: pieces.md
   - 考研:
