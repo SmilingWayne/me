@@ -7,6 +7,7 @@ nav:
       - Poems/index.md
       - 外国诗:
           # - Poems/index.md
+          - 散落碎片: Poems/Middle_east.md
           - 愤怒与神秘: Poems/Anger_and_mystery.md
           - 恶之花: Poems/Fleurs_du_mal.md
           - 是你在歌唱？是我在遐想: Poems/Yesenin.md
@@ -17,7 +18,7 @@ nav:
           - 德国，一个冬天的童话: Poems/German_winter_fairytale.md
           - 坎特伯雷故事集: Poems/Canterbery.md
           - 我用古典的方式爱过你: Poems/Emily.md
-          - 散落碎片: Poems/Middle_east.md
+
           - 疑问集: Poems/Collections_of_doubt.md
       - 中国诗:
           - 辛弃疾词: Poems/Xinqiji_ci.md
@@ -84,6 +85,11 @@ nav:
       - 乡土中国: Philosophy/Rural_china.md
 
   - 文学:
+      - 别走，万一好笑呢: Literature/Stay.md
+      - 澡堂与片场: Literature/Bath_house.md
+      - 批判性思维的形成: Literature/Formation_critical_thinking.md
+      - 红玫瑰与白玫瑰: Literature/Red_roses_white_roses.md
+      
       - 西方正典: Literature/Western_classic.md
       - 失明症漫记: Literature/Ensaio_sobre_a_cegueira.md
       - 蛙: Literature/Frog.md
