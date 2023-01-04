@@ -55,6 +55,7 @@ nav:
       - 艺术的故事: Arts/Stories_of_art.md
 
   - 哲学:
+      - 《1984》: Philosophy/1984.md
       - 相似之书: Philosophy/Book_of_resemblance.md
       - 政治学与女性主义: Philosophy/Politics_feminism.md
       - 民族国家间的和平与战争: Philosophy/Peace_war_in_nation_state.md
@@ -89,7 +90,7 @@ nav:
       - 澡堂与片场: Literature/Bath_house.md
       - 批判性思维的形成: Literature/Formation_critical_thinking.md
       - 红玫瑰与白玫瑰: Literature/Red_roses_white_roses.md
-      
+
       - 西方正典: Literature/Western_classic.md
       - 失明症漫记: Literature/Ensaio_sobre_a_cegueira.md
       - 蛙: Literature/Frog.md
@@ -124,6 +125,11 @@ nav:
   - 想/在做的事:
       - 书: ToDo/ToRead.md
       - 术: ToDo/ToCode.md
+
+site_author: SmilingWayne
+
+repo_name: SmilingWayne/Readingxiaoxiao
+repo_url: https://github.com/SmilingWayne/Readingxiaoxiao
 
 theme:
   name: material
