@@ -55,69 +55,97 @@ nav:
       - 艺术的故事: Arts/Stories_of_art.md
 
   - 哲学:
-      - 《1984》: Philosophy/1984.md
-      - 相似之书: Philosophy/Book_of_resemblance.md
-      - 政治学与女性主义: Philosophy/Politics_feminism.md
-      - 民族国家间的和平与战争: Philosophy/Peace_war_in_nation_state.md
+      - Philosophy/index.md
+      - 马克思主义哲学:
+          - 基础知识: Philosophy/basic.md
+          - 毛: Philosophy/Mao.md
+          - 马克思主义宗教观研究: Philosophy/Marxism_religion.md
+
+      - 宗教哲学:
+          - 世界宗教: Philosophy/World_religion.md
+          - 犹太人与犹太教(牛津通识读本): Philosophy/Jews.md
+          - 相似之书: Philosophy/Book_of_resemblance.md
+
+      - 政治哲学:
+          - 美国生活中的反智主义: Philosophy/Anti_intellectual_usa.md
+          - 《1984》: Philosophy/1984.md
+          - 政治学与女性主义: Philosophy/Politics_feminism.md
+          - 民族国家间的和平与战争: Philosophy/Peace_war_in_nation_state.md
+          - 论政府: Philosophy/Government.md
+          - 穆斯林与激进主义: Philosophy/Muslim_radicalism.md
+          - 圣战与文明: Philosophy/Gihad_civilization.md
+          - 后殖民主义与世界格局(牛津通识读本): Philosophy/Postcolonialism.md
+          - 记忆之场: Philosophy/Field_of_memory.md
+          - 法国知识分子的世纪: Philosophy/Century_of_intellects_in_France.md
+          - 东风——法国知识分子与60年代的遗产: Philosophy/Eastern_wind.md
+          - 法国资产阶级史(上): Philosophy/Bourgeoisie.md
+          - 良知对抗暴力: Philosophy/Verse_violence.md
+          - 利奥波德国王的鬼魂: Philosophy/King_leopolds_ghost.md
+
+      - 美的历程: Philosophy/Voyage_of_beauty.md
       - 福柯(牛津通识读本): Philosophy/Facult.md
       - 浪漫主义(牛津通识读本): Philosophy/Romanticism.md
       - 浪漫主义的根源: Philosophy/Root_of_romanticism.md
-      - 论政府: Philosophy/Government.md
       - 哲思与海——一部诗意的哲学随笔: Philosophy/Phi_and_sea.md
-      - 记忆之场: Philosophy/Field_of_memory.md
       - 倦怠社会: Philosophy/Society_of_fatigue.md
-      - 法国知识分子的世纪: Philosophy/Century_of_intellects_in_France.md
-      - 东风——法国知识分子与60年代的遗产: Philosophy/Eastern_wind.md
-      - 利奥波德国王的鬼魂: Philosophy/King_leopolds_ghost.md
+
       - 禅与摩托车维修艺术: Philosophy/Zen_motor_maintanence.md
-      - 法国资产阶级史(上): Philosophy/Bourgeoisie.md
+
       - 西太平洋上的航海者: Philosophy/Voyagers_western_pacific_ocean.md
-      - 阿拉伯伊斯兰文化史: Philosophy/Arabian_islamic_history.md
-      - 良知对抗暴力: Philosophy/Verse_violence.md
-      - 穆斯林与激进主义: Philosophy/Muslim_radicalism.md
-      - 圣战与文明: Philosophy/Gihad_civilization.md
+
       - 性学三论: Philosophy/Sexuality_freud.md
       - 性存在: Philosophy/Sexuality_existence.md
-      - 犹太人与犹太教(牛津通识读本): Philosophy/Jews.md
       - 女权主义简史(牛津通识读本): Philosophy/Feminism_brief_history.md
-      - 后殖民主义与世界格局(牛津通识读本): Philosophy/Postcolonialism.md
-      - 世界宗教: Philosophy/World_religion.md
-      - 马克思主义宗教观研究: Philosophy/Marxism_religion.md
       - 乡土中国: Philosophy/Rural_china.md
 
   - 文学:
-      - 别走，万一好笑呢: Literature/Stay.md
-      - 澡堂与片场: Literature/Bath_house.md
-      - 批判性思维的形成: Literature/Formation_critical_thinking.md
-      - 红玫瑰与白玫瑰: Literature/Red_roses_white_roses.md
+      - Literature/index.md
+      - 其他:
+          - 别走，万一好笑呢: Literature/Stay.md
+          - 澡堂与片场: Literature/Bath_house.md
+          - 中国文学常识: Literature/Literature_knowledge.md
+          - 象征主义碎片: Literature/Impressionalism_pieces.md
 
-      - 西方正典: Literature/Western_classic.md
-      - 失明症漫记: Literature/Ensaio_sobre_a_cegueira.md
-      - 蛙: Literature/Frog.md
-      - 东方快车谋杀案: Literature/Oriental_express.md
-      - 尼罗河上的惨案: Literature/Tragedy_niro.md
-      - 双城记: Literature/Stories_of_two_cities.md
-      - 罗生门: Literature/Rashomon.md
-      - 查令十字街84号: Literature/Charline_84.md
-      - 卡拉马佐夫兄弟: Literature/Kara_Mazov_brothers.md
-      - 格列佛游记: Literature/Gulliver.md
-      - 面纱: Literature/Veil.md
-      - 了不起的盖茨比: Literature/Gatsby.md
-      - 达芬奇密码: Literature/Davinci_code.md
-      - 文学回忆录: Literature/Literature_memo.md
-      - 鼠疫: Literature/Plague.md
-      - 朝闻道: Literature/Zhao_wen_dao.md
-      - 野棕榈: Literature/Wild_palm.md
-      - 华氏451: Literature/Fahrenheit_451.md
-      - 沉默的病人: Literature/Silent_patient.md
-      - 小于一: Literature/Less_than_one.md
-      - 作家笔记: Literature/Writers_notes.md
-      - 天朝遥远: Literature/Dynasty.md
-      - 女人的食指: Literature/Womens_index_finger.md
-      - 中国文学常识: Literature/Literature_knowledge.md
-      - 五号屠场: Literature/Slaughterhouse_five.md
+      - 文论:
+          - 西方正典: Literature/Western_classic.md
+          - 批判性思维的形成: Literature/Formation_critical_thinking.md
+          - 文学回忆录: Literature/Literature_memo.md
+          - 小于一: Literature/Less_than_one.md
+          - 作家笔记: Literature/Writers_notes.md
+          - 女人的食指: Literature/Womens_index_finger.md
+          - 天朝遥远: Literature/Dynasty.md
+          - 法语文学: Literature/French_literature.md
+          - 天真的和感伤的小说家: Literature/Naive_novlist.md
 
-  - 碎碎念: pieces.md
+      - 小说:
+          - 失明症漫记: Literature/Ensaio_sobre_a_cegueira.md
+          - 蛙: Literature/Frog.md
+          - 东方快车谋杀案: Literature/Oriental_express.md
+          - 尼罗河上的惨案: Literature/Tragedy_niro.md
+          - 双城记: Literature/Stories_of_two_cities.md
+          - 罗生门: Literature/Rashomon.md
+          - 卡拉马佐夫兄弟: Literature/Kara_Mazov_brothers.md
+          - 格列佛游记: Literature/Gulliver.md
+          - 面纱: Literature/Veil.md
+          - 了不起的盖茨比: Literature/Gatsby.md
+          - 达芬奇密码: Literature/Davinci_code.md
+          - 鼠疫: Literature/Plague.md
+          - 朝闻道: Literature/Zhao_wen_dao.md
+          - 野棕榈: Literature/Wild_palm.md
+          - 华氏451: Literature/Fahrenheit_451.md
+          - 沉默的病人: Literature/Silent_patient.md
+          - 五号屠场: Literature/Slaughterhouse_five.md
+          - 红玫瑰与白玫瑰: Literature/Red_roses_white_roses.md
+          - 查令十字街84号: Literature/Charline_84.md
+          - 雪落香杉树: Literature/Snow_falls.md
+
+  - 历史:
+      - 阿拉伯笔记: History/Arabians.md
+      - 罗马帝国简史: History/Roman_empire_brief_history.md
+      - 印尼ETC: History/Indonesia.md
+      - 拉丁美洲被切开的血管: History/Latin_american_blood.md
+      - 阿拉伯伊斯兰文化史: History/Arabian_islamic_history.md
+
   - 考研:
       - 我的规划: yan/yanPlans.md
       - 我的用书: yan/yanBooks.md
@@ -136,9 +164,10 @@ theme:
   features:
     - navigation.tabs
     # - navigation.sections
-    - navigation.expand
+    # - navigation.expand
     # - navigation.top
     - navigation.indexes
+
   palette:
     - media: "(prefers-color-scheme: light)"
 
@@ -155,13 +184,33 @@ theme:
   # palette:
   #   accent: deep orange
 
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js #?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 plugins:
   - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+
 extra:
   social:
     - icon: fontawesome/brands/zhihu
       link: https://www.zhihu.com/people/wang-zhi-xiao-49-5
     - icon: fontawesome/brands/github
+      link: https://github.com/SmilingWayne
+    - icon: fontawesome/brands/weibo
       link: https://github.com/SmilingWayne
 
 copyright: Copyright &copy; 2001 - 2022 xiaoxiaoWayne
