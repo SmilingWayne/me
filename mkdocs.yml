@@ -33,6 +33,7 @@ nav:
       - 麦克白: Plays/Macbeth.md
       - 哈姆雷特: Plays/Hamlet.md
       - 亨利四世: Plays/HenryIV.md
+      - 理查二世: Plays/Richard_II.md
       - 暴风雨: Plays/Storms.md
       - 海鸥: Plays/Seagull.md
       - 美狄亚: Plays/Media.md
@@ -53,6 +54,7 @@ nav:
       - 贝多芬的骰子: Arts/Beethoven.md
       - 爱的艺术: Arts/Arts_of_love.md
       - 艺术的故事: Arts/Stories_of_art.md
+      - 文艺复兴时期的艺术: Arts/Art_renaissance.md
 
   - 哲学:
       - Philosophy/index.md
@@ -68,6 +70,7 @@ nav:
 
       - 政治哲学:
           - 美国生活中的反智主义: Philosophy/Anti_intellectual_usa.md
+          - 以赛亚伯林的遗产: Philosophy/Legacy_berlin.md
           - 《1984》: Philosophy/1984.md
           - 政治学与女性主义: Philosophy/Politics_feminism.md
           - 民族国家间的和平与战争: Philosophy/Peace_war_in_nation_state.md
@@ -81,6 +84,8 @@ nav:
           - 法国资产阶级史(上): Philosophy/Bourgeoisie.md
           - 良知对抗暴力: Philosophy/Verse_violence.md
           - 利奥波德国王的鬼魂: Philosophy/King_leopolds_ghost.md
+          - 政治的历史与边界: Philosophy/Boundary_politics.md
+          - 有闲阶级论: Philosophy/Leisure_class.md
 
       - 美的历程: Philosophy/Voyage_of_beauty.md
       - 福柯(牛津通识读本): Philosophy/Facult.md
@@ -105,16 +110,21 @@ nav:
           - 澡堂与片场: Literature/Bath_house.md
           - 中国文学常识: Literature/Literature_knowledge.md
           - 象征主义碎片: Literature/Impressionalism_pieces.md
+          - 博尔赫斯谈话录: Literature/Borges.md
+          - 记忆记忆: Literature/Remember_memory.md
+          - 火的记忆: Literature/Memory_fire.md
 
       - 文论:
-          - 西方正典: Literature/Western_classic.md
-          - 批判性思维的形成: Literature/Formation_critical_thinking.md
-          - 文学回忆录: Literature/Literature_memo.md
           - 小于一: Literature/Less_than_one.md
+          - 魏晋玄学: Literature/Xuan_xue.md
+          - 西方正典: Literature/Western_classic.md
           - 作家笔记: Literature/Writers_notes.md
-          - 女人的食指: Literature/Womens_index_finger.md
           - 天朝遥远: Literature/Dynasty.md
           - 法语文学: Literature/French_literature.md
+          - 文学回忆录: Literature/Literature_memo.md
+          - 女人的食指: Literature/Womens_index_finger.md
+          - 沉默的大多数: Literature/Silent_most.md
+          - 批判性思维的形成: Literature/Formation_critical_thinking.md
           - 天真的和感伤的小说家: Literature/Naive_novlist.md
 
       - 小说:
@@ -138,13 +148,18 @@ nav:
           - 红玫瑰与白玫瑰: Literature/Red_roses_white_roses.md
           - 查令十字街84号: Literature/Charline_84.md
           - 雪落香杉树: Literature/Snow_falls.md
+          - 潘神的迷宫: Literature/Labyrinth_pan.md
+          - 生死疲劳: Literature/Forever_fatigue.md
 
   - 历史:
-      - 阿拉伯笔记: History/Arabians.md
+      - 荒诞医学史: History/Ridiculous_medics.md
       - 罗马帝国简史: History/Roman_empire_brief_history.md
       - 印尼ETC: History/Indonesia.md
       - 拉丁美洲被切开的血管: History/Latin_american_blood.md
       - 阿拉伯伊斯兰文化史: History/Arabian_islamic_history.md
+      - 希腊笔记: History/Greece.md
+      - 法兰西笔记: History/France.md
+      - 阿拉伯笔记: History/Arabians.md
 
   - 考研:
       - 我的规划: yan/yanPlans.md
