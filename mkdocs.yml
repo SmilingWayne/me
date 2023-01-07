@@ -1,4 +1,4 @@
-site_name: 笑笑的书
+site_name: 笑笑的站
 site_url: https://smilingwayne.github.io/Readingxiaoxiao/
 
 nav:
@@ -26,22 +26,28 @@ nav:
           - 月光停在左手上: Poems/Moonlight_left_hand.md
 
   - 戏剧:
-      - 浮士德: Plays/Faust.md
-      - 广岛之恋: Plays/Hiroshima.md
-      - 爱的徒劳: Plays/Loves_labors_lost.md
-      - 奥赛罗: Plays/Othello.md
-      - 麦克白: Plays/Macbeth.md
-      - 哈姆雷特: Plays/Hamlet.md
-      - 亨利四世: Plays/HenryIV.md
-      - 理查二世: Plays/Richard_II.md
-      - 暴风雨: Plays/Storms.md
-      - 海鸥: Plays/Seagull.md
-      - 美狄亚: Plays/Media.md
-      - 牡丹亭: Plays/Mu_dan_ting.md
-      - 桃花扇: Plays/Tao_hua_shan.md
-      - 铸剑·哈姆雷特: Plays/Swords_hamlet.md
-      - 长明: Plays/Long_daylight.md
-
+      - Plays/index.md
+      - 戏剧:
+          - 浮士德: Plays/Faust.md
+          - 广岛之恋: Plays/Hiroshima.md
+          - 爱的徒劳: Plays/Loves_labors_lost.md
+          - 奥赛罗: Plays/Othello.md
+          - 麦克白: Plays/Macbeth.md
+          - 哈姆雷特: Plays/Hamlet.md
+          - 亨利四世: Plays/HenryIV.md
+          - 理查二世: Plays/Richard_II.md
+          - 暴风雨: Plays/Storms.md
+          - 海鸥: Plays/Seagull.md
+          - 美狄亚: Plays/Media.md
+          - 牡丹亭: Plays/Mu_dan_ting.md
+          - 桃花扇: Plays/Tao_hua_shan.md
+          - 铸剑·哈姆雷特: Plays/Swords_hamlet.md
+          - 罗密欧与朱丽叶: Plays/Romeo_juliet.md
+          - 长明: Plays/Long_daylight.md
+      - 影视:
+          - 五至七时的克莱奥: Plays/Cleo.md
+          - 中国姑娘: Plays/La_chinioise.md
+          - 无主之作: Plays/Werk_ohne_autor.md
   - 艺术:
       - 拉斐尔前派的梦: Arts/Pre_Raphael.md
       - 黑夜的蝴蝶: Arts/Butterfly_at_night.md
@@ -55,6 +61,7 @@ nav:
       - 爱的艺术: Arts/Arts_of_love.md
       - 艺术的故事: Arts/Stories_of_art.md
       - 文艺复兴时期的艺术: Arts/Art_renaissance.md
+      - 碎片艺术: Arts/Pieces.md
 
   - 哲学:
       - Philosophy/index.md
@@ -62,8 +69,10 @@ nav:
           - 基础知识: Philosophy/basic.md
           - 毛: Philosophy/Mao.md
           - 马克思主义宗教观研究: Philosophy/Marxism_religion.md
+          - 苏联解体与颜色革命: Philosophy/Color_revolution.md
 
       - 宗教哲学:
+          - 基督教: Philosophy/Christian.md
           - 世界宗教: Philosophy/World_religion.md
           - 犹太人与犹太教(牛津通识读本): Philosophy/Jews.md
           - 相似之书: Philosophy/Book_of_resemblance.md
@@ -86,6 +95,7 @@ nav:
           - 利奥波德国王的鬼魂: Philosophy/King_leopolds_ghost.md
           - 政治的历史与边界: Philosophy/Boundary_politics.md
           - 有闲阶级论: Philosophy/Leisure_class.md
+          - 世界大国外交(US): Philosophy/Diplomacy_us.md
 
       - 美的历程: Philosophy/Voyage_of_beauty.md
       - 福柯(牛津通识读本): Philosophy/Facult.md
@@ -93,9 +103,9 @@ nav:
       - 浪漫主义的根源: Philosophy/Root_of_romanticism.md
       - 哲思与海——一部诗意的哲学随笔: Philosophy/Phi_and_sea.md
       - 倦怠社会: Philosophy/Society_of_fatigue.md
-
-      - 禅与摩托车维修艺术: Philosophy/Zen_motor_maintanence.md
-
+      - 实用主义: Philosophy/Pragmatism.md
+      - 我们时代的社会思考与阅读主张: Philosophy/Thoughts_in_our_time.md
+      - 亚里士多德的世界(牛津通识读本): Philosophy/World_of_aristotle.md
       - 西太平洋上的航海者: Philosophy/Voyagers_western_pacific_ocean.md
 
       - 性学三论: Philosophy/Sexuality_freud.md
@@ -106,14 +116,16 @@ nav:
   - 文学:
       - Literature/index.md
       - 其他:
-          - 别走，万一好笑呢: Literature/Stay.md
-          - 澡堂与片场: Literature/Bath_house.md
-          - 中国文学常识: Literature/Literature_knowledge.md
-          - 象征主义碎片: Literature/Impressionalism_pieces.md
-          - 博尔赫斯谈话录: Literature/Borges.md
           - 记忆记忆: Literature/Remember_memory.md
           - 火的记忆: Literature/Memory_fire.md
-
+          - 人间食粮: Literature/Life_food.md
+          - 澡堂与片场: Literature/Bath_house.md
+          - 博尔赫斯谈话录: Literature/Borges.md
+          - 中国文学常识: Literature/Literature_knowledge.md
+          - 象征主义碎片: Literature/Impressionalism_pieces.md
+          - 别走，万一好笑呢: Literature/Stay.md
+          - 往事与随想: Literature/Memory_thoughts.md
+          - 禅与摩托车维修艺术: Literature/Zen_motor_maintanence.md
       - 文论:
           - 小于一: Literature/Less_than_one.md
           - 魏晋玄学: Literature/Xuan_xue.md
@@ -160,6 +172,11 @@ nav:
       - 希腊笔记: History/Greece.md
       - 法兰西笔记: History/France.md
       - 阿拉伯笔记: History/Arabians.md
+      - 欧罗巴笔记: History/Europe.md
+      - 非洲笔记: History/Africa.md
+
+      - 中亚笔记: History/Mid_asia.md
+      - 苏联笔记: History/Soviet_union.md
 
   - 考研:
       - 我的规划: yan/yanPlans.md
