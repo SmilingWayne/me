@@ -1,4 +1,4 @@
-# <font face = "KaiTi">笑笑的书单</font>
+# <font face = "KaiTi">(๑• . •๑)</font>
 
 <!-- For full documentation visit [mkdocs.org](https://www.mkdocs.org). Nice to see you. This is xiao xiao! -->
 <center><font face = "savoye LET" size = 6>A Very Brief Introduction</font></center>
