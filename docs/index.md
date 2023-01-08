@@ -24,7 +24,7 @@
 
 <br>
 
-<center> <font Face = "Palatino bold" size = 6>很高興在這裏看到你，陌生人。</font></center> 
+<center> <font Face = "Palatino bold" size = 6>很高興在這裏遇見你，陌生人。</font></center> 
 
 
 
