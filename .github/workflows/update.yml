@@ -16,9 +16,9 @@ jobs: # 工作流的具体内容
 
     steps:
       - name: Checkout master
-          uses: actions/checkout@v2
-          with:
-            fetch-depth: 0
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Set up Python3.x
         uses: actions/setup-python@v2
