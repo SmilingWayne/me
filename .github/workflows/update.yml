@@ -1,8 +1,4 @@
 name: publish site
-
-env:
-  TZ: Asia/Shanghai
-
 on: # 在什么时候触发工作流
   push: # 在从本地main分支被push到GitHub仓库时
     branches:
@@ -10,6 +6,10 @@ on: # 在什么时候触发工作流
   pull_request: # 在main分支合并别人提的pr时
     branches:
       - main
+
+env:
+  TZ: Asia/Shanghai
+
 jobs: # 工作流的具体内容
   deploy:
     runs-on: ubuntu-latest # 创建一个新的云端虚拟机 使用最新Ubuntu系统
@@ -23,10 +23,7 @@ jobs: # 工作流的具体内容
       - name: Set up Python3.x
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x
-    
-      - name: install Dependencies    # fetch-depth: 0
-        - run: pip install mkdocs-material  mkdocs-git-revision-date-localized-plugin # 使用pip包管理工具安装mkdocs-material
-        
-      - name: Deploy
-        - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
+          python-version: "3.8"
+
+      - run: pip install mkdocs-material  mkdocs-git-revision-date-localized-plugin # 使用pip包管理工具安装mkdocs-materials
+      - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
