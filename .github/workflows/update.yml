@@ -1,7 +1,7 @@
 name: publish site
 
 env:
-TZ: Asia/Shanghai
+  TZ: Asia/Shanghai
 
 on: # 在什么时候触发工作流
   push: # 在从本地main分支被push到GitHub仓库时
@@ -24,9 +24,9 @@ jobs: # 工作流的具体内容
         uses: actions/setup-python@v2
         with:
           python-version: 3.x
-     
     
       - name: install Dependencies    # fetch-depth: 0
         - run: pip install mkdocs-material  mkdocs-git-revision-date-localized-plugin # 使用pip包管理工具安装mkdocs-material
+        
       - name: Deploy
         - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
