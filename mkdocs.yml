@@ -210,6 +210,8 @@ repo_name: SmilingWayne/Readingxiaoxiao
 repo_url: https://github.com/SmilingWayne/Readingxiaoxiao
 
 theme:
+  locale: en
+  # type: datetime
   name: material
   features:
     - navigation.tabs
@@ -236,10 +238,32 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 plugins:
+  - git-revision-date-localized:
+      type: datetime
+      custom_format: "%d. %B %Y"
+      timezone: Asia/Shanghai
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
+      exclude:
+        - index.md
+      enabled: true
   - search
 
 markdown_extensions:
+  - admonition
+  - meta
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -247,10 +271,6 @@ markdown_extensions:
   - admonition
   - pymdownx.arithmatex:
       generic: true
-  - footnotes
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
 
 extra:
   social:
