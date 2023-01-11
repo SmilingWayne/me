@@ -3,66 +3,6 @@ site_url: https://smilingwayne.github.io/Readingxiaoxiao/
 
 nav:
   - ˗ˋˏᰔᩚˎˊ˗: index.md
-  - 诗:
-      - Poems/index.md
-      - 外国诗:
-          # - Poems/index.md
-          - 散落碎片: Poems/Middle_east.md
-          - 愤怒与神秘: Poems/Anger_and_mystery.md
-          - 恶之花: Poems/Fleurs_du_mal.md
-          - 是你在歌唱？是我在遐想: Poems/Yesenin.md
-          - 穿裤子的云: Poems/Mayakovsky.md
-          - 卢济塔尼亚人之歌: Poems/Luzitania.md
-          - 生命与希望之歌: Poems/Poems_de_life_hope.md
-          - 伊利亚特: Poems/Illiad.md
-          - 德国，一个冬天的童话: Poems/German_winter_fairytale.md
-          - 坎特伯雷故事集: Poems/Canterbery.md
-          - 我用古典的方式爱过你: Poems/Emily.md
-
-          - 疑问集: Poems/Collections_of_doubt.md
-      - 中国诗:
-          - 辛弃疾词: Poems/Xinqiji_ci.md
-          - 木心诗选: Poems/Muxin.md
-          - 月光停在左手上: Poems/Moonlight_left_hand.md
-
-  - 戏剧:
-      - Plays/index.md
-      - 戏剧:
-          - 浮士德: Plays/Faust.md
-          - 广岛之恋: Plays/Hiroshima.md
-          - 爱的徒劳: Plays/Loves_labors_lost.md
-          - 奥赛罗: Plays/Othello.md
-          - 麦克白: Plays/Macbeth.md
-          - 💝哈姆雷特: Plays/Hamlet.md
-          - 亨利四世: Plays/HenryIV.md
-          - 理查二世: Plays/Richard_II.md
-          - 暴风雨: Plays/Storms.md
-          - 海鸥: Plays/Seagull.md
-          - 美狄亚: Plays/Media.md
-          - 牡丹亭: Plays/Mu_dan_ting.md
-          - 桃花扇: Plays/Tao_hua_shan.md
-          - 铸剑·哈姆雷特: Plays/Swords_hamlet.md
-          - 罗密欧与朱丽叶: Plays/Romeo_juliet.md
-          - 长明: Plays/Long_daylight.md
-      - 影视:
-          - 五至七时的克莱奥: Plays/Cleo.md
-          - 中国姑娘: Plays/La_chinioise.md
-          - 无主之作: Plays/Werk_ohne_autor.md
-  - 艺术:
-      - 拉斐尔前派的梦: Arts/Pre_Raphael.md
-      - 黑夜的蝴蝶: Arts/Butterfly_at_night.md
-      - 左岸,从人民阵线到冷战作家: Arts/Left_bank.md
-      - 非主流艺术史: Arts/Art_history_unfashioned.md
-      - 巴黎神话——从启蒙运动到超现实主义: Arts/Parisian_myth.md
-      - 艺术引导人生——德拉克洛瓦私人日记: Arts/Delacroix.md
-      - 法国制造——法国文化关键词: Arts/Made_in_French.md
-      - 达达和超现实主义: Arts/Dada_surrealism.md
-      - 贝多芬的骰子: Arts/Beethoven.md
-      - 爱的艺术: Arts/Arts_of_love.md
-      - 艺术的故事: Arts/Stories_of_art.md
-      - 文艺复兴时期的艺术: Arts/Art_renaissance.md
-      - 碎片艺术: Arts/Pieces.md
-
   - 哲学:
       - Philosophy/index.md
       - 马克思主义哲学:
@@ -121,62 +61,108 @@ nav:
 
   - 文学:
       - Literature/index.md
+      - 诗歌:
+          - Poems/index.md
+          - 外国诗:
+              # - Poems/index.md
+              - 散落碎片: Poems/Middle_east.md
+              - 愤怒与神秘: Poems/Anger_and_mystery.md
+              - 恶之花: Poems/Fleurs_du_mal.md
+              - 是你在歌唱？是我在遐想: Poems/Yesenin.md
+              - 穿裤子的云: Poems/Mayakovsky.md
+              - 卢济塔尼亚人之歌: Poems/Luzitania.md
+              - 生命与希望之歌: Poems/Poems_de_life_hope.md
+              - 伊利亚特: Poems/Illiad.md
+              - 德国，一个冬天的童话: Poems/German_winter_fairytale.md
+              - 坎特伯雷故事集: Poems/Canterbery.md
+              - 我用古典的方式爱过你: Poems/Emily.md
+
+              - 疑问集: Poems/Collections_of_doubt.md
+          - 中国诗:
+              - 辛弃疾词: Poems/Xinqiji_ci.md
+              - 木心诗选: Poems/Muxin.md
+              - 月光停在左手上: Poems/Moonlight_left_hand.md
+      - 戏剧:
+          - Plays/index.md
+          - 戏剧:
+              - 浮士德: Plays/Faust.md
+              - 广岛之恋: Plays/Hiroshima.md
+              - 爱的徒劳: Plays/Loves_labors_lost.md
+              - 奥赛罗: Plays/Othello.md
+              - 麦克白: Plays/Macbeth.md
+              - 💝哈姆雷特: Plays/Hamlet.md
+              - 亨利四世: Plays/HenryIV.md
+              - 理查二世: Plays/Richard_II.md
+              - 暴风雨: Plays/Storms.md
+              - 海鸥: Plays/Seagull.md
+              - 美狄亚: Plays/Media.md
+              - 牡丹亭: Plays/Mu_dan_ting.md
+              - 桃花扇: Plays/Tao_hua_shan.md
+              - 铸剑·哈姆雷特: Plays/Swords_hamlet.md
+              - 罗密欧与朱丽叶: Plays/Romeo_juliet.md
+              - 长明: Plays/Long_daylight.md
+          - 影视:
+              - 五至七时的克莱奥: Plays/Cleo.md
+              - 中国姑娘: Plays/La_chinioise.md
+              - 无主之作: Plays/Werk_ohne_autor.md
       - 随笔:
-          - 小于一: Literature/Less_than_one.md
-          - 二手时间: Literature/Second_hand_time.md
-          - 记忆记忆: Literature/Remember_memory.md
-          - 火的记忆: Literature/Memory_fire.md
-          - 人间食粮: Literature/Life_food.md
-          - 牛棚杂忆: Literature/Cowshed_memo.md
-          - 澡堂与片场: Literature/Bath_house.md
-          - 往事与随想: Literature/Memory_thoughts.md
-          - 中国文学常识: Literature/Literature_knowledge.md
-          - 象征主义碎片: Literature/Impressionalism_pieces.md
-          - 博尔赫斯谈话录: Literature/Borges.md
-          - 别走，万一好笑呢: Literature/Stay.md
-          - 禅与摩托车维修艺术: Literature/Zen_motor_maintanence.md
-
+          - Literature/Essay/index.md
+          - 小于一: Literature/Essay/Less_than_one.md
+          - 二手时间: Literature/Essay/Second_hand_time.md
+          - 记忆记忆: Literature/Essay/Remember_memory.md
+          - 火的记忆: Literature/Essay/Memory_fire.md
+          - 人间食粮: Literature/Essay/Life_food.md
+          - 牛棚杂忆: Literature/Essay/Cowshed_memo.md
+          - 澡堂与片场: Literature/Essay/Bath_house.md
+          - 往事与随想: Literature/Essay/Memory_thoughts.md
+          - 中国文学常识: Literature/Essay/Literature_knowledge.md
+          - 象征主义碎片: Literature/Essay/Impressionalism_pieces.md
+          - 博尔赫斯谈话录: Literature/Essay/Borges.md
+          - 别走，万一好笑呢: Literature/Essay/Stay.md
+          - 禅与摩托车维修艺术: Literature/Essay/Zen_motor_maintanence.md
       - 文论:
-          - 魏晋玄学: Literature/Xuan_xue.md
-          - 西方正典: Literature/Western_classic.md
-          - 作家笔记: Literature/Writers_notes.md
-          - 天朝遥远: Literature/Dynasty.md
-          - 法语文学: Literature/French_literature.md
-          - 文学回忆录: Literature/Literature_memo.md
-          - 女人的食指: Literature/Womens_index_finger.md
-          - 沉默的大多数: Literature/Silent_most.md
-          - 批判性思维的形成: Literature/Formation_critical_thinking.md
-          - 天真的和感伤的小说家: Literature/Naive_novlist.md
-          - 浪漫主义(牛津通识读本): Literature/Romanticism.md
-          - 拉丁美洲文学(牛津通识读本): Literature/Latin_america_literature.md
-
+          - Literature/Literacy/index.md
+          - 魏晋玄学: Literature/Literacy/Xuan_xue.md
+          - 西方正典: Literature/Literacy/Western_classic.md
+          - 作家笔记: Literature/Literacy/Writers_notes.md
+          - 天朝遥远: Literature/Literacy/Dynasty.md
+          - 法语文学: Literature/Literacy/French_literature.md
+          - 文学回忆录: Literature/Literacy/Literature_memo.md
+          - 女人的食指: Literature/Literacy/Womens_index_finger.md
+          - 沉默的大多数: Literature/Literacy/Silent_most.md
+          - 批判性思维的形成: Literature/Literacy/Formation_critical_thinking.md
+          - 天真的和感伤的小说家: Literature/Literacy/Naive_novlist.md
+          - 浪漫主义(牛津通识读本): Literature/Literacy/Romanticism.md
+          - 拉丁美洲文学(牛津通识读本): Literature/Literacy/Latin_america_literature.md
       - 小说:
-          - 蛙: Literature/Frog.md
-          - 面纱: Literature/Veil.md
-          - 鼠疫: Literature/Plague.md
-          - 朝闻道: Literature/Zhao_wen_dao.md
-          - 野棕榈: Literature/Wild_palm.md
-          - 双城记: Literature/Stories_of_two_cities.md
-          - 罗生门: Literature/Rashomon.md
-          - 华氏451: Literature/Fahrenheit_451.md
-          - 《1984》: Literature/1984.md
-          - 生死疲劳: Literature/Forever_fatigue.md
-          - 五号屠场: Literature/Slaughterhouse_five.md
-          - 沉默的病人: Literature/Silent_patient.md
-          - 三个火枪手: Literature/Three_riflers.md
-          - 雪落香杉树: Literature/Snow_falls.md
-          - 潘神的迷宫: Literature/Labyrinth_pan.md
-          - 达芬奇密码: Literature/Davinci_code.md
-          - 格列佛游记: Literature/Gulliver.md
-          - 失明症漫记: Literature/Ensaio_sobre_a_cegueira.md
-          - 卡拉马佐夫兄弟: Literature/Kara_Mazov_brothers.md
-          - 东方快车谋杀案: Literature/Oriental_express.md
-          - 尼罗河上的惨案: Literature/Tragedy_niro.md
-          - 了不起的盖茨比: Literature/Gatsby.md
-          - 红玫瑰与白玫瑰: Literature/Red_roses_white_roses.md
-          - 查令十字街84号: Literature/Charline_84.md
+          - Literature/Novel/index.md
+          - 蛙: Literature/Novel/Frog.md
+          - 面纱: Literature/Novel/Veil.md
+          - 鼠疫: Literature/Novel/Plague.md
+          - 朝闻道: Literature/Novel/Zhao_wen_dao.md
+          - 野棕榈: Literature/Novel/Wild_palm.md
+          - 双城记: Literature/Novel/Stories_of_two_cities.md
+          - 罗生门: Literature/Novel/Rashomon.md
+          - 华氏451: Literature/Novel/Fahrenheit_451.md
+          - 《1984》: Literature/Novel/1984.md
+          - 生死疲劳: Literature/Novel/Forever_fatigue.md
+          - 五号屠场: Literature/Novel/Slaughterhouse_five.md
+          - 沉默的病人: Literature/Novel/Silent_patient.md
+          - 三个火枪手: Literature/Novel/Three_riflers.md
+          - 雪落香杉树: Literature/Novel/Snow_falls.md
+          - 潘神的迷宫: Literature/Novel/Labyrinth_pan.md
+          - 达芬奇密码: Literature/Novel/Davinci_code.md
+          - 格列佛游记: Literature/Novel/Gulliver.md
+          - 失明症漫记: Literature/Novel/Ensaio_sobre_a_cegueira.md
+          - 卡拉马佐夫兄弟: Literature/Novel/Kara_Mazov_brothers.md
+          - 东方快车谋杀案: Literature/Novel/Oriental_express.md
+          - 尼罗河上的惨案: Literature/Novel/Tragedy_niro.md
+          - 了不起的盖茨比: Literature/Novel/Gatsby.md
+          - 红玫瑰与白玫瑰: Literature/Novel/Red_roses_white_roses.md
+          - 查令十字街84号: Literature/Novel/Charline_84.md
 
   - 历史:
+      - History/index.md
       - 印尼ETC: History/Indonesia.md
       - 希腊笔记: History/Greece.md
       - 非洲笔记: History/Africa.md
@@ -195,7 +181,21 @@ nav:
       - 拉丁美洲被切开的血管: History/Latin_american_blood.md
       - 一个大国的崛起与崩溃: History/Rise_and_fall.md
       - 东风——法国知识分子与60年代的遗产: History/Eastern_wind.md
-
+  - 艺术:
+      - Arts/index.md
+      - 拉斐尔前派的梦: Arts/Pre_Raphael.md
+      - 黑夜的蝴蝶: Arts/Butterfly_at_night.md
+      - 左岸,从人民阵线到冷战作家: Arts/Left_bank.md
+      - 非主流艺术史: Arts/Art_history_unfashioned.md
+      - 巴黎神话——从启蒙运动到超现实主义: Arts/Parisian_myth.md
+      - 艺术引导人生——德拉克洛瓦私人日记: Arts/Delacroix.md
+      - 法国制造——法国文化关键词: Arts/Made_in_French.md
+      - 达达和超现实主义: Arts/Dada_surrealism.md
+      - 贝多芬的骰子: Arts/Beethoven.md
+      - 爱的艺术: Arts/Arts_of_love.md
+      - 艺术的故事: Arts/Stories_of_art.md
+      - 文艺复兴时期的艺术: Arts/Art_renaissance.md
+      - 碎片艺术: Arts/Pieces.md
   - 考研:
       - 我的规划: yan/yanPlans.md
       - 我的用书: yan/yanBooks.md
@@ -211,7 +211,6 @@ repo_url: https://github.com/SmilingWayne/Readingxiaoxiao
 
 theme:
   locale: en
-  # type: datetime
   name: material
   features:
     - navigation.tabs
@@ -233,6 +232,9 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js
