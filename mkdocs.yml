@@ -212,8 +212,12 @@ repo_url: https://github.com/SmilingWayne/Readingxiaoxiao
 theme:
   locale: en
   name: material
+  # custom_dir: /docs/stylesheets/
   features:
     - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - search.share
     # - navigation.sections
     # - navigation.expand
     # - navigation.top
@@ -252,7 +256,8 @@ plugins:
       exclude:
         - index.md
       enabled: true
-  - search
+  - search:
+      lang: ja
 
 markdown_extensions:
   - admonition

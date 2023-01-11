@@ -30,7 +30,7 @@
 
 - [x] Hello world -->
 
-<center> <font Face = "ShouJin" size = 6>很高兴在这里遇见你，陌生人。</font></center> 
+<center> <font Face = "ShouJin" size = 6>很高兴在这里遇见你，陌生人。</font></center>
 
 
 
