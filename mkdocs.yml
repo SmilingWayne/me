@@ -102,6 +102,7 @@ nav:
               - 罗密欧与朱丽叶: Plays/Romeo_juliet.md
               - 长明: Plays/Long_daylight.md
           - 影视:
+              - 慕尼黑: Plays/Munich.md
               - 五至七时的克莱奥: Plays/Cleo.md
               - 中国姑娘: Plays/La_chinioise.md
               - 无主之作: Plays/Werk_ohne_autor.md
@@ -203,6 +204,9 @@ nav:
   - 想/在做的事:
       - 书: ToDo/ToRead.md
       - 术: ToDo/ToCode.md
+  - 学习:
+      - 论文: Diary/Undergraduate_essay.md
+      - 我的2022: Diary/My2022.md
 
 site_author: SmilingWayne
 
