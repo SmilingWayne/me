@@ -103,6 +103,7 @@ nav:
               - 长明: Plays/Long_daylight.md
           - 影视:
               - 慕尼黑: Plays/Munich.md
+              - 地心引力: Plays/Gravity.md
               - 五至七时的克莱奥: Plays/Cleo.md
               - 中国姑娘: Plays/La_chinioise.md
               - 无主之作: Plays/Werk_ohne_autor.md
@@ -250,16 +251,16 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
-  - git-revision-date-localized:
-      type: datetime
-      custom_format: "%d. %B %Y"
-      timezone: Asia/Shanghai
-      locale: en
-      fallback_to_build_date: false
-      enable_creation_date: true
-      exclude:
-        - index.md
-      enabled: true
+  # - git-revision-date-localized:
+  #     type: datetime
+  #     custom_format: "%d. %B %Y"
+  #     timezone: Asia/Shanghai
+  #     locale: en
+  #     fallback_to_build_date: false
+  #     enable_creation_date: true
+  #     exclude:
+  #       - index.md
+  #     enabled: true
   - search:
       lang: ja
 
