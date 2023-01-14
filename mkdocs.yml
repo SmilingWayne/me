@@ -257,8 +257,8 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 
-extra_css:
-  - stylesheets/extra.css
+# extra_css:
+#   - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js
