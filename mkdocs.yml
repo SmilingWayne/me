@@ -206,8 +206,23 @@ nav:
       - 书: ToDo/ToRead.md
       - 术: ToDo/ToCode.md
   - 学习:
-      - 论文: Diary/Undergraduate_essay.md
-      - 我的2022: Diary/My2022.md
+      - 论文: Study/Undergraduate_essay.md
+      - 我的2022: Study/My2022.md
+      - 运筹学: Study/OperationsResearch1.md
+      - MD配色: Study/Markdown.md
+      - 供应链管理:
+          - 三种工厂选址模型: Study/Supplychain/Supplychain1.md
+          - 时间序列预测：静态方法: Study/Supplychain/SupplyChain13.md
+          - 时间序列预测：ARMA/Winter: Study/Supplychain/SupplyChain3.md
+          - 经济订货批量模型(EOQ): Study/Supplychain/SupplyChain4.md
+          - EOQ模型的订货量确定与周期盘点: Study/Supplychain/SupplyChain9.md
+          - 供应链综合计划策略I: Study/Supplychain/SupplyChain7.md
+          - 供应链综合计划策略II：案例分析: Study/Supplychain/SupplyChain11.md
+          - 规模经济管理：周转库存: Study/Supplychain/SupplyChain5.md
+          - 规模经济管理：数量折扣: Study/Supplychain/SupplyChain8.md
+          - 运营管理：排队论: Study/Supplychain/SupplyChain6.md
+          - 安全库存：基于给定策略: Study/Supplychain/SupplyChain10.md
+          - 安全库存：聚集/供给不确定/零件的情况: Study/Supplychain/SupplyChain12.md
 
 site_author: SmilingWayne
 
@@ -283,6 +298,8 @@ markdown_extensions:
   - admonition
   - pymdownx.arithmatex:
       generic: true
+  - toc:
+      permalink: ⚓︎
 
 extra:
   social:
