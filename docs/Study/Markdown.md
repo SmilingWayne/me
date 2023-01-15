@@ -1,4 +1,4 @@
-<center><font size = 10>macOS</font>  <font face = "楷体_GB2312" color = "DarkOliveGreen" size = 10>下自带的<br>好看(奇怪）字体</font></center>
+<center><font size = 5>macOS</font>  <font color = "DarkOliveGreen" size = 5>下自带的<br>好看(奇怪）字体</font></center>
 <br>
 
 `SnellRoundHand` ：<font face="SnellRoundHand" size=5 color = Magenta>SnellRoundHand 1234567890 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z + / * ! </font>
