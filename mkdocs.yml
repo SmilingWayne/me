@@ -27,6 +27,7 @@ nav:
       - 政治哲学:
           - 论政府: Philosophy/Government.md
           - 政治学: Philosophy/Politics.md
+          - 政治神学: Philosophy/Theology_politics.md
           - 美国生活中的反智主义: Philosophy/Anti_intellectual_usa.md
           - 以赛亚伯林的遗产: Philosophy/Legacy_berlin.md
           - 穆斯林与激进主义: Philosophy/Muslim_radicalism.md
@@ -121,11 +122,13 @@ nav:
           - 象征主义碎片: Literature/Essay/Impressionalism_pieces.md
           - 博尔赫斯谈话录: Literature/Essay/Borges.md
           - 别走，万一好笑呢: Literature/Essay/Stay.md
+          - 阅读是一座随身携带的避难所: Literature/Essay/Reading_shelter.md
           - 禅与摩托车维修艺术: Literature/Essay/Zen_motor_maintanence.md
       - 文论:
           - Literature/Literacy/index.md
           - 魏晋玄学: Literature/Literacy/Xuan_xue.md
           - 西方正典: Literature/Literacy/Western_classic.md
+          - 巴黎评论: Literature/Literacy/Paris_review.md
           - 作家笔记: Literature/Literacy/Writers_notes.md
           - 天朝遥远: Literature/Literacy/Dynasty.md
           - 法语文学: Literature/Literacy/French_literature.md
@@ -147,6 +150,7 @@ nav:
           - 罗生门: Literature/Novel/Rashomon.md
           - 华氏451: Literature/Novel/Fahrenheit_451.md
           - 《1984》: Literature/Novel/1984.md
+          - 撒马尔罕: Literature/Novel/Samarkhan.md
           - 生死疲劳: Literature/Novel/Forever_fatigue.md
           - 五号屠场: Literature/Novel/Slaughterhouse_five.md
           - 沉默的病人: Literature/Novel/Silent_patient.md
@@ -156,6 +160,7 @@ nav:
           - 达芬奇密码: Literature/Novel/Davinci_code.md
           - 格列佛游记: Literature/Novel/Gulliver.md
           - 失明症漫记: Literature/Novel/Ensaio_sobre_a_cegueira.md
+          - 瘟疫年纪事: Literature/Novel/Pandemic_era.md
           - 卡拉马佐夫兄弟: Literature/Novel/Kara_Mazov_brothers.md
           - 东方快车谋杀案: Literature/Novel/Oriental_express.md
           - 尼罗河上的惨案: Literature/Novel/Tragedy_niro.md
@@ -171,6 +176,7 @@ nav:
       - 中亚笔记: History/Mid_asia.md
       - 苏联笔记: History/Soviet_union.md
       - 记忆之场: History/Field_of_memory.md
+      - 断头王后: History/Marie_antoinette.md
       - 欧罗巴笔记: History/Europe.md
       - 法兰西笔记: History/France.md
       - 阿拉伯笔记: History/Arabians.md
@@ -182,6 +188,7 @@ nav:
       - 法国知识分子的世纪: History/Century_of_intellects_in_France.md
       - 拉丁美洲被切开的血管: History/Latin_american_blood.md
       - 一个大国的崛起与崩溃: History/Rise_and_fall.md
+      - 现代日本(牛津通识读本): History/Modern_japan.md
       - 东风——法国知识分子与60年代的遗产: History/Eastern_wind.md
   - 艺术:
       - Arts/index.md
@@ -197,6 +204,7 @@ nav:
       - 爱的艺术: Arts/Arts_of_love.md
       - 艺术的故事: Arts/Stories_of_art.md
       - 文艺复兴时期的艺术: Arts/Art_renaissance.md
+      - 现代主义: Arts/Modernism.md
       - 碎片艺术: Arts/Pieces.md
   - 考研:
       - 我的规划: yan/yanPlans.md
@@ -206,10 +214,10 @@ nav:
       - 书: ToDo/ToRead.md
       - 术: ToDo/ToCode.md
   - 学习:
-      - 论文: Study/Undergraduate_essay.md
       - 我的2022: Study/My2022.md
       - 运筹学: Study/OperationsResearch1.md
       - MD配色: Study/Markdown.md
+      - 幻方算法: Study/MagicSquare.md
       - 供应链管理:
           - 三种工厂选址模型: Study/Supplychain/Supplychain1.md
           - 时间序列预测：静态方法: Study/Supplychain/SupplyChain13.md
@@ -223,6 +231,7 @@ nav:
           - 运营管理：排队论: Study/Supplychain/SupplyChain6.md
           - 安全库存：基于给定策略: Study/Supplychain/SupplyChain10.md
           - 安全库存：聚集/供给不确定/零件的情况: Study/Supplychain/SupplyChain12.md
+      - 论文: Study/Undergraduate_essay.md
 
 site_author: SmilingWayne
 

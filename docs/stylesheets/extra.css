@@ -1,14 +1,21 @@
+
 @font-face {
+    font-display: auto;
+    font-family: ShouJin;
+    src: url(font/ShouJin.ttf)
+}
+
+
+@font-face {
+    font-display: auto;
     font-family: XingKai;
-    src: url(font/XingKai.ttf)
+    src: url(font/XingKai.ttf) 
 }
 
-@font-face {
-font-family: ShouJin;
-src: url(font/ShouJin.ttf)
-}
+
 
 @font-face {
+    font-display: auto;
     font-family: FanKai;
     src: url(font/FanKai.ttf)
 }
