@@ -276,16 +276,16 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
-    - git-revision-date-localized:
-        type: datetime
-        custom_format: "%d. %B %Y"
-        timezone: Asia/Shanghai
-        locale: en
-        fallback_to_build_date: false
-        enable_creation_date: true
-        exclude:
-          - index.md
-        enabled: true
+  - git-revision-date-localized:
+      type: datetime
+      custom_format: "%d. %B %Y"
+      timezone: Asia/Shanghai
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
+      exclude:
+        - index.md
+      enabled: true
   - search:
       lang: ja
 
