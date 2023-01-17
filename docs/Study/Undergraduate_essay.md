@@ -1,59 +1,49 @@
 # 重大工程创新生态系统提升创新绩效的情景建模和路径仿真分析研究
----
-
-??? abstract "概念"
-    重大工程创新生态系统：
-
-    创新绩效：
-
-    情景建模：
-
-    路径仿真分析：
-
-    重大工程创新技术联合体：
-
-
-??? tip "要点"
-    
-    市场需求、
-
-    政府支持、
-
-    创新领导者、
-    
-    主体邻近性：技术接近、关系接近、地理位置接近、利益/目标接近
-    
-    资源异质性：有价值性、稀缺性、难以模仿性的资源；人才、技术、社会影响力、技术互补、知识 etc
 
 
 
-## 文献：
+## 1 引言
 
-- Understanding effects of BIM on collaborative design and construction: An empirical study in China
-> BIM: Building Information Modeling
->> Owners, constructors, designers working together
-> 8 concepts influencing BIM // 3 types
+【讲故事】  项目管理现实中面临一些“重大工程”，重大工程管理离不开**创新**，由于重大工程的复杂性，单个主体无法承担任务，项目中的创新往往是从**创新生态系统**（创新网络、多主体、动态变化.etc）中产生的，和其他产业创新不同...因而我们需要探索提高创新绩效（衡量指标：Patents / Standards / Prizes .etc）的路径，对此给出SD （宏观的）ABM（微观个体）的建模分析，分析演化机制并进行仿真。
 
-- The co-creation of values-in-use at the front end of infrastructure development programs
-- 基础设施建设/共同创造/实用价值
-> 利益相关方如何参与这种共同创造的过程；
-> 如何推动front-end（前端项目？）的价值的产生
-> 采访/文献/参与者观察等-针对荷兰的基础设施MWW的观察；
+## 2 文献综述
 
-- Exploring the Driving Factors of Construction Industrialization Development in China
-> 研究中国建筑工业发展的主要推动力
-- 扎根分析的方法：基于文献、基于调查结果、访谈结果
-Differentiation
 
-- Fostering Ambidextrous Innovation in Infrastructure Projects:  and Integration Tactics of Cross-Functional Teams
-> 跨功能团队的差异和整合方法？
-> 推动创新发展？
+----
 
-- Investigating the Relationship between Construction Supply Chain Integration and Sustainable Use of Material: Evidence from China
-> 供应链整合如何推动建筑行业物料/废料的可持续使用
-> PLS- SEM 模型
-> 对假说进行检验
-> 结构方程模型
+## 3 方法
+💡 有两种把模型结合的方法：
 
-- 重大工程创新生态系统治理及绩效评价研究
-- PSR？
+* **ABM is based on SD**
+（SD在宏观层面描绘一些对象，而ABM的主体（agent）是基于SD描绘的对象的）
+> 
+我的理解是：比如可以先用一些方法（发放问卷？Likert Type Scale？访谈？）确定创新生态系统中有影响力的变量
+>（科研院所、国有企业、材料供应商、承包商、设计公司...etc，或者是更宏观的，国家政策/文化导向（传统地区和现代地区）/...etc)
+
+这些有影响力变量和我们的创新绩效指数之间的关系，如何分析、展示？
+> Casual Loop Diagram / 动力流图等 / 网络分析的方法？/ 基于访谈等数据的分析
+
+设置的SD模型，选取的创新指标怎么衡量？
+>（I. 专利；II. 论文；III. 国家级奖项）；社会网络分析的方法也可以在这里用来评价不同的变量对整体的影响程度。
+
+
+然后ABM的主体就是基于SD选出的变量了，【🤔🤔】困惑的是如何确定ABM主体之间的rules（rules的抽象？），rules是一种Agent的决策偏好？或者说，rules是一种Agent可以采取的不同决策方式，可以区分Agent的行为，形成了Agent决策的*异质性？*
+<br>
+
+- 我想的一些Rules：
+- [ ] Rules：铁路等的基础设施补贴、用地扩大、税收降低，开发商更愿意参加大型项目合作;
+- [ ] Rules：本地的科研院所更愿意参加本地的重大工程项目；
+- [ ] Rules：“卡脖子技术”等相关的投入更宁愿国内研究单位承担，而不愿意使用昂贵的引进技术，或者使用价格可以接受的国外产品；
+- [ ] Rules：获得国家科技进步较多的理工类科研单位/国有企业更受青睐，而非传统理工高校则不那么重视重大基础设施；
+- [ ] ...
+
+
+* ~~SD is based on ABM~~ （与上相反，我理解来感觉**上一种**更符合对于重大工程创新的理解？
+
+## 4 模型的检验
+
+> Behavior Test? 
+>
+> Parameter Confirmation Test?
+## 5 结果（预测？）
+

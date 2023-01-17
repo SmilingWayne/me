@@ -16,6 +16,7 @@ nav:
           - 世界宗教: Philosophy/World_religion.md
           - 犹太人与犹太教(牛津通识读本): Philosophy/Jews.md
           - 相似之书: Philosophy/Book_of_resemblance.md
+          - 我理解的伊斯兰教: Philosophy/Religion_culture.md
 
       - 文明:
           - 文明的冲突与世界秩序的重建: Philosophy/Collision_civilization.md
@@ -275,16 +276,16 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
-  - git-revision-date-localized:
-      type: datetime
-      custom_format: "%d. %B %Y"
-      timezone: Asia/Shanghai
-      locale: en
-      fallback_to_build_date: false
-      enable_creation_date: true
-      exclude:
-        - index.md
-      enabled: true
+    - git-revision-date-localized:
+        type: datetime
+        custom_format: "%d. %B %Y"
+        timezone: Asia/Shanghai
+        locale: en
+        fallback_to_build_date: false
+        enable_creation_date: true
+        exclude:
+          - index.md
+        enabled: true
   - search:
       lang: ja
 
