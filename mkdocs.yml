@@ -216,8 +216,10 @@ nav:
       - 术: ToDo/ToCode.md
   - 学习:
       - 我的2022: Study/My2022.md
+      - 线性代数:
+          - chapter1: Study/LinearAlgebra/Chapter1.md
       - 运筹学: Study/OperationsResearch1.md
-      - MD配色: Study/Markdown.md
+      - macOS字体推荐: Study/Markdown.md
       - 幻方算法: Study/MagicSquare.md
       - 供应链管理:
           - 三种工厂选址模型: Study/Supplychain/Supplychain1.md
