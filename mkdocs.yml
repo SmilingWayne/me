@@ -105,6 +105,7 @@ nav:
               - 长明: Plays/Long_daylight.md
           - 影视:
               - 慕尼黑: Plays/Munich.md
+              - 精疲力尽: Plays/Exhausted.md
               - 地心引力: Plays/Gravity.md
               - 五至七时的克莱奥: Plays/Cleo.md
               - 中国姑娘: Plays/La_chinioise.md
@@ -222,18 +223,20 @@ nav:
       - macOS字体推荐: Study/Markdown.md
       - 幻方算法: Study/MagicSquare.md
       - 供应链管理:
-          - 三种工厂选址模型: Study/Supplychain/Supplychain1.md
-          - 时间序列预测：静态方法: Study/Supplychain/SupplyChain13.md
-          - 时间序列预测：ARMA/Winter: Study/Supplychain/SupplyChain3.md
-          - 经济订货批量模型(EOQ): Study/Supplychain/SupplyChain4.md
-          - EOQ模型的订货量确定与周期盘点: Study/Supplychain/SupplyChain9.md
-          - 供应链综合计划策略I: Study/Supplychain/SupplyChain7.md
-          - 供应链综合计划策略II：案例分析: Study/Supplychain/SupplyChain11.md
-          - 规模经济管理：周转库存: Study/Supplychain/SupplyChain5.md
-          - 规模经济管理：数量折扣: Study/Supplychain/SupplyChain8.md
+          - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
+          - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
+          - 时间序列预测模型与框架：ARMA/Winter(Chapter_7.5/7.6): Study/Supplychain/SupplyChain3.md
+          - 经济订货批量模型(EOQ)(Chapter_11.3): Study/Supplychain/SupplyChain4.md
+          - EOQ模型的订货量确定与周期盘点(Chapter_11.3.2): Study/Supplychain/SupplyChain9.md
+          - 供应链综合计划策略I(Chapter_8.4): Study/Supplychain/SupplyChain7.md
+          - 供应链综合计划策略II：案例分析(Chapter_8.5): Study/Supplychain/SupplyChain11.md
+          - 规模经济管理：数量折扣I(Chapter_11.4): Study/Supplychain/SupplyChain5.md
+          - 规模经济管理：数量折扣II(Chapter_11.4): Study/Supplychain/SupplyChain8.md
           - 运营管理：排队论: Study/Supplychain/SupplyChain6.md
-          - 安全库存：基于给定策略: Study/Supplychain/SupplyChain10.md
-          - 安全库存：聚集/供给不确定/零件的情况: Study/Supplychain/SupplyChain12.md
+          - 安全库存：基于给定策略(Chapter_12.2): Study/Supplychain/SupplyChain10.md
+          - 安全库存：聚集/供给不确定/零件的情况(Chapter_12.3): Study/Supplychain/SupplyChain12.md
+          - 最优可获得性水平的确定: Study/Supplychain/SupplyChain14.md
+
       - 论文: Study/Undergraduate_essay.md
 
 site_author: SmilingWayne
@@ -288,6 +291,7 @@ plugins:
       exclude:
         - index.md
       enabled: true
+
   - search:
       lang: ja
 
@@ -298,6 +302,13 @@ markdown_extensions:
   - md_in_html
   - def_list
   - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
@@ -307,6 +318,9 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - admonition
   - pymdownx.arithmatex:
       generic: true
