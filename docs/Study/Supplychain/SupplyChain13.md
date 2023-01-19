@@ -6,7 +6,7 @@
 
 <font color = grey size = 4>需求的系统成分 = (需求水平 + 需求趋势) $\times$ 季节性因素 </font>
 
-<font color = black size = 4>给定定义如下:</font>
+<font color = black size = 4>给定定义如下: 🤔</font>
 
 <font color = black size = 4>$L$: $t = 0$时期剔除季节因素后的需求估计</font>
 
