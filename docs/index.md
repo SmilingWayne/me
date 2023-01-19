@@ -10,15 +10,15 @@
 
 - 🧑‍🎓 南京大学2019级本科生在读。一个时刻想要变得不普通的普通人。你可以叫我 "笑笑" .
 
-- 📖 喜欢阅读。喜欢特定味道的书香。不事劳作。
+- 📖 喜欢阅读，有时观影，偶尔编程 :material-language-python: | :material-language-swift: | :material-language-java:，不事劳作。
 
-- 🔒 不是个文字工作者，不是文科学生，但是坚信文字的力量。
+- 🎻 “有柴小协[^1]的日子就是好日子。”
 
-- 🫲 在这里记录一下自己的阅读历程和心路体验。
+- 💖 “毕竟几人真得鹿，不知终日梦为鱼。”[^2]
 
-- 📝 我的书/影记录可以看我的豆瓣：SmilingWayne。那里和这里一样静悄悄。
+- 📝 我的书 / 影记录可以看我的豆瓣：SmilingWayne。那里和这里一样静悄悄。
 
-- 🧸 INFP / 工业党人 / 谨慎的自由主义者。
+- 🧸 INFP / 工业党人 / 谨慎的自由主义[^3]者 / 努力学习语言.ing。
 
 - 📮 联系邮箱：`xiaoxiaowayne@163.com `
 
@@ -29,10 +29,16 @@
 
 
 - [x] Hello world -->
+<!-- :fontawesome-solid-house-circle-exclamation: -->
 
-<center> <font Face = "ShouJin" size = 6>很高兴在这里遇见你，陌生人。</font></center>
+<center> <font face = "Apple chancery" size = 5>Bienvenue sur mon site! 🌼</font></center>
 
 
+[^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.
+[^2]: 语出宋代黄庭坚《杂诗七首》。
+[^3]: Liberalism is a political and moral philosophy based on the rights of the individual, liberty, consent of the governed, political equality and equality before the law. (From Wiki)
+
+<!-- :octicons-file-code-24: &nbsp; __{file.ext}__ -->
 
 <!-- ## Commands
 
