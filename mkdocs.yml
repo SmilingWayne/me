@@ -222,6 +222,8 @@ nav:
       - 运筹学: Study/OperationsResearch1.md
       - macOS字体推荐: Study/Markdown.md
       - 幻方算法: Study/MagicSquare.md
+      - Swift: Study/Swift/CS193p1.md
+      - Markdown语法1: Study/MarkdownSyntax1.md
       - 供应链管理:
           - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
           - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
@@ -247,8 +249,11 @@ repo_url: https://github.com/SmilingWayne/Readingxiaoxiao
 theme:
   locale: en
   name: material
+  #   custom_dir: overrides
   # custom_dir: /docs/stylesheets/
   features:
+    - content.tabs.link
+    - content.code.copy
     - navigation.tabs
     - search.suggest
     - search.highlight
@@ -257,6 +262,8 @@ theme:
     # - navigation.expand
     # - navigation.top
     - navigation.indexes
+    # - content.action.edit
+    # - content.action.view
 
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -278,16 +285,16 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
-  - git-revision-date-localized:
-      type: datetime
-      custom_format: "%d. %B %Y"
-      timezone: Asia/Shanghai
-      locale: en
-      fallback_to_build_date: false
-      enable_creation_date: true
-      exclude:
-        - index.md
-      enabled: true
+  #   - git-revision-date-localized:
+  #       type: datetime
+  #       custom_format: "%d. %B %Y"
+  #       timezone: Asia/Shanghai
+  #       locale: en
+  #       fallback_to_build_date: false
+  #       enable_creation_date: true
+  #       exclude:
+  #         - index.md
+  #       enabled: true
 
   - search:
       lang: ja
@@ -308,6 +315,8 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.mark
   - pymdownx.tasklist:
       custom_checkbox: true
