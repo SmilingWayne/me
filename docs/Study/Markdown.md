@@ -60,16 +60,3 @@
 `Palatino` ：<font face="Palatino" size = 6 color = Coral >Q W E R T Y U I O a s d f g h j k  + - Aa Bb Cc Dd Ee Ff Kk Ll Mm 1 2 3 4 5 6 7 8 9 Palatino</font>
 
 `Skia` ：<font face="skia" size = 6 color = DarkSlateGrey >Q W E R T Y U I O a s d f g h j k  + - Aa Bb Cc Dd Ee Ff Kk Ll Mm 1 2 3 4 5 6 7 8 9 Skia</font>
-
-
-
-<br>
-<br>
-<br>
-<br>
-
-`楷体_GB2312` ：<font face="楷体_GB2312" size=5 color = midnightblue >这是楷体 </font>
-
-`STXingkai` ：<font face="STXingkai" size=6 color = midnightblue >这是行楷 </font>
-
-`SimHei` ：<font face="SimHei" size=6 color = midnightblue >这是黑体 </font>

@@ -221,11 +221,13 @@ nav:
       - 我的2022: Study/My2022.md
       - 线性代数:
           - chapter1: Study/LinearAlgebra/Chapter1.md
+          - chapter2: Study/LinearAlgebra/Chapter2.md
       - 运筹学: Study/OperationsResearch1.md
       - macOS字体推荐: Study/Markdown.md
       - 幻方算法: Study/MagicSquare.md
       - Swift: Study/Swift/CS193p1.md
       - Markdown语法1: Study/MarkdownSyntax1.md
+      - LaTex语法: Study/LatexNotes.md
       - 供应链管理:
           - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
           - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
