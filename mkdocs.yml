@@ -104,12 +104,14 @@ nav:
               - 罗密欧与朱丽叶: Plays/Romeo_juliet.md
               - 长明: Plays/Long_daylight.md
           - 影视:
+              - 切腹: Plays/Seppuku.md
               - 慕尼黑: Plays/Munich.md
               - 精疲力尽: Plays/Exhausted.md
               - 地心引力: Plays/Gravity.md
               - 五至七时的克莱奥: Plays/Cleo.md
               - 中国姑娘: Plays/La_chinioise.md
               - 无主之作: Plays/Werk_ohne_autor.md
+
       - 随笔:
           - Literature/Essay/index.md
           - 小于一: Literature/Essay/Less_than_one.md
