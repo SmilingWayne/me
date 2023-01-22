@@ -1,4 +1,3 @@
-
 ## 多窗口
 === "Unordered list"
 
@@ -53,7 +52,7 @@
                     if items[j] > items[j + 1]:
                         items[j], items[j + 1] = items[j + 1], items[j]
         ```
-        
+
     ```
 
 === "行数"
