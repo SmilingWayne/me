@@ -180,92 +180,92 @@ $N$是奇数时，按照上面的格式生成一个方阵后，将每一行倒�
 ----
 ✅ $\quad$<font size=4 color = "Black">**要求**</font>
 
-<font size=4 color = "grey">输入一个字符串表示的代数式，输出计算结果</font>
+输入一个字符串表示的代数式，输出计算结果
 
 ✅ $\quad$<font size=4 color = "Black">**特性和功能**</font>
 
 
-🟪 <font size=4 color = "grey">支持 $+ - \times \div$， 支持乘方运算、三角函数、自然对数、指数函数计算</font>
+🟪 支持 $+ - \times \div$， 支持乘方运算、三角函数、自然对数、指数函数计算
 
-🟩 <font size=4 color = "grey">保证运算符优先级、括号优先级，可以处理多余括号</font>
+🟩 保证运算符优先级、括号优先级，可以处理多余括号
 
-🟧 <font size=4 color = "grey">递归法支持嵌套运算</font>
+🟧 递归法支持嵌套运算
 
-🟦 <font size=4 color = "grey">支持正负数计算</font>
+🟦 支持正负数计算
 
 ✅ $\quad$<font size=4 color = "Black">**具体实现**</font>
 
-🔴 <font size=4 color = "grey">递归处理函数嵌套</font>
+🔴 递归处理函数嵌套
 
-🟡 <font size=4 color = "grey">堆(Stack)+优先性判断处理具体计算</font>
+🟡 堆(Stack)+优先性判断处理具体计算
 
 
 ❌ $\quad$<font size=4 color = "Black" >**尚未完成的部分**</font>
 
 
-☑️  <font size=4 color = "grey">几个其他常用科学计算函数，例如开方、阶乘、任意底数的对数、反三角函数等</font>
+☑️  几个其他常用科学计算函数，例如开方、阶乘、任意底数的对数、反三角函数等
 
-☑️  <font size=4 color = "grey">异常情况检测（分母0、对数<0等情况的检查、提示、字符串是否合法）、可视化</font>
-
-
+☑️  异常情况检测（分母0、对数<0等情况的检查、提示、字符串是否合法）、可视化
 
 
-<h1>日历图可视化步骤</h1>
 
 
-✳️ $\quad$<font size=4 color = "Black" face = "Kai">**小记录**</font>
+<h2>日历图可视化步骤</h2>
+
+
+✳️ $\quad$**小记录**
 
 <font size = 4 color = 'grey' face = "HEI">这是半年前一次小的尝试，当时提取微信聊天记录做了一些分析，整理时候发现不少可以用的东西，用笔记记录一下。当然了为了减少个人信息泄露，数据已经做了随机处理。不过模板是可以直接套用的。</font>
 
-✅ $\quad$<font size=4 color = "Black" face = "Kai">**数据预处理**</font>
+✅ $\quad$**数据预处理**
 
-<font size=4 color = "grey" face = "HEI">整理出聊天记录，利用时间序列数据清洗方法，得到每一天聊天数量，存储为结构化数据。</font>
+整理出聊天记录，利用时间序列数据清洗方法，得到每一天聊天数量，存储为结构化数据。
 
-✅ $\quad$<font size=4 color = "Black" face = "Kai">**Python可视化**</font>
+✅ $\quad$**Python可视化**
 
-<font size=4 color = "grey" face = "HEI">借助可交互可视化包<font  color = "Purple">`Pyecharts`</font>绘制日历图</font>
+借助可交互可视化包<font  color = "Purple">`Pyecharts`</font>绘制日历图
 
 
-✅ $\quad$<font size=4 color = "Black" face = "Kai">**Pyecharts特性**</font>
+✅ $\quad$**Pyecharts特性**
 
-<font size=4 color = "grey" face = "HEI">比较适合做注入网站动态可视化、用户大数据界面等，但是不大适合用作科研制图，操作不算困难，有中文文档📁。</font>
+比较适合做注入网站动态可视化、用户大数据界面等，但是不大适合用作科研制图，操作不算困难，有中文文档📁。
 
-<font size=4 color = "grey" face = "HEI">具体代码附在后一张图上。</font>
+具体代码附在后一张图上。
 
 <br>
 
 <h2>模板注释</h2>
 
-✳️ $\quad$<font size=4 color = "Black" face = "Kai">**小记录**</font>
+✳️ $\quad$**小记录**
 
 <font size = 4 color = 'grey' face = "HEI">从Github上找的一个合集，自己做了一点总结。主要针对分类问题而言的，稍微有条理一些。</font>
 
-🟪 $\quad$<font size=4 color = "Black" face = "Kai">**算法**</font>
+🟪 $\quad$**算法**
 
-<font size=4 color = "grey" face = "HEI">本笔记不会详细展开每一个算法本身，都是一些很著名的、需要仔细琢磨的算法。相关介绍都已经很多了。</font>
+本笔记不会详细展开每一个算法本身，都是一些很著名的、需要仔细琢磨的算法。相关介绍都已经很多了。
 
-🧡 &nbsp; <font size=4 color = "grey" face = "HEI">**线性回归Linear Regression**</font>
+🧡 &nbsp; **线性回归Linear Regression**
 
-💜 &nbsp;  <font size=4 color = "grey" face = "HEI">**支持向量机SVM**</font>
+💜 &nbsp;  **支持向量机SVM**
 
-💚 &nbsp; <font size=4 color = "grey" face = "HEI">**朴素贝叶斯Naive Bayes**</font>
+💚 &nbsp; **朴素贝叶斯Naive Bayes**
 
-💛 &nbsp; <font size=4 color = "grey" face = "HEI">**K近邻算法KNN**</font>
-
-<font size=4 color = "grey" face = "HEI"></font>
-
-✅ $\quad$<font size=4 color = "Black" face = "Kai">**Matplotlib可视化**</font>
-
-<font size=4 color = "grey" face = "HEI">代码里只写了画分类结果图，实际还有ROC曲线之类的，在前段时间LSTM的那个NLP笔记里记录了，可以移步查看。</font>
-
-
-✅ $\quad$<font size=4 color = "Black" face = "Kai">**备注**</font>
-
-<font size=4 color = "grey" face = "HEI">代码仅仅展示了进行机器学习任务的一个基本流程和代码，具体的算法、数据、优化、调参等过程都是具体而有挑战的，本笔记仅供参考。</font>
+💛 &nbsp; **K近邻算法KNN**
 
 
 
-<font size=4 color = "grey" face = "HEI">具体代码附在后一张图上。</font>
+✅ $\quad$**Matplotlib可视化**
+
+代码里只写了画分类结果图，实际还有ROC曲线之类的，在前段时间LSTM的那个NLP笔记里记录了，可以移步查看。
+
+
+✅ $\quad$**备注**
+
+代码仅仅展示了进行机器学习任务的一个基本流程和代码，具体的算法、数据、优化、调参等过程都是具体而有挑战的，本笔记仅供参考。
+
+
+
+具体代码附在后一张图上。
 
 
 <br>
@@ -274,34 +274,34 @@ $N$是奇数时，按照上面的格式生成一个方阵后，将每一行倒�
 
 <h2>模板注释</h2>
 
-✳️ $\quad$<font size=4 color = "Black" face = "Kai">**小记录**</font>
+✳️ $\quad$**小记录**
 
-<font size = 4 color = 'grey' face = "HEI">从Github上找的一个合集，自己做了一点总结。主要针对分类问题而言的，稍微有条理一些。</font>
+从Github上找的一个合集，自己做了一点总结。主要针对分类问题而言的，稍微有条理一些。
 
-🟪 $\quad$<font size=4 color = "Black" face = "Kai">**算法**</font>
+🟪 $\quad$**算法**
 
-<font size=4 color = "grey" face = "HEI">本笔记不会详细展开每一个算法本身，都是一些很著名的、需要仔细琢磨的算法。相关介绍都已经很多了。</font>
+本笔记不会详细展开每一个算法本身，都是一些很著名的、需要仔细琢磨的算法。相关介绍都已经很多了。
 
-🧡 &nbsp; <font size=4 color = "grey" face = "HEI">**线性回归Linear Regression**</font>
+🧡 &nbsp; **线性回归Linear Regression**
 
-💜 &nbsp;  <font size=4 color = "grey" face = "HEI">**支持向量机SVM**</font>
+💜 &nbsp;  **支持向量机SVM**
 
-💚 &nbsp; <font size=4 color = "grey" face = "HEI">**朴素贝叶斯Naive Bayes**</font>
+💚 &nbsp; **朴素贝叶斯Naive Bayes**
 
-💛 &nbsp; <font size=4 color = "grey" face = "HEI">**K近邻算法KNN**</font>
-
-<font size=4 color = "grey" face = "HEI"></font>
-
-✅ $\quad$<font size=4 color = "Black" face = "Kai">**Matplotlib可视化**</font>
-
-<font size=4 color = "grey" face = "HEI">代码里只写了画分类结果图，实际还有ROC曲线之类的，在前段时间LSTM的那个NLP笔记里记录了，可以移步查看。</font>
-
-
-✅ $\quad$<font size=4 color = "Black" face = "Kai">**备注**</font>
-
-<font size=4 color = "grey" face = "HEI">代码仅仅展示了进行机器学习任务的一个基本流程和代码，具体的算法、数据、优化、调参等过程都是具体而有挑战的，本笔记仅供参考。</font>
+💛 &nbsp; **K近邻算法KNN**
 
 
 
-<font size=4 color = "grey" face = "HEI">具体代码附在后一张图上。</font>
+✅ $\quad$**Matplotlib可视化**
+
+代码里只写了画分类结果图，实际还有ROC曲线之类的，在前段时间LSTM的那个NLP笔记里记录了，可以移步查看。
+
+
+✅ $\quad$**备注**
+
+代码仅仅展示了进行机器学习任务的一个基本流程和代码，具体的算法、数据、优化、调参等过程都是具体而有挑战的，本笔记仅供参考。
+
+
+
+具体代码附在后一张图上。
 
