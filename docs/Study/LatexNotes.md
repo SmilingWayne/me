@@ -44,3 +44,24 @@
 
     ```
 
+## 杂七杂八
+
+- 大括号：
+$max \left\{ \frac{pV}{nrT} \right\}$
+
+``` LaTeX 
+ $max \left\{ \frac{pV}{nrT} \right\}$
+```
+
+- 在min/max的正下方打出下标：
+  
+$\mathop{\arg\min}\limits_{\theta}$ 以及 ：$\mathop{\min}\limits_{\theta}$
+
+``` LaTeX
+
+$\mathop{\arg\min}\limits_{\theta}$
+
+$\mathop{\min}\limits_{\theta}$
+
+```
+

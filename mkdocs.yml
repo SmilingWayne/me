@@ -217,6 +217,7 @@ nav:
   - 想/在做的事:
       - 书: ToDo/ToRead.md
       - 术: ToDo/ToCode.md
+      - 事: ToDo/ToDo.md
   - 学习:
       - 我的2022: Study/My2022.md
       - 线性代数:
