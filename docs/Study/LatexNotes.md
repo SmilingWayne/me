@@ -65,3 +65,23 @@ $\mathop{\min}\limits_{\theta}$
 
 ```
 
+- 累乘符号：
+  $\prod \limits_{i=0}^n$
+
+``` LaTeX
+$\prod \limits_{i=0}^n$
+```
+- 在求和符号正上方和正下方加字母:
+  
+  $\sum \limits_{i=1}^{n}$
+
+```LaTeX
+$\sum \limits_{i=1}^{n}$
+```
+- 在箭头正上方和正下方加字符：
+
+$A\stackrel{r/c/}{\rightarrow}B$
+
+```LaTeX
+$A\stackrel{r/c/}{\rightarrow}B$
+```

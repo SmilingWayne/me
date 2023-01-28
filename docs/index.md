@@ -33,6 +33,10 @@
 
 <center> <font face = "Apple chancery" size = 5>Bienvenue sur mon site! 🌼</font></center>
 
+- 💻 PC端：点击顶部导航栏选择主题，左侧查看目录；
+- 📱 移动端：点击左上角图标选择内容；
+- 🔍 搜索支持中文检索。
+
 
 [^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.
 [^2]: 语出宋代黄庭坚《杂诗七首》。
