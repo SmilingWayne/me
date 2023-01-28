@@ -78,13 +78,14 @@ nav:
               - 德国，一个冬天的童话: Poems/German_winter_fairytale.md
               - 坎特伯雷故事集: Poems/Canterbery.md
               - 我用古典的方式爱过你: Poems/Emily.md
-
               - 疑问集: Poems/Collections_of_doubt.md
           - 中国诗:
               - 辛弃疾词: Poems/Xinqiji_ci.md
               - 木心诗选: Poems/Muxin.md
               - 月光停在左手上: Poems/Moonlight_left_hand.md
-              - 中国古典合集: Poems/ClassicChinese.md
+              - 中国古典-诗: Poems/ClassicChinese_shi.md
+              - 中国古典-词: Poems/ClassicChinese_ci.md
+              - 中国古典-曲: Poems/ClassicChinese_qu.md
       - 戏剧:
           - Plays/index.md
           - 戏剧:
@@ -212,6 +213,7 @@ nav:
       - 现代主义: Arts/Modernism.md
       - 碎片艺术: Arts/Pieces.md
   - 考研:
+      - yan/index.md
       - 我的规划: yan/yanPlans.md
       - 我的用书: yan/yanBooks.md
       - 闲聊: yan/yanTalks.md
@@ -224,7 +226,10 @@ nav:
       - 线性代数:
           - chapter1: Study/LinearAlgebra/Chapter1.md
           - chapter2: Study/LinearAlgebra/Chapter2.md
-      - 运筹学: Study/OperationsResearch1.md
+      - 运筹学:
+          - Study/OR/index.md
+          - Chapter1: Study/OR/Chapter1.md
+          - Chapter2: Study/OR/Chapter2.md
       - macOS字体推荐: Study/Markdown.md
       - 幻方算法: Study/MagicSquare.md
       - Swift: Study/Swift/CS193p1.md
