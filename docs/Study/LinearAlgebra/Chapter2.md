@@ -89,6 +89,6 @@ a_{n1} & a_{n2} & \cdots  & a_{nn} \\
 - 定理2.4.1（初等变换和初等矩阵）：设A是一个$m \times n$矩阵，对A进行一次初等行变换，相当于在A左边乘一个相应的m阶初等矩阵，对A进行一次初等列变换，相当于在A右边乘一个相应的n阶初等矩阵。 
 - Def. 2.4.3 （行/列等价矩阵、等价矩阵）：如果矩阵A经过有限次初等（行/列/）变换变成矩阵B，那么称矩阵A和B（行/列/）等价。$A\stackrel{r/c/}{\rightarrow}B$。矩阵关系之间的等价具有如下性质：
     - 自反（与其自身等价）
-    - 对称性（A与B对称也就是B与A对称）
-    - 传递（A \rightarrow B , B \rightarrow C, A \rightarrow C)
+    - 对称性（$A$与$B$对称也就是$B$与$A$对称）
+    - 传递$（A \rightarrow B , B \rightarrow C, A \rightarrow C)$
 - 具有行等价关系的矩阵对应的线性方程组有相同的解；
