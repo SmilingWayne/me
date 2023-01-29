@@ -1,0 +1,48 @@
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+<center><b><font size = 7 face = "楷体_GB2312">采购与供应链管理</font></b></center>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center><font size = "6" color = Crisma> 报童模型</font></center>
+
+<center><font size = "5" face = "American Typewriter"> (Newsvendor Model)</font></center>
+<br>
+
+<center><font size = "4" color = Navy> 最优可获得性水平的确定｜ 模型推导｜Excel实现</font></center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+备注：屏幕上下高900px，所以3*4的话宽度是675.一般截图是750的尺寸，要想着凑出1000的整数
+合并成大的图片后，preview设置成90%尺度观看即可。
