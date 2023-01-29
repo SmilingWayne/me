@@ -66,7 +66,6 @@ nav:
       - 诗歌:
           - Poems/index.md
           - 外国诗:
-              # - Poems/index.md
               - 散落碎片: Poems/Middle_east.md
               - 愤怒与神秘: Poems/Anger_and_mystery.md
               - 恶之花: Poems/Fleurs_du_mal.md
@@ -235,6 +234,9 @@ nav:
       - Swift: Study/Swift/CS193p1.md
       - Markdown语法1: Study/MarkdownSyntax1.md
       - LaTex语法: Study/LatexNotes.md
+      - Python包推荐:
+          - pipreqs: Study/PythonPackages/PIPREQS.md
+          - matplotlib技巧: Study/PythonPackages/Matplotlib.md
       - 供应链管理:
           - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
           - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
@@ -249,7 +251,6 @@ nav:
           - 安全库存：基于给定策略(Chapter_12.2): Study/Supplychain/SupplyChain10.md
           - 安全库存：聚集/供给不确定/零件的情况(Chapter_12.3): Study/Supplychain/SupplyChain12.md
           - 最优可获得性水平的确定: Study/Supplychain/SupplyChain14.md
-
       - 论文: Study/Undergraduate_essay.md
 
 site_author: SmilingWayne
