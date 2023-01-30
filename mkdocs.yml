@@ -250,7 +250,8 @@ nav:
           - 运营管理：排队论: Study/Supplychain/SupplyChain6.md
           - 安全库存：基于给定策略(Chapter_12.2): Study/Supplychain/SupplyChain10.md
           - 安全库存：聚集/供给不确定/零件的情况(Chapter_12.3): Study/Supplychain/SupplyChain12.md
-          - 最优可获得性水平的确定: Study/Supplychain/SupplyChain14.md
+          - 报童模型I：最优可获得性水平的确定: Study/Supplychain/SupplyChain14.md
+          - 报童模型II：沃尔玛案例分析: Study/Supplychain/SupplyChain15.md
       - 论文: Study/Undergraduate_essay.md
 
 site_author: SmilingWayne
