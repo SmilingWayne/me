@@ -225,11 +225,14 @@ nav:
       - 线性代数:
           - chapter1: Study/LinearAlgebra/Chapter1.md
           - chapter2: Study/LinearAlgebra/Chapter2.md
+          - chapter3: Study/LinearAlgebra/Chapter3.md
+          - chapter4: Study/LinearAlgebra/Chapter4.md
       - 运筹学:
           - Study/OR/index.md
           - Chapter1: Study/OR/Chapter1.md
           - Chapter2: Study/OR/Chapter2.md
           - Chapter3: Study/OR/Chapter3.md
+          - Chapter4: Study/OR/Chapter4.md
       - 小红书｜macOS字体推荐: Study/Markdown.md
       - 小红书｜幻方算法: Study/MagicSquare.md
       - 小红书｜Python包推荐:
