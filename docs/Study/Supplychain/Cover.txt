@@ -46,3 +46,36 @@
 
 备注：屏幕上下高900px，所以3*4的话宽度是675.一般截图是750的尺寸，要想着凑出1000的整数
 合并成大的图片后，preview设置成90%尺度观看即可。
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><b><font size = 50 face = "楷体_GB2312">供应链管理笔记</font></b></center>
+<br>
+<br>
+<br>
+<br>
+<center><h1><font size = 100 color = "" face = "楷体_GB2312">经济订货批量<br>(EOQ)模型</font></h1></center>
+<center><h2><font color = "DarkPink" >模型假设</font> ｜<font color = "Green" >结论推导</font> </h2><h2><font color = "Navy" >案例分析</font> ｜<font color = "Brown" >拓展延伸</font> </h2></center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

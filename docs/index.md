@@ -8,7 +8,7 @@
 ###  <font color = Crisma Face = "Palatino bold">About me</font>
 <p></p>
 
-- 🧑‍🎓 南京大学2019级本科生在读。一个时刻想要变得不普通的普通人。你可以叫我 "笑笑" .
+- 🧑‍🎓 南京大学2019级本科生在读。一个时刻想要变得不普通的普通人。你可以叫我 "笑笑" . 
 
 - 📖 喜欢阅读，有时观影，偶尔编程 :material-language-python: | :material-language-swift: | :material-language-java:，不事劳作。
 

@@ -272,8 +272,8 @@ repo_url: https://github.com/SmilingWayne/Readingxiaoxiao
 theme:
   locale: en
   name: material
-  #   custom_dir: overrides
-  # custom_dir: /docs/stylesheets/
+  custom_dir: docs/overrides
+  #   custom_dir: /docs/stylesheets/
   features:
     - content.tabs.link
     - content.code.copy
@@ -308,6 +308,12 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
+  - git-authors:
+      show_contribution: true
+      exclude:
+        - index.md
+      enabled: true
+
   - git-revision-date-localized:
       type: datetime
       custom_format: "%d. %B %Y"
