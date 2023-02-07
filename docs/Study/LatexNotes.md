@@ -144,3 +144,40 @@ $A\stackrel{r/c/}{\rightarrow}B$
 ```LaTeX
 $A\stackrel{r/c/}{\rightarrow}B$
 ```
+
+- 约束条件的大括号：
+
+$$s.t \hspace{4pt} \left\{ \begin{aligned} \sum \limits^{n}_{j=1} x_{ij} \leq a_i , i = 1,2,..,m \\ \sum \limits^{n}_{i=1} x_{ij} = b_j , j = 1,2,..,n     \end{aligned}  \right. $$
+
+``` LaTeX
+$$
+s.t. 
+\hspace{4pt} 
+\left\{ 
+\begin{aligned} \sum \limits^{n}_{j=1} x_{ij} \leq a_i , i = 1,2,..,m \\
+\sum \limits^{n}_{i=1} x_{ij} = b_j , j = 1,2,..,n 
+\end{aligned} 
+\right. 
+$$
+```
+
+- 🌊 波浪号 | 上波浪
+
+$$ \sim  \hspace{10pt}  \tilde{A} $$
+
+```LaTeX
+
+$$ \sim  \hspace{10pt}  \tilde{A} $$
+```
+
+- 偏导符号
+$$ \partial y $$
+```LaTeX
+$$ \partial y $$
+```
+
+- 范式符号
+$$ \Vert x - y \Vert $$
+```LaTeX
+$$ \Vert x - y \Vert $$
+```

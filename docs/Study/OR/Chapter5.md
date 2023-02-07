@@ -189,7 +189,7 @@ $$\mathop{\min} \limits_{x \in R^n} f(x) \tag{5.24}$$
 
 $$x = x_k + \alpha d_k, \alpha \geq 0$$
 
-满足 $\nabla f(x_k)^{T} d_k < 0$的方向称为下降方向。考虑：$ \Vert \nabla f(x_k) \Vert \cdot \Vert d_k \vert \cdot \cos \theta$，当 \theta = \pi 时，上述值最小，此时搜索方向为负梯度方向。
+满足 $\nabla f(x_k)^{T} d_k < 0$的方向称为下降方向。考虑：$ \Vert \nabla f(x_k) \Vert \cdot \Vert d_k \Vert \cdot \cos \theta$，当 \theta = \pi 时，上述值最小，此时搜索方向为负梯度方向。
 
 选定负梯度方向后，还需要确定步长 $\alpha_k$。可以选择：
 

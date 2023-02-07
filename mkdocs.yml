@@ -224,6 +224,7 @@ nav:
       - 事: ToDo/ToDo.md
   - 学习:
       - Study/index.md
+      - LaTeX-Cheatsheet: Study/LatexNotes.md
       - 线性代数:
           - chapter1: Study/LinearAlgebra/Chapter1.md
           - chapter2: Study/LinearAlgebra/Chapter2.md
@@ -236,11 +237,18 @@ nav:
           - Chapter3: Study/OR/Chapter3.md
           - Chapter4: Study/OR/Chapter4.md
           - Chapter5: Study/OR/Chapter5.md
+          - Chapter6: Study/OR/Chapter6.md
+          - Chapter7: Study/OR/Chapter7.md
       - 小红书｜macOS字体推荐: Study/Markdown.md
       - 小红书｜幻方算法: Study/MagicSquare.md
       - 小红书｜Python包推荐:
           - pipreqs: Study/PythonPackages/PIPREQS.md
           - matplotlib技巧: Study/PythonPackages/Matplotlib.md
+          - Itertools-小抄: Study/PythonPackages/PythonPieces1.md
+          - NamedTuple-小抄: Study/PythonPackages/PythonPieces2.md
+          - 对...的理解: Study/PythonPackages/PythonPieces3.md
+          - 带*的变量: Study/PythonPackages/PythonPieces4.md
+          - 集合操作: Study/PythonPackages/PythonPieces5.md
       - 小红书｜供应链管理:
           - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
           - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
@@ -257,10 +265,8 @@ nav:
           - 报童模型I：最优可获得性水平的确定(Chapter_13.2): Study/Supplychain/SupplyChain14.md
           - 报童模型II：沃尔玛案例分析(Chapter_13.2): Study/Supplychain/SupplyChain15.md
           - Excel进行供应链绩效模拟(Chapter_13.Appendix): Study/Supplychain/SupplyChain16.md
-
       - Swift: Study/Swift/CS193p1.md
       - Markdown语法1: Study/MarkdownSyntax1.md
-      - LaTex语法: Study/LatexNotes.md
       - 论文: Study/Undergraduate_essay.md
       - 我的2022: Study/My2022.md
 
@@ -272,7 +278,7 @@ repo_url: https://github.com/SmilingWayne/Readingxiaoxiao
 theme:
   locale: en
   name: material
-  custom_dir: docs/overrides
+  custom_dir: docs/overrides/
   #   custom_dir: /docs/stylesheets/
   features:
     - content.tabs.link
