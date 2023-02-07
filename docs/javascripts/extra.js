@@ -15,4 +15,4 @@ var wordcount = document.getElementById("hanzi");
 var expectedreadingtime = document.getElementById("exprdt")
 
 wordcount.innerHTML = HanZiCount
-expectedreadingtime.innerHTML = Math.max(Math.floor(HanZiCount / 250) ,1)+ "分钟"
+expectedreadingtime.innerHTML = Math.max(Math.floor(HanZiCount / 500) ,1)+ "分钟"
