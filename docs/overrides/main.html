@@ -1,13 +1,25 @@
 {% extends "base.html" %}
 
-{% block content %}
-  {{ super() }}
 
+{% block content %}
+  
+  
+  
+  <div class = "word-count">
+    字数：<span id = "hanzi"></span> ｜ 阅读时间：<span id = "exprdt"></span>
+    <p></p>
+    
+  </div>
+  
+  {{ super() }}
+  
   {% if git_page_authors %}
     <div class="md-source-date">
       <small>
           Authors: {{ git_page_authors | default('enable mkdocs-git-authors-plugin') }}
       </small>
     </div>
+    
   {% endif %}
+
 {% endblock %}
