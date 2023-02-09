@@ -268,3 +268,10 @@ $$ \mathop{\min} f(x) \\ s.t. \left\{ \begin{aligned} \hspace{4pt} g_i(x) \geq 0
 $$\left\{ \begin{aligned} \nabla f(x^{*}) - \sum \limits^{l}_{i = 1} \mu^{*}_{i} \nabla g_i(x^{*}) - \sum \limits^{m}_{j = 1} \lambda^{*}_j \nabla h_j(x^*) = 0 \\ u^{*}_{i}g_i(x^{*}) = 0, \hspace{4pt} i = 1,2,...,l  \\ u^{*}_{i} \geq 0, \hspace{4pt} i = 1,2,...,l \end{aligned} \right. \tag{5.42}$$
 
 - KT条件是确定某点为最优点的必要条件，只要是最优点，且此处起作用约束的梯度线性无关，就会满足这个条件。但是一般来说，它不是充分条件。特别地，对于凸规划问题，KT条件既是最优点的必要条件，同时也是充分条件。
+
+> KKT条件（Karush-Kuhn-Tucker conditions）是最优性理论中的一个概念。它是描述有约束最优性问题中最优解的一组充分必要条件。KKT条件是线性规划和非线性规划的一般形式，常用于数学优化、计算机科学、经济学等领域。
+> 
+> KKT条件的意义在于，它可以确保满足约束条件的同时找到最优解。在实际应用中，KKT条件可以用于验证最优解的正确性，也可以用于求解最优性问题的算法。
+
+
+

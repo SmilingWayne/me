@@ -60,6 +60,7 @@ nav:
           - 福柯(牛津通识读本): Philosophy/Facult.md
           - 实用主义: Philosophy/Pragmatism.md
           - 亚里士多德的世界(牛津通识读本): Philosophy/World_of_aristotle.md
+          - 如何阅读一本书: Philosophy/How_to_read.md
 
   - 文学:
       - Literature/index.md
@@ -117,6 +118,7 @@ nav:
           - Literature/Essay/index.md
           - 小于一: Literature/Essay/Less_than_one.md
           - 二手时间: Literature/Essay/Second_hand_time.md
+          - 冲绳札记: Literature/Essay/Chongshen.md
           - 记忆记忆: Literature/Essay/Remember_memory.md
           - 火的记忆: Literature/Essay/Memory_fire.md
           - 人间食粮: Literature/Essay/Life_food.md
@@ -153,6 +155,7 @@ nav:
           - 野棕榈: Literature/Novel/Wild_palm.md
           - 双城记: Literature/Novel/Stories_of_two_cities.md
           - 罗生门: Literature/Novel/Rashomon.md
+          - 同情者: Literature/Novel/Sympathatic.md
           - 华氏451: Literature/Novel/Fahrenheit_451.md
           - 《1984》: Literature/Novel/1984.md
           - 撒马尔罕: Literature/Novel/Samarkhan.md
@@ -265,6 +268,7 @@ nav:
           - 报童模型I：最优可获得性水平的确定(Chapter_13.2): Study/Supplychain/SupplyChain14.md
           - 报童模型II：沃尔玛案例分析(Chapter_13.2): Study/Supplychain/SupplyChain15.md
           - Excel进行供应链绩效模拟(Chapter_13.Appendix): Study/Supplychain/SupplyChain16.md
+          - 提高供应链盈利能力的杠杆(Chapter_13.3): Study/Supplychain/SupplyChain17.md
       - Swift: Study/Swift/CS193p1.md
       - Markdown语法1: Study/MarkdownSyntax1.md
       - 论文: Study/Undergraduate_essay.md
