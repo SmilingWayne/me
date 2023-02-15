@@ -4,62 +4,27 @@
 ## 随机变量函数的数学期望公式
 
 
-- Y = g(X) 离散型
+- $Y = g(X)$ 离散型
 - 连续型
 
 ## 离散型：
 
-P \{ X = x_k \} = p_k, k = 1,2,..
+$P \{ X = x_k \} = p_k, k = 1,2,..$
 
-如果级数 \sum \limits^{\infty}_{k= 1} x_k p_k 绝对收敛，那么称呼 \sum \limits^{\infty}_{k= 1} x_k p_k 为随机变量的数学期望，记作 E(X). 如果发散，那么X的数学期望不存在。
-
-### 0-1分布 
-- E(X) = np
-
-
-### binominal
-
-- E(X) = np
-
-### Poisson
-
-- $X \sim \pi(\lambda)$
-
-- $E(X) = \lambda$
-
-### 几何分布
-- p_k = q^{k-1} p, k = 1,2,...,第一次成功在k次实验的概率 
-- E(X) = \dfrac{1}{p}
-
+如果级数 $\sum \limits^{\infty}_{k= 1} x_k p_k$ 绝对收敛，那么称呼 $\sum \limits^{\infty}_{k= 1} x_k p_k$ 为随机变量的数学期望，记作 $E(X)$. 如果发散，那么$X$的数学期望不存在。
 
 ## 连续型
 
-r.v. X 概率密度函数：f(x)，如果积分 $\int^{\infty}_{-\infty} xf(x)dx 绝对收敛，就把它叫做r.v.X的数学期望（均值）$
-
-### 均匀分布 
-
-$$f(x) = \left\{ \begin{aligned} \dfrac{1}{b-a} , a \leq x \leq b \\ 0, otherwise   \end{aligned} \right. $$
-
-E(x) = \dfrac{a+b}{2}
-
-### 指数分布
-$$f(x) = \left{ \begin{aligned} \lambda e^{-\lambda x} , x \geq 0 \\ 0, x < 0 \end{aligned}$$
-
-- E(x) = \dfrac{1}{\lambda}
-
-### 正态分布
-
-- X \sim N(\mu, \sigma^2)
-- E(X) = \mu
+r.v. X 概率密度函数：f(x)，如果积分 $\int^{\infty}_{-\infty} xf(x)dx$ 绝对收敛，就把它叫做r.v.X的数学期望（均值）
 
 
 ## 均值的性质
 
-- E(c) = c ， c是常数
-- E(cX) = cE(X)， c是常数
-- E(X + Y) = E(X) + E(Y)
-- 如果X，Y相互独立，那么 E(XY) = E(X)E(Y)
-- | E(XY) |^{2} \leq E(X^2)E(Y^2) 
+- $E(c) = c$ ， $c$是常数
+- $E(cX) = cE(X)$， $c$是常数
+- $E(X + Y) = E(X) + E(Y)$
+- 如果$X，Y$相互独立，那么 $E(XY) = E(X)E(Y)$
+- $| E(XY) |^{2} \leq E(X^2)E(Y^2)$ 
 
 ##  4.2 条件期望
 
@@ -71,8 +36,36 @@ $$f(x) = \left{ \begin{aligned} \lambda e^{-\lambda x} , x \geq 0 \\ 0, x < 0 \e
 ## 4.3 方差
 
 - 描述了r.v对数学期望的离散程度；
+- 实际上就是随机变量的函数$[X - E(X)]^2$的数学期望。
 
-- D(X) = var(X) = E[X - E(X)]^2，开根号就是标准差；
-- Discrete: D(X) = \sum \limits_{k} (x_k - E(X))^2 p_k
-- Continuous: D(X) = \int^{+\infty}_{-\infty} [ x - E(X)]^2 f(x) d(x)
+- $D(X) = var(X) = E[X - E(X)]^2$，开根号就是标准差；
+- Discrete: $D(X) = \sum \limits_{k} (x_k - E(X))^2 p_k$
+- Continuous: $D(X) = \int^{+\infty}_{-\infty} [ x - E(X)]^2 f(x) d(x)$
 - 计算公式$D(X) = E(X^2) - [E(X)]^2$
+
+
+## 4.4 协方差
+- 如何理解协方差：
+    - 一个二维随机变量(X,Y)，把两个随机变量都各自减去自己的期望，然后再相乘，此时获得的随机变量的均值就是这个二维随机变量的协方差；
+> $Cov(X,X) = D(X)$
+> 
+> $Cov(X,Y) = Cov(Y,X)$
+>
+> $Cov(aX, bY) = abCov(X,Y)$
+>
+> $Cov(X_1 + X_2, Y) = Cov(X_1, Y) + Cov(X_2, Y)$
+
+### 皮尔逊相关系数：
+
+$$\rho_{XY} = \dfrac{Cov(X,Y)}{\sqrt{D(X)} \sqrt{D(Y)} }$$
+> $  \hspace{6pt}(X-E(X))(Y-E(Y))$ 
+> 
+> $= E{ XY - XE(Y) - Y(E(X)) + E(X)E(Y) }$ 
+> $= E(XY) - E(X)E(Y)$ 
+> 
+- 令 均方误差$e =  E(( Y - (a + bX))^2)$衡量用X表示Y的好坏程度，对 $e$ 针对$a, b$ 求偏导，分别令其为0；
+    - 均方误差是$| \rho_{XY} |$ 的严格单调减少函数，当$| \rho_{XY} |$较大，此时$X，Y$之间线性相关的程度较好，当为0时，**不相关。**
+    - 或者，如果$E(XY) = E(X)E(Y)$，就说明是不线性相关的。
+- 如何理解协方差矩阵？
+    - 从k阶矩、中心矩、混合矩的概念引入;
+    - 
