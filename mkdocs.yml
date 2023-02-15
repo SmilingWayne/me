@@ -334,25 +334,25 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-# plugins:
-#   - git-authors:
-#       show_contribution: true
-#       exclude:
-#         - index.md
-#       enabled: true
+plugins:
+  - git-authors:
+      show_contribution: true
+      exclude:
+        - index.md
+      enabled: true
 
-#   - git-revision-date-localized:
-#       type: datetime
-#       custom_format: "%d. %B %Y"
-#       timezone: Asia/Shanghai
-#       locale: en
-#       fallback_to_build_date: false
-#       enable_creation_date: true
-#       exclude:
-#         - index.md
-#       enabled: true
-#   - search:
-#       lang: ja
+  - git-revision-date-localized:
+      type: datetime
+      custom_format: "%d. %B %Y"
+      timezone: Asia/Shanghai
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
+      exclude:
+        - index.md
+      enabled: true
+  - search:
+      lang: ja
 
 markdown_extensions:
   - admonition
