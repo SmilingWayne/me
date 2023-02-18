@@ -59,13 +59,12 @@ $$ \nabla f(x^{*}) = \{ \dfrac{\partial f(x^{*})}{\partial x_1}, \dfrac{f(x^{*})
 
 要从驻点中分出那些是局部极小，还需要检验二阶导数的信息：
 
-$$ \nabla^{2}f(x^{*}) = 
+$$\nabla^{2}f(x^{*}) = 
     \begin{pmatrix}
      \dfrac{\partial^{2}f(x^*)}{\partial x^{2}_{1}} &  \dfrac{\partial^{2}f(x^*)}{\partial x_{1} \partial x_{2}}&\cdots & \dfrac{\partial^{2}f(x^*)}{\partial x_{1} \partial x_{n}} \\ 
       \vdots & \vdots &  & \vdots \\ 
       \dfrac{\partial^{2}f(x^*)}{\partial x_{n} \partial x_{1}} &  \dfrac{\partial^{2}f(x^*)}{\partial x_{n} \partial x_{2}}&\cdots & \dfrac{\partial^{2}f(x^*)}{\partial x^{2}_{n}}   
-    \end{pmatrix}
-    $$
+    \end{pmatrix}$$
 
 - 上是$f$在$x^{*}$处的二阶偏导数，该矩阵被称为 Hessian 矩阵。
 
@@ -93,24 +92,24 @@ $$f(\alpha x + (1-\alpha) y) < \alpha f(x) + (1-\alpha) f(y)$$
 
 ### 5.3.2 凸函数的性质
 
-- **性质5.1** ： 设f是定义在凸集 \Omega 上的凸函数，x_1, x_2,..,x_m 是 \Omega 中的m个点，数 \alpha_1, \alpha_2,..,\alpha_m \geq 0，且 \sum \limits^{m}_{i = 1} a_i = 1，则：
+- **性质5.1** ： 设$f$是定义在凸集 $\Omega$ 上的凸函数，$x_1, x_2,..,x_m$ 是 $\Omega$ 中的$m$个点，数 $\alpha_1, \alpha_2,..,\alpha_m \geq 0$，且 $\sum \limits^{m}_{i = 1} a_i = 1$，则：
   
 $$f(a_1 x_1 + a_2 x_2 + ,..., + a_m x_m) \leq a_1 f(x_1) + a_2 f(x_2) + ,..., +a_m f(x_m)$$
 
 - **性质5.2** : 设$f$是定义在凸集 $\Omega$ 上的凸函数，那么对于任意实数 $\beta \geq 0$，函数 $\beta f(x)$也是定义在 $\Omega$ 上的凸函数。
 
 - **性质5.3** : 设 $f_1, f_2$ 是定义在凸集 $\Omega$ 上的两个凸函数，那么$f_1 + f_2$ 仍然是定义在 $\Omega$ 上的凸函数。
-- **性质5.4** : 设 $f$是定义在凸集 $\Omega$ 上的凸函数，那么对任意实数 c，集合 $\Gamma_c = \{ x | f(x) \leq c, x \in \Omega \}$  是凸集 .
+- **性质5.4** : 设 $f$是定义在凸集 $\Omega$ 上的凸函数，那么对任意实数 $c$，集合 $\Gamma_c = \{ x | f(x) \leq c, x \in \Omega \}$  是凸集 .
 
 ### 5.3.3 凸函数的判定条件
 
-- 性质 5.5 设f是在开凸集 \Omega 上是可微函数，则f在 \Omega 上是凸函数的充分必要条件是对于任意 x_1, x_2 \in \Omega，有：
+- 性质 5.5 设$f$是在开凸集 $\Omega$ 上是可微函数，则$f$在 $\Omega$ 上是凸函数的充分必要条件是对于任意 $x_1, x_2 \in \Omega$，有：
 
 $$f(x_2) \geq f(x_1) + \nabla f(x_1)^{T}(x_2 - x_1)$$
 
 如果上式是严格不等式，那么就是严格凸函数的充要条件。
 
-- 性质 5.6 设f在开凸集 \Omega 上是二阶可微函数，那么f在 \Omega 上是凸函数的充要条件是对于任意 x \in \Omega， Hessian 矩阵 H(x) = \nabla^2 f(x) 是半正定的。如果对于任意 x \in \Omega，H(x) 是正定的，那么f在 \Omega上是严格凸函数。
+- 性质 5.6 设$f$在开凸集 $\Omega$ 上是二阶可微函数，那么$f$在 $\Omega$ 上是凸函数的充要条件是对于任意 $x \in \Omega$， Hessian 矩阵 $H(x) = \nabla^2 f(x)$ 是半正定的。如果对于任意 $x \in \Omega$，$H(x)$ 是正定的，那么$f$在 $\Omega$上是严格凸函数。
 
 ### 5.3.4 凸规划
 
@@ -167,14 +166,14 @@ $$f(x_{k+1}) = f(x_k +  \alpha_k d_k) < f(x_k)$$
 
 ### 5.5.2 牛顿法
 
-如果单变量函数在$x^*$ 取到局部极值，并且在$x^*$ 可微，那么函数在该点的一阶导数为0。为了求解f^{'}(x) = 0，需要用到迭代方法：牛顿法（切线法），在一个迭代点附近用切线代替曲线，用切线方程的零点作为新的迭代点，逐步逼近最优。
+如果单变量函数在$x^*$ 取到局部极值，并且在$x^*$ 可微，那么函数在该点的一阶导数为0。为了求解$f^{'}(x) = 0$，需要用到迭代方法：牛顿法（切线法），在一个迭代点附近用切线代替曲线，用切线方程的零点作为新的迭代点，逐步逼近最优。
 
 $$x_{k + 1} = x_k + \dfrac{f^{'}(x_k)}{f^{''}(x_k)}$$
 
 上式即为牛顿迭代公式。
 
 !!! Tip
-    牛顿法需要计算目标函数二阶导数，如果迭代序列收敛，则速度较快，但是其收敛性依赖于初始值x_0的选取，如果偏离真值较远，那么牛顿法可能发散。
+    牛顿法需要计算目标函数二阶导数，如果迭代序列收敛，则速度较快，但是其收敛性依赖于初始值$x_0$的选取，如果偏离真值较远，那么牛顿法可能发散。
 ### 5.5.3 函数逼近法
 
 ## 5.6 无约束极值问题的求解算法
@@ -185,11 +184,11 @@ $$\mathop{\min} \limits_{x \in R^n} f(x) \tag{5.24}$$
 
 ### 5.6.1 梯度法
 
-假设5.24中目标函数$f$在$R^n$上一阶连续可微，存在极小点$x^{*}$，用x_k 表示极小点的第k次近似，为了找到k+1次的迭代点，需要在x_k 沿着方向d_k做射线
+假设5.24中目标函数$f$在$R^n$上一阶连续可微，存在极小点$x^{*}$，用$x_k$ 表示极小点的第$k$次近似，为了找到$k+1$次的迭代点，需要在$x_k$ 沿着方向$d_k$做射线
 
 $$x = x_k + \alpha d_k, \alpha \geq 0$$
 
-满足 $\nabla f(x_k)^{T} d_k < 0$的方向称为下降方向。考虑：$ \Vert \nabla f(x_k) \Vert \cdot \Vert d_k \Vert \cdot \cos \theta$，当 \theta = \pi 时，上述值最小，此时搜索方向为负梯度方向。
+满足 $\nabla f(x_k)^{T} d_k < 0$的方向称为下降方向。考虑：$ \Vert \nabla f(x_k) \Vert \cdot \Vert d_k \Vert \cdot \cos \theta$，当 $\theta = \pi$ 时，上述值最小，此时搜索方向为负梯度方向。
 
 选定负梯度方向后，还需要确定步长 $\alpha_k$。可以选择：
 
@@ -212,7 +211,7 @@ $$\mathop{\min} \limits_{\alpha_k \geq 0} f(x_k + \alpha_k d_k)$$
 
 ### 5.6.2 牛顿法
 
-假定函数f(x)有二阶连续偏导数，在给定点x_k 附近取f(x) 的二阶Taylor多项式逼近。
+假定函数$f(x)$有二阶连续偏导数，在给定点$x_k$附近取 $f(x)$ 的二阶Taylor多项式逼近。
 
 - 步骤
     1. 给定初始点$x_0$和误差容限 $\varepsilon > 0$;
@@ -227,14 +226,14 @@ $$\mathop{\min} \limits_{\alpha_k \geq 0} f(x_k + \alpha_k d_k)$$
 
 - 有效约束
 - 有效约束下标记集
-- **正则点**：对于约束优化问题(5.4)，如果在可行点\overline{x}处，各个有效约束的梯度向量，也就是 $ \{  \nabla g_i (\overline{x}), i \in A(\overline{x}) \}$线性无关，就称\overline{x}是约束条件的一个**正则点**。
+- **正则点**：对于约束优化问题(5.4)，如果在可行点$\overline{x}$处，各个有效约束的梯度向量，也就是 $\{  \nabla g_i (\overline{x}), i \in A(\overline{x}) \}$线性无关，就称$\overline{x}$是约束条件的一个**正则点**。
   
 ### 5.7.2 可行方向和下降方向
 
 - 考虑非线性规划问题：
 $$\mathop{\min} f(x) \\  s.t. \hspace{4pt}  g_i(x) \geq 0, i = 1,2,...,l$$
 
-- **可行方向**：如果任取一个x_0，对方向d \in R^n，存在 \alpha_0 > 0，当 0 \leq \alpha \alpha_0，下式成立：$g_i(x_0 + \alpha d) \geq 0, i = 1,2,...,l$，则称d为 x_0的**可行方向**。
+- **可行方向**：如果任取一个$x_0$，对方向$d \in R^n$，存在 $\alpha_0 > 0$，当 $0 \leq \alpha \alpha_0$，下式成立：$g_i(x_0 + \alpha d) \geq 0, i = 1,2,...,l$，则称$d$为 $x_0$的**可行方向**。
 
 如果$x_0$的某一方向既是该点的可行方向，又是该点的下降方向，那么称它是这个点的可行下降方向，有：
 

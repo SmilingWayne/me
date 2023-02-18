@@ -105,79 +105,97 @@
 
 ## 杂七杂八
 
-- 大括号：
-$max \left\{ \frac{pV}{nrT} \right\}$
+=== "大括号"
 
-``` LaTeX 
- $max \left\{ \frac{pV}{nrT} \right\}$
-```
+    $$\mathop{\max} \left\{ \frac{pV}{nrT} \right\}$$
 
-- 在min/max的正下方打出下标：
+    ``` LaTeX 
+    $$\mathop{\max} \left\{ \frac{pV}{nrT} \right\}$$
+    ```
+
+=== "在min/max的正下方打出下标"
   
-$\mathop{\arg\min}\limits_{\theta}$ 以及 ：$\mathop{\min}\limits_{\theta}$
+    $$\mathop{\arg\min}\limits_{\theta} \hspace{8pt} \mathop{\min}\limits_{\theta}$$
 
-``` LaTeX
+    ``` LaTeX
 
-$\mathop{\arg\min}\limits_{\theta}$
+    $\mathop{\arg\min}\limits_{\theta}$
 
-$\mathop{\min}\limits_{\theta}$
+    $\mathop{\min}\limits_{\theta}$
 
-```
+    ```
 
-- 累乘符号：
-  $\prod \limits_{i=0}^n$
+=== "累乘符号"
+    $$\prod \limits_{i=0}^n$$
 
-``` LaTeX
-$\prod \limits_{i=0}^n$
-```
-- 在求和符号正上方和正下方加字母:
+    ``` LaTeX
+    $\prod \limits_{i=0}^n$
+    ```
+=== "在求和符号正上方和正下方加字母"
   
-  $\sum \limits_{i=1}^{n}$
+    $$\sum \limits_{i=1}^{n}$$
 
-```LaTeX
-$\sum \limits_{i=1}^{n}$
-```
-- 在箭头正上方和正下方加字符：
+    ```LaTeX
+    $\sum \limits_{i=1}^{n}$
+    ```
 
-$A\stackrel{r/c/}{\rightarrow}B$
+------
 
-```LaTeX
-$A\stackrel{r/c/}{\rightarrow}B$
-```
+=== "在箭头正上方和正下方加字符"
 
-- 约束条件的大括号：
+    $$A\stackrel{r/c/}{\rightarrow}B$$
 
-$$s.t \hspace{4pt} \left\{ \begin{aligned} \sum \limits^{n}_{j=1} x_{ij} \leq a_i , i = 1,2,..,m \\ \sum \limits^{n}_{i=1} x_{ij} = b_j , j = 1,2,..,n     \end{aligned}  \right. $$
+    ```LaTeX
+    $A\stackrel{r/c/}{\rightarrow}B$
+    ```
 
-``` LaTeX
-$$
-s.t. 
-\hspace{4pt} 
-\left\{ 
-\begin{aligned} \sum \limits^{n}_{j=1} x_{ij} \leq a_i , i = 1,2,..,m \\
-\sum \limits^{n}_{i=1} x_{ij} = b_j , j = 1,2,..,n 
-\end{aligned} 
-\right. 
-$$
-```
+=== "约束条件的大括号"
 
-- 🌊 波浪号 | 上波浪
+    $$s.t \hspace{4pt} \left\{ \begin{aligned} \sum \limits^{n}_{j=1} x_{ij} \leq a_i , i = 1,2,..,m \\ \sum \limits^{n}_{i=1} x_{ij} = b_j , j = 1,2,..,n     \end{aligned}  \right. $$
 
-$$ \sim  \hspace{10pt}  \tilde{A} $$
+    ``` LaTeX
+    $$
+    s.t. 
+    \hspace{4pt} 
+    \left\{ 
+    \begin{aligned} \sum \limits^{n}_{j=1} x_{ij} \leq a_i , i = 1,2,..,m \\
+    \sum \limits^{n}_{i=1} x_{ij} = b_j , j = 1,2,..,n 
+    \end{aligned} 
+    \right. 
+    $$
+    ```
 
-```LaTeX
+=== "🌊 波浪号 | 上波浪"
 
-$$ \sim  \hspace{10pt}  \tilde{A} $$
-```
+    $$\sim  \hspace{10pt}  \tilde{A}$$
 
-- 偏导符号
-$$ \partial y $$
-```LaTeX
-$$ \partial y $$
-```
+    ```LaTeX
 
-- 范式符号
-$$ \Vert x - y \Vert $$
-```LaTeX
-$$ \Vert x - y \Vert $$
-```
+    $$ \sim  \hspace{10pt}  \tilde{A} $$
+    ```
+
+-----
+
+=== "偏导符号"
+
+    $$\partial y$$
+    
+    ```LaTeX
+    $$ \partial y $$
+    ```
+
+=== "积分符号"
+
+    $$\int \limits^{a}_{b}$$
+
+    ```LaTeX
+    $$\int \limits^{a}_{b}$$
+    ```
+
+=== "范式符号"
+
+    $$\Vert x - y \Vert$$
+
+    ```LaTeX
+    $$ \Vert x - y \Vert $$
+    ```
