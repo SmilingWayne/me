@@ -10,6 +10,7 @@ nav:
           - 基础知识: Philosophy/basic.md
           - 马克思主义宗教观研究: Philosophy/Marxism_religion.md
           - 苏联解体与颜色革命: Philosophy/Color_revolution.md
+          - 先知三部曲: Philosophy/Farseer.md
 
       - 宗教哲学:
           - 基督教: Philosophy/Christian.md
@@ -161,6 +162,7 @@ nav:
           - 撒马尔罕: Literature/Novel/Samarkhan.md
           - 生死疲劳: Literature/Novel/Forever_fatigue.md
           - 五号屠场: Literature/Novel/Slaughterhouse_five.md
+          - 平凡的世界: Literature/Novel/Common_world.md
           - 沉默的病人: Literature/Novel/Silent_patient.md
           - 三个火枪手: Literature/Novel/Three_riflers.md
           - 雪落香杉树: Literature/Novel/Snow_falls.md
@@ -169,6 +171,7 @@ nav:
           - 格列佛游记: Literature/Novel/Gulliver.md
           - 失明症漫记: Literature/Novel/Ensaio_sobre_a_cegueira.md
           - 瘟疫年纪事: Literature/Novel/Pandemic_era.md
+          - 许三观卖血记: Literature/Novel/Xu_san_guan.md
           - 卡拉马佐夫兄弟: Literature/Novel/Kara_Mazov_brothers.md
           - 东方快车谋杀案: Literature/Novel/Oriental_express.md
           - 尼罗河上的惨案: Literature/Novel/Tragedy_niro.md
@@ -190,6 +193,7 @@ nav:
       - 🇸🇦阿拉伯笔记: History/Arabians.md
       - 荒诞医学史: History/Ridiculous_medics.md
       - 罗马帝国简史: History/Roman_empire_brief_history.md
+      - 西印度毁灭述略: History/Destroy_western_india.md
       - 阿拉伯伊斯兰文化史: History/Arabian_islamic_history.md
       - 🇫🇷法国资产阶级史(上): History/Bourgeoisie.md
       - 🇧🇪利奥波德国王的鬼魂: History/King_leopolds_ghost.md
@@ -228,25 +232,31 @@ nav:
   - 学习:
       - Study/index.md
       - LaTeX-Cheatsheet: Study/LatexNotes.md
+      - 微积分:
+          - Chapter1: Study/Calculus/Math2.md
       - 线性代数:
           - chapter1: Study/LinearAlgebra/Chapter1.md
           - chapter2: Study/LinearAlgebra/Chapter2.md
           - chapter3: Study/LinearAlgebra/Chapter3.md
           - chapter4: Study/LinearAlgebra/Chapter4.md
+          - chapter5: Study/LinearAlgebra/Chapter5.md
       - 运筹学:
           - Study/OR/index.md
-          - Chapter1: Study/OR/Chapter1.md
-          - Chapter2: Study/OR/Chapter2.md
-          - Chapter3: Study/OR/Chapter3.md
-          - Chapter4: Study/OR/Chapter4.md
-          - Chapter5: Study/OR/Chapter5.md
-          - Chapter6: Study/OR/Chapter6.md
+          - 线性规划、单纯形法（群魔乱舞版）: Study/OR/Chapter1.md
+          - 对偶理论及对偶单纯形法: Study/OR/Chapter2.md
+          - 线性规划的运输问题拓展: Study/OR/Chapter3.md
+          - 整数规划、求解算法和运用: Study/OR/Chapter4.md
+          - 非线性规划、凸规划理论: Study/OR/Chapter5.md
+          - 图论算法及其求解: Study/OR/Chapter6.md
           - Chapter7: Study/OR/Chapter7.md
+          - 排队论: Study/OR/Chapyer9.md
       - 概率论:
-          - 基础知识: Study/Statistics/Basics.md
+          - 基础知识与贝叶斯理论: Study/Statistics/Basics.md
           - 随机变量: Study/Statistics/Random_Variables.md
-          - 数字特征: Study/Statistics/Number_characters.md
+          - 随机变量的数字特征: Study/Statistics/Number_characters.md
           - 大数定律和中心极限定理: Study/Statistics/Big_number.md
+          - 参数估计: Study/Statistics/Parameter_estimation.md
+          - 多维随机变量: Study/Statistics/Multi_dimensional_r_v.md
       - 小红书｜macOS字体推荐: Study/Markdown.md
       - 小红书｜幻方算法: Study/MagicSquare.md
       - 小红书｜Python包推荐:
@@ -275,6 +285,7 @@ nav:
           - Excel进行供应链绩效模拟(Chapter_13.Appendix): Study/Supplychain/SupplyChain16.md
           - 提高供应链盈利能力的杠杆(Chapter_13.3): Study/Supplychain/SupplyChain17.md
           - 供应链中的运输(Chapter_14_1): Study/Supplychain/SupplyChain18.md
+          - 案例: Study/Supplychain/SupplyChain2.md
       - Swift: Study/Swift/CS193p1.md
       - Markdown语法1: Study/MarkdownSyntax1.md
       - 英语小总结: Study/English.md
