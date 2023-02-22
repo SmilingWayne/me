@@ -247,9 +247,11 @@ nav:
           - 线性规划的运输问题拓展: Study/OR/Chapter3.md
           - 整数规划、求解算法和运用: Study/OR/Chapter4.md
           - 非线性规划、凸规划理论: Study/OR/Chapter5.md
-          - 图论算法及其求解: Study/OR/Chapter6.md
-          - Chapter7: Study/OR/Chapter7.md
-          - 排队论: Study/OR/Chapyer9.md
+          - 动态规划及几个典型题: Study/OR/Chapter6.md
+          - 图论算法及其求解: Study/OR/Chapter7.md
+          - 排队论: Study/OR/Chapter9.md
+          - 仓储论: Study/OR/Chapter10.md
+          - 博弈论: Study/OR/Chapter11.md
       - 概率论:
           - 基础知识与贝叶斯理论: Study/Statistics/Basics.md
           - 随机变量: Study/Statistics/Random_Variables.md
@@ -259,8 +261,9 @@ nav:
           - 多维随机变量: Study/Statistics/Multi_dimensional_r_v.md
       - 小红书｜macOS字体推荐: Study/Markdown.md
       - 小红书｜幻方算法: Study/MagicSquare.md
-      - 小红书｜Python包推荐:
+      - 小红书｜Python藏宝箱:
           - pipreqs: Study/PythonPackages/PIPREQS.md
+          - 微信读书可视化: Study/PythonPackages/PythonPieces6.md
           - matplotlib技巧: Study/PythonPackages/Matplotlib.md
           - Itertools-小抄: Study/PythonPackages/PythonPieces1.md
           - NamedTuple-小抄: Study/PythonPackages/PythonPieces2.md
@@ -289,6 +292,7 @@ nav:
       - Swift: Study/Swift/CS193p1.md
       - Markdown语法1: Study/MarkdownSyntax1.md
       - 英语小总结: Study/English.md
+      - 制造与服务系统分析: Study/AMASS.md
       - 论文: Study/Undergraduate_essay.md
       - 我的碎碎念:
           - 荐文: Study/Talks/Articles_recomend.md
