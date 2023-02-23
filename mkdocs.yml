@@ -74,6 +74,7 @@ nav:
               - 是你在歌唱？是我在遐想: Poems/Yesenin.md
               - 穿裤子的云: Poems/Mayakovsky.md
               - 卢济塔尼亚人之歌: Poems/Luzitania.md
+              - 罗兰之歌: Poems/Song_of_Lauren.md
               - 生命与希望之歌: Poems/Poems_de_life_hope.md
               - 伊利亚特: Poems/Illiad.md
               - 德国，一个冬天的童话: Poems/German_winter_fairytale.md
@@ -104,6 +105,7 @@ nav:
               - 牡丹亭: Plays/Mu_dan_ting.md
               - 桃花扇: Plays/Tao_hua_shan.md
               - 铸剑·哈姆雷特: Plays/Swords_hamlet.md
+              - 圣女贞德: Plays/Jean_de_arc.md
               - 🇬🇧罗密欧与朱丽叶: Plays/Romeo_juliet.md
               - 长明: Plays/Long_daylight.md
           - 影视:
@@ -226,9 +228,56 @@ nav:
       - 我的用书: yan/yanBooks.md
       - 闲聊: yan/yanTalks.md
   - 想/在做的事:
+      - ToDo/index.md
       - 书: ToDo/ToRead.md
       - 术: ToDo/ToCode.md
       - 事: ToDo/ToDo.md
+      - LeetCode:
+          - 2022/4/19: ToDo/LeetCode/2022.4.19 Leetcode 日常刷题.md
+          - 2022/4/27: ToDo/LeetCode/2022.4.27 Leetcode 日常刷题.md
+          - 2022/3/24: ToDo/LeetCode/2022.3.24 Leetcode 日常练习.md
+          - 2022/4/12: ToDo/LeetCode/2022.4.12 Leetcode 日常刷题.md
+          - 2022/5/08: ToDo/LeetCode/2022.5.08 Leetcode 每日一题.md
+          - 2022/5/29: ToDo/LeetCode/2022.5.29 Leetcode 每日一题.md
+          - 2022/4/09: ToDo/LeetCode/2022.4.09 Leetcode 日常刷题.md
+          - 2022/3/30: ToDo/LeetCode/2022.3.30 Leetcode日常练习.md
+          - 2022/4/28: ToDo/LeetCode/2022.4.28 Leetcode 日常刷题.md
+          - 2022/4/02: ToDo/LeetCode/2022.4.02 Leetcode 日常刷题.md
+          - 2022/4/23: ToDo/LeetCode/2022.4.23 Leetcode 日常刷题.md
+          - 2022/4/06: ToDo/LeetCode/2022.4.06 日常刷题.md
+          - 2022/5/09: ToDo/LeetCode/2022.5.09 Leetcode 每日一题.md
+          - 2022/4/29: ToDo/LeetCode/2022.4.29 Leetcode 日常刷题.md
+          - 2022/3/26: ToDo/LeetCode/2022.3.26 Leetcode刷题 - 并查集.md
+          - 2022/3/13: ToDo/LeetCode/2022-3-13LeetCode 刷题.md
+          - 2022/4/08: ToDo/LeetCode/2022.4.08 Leetcode 日常刷题.md
+          - 2022/3/25: ToDo/LeetCode/2022.3.25 Leetcode.md
+          - 2022/4/19: ToDo/LeetCode/2022.4.19 Leetcode 练习与模板.md
+          - 2022/3/26: ToDo/LeetCode/2022.3.26 Leetcode 日常刷题.md
+          - 2022/4/14: ToDo/LeetCode/2022.4.14 Leetcode日常刷题 bitset.md
+          - 2022/3/12: ToDo/LeetCode/2022-3-12 Leetcode每日一题.md
+          - 2022/4/16: ToDo/LeetCode/2022.4.16 Leetcode日常刷题.md
+          - 2022/4/10: ToDo/LeetCode/2022.4.10 Leetcode 日常刷题.md
+          - 2022/3/27: ToDo/LeetCode/2022.3.27 Leetcode 刷题.md
+          - 2022/5/02: ToDo/LeetCode/2022.5.2 Leetcode日常练习.md
+          - 2022/4/01: ToDo/LeetCode/2022.4.01 Leetcode 每日一题.md
+          - 2022/5/01: ToDo/LeetCode/2022.5.01 Leetcode 每日一题.md
+          - 2022/4/25: ToDo/LeetCode/2022.4.25 Leetcode 日常刷题.md
+          - 2022/4/21: ToDo/LeetCode/2022.4.21 Leetcode 日常刷题.md
+          - 2022/4/07: ToDo/LeetCode/2022.4.07 Leetcode日常刷题.md
+          - 2022/3/11: ToDo/LeetCode/2022-3-11Leetcode每日一题.md
+          - 2022/3/31: ToDo/LeetCode/2022.3.31 Leetcode 日常刷题.md
+          - 2022/4/11: ToDo/LeetCode/2022.4.11 Leetcode 日常刷题.md
+          - 2022/3/13: ToDo/LeetCode/2022.3.13 Leetcode练习.md
+          - 2022/4/24: ToDo/LeetCode/2022.4.24 C++ 练习.md
+          - 2022/4/26: ToDo/LeetCode/2022.4.26 Leetcode 刷题.md
+          - 2022/4/17: ToDo/LeetCode/2022.4.17 Leetcode日常刷题.md
+          - 2022/5/04: ToDo/LeetCode/2022.5.04 Leetcode 每日一题.md
+          - 2022/3/16: ToDo/LeetCode/2022.3.16 LeetCode日常练习.md
+          - 2022/3/25: ToDo/LeetCode/2022.3.25 Leetcode 刷题总结.md
+          - 2022/3/26: ToDo/LeetCode/2022.3.26 Leetcode 复习.md
+          - 2022/3/14: ToDo/LeetCode/2022.3.14 LeetCode 每日一题.md
+          - 2022/3/28: ToDo/LeetCode/2022.3.28 Leetcode刷题.md
+          - 2022/4/15: ToDo/LeetCode/2022.4.15 Leetcode 日常刷题.md
   - 学习:
       - Study/index.md
       - LaTeX-Cheatsheet: Study/LatexNotes.md
@@ -288,11 +337,13 @@ nav:
           - Excel进行供应链绩效模拟(Chapter_13.Appendix): Study/Supplychain/SupplyChain16.md
           - 提高供应链盈利能力的杠杆(Chapter_13.3): Study/Supplychain/SupplyChain17.md
           - 供应链中的运输(Chapter_14_1): Study/Supplychain/SupplyChain18.md
+          - 供应链采购合同分析: Study/Supplychain/SupplyChain19.md
           - 案例: Study/Supplychain/SupplyChain2.md
       - Swift: Study/Swift/CS193p1.md
       - Markdown语法1: Study/MarkdownSyntax1.md
       - 英语小总结: Study/English.md
       - 制造与服务系统分析: Study/AMASS.md
+      - 管理学: Study/Management/Management.md
       - 论文: Study/Undergraduate_essay.md
       - 我的碎碎念:
           - 荐文: Study/Talks/Articles_recomend.md
@@ -306,7 +357,6 @@ nav:
       - 我的2022: Study/My2022.md
 
 site_author: SmilingWayne
-
 repo_name: SmilingWayne/Readingxiaoxiao
 repo_url: https://github.com/SmilingWayne/Readingxiaoxiao
 
@@ -358,7 +408,7 @@ plugins:
 
   - git-revision-date-localized:
       type: datetime
-      custom_format: "%d. %B %Y"
+      custom_format: "%d %B %Y"
       timezone: Asia/Shanghai
       locale: en
       fallback_to_build_date: false

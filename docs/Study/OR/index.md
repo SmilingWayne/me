@@ -42,7 +42,9 @@
         - 最小费用流
         - 中国邮递员问题
         - 网络计划
-
+    - **Chapter. 9** [排队论](./Chapter9.md) 
+    - **Chapter. 10** [存储论](./Chapter10.md)
+    - **Chapter. 11** [博弈论](./Chapter11.md)
 
 
 
