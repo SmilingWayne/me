@@ -16,9 +16,9 @@
 
 - 💖 “毕竟几人真得鹿，不知终日梦为鱼。”[^2]
 
-- 📝 我的书 / 影记录可以看我的豆瓣：SmilingWayne。那里和这里一样静悄悄。
-
-- 🧸 INFP / 工业党人 / 谨慎的自由主义[^3]者 / 努力学习语言.ing。
+- 🧸 INFP / 谨慎的自由主义[^3]者 / 努力学习语言.ing。
+  
+- 📝 我的书 / 影记录可以看[我的豆瓣](https://www.douban.com/people/174239371/)。那里和这里一样静悄悄。
 
 - 📮 联系邮箱：`xiaoxiaowayne@163.com `
 
@@ -35,7 +35,7 @@
 
 - 💻 PC端：点击顶部导航栏选择主题，左侧查看目录；
 - 📱 移动端：点击左上角图标选择内容；
-- 🔍 搜索支持中文检索。
+- 🔍 搜索：支持中文检索。
 
 
 [^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.
