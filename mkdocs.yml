@@ -69,17 +69,18 @@ nav:
           - Poems/index.md
           - 外国诗:
               - 散落碎片: Poems/Middle_east.md
-              - 愤怒与神秘: Poems/Anger_and_mystery.md
-              - 恶之花: Poems/Fleurs_du_mal.md
-              - 是你在歌唱？是我在遐想: Poems/Yesenin.md
-              - 穿裤子的云: Poems/Mayakovsky.md
-              - 卢济塔尼亚人之歌: Poems/Luzitania.md
-              - 罗兰之歌: Poems/Song_of_Lauren.md
+              - 🇫🇷愤怒与神秘: Poems/Anger_and_mystery.md
+              - 🇫🇷恶之花: Poems/Fleurs_du_mal.md
+              - 🇮🇹神曲: Poems/Divine_comedy.md
+              - 🇷🇺是你在歌唱？是我在遐想: Poems/Yesenin.md
+              - 🇷🇺穿裤子的云: Poems/Mayakovsky.md
+              - 🇵🇹卢济塔尼亚人之歌: Poems/Luzitania.md
+              - 🇫🇷罗兰之歌: Poems/Song_of_Lauren.md
               - 生命与希望之歌: Poems/Poems_de_life_hope.md
-              - 伊利亚特: Poems/Illiad.md
-              - 德国，一个冬天的童话: Poems/German_winter_fairytale.md
-              - 坎特伯雷故事集: Poems/Canterbery.md
-              - 我用古典的方式爱过你: Poems/Emily.md
+              - 🇬🇷伊利亚特: Poems/Illiad.md
+              - 🇩🇪德国，一个冬天的童话: Poems/German_winter_fairytale.md
+              - 🇬🇧坎特伯雷故事集: Poems/Canterbery.md
+              - 🇺🇸我用古典的方式爱过你: Poems/Emily.md
               - 疑问集: Poems/Collections_of_doubt.md
           - 中国诗:
               - 辛弃疾词: Poems/Xinqiji_ci.md
@@ -125,6 +126,7 @@ nav:
           - 记忆记忆: Literature/Essay/Remember_memory.md
           - 火的记忆: Literature/Essay/Memory_fire.md
           - 人间食粮: Literature/Essay/Life_food.md
+          - 山河袈裟: Literature/Essay/Shan_he_jia_sha.md
           - 牛棚杂忆: Literature/Essay/Cowshed_memo.md
           - 澡堂与片场: Literature/Essay/Bath_house.md
           - 往事与随想: Literature/Essay/Memory_thoughts.md

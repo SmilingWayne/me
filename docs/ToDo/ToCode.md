@@ -6,7 +6,6 @@
 - 准备我的复试：运筹的笔记、线性代数的笔记、微积分的笔记
 - 找好我的技能点
 - 整理我的代码库，完善以前的项目：
-- 👩🏻‍💻 streamlit做一个chat History review: 
 - ✨我的网站的维护和内容填充
 - 看论文(Multi target‼️)
 - 🎯 Apple 开发（Xcode/Swift/)

@@ -17,8 +17,3 @@ B站有戏剧版本：
 > You will the sooner that I were away, for you will prove perjured if you make me stay.
 
 > Not where he eats, but where he is eaten.
-
-## 后记
----
-
-2023.01.02 17:44:58
