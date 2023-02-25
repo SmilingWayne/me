@@ -8,3 +8,6 @@
 供应链系统设计、库存
 
 复杂工程与项目管理
+
+
+http://bbs.nju.edu.cn/vd84588/main.html?bbsdoc%3Fboard%3DReading
