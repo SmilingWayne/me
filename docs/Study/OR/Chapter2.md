@@ -159,7 +159,7 @@ $$ y_j \geq 0 \hspace{12pt} (i = 1,...,m)$$
 - 确定入基变量，上一步确定了出基变量，为了确保下一表中出基变量$r$行基变量为正值，需要找对应$a_{rj} < 0 ( j = m + 1,...,n)$的**非基变量**
 
   
-$$\theta = min \{ \dfrac{c_j - z_j}{a_{rj}} | a_{rj} < 0 \} = \dfrac{c_s - z_s}{a_{rs} }$$
+$$\theta = \mathop{\min}  \{ \dfrac{c_j - z_j}{a_{rj}} | a_{rj} < 0 \} = \dfrac{c_s - z_s}{a_{rs} }$$
 
 > 注意，对偶单纯形是先确定出基变量，再入基，而单纯形法正相反！
 >

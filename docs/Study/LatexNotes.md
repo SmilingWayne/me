@@ -165,13 +165,12 @@
     $$
     ```
 
-=== "🌊 波浪号 | 上波浪"
+=== "🌊 波浪号 | 上波浪 | 对于任意"
 
-    $$\sim  \hspace{10pt}  \tilde{A}$$
+    $$\sim  \hspace{10pt}  \tilde{A}  \hspace{10pt} \forall$$
 
     ```LaTeX
-
-    $$ \sim  \hspace{10pt}  \tilde{A} $$
+    $$ \sim  \hspace{10pt}  \tilde{A}  \hspace{10pt} \forall$$
     ```
 
 -----
