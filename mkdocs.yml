@@ -185,8 +185,8 @@ nav:
 
   - 历史:
       - History/index.md
-      - 🇮🇩印尼ETC: History/Indonesia.md
       - 🇬🇷希腊笔记: History/Greece.md
+      - 🇯🇵日本笔记: History/Japan_notes.md
       - 🇲🇱非洲笔记: History/Africa.md
       - 🇰🇿中亚笔记: History/Mid_asia.md
       - 🇷🇺苏联笔记: History/Soviet_union.md
@@ -197,6 +197,7 @@ nav:
       - 🇸🇦阿拉伯笔记: History/Arabians.md
       - 荒诞医学史: History/Ridiculous_medics.md
       - 罗马帝国简史: History/Roman_empire_brief_history.md
+      - 🇮🇩印度尼西亚笔记: History/Indonesia.md
       - 西印度毁灭述略: History/Destroy_western_india.md
       - 阿拉伯伊斯兰文化史: History/Arabian_islamic_history.md
       - 🇫🇷法国资产阶级史(上): History/Bourgeoisie.md
@@ -209,7 +210,8 @@ nav:
   - 艺术:
       - Arts/index.md
       - 艺术与设计史:
-          - 笔记1: Arts/Art_and_design/Notes1.md
+          - 🇫🇷欧洲艺术: Arts/Art_and_design/Notes1.md
+          - 🇲🇽中美洲艺术: Arts/Art_and_design/Meso_America.md
       - 🇫🇷拉斐尔前派的梦: Arts/Pre_Raphael.md
       - 🇫🇷黑夜的蝴蝶: Arts/Butterfly_at_night.md
       - 🇫🇷左岸,从人民阵线到冷战作家: Arts/Left_bank.md
@@ -341,11 +343,16 @@ nav:
           - 供应链中的运输(Chapter_14_1): Study/Supplychain/SupplyChain18.md
           - 供应链采购合同分析: Study/Supplychain/SupplyChain19.md
           - 案例: Study/Supplychain/SupplyChain2.md
+      - 小红书｜Markdown笔记:
+          - 色样表合集: Study/Markdown/MarkdownSyntax2.md
+          - 常用的语法(with plugins): Study/Markdown/MarkdownSyntax1.md
       - Swift: Study/Swift/CS193p1.md
-      - Markdown语法1: Study/MarkdownSyntax1.md
       - 英语小总结: Study/English.md
       - 制造与服务系统分析: Study/AMASS.md
-      - 管理学: Study/Management/Management.md
+      - 管理学:
+          - 管理学导论: Study/Management/Management.md
+          - 计划: Study/Management/Plan.md
+          - 组织: Study/Management/Organize.md
       - 论文: Study/Undergraduate_essay.md
       - 我的碎碎念:
           - 荐文: Study/Talks/Articles_recomend.md
