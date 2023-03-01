@@ -296,6 +296,7 @@ nav:
       - 运筹学:
           - Study/OR/index.md
           - 线性规划、单纯形法（群魔乱舞版）: Study/OR/Chapter1.md
+          - 灵敏度分析: Study/OR/Chapter1_plugin.md
           - 对偶理论及对偶单纯形法: Study/OR/Chapter2.md
           - 线性规划的运输问题拓展: Study/OR/Chapter3.md
           - 整数规划、求解算法和运用: Study/OR/Chapter4.md
@@ -382,6 +383,9 @@ theme:
     - search.highlight
     - search.share
     # - navigation.sections
+    # 亚里士多德的鳄鱼
+    # 伦勃朗～
+    # 梅洛·庞蒂
     # - navigation.expand
     # - navigation.top
     - navigation.indexes
