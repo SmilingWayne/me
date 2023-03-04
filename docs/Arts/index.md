@@ -1,5 +1,8 @@
 # 🎨 艺术
 
+## 艺术分类法
+-------
+
 !!! Abstract
     <font size = 4 face = "XingKai">黑色是最彻底的奢华，<font color = "White" size = 4>沉默</font>是最深沉的呐喊。</font>
 
