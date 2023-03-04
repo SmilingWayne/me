@@ -11,6 +11,7 @@ nav:
           - 马克思主义宗教观研究: Philosophy/Marxism_religion.md
           - 苏联解体与颜色革命: Philosophy/Color_revolution.md
           - 先知三部曲: Philosophy/Farseer.md
+          - 论游击战: Philosophy/Guerrilla_warfare.md
 
       - 宗教哲学:
           - 基督教: Philosophy/Christian.md
@@ -49,6 +50,7 @@ nav:
       - 美学:
           - 美的历程: Philosophy/Voyage_of_beauty.md
           - 浪漫主义的根源: Philosophy/Root_of_romanticism.md
+          - 谈美: Philosophy/About_beauty.md
 
       - 人类学/社会学:
           - 倦怠社会: Philosophy/Society_of_fatigue.md
@@ -76,8 +78,10 @@ nav:
               - 🇷🇺穿裤子的云: Poems/Mayakovsky.md
               - 🇵🇹卢济塔尼亚人之歌: Poems/Luzitania.md
               - 🇫🇷罗兰之歌: Poems/Song_of_Lauren.md
+              - 🇮🇹耶路撒冷的解放: Poems/Jerusalem_liberation.md
               - 生命与希望之歌: Poems/Poems_de_life_hope.md
               - 🇬🇷伊利亚特: Poems/Illiad.md
+              - 🇱🇧纪伯伦诗选: Poems/Gibran.md
               - 🇩🇪德国，一个冬天的童话: Poems/German_winter_fairytale.md
               - 🇬🇧坎特伯雷故事集: Poems/Canterbery.md
               - 🇺🇸我用古典的方式爱过你: Poems/Emily.md
@@ -101,6 +105,7 @@ nav:
               - 🇬🇧亨利四世: Plays/HenryIV.md
               - 🇬🇧理查二世: Plays/Richard_II.md
               - 🇬🇧暴风雨: Plays/Storms.md
+              - 🇬🇧仲夏夜之梦: Plays/Mid_summer_nights_dream.md
               - 海鸥: Plays/Seagull.md
               - 美狄亚: Plays/Media.md
               - 牡丹亭: Plays/Mu_dan_ting.md
@@ -128,9 +133,15 @@ nav:
           - 人间食粮: Literature/Essay/Life_food.md
           - 山河袈裟: Literature/Essay/Shan_he_jia_sha.md
           - 牛棚杂忆: Literature/Essay/Cowshed_memo.md
+          - 自然与人生: Literature/Essay/Nature_and_life.md
+          - 单读12: Literature/Essay/Dan_du_12.md
+          - 单读14: Literature/Essay/Dan_du_14.md
+          - 单读16: Literature/Essay/Dan_du_16.md
+          - 单读17: Literature/Essay/Dan_du_17.md
           - 澡堂与片场: Literature/Essay/Bath_house.md
           - 往事与随想: Literature/Essay/Memory_thoughts.md
           - 中国文学常识: Literature/Essay/Literature_knowledge.md
+          - 一个人的村庄: Literature/Essay/Countryside_of_one.md
           - 象征主义碎片: Literature/Essay/Impressionalism_pieces.md
           - 博尔赫斯谈话录: Literature/Essay/Borges.md
           - 别走，万一好笑呢: Literature/Essay/Stay.md
@@ -146,7 +157,9 @@ nav:
           - 🇫🇷法语文学: Literature/Literacy/French_literature.md
           - 文学回忆录: Literature/Literacy/Literature_memo.md
           - 女人的食指: Literature/Literacy/Womens_index_finger.md
+          - 文字的力量: Literature/Literacy/Power_of_words.md
           - 沉默的大多数: Literature/Literacy/Silent_most.md
+          - 给青年诗人的信: Literature/Literacy/To_young_poets.md
           - 批判性思维的形成: Literature/Literacy/Formation_critical_thinking.md
           - 天真的和感伤的小说家: Literature/Literacy/Naive_novlist.md
           - 浪漫主义(牛津通识读本): Literature/Literacy/Romanticism.md
@@ -176,6 +189,7 @@ nav:
           - 失明症漫记: Literature/Novel/Ensaio_sobre_a_cegueira.md
           - 瘟疫年纪事: Literature/Novel/Pandemic_era.md
           - 许三观卖血记: Literature/Novel/Xu_san_guan.md
+          - 房思琪的初恋乐园: Literature/Novel/Fang_si_qi.md
           - 卡拉马佐夫兄弟: Literature/Novel/Kara_Mazov_brothers.md
           - 东方快车谋杀案: Literature/Novel/Oriental_express.md
           - 尼罗河上的惨案: Literature/Novel/Tragedy_niro.md
@@ -197,8 +211,10 @@ nav:
       - 🇸🇦阿拉伯笔记: History/Arabians.md
       - 荒诞医学史: History/Ridiculous_medics.md
       - 罗马帝国简史: History/Roman_empire_brief_history.md
+      - 世界史碎片: History/World.md
       - 🇮🇩印度尼西亚笔记: History/Indonesia.md
       - 西印度毁灭述略: History/Destroy_western_india.md
+      - 人类的群星闪耀时: History/Human_stars.md
       - 阿拉伯伊斯兰文化史: History/Arabian_islamic_history.md
       - 🇫🇷法国资产阶级史(上): History/Bourgeoisie.md
       - 🇧🇪利奥波德国王的鬼魂: History/King_leopolds_ghost.md
@@ -295,16 +311,16 @@ nav:
           - chapter5: Study/LinearAlgebra/Chapter5.md
       - 运筹学:
           - Study/OR/index.md
-          - 线性规划、单纯形法（群魔乱舞版）: Study/OR/Chapter1.md
+          - 线性规划、单纯形法（plus pro max版）: Study/OR/Chapter1.md
           - 灵敏度分析: Study/OR/Chapter1_plugin.md
-          - 对偶理论及对偶单纯形法: Study/OR/Chapter2.md
-          - 线性规划的运输问题拓展: Study/OR/Chapter3.md
-          - 整数规划、求解算法和运用: Study/OR/Chapter4.md
-          - 非线性规划、凸规划理论: Study/OR/Chapter5.md
-          - 动态规划及几个典型题: Study/OR/Chapter6.md
+          - 对偶理论及对偶单纯形法（一种哲学）: Study/OR/Chapter2.md
+          - 运输问题、目标规划和DEA: Study/OR/Chapter3.md
+          - 整数规划、求解算法和指派问题: Study/OR/Chapter4.md
+          - 非线性规划、凸规划理论（最优化基础）: Study/OR/Chapter5.md
+          - 动态规划及几个典型题（该学背包了）: Study/OR/Chapter6.md
           - 图论算法及其求解: Study/OR/Chapter7.md
           - 排队论: Study/OR/Chapter9.md
-          - 仓储论: Study/OR/Chapter10.md
+          - 仓储论（EOQ模型和它的一万个分身）: Study/OR/Chapter10.md
           - 博弈论: Study/OR/Chapter11.md
       - 概率论:
           - 基础知识与贝叶斯理论: Study/Statistics/Basics.md
@@ -354,7 +370,9 @@ nav:
           - 管理学导论: Study/Management/Management.md
           - 计划: Study/Management/Plan.md
           - 组织: Study/Management/Organize.md
+          - 领导: Study/Management/Lead.md
       - 论文: Study/Undergraduate_essay.md
+      - VScode技巧: Study/Vscode/keys.md
       - 我的碎碎念:
           - 荐文: Study/Talks/Articles_recomend.md
           - 荐书: Study/Talks/Books_recomend.md
@@ -430,7 +448,8 @@ plugins:
         - index.md
       enabled: true
   - search:
-      lang: ja
+      separator: '[\s\u200b\-]'
+#       lang: ja
 
 markdown_extensions:
   - admonition
