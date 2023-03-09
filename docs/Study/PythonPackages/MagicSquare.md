@@ -1,12 +1,13 @@
 <h2>什么是幻方？</h2>
 <b>幻方(Magic Square)</b>是一种将数字安排在正方形格子中，使每行、列和对角线上的数字和都相等的方法。正方形格子的边长就是阶数。
 
-<br>
-
 譬如下面的四个就都是三阶幻方。其对角线、每行、每列的和都是15。
-<br>
-<div align=center><img src = "../picx/magic1.png" width = "70%" ></div>
-<br>
+<figure markdown>
+  ![Image title](../picx/MagicSquare/magic1.png){ width="300" }
+  <figcaption>Magic Square</figcaption>
+</figure>
+
+
 
 那么给定阶数$n, n \geq 3$, 如何生成一个可行的幻方呢？如果给定奇数，幻方同样可以生成吗？
 
@@ -17,8 +18,9 @@
 2. 阶数是$4n + 2 $型偶数 (也就是6，10，14...这类不能被4整除的)
 3. 阶数是$4n $型偶数 (也就是4，8，12...这类能被4整除的)
 -----
-<h2>阶数为奇数</h2>
-<center><h2>罗伯法（连续摆数法）</h2></center>
+
+
+## 罗伯法（连续摆数）
 
 把1（或最小的数）放在第一行正中，并按以下规律排列剩下的(n×n－1)个数：
 
@@ -28,24 +30,35 @@
 - 如果这个数所要放的格已经超出了顶行且超出了最右列，那么就把它放在底行且最左列；
 - 如果这个数所要放的格已经有数填入，那么就把它放在前一个数的下一行同一列的格内。
 
-<div align=center><img src = "../picx/Magic2.png" width = "100%" ></div>
+
+<figure markdown>
+  ![Image title](../picx/MagicSquare/Magic2.png){ width="300" }
+  
+</figure>
 
 --- 
-<h2>阶数是4n型偶数</h2>
-<center><h2>海尔法</h2></center>
+
+- 阶数是4n型偶数
+  
+## 海尔法
 
 以8阶幻方为例：
 
 1. 先把数字按顺序填。然后，按4×4把它分割成4块
 2. 每个小方阵<b>对角线</b>上的数字，换成和它互补的数。
 
-
-<div align=center><img src = "../picx/Magic3.png" width = "100%" ></div>
+<figure markdown>
+  ![Image title](../picx/MagicSquare/Magic3.png){ width="400" }
+  <figcaption>Magic Square</figcaption>
+</figure>
+<!-- 
+<div align=center><img src = "../picx/MagicSquare/Magic3.png" width = "100%" ></div> -->
 
 ----
 
-<h2>阶数是4n+2型偶数</h2>
-<center><h2>斯特雷奇法</h2></center>
+- 阶数是4n+2型偶数
+
+## 斯特雷奇法
 
 当n不可以被4整除时的偶数阶幻方，即4k+2阶幻方，半阶数m = n/2。
 
@@ -60,14 +73,17 @@
 3. 在B象限任一行的中间格，自右向左，标出$k-1$列。 将B象限标出的这些数，和D象限相对位置上的数进行交换，就形成幻方。
 
 
+<figure markdown>
+  ![Image title](../picx/MagicSquare/Magic4.png){ width="400" }
+  <figcaption>Magic Square</figcaption>
+</figure>
 
-<div align=center><img src = "../picx/Magic4.png" width = "150%" ></div>
 
 
 
 --- 
 
-<h3>题目描述：</h3>
+- 题目描述：
 
 > 求正整数N以内的所有素数
 > 给定正整数区间[a, b),给出区间内所有的素数
@@ -75,23 +91,26 @@
 ----
 
 
-<h3>埃氏筛</h3>
+- 埃氏筛
 
 做法其实很简单，C语言入门课程都会有讲。首先将2到n范围内的所有整数写在一张一维表里，其中2是最小的素数。将表中所有2的倍数划去，此时表中剩下的最小的数字是3，3无法被更小的数整除，所以3是素数。再将表中所有3的倍数划去......以此类推，如果表中剩余的最小数是m，则m就是素数，将表中所有m的倍数划去，这样反复操作，就能依次枚举n以内的素数，时间复杂度为$O(nloglogn)$
 
-<div align=center><img src = "../picx/sieve1.png" width = "150%" ></div>
-<br>
+<figure markdown>
+  ![Image title](../picx/MagicSquare/sieve1.png){ width="400" }
+  <figcaption>Magic Square</figcaption>
+</figure>
+
 
 ----
-<h3>欧拉筛（线性筛）</h3>
+- 欧拉筛（线性筛）
 
 由于每个大于等于2的合数必定存在一个最小的质因数，所以只要筛去每个质数的倍数就相当于筛去了所有合数。但欧拉筛相比埃氏筛最大的优化就在于欧拉筛保证每个合数只被筛了一次，且是被其<font color = "Darkpink">最小的质因数</font>筛去的，所以欧拉筛的时间复杂度可以达到$O(N)$。
 
-<br>
+
 这种算法也可以快速获取最小质因数。
 
 ----
-<h3>素数区间筛</h3>
+- 素数区间筛
 
 给定整数a和b，请问区间$[a,b)$内有多少个素数？（$a < b \leq 10^{12},b-a \leq 10^6$）
 
@@ -102,35 +121,38 @@
 
 -----
 
-<center><h1>手机App评论爬取</h1></center>
+## 手机App评论爬取
 
 ---
 
-<font color = "Blue"><h2>实现思路</h2></font>
-
-🟥 在移动端浏览请求界面，请求数据
-🟧 在电脑端利用抓包软件抓取移动端接收到的数据
-🟨 对数据进行清洗、整理、汇总
+- 实现思路
+    - 在移动端浏览请求界面，请求数据
+    - 在电脑端利用抓包软件抓取移动端接收到的数据
+    - 对数据进行清洗、整理、汇总
 
 ---
-<font color = "Red"><h2>技术细节</h2></font>
 
-🟩 抓包软件是Charles,适用性很好(Windows /macOS/Linux都可，Android/iOS全部支持）。我是macOS系统+iOS🍎手机配置，运行时候效果👍
-🟩 Charles正版是收💰的，有条件一定支持一波，可以找到pojie版本，我是在52pojie上找到的，上面也有<u>手把手的Charles</u>使用教程
-🟪 数据清洗用了Python，主要做的就是解析Json数据并进行本地存储
+- 技术细节
+    - 抓包软件是Charles,适用性很好(Windows /macOS/Linux都可，Android/iOS全部支持）。我是macOS系统+iOS🍎手机配置，运行时候效果👍
+    - Charles正版是收💰的，有条件一定支持一波，可以找到pojie版本，我是在52pojie上找到的，上面也有<u>手把手的Charles</u>使用教程
+    - 数据清洗用了Python，主要做的就是解析Json数据并进行本地存储
 
 -----
-<font color = "Purple"><h2>具体实现</h2></font>
+- 具体实现
 
-<font size = 4 >⬛️ 以防大家⬇️ 错，我用的Charles长这样👇</font>
-<div align=center><img src = "../picx/charles.png" width = "80%" ></div>
-<font size = 4 >⬛️ Charles数据获取界面👇</font>
+以防大家⬇️ 错，我用的Charles长这样👇
 
-<div align=center><img src = "../picx/结果2.png" width = "100%" ></div>
+<figure markdown>
+  ![Image title](../picx/MagicSquare/charles.png){ width="350" }
+  
+</figure>
+
+<figure markdown>
+  ![Image title](../picx/MagicSquare/结果2.png){ width="350" }
+</figure>
 
 
-<br>
-<h1>什么是拉丁方(Latin Square)</h1>
+## 拉丁方
 
 ----
 给定正整数$N$，把$N$组1到$N$的正整数填入一个$N \times N$的正方形格子中，使得：
@@ -140,17 +162,15 @@
 
 例如下面的这个就是一个经典的三阶拉丁方.
 
-<div align=center><img src = "../picx/LatinSquare.jpeg" width = "50%" ></div>
 
-<br>
-<br>
+
+<figure markdown>
+  ![Image title](../picx/MagicSquare/LatinSquare.jpeg){ width="100" }
+</figure>
+
 拉丁方可以视作数独的一种松弛形式，不同于数独的九宫格，拉丁方没有“宫”的设计，而只有“格”。也就是说，数独是一种更加严格的拉丁方。
-<br>
-<br>
-<br>
-<br>
 
-<h1>拉丁方生成算法</h1>
+## 拉丁方生成算法
 
 ----
 
@@ -175,32 +195,27 @@ $N$是奇数时，按照上面的格式生成一个方阵后，将每一行倒�
 
 
 
-<h1>Python 复杂计算器</h1>
+## Python 复杂计算器
 
 ----
-✅ $\quad$<font size=4 color = "Black">**要求**</font>
+- **要求**
 
 输入一个字符串表示的代数式，输出计算结果
 
-✅ $\quad$<font size=4 color = "Black">**特性和功能**</font>
+- **特性和功能**
+    - 支持 $+ - \times \div$， 支持乘方运算、三角函数、自然对数、指数函数计算
+    - 保证运算符优先级、括号优先级，可以处理多余括号
+    - 递归法支持嵌套运算
+    - 支持正负数计算
+
+- **具体实现**
+
+- 递归处理函数嵌套
+
+- 栈(Stack)+优先性判断处理具体计算
 
 
-🟪 支持 $+ - \times \div$， 支持乘方运算、三角函数、自然对数、指数函数计算
-
-🟩 保证运算符优先级、括号优先级，可以处理多余括号
-
-🟧 递归法支持嵌套运算
-
-🟦 支持正负数计算
-
-✅ $\quad$<font size=4 color = "Black">**具体实现**</font>
-
-🔴 递归处理函数嵌套
-
-🟡 堆(Stack)+优先性判断处理具体计算
-
-
-❌ $\quad$<font size=4 color = "Black" >**尚未完成的部分**</font>
+- **尚未完成的部分**
 
 
 ☑️  几个其他常用科学计算函数，例如开方、阶乘、任意底数的对数、反三角函数等
@@ -210,98 +225,87 @@ $N$是奇数时，按照上面的格式生成一个方阵后，将每一行倒�
 
 
 
-<h2>日历图可视化步骤</h2>
+## 日历图可视化步骤
 
 
-✳️ $\quad$**小记录**
+- **小记录**
 
-<font size = 4 color = 'grey' face = "HEI">这是半年前一次小的尝试，当时提取微信聊天记录做了一些分析，整理时候发现不少可以用的东西，用笔记记录一下。当然了为了减少个人信息泄露，数据已经做了随机处理。不过模板是可以直接套用的。</font>
+这是半年前一次小的尝试，当时提取微信聊天记录做了一些分析，整理时候发现不少可以用的东西，用笔记记录一下。当然了为了减少个人信息泄露，数据已经做了随机处理。不过模板是可以直接套用的。</font>
 
-✅ $\quad$**数据预处理**
+- **数据预处理**
 
 整理出聊天记录，利用时间序列数据清洗方法，得到每一天聊天数量，存储为结构化数据。
 
-✅ $\quad$**Python可视化**
+- **Python可视化**
 
 借助可交互可视化包<font  color = "Purple">`Pyecharts`</font>绘制日历图
 
 
-✅ $\quad$**Pyecharts特性**
+- **Pyecharts特性**
 
 比较适合做注入网站动态可视化、用户大数据界面等，但是不大适合用作科研制图，操作不算困难，有中文文档📁。
 
 具体代码附在后一张图上。
 
-<br>
-
-<h2>模板注释</h2>
-
-✳️ $\quad$**小记录**
-
-<font size = 4 color = 'grey' face = "HEI">从Github上找的一个合集，自己做了一点总结。主要针对分类问题而言的，稍微有条理一些。</font>
-
-🟪 $\quad$**算法**
-
-本笔记不会详细展开每一个算法本身，都是一些很著名的、需要仔细琢磨的算法。相关介绍都已经很多了。
-
-🧡 &nbsp; **线性回归Linear Regression**
-
-💜 &nbsp;  **支持向量机SVM**
-
-💚 &nbsp; **朴素贝叶斯Naive Bayes**
-
-💛 &nbsp; **K近邻算法KNN**
 
 
+- 模版注释
 
-✅ $\quad$**Matplotlib可视化**
-
-代码里只写了画分类结果图，实际还有ROC曲线之类的，在前段时间LSTM的那个NLP笔记里记录了，可以移步查看。
-
-
-✅ $\quad$**备注**
-
-代码仅仅展示了进行机器学习任务的一个基本流程和代码，具体的算法、数据、优化、调参等过程都是具体而有挑战的，本笔记仅供参考。
-
-
-
-具体代码附在后一张图上。
-
-
-<br>
-
-
-
-<h2>模板注释</h2>
-
-✳️ $\quad$**小记录**
+- **小记录**
 
 从Github上找的一个合集，自己做了一点总结。主要针对分类问题而言的，稍微有条理一些。
 
-🟪 $\quad$**算法**
+- **算法**
 
 本笔记不会详细展开每一个算法本身，都是一些很著名的、需要仔细琢磨的算法。相关介绍都已经很多了。
 
-🧡 &nbsp; **线性回归Linear Regression**
+- **线性回归Linear Regression**
 
-💜 &nbsp;  **支持向量机SVM**
+-  **支持向量机SVM**
 
-💚 &nbsp; **朴素贝叶斯Naive Bayes**
+- **朴素贝叶斯Naive Bayes**
 
-💛 &nbsp; **K近邻算法KNN**
+- **K近邻算法KNN**
 
 
 
-✅ $\quad$**Matplotlib可视化**
+- **Matplotlib可视化**
 
 代码里只写了画分类结果图，实际还有ROC曲线之类的，在前段时间LSTM的那个NLP笔记里记录了，可以移步查看。
 
 
-✅ $\quad$**备注**
+- **备注**
 
 代码仅仅展示了进行机器学习任务的一个基本流程和代码，具体的算法、数据、优化、调参等过程都是具体而有挑战的，本笔记仅供参考。
 
 
 
-具体代码附在后一张图上。
+
+
+- **小记录**
+
+从Github上找的一个合集，自己做了一点总结。主要针对分类问题而言的，稍微有条理一些。
+
+- **算法**
+
+本笔记不会详细展开每一个算法本身，都是一些很著名的、需要仔细琢磨的算法。相关介绍都已经很多了。
+
+- **线性回归Linear Regression**
+
+-  **支持向量机SVM**
+
+- **朴素贝叶斯Naive Bayes**
+
+- **K近邻算法KNN**
+
+
+
+- **Matplotlib可视化**
+
+代码里只写了画分类结果图，实际还有ROC曲线之类的，在前段时间LSTM的那个NLP笔记里记录了，可以移步查看。
+
+
+- **备注**
+
+代码仅仅展示了进行机器学习任务的一个基本流程和代码，具体的算法、数据、优化、调参等过程都是具体而有挑战的，本笔记仅供参考。
 

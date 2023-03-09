@@ -67,13 +67,10 @@
 - Research topics: Will give us topics. Watch announcements!!! pedagodgy square
 
 
-
-
 - 1914 —— 1930
 
-
 - New crticism: USA
-- Formalism: no united doctrine / a diverse movement ,  no consensus, 
+- Formalism: no united doctrine / a diverse movement,  no consensus, 
 - Two cradles: St. Peterburg and Moscow;
 - Analyze literature in scientific way ? A scientific method; Function of literary strategies
 
@@ -103,8 +100,9 @@ Art as technique
 - Exposed !
 
 - Laying bare
-- organic: self governed:
+- **organic**: self governed: present itself
 - systematic Formalism; analogy between language and literature;
+- make literature literature / make a stone stony.
 
 两种呈现的方式：
 - "Motivation": tomanshevsky
@@ -115,10 +113,6 @@ Art as technique
 - formalism as political offense / realism?
 - literature has its own element! / organic perspective:
 - artifulness
-
-
-
-legacies： 结构主义
 
 
 内容和形式是相互影响：
@@ -132,3 +126,4 @@ legacies： 结构主义
 - discourse: 福柯；不
 
 - 狂欢化：
+- 
