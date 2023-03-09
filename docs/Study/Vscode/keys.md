@@ -31,3 +31,4 @@
 |   <font size = 4>移动到这一行最后面</font>    | <font size = 4>Option + →</font>     | <font size = 4>Alt + →</font>          |
 |    <font size = 4>移动到文本最开头</font>     | <font size = 4>⌘ + ↑</font>          | <font size = 4>Ctrl + ↑</font>         |
 |    <font size = 4>移动到文本最末尾</font>     | <font size = 4>⌘ + ↓</font>          | <font size = 4>Ctrl + ↓</font>         |
+|      <font size = 4>跳跃到某一行</font>       | <font size = 4>ctrl + G</font>       | <font size = 4>Ctrl + G</font>         |
