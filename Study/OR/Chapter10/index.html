@@ -19,7 +19,7 @@
         <link rel="next" href="../Chapter11/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.402914a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c4a75a56.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
@@ -6076,13 +6076,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-cq-fq-c_1-p-intq_0-varphirdr-p-k" class="md-nav__link">
-    - 把括号内记作\(C(Q)\) ，求导数可得\(F(Q) = (C_1 + p) \int^{Q}_{0} \varphi(r)dr - (p-k)\) ,
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     其他存储模型
   </a>
@@ -6146,6 +6139,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
@@ -6159,6 +6154,20 @@
           概率论
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Statistics/Statistics_method/" class="md-nav__link">
+        统计学基础
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -6284,6 +6293,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_7" id="__nav_8_7_label" tabindex="0">
@@ -6320,6 +6331,20 @@
     <li class="md-nav__item">
       <a href="../../PythonPackages/PIPREQS/" class="md-nav__link">
         pipreqs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PythonPackages/PythonBisect/" class="md-nav__link">
+        Python二分排序函数Bisect
       </a>
     </li>
   
@@ -7376,13 +7401,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-cq-fq-c_1-p-intq_0-varphirdr-p-k" class="md-nav__link">
-    - 把括号内记作\(C(Q)\) ，求导数可得\(F(Q) = (C_1 + p) \int^{Q}_{0} \varphi(r)dr - (p-k)\) ,
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     其他存储模型
   </a>
@@ -7501,8 +7519,7 @@
 <li>
 <p>需求是离散随机变量</p>
 <blockquote>
-<p>报童问题：每天售出的报纸份数是一个离散随机变量，概率<span class="arithmatex">\(P(r)\)</span>已知，每次销售一份报纸可以赚k元，如果报纸没有全部销售，那么每剩下一部分，就赔h元。问报童每天应该准备多少报纸？
-</p>
+<p>报童问题：每天售出的报纸份数是一个离散随机变量，概率<span class="arithmatex">\(P(r)\)</span>已知，每次销售一份报纸可以赚k元，如果报纸没有全部销售，那么每剩下一部分，就赔h元。问报童每天应该准备多少报纸？</p>
 </blockquote>
 </li>
 <li>
@@ -7543,10 +7560,12 @@
 <li>第一项为一个常数：平均盈利额度，与订货量无关；</li>
 <li>括号内第一项是缺货期望损失值（也就是指考虑缺货的损失）</li>
 <li>括号内第二项是滞销期望损失（也就是考虑只考虑滞销）</li>
-<li>第三项是进货成本；</li>
-</ul>
-<h2 id="-cq-fq-c_1-p-intq_0-varphirdr-p-k">- 把括号内记作<span class="arithmatex">\(C(Q)\)</span> ，求导数可得<span class="arithmatex">\(F(Q) = (C_1 + p) \int^{Q}_{0} \varphi(r)dr - (p-k)\)</span> ,<a class="headerlink" href="#-cq-fq-c_1-p-intq_0-varphirdr-p-k" title="Permanent link">⚓︎</a></h2>
-<ul>
+<li>
+<p>第三项是进货成本；</p>
+</li>
+<li>
+<p>把括号内记作<span class="arithmatex">\(C(Q)\)</span> ，求导数可得<span class="arithmatex">\(F(Q) = (C_1 + p) \int^{Q}_{0} \varphi(r)dr - (p-k)\)</span> </p>
+</li>
 <li>求得<span class="arithmatex">\(F(Q) =  \int^{Q}_{0} \varphi(r) = \dfrac{p - k}{p + C_1}\)</span> （这里是不是对应产品可获得性水平...）</li>
 <li>通过<span class="arithmatex">\(F(Q)\)</span> 可以逆向地解出<span class="arithmatex">\(Q^*\)</span>，（正态分布 <span class="arithmatex">\(\dfrac{X - \mu}{\sigma } = P*\)</span> 即可；</li>
 </ul>
@@ -7575,7 +7594,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 9, 2023 19:38:26</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 15, 2023 00:53:51</span>
       
         <br>
         Created:
@@ -7678,7 +7697,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.b78d2936.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.efa0ade1.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       

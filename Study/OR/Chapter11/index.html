@@ -16,10 +16,10 @@
         <link rel="prev" href="../Chapter10/">
       
       
-        <link rel="next" href="../../Statistics/Basics/">
+        <link rel="next" href="../../Statistics/Statistics_method/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.402914a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c4a75a56.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
@@ -6057,7 +6057,55 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    纯策略和混合策略
+    纯策略
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    完全信息静态博弈
+  </a>
+  
+    <nav class="md-nav" aria-label="完全信息静态博弈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    混合策略
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    混合策略纳什均衡
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    零和博弈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    矩阵博弈的混合策略纳什均衡
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    求解方法
   </a>
   
 </li>
@@ -6105,6 +6153,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
@@ -6118,6 +6168,20 @@
           概率论
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Statistics/Statistics_method/" class="md-nav__link">
+        统计学基础
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -6243,6 +6307,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_7" id="__nav_8_7_label" tabindex="0">
@@ -6279,6 +6345,20 @@
     <li class="md-nav__item">
       <a href="../../PythonPackages/PIPREQS/" class="md-nav__link">
         pipreqs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PythonPackages/PythonBisect/" class="md-nav__link">
+        Python二分排序函数Bisect
       </a>
     </li>
   
@@ -7302,7 +7382,55 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    纯策略和混合策略
+    纯策略
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    完全信息静态博弈
+  </a>
+  
+    <nav class="md-nav" aria-label="完全信息静态博弈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    混合策略
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    混合策略纳什均衡
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    零和博弈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    矩阵博弈的混合策略纳什均衡
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    求解方法
   </a>
   
 </li>
@@ -7337,10 +7465,10 @@
 
 <h1 id="_1">博弈论<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <ul>
-<li>决策者</li>
-<li>策略集（所有可以做的决策）</li>
+<li><strong>决策者</strong>：（所有参与者的集合）</li>
+<li><strong>策略集</strong>：（所有可以做的决策）</li>
 <li>
-<p>支付函数，当一种局势出现之后，必须要规定一个“结果”。</p>
+<p><strong>支付函数（赢得函数）</strong>，每个决策者所出的策略形成的策略组就是“局势”，当一种局势出现之后，必须要规定一个“结果”，这个结果可以是针对两个人的，也可能是两个人各有变化。</p>
 </li>
 <li>
 <p>局中人个数</p>
@@ -7354,17 +7482,253 @@
 <p>占重要地位的是二人有限零和博弈</p>
 </li>
 </ul>
-<h2 id="_2">纯策略和混合策略<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<table>
+<thead>
+<tr>
+<th>分类方式</th>
+<th>具体分类</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>局中人个数</td>
+<td>二人对策  / 多人对策</td>
+</tr>
+<tr>
+<td>各局中每个人的赢得函数的代数和是否为0</td>
+<td>零和 / 非零和</td>
+</tr>
+<tr>
+<td>是否允许合作</td>
+<td>合作 / 非合作博弈</td>
+</tr>
+<tr>
+<td>策略个数</td>
+<td>有限对策 / 无限对策</td>
+</tr>
+<tr>
+<td>是否知道对方的收益</td>
+<td>不完全信息 / 完全信息</td>
+</tr>
+<tr>
+<td>！</td>
+<td>动态博弈 / 静态博弈</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_2">纯策略<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h3>
+<div class="arithmatex">\[\begin{pmatrix}
+     -6 &amp; 1 &amp; -8 \\
+     3 &amp; 2 &amp; 4 \\
+     -3 &amp; 0 &amp; 6 
+    \end{pmatrix}\]</div>
 <ul>
-<li>理解矩阵对策纯策略的分析过程</li>
+<li>
+<p>一个优秀的博弈者会考虑所有最坏的情况（因为对手总会把自己利益降到最低）；所以为了使得利益最大，应该在所有不利的情况下选择最有利的情形作为决策依据；</p>
+<ul>
+<li>比如上面那个矩阵，A（按行看），选1，2，3的决策，1：-8，2:2，3:-3，一定会选2；</li>
 </ul>
+</li>
+<li>
+<p>Def. 1 <span class="arithmatex">\(G = {S_1, S_2,A }\)</span>,  <span class="arithmatex">\(\mathop{\max} \limits_{i} \mathop{\min} \limits_{j} a_{ij} = \mathop{\min} \limits_{j} \mathop{\max} \limits_{i} a_{ij}\)</span>，</p>
+</li>
+<li>如果满足上式，那么这个<span class="arithmatex">\(V_G\)</span>就是对策的值，称使得上式成立的纯局势<span class="arithmatex">\((\alpha_i, \beta_j)\)</span>是<span class="arithmatex">\(G\)</span>在纯策略意义下的解；这两个决策被称为局中人的最优策略；</li>
+</ul>
+<h2 id="_3">完全信息静态博弈<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
+<p>E.G. 囚徒困境：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>(-8,-8) | (0, -10)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>(-10,0) | (-1, -1)
+</code></pre></div>
+E.G. 智猪博弈：完全信息静态博弈</p>
+<ul>
+<li>占优策略：小猪的占优策略就是等待，无论大猪采取什么举措，小猪一定会等待，因为等待的收益始终大于创新；但是大猪没有占优策略；</li>
+<li>
+<p>如果所有参与者都有占优策略，那么占优策略的组合就是<strong>占优策略均衡；</strong></p>
+</li>
+<li>
+<p>推广到：不断删除严格列策略,也就是对于任意其他参与者的策略组合，策略人选择某个策略s_{'}的效用严格小于选择策略s_{''}的效用.</p>
+</li>
+<li>大猪没有占优策略，但是大猪可以剔除严格劣策略，可以删除小猪“按”的选择，然后大猪只需要看小猪“按”的时候决策效用如何即可；</li>
+<li>
+<p>但是剔除严格列策略不一定总能得到最优解；</p>
+<ul>
+<li>E.G 情侣博弈的情况：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>(2,1) | (0,0)
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>(0,0) | (1,2)
+</code></pre></div></li>
+<li>这里存在一个“先动优势”，如果一方先买，那么另一方就可以通过剔除严格劣策略找到自己的策略；</li>
+</ul>
+</li>
+<li>
+<p>纳什均衡：它是指在一个博弈中，每个参与者采取的策略都是其最佳选择，即<strong>在其他参与者的策略不变的情况</strong>下，该参与者采取的策略能够使其获得最大的收益。</p>
+<ul>
+<li>也就是说，没有一方面能够单方改变策略而获得效用的提升；</li>
+<li>可以通过划线或者箭头法求解纳什均衡；每个人先找出自己针对其他人每种策略或者策略组合的最佳策略，最后<strong>互为最优策略</strong>的组合就是均衡</li>
+<li><strong>纯策略纳什均衡</strong>：是博弈中的一种状态，其中每个玩家都采用最优的单一策略，而没有必要使用任何随机化或混合策略。</li>
+</ul>
+</li>
+<li>
+<p>E.G. Cournet <strong>寡头竞争模型</strong>：如果博弈一方的策略集是无限多个决策，需要引入“反应函数”的概念，</p>
+</li>
+<li>
+<p>假设市场中有n个厂商，每个厂商生产一种相同但互相竞争的产品，并且每个厂商的产量是相互独立的，即他们不知道其他厂商的产量。每个厂商的生产成本是已知的，并且市场需求曲线是已知的。在这个模型中，每个厂商的目标是最大化其利润。由于厂商之间的相互影响，每个厂商的利润取决于所有厂商的产量。因此，每个厂商必须考虑其他厂商的行为，并基于这些信息选择最优产量。</p>
+</li>
+<li>
+<p>建立每个厂商的利润函数。每个厂商的利润函数可以表示为其产量乘以市场价格减去其生产成本，即：<span class="arithmatex">\(πi(q_1, q_2, ..., q_n) = qi(P(q_1, q_2, ..., q_n)) - c_i(q_i)\)</span>,其中，<span class="arithmatex">\(i\)</span>表示第<span class="arithmatex">\(i\)</span>个厂商，<span class="arithmatex">\(qi\)</span>表示其产量，<span class="arithmatex">\(P(q_1, q_2, ..., q_n)\)</span>表示市场价格，<span class="arithmatex">\(c_i(q_i)\)</span>表示第<span class="arithmatex">\(i\)</span>个厂商的生产成本。</p>
+</li>
+<li>
+<p>求出市场需求函数。市场需求函数表示市场上消费者对产品的需求量，它可以表示为所有厂商的产量之和的函数：<span class="arithmatex">\(Q = q_1 + q_2 + ... + q_n\)</span>, 其中，Q表示市场需求量。</p>
+</li>
+<li>
+<p>假设其他厂商的产量是固定的。在这个假设下，每个厂商都可以通过将其他厂商的产量代入市场需求函数来求出市场价格。市场价格可以表示为：<span class="arithmatex">\(P = a - bQ\)</span>，其中，a和b是常数，可以根据市场需求函数确定。</p>
+</li>
+<li>
+<p>求出每个厂商的最优反应函数。最优反应函数表示在其他厂商的产量固定的情况下，该厂商的产量能够使其利润最大化。<strong>每个厂商的最优反应函数可以通过将其他厂商的产量代入其利润函数</strong>，并对其产量求导数得到。例如，第i个厂商的最优反应函数可以表示为：<span class="arithmatex">\(q_i* = f(q_1, q_2, ..., q_{i-1}, q_{i+1}, ..., q_n)\)</span></p>
+</li>
+<li>
+<p>其中，<span class="arithmatex">\(qi*\)</span>表示第<span class="arithmatex">\(i\)</span>个厂商的最优产量，<span class="arithmatex">\(f\)</span>表示一个关于其他厂商产量的函数。</p>
+</li>
+</ul>
+<p>解Cournot均衡方程。Cournot均衡方程是指每个厂商的产量都是其<strong>最优反应函数</strong>的解，即：<span class="arithmatex">\(q_i^* = f(q_1^*, q_2^*, ..., q_{i-1}^*, q_{i+1}^*, ..., q_n^*)\)</span>，对于每个<span class="arithmatex">\(i=1,2,...,n\)</span>，都要求解出其最优产量<span class="arithmatex">\(q_i^*\)</span>。</p>
+<hr />
+<h3 id="_4">混合策略<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>局中人I起码能保证赢得最小值中最大的，不会多于局中人II的所失去的，总有v_1 \leq v_2。但是实际中常常有 v_1 &lt; v_2，此时对策不存在纯策略意义下的解；所以要考虑混合策略；</li>
+</ul>
+<div class="arithmatex">\[\begin{pmatrix}3&amp;6   \\　5&amp;4
+\end{pmatrix}\]</div>
+<ul>
+<li>
+<p>按道理应该I选4，II选5，但是此时没有达到均衡，此时我们可以考虑一个<strong>选择不同策略的概率分布</strong>，将两个人的策略相乘得到一个赢得函数 E(x, y) = x^T A y  =\sum \sum a_{ij}x_i y_i 其中混合策略分别理解为局中人的纯策略的偏爱程度（概率），称这个矩阵是对策G的混合扩充。当纯策略意义下的解不存在的时候，可以认为讨论的是混合策略意义下的解；</p>
+</li>
+<li>
+<p><span class="arithmatex">\(S_1 = { (x_1, x_2) | x_1, x_2 \geq 0, x_1 + x_2 = 1}\)</span></p>
+</li>
+<li><span class="arithmatex">\(S_2 = { (y_1, y_2) | y_1, y_2 \geq 0, y_1 + y_2 = 1}\)</span></li>
+<li><span class="arithmatex">\(E(x, y) = 3x_1y_1 + 6x_1y_2 + 5x_1y_2 + 4x_2y_2\)</span>，用y_1替换y_2，x_1替换x_2，可以得到一个用x_1 和y_1 表达的式，求偏导可以得出最优策略和对策的值；</li>
+</ul>
+<h3 id="_5">混合策略纳什均衡<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>混合策略纳什均衡是指在博弈中，每个玩家以<strong>一定概率随机选择多个可行策略，使得对手无法通过选择单一策略来获得更高的收益。混合策略纳什均衡是纳什均衡的一种形式</strong>，其中玩家通过在不同的可行策略之间随机选择来达到平衡状态。混合策略纳什均衡是指在博弈中，每个玩家以一定概率随机选择多个可行策略，使得对手无法通过选择单一策略来获得更高的收益。混合策略纳什均衡是纳什均衡的一种形式，其中玩家通过在不同的可行策略之间随机选择来达到平衡状态。<ul>
+<li>也就是存在某个决策集合，使对于所有人而言，这决策集合的支付函数是大于等于其他所有策略组合的；</li>
+<li>可以视为一个随机稳定状态；</li>
+</ul>
+</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>一些区分：
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>纯策略纳什均衡是指在博弈中每个玩家选择一种可行策略，使得对手无法通过选择不同的策略来获
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>得更高的收益。换句话说，纯策略纳什均衡是一种状态，其中每个玩家都采用最优的单一策略，而
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>没有必要使用任何随机化或混合策略。（通过不断剔除严格劣策略）
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>与之相反，混合策略纳什均衡是指在博弈中，每个玩家使用一定的概率分布来随机地选择可行策
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>略，使得对手无法通过改变自己的策略来获得更高的收益。 换句话说，混合策略纳什均衡是一种
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>状态，其中每个玩家都采用一定的随机化策略，以确保对手无法获得更高的收益。
+</code></pre></div>
+- E.G. <strong>监督博弈</strong>：
+    - 经常应用在偷漏税检查、质量检查中：
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>a: 缴纳税额
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>C：检查成本
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>F：罚款
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>         逃税                    不逃
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>检查    (a - C + F, -a - F) | (a - C, -a)
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>不检查  (0,0)               | (a, -a)   
+</code></pre></div>
+    - 不存在纯策略纳什均衡
+    - 税收部门检查的概率 <span class="arithmatex">\(\theta\)</span>， 逃税的概率 <span class="arithmatex">\(\gamma\)</span>，此时税收部门的期望效用<span class="arithmatex">\(\theta((a - C +F)\gamma + (a - C)(1-\gamma)) + (1-\theta)(0 \times \gamma + a(1-\gamma))\)</span>
+    - 求关于 <span class="arithmatex">\(\theta\)</span> 的偏导数得到最优 <span class="arithmatex">\(\gamma^* = \dfrac{C}{a + F}\)</span>
+    - 同理可得 <span class="arithmatex">\(\theta^* = \dfrac{a}{a + F}\)</span>
+    - 这表明如果罚款越小，或者罚款额越大，税收部门检查的概率就越大，
+    - 此时混合策略纳什均衡： <span class="arithmatex">\((\dfrac{a}{a +F}, \dfrac{F}{a + F}), (\dfrac{C}{a + F}, \dfrac{a + F - c}{a + F})\)</span>, </p>
+<h2 id="_6">零和博弈<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>静态博弈中，所有人的支付之和是0.就是～；</li>
+<li>
+<p><strong>矩阵博弈</strong>的三个条件：</p>
+<ul>
+<li>两个参与者</li>
+<li>I有m个纯策略；II有<span class="arithmatex">\(n\)</span>个，形成各自的策略集；</li>
+<li>对任何一策略组合，I的赢得值是 <span class="arithmatex">\(a_{ij}\)</span>，那么II的赢得值是 <span class="arithmatex">\(-a_{ij}\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>矩阵博弈的纯策略纳什均衡</strong>：存在一个纯策略组合，使得对于一切<span class="arithmatex">\(i = 1,..,m,j = 1,...,n\)</span>，都有 <span class="arithmatex">\(a_{ij^*} \leq a_{i^*j^*} \leq a_{i^*j}\)</span>，就说存在博弈G的纯策略纳什均衡。（第i行的最小值和第j列的最大值）</p>
+</li>
+<li>
+<p>鞍点的概念</p>
+</li>
+<li>
+<p>定理1:存在矩阵博弈纯策略纳什均衡的充要条件：最大化最小与最小化最大的值是相等的；</p>
+</li>
+<li>定理2:是<strong>鞍点</strong>，<span class="arithmatex">\(\forall x \in A, \forall y \in B\)</span>, 都存在：<span class="arithmatex">\(f(x, y^*) \leq f(x^* ,y^*) \leq f(x^*, y)\)</span></li>
+</ul>
+<h2 id="_7">矩阵博弈的混合策略纳什均衡<a class="headerlink" href="#_7" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>如果按照纯策略找出的 <span class="arithmatex">\(v_1\)</span> 和 <span class="arithmatex">\(v_2\)</span> 不相等，那么需要利用混合策略找到均衡解；可以给出一个选取不同策略的概率分布（也就是混合策略）。</li>
+</ul>
+<p><span class="arithmatex">\(S^*_1 = \left\{ x = (x_1, x_2, ... ,x_m)^T | \sum \limits^{m}_{i = 1}x_i  = 1, x_i \geq 0, 1 \leq i \leq m \right\}\)</span></p>
+<p><span class="arithmatex">\(S^*_2 = \left\{ y = (y_1, y_2, ... ,y_n)^T | \sum \limits^{n}_{j = 1}y_j  = 1, y_j \geq 0, 1 \leq j \leq n \right\}\)</span></p>
+<ul>
+<li>
+<p>上述称为参与人I和II的混合策略集；</p>
+</li>
+<li>
+<p>取混合策略组合<span class="arithmatex">\((x,y) \in S^*_1 \times S^*_2\)</span>，期望收益<span class="arithmatex">\(E(x,y) = x^TAy = \sum \sum a_{ij}x_iy_j\)</span>，这个新的博弈就是原博弈的混合扩充；</p>
+</li>
+<li>
+<p>如果这个混合扩充存在一个鞍点<span class="arithmatex">\((x^*, y^*)\)</span>，也就是<span class="arithmatex">\(\forall x \in S^*_1, y \in S^*_2\)</span>， 都有<span class="arithmatex">\(E(x, y^*) \leq E(x^*,y^*) \leq E(x^*, y)\)</span>，就把这个策略组合称为混合策略的纳什均衡，<span class="arithmatex">\(x^*\)</span>和<span class="arithmatex">\(y^*\)</span>分别是两个决策者的最优组合策略；</p>
+</li>
+<li>定理：混合策略纳什均衡结果具有唯一性；</li>
+<li>如果矩阵博弈的混合扩充，存在一个策略组合使得 <span class="arithmatex">\(\mathop{\max} \limits_{x \in S^*_1} \mathop{\min} \limits_{y \in S^*_2} E(x, y) =  \mathop{\min} \limits_{y \in S^*_2} \mathop{\max} \limits_{x \in S^*_1} E(x, y) = V_{G^*}\)</span>，那么<span class="arithmatex">\(V_{G^*}\)</span>就是博弈的值，上式成立的组合就是混合策略意义下的纳什均衡；</li>
+<li>定理5:任何一个矩阵博弈，一定存在混合策略意义下的纳什均衡解；</li>
+<li>定理6:设<span class="arithmatex">\((x^*,y^*)\)</span>是矩阵对策的解，<span class="arithmatex">\(v = V_G\)</span>，那么  ？（互补松弛性）<ul>
+<li>这也说明了<strong>可以基于线性规划的对偶理论</strong>，利用单纯形法，求解矩阵对策的混合策略纳什均衡；</li>
+</ul>
+</li>
+<li>定理7:有两个矩阵对策<span class="arithmatex">\(G_1 = {S_1, S_2:A_1}，G_2 = {}\)</span>，那么<span class="arithmatex">\(V_{G_2} = V_{G_1} + L\)</span> </li>
+<li>定理8:每个受益都是？</li>
+<li>定理9:矩阵对策A为斜对称矩阵<span class="arithmatex">\(A = - A^T\)</span> ，那么<span class="arithmatex">\(V_G = 0\)</span>，谁也赢不了；局中人I和II的最优策略集都是一样的；</li>
+</ul>
+<h2 id="_8">求解方法<a class="headerlink" href="#_8" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p>题目：利用LP方法求解矩阵对策 <span class="arithmatex">\(G = \{S_1, S_2, A \}\)</span>。 A = <span class="arithmatex">\(\left\{ \begin{matrix} 7 &amp; 2 &amp; 9 \\ 2 &amp; 9 &amp; 0 \\ 9 &amp; 0&amp; 11\end{matrix} \right\}\)</span>, <span class="arithmatex">\(S_1 = {\alpha_1, \alpha_2, \alpha_3}\)</span>， <span class="arithmatex">\(S_2 = {\beta_1, \beta_2, \beta_3}\)</span>.</p>
+<ul>
+<li>要把这个问题转换成求解两个互为对偶的线性规划问题：</li>
+<li><span class="arithmatex">\(\mathop{\min} x_1 + x_2 + x_3\)</span></li>
+<li>
+<p><span class="arithmatex">\(s.t \left\{ \begin{aligned} 7x_1 + 2x_2 + 9x_3 \geq 1 \\ 2x_1 + 9x_2 \geq 1  \\ 9x_1 + 11x_3 \geq 1 \\ x_1,x_2, x_3 \geq 0\end{aligned} \right.\)</span></p>
+</li>
+<li>
+<p>（它的对偶问题我不写了因为Latex真的不好写）</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>图解法</strong>：求解 <span class="arithmatex">\(2 \times 2\)</span>对策，<span class="arithmatex">\(m \times 2\)</span> 的矩阵对策：</p>
+<ul>
+<li>先找<strong>鞍点</strong>，设混合策略为<span class="arithmatex">\(( x , 1 - x)，x \in [ 0, 1 ]\)</span></li>
+<li>这时可以确定直线。比如 <span class="arithmatex">\(( \begin{matrix} 2 \\ 7 \end{matrix} )\)</span> ，就可以写成 <span class="arithmatex">\(2x + 7(1-x)\)</span>以此类推（因为都是 <span class="arithmatex">\(2 \times m\)</span>）</li>
+<li>如果不符合上面的约束，可以先根据矩阵对策的优超原则对A进行化简；（比如，如果某一行的元素<strong>均大于</strong>另一行上对应的元素（某一列的元素<strong>均小于</strong>另一列上的元素），所以对于I而言，前一个策略必然会优于后一个策略。此时可以把后一个策略的那一行（列）删除；直到可以化简成可以用图解法求的情况；</li>
+</ul>
+</li>
+</ul>
+<figure>
+<p><img alt="" src="../../picx/OR11/%E5%9B%BE%E8%A7%A3%E6%B3%95.png" />
+  </p>
+<figcaption>把图像画出来之后箭头覆盖即为边界</figcaption>
+</figure>
+<ul>
+<li>方程组法：把矩阵对策转化为一方程组进行求解；</li>
+</ul>
+<p><span class="arithmatex">\(\varphi_i(v) = \sum \limits_{S \in N,  i \in S} \dfrac{(|S| − 1)!(n – |S|)!} {n!} [ v(S) – v(S – {i})]\)</span></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 9, 2023 19:38:26</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 15, 2023 00:53:51</span>
       
         <br>
         Created:
@@ -7467,7 +7831,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.b78d2936.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.efa0ade1.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       
