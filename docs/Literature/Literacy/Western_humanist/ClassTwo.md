@@ -32,6 +32,10 @@
 - **focus on the reader** as a role of literary studies is brought to the front.
 
 
+## Intro 
+
+> The New Criticism is an Anglo-American variety of Formalism that emerged in the early decades of the twentieth century and dominated teaching and scholarship until the early 1960s. It is less a coherent literary theory than a congeries of critical and theoretical approaches all of which agree that the literary work is **AUTONOMOUS**, that its unity and meaning are constituted primarily by formal and **rhetorical features, and that it is free from any burden of reflection on the social world in which it is produced or from any connection to the author who produces it.**
+
 - objective correlative(powerful ways of ), a not direct descrption;
 
 Evolutionary Stages
@@ -41,7 +45,9 @@ Evolutionary Stages
 4. after 1950s, institutionalized and naturalized 
 
 
-## CHaracteristics:
+
+
+## Characteristics:
 
 1. eliminate extrinstic(external / outside, like religion, history and things.) concerns.
 2. explore the structure of a work:
@@ -61,7 +67,7 @@ Evolutionary Stages
 
 - Culture diversity: The Islamic contribution: Not western dominant. Islam makes it more connected with the other world.
 - Use formalist protocals.
-- genetic and receptionist approaches denied.(be careful, **intentional fallacies**, 过于强调作者，是在吧自己的意图强加给作者，用来批评传统的把批评家自己的观念强加给作者并复制给文本； affective fallacies强调文本对读者的影响)
+- genetic and receptionist approaches denied.(be careful, **intentional fallacies**, 过于强调作者，是在吧自己的意图强加给作者，用来批评传统的把批评家自己的观念强加给作者并复制给文本； affective fallacies 强调文本对读者的影响)
 - theological notion of metaphor，过于强调“一种相同的认识”，无法解释长篇巨著。
 - posit the ideal reader: 读者
 
@@ -139,5 +145,3 @@ Evolutionary Stages
 - 他们本身就是最大的 意识形态堡垒，虽然他们否定自己没有意识形态，但他们的观点充斥着主观，他们选择的经典充斥着一些选择、歧视；有自己的for 和against。
 - The world itself is so complicated that I can't figure it out!
 
-for i in range(n):
-print(Theis done!)
