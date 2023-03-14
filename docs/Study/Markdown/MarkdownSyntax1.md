@@ -1,3 +1,6 @@
+!!! quote
+    参考pymarkdown插件链接：[传送门](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/)
+
 
 ## 多窗口
 === "Unordered list"
@@ -137,3 +140,61 @@ tags on separate lines __and__ adding new lines between the tags and the content
 </figure>
 
 ```
+
+
+
+
+!!! danger
+    图形绘制部分在移动端有可能显示出错，建议在PC端使用！
+
+## 一些mermaid JS画的图
+
+```mermaid
+gantt
+title 项目开发流程
+section 项目确定
+    需求分析       :a1, 2019-06-22, 3d
+    可行性报告     :after a1, 5d
+    概念验证       : 5d
+section 项目实施
+    概要设计      :2019-07-05  , 5d
+    详细设计      :2019-07-08, 10d
+    编码          :2019-07-15, 10d
+    测试          :2019-07-22, 5d
+    测试2          :2019-07-12, 5d
+    测试3          :2019-07-16, 5d
+    测试4          :2019-07-23, 5d
+section 发布验收
+    发布: 2d
+    验收: 3d
+```
+
+
+
+
+
+```mermaid
+
+pie
+    title Key elements in Product X
+    "Calcium" : 42.96
+    "Potassium" : 50.05
+    "Magnesium" : 10.01
+    "Iron" :  5
+```
+
+```mermaid
+sequenceDiagram
+
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob : How about you?
+Bob-->>John : Jolly good!
+```
+
+
+
