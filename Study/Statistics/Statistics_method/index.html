@@ -3144,6 +3144,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3_5_13" id="__nav_3_5_13_label" tabindex="0">
@@ -3164,7 +3166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Literature/Literacy/Western_humanist/ClassOne/" class="md-nav__link">
+      <a href="../../../Literature/Literacy/Western_humanist/RussianFormalism/" class="md-nav__link">
         人文主义和俄国形式主义
       </a>
     </li>
@@ -3178,8 +3180,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Literature/Literacy/Western_humanist/ClassTwo/" class="md-nav__link">
+      <a href="../../../Literature/Literacy/Western_humanist/NewCriticism/" class="md-nav__link">
         新批评学派的主张与对新批评学派的批评
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Literature/Literacy/Western_humanist/Structralism/" class="md-nav__link">
+        结构主义
       </a>
     </li>
   
@@ -7493,7 +7509,7 @@
 <ul>
 <li>他们的 \mu 是否是相同的？如果相同（接受原假设），说明是否喜欢老师与最终的学生分数无关。（X和Y之间没有关系）</li>
 <li>做法：<ul>
-<li>全Y的方差由： X的方差和组内误差方差解释；如果X的方差解释比误差方差的影响还要小，说明是否喜欢老师与分数无关；</li>
+<li>全Y的方差由：X的方差和组内误差方差解释；如果X的方差解释比误差方差的影响还要小，说明是否喜欢老师与分数无关；</li>
 <li>组间误差是否比组内误差小； </li>
 </ul>
 </li>
@@ -7570,11 +7586,25 @@
 <li><span class="arithmatex">\(R^2 = \dfrac{\sum (\hat{y_i} - \bar{y})^2}{\sum (y_i - \bar{y})^2}\)</span></li>
 </ul>
 </li>
-<li>这时候要回到刚开始的自由度。如果单regressor的情况下，此时有两个观测，自由度是0，此时的R^2 = 1（因为这两个点完全解释了这一条直线！但是这并不好！因为它不自由！）；如果有三个观测，自由度是1，R^2可能降到0.8，但是此时的模型更好了，因为有了自由度，对模型关系评价的强度就更高了；$$</li>
+<li>这时候要回到刚开始的自由度。如果单regressor的情况下，此时有两个观测，自由度是0，此时的R^2 = 1（因为这两个点完全解释了这一条直线！但是这并不好！因为它不自由！）；如果有三个观测，自由度是1，<span class="arithmatex">\(R^2\)</span>可能降到<span class="arithmatex">\(0.8\)</span>，但是此时的模型更好了，因为有了自由度，对模型关系评价的强度就更高了；</li>
 </ul>
 <h2 id="adjusted-r2">Adjusted <span class="arithmatex">\(R^2\)</span> 的解释<a class="headerlink" href="#adjusted-r2" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>正如上面展开说的那样，其实R<sup>2本身是很令人疑惑的，因为过高的R</sup>2可能说明恰恰是缺少了自由度的。</li>
+<li>
+<p>正如上面展开说的那样，其实R^2本身是很令人疑惑的，因为过高的<span class="arithmatex">\(R^2\)</span>可能说明恰恰是缺少了自由度的。</p>
+<ul>
+<li>比如三个点确定一个面，那这个面唯一确定，而不能反映关系</li>
+</ul>
+</li>
+<li>
+<p>more regressors to explain Y, 更多回归变量，即使这两个不相关，总有一部分<span class="arithmatex">\(Y\)</span>能被<span class="arithmatex">\(X\)</span>所解释；R^2 会变大；</p>
+</li>
+<li>more regressors 也意味着自由度越来越低；更低的自由度往往意味着更高的<span class="arithmatex">\(R^2\)</span>；<ol>
+<li>regressors 就是, <span class="arithmatex">\(y = b_0 + b_1 x_1 + b_2 x_2.. + u_i\)</span>，中的<span class="arithmatex">\(x\)</span>的个数（也就是2个）</li>
+</ol>
+</li>
+<li>综上2点，不能仅仅看R^2</li>
+<li>所以我们引入了adjusted R<sup>2的概念，如果1的作用大于2的作用，那么\bar{R</sup>2} 就会增加，反之减少；意味着，这个adjusted R^2 只在“你加入了一些解释变量，而且这些解释变量的解释力度大于自由度减少带来的解释力度，也就是更好滴提升模型预测能力”的时候才增加；</li>
 </ul>
 
   <hr>
@@ -7582,7 +7612,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 15, 2023 00:53:51</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 21, 2023 18:46:46</span>
       
         <br>
         Created:
