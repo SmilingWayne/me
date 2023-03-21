@@ -12,8 +12,8 @@
 
 - 她们的声音都很光滑，让瞎子想到自己捧起碗时候的感觉；
 - 思绪借助身体的行走...
+
 > 通感～修辞手法
->
 > The abandoned capital:废都
 
 - Difference btwen philosophical Formalism:
@@ -56,7 +56,8 @@ Evolutionary Stages
 4. closely reading. very very close, details very matter, **scrutinizing.**. Scrutiny
 5. distinguish literature from religion and morality
 
-
+- linguistic features
+- fictions: use of words
 
 ## Ideological position
 
@@ -109,7 +110,7 @@ Evolutionary Stages
 - incorporate within the work the impersonal feelings and emotions common to mankind 
 - intentional fallacy 
 - 意图迷雾和感受迷雾
-- careful read / exact scrutiny 
+- careful read / exact **scrutiny **
 - theory to be applied
     - rhyme, meter, setting, characterization and plot were used to identify the plot
     - NC looked fror paradox, ambiguity irony     
@@ -122,6 +123,7 @@ Evolutionary Stages
     - a poem should equal to not true.
     - 以完整的形式呈现给读者，而不是告诉读者有什么意义；
     - A poem should not mean, but be;
+
 
 
 ## How to understand the Text?
