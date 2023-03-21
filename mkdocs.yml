@@ -122,7 +122,6 @@ nav:
               - 🇫🇷五至七时的克莱奥: Plays/Cleo.md
               - 🇨🇳中国姑娘: Plays/La_chinioise.md
               - 无主之作: Plays/Werk_ohne_autor.md
-
       - 随笔:
           - Literature/Essay/index.md
           - 小于一: Literature/Essay/Less_than_one.md
@@ -161,8 +160,9 @@ nav:
           - 沉默的大多数: Literature/Literacy/Silent_most.md
           - 给青年诗人的信: Literature/Literacy/To_young_poets.md
           - 西方人文主义精神:
-              - 人文主义和俄国形式主义: Literature/Literacy/Western_humanist/ClassOne.md
-              - 新批评学派的主张与对新批评学派的批评: Literature/Literacy/Western_humanist/ClassTwo.md
+              - 人文主义和俄国形式主义: Literature/Literacy/Western_humanist/RussianFormalism.md
+              - 新批评学派的主张与对新批评学派的批评: Literature/Literacy/Western_humanist/NewCriticism.md
+              - 结构主义: Literature/Literacy/Western_humanist/Structralism.md
 
           - 批判性思维的形成: Literature/Literacy/Formation_critical_thinking.md
           - 天真的和感伤的小说家: Literature/Literacy/Naive_novlist.md
