@@ -116,7 +116,7 @@ tags on separate lines __and__ adding new lines between the tags and the content
 ## 图片/Gif嵌入（Mkdocs 下）
 
 <figure markdown>
-![](../picx/GIFtest.gif)
+![](../../picx/GIFtest.gif)
   <figcaption>这是简介</figcaption>
 </figure>
 

@@ -38,7 +38,9 @@
     - 将一个周期内的平均费用（=库存成本+缺货成本+订货成本）表示出来，分别求关于$(t,t_2)$的偏导数，求的最佳费用；
 
 
-![](../picx/OR10/fig1.png)
+    <figure markdown>
+        ![Image](../picx/OR10/fig1.png){width = "100"}
+    </figure>
 
     - 可以得出如下结论：
         - 最优存储周期 $t = \dfrac{2c_3}{c_1 R} \times \dfrac{C_1 + C_2}{C_2} \times \dfrac{P}{P - R}$
@@ -66,8 +68,10 @@ $$C(t) = \dfrac{1}{2} C_1 Rt + \dfrac{C_3}{t} + RK(Q)$$
 
     - 最后一项$K(Q)$是一个常数，随着$Q$的变化二变化，$K(Q) = K_i$，$R$ 是订货的批量
   
-
-![](../picx/OR10/Fig2.png)
+<figure markdown>
+![](../picx/OR10/Fig2.png){width = "200"}
+<figcaption>这是简介</figcaption>
+</figure>
 
 - 找新的最优点只需要找对勾函数的原极小值点和后续的价格激励的开始点的结果；
 
