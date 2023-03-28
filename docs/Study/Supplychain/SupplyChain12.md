@@ -23,7 +23,7 @@ $\qquad ss = F^{-1}_s(CSL) \times \sigma_L \\
 
  ## 聚集对安全库存的影响
 
- 实践中，供应链有不同的库存需求水平，面对多个有需求的地区，可以选择在每一个地方存储本地库存，也可以将所有的库存集中在一个仓库中。我们对比两种方法下的安全库存。现有变量如下
+实践中，供应链有不同的库存需求水平，面对多个有需求的地区，可以选择在每一个地方存储本地库存，也可以将所有的库存集中在一个仓库中。我们对比两种方法下的安全库存。现有变量如下
 
 有$k$个地区，每个地区的需求符合正态分布，
 $D_i$ : 地区$i$的周需求均值, $\sigma_i$ 地区$i$的周需求标准差,$i = 1,...k$
@@ -31,15 +31,13 @@ $\rho_{ij}$:地区$i$和地区$j$的周需求协方差 $1 \leq i ≠ j \leq k$
 
  
 
- 非聚集策略下总安全库存= $\sum^{k}_{i = 1}{F^{-1}_s{(CSL)} }\times \sqrt{L} \times \sigma_i$ 
+ 非聚集策略下总安全库存= $\sum \limits^{k}_{i = 1}{F^{-1}_s{(CSL)} }\times \sqrt{L} \times \sigma_i$ 
 
 如果所有库存聚集在一个中央仓库，那么需要计算聚集需求的分布。聚集需求服从正态分布，均值$D^C$，标准差$\sigma^{C}_{D} $， 协方差$var(D^{C})$分别计算如下：
 
-$\qquad D^C = \sum^{k}_{i = 1}D_i \\
-    \\
-  \qquad VAR(D^C) = \sum^{k}_{i = 1}{\sigma^2_i} + 2\sum_{i > j}{\rho_{ij}\sigma_i\sigma_j}   \\
-  \\
-  \qquad  \sigma^{C}_D = \sqrt{VAR(D^C)}$
+$$D^C = \sum^{k}_{i = 1}D_i$$
+$$VAR(D^C) = \sum^{k}_{i = 1}{\sigma^2_i} + 2\sum_{i > j}{\rho_{ij}\sigma_i\sigma_j}$$
+$$\sigma^{C}_D = \sqrt{VAR(D^C)}$$
 
 
 如果有$k$个地区的需求相互独立$(\rho_{ij} = 0)$且同分布，均值是$D$,标准差是$\sigma_D$, 上面的式子可以简化如下
@@ -54,16 +52,15 @@ $\qquad ss = F^{-1}_{S}(CSL) \times \sqrt{L} \times \sigma^{C}_D$
 
 将库存持有成本节约除以总需求$kD$ 可以得到聚集策略带来的单位销售量的库存持有成本节约，设$H $为单位库存持有成本，此时单位库存持有成本节约为
 
-$\qquad Save = \dfrac{F^{-1}_{S}(CSL) \times \sqrt{L} \times H}{D^C} \times (\sum^{k}_{i = 1}{\sigma_i} - \sigma^C_{D} )$
+$\qquad Save = \dfrac{F^{-1}_{S}(CSL) \times \sqrt{L} \times H}{D^C} \times (\sum \limits^{k}_{i = 1}{\sigma_i} - \sigma^C_{D} )$
 
-差值$(\sum^{k}_{i = 1}{\sigma_i} - \sigma^C_{D})$受相关系数$\rho_{ij}$的影响，相关系数越接近-1（负相关），差值越大，相关系数越接近1（正相关），差值越小。只要相关系数小于1，集聚策略就可以带来库存节约。同时可以得出以下结论：
+差值$(\sum \limits^{k}_{i = 1}{\sigma_i} - \sigma^C_{D})$受相关系数$\rho_{ij}$的影响，相关系数越接近-1（负相关），差值越大，相关系数越接近1（正相关），差值越小。只要相关系数小于1，集聚策略就可以带来库存节约。同时可以得出以下结论：
 
 
-
-- <font color = 'grey' size = 4>聚集策略带来的安全库存节约随着<font color = "darkpink">期望服务水平CSL的增加而增加</font></font>
-- <font color = 'grey' size = 4>聚集策略带来的安全库存节约随着<font color = "darkpink">补货提前期L的延长而增加</font></font>
-- <font color = 'grey' size = 4>聚集策略带来的安全库存节约随着<font color = "darkpink">库存持有成本H的增加而增加</font></font>
-- <font color = 'grey' size = 4>聚集策略带来的安全库存节约随着<font color = "darkpink">相关系数的增加而减少</font></font>
+- 聚集策略带来的安全库存节约随着==期望服务水平CSL的增加而增加==.
+- 聚集策略带来的安全库存节约随着==补货提前期L的延长而增加==
+- 聚集策略带来的安全库存节约随着==库存持有成本H的增加而增加==
+- 聚集策略带来的安全库存节约随着==相关系数的增加而减少==
 
 
 
