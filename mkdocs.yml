@@ -305,6 +305,7 @@ nav:
           - 2022/4/15: ToDo/LeetCode/2022.4.15 Leetcode 日常刷题.md
   - 学习:
       - Study/index.md
+      - 小红书资源分享站: Study/xhs_list.md
       - 小红书｜文本编辑:
           - Study/TextEdit/index.md
           - LaTex:
@@ -314,7 +315,6 @@ nav:
               - 色样表合集: Study/TextEdit/Markdown/MarkdownSyntax2.md
               - 常用的语法(with plugins): Study/TextEdit/Markdown/MarkdownSyntax1.md
               - 字体推荐: Study/TextEdit/Markdown/Markdown.md
-
       - 微积分:
           - Chapter1: Study/Calculus/Math2.md
       - 线性代数:
@@ -337,6 +337,10 @@ nav:
           - 排队论: Study/OR/Chapter9.md
           - 仓储论（EOQ模型和它的一万个分身）: Study/OR/Chapter10.md
           - 博弈论: Study/OR/Chapter11.md
+          - 练习题:
+              - 第一章: Study/OR/ORExercise/Chapter1_wk.md
+              - 第二章: Study/OR/ORExercise/Chapter2_wk.md
+              - 第三章: Study/OR/ORExercise/Chapter3_wk.md
       - 概率论:
           - 统计学基础: Study/Statistics/Statistics_method.md
           - 基础知识与贝叶斯理论: Study/Statistics/Basics.md
@@ -357,7 +361,7 @@ nav:
           - 带*的变量: Study/PythonPackages/PythonPieces4.md
           - 集合操作: Study/PythonPackages/PythonPieces5.md
       - 小红书｜供应链管理:
-          - Little'sLaw: Study/Supplychain/LittlesLaw.md
+          - Little's_Law: Study/Supplychain/LittlesLaw.md
           - 牛鞭效应: Study/Supplychain/Niubian.md
           - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
           - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
@@ -377,8 +381,11 @@ nav:
           - 提高供应链盈利能力的杠杆(Chapter_13.3): Study/Supplychain/SupplyChain17.md
           - 供应链中的运输(Chapter_14_1): Study/Supplychain/SupplyChain18.md
           - 供应链采购合同分析: Study/Supplychain/SupplyChain19.md
-          - 案例: Study/Supplychain/SupplyChain2.md
-      - Swift: Study/Swift/CS193p1.md
+      - 果系产品使用:
+          - CS193p: Study/Swift/CS193p1.md
+          - macOS快捷键: Study/Swift/Keyshortcuts.md
+          - shortcuts快捷指令使用指南: Study/Swift/Shortcuts.md
+          - Apple的奇奇怪怪: Study/Swift/AppleScript.md
       - 语言学习:
           - 英语笔记: Study/English/English.md
           - 英文作文: Study/English/EnglishEssay.md
@@ -392,7 +399,11 @@ nav:
           - 领导: Study/Management/Lead.md
       - 论文: Study/Undergraduate_essay.md
       - VScode技巧: Study/Vscode/keys.md
+      - ChatGPT:
+          - 安装: Study/ChatGPT/Register.md
+          - 使用技巧: Study/ChatGPT/Prompt1.md
       - 我的碎碎念:
+          - 我的2022: Study/Talks/My2022.md
           - 荐文: Study/Talks/Articles_recomend.md
           - 荐书: Study/Talks/Books_recomend.md
           - 古典音乐: Study/Talks/Classical_music.md
@@ -401,12 +412,12 @@ nav:
           - 没有整理的: Study/Talks/pieces.md
           - 战争: Study/Talks/Russia.md
           - 知识分享: Study/Talks/Knowledge_share.md
-      - 我的2022: Study/My2022.md
 
 site_author: SmilingWayne
 repo_name: SmilingWayne/me
 repo_url: https://github.com/SmilingWayne/me
 
+docs_dir: ./docs
 theme:
   locale: en
   name: material
@@ -507,11 +518,7 @@ markdown_extensions:
 
 extra:
   social:
-    - icon: fontawesome/brands/zhihu
-      link: https://www.zhihu.com/people/wang-zhi-xiao-49-5
     - icon: fontawesome/brands/github
       link: https://github.com/SmilingWayne
-    - icon: fontawesome/brands/weibo
-      link: https://weibo.com/u/6025785811
 
 copyright: Copyright &copy; 2001 - 2023 xiaoxiaoWayne

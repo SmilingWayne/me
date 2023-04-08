@@ -10,7 +10,6 @@
   - Insights：发现重要启示：设计方案/系统，改进反应问题相关的绩效指标。
 
 
-
 ## AMSS 01
 
 - 运营的定义：
@@ -284,7 +283,7 @@
     - $total I = Ii + Ip + io = Ttotal * R$
     - 其中Ti/Tp/To都表示**average** flow time in XXX inventory
 - 运营系统中持有库存的原因：
-  - **解耦库存**decouple inventory：前后的activities紧密联系在一起，导致运营系统的连锁反应；这样可以让前后activity保持相对独立；
+  - **解耦库存** decouple inventory：前后的activities紧密联系在一起，导致运营系统的连锁反应；这样可以让前后activity保持相对独立；
   - **批量库存**（cycle/batch inventory）：规模经济效益使单位成本下降,在采购/运输/生产环节都存在。
   - **安全库存（**safety Inventory）防止缺货（stockout protection)【补充缺货原因：预测误差、供应商生产线出问题、预测的第一法则，也就是mismatch of demand and supply】
   - **季节库存**（seasonal inventory）目的：capacity smoothing防止需求的季节性波动（服装、空调等）
@@ -295,9 +294,6 @@
   - Theoretical Inventory =Throughput x Theoretical Flow Time
 - SKU：库存保管单位：stock keeping unit
 - ABC分类法：分清主次，将管理对象分为ABC三类
-
-
-
 
 
 ## AMSS 07
@@ -534,7 +530,6 @@
   - Aggregation：将多个类似产品或者不同地区的产品的需求整合起来看。
   - **Physical centralization：地理上将不同地区整合到一个地方【根号n效应】：**
     - ![Screen Shot 2021-12-27 at 1.34.57 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 1.34.57 PM.png)
-    - 
   - Virtual centralization：为了满足不同地区间需求，将产品在不同地区间输送
   - Specialization
   - Component Commonality（MTS、ATO等策略）
