@@ -34,6 +34,11 @@ $\mathbf{1234567890}$
 
 - 斜体数字
 
+
+```LaTeX
+$\mathit{1234567890 ABCDE abcdef}$
+```
+
 $\mathit{1234567890 ABCDE abcdef}$
 
 

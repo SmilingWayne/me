@@ -89,7 +89,7 @@ $$\mathop{\min} \sum \limits^{n}_{i = 1}\sum \limits^{m}_{j = 1}{c_{ij}x_{ij}}$$
 
 ### 约束条件
 
-$$ \sum \limits^{n}_{i = 1}{x_{ij}} = D_j, \ \ i = 1,...m$$
+$$\sum \limits^{n}_{i = 1}{x_{ij}} = D_j, \ \ i = 1,...m$$
 
 $$\sum \limits^{m}_{j = 1}{x_{ij}} \leq K_i, \ \ i = 1,...m$$
 

@@ -24,3 +24,8 @@ ca. 大约（特指日期近似）
 
 - per capita 平均的/平均每人的
 
+- word of mouth effect: 口口相传的效应
+
+- asynchronously?
+- convergence 趋同？相同？相交？
+- diffusion： 扩散；（stable diffusion model？
