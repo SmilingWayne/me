@@ -29,3 +29,4 @@ ca. 大约（特指日期近似）
 - asynchronously?
 - convergence 趋同？相同？相交？
 - diffusion： 扩散；（stable diffusion model？
+- orientations: 趋势、倾向
