@@ -1,10 +1,10 @@
 ## 模型和解
 ----
 
-- 线形规划（Linear Programming）：是在**线形约束**下**求解线性目标函数最优值**的数学理论和方法。
-      - 决策变量(Decision Variables):
-      - 目标函数(Objective Function):
-      - 约束条件(Constraints):
+- **线性规划**（Linear Programming）：是在**线形约束**下**求解线性目标函数最优值**的数学理论和方法。
+    - ==决策变量==(Decision Variables):
+    - ==目标函数==(Objective Function):
+    - ==约束条件==(Constraints):
 
 $$\mathop{\max}(\mathop{\min})z = \sum^{n}_{j = 1}{c_jx_j}$$
 

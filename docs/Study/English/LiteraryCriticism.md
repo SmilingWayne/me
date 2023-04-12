@@ -18,7 +18,6 @@
 
 - Russian formalism vs new criticism
     - consider Literature on its own terms ( get rid of politics, history, religion externalities.)
-    - 
     
 
 

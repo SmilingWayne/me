@@ -121,6 +121,7 @@ nav:
               - 🇫🇷精疲力尽: Plays/Exhausted.md
               - 🇫🇷五至七时的克莱奥: Plays/Cleo.md
               - 🇨🇳中国姑娘: Plays/La_chinioise.md
+              - 宇宙探索编辑部: Plays/A_journey_to_the_west.md
               - 无主之作: Plays/Werk_ohne_autor.md
       - 随笔:
           - Literature/Essay/index.md
@@ -164,6 +165,8 @@ nav:
               - 新批评学派的主张与对新批评学派的批评: Literature/Literacy/Western_humanist/NewCriticism.md
               - 结构主义: Literature/Literacy/Western_humanist/Structralism.md
               - 问题回答: Literature/Literacy/Western_humanist/Questions.md
+              - 巴赫金文学批评: Literature/Literacy/Western_humanist/BakhtinianLiteraryCriticism.md
+              - 新历史主义: Literature/Literacy/Western_humanist/NewHistorism.md
           - 批判性思维的形成: Literature/Literacy/Formation_critical_thinking.md
           - 天真的和感伤的小说家: Literature/Literacy/Naive_novlist.md
           - 浪漫主义(牛津通识读本): Literature/Literacy/Romanticism.md
@@ -317,6 +320,8 @@ nav:
               - 字体推荐: Study/TextEdit/Markdown/Markdown.md
       - 微积分:
           - Chapter1: Study/Calculus/Math2.md
+          - 笔记2(Unfin): Study/Calculus/20230406.md
+          - 笔记3(Unfin): Study/Calculus/GammaFunction.md
       - 线性代数:
           - 总结: Study/LinearAlgebra/Conclusion.md
           - chapter1: Study/LinearAlgebra/Chapter1.md
@@ -330,6 +335,7 @@ nav:
           - 灵敏度分析: Study/OR/Chapter1_plugin.md
           - 对偶理论及对偶单纯形法（一种哲学）: Study/OR/Chapter2.md
           - 运输问题、目标规划和 DEA: Study/OR/Chapter3.md
+          - DEA的扩展: Study/OR/Chapter3_plugin.md
           - 整数规划、求解算法和指派问题: Study/OR/Chapter4.md
           - 非线性规划、凸规划理论（最优化基础）: Study/OR/Chapter5.md
           - 动态规划及几个典型题（该学背包了）: Study/OR/Chapter6.md
@@ -341,6 +347,7 @@ nav:
               - 第一章: Study/OR/ORExercise/Chapter1_wk.md
               - 第二章: Study/OR/ORExercise/Chapter2_wk.md
               - 第三章: Study/OR/ORExercise/Chapter3_wk.md
+              - 图论和网络: Study/OR/ORExercise/Chapter7_wk.md
       - 概率论:
           - 统计学基础: Study/Statistics/Statistics_method.md
           - 基础知识与贝叶斯理论: Study/Statistics/Basics.md
@@ -389,6 +396,7 @@ nav:
       - 语言学习:
           - 英语笔记: Study/English/English.md
           - 英文作文: Study/English/EnglishEssay.md
+          - 英语文学批评: Study/English/LiteraryCriticism.md
       - 制造与服务系统分析: Study/AMASS.md
       - 古登堡计划:
           - 计算机相关: Study/Knowledge/CPUGPU.md
@@ -401,6 +409,7 @@ nav:
       - VScode技巧: Study/Vscode/keys.md
       - ChatGPT:
           - 安装: Study/ChatGPT/Register.md
+          - 其他AI工具: Study/ChatGPT/Reference.md
           - 使用技巧: Study/ChatGPT/Prompt1.md
       - 我的碎碎念:
           - 我的2022: Study/Talks/My2022.md
@@ -412,7 +421,9 @@ nav:
           - 没有整理的: Study/Talks/pieces.md
           - 战争: Study/Talks/Russia.md
           - 知识分享: Study/Talks/Knowledge_share.md
-
+      - 计算社会学｜复杂系统｜仿真:
+          - 基于主体的建模方法: Study/SimulationCSS/AboutABM.md
+          - 复杂系统: Study/SimulationCSS/Notes.md
 site_author: SmilingWayne
 repo_name: SmilingWayne/me
 repo_url: https://github.com/SmilingWayne/me
