@@ -33,6 +33,7 @@ nav:
           - 政治神学: Philosophy/Theology_politics.md
           - 美国生活中的反智主义: Philosophy/Anti_intellectual_usa.md
           - 以赛亚伯林的遗产: Philosophy/Legacy_berlin.md
+          - 自由及其背叛: Philosophy/Liberty_and_betray.md
           - 穆斯林与激进主义: Philosophy/Muslim_radicalism.md
           - 圣战与文明: Philosophy/Gihad_civilization.md
           - 良知对抗暴力: Philosophy/Verse_violence.md
@@ -312,8 +313,9 @@ nav:
       - 小红书｜文本编辑:
           - Study/TextEdit/index.md
           - LaTex:
-              - 笔记1: Study/TextEdit/LaTeX/LatexNotes.md
-              - 英文字体: Study/TextEdit/LaTeX/EnglishFonts.md
+              - 入门知识: Study/TextEdit/LaTeX/pieces.md
+              - LaTeX语法合集一: Study/TextEdit/LaTeX/LatexNotes.md
+              - LaTeX语法合集二-集合相关: Study/TextEdit/LaTeX/SetTheory.md
           - Markdown:
               - 色样表合集: Study/TextEdit/Markdown/MarkdownSyntax2.md
               - 常用的语法(with plugins): Study/TextEdit/Markdown/MarkdownSyntax1.md
@@ -462,13 +464,18 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css
+
 extra_javascript:
-  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js
   - javascripts/extra.js
-  - https://polyfill.io/v3/polyfill.min.js #?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/mathjax.js
+#   - https://polyfill.io/v3/polyfill.min.js?features=es6
+#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
+  - statistics
   - git-authors:
       show_contribution: true
       exclude:
@@ -524,6 +531,7 @@ markdown_extensions:
   - admonition
   - pymdownx.arithmatex:
       generic: true
+      block_tag: "pre"
   - toc:
       permalink: ⚓︎
 
