@@ -147,13 +147,13 @@ $$ y_j \geq 0 \hspace{12pt} (i = 1,...,m)$$
 ## 2.4 对偶单纯形法
 
 
-> 单纯形法总体而言在：1⃣️ 先找到可行性；2⃣️ 再确定最优性；
-> 对偶单纯形法相当于反了过来，先找对偶问题的可行解（也就是原问题的“最优”解），再寻找符合对偶问题最优性（也就是原问题可行性）的解；
+> 单纯形法总体而言在：1. 先找到可行性；2. 再确定最优性；
+> 对偶单纯形法相当于反了过来（或者==可以理解成，对这个LP的对偶问题，进行单纯形法求解==），先找对偶问题的可行解（也就是原问题的“最优”解），再寻找符合对偶问题最优性（也就是原问题可行解）的解；
 
 - 首先满足最优性，然后逐渐逼近可行性。最优性： 检验数$\sigma_j$ ；可行性：右端项 $b_i$；
 
-- 1⃣️ 列出初始单纯形表，要求$c_j - z_j$ 检验数小满足非正约束，也就是对偶问题为可行解，对$b_i$的值不做要求，
-- 2⃣️ 最优性判断$(B^{-1}b)_{i} < 0$；
+- （1） 列出初始单纯形表，要求$c_j - z_j$ 检验数小满足非正约束，也就是对偶问题为可行解，对$b_i$的值不做要求，
+- （2）最优性判断$(B^{-1}b)_{i} < 0$；
 
 
 - 确定出基变量：没有找到可行解，总存在 $b_i < 0$，选择$b_i$中最小的，对应的变量$x_r$ 就是出基变量；
@@ -180,3 +180,45 @@ $$\theta = \mathop{\min}  \{ \dfrac{c_j - z_j}{a_{rj} } | a_{rj} < 0 \} = \dfrac
 - 继续迭代。
 
 
+### 例题
+
+我们省略建模的部分。直接跳到单纯形表。
+
+和朴素的单纯形不同，我们首先不看最后一行（也就是检验数），而是先看b那一列。
+$$\def\arraystretch{1.5}
+   \begin{array}{c|c|c|c|c|c|c|c}
+   \hline
+   \hline
+   & & & -2 & -3 & -4 & 0 & 0  \cr \hline
+   \textbf{c}_{\textbf{B}} & \textbf{x}_{\textbf{B}} & \textbf{b} & x_1 & x_2 & x_3 & x_4 & x_5 \cr \hline
+   0 & x_4 & \textcolor{red}{-3} & -1 & -2 & -1 & 1 & 0  \cr \hline
+   0 & x_5 & \textcolor{red}{-4}  & \textcolor{green}{[-2 ]} & 1 & \textcolor{green}{-3} & 0 & 1  \cr \hline
+    &  &  & \textcolor{blue}{-2} & -3 & \textcolor{blue}{-4} & 0 & 0  \cr \hline
+    \hline
+\end{array}$$
+
+
+$$\def\arraystretch{1.5}
+   \begin{array}{c|c|c|c|c|c|c|c}
+   \hline
+   \hline
+   & & & -2 & -3 & -4 & 0 & 0  \cr \hline
+   \textbf{c}_{\textbf{B}} & \textbf{x}_{\textbf{B}} & \textbf{b} & x_1 & x_2 & x_3 & x_4 & x_5 \cr \hline
+   0 & x_4 & \textcolor{red}{-1} & 0 & \textcolor{green}{[-5/2]} & 1/2 & 1 & \textcolor{green}{-1/2}  \cr \hline
+   -2 & x_1 & 2  & 1 & -1/2 & 3/2 & 0 & -1/2  \cr \hline
+    &  &  & 0 & \textcolor{blue}{-4} & -1 & 0 & \textcolor{blue}{-1}  \cr \hline
+    \hline
+\end{array}$$
+
+
+$$\def\arraystretch{1.5}
+   \begin{array}{c|c|c|c|c|c|c|c}
+   \hline
+   \hline
+   & & & -2 & -3 & -4 & 0 & 0  \cr \hline
+   \textbf{c}_{\textbf{B}} & \textbf{x}_{\textbf{B}} & \textbf{b} & x_1 & x_2 & x_3 & x_4 & x_5 \cr \hline
+   -3 & x_2 & 2/5 & 0  & 1 & -1/5 & -2/5 & 1/5  \cr \hline
+   -2 & x_1 & 11/5  & 1 & 0 & 7/5 & -1/5 & -2/5  \cr \hline
+    &  &  & 0 & 0 & -9/5 & -8/5 & -1/5  \cr \hline
+    \hline
+\end{array}$$

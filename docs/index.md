@@ -1,3 +1,7 @@
+---
+statistics: true
+---
+
 # <font face = "KaiTi">(๑• . •๑)</font>
 
 <!-- For full documentation visit [mkdocs.org](https://www.mkdocs.org). Nice to see you. This is xiao xiao! -->
@@ -7,6 +11,8 @@
 
 ###  <font color = Crisma Face = "Palatino bold">About me</font>
 <p></p>
+
+
 
 - 🧑‍🎓 一个时刻想要变得不普通的普通人。你可以叫我 "笑笑" . 
 
@@ -21,6 +27,11 @@
 - 📝 我的书 / 影记录可以看[我的豆瓣](https://www.douban.com/people/174239371/)。那里和这里一样静悄悄。
 
 - 📮 联系邮箱：`xiaoxiaowayne@163.com `
+
+- 💹 站点统计：页面总数：{{pages}}； 总字数：{{words}} ；代码块行数：{{codes}} ；
+
+- 💹 网站运行时间：<span id="web-time"></span>
+
 
 <br>
 
@@ -52,3 +63,35 @@
         index.md  # The documentation homepage.
         about.md  # Some testing texts.
         ...       # Other markdown pages, images and other files. -->
+
+
+<script>
+function updateTime() {
+    var date = new Date();
+    var now = date.getTime();
+    var startDate = new Date("2022/12/29 09:10:12");
+    var start = startDate.getTime();
+    var diff = now - start;
+    var y, d, h, m;
+    y = Math.floor(diff / (365 * 24 * 3600 * 1000));
+    diff -= y * 365 * 24 * 3600 * 1000;
+    d = Math.floor(diff / (24 * 3600 * 1000));
+    h = Math.floor(diff / (3600 * 1000) % 24);
+    m = Math.floor(diff / (60 * 1000) % 60);
+    if (y == 0) {
+        document.getElementById("web-time").innerHTML = d + "<span class=\"heti-spacing\"> </span>天<span class=\"heti-spacing\"> </span>" + h + "<span class=\"heti-spacing\"> </span>小时<span class=\"heti-spacing\"> </span>" + m + "<span class=\"heti-spacing\"> </span>分钟";
+    } else {
+        document.getElementById("web-time").innerHTML = y + "<span class=\"heti-spacing\"> </span>年<span class=\"heti-spacing\"> </span>" + d + "<span class=\"heti-spacing\"> </span>天<span class=\"heti-spacing\"> </span>" + h + "<span class=\"heti-spacing\"> </span>小时<span class=\"heti-spacing\"> </span>" + m + "<span class=\"heti-spacing\"> </span>分钟";
+    }
+    setTimeout(updateTime, 1000 * 60);
+}
+updateTime();
+function toggle_statistics() {
+    var statistics = document.getElementById("statistics");
+    if (statistics.style.opacity == 0) {
+        statistics.style.opacity = 1;
+    } else {
+        statistics.style.opacity = 0;
+    }
+}
+</script>
