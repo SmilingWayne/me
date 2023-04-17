@@ -5,33 +5,42 @@ statistics: true
 # <font face = "KaiTi">(๑• . •๑)</font>
 
 <!-- For full documentation visit [mkdocs.org](https://www.mkdocs.org). Nice to see you. This is xiao xiao! -->
-<center><font face = "savoye LET" size = 6>A Very Brief Introduction</font></center>
+<!-- <center><font face = "savoye LET" size = 6>A Very Brief Introduction</font></center> -->
 
------
+<br>
 
-###  <font color = Crisma Face = "Palatino bold">About me</font>
 <p></p>
 
 
 
-- 🧑‍🎓 一个时刻想要变得不普通的普通人。你可以叫我 "笑笑" . 
 
-- 📖 喜欢阅读，有时观影，偶尔编程 :material-language-python: | :material-language-swift: | :material-language-java:，不事劳作。
+=== "<font size = 6>:fontawesome-solid-paw: </font><font size = 6 face = "savoye LET" >About Me</font>"
 
-- 🎻 “有柴小协[^1]的日子就是好日子。”
+    - 🧑‍🎓 一个时刻想要变得不普通的普通人。你可以叫我 "笑笑" . 
 
-- 💖 “毕竟几人真得鹿，不知终日梦为鱼。”[^2]
+    - 📖 喜欢阅读，有时观影，偶尔编程 :material-language-python: | :material-language-swift: | :material-language-java:，不事劳作。
 
-- 🧸 <font face = "American Typewriter" >INFP</font> / 谨慎的自由主义[^3]者 / 努力学习语言.ing。
-  
-- 📝 我的书 / 影记录可以看[我的豆瓣](https://www.douban.com/people/174239371/)。那里和这里一样静悄悄。
+    - 🎻 “有柴小协[^1]的日子就是好日子。”
 
-- 📮 联系邮箱：`xiaoxiaowayne@163.com `
+    - 💖 “毕竟几人真得鹿，不知终日梦为鱼。”[^2]
 
-- 💹 站点统计：页面总数：{{pages}}； 总字数：{{words}} ；代码块行数：{{codes}} ；
+    - 🧸 <font face = "American Typewriter" >INFP</font> / 谨慎的自由主义[^3]者 / 努力学习语言.ing。
+    
+    - 📝 我的书 / 影记录可以看[我的豆瓣](https://www.douban.com/people/174239371/)。那里和这里一样静悄悄。
 
-- 💹 网站运行时间：<span id="web-time"></span>
+=== "<font size = 6>:fontawesome-solid-book: </font><font size = 6 face = "savoye LET">About The NoteBook</font>"
 
+    - 💹 站点统计：页面总数：{{pages}} 
+    
+    - 🔠 总字数：{{words}} ；
+    
+    - 🦾 代码块行数：{{codes}} ；
+
+    - ⏰ 网站运行时间：<span id="web-time"></span>
+
+=== "<font size = 6>:fontawesome-solid-envelope: </font><font size = 6 face = "savoye LET">Contact Me</font>"
+
+    - 📮 邮箱 `xiaoxiaowayne@163.com`
 
 <br>
 
