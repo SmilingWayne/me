@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -846,6 +848,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -924,6 +928,20 @@
     <li class="md-nav__item">
       <a href="../../../Philosophy/Legacy_berlin/" class="md-nav__link">
         以赛亚伯林的遗产
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Philosophy/Liberty_and_betray/" class="md-nav__link">
+        自由及其背叛
       </a>
     </li>
   
@@ -5773,6 +5791,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_3_2" id="__nav_8_3_2_label" tabindex="0">
@@ -5793,8 +5813,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
-        笔记1
+      <a href="../../TextEdit/LaTeX/pieces/" class="md-nav__link">
+        入门知识
       </a>
     </li>
   
@@ -5807,8 +5827,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/EnglishFonts/" class="md-nav__link">
-        英文字体
+      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
+        LaTeX语法合集一
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TextEdit/LaTeX/SetTheory/" class="md-nav__link">
+        LaTeX语法合集二-集合相关
       </a>
     </li>
   
@@ -8006,13 +8040,6 @@
   
   
   
-  <div class = "word-count">
-    字数：<span id = "hanzi"></span> ｜ 阅读时间：<span id = "exprdt"></span>
-    <p></p>
-    
-  </div>
-  
-  
                   
 
   
@@ -8020,6 +8047,9 @@
 
 
 <h1 id="_1">经济订货批量模型<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1007 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 3 分钟</p>
+</div>
 <h2 id="_2">模型建立<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
@@ -8051,22 +8081,22 @@
 <p>给定订货批量<span class="arithmatex">\(Q\)</span>，可以获得平均库存Q/2，因此年库存持有成本为持有Q/2单位库存一年的成本，也就是: 年库存持有成本 = </p>
 </li>
 </ul>
-<div class="arithmatex">\[( \dfrac{Q}{2} ) H  = (\dfrac{Q}{2} )hC\]</div>
+<pre class="arithmatex">\[( \dfrac{Q}{2} ) H  = (\dfrac{Q}{2} )hC\]</pre>
 <ul>
 <li>上面的成本总和</li>
 </ul>
-<div class="arithmatex">\[TC = CD + (\dfrac{D}{Q}) S + (\dfrac{Q}{2} )hC\]</div>
+<pre class="arithmatex">\[TC = CD + (\dfrac{D}{Q}) S + (\dfrac{Q}{2} )hC\]</pre>
 <figure>
 <p><img alt="" src="../../picx/SCM04/supplychain4.png" width="width" /></p>
 </figure>
 <ul>
 <li>就<span class="arithmatex">\(Q\)</span>对总成本求一阶导数并令其为0，最优订货批量被称为经济订货批量(Economic Order Quantity, EOQ)，用<span class="arithmatex">\(Q^{*}\)</span>表示。公式为:</li>
 </ul>
-<div class="arithmatex">\[Q^{*} = \sqrt{\dfrac{2DS}{hC}}\]</div>
+<pre class="arithmatex">\[Q^{*} = \sqrt{\dfrac{2DS}{hC}}\]</pre>
 <ul>
 <li>对于上述公式，年库存持有成本比率<span class="arithmatex">\(h\)</span>和需求<span class="arithmatex">\(D\)</span>的时间应该保持一致，对于订货批量<span class="arithmatex">\(Q^{*}\)</span>，系统中的周转库存为<span class="arithmatex">\(Q^{*} /2\)</span>，单位产品在系统内的流动时间为<span class="arithmatex">\(Q^{*} / (2D)\)</span>，随着最优订货批量的增长，周转库存和流动时间也会增加，最优订货频率<span class="arithmatex">\(n^{*}\)</span>为:</li>
 </ul>
-<div class="arithmatex">\[n^{*} = \dfrac{D}{Q^{*} } = \sqrt{\dfrac{DhC}{2S}}\]</div>
+<pre class="arithmatex">\[n^{*} = \dfrac{D}{Q^{*} } = \sqrt{\dfrac{DhC}{2S}}\]</pre>
 <hr />
 <h2 id="_3">案例分析<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
 <blockquote>
@@ -8185,13 +8215,11 @@
     
       <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
     
   </body>

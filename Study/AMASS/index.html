@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -846,6 +848,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -924,6 +928,20 @@
     <li class="md-nav__item">
       <a href="../../Philosophy/Legacy_berlin/" class="md-nav__link">
         以赛亚伯林的遗产
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Liberty_and_betray/" class="md-nav__link">
+        自由及其背叛
       </a>
     </li>
   
@@ -5773,6 +5791,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_3_2" id="__nav_8_3_2_label" tabindex="0">
@@ -5793,8 +5813,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
-        笔记1
+      <a href="../TextEdit/LaTeX/pieces/" class="md-nav__link">
+        入门知识
       </a>
     </li>
   
@@ -5807,8 +5827,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../TextEdit/LaTeX/EnglishFonts/" class="md-nav__link">
-        英文字体
+      <a href="../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
+        LaTeX语法合集一
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TextEdit/LaTeX/SetTheory/" class="md-nav__link">
+        LaTeX语法合集二-集合相关
       </a>
     </li>
   
@@ -8124,13 +8158,6 @@
   
   
   
-  <div class = "word-count">
-    字数：<span id = "hanzi"></span> ｜ 阅读时间：<span id = "exprdt"></span>
-    <p></p>
-    
-  </div>
-  
-  
                   
 
   
@@ -8139,6 +8166,9 @@
 
   <h1>制造与服务系统分析</h1>
 
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 6082 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 20 分钟</p>
+</div>
 <h2 id="amss-00">AMSS 00<a class="headerlink" href="#amss-00" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
@@ -8575,9 +8605,9 @@
 <p><span class="arithmatex">\(TC = \dftac{KR}{Q}\)</span>(这里是1/T求购买频率) <span class="arithmatex">\(+ \dfrac{HQ}{2}+cR\)</span></p>
 </li>
 <li>
-<div class="arithmatex">\[Q_{opt} = \sqrt{\frac{2RK}{H}}
+<pre class="arithmatex">\[Q_{opt} = \sqrt{\frac{2RK}{H}}
     \\
-    TC_{opt} = \sqrt{2KRH} + cR\]</div>
+    TC_{opt} = \sqrt{2KRH} + cR\]</pre>
 </li>
 <li>
 <p><img alt="Screen Shot 2021-12-27 at 10.53.44 AM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%2010.53.44%20AM.png" /></p>
@@ -8610,10 +8640,10 @@
 <p>Inventory Position = IP(t) = IL(t) + OO(t) 库位量。也就是库存水平 + 在途库存</p>
 </li>
 <li>
-<div class="arithmatex">\[OH(t) * B(t) \equiv 0
+<pre class="arithmatex">\[OH(t) * B(t) \equiv 0
   \\
   \\
-  IP(t) = OH(t) - B(t) + OO(t)\]</div>
+  IP(t) = OH(t) - B(t) + OO(t)\]</pre>
 </li>
 <li>
 <p>小结：不允许缺货，意思是B(t) == 0</p>
@@ -8636,7 +8666,7 @@
 <p>pipeline Inventory ：R*L</p>
 </li>
 <li>
-<div class="arithmatex">\[Q_{opt} = \sqrt{\frac{2KR}{H} }\]</div>
+<pre class="arithmatex">\[Q_{opt} = \sqrt{\frac{2KR}{H} }\]</pre>
 </li>
 </ul>
 <p>其中K是每个订单的固定成本，R是flow rate，H是每周期的保管成本</p>
@@ -8708,9 +8738,9 @@
 <p><strong>LTD = Leadtime demand, the total flow-unit requirement during replenishment lead time.</strong> 在lead time期间的总flow unit 的需求，还有average LTD</p>
 </li>
 <li>
-<div class="arithmatex">\[
+<pre class="arithmatex">\[
     \sigma_{LTD}
-    \]</div>
+    \]</pre>
 <p>是Standard deviation of leadtime demand，标准差。</p>
 </li>
 <li>
@@ -8720,7 +8750,7 @@
 <p><img alt="Screen Shot 2021-12-27 at 12.19.38 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%2012.19.38%20PM.png" /></p>
 </li>
 <li>
-<div class="arithmatex">\[I_{s} = ROP - LTD
+<pre class="arithmatex">\[I_{s} = ROP - LTD
     \\
     \\
     ROP = I_{s} + LTD
@@ -8729,7 +8759,7 @@
     I = I_{c} + I_{s} = Q/2 + I_{s}
     \\
     \\
-    mean\quad demand = RL\]</div>
+    mean\quad demand = RL\]</pre>
 </li>
 <li>
 <p>安全库存的计算、ROP的计算，总库存的计算，leadtime期间的平均需求 = RL，etc  </p>
@@ -8745,17 +8775,17 @@
 </ul>
 </li>
 <li>
-<div class="arithmatex">\[z = \frac{I_{safety}}{\sigma_{LTD}}
+<pre class="arithmatex">\[z = \frac{I_{safety}}{\sigma_{LTD}}
     \\
     CSL = Prob[(D_{LTD} - \mu_{LTD}) / \sigma_{LTD} ≤ \
-    (ROP - \mu_{LTD})/\sigma_{LTD}]\]</div>
+    (ROP - \mu_{LTD})/\sigma_{LTD}]\]</pre>
 </li>
 <li>
-<div class="arithmatex">\[ROP = LTD + I_{s}
+<pre class="arithmatex">\[ROP = LTD + I_{s}
     \\
     = \mu_{LTD} + z\times \sigma_{LTD}
     \\
-    = RL + z \times \sigma_{LTD}\]</div>
+    = RL + z \times \sigma_{LTD}\]</pre>
 </li>
 <li>
 <p>所以需要尽量减少LTD的波动程度，提高预测准确性。从而实现减少库存的最终目的？</p>
@@ -8852,7 +8882,7 @@ z = \Phi^{-1}[c]
 <p>具体性质见上文OUL的部分</p>
 </li>
 <li>
-<div class="arithmatex">\[(T_r + L) \times R
+<pre class="arithmatex">\[(T_r + L) \times R
     \\
     \\
     \sigma_{RLTD} = \sqrt{T_r + L} \times \sigma_R
@@ -8860,7 +8890,7 @@ z = \Phi^{-1}[c]
     \\
     SS = z \times \sigma_{RLTD}
     \\
-    OUL = R \times (T_r + L) + SS\]</div>
+    OUL = R \times (T_r + L) + SS\]</pre>
 </li>
 <li>
 <p><img alt="Screen Shot 2021-12-27 at 1.45.01 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%201.45.01%20PM.png" /></p>
@@ -9317,13 +9347,11 @@ z = \Phi^{-1}[c]
     
       <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
     
   </body>

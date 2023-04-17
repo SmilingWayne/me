@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -846,6 +848,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -924,6 +928,20 @@
     <li class="md-nav__item">
       <a href="../../../Philosophy/Legacy_berlin/" class="md-nav__link">
         以赛亚伯林的遗产
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Philosophy/Liberty_and_betray/" class="md-nav__link">
+        自由及其背叛
       </a>
     </li>
   
@@ -5773,6 +5791,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_3_2" id="__nav_8_3_2_label" tabindex="0">
@@ -5793,8 +5813,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
-        笔记1
+      <a href="../../TextEdit/LaTeX/pieces/" class="md-nav__link">
+        入门知识
       </a>
     </li>
   
@@ -5807,8 +5827,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/EnglishFonts/" class="md-nav__link">
-        英文字体
+      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
+        LaTeX语法合集一
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TextEdit/LaTeX/SetTheory/" class="md-nav__link">
+        LaTeX语法合集二-集合相关
       </a>
     </li>
   
@@ -8006,13 +8040,6 @@
   
   
   
-  <div class = "word-count">
-    字数：<span id = "hanzi"></span> ｜ 阅读时间：<span id = "exprdt"></span>
-    <p></p>
-    
-  </div>
-  
-  
                   
 
   
@@ -8020,6 +8047,9 @@
 
 
 <h1 id="_1">确定最优周期服务水平<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1136 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 4 分钟</p>
+</div>
 <p>产品的可获得性水平可以通过周期服务水平(CSL，Cycle Service Level)或者完成率来衡量。</p>
 <p>已知某产品的需求分布以及需求大于、小于该值的概率，已知供过于求的损失和供不应求的利润损失，要求确定使得销售利润最大化的订货量和周期服务水平。这个模型就是经典的“报童模型”。</p>
 <blockquote>
@@ -8040,26 +8070,26 @@
 <li>只有需求量大于<span class="arithmatex">\(O^{*}\)</span>，额外的一单位商品才能售出。这种情况概率为<span class="arithmatex">\(1 - CSL^{*}\)</span>。所以多订购一单位产品的预期收益<span class="arithmatex">\((1 - CSL^{*})(p - c)\)</span> ；多订一单位的预期成本<span class="arithmatex">\(CSL^{*}(c-s)\)</span>。 因此订货量从<span class="arithmatex">\(O^{*}\)</span>增加到<span class="arithmatex">\(O^{*} + 1\)</span>的预期边际贡献为<span class="arithmatex">\((1 - CSL^{*})(p - c) - CSL^{*}(c-s)\)</span></li>
 <li>由于最优周期服务水平下预期边际贡献一定等于0，可得</li>
 <li>
-<div class="arithmatex">\[CSL^{*} = P(需求量 \leq O^{*}) = \dfrac{p - c}{p - s} = \dfrac{C_u}{C_o + C_u}  \tag{1}\]</div>
+<pre class="arithmatex">\[CSL^{*} = P(需求量 \leq O^{*}) = \dfrac{p - c}{p - s} = \dfrac{C_u}{C_o + C_u}  \tag{1}\]</pre>
 </li>
 <li>这里的<span class="arithmatex">\(CSL^{*}\)</span> 称作临界分位点(Critical Fractile)。由此产生的最优订货量可以使得企业的利润实现最大化，如果销售季节的需求服从正态分布，均值<span class="arithmatex">\(\mu\)</span>，标准差<span class="arithmatex">\(\sigma\)</span>，那么最优订货量：</li>
 </ul>
-<div class="arithmatex">\[ O^{*} = F^{-1}(CSL^{*}, \mu, \sigma) = NORMINV(CSL^{*}, \mu, \sigma) \tag{2}\]</div>
+<pre class="arithmatex">\[ O^{*} = F^{-1}(CSL^{*}, \mu, \sigma) = NORMINV(CSL^{*}, \mu, \sigma) \tag{2}\]</pre>
 <ul>
 <li>此时预期利润</li>
 </ul>
-<div class="arithmatex">\[(p-s)\mu F_S(\dfrac{O - \mu}{\sigma}) - \]</div>
-<div class="arithmatex">\[(p-s)\sigma f_s(\dfrac{O - \mu}{\sigma}) - O(c-s)F(O,\mu, \sigma) +O(p-c)[1 - F(O, \mu, \sigma)] \tag{3}\]</div>
+<pre class="arithmatex">\[(p-s)\mu F_S(\dfrac{O - \mu}{\sigma}) - \]</pre>
+<pre class="arithmatex">\[(p-s)\sigma f_s(\dfrac{O - \mu}{\sigma}) - O(c-s)F(O,\mu, \sigma) +O(p-c)[1 - F(O, \mu, \sigma)] \tag{3}\]</pre>
 <ul>
 <li>在Excel中表示即为：</li>
 </ul>
-<div class="arithmatex">\[Profit = (p-s)\mu NORMDIST(\dfrac{O - \mu}{\sigma}, 0, 0, 1) - \]</div>
-<div class="arithmatex">\[(p-s)\sigma NORMDIST(\dfrac{O - \mu}{\sigma}, 0, 1, 0) -\]</div>
-<div class="arithmatex">\[O(c-s)NORMDIST(O,\mu, \sigma, 1) + O(p-c)[1 - NORMDIST(O, \mu, \sigma, 1)]\]</div>
+<pre class="arithmatex">\[Profit = (p-s)\mu NORMDIST(\dfrac{O - \mu}{\sigma}, 0, 0, 1) - \]</pre>
+<pre class="arithmatex">\[(p-s)\sigma NORMDIST(\dfrac{O - \mu}{\sigma}, 0, 1, 0) -\]</pre>
+<pre class="arithmatex">\[O(c-s)NORMDIST(O,\mu, \sigma, 1) + O(p-c)[1 - NORMDIST(O, \mu, \sigma, 1)]\]</pre>
 <ul>
 <li>当订购O产品时，企业的库存是过多还是过少取决于需求，如果需求服从正态分布，均值<span class="arithmatex">\(\mu\)</span>， 标准差<span class="arithmatex">\(\sigma\)</span>，那么销售季节结束时预期库存积压为：</li>
 </ul>
-<div class="arithmatex">\[(o - \mu)F_s(\dfrac{O  -\mu}{\sigma} )+ \sigma f_s\dfrac{O - \mu}{\sigma} \tag{4}\]</div>
+<pre class="arithmatex">\[(o - \mu)F_s(\dfrac{O  -\mu}{\sigma} )+ \sigma f_s\dfrac{O - \mu}{\sigma} \tag{4}\]</pre>
 <ul>
 <li>
 <p>Excel表示为：
@@ -8069,11 +8099,11 @@
 <p>销售季节结束时预期库存不足量：</p>
 </li>
 </ul>
-<div class="arithmatex">\[(\mu-O)\left[ 1 - F_s\dfrac{O - \mu}{\sigma} \right] + \sigma f_s(\dfrac{O - \mu}{\sigma}) \tag{5}\]</div>
+<pre class="arithmatex">\[(\mu-O)\left[ 1 - F_s\dfrac{O - \mu}{\sigma} \right] + \sigma f_s(\dfrac{O - \mu}{\sigma}) \tag{5}\]</pre>
 <ul>
 <li>Excel 表示：</li>
 </ul>
-<div class="arithmatex">\[(\mu - O)\{ 1 - NORMDIST \left[(O-\mu)/\sigma, 0,1,1 \right]\} \\ + \sigma NORMDIST \left[(O-\mu)/\sigma, 0,1,0 \right]\]</div>
+<pre class="arithmatex">\[(\mu - O)\{ 1 - NORMDIST \left[(O-\mu)/\sigma, 0,1,1 \right]\} \\ + \sigma NORMDIST \left[(O-\mu)/\sigma, 0,1,0 \right]\]</pre>
 <h2 id="_4">案例<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
@@ -8174,13 +8204,11 @@
     
       <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
     
   </body>

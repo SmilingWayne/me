@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -846,6 +848,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -924,6 +928,20 @@
     <li class="md-nav__item">
       <a href="../../../Philosophy/Legacy_berlin/" class="md-nav__link">
         以赛亚伯林的遗产
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Philosophy/Liberty_and_betray/" class="md-nav__link">
+        自由及其背叛
       </a>
     </li>
   
@@ -5773,6 +5791,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_3_2" id="__nav_8_3_2_label" tabindex="0">
@@ -5793,8 +5813,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
-        笔记1
+      <a href="../../TextEdit/LaTeX/pieces/" class="md-nav__link">
+        入门知识
       </a>
     </li>
   
@@ -5807,8 +5827,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/EnglishFonts/" class="md-nav__link">
-        英文字体
+      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
+        LaTeX语法合集一
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TextEdit/LaTeX/SetTheory/" class="md-nav__link">
+        LaTeX语法合集二-集合相关
       </a>
     </li>
   
@@ -7992,13 +8026,6 @@
   
   
   
-  <div class = "word-count">
-    字数：<span id = "hanzi"></span> ｜ 阅读时间：<span id = "exprdt"></span>
-    <p></p>
-    
-  </div>
-  
-  
                   
 
   
@@ -8006,6 +8033,9 @@
 
 
 <h1 id="_1">供给不确定性对安全库存的影响<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1201 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 4 分钟</p>
+</div>
 <p>供给不确定是由包括生产延误、运输延误和质量问题在内的很多因素造成的，譬如苏伊士运河拥堵。因此前一篇笔记考虑了需求不确定下的安全库存，我们这里假定供给的提前期也是不确定的。</p>
 <p>已知下列变量:</p>
 <p><span class="arithmatex">\(D\)</span>：每期的平均需求
@@ -8025,9 +8055,9 @@
 <span class="arithmatex">\(\rho_{ij}\)</span>:地区<span class="arithmatex">\(i\)</span>和地区<span class="arithmatex">\(j\)</span>的周需求协方差 <span class="arithmatex">\(1 \leq i ≠ j \leq k\)</span></p>
 <p>非聚集策略下总安全库存= <span class="arithmatex">\(\sum \limits^{k}_{i = 1}{F^{-1}_s{(CSL)} }\times \sqrt{L} \times \sigma_i\)</span> </p>
 <p>如果所有库存聚集在一个中央仓库，那么需要计算聚集需求的分布。聚集需求服从正态分布，均值<span class="arithmatex">\(D^C\)</span>，标准差<span class="arithmatex">\(\sigma^{C}_{D} <span class="arithmatex">\(， 协方差\)</span>var(D^{C})\)</span>分别计算如下：</p>
-<div class="arithmatex">\[D^C = \sum^{k}_{i = 1}D_i$$
+<pre class="arithmatex">\[D^C = \sum^{k}_{i = 1}D_i$$
 $$VAR(D^C) = \sum^{k}_{i = 1}{\sigma^2_i} + 2\sum_{i &gt; j}{\rho_{ij}\sigma_i\sigma_j}$$
-$$\sigma^{C}_D = \sqrt{VAR(D^C)}\]</div>
+$$\sigma^{C}_D = \sqrt{VAR(D^C)}\]</pre>
 <p>如果有<span class="arithmatex">\(k\)</span>个地区的需求相互独立<span class="arithmatex">\((\rho_{ij} = 0)\)</span>且同分布，均值是<span class="arithmatex">\(D\)</span>,标准差是<span class="arithmatex">\(\sigma_D\)</span>, 上面的式子可以简化如下</p>
 <p><span class="arithmatex">\(\qquad D^C = kD \\ 
   \qquad \sigma^C_{D} = \sqrt{k}\sigma_D\)</span>
@@ -8141,13 +8171,11 @@ $$\sigma^{C}_D = \sqrt{VAR(D^C)}\]</div>
     
       <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
     
   </body>

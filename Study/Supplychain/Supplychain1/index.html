@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -846,6 +848,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -924,6 +928,20 @@
     <li class="md-nav__item">
       <a href="../../../Philosophy/Legacy_berlin/" class="md-nav__link">
         以赛亚伯林的遗产
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Philosophy/Liberty_and_betray/" class="md-nav__link">
+        自由及其背叛
       </a>
     </li>
   
@@ -5773,6 +5791,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_3_2" id="__nav_8_3_2_label" tabindex="0">
@@ -5793,8 +5813,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
-        笔记1
+      <a href="../../TextEdit/LaTeX/pieces/" class="md-nav__link">
+        入门知识
       </a>
     </li>
   
@@ -5807,8 +5827,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/EnglishFonts/" class="md-nav__link">
-        英文字体
+      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
+        LaTeX语法合集一
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TextEdit/LaTeX/SetTheory/" class="md-nav__link">
+        LaTeX语法合集二-集合相关
       </a>
     </li>
   
@@ -8244,13 +8278,6 @@
   
   
   
-  <div class = "word-count">
-    字数：<span id = "hanzi"></span> ｜ 阅读时间：<span id = "exprdt"></span>
-    <p></p>
-    
-  </div>
-  
-  
                   
 
   
@@ -8259,6 +8286,9 @@
 
   <h1>三种工厂选址模型(Chapter_5.4)</h1>
 
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1046 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 3 分钟</p>
+</div>
 <h2 id="_1">产能受限的工厂选址网络优化模型<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <h3 id="_2">模型输入<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h3>
 <ul>
@@ -8273,11 +8303,11 @@
 <p><span class="arithmatex">\(y_i\)</span> = 1（如果工厂<span class="arithmatex">\(i\)</span>开工，否则为0）
 <span class="arithmatex">\(x_{ij}\)</span> = 从工厂<span class="arithmatex">\(i\)</span>运到市场<span class="arithmatex">\(j\)</span>的产品数量</p>
 <p>那么问题可以表述为下面的整数规划：</p>
-<div class="arithmatex">\[ \mathop{\min} \sum \limits^{n}_{i = 1}{f_iy_i} + \sum \limits^{n}_{i = 1}\sum \limits^{m}_{j = 1}{c_{ij}x_{ij} } \]</div>
+<pre class="arithmatex">\[ \mathop{\min} \sum \limits^{n}_{i = 1}{f_iy_i} + \sum \limits^{n}_{i = 1}\sum \limits^{m}_{j = 1}{c_{ij}x_{ij} } \]</pre>
 <h3 id="_4">约束条件<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
-<div class="arithmatex">\[\sum \limits^{n}_{i = 1}x_{ij} = D_j, \quad j = 1,...m \]</div>
-<div class="arithmatex">\[\sum \limits^{m}_{j = 1}x_{ij} \le K_iy_i, \quad i = 1,...n \]</div>
-<div class="arithmatex">\[y_i \in { 0, 1}, \quad i = 1,...n, x_{ij} \ge 0\]</div>
+<pre class="arithmatex">\[\sum \limits^{n}_{i = 1}x_{ij} = D_j, \quad j = 1,...m \]</pre>
+<pre class="arithmatex">\[\sum \limits^{m}_{j = 1}x_{ij} \le K_iy_i, \quad i = 1,...n \]</pre>
+<pre class="arithmatex">\[y_i \in { 0, 1}, \quad i = 1,...n, x_{ij} \ge 0\]</pre>
 <h2 id="_5">重力选址模型<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h2>
 <h3 id="_6">模型输入<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h3>
 <ul>
@@ -8294,18 +8324,18 @@
 <p>如果设施选定的地理位置是<span class="arithmatex">\((x,y)\)</span>，那么位于<span class="arithmatex">\((x,y)\)</span>的设施与供应源或者市场<span class="arithmatex">\(n\)</span>之间的距离<span class="arithmatex">\(d_n为\)</span></p>
 </li>
 </ul>
-<div class="arithmatex">\[d_n = \sqrt{(x - x_n)^2 + (y - y_n)^2} \]</div>
+<pre class="arithmatex">\[d_n = \sqrt{(x - x_n)^2 + (y - y_n)^2} \]</pre>
 <ul>
 <li>总的运输成本<span class="arithmatex">\((TC)\)</span>是：</li>
 </ul>
-<div class="arithmatex">\[TC = \sum \limits^{k}_{n = 1}{d_nD_nF_n}\]</div>
+<pre class="arithmatex">\[TC = \sum \limits^{k}_{n = 1}{d_nD_nF_n}\]</pre>
 <h3 id="_7">迭代法求解<a class="headerlink" href="#_7" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li><strong>Step 1 .</strong> 对于每个供应源和市场<span class="arithmatex">\(n\)</span>，用TC公式计算 <span class="arithmatex">\(d_n\)</span> 获得工厂的位置<span class="arithmatex">\((x^{'},y^{'})\)</span></li>
 <li><strong>Step 2 .</strong> 获得工厂的新的位置<span class="arithmatex">\((x^{'}, y^{'})\)</span>,其中</li>
 </ul>
-<div class="arithmatex">\[ x^{'} = \dfrac{\sum \limits^{k}_{n = 1}\dfrac{D_nF_nx_n}{d_n}}{\sum \limits^{k}_{n = 1}\frac{D_nF_n}{d_n}}\]</div>
-<div class="arithmatex">\[ y^{'} = \dfrac{\sum \limits^{k}_{n = 1}\dfrac{D_nF_ny_n}{d_n}}{\sum \limits^{k}_{n = 1}\dfrac{D_nF_n}{d_n}}\]</div>
+<pre class="arithmatex">\[ x^{'} = \dfrac{\sum \limits^{k}_{n = 1}\dfrac{D_nF_nx_n}{d_n}}{\sum \limits^{k}_{n = 1}\frac{D_nF_n}{d_n}}\]</pre>
+<pre class="arithmatex">\[ y^{'} = \dfrac{\sum \limits^{k}_{n = 1}\dfrac{D_nF_ny_n}{d_n}}{\sum \limits^{k}_{n = 1}\dfrac{D_nF_n}{d_n}}\]</pre>
 <ul>
 <li><strong>Step 3 .</strong> 如果新的位置<span class="arithmatex">\((x^{'},y^{'})\)</span>和<span class="arithmatex">\((x,y)\)</span>几乎相同，则停止，否则设置<span class="arithmatex">\((x,y)\)</span>为<span class="arithmatex">\((x^{'},y^{'})\)</span>，继续进行Step 1</li>
 </ul>
@@ -8336,10 +8366,10 @@
 <li><span class="arithmatex">\(x_{ij}\)</span> = 从工厂<span class="arithmatex">\(i\)</span>运输到市场<span class="arithmatex">\(j\)</span>的产品数量</li>
 </ul>
 <h3 id="_12">决策目标<a class="headerlink" href="#_12" title="Permanent link">⚓︎</a></h3>
-<div class="arithmatex">\[\mathop{\min} \sum \limits^{n}_{i = 1}\sum \limits^{m}_{j = 1}{c_{ij}x_{ij}}\]</div>
+<pre class="arithmatex">\[\mathop{\min} \sum \limits^{n}_{i = 1}\sum \limits^{m}_{j = 1}{c_{ij}x_{ij}}\]</pre>
 <h3 id="_13">约束条件<a class="headerlink" href="#_13" title="Permanent link">⚓︎</a></h3>
-<div class="arithmatex">\[\sum \limits^{n}_{i = 1}{x_{ij}} = D_j, \ \ i = 1,...m\]</div>
-<div class="arithmatex">\[\sum \limits^{m}_{j = 1}{x_{ij}} \leq K_i, \ \ i = 1,...m\]</div>
+<pre class="arithmatex">\[\sum \limits^{n}_{i = 1}{x_{ij}} = D_j, \ \ i = 1,...m\]</pre>
+<pre class="arithmatex">\[\sum \limits^{m}_{j = 1}{x_{ij}} \leq K_i, \ \ i = 1,...m\]</pre>
 <hr />
 <h2 id="_14">单一供应源下产能受限型工厂选址模型<a class="headerlink" href="#_14" title="Permanent link">⚓︎</a></h2>
 <ul>
@@ -8464,13 +8494,11 @@
     
       <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
     
   </body>

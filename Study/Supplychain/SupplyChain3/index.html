@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -846,6 +848,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -924,6 +928,20 @@
     <li class="md-nav__item">
       <a href="../../../Philosophy/Legacy_berlin/" class="md-nav__link">
         以赛亚伯林的遗产
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Philosophy/Liberty_and_betray/" class="md-nav__link">
+        自由及其背叛
       </a>
     </li>
   
@@ -5773,6 +5791,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_3_2" id="__nav_8_3_2_label" tabindex="0">
@@ -5793,8 +5813,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
-        笔记1
+      <a href="../../TextEdit/LaTeX/pieces/" class="md-nav__link">
+        入门知识
       </a>
     </li>
   
@@ -5807,8 +5827,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/EnglishFonts/" class="md-nav__link">
-        英文字体
+      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
+        LaTeX语法合集一
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TextEdit/LaTeX/SetTheory/" class="md-nav__link">
+        LaTeX语法合集二-集合相关
       </a>
     </li>
   
@@ -8088,13 +8122,6 @@
   
   
   
-  <div class = "word-count">
-    字数：<span id = "hanzi"></span> ｜ 阅读时间：<span id = "exprdt"></span>
-    <p></p>
-    
-  </div>
-  
-  
                   
 
   
@@ -8102,6 +8129,9 @@
 
 
 <h1 id="_1">自适应时间序列预测<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 2335 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 8 分钟</p>
+</div>
 <hr />
 <h2 id="_2">定义<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <ul>
@@ -8155,15 +8185,15 @@
 <ul>
 <li>当需求中没有观察到需求趋势或季节性因素的时候，采用==移动平均法==。移动平均法把最近<span class="arithmatex">\(N\)</span>期的需求均值作为时期<span class="arithmatex">\(t\)</span>的需求估计水平，这就是<span class="arithmatex">\(N\)</span>的移动平均。方法如下:</li>
 </ul>
-<div class="arithmatex">\[L_t = (D_t + D_{t - 1} + ... + D_{t - N + 1} ) / N\]</div>
+<pre class="arithmatex">\[L_t = (D_t + D_{t - 1} + ... + D_{t - N + 1} ) / N\]</pre>
 <ul>
 <li>此时我们对未来所有时期的预测都是一样的，都是基于当前对需求水平的预测。所以有:</li>
 </ul>
-<div class="arithmatex">\[F_{t + 1} = L_t, F_{t + n} = L_t\]</div>
+<pre class="arithmatex">\[F_{t + 1} = L_t, F_{t + n} = L_t\]</pre>
 <ul>
 <li>观察到时期<span class="arithmatex">\(t + l\)</span>的需求后，我们对估计值进行如下调整：</li>
 </ul>
-<div class="arithmatex">\[L_{t + 1} = (D_{t + 1} + D_{t} + ... + D_{t - N + 2} ) /N\]</div>
+<pre class="arithmatex">\[L_{t + 1} = (D_{t + 1} + D_{t} + ... + D_{t - N + 2} ) /N\]</pre>
 <ul>
 <li>为了计算新的移动平均值，我们只需要加入最新观察值并剔除最早的观察之，修正的移动平均值用于下一阶段的预测。</li>
 </ul>
@@ -8178,7 +8208,7 @@
 <p>观察到时期<span class="arithmatex">\(t + 1\)</span>的需求<span class="arithmatex">\(D_{t+ 1}\)</span>后， 我们对需求水平的估计值进行如下修正：<span class="arithmatex">\(L_{t+ 1} = \alpha D_{t + 1} + (1-\alpha)L_t\)</span>, 其中<span class="arithmatex">\(\alpha\)</span> 是需求水平的<strong>平滑指数</strong>，需求水平的修正值是观察到的时期<span class="arithmatex">\(t + 1\)</span>的需求(<span class="arithmatex">\(D_{t +1}\)</span>)和<span class="arithmatex">\(t\)</span>时期的需求水平<span class="arithmatex">\(L_t\)</span>的原有估计值的加权平均。因此我们可以将某个时期的需求水平表示为当前需求和上一期需求水平的函数</p>
 </li>
 </ul>
-<div class="arithmatex">\[L_{t + l} = \sum \limits^{t - l}_{n = 0}{\alpha(1-\alpha)^n D_{t + l - n} } + (1 - \alpha)^t D_l\]</div>
+<pre class="arithmatex">\[L_{t + l} = \sum \limits^{t - l}_{n = 0}{\alpha(1-\alpha)^n D_{t + l - n} } + (1 - \alpha)^t D_l\]</pre>
 <hr />
 <h2 id="holt"><strong>趋势修正后的指数平滑法(Holt模型)</strong><a class="headerlink" href="#holt" title="Permanent link">⚓︎</a></h2>
 <ul>
@@ -8195,8 +8225,8 @@
 <p>观察到时期<span class="arithmatex">\(t + 1\)</span>的需求<span class="arithmatex">\(D_t + l\)</span>后，我们对需求水平和需求趋势的估计值如下修正：</p>
 </li>
 </ul>
-<div class="arithmatex">\[L_{t + 1} = \alpha D_{t + 1} + (1-\alpha)(L_t + T_t)\]</div>
-<div class="arithmatex">\[T_{t + 1} = \beta(L_{t + 1} - L_t) + (1-\beta)T_t\]</div>
+<pre class="arithmatex">\[L_{t + 1} = \alpha D_{t + 1} + (1-\alpha)(L_t + T_t)\]</pre>
+<pre class="arithmatex">\[T_{t + 1} = \beta(L_{t + 1} - L_t) + (1-\beta)T_t\]</pre>
 <ul>
 <li>其中<span class="arithmatex">\(\alpha\)</span>是需求水平的平滑指数，<span class="arithmatex">\(\beta\)</span>是需求趋势的平滑指数，两个参数取值都在0和1之间。在上面两个更新中，需求水平或需求趋势的修正的估计值都是观察之和原来的估计的加权平均。</li>
 </ul>
@@ -8381,13 +8411,11 @@
     
       <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
     
   </body>

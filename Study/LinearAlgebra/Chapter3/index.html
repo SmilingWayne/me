@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -846,6 +848,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -924,6 +928,20 @@
     <li class="md-nav__item">
       <a href="../../../Philosophy/Legacy_berlin/" class="md-nav__link">
         以赛亚伯林的遗产
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Philosophy/Liberty_and_betray/" class="md-nav__link">
+        自由及其背叛
       </a>
     </li>
   
@@ -5773,6 +5791,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_3_2" id="__nav_8_3_2_label" tabindex="0">
@@ -5793,8 +5813,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
-        笔记1
+      <a href="../../TextEdit/LaTeX/pieces/" class="md-nav__link">
+        入门知识
       </a>
     </li>
   
@@ -5807,8 +5827,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/EnglishFonts/" class="md-nav__link">
-        英文字体
+      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
+        LaTeX语法合集一
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TextEdit/LaTeX/SetTheory/" class="md-nav__link">
+        LaTeX语法合集二-集合相关
       </a>
     </li>
   
@@ -8074,13 +8108,6 @@
   
   
   
-  <div class = "word-count">
-    字数：<span id = "hanzi"></span> ｜ 阅读时间：<span id = "exprdt"></span>
-    <p></p>
-    
-  </div>
-  
-  
                   
 
   
@@ -8088,6 +8115,9 @@
 
 
 <h1 id="_1">线性方程组解的结构<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1255 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 4 分钟</p>
+</div>
 <h2 id="31">3.1 高斯消元法和矩阵的行变换<a class="headerlink" href="#31" title="Permanent link">⚓︎</a></h2>
 <blockquote>
 <p>第一章中的是<span class="arithmatex">\(n\)</span>元<span class="arithmatex">\(n\)</span>个方程构成的线性方程组的克莱姆法则，但是有很大局限，如果未知数个数和方程个数不同，就无法使用，其次，<span class="arithmatex">\(n\)</span>元<span class="arithmatex">\(n\)</span>个方程构成的方程组系数行列式非0，<span class="arithmatex">\(n\)</span>较大，计算量较大，因此讨论由<span class="arithmatex">\(n\)</span>元<span class="arithmatex">\(m\)</span>个方程构成的更一般的方程组是否有解；</p>
@@ -8145,7 +8175,7 @@
 <p>非自由变量是简化梯形矩阵中左端为1的变量；剩下的均为自由变量；
 最后一行是矩阵所在列的列编号，对 <span class="arithmatex">\(n - r\)</span>个自由变量 <span class="arithmatex">\(x_2, ...x_{i_2 - 1}， x_{i_2 + 1},...,x_{i_r - 1},x_{i_r + 1},...x_n\)</span> 分别取<span class="arithmatex">\(n - r\)</span>组线性无关向量，一般<span class="arithmatex">\((1,0,0,..), (0,1,...,0)\)</span>以此类推；则可得<span class="arithmatex">\(n - r\)</span>组非自由变量<span class="arithmatex">\(x_1, x_{i_2}, ... ,x_{i_r}\)</span>的值，从而构成 <span class="arithmatex">\(n - r\)</span> 组方程组的解，设该<span class="arithmatex">\(n - r\)</span>组解向量为 <span class="arithmatex">\(\alpha_1, \alpha_2,...,\alpha_{n-r}\)</span>，则他们就是方程组的一个<strong>基础解系</strong>（也就是n-r个方程组解的解向量，构成了基础解系），方程组的通解为:</p>
 </blockquote>
-<div class="arithmatex">\[k_1 \alpha_1 +  ... + k_{n-r} \alpha_{n-r}\]</div>
+<pre class="arithmatex">\[k_1 \alpha_1 +  ... + k_{n-r} \alpha_{n-r}\]</pre>
 <p>其中<span class="arithmatex">\(k_1, ...k_{n -r} \in R\)</span> 为任意常数；这也就是<font color = red>齐次通解</font>；</p>
 <ul>
 <li>推论3.4.6 若 <span class="arithmatex">\(A \in R^{m \times n}\)</span>，那么 <span class="arithmatex">\(r(A) + r(N(A)) = n\)</span>，其中<span class="arithmatex">\(N(A)\)</span>表示<span class="arithmatex">\(Ax = \theta\)</span> 的基础解系为列构成的矩阵。</li>
@@ -8248,13 +8278,11 @@
     
       <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
     
   </body>

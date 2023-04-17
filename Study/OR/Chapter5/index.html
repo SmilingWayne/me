@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -846,6 +848,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -924,6 +928,20 @@
     <li class="md-nav__item">
       <a href="../../../Philosophy/Legacy_berlin/" class="md-nav__link">
         以赛亚伯林的遗产
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Philosophy/Liberty_and_betray/" class="md-nav__link">
+        自由及其背叛
       </a>
     </li>
   
@@ -5773,6 +5791,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_3_2" id="__nav_8_3_2_label" tabindex="0">
@@ -5793,8 +5813,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
-        笔记1
+      <a href="../../TextEdit/LaTeX/pieces/" class="md-nav__link">
+        入门知识
       </a>
     </li>
   
@@ -5807,8 +5827,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../TextEdit/LaTeX/EnglishFonts/" class="md-nav__link">
-        英文字体
+      <a href="../../TextEdit/LaTeX/LatexNotes/" class="md-nav__link">
+        LaTeX语法合集一
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TextEdit/LaTeX/SetTheory/" class="md-nav__link">
+        LaTeX语法合集二-集合相关
       </a>
     </li>
   
@@ -8358,13 +8392,6 @@
   
   
   
-  <div class = "word-count">
-    字数：<span id = "hanzi"></span> ｜ 阅读时间：<span id = "exprdt"></span>
-    <p></p>
-    
-  </div>
-  
-  
                   
 
   
@@ -8372,6 +8399,9 @@
 
 
 <h1 id="_1">非线性规划<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 2778 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 9 分钟</p>
+</div>
 <div class="admonition abstract">
 <p class="admonition-title">Abstract</p>
 <p>前面介绍的都是目标函数和约束条件都是自变量的线性函数，如果目标函数或约束条件中包含一个或者若干自变量的非线性函数，那么这样的规划问题就属于非线性规划（Nonlinear Programming)</p>
@@ -8386,16 +8416,16 @@
 <p>仓库选址问题：<span class="arithmatex">\(n\)</span>个市场，第<span class="arithmatex">\(j\)</span>个市场的位置<span class="arithmatex">\((a_j, b_j)\)</span>，对某种货物的需求为<span class="arithmatex">\(q_j ( j = 1,2,...,n)\)</span>。现在计划建立<span class="arithmatex">\(m\)</span>个仓库，第<span class="arithmatex">\(i\)</span>个仓库的容量为<span class="arithmatex">\(c_i ( i = 1,2,...,m)\)</span>，试确定仓库位置，使各个仓库到各个市场的运输量和路程的乘积之和最小。</p>
 </li>
 </ul>
-<div class="arithmatex">\[ \mathop{\min} \hspace{4pt} \sum \limits^{m}_{i = 1} \sum \limits^{n}_{j=1} w_{ij} \sqrt{(x_i - a_j)^2 + (y_i - b_j)^2}\]</div>
-<div class="arithmatex">\[s.t. \hspace{4pt} \left\{ \begin{aligned} \sum \limits^{n}_{j = 1} w_{ij} &amp; \leq c_i, i = 1,..,m  \\ \sum \limits^{m}_{i=1} w_{ij} &amp; = q_j, j = 1,2,...,n \\ w_{ij} &amp; \geq 0, i = 1,..,m;j =1,2,...,n  \end{aligned} \right. \]</div>
+<pre class="arithmatex">\[ \mathop{\min} \hspace{4pt} \sum \limits^{m}_{i = 1} \sum \limits^{n}_{j=1} w_{ij} \sqrt{(x_i - a_j)^2 + (y_i - b_j)^2}\]</pre>
+<pre class="arithmatex">\[s.t. \hspace{4pt} \left\{ \begin{aligned} \sum \limits^{n}_{j = 1} w_{ij} &amp; \leq c_i, i = 1,..,m  \\ \sum \limits^{m}_{i=1} w_{ij} &amp; = q_j, j = 1,2,...,n \\ w_{ij} &amp; \geq 0, i = 1,..,m;j =1,2,...,n  \end{aligned} \right. \]</pre>
 <h3 id="512">5.1.2 非线性规划的数学模型<a class="headerlink" href="#512" title="Permanent link">⚓︎</a></h3>
 <p>非线性规划数学模型的一般形式是： <span class="arithmatex">\(min \hspace{4pt} f(x)\)</span></p>
-<div class="arithmatex">\[s.t. \left\{ \begin{aligned} g_i(x) &amp; \geq 0, i = 1,2,...,l \\ h_j(x) &amp; = 0, j = 1,2,...,m \end{aligned} \right. \tag{5.2}\]</div>
+<pre class="arithmatex">\[s.t. \left\{ \begin{aligned} g_i(x) &amp; \geq 0, i = 1,2,...,l \\ h_j(x) &amp; = 0, j = 1,2,...,m \end{aligned} \right. \tag{5.2}\]</pre>
 <p>这里的<span class="arithmatex">\(x = (x_1, x_2,...,x_n)^{T}\)</span> 是<span class="arithmatex">\(n\)</span>维空间<span class="arithmatex">\(R^{n}\)</span>的点（向量），目标函数<span class="arithmatex">\(f(x)\)</span>和约束函数<span class="arithmatex">\(g_i(x)，h_j(x)\)</span> 是<span class="arithmatex">\(x\)</span>的实函数，且其中至少有一个是<span class="arithmatex">\(x\)</span>的非线性函数。<span class="arithmatex">\(g_i(x)\)</span> 称为不等式约束，<span class="arithmatex">\(h_j(x)\)</span> 是等式约束，若某个不等式是小于等于约束，同乘-1即可，同样，目标函数是极大的话，乘-1变号即可，如果是等式约束<span class="arithmatex">\(h_j(x) = 0\)</span>，则用 <span class="arithmatex">\(h_j(x) \leq 0\)</span> 和 <span class="arithmatex">\(h_j(x) \leq 0\)</span>替换即可。</p>
 <ul>
 <li>若令 <span class="arithmatex">\(\Omega\)</span> 为问题的可行解集合（可行域），则上述模型可写为 </li>
 </ul>
-<div class="arithmatex">\[\mathop{\min}\limits_{x \in \Omega} \hspace{2pt}f(x) \tag{5.4}\]</div>
+<pre class="arithmatex">\[\mathop{\min}\limits_{x \in \Omega} \hspace{2pt}f(x) \tag{5.4}\]</pre>
 <p>若<span class="arithmatex">\(\Omega = \{ x| g_i(x) \geq 0, i = 1,2,..,l \}\)</span> 是 <span class="arithmatex">\(R^n\)</span> 的一个子集。若 <span class="arithmatex">\(\Omega = R^n\)</span> ，那么该问题就是一个<strong>无约束优化问题</strong>(Unconstrained Optimization Problem)，求目标函数极小值或极大值的优化问题也称为极值问题。</p>
 <h2 id="52">5.2 非线性规划问题的解<a class="headerlink" href="#52" title="Permanent link">⚓︎</a></h2>
 <h3 id="521">5.2.1 解（极值点）的定义<a class="headerlink" href="#521" title="Permanent link">⚓︎</a></h3>
@@ -8414,7 +8444,7 @@
 <li><strong>定理5.1</strong>: 设 f 是定义在集合 <span class="arithmatex">\(\Omega \in R^n\)</span> 上的一阶连续可微函数，如果 <span class="arithmatex">\(x^*\)</span> 是<span class="arithmatex">\(f\)</span>在 <span class="arithmatex">\(\Omega\)</span> 上的局部极小点，那么对 <span class="arithmatex">\(x^{*}\)</span> 的任意可行方向 <span class="arithmatex">\(p \in R^{n}\)</span>，有:</li>
 </ul>
 <p>$$ \nabla f(x<sup T="T">*)</sup>p \geq 0$$ 其中</p>
-<div class="arithmatex">\[ \nabla f(x^{*}) = \{ \dfrac{\partial f(x^{*})}{\partial x_1}, \dfrac{f(x^{*})}{\partial x_2}, ..., \dfrac{\partial f(x^{*})}{\partial x_n}\}\]</div>
+<pre class="arithmatex">\[ \nabla f(x^{*}) = \{ \dfrac{\partial f(x^{*})}{\partial x_1}, \dfrac{f(x^{*})}{\partial x_2}, ..., \dfrac{\partial f(x^{*})}{\partial x_n}\}\]</pre>
 <p>是函数<span class="arithmatex">\(f\)</span>在点<span class="arithmatex">\(x^*\)</span>处的梯度(Gradiant)，也就是一阶偏导数，梯度方向是函数f在点x的等值线的法线方向，沿着这个方向函数值增加最快。</p>
 <ul>
 <li>
@@ -8428,12 +8458,12 @@
 <p>不是充分条件，满足上式的点被称为函数的驻点，可能是局部极小，也可能局部极大，也可能都不是。既不是局部极小也不是局部极大的驻点，称为鞍点。</p>
 </blockquote>
 <p>要从驻点中分出那些是局部极小，还需要检验二阶导数的信息：</p>
-<div class="arithmatex">\[\nabla^{2}f(x^{*}) = 
+<pre class="arithmatex">\[\nabla^{2}f(x^{*}) = 
     \begin{pmatrix}
      \dfrac{\partial^{2}f(x^*)}{\partial x^{2}_{1}} &amp;  \dfrac{\partial^{2}f(x^*)}{\partial x_{1} \partial x_{2}}&amp;\cdots &amp; \dfrac{\partial^{2}f(x^*)}{\partial x_{1} \partial x_{n}} \\ 
       \vdots &amp; \vdots &amp;  &amp; \vdots \\ 
       \dfrac{\partial^{2}f(x^*)}{\partial x_{n} \partial x_{1}} &amp;  \dfrac{\partial^{2}f(x^*)}{\partial x_{n} \partial x_{2}}&amp;\cdots &amp; \dfrac{\partial^{2}f(x^*)}{\partial x^{2}_{n}}   
-    \end{pmatrix}\]</div>
+    \end{pmatrix}\]</pre>
 <ul>
 <li>
 <p>上是<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(x^{*}\)</span>处的二阶偏导数，该矩阵被称为 Hessian 矩阵。</p>
@@ -8453,7 +8483,7 @@
 <ul>
 <li><strong>凸函数</strong>: 设<span class="arithmatex">\(f\)</span>是定义在凸集 <span class="arithmatex">\(\Omega\)</span> 上的函数，若对任意实数 <span class="arithmatex">\(0 \leq \alpha \leq 1\)</span>，以及任意两点 <span class="arithmatex">\(x, y \in  \Omega\)</span>，有</li>
 </ul>
-<div class="arithmatex">\[f(\alpha x + (1-\alpha) y) \leq \alpha f(x) + (1-\alpha) f(y)\]</div>
+<pre class="arithmatex">\[f(\alpha x + (1-\alpha) y) \leq \alpha f(x) + (1-\alpha) f(y)\]</pre>
 <p>则称<span class="arithmatex">\(f\)</span>是凸集 <span class="arithmatex">\(\Omega\)</span> 上的<strong>凸函数</strong>。</p>
 <ul>
 <li><strong>严格凸函数</strong>：设 <span class="arithmatex">\(f\)</span> 是定义在凸集 <span class="arithmatex">\(\Omega\)</span> 上的函数，若对任意实数 <span class="arithmatex">\(0 &lt; \alpha &lt; 1\)</span> 以及任意两点 <span class="arithmatex">\(x, y \in \Omega\)</span>，且 <span class="arithmatex">\(x \neq y\)</span> 有：</li>
@@ -8464,7 +8494,7 @@
 <ul>
 <li><strong>性质5.1</strong> ： 设<span class="arithmatex">\(f\)</span>是定义在凸集 <span class="arithmatex">\(\Omega\)</span> 上的凸函数，<span class="arithmatex">\(x_1, x_2,..,x_m\)</span> 是 <span class="arithmatex">\(\Omega\)</span> 中的<span class="arithmatex">\(m\)</span>个点，数 <span class="arithmatex">\(\alpha_1, \alpha_2,..,\alpha_m \geq 0\)</span>，且 <span class="arithmatex">\(\sum \limits^{m}_{i = 1} a_i = 1\)</span>，则：</li>
 </ul>
-<div class="arithmatex">\[f(a_1 x_1 + a_2 x_2 + ,..., + a_m x_m) \leq a_1 f(x_1) + a_2 f(x_2) + ,..., +a_m f(x_m)\]</div>
+<pre class="arithmatex">\[f(a_1 x_1 + a_2 x_2 + ,..., + a_m x_m) \leq a_1 f(x_1) + a_2 f(x_2) + ,..., +a_m f(x_m)\]</pre>
 <ul>
 <li>
 <p><strong>性质5.2</strong> : 设<span class="arithmatex">\(f\)</span>是定义在凸集 <span class="arithmatex">\(\Omega\)</span> 上的凸函数，那么对于任意实数 <span class="arithmatex">\(\beta \geq 0\)</span>，函数 <span class="arithmatex">\(\beta f(x)\)</span>也是定义在 <span class="arithmatex">\(\Omega\)</span> 上的凸函数。</p>
@@ -8487,7 +8517,7 @@
 <ul>
 <li>考虑下面的数学规划:</li>
 </ul>
-<div class="arithmatex">\[\mathop{\min} \limits^{}_{x \in \Omega} \hspace{4pt} f(x)\]</div>
+<pre class="arithmatex">\[\mathop{\min} \limits^{}_{x \in \Omega} \hspace{4pt} f(x)\]</pre>
 <p>若其中<span class="arithmatex">\(f(x)\)</span> 是凸函数，<span class="arithmatex">\(\Omega\)</span> 是凸集，那么上式是 <strong>凸规划</strong>。</p>
 <blockquote>
 <p>由于线性函数既是凸函数也是凹函数，因此线性规划属于凸规划。</p>
@@ -8507,7 +8537,7 @@
 <p>从初始估计点<span class="arithmatex">\(x_0\)</span>出发，按照一定规则，找到一个比<span class="arithmatex">\(x_0\)</span> 更好的点<span class="arithmatex">\(x_1\)</span>，再从<span class="arithmatex">\(x_1\)</span> 出发，找到一个比<span class="arithmatex">\(x_1\)</span> 更好的点<span class="arithmatex">\(x_2\)</span>，如此继续，得到一个解的点序列<span class="arithmatex">\(\{ x_k\}\)</span>。若该点序列有一个极限点 <span class="arithmatex">\(x^{*}\)</span>， 也就是:</p>
 </li>
 </ul>
-<div class="arithmatex">\[\mathop{\lim} \limits_{k \to \infty} \Vert x_k - x^* \Vert = 0\]</div>
+<pre class="arithmatex">\[\mathop{\lim} \limits_{k \to \infty} \Vert x_k - x^* \Vert = 0\]</pre>
 <p>就称该点列收敛于<span class="arithmatex">\(x^{*}\)</span>。</p>
 <p>步骤如下：</p>
 <ol>
@@ -8515,9 +8545,9 @@
 <li>确定搜索方向，如果已经得出某一迭代点<span class="arithmatex">\(x_k\)</span>，且 <span class="arithmatex">\(x_k\)</span> 是极小点，那么就要根据一定的规则，从<span class="arithmatex">\(x_k\)</span> 点出发确定一个搜索方向<span class="arithmatex">\(d_k\)</span>，沿着该方向能找到是的目标函数值下降的可行点。</li>
 <li>确定步长，沿着方向<span class="arithmatex">\(d_k\)</span> 前进一个步长，得到新点<span class="arithmatex">\(x_{k + 1}\)</span>，通过选择合适的步长 <span class="arithmatex">\(\alpha_k\)</span>，使得下一个迭代点 </li>
 </ol>
-<div class="arithmatex">\[x_{k+1} = x_k + \alpha_k d_k\]</div>
+<pre class="arithmatex">\[x_{k+1} = x_k + \alpha_k d_k\]</pre>
 <p>满足:</p>
-<div class="arithmatex">\[f(x_{k+1}) = f(x_k +  \alpha_k d_k) &lt; f(x_k)\]</div>
+<pre class="arithmatex">\[f(x_{k+1}) = f(x_k +  \alpha_k d_k) &lt; f(x_k)\]</pre>
 <ol>
 <li>
 <p>最优性检验，检验新得到的点是否是极小点或者达到近似极小点的要求，如果满足，就迭代停止，否则令 <span class="arithmatex">\(k := k + 1\)</span>，返回步骤二迭代。</p>
@@ -8538,7 +8568,7 @@
 <h3 id="551">5.5.1 斐波那契法和牛顿法<a class="headerlink" href="#551" title="Permanent link">⚓︎</a></h3>
 <h3 id="552">5.5.2 牛顿法<a class="headerlink" href="#552" title="Permanent link">⚓︎</a></h3>
 <p>如果单变量函数在<span class="arithmatex">\(x^*\)</span> 取到局部极值，并且在<span class="arithmatex">\(x^*\)</span> 可微，那么函数在该点的一阶导数为0。为了求解<span class="arithmatex">\(f^{'}(x) = 0\)</span>，需要用到迭代方法：牛顿法（切线法），在一个迭代点附近用切线代替曲线，用切线方程的零点作为新的迭代点，逐步逼近最优。</p>
-<div class="arithmatex">\[x_{k + 1} = x_k + \dfrac{f^{'}(x_k)}{f^{''}(x_k)}\]</div>
+<pre class="arithmatex">\[x_{k + 1} = x_k + \dfrac{f^{'}(x_k)}{f^{''}(x_k)}\]</pre>
 <p>上式即为牛顿迭代公式。</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -8547,17 +8577,17 @@
 <h3 id="553">5.5.3 函数逼近法<a class="headerlink" href="#553" title="Permanent link">⚓︎</a></h3>
 <h2 id="56">5.6 无约束极值问题的求解算法<a class="headerlink" href="#56" title="Permanent link">⚓︎</a></h2>
 <p>无约束极值问题表示为:</p>
-<div class="arithmatex">\[\mathop{\min} \limits_{x \in R^n} f(x) \tag{5.24}\]</div>
+<pre class="arithmatex">\[\mathop{\min} \limits_{x \in R^n} f(x) \tag{5.24}\]</pre>
 <h3 id="561">5.6.1 梯度法<a class="headerlink" href="#561" title="Permanent link">⚓︎</a></h3>
 <p>假设5.24中目标函数<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(R^n\)</span>上一阶连续可微，存在极小点<span class="arithmatex">\(x^{*}\)</span>，用<span class="arithmatex">\(x_k\)</span> 表示极小点的第<span class="arithmatex">\(k\)</span>次近似，为了找到<span class="arithmatex">\(k+1\)</span>次的迭代点，需要在<span class="arithmatex">\(x_k\)</span> 沿着方向<span class="arithmatex">\(d_k\)</span>做射线</p>
-<div class="arithmatex">\[x = x_k + \alpha d_k, \alpha \geq 0\]</div>
+<pre class="arithmatex">\[x = x_k + \alpha d_k, \alpha \geq 0\]</pre>
 <p>满足 <span class="arithmatex">\(\nabla f(x_k)^{T} d_k &lt; 0\)</span>的方向称为下降方向。考虑：$ \Vert \nabla f(x_k) \Vert \cdot \Vert d_k \Vert \cdot \cos \theta$，当 <span class="arithmatex">\(\theta = \pi\)</span> 时，上述值最小，此时搜索方向为负梯度方向。</p>
 <p>选定负梯度方向后，还需要确定步长 <span class="arithmatex">\(\alpha_k\)</span>。可以选择：</p>
 <ol>
 <li>试算：任取一个值，检验是否满足 <span class="arithmatex">\(f(x_k +  \alpha_k d_k) &lt; f(x_k)\)</span>，如果不满足就减小 <span class="arithmatex">\(\alpha_k\)</span>；</li>
 <li>沿着搜索方向进行一维搜索，也就是求使得<span class="arithmatex">\(f(x)\)</span> 最小的 <span class="arithmatex">\(\alpha_k\)</span>：</li>
 </ol>
-<div class="arithmatex">\[\mathop{\min} \limits_{\alpha_k \geq 0} f(x_k + \alpha_k d_k)\]</div>
+<pre class="arithmatex">\[\mathop{\min} \limits_{\alpha_k \geq 0} f(x_k + \alpha_k d_k)\]</pre>
 <blockquote>
 <p>方向 <span class="arithmatex">\(d_{k + 1}\)</span> 和 <span class="arithmatex">\(d_{k}\)</span> 正交，其迭代过程实际上是沿着“之”字形前进的。</p>
 </blockquote>
@@ -8606,24 +8636,24 @@
 </li>
 </ul>
 <p>如果<span class="arithmatex">\(x_0\)</span>的某一方向既是该点的可行方向，又是该点的下降方向，那么称它是这个点的可行下降方向，有：</p>
-<div class="arithmatex">\[\left\{ \begin{aligned}  \nabla f(x_0)^{T} d  &amp; &lt; 0 \\ \nabla g_i(x_0)^T d &amp; &gt; 0, i \in A(x_0) \end{aligned} \right.\]</div>
+<pre class="arithmatex">\[\left\{ \begin{aligned}  \nabla f(x_0)^{T} d  &amp; &lt; 0 \\ \nabla g_i(x_0)^T d &amp; &gt; 0, i \in A(x_0) \end{aligned} \right.\]</pre>
 <h3 id="573-kkt">5.7.3 库恩-塔克条件（KKT条件）<a class="headerlink" href="#573-kkt" title="Permanent link">⚓︎</a></h3>
 <p>K-T 条件是确定某点为局部最优解的一阶必要条件，只要是最优点、同时也是正则点就必须满足这个条件。但是一般来说，它不是充分条件，满足这个条件的点不一定是最优点。不过对于凸规划来说，KT条件既是必要条件也是充分条件。</p>
 <p>对于此类问题：</p>
-<div class="arithmatex">\[\mathop{\min} f(x) \\ s.t. \hspace{4pt} g_i(x) \geq 0, \hspace{4pt}i = 1,2,...,l\]</div>
+<pre class="arithmatex">\[\mathop{\min} f(x) \\ s.t. \hspace{4pt} g_i(x) \geq 0, \hspace{4pt}i = 1,2,...,l\]</pre>
 <p>有如下定理：</p>
 <ul>
 <li>定理 5.5 设 <span class="arithmatex">\(x^*\)</span> 是如上约束优化问题的局部极小点，<span class="arithmatex">\(f(x)\)</span> 和 <span class="arithmatex">\(g_i(x)\)</span> 在点 <span class="arithmatex">\(x^*\)</span> 处有一阶连续偏导，并且<span class="arithmatex">\(x^*\)</span> 是约束条件的一个正则点，则存在向量 <span class="arithmatex">\(\mu = (u^{*}_{1}, u^{*}_{2}, ..., u^{*}_{l} )^{T}\)</span>，使得下述条件成立：</li>
 </ul>
-<div class="arithmatex">\[\left\{ \begin{aligned} \nabla f(x^{*}) - \sum \limits^{l}_{i = 1} \mu^{*}_{i} \nabla g_i(x^{*}) = 0 \\ u^{*}_{i}g_i(x^{*}) = 0, \hspace{4pt} i = 1,2,...,l  \\ u^{*}_{i} \geq 0, \hspace{4pt} i = 1,2,...,l \end{aligned} \right. \tag{5.39}\]</div>
+<pre class="arithmatex">\[\left\{ \begin{aligned} \nabla f(x^{*}) - \sum \limits^{l}_{i = 1} \mu^{*}_{i} \nabla g_i(x^{*}) = 0 \\ u^{*}_{i}g_i(x^{*}) = 0, \hspace{4pt} i = 1,2,...,l  \\ u^{*}_{i} \geq 0, \hspace{4pt} i = 1,2,...,l \end{aligned} \right. \tag{5.39}\]</pre>
 <p>上述就是<strong>K-T条件</strong>。</p>
 <p>如果同时含有等式和不等式约束的情形，如：</p>
-<div class="arithmatex">\[ \mathop{\min} f(x) \\ s.t. \left\{ \begin{aligned} \hspace{4pt} g_i(x) \geq 0, \hspace{4pt}i = 1,2,...,l  \\  h_j(x) = 0, \hspace{4pt} j = 1,2,...,m  \end{aligned} \right.\]</div>
+<pre class="arithmatex">\[ \mathop{\min} f(x) \\ s.t. \left\{ \begin{aligned} \hspace{4pt} g_i(x) \geq 0, \hspace{4pt}i = 1,2,...,l  \\  h_j(x) = 0, \hspace{4pt} j = 1,2,...,m  \end{aligned} \right.\]</pre>
 <p>有定理：</p>
 <ul>
 <li>定理 5.6 设 <span class="arithmatex">\(x^{*}\)</span> 是约束优化问题的局部极小点，<span class="arithmatex">\(f(x),g_i(x)\)</span> 和 <span class="arithmatex">\(h_j(x)\)</span>在点<span class="arithmatex">\(x^*\)</span> 处有一阶连续偏导数，并且<span class="arithmatex">\(x^{*}\)</span> 是约束条件的一个正则点，则存在向量 <span class="arithmatex">\(\mu = (u^{*}_{1}, u^{*}_{2}, ..., u^{*}_{l} )^{T}\)</span>，使得下述条件成立：</li>
 </ul>
-<div class="arithmatex">\[\left\{ \begin{aligned} \nabla f(x^{*}) - \sum \limits^{l}_{i = 1} \mu^{*}_{i} \nabla g_i(x^{*}) - \sum \limits^{m}_{j = 1} \lambda^{*}_j \nabla h_j(x^*) = 0 \\ u^{*}_{i}g_i(x^{*}) = 0, \hspace{4pt} i = 1,2,...,l  \\ u^{*}_{i} \geq 0, \hspace{4pt} i = 1,2,...,l \end{aligned} \right. \tag{5.42}\]</div>
+<pre class="arithmatex">\[\left\{ \begin{aligned} \nabla f(x^{*}) - \sum \limits^{l}_{i = 1} \mu^{*}_{i} \nabla g_i(x^{*}) - \sum \limits^{m}_{j = 1} \lambda^{*}_j \nabla h_j(x^*) = 0 \\ u^{*}_{i}g_i(x^{*}) = 0, \hspace{4pt} i = 1,2,...,l  \\ u^{*}_{i} \geq 0, \hspace{4pt} i = 1,2,...,l \end{aligned} \right. \tag{5.42}\]</pre>
 <ul>
 <li>KT条件是确定某点为最优点的必要条件，只要是最优点，且此处起作用约束的梯度线性无关，就会满足这个条件。但是一般来说，它不是充分条件。特别地，对于凸规划问题，KT条件既是最优点的必要条件，同时也是充分条件。</li>
 </ul>
@@ -8720,13 +8750,11 @@
     
       <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
     
   </body>
