@@ -13,7 +13,13 @@ pip freeze > requirements.txt
 
 但是这样输出有一些不好，因为它会输出你当前环境中所有的模块，即使相当一部分模块在项目中并没有用到，它也会保存下来，比如这样：
 
-<img src = "../../picx/PIPREQS/pipreqs2.png" height = "150px">
+
+<figure>
+
+![](../../Study/picx/PIPREQS/pipreqs2.png){: style="height: 100px"}
+
+</figure>
+
 
 很不实用，而且动辄几百行。
 
