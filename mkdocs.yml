@@ -359,6 +359,7 @@ nav:
           - 参数估计: Study/Statistics/Parameter_estimation.md
           - 多维随机变量: Study/Statistics/Multi_dimensional_r_v.md
       - 小红书｜Python藏宝箱:
+          - PyEcharts合集: Study/PythonPackages/Pyecharts1.md
           - 一些小玩具: Study/PythonPackages/MagicSquare.md
           - pipreqs: Study/PythonPackages/PIPREQS.md
           - Python二分排序函数Bisect: Study/PythonPackages/PythonBisect.md
@@ -400,8 +401,6 @@ nav:
           - 英文作文: Study/English/EnglishEssay.md
           - 英语文学批评: Study/English/LiteraryCriticism.md
       - 制造与服务系统分析: Study/AMASS.md
-      - 古登堡计划:
-          - 计算机相关: Study/Knowledge/CPUGPU.md
       - 管理学:
           - 管理学导论: Study/Management/Management.md
           - 计划: Study/Management/Plan.md
@@ -413,6 +412,9 @@ nav:
           - 安装: Study/ChatGPT/Register.md
           - 其他AI工具: Study/ChatGPT/Reference.md
           - 使用技巧: Study/ChatGPT/Prompt1.md
+          - 古登堡计划:
+              - 专有名词释疑: Study/ChatGPT/Knowledge/Terms.md
+              
       - 我的碎碎念:
           - 我的2022: Study/Talks/My2022.md
           - 荐文: Study/Talks/Articles_recomend.md

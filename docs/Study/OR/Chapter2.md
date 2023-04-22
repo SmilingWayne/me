@@ -185,6 +185,7 @@ $$\theta = \mathop{\min}  \{ \dfrac{c_j - z_j}{a_{rj} } | a_{rj} < 0 \} = \dfrac
 我们省略建模的部分。直接跳到单纯形表。
 
 和朴素的单纯形不同，我们首先不看最后一行（也就是检验数），而是先看b那一列。
+
 $$\def\arraystretch{1.5}
    \begin{array}{c|c|c|c|c|c|c|c}
    \hline

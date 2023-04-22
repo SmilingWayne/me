@@ -6,7 +6,6 @@ statistics: true
 
 <!-- For full documentation visit [mkdocs.org](https://www.mkdocs.org). Nice to see you. This is xiao xiao! -->
 <!-- <center><font face = "savoye LET" size = 6>A Very Brief Introduction</font></center> -->
-
 <br>
 
 <p></p>
@@ -36,7 +35,7 @@ statistics: true
     
     - 🦾 代码块行数：{{codes}} ；
 
-    - ⏰ 网站运行时间：<span id="web-time"></span>
+    - 🛩️ 网站运行时间：<span id="web-time"></span>
 
 === "<font size = 6>:fontawesome-solid-envelope: </font><font size = 6 face = "savoye LET">Contact Me</font>"
 
