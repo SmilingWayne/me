@@ -2,11 +2,11 @@
 
 
 - AI : Artificial Intelligence
+- AIGC: Artificial Intelligence Generated Contents AI生成内容
 - RLHF: Reinforcement Learning Human Factors?
-- LLaMA: Large Language Model Meta AI：参数更少60 ~ 数百亿个参数实现更好的模型效果；
+- LLaMa: Large Language Model Meta AI：参数更少60 ~ 数百亿个参数实现更好的模型效果；一个Meta开源的模型。适合个人微调。
 - fine-tuning：模型微调；
 - LLM：Large Language Model;
-- RTX 3090 / RTX 4090: 
 - Vercel:?
 - Wolfram: ?
 - CI / CD?
@@ -23,7 +23,8 @@
 > AI 驱动的一个应用程序；LLM自动创建和处理各种工作、简化数据分析、报告等内容；甚至可以分解->把任务分解后逐个完成；
 - ChatGPT: Generative Pre-trained Transformer
     - GPT 3.5 ～ GPT 4
-- Claude: 类ChatGPT软件
+- Claude: 类ChatGPT软件。需要🪜。
+> 安装教程：[https://www.jianshu.com/p/b4a0211cae97](https://www.jianshu.com/p/b4a0211cae97)。支持Google mail和Apple ID登录。类似于加入群组的讨论方式。
 
 - cloudflare: 
 - LangChain:
@@ -40,6 +41,23 @@
 - GPU：GPU是显卡上的一块芯片，就像CPU是主板上的一块芯片。那么1999年之前显卡上就没有GPU吗？当然有，只不过那时候没有人给它命名，也没有引起人们足够的重视，发展比较慢。    自Nvidia提出GPU这个概念后，GPU就进入了快速发展时期。简单来说，其经过了以下几个阶段的发展：1）仅用于图形渲染，此功能是GPU的初衷，这一点从它的名字就可以看出：Graphic Processing Unit，图形处理单元；2）后来人们发现，GPU这么一个强大的器件只用于图形处理太浪费了，它应该用来做更多的工作，例如浮点运算。怎么做呢？直接把浮点运算交给GPU是做不到的，因为它只能用于图形处理（那个时候）。最容易想到的，是把浮点运算做一些处理，包装成图形渲染任务，然后交给GPU来做。这就是GPGPU（General Purpose GPU）的概念。不过这样做有一个缺点，就是你必须有一定的图形学知识，否则你不知道如何包装。
     - 在没有GPU之前，基本上所有的任务都是交给CPU来做的。有GPU之后，二者就进行了分工，CPU负责逻辑性强的事物处理和串行计算，GPU则专注于执行高度线程化的并行处理任务（大规模计算任务）。为什么这么分工？这是由二者的硬件构成决定的。
 - CUDA: CUDA(Compute Unified Device Architecture)，通用并行计算架构，是一种运算平台。它包含CUDA指令集架构以及GPU内部的并行计算引擎。你只要使用一种类似于C语言的CUDA C语言，就可以开发CUDA程序，从而可以更加方便的利用GPU强大的计算能力，而不是像以前那样先将计算任务包装成图形渲染任务，再交由GPU处理。
+
+
+- NVIDA ：创始人黄仁勋（美籍华人）；1999年，NVIDIA定义了GPU，这极大地推动了PC游戏市场的发展，重新定义了现代计算机图形技术，并彻底改变了并行计算。2017年6月，入选《麻省理工科技评论》“2017 年度全球50大最聪明公司”榜单。
+    - NVIDIA公司专门打造面向计算机、消费电子和移动终端，能够改变整个行业的创新产品。这些产品家族正在改变视觉丰富和运算密集型应用例如视频游戏、电影产业、广播、工业设计、财政模型、空间探索以及医疗成像；
+- AMD：**AMD半导体公司**专门为计算机、通信和消费电子行业设计和制造各种创新的微处理器（CPU、GPU、主板芯片组、电视卡芯片等），以及提供闪存和低功率处理器解决方案；
+
+
+
+
+
+
+- RTX 3090 / RTX 4090 / 2080: NVIDA 的显卡的型号；里面集成了CUDA 和 GPU 等上述内容；RTX的意思就是实时光线追踪。
+> P.S. 了解一下：电竞显卡。4k～6k RMB起步？
+> 建模、光线追踪、求导运算
+
+- Amphere 架构和图灵架构：新的GPU的架构
+- NVIDIA A100是首款基于NVIDIA Ampere架构的GPU。作为一款通用型工作负载加速器，A100还被设计用于数据分析、科学计算和云图形。
 
 
 - [HuggingFace](https://huggingface.co)。开源框架transformers.
@@ -65,8 +83,7 @@
 - LLM : Large Language Model
 
 
-- NVIDA ：
--  AMD：**AMD半导体公司**专门为计算机、通信和消费电子行业设计和制造各种创新的微处理器（CPU、GPU、主板芯片组、电视卡芯片等），以及提供闪存和低功率处理器解决方案；
+
   
 
 
@@ -81,3 +98,18 @@
 - 你也可以创建一个链接，让任何持有链接的人无需直接被你邀请，而是通过该链接加入服务器。当其他人将该链接输入浏览器地址栏时，将会在应用中跳转到你的服务器
 
 
+- DNN 
+
+- CNN 
+
+- RNN 
+
+- GCN
+
+
+
+
+
+!!! notes
+    - [https://zhuanlan.zhihu.com/p/612273051](https://zhuanlan.zhihu.com/p/612273051)
+    - [https://zhuanlan.zhihu.com/p/621854926](https://zhuanlan.zhihu.com/p/621854926)
