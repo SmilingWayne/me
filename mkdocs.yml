@@ -152,6 +152,7 @@ nav:
           - Literature/Literacy/index.md
           - 魏晋玄学: Literature/Literacy/Xuan_xue.md
           - 西方正典: Literature/Literacy/Western_classic.md
+          - 增广贤文: Literature/Literacy/Zeng_guang_xian_wen.md
           - 🇫🇷巴黎评论: Literature/Literacy/Paris_review.md
           - 🇫🇷作家笔记: Literature/Literacy/Writers_notes.md
           - 天朝遥远: Literature/Literacy/Dynasty.md
@@ -207,50 +208,53 @@ nav:
 
   - 历史:
       - History/index.md
-      - 🇬🇷希腊笔记: History/Greece.md
-      - 🇯🇵日本笔记: History/Japan_notes.md
-      - 🇲🇱非洲笔记: History/Africa.md
-      - 🇰🇿中亚笔记: History/Mid_asia.md
-      - 🇷🇺苏联笔记: History/Soviet_union.md
-      - 🇫🇷记忆之场: History/Field_of_memory.md
-      - 🇫🇷断头王后: History/Marie_antoinette.md
-      - 欧罗巴笔记: History/Europe.md
-      - 🇫🇷法兰西笔记: History/France.md
-      - 🇸🇦阿拉伯笔记: History/Arabians.md
-      - 荒诞医学史: History/Ridiculous_medics.md
-      - 罗马帝国简史: History/Roman_empire_brief_history.md
-      - 世界史碎片: History/World.md
-      - 🇮🇩印度尼西亚笔记: History/Indonesia.md
-      - 西印度毁灭述略: History/Destroy_western_india.md
-      - 人类的群星闪耀时: History/Human_stars.md
-      - 阿拉伯伊斯兰文化史: History/Arabian_islamic_history.md
-      - 🇫🇷法国资产阶级史(上): History/Bourgeoisie.md
-      - 🇧🇪利奥波德国王的鬼魂: History/King_leopolds_ghost.md
-      - 🇫🇷法国知识分子的世纪: History/Century_of_intellects_in_France.md
-      - 🇺🇾拉丁美洲被切开的血管: History/Latin_american_blood.md
-      - 🇷🇺一个大国的崛起与崩溃: History/Rise_and_fall.md
-      - 🇯🇵现代日本(牛津通识读本): History/Modern_japan.md
-      - 🇫🇷东风——法国知识分子与60年代的遗产: History/Eastern_wind.md
+      - 笔记本:
+          - 🇬🇷希腊笔记: History/Greece.md
+          - 🇯🇵日本笔记: History/Japan_notes.md
+          - 🇲🇱非洲笔记: History/Africa.md
+          - 🇰🇿中亚笔记: History/Mid_asia.md
+          - 🇷🇺苏联笔记: History/Soviet_union.md
+          - 欧罗巴笔记: History/Europe.md
+          - 🇫🇷法兰西笔记: History/France.md
+          - 🇸🇦阿拉伯笔记: History/Arabians.md
+          - 🇮🇩印度尼西亚笔记: History/Indonesia.md
+      - 书:
+          - 🇫🇷记忆之场: History/Field_of_memory.md
+          - 🇫🇷断头王后: History/Marie_antoinette.md
+          - 荒诞医学史: History/Ridiculous_medics.md
+          - 罗马帝国简史: History/Roman_empire_brief_history.md
+          - 世界史碎片: History/World.md
+          - 西印度毁灭述略: History/Destroy_western_india.md
+          - 人类的群星闪耀时: History/Human_stars.md
+          - 阿拉伯伊斯兰文化史: History/Arabian_islamic_history.md
+          - 🇫🇷法国资产阶级史(上): History/Bourgeoisie.md
+          - 🇧🇪利奥波德国王的鬼魂: History/King_leopolds_ghost.md
+          - 🇫🇷法国知识分子的世纪: History/Century_of_intellects_in_France.md
+          - 🇺🇾拉丁美洲被切开的血管: History/Latin_american_blood.md
+          - 🇷🇺一个大国的崛起与崩溃: History/Rise_and_fall.md
+          - 🇯🇵现代日本(牛津通识读本): History/Modern_japan.md
+          - 🇫🇷东风——法国知识分子与60年代的遗产: History/Eastern_wind.md
   - 艺术:
       - Arts/index.md
       - 艺术与设计史:
           - 🇫🇷欧洲艺术: Arts/Art_and_design/Notes1.md
           - 印象派: Arts/Art_and_design/Impressionism.md
           - 🇲🇽中美洲艺术: Arts/Art_and_design/Meso_America.md
-      - 🇫🇷拉斐尔前派的梦: Arts/Pre_Raphael.md
-      - 🇫🇷黑夜的蝴蝶: Arts/Butterfly_at_night.md
-      - 🇫🇷左岸,从人民阵线到冷战作家: Arts/Left_bank.md
-      - 非主流艺术史: Arts/Art_history_unfashioned.md
-      - 🇫🇷巴黎神话——从启蒙运动到超现实主义: Arts/Parisian_myth.md
-      - 🇫🇷艺术引导人生——德拉克洛瓦私人日记: Arts/Delacroix.md
-      - 🇫🇷法国制造——法国文化关键词: Arts/Made_in_French.md
-      - 达达和超现实主义: Arts/Dada_surrealism.md
-      - 贝多芬的骰子: Arts/Beethoven.md
-      - 爱的艺术: Arts/Arts_of_love.md
-      - 艺术的故事: Arts/Stories_of_art.md
-      - 文艺复兴时期的艺术: Arts/Art_renaissance.md
-      - 现代主义: Arts/Modernism.md
-      - 碎片艺术: Arts/Pieces.md
+      - 归档:
+          - 🇫🇷拉斐尔前派的梦: Arts/Pre_Raphael.md
+          - 🇫🇷黑夜的蝴蝶: Arts/Butterfly_at_night.md
+          - 🇫🇷左岸,从人民阵线到冷战作家: Arts/Left_bank.md
+          - 非主流艺术史: Arts/Art_history_unfashioned.md
+          - 🇫🇷巴黎神话——从启蒙运动到超现实主义: Arts/Parisian_myth.md
+          - 🇫🇷艺术引导人生——德拉克洛瓦私人日记: Arts/Delacroix.md
+          - 🇫🇷法国制造——法国文化关键词: Arts/Made_in_French.md
+          - 达达和超现实主义: Arts/Dada_surrealism.md
+          - 贝多芬的骰子: Arts/Beethoven.md
+          - 爱的艺术: Arts/Arts_of_love.md
+          - 艺术的故事: Arts/Stories_of_art.md
+          - 文艺复兴时期的艺术: Arts/Art_renaissance.md
+          - 现代主义: Arts/Modernism.md
+          - 碎片艺术: Arts/Pieces.md
   - 考研:
       - yan/index.md
       - 我的规划: yan/yanPlans.md
@@ -398,6 +402,7 @@ nav:
           - Apple的奇奇怪怪: Study/Swift/AppleScript.md
       - 语言学习:
           - 英语笔记: Study/English/English.md
+          - 英语记忆: Study/English/Words.md
           - 英文作文: Study/English/EnglishEssay.md
           - 英语文学批评: Study/English/LiteraryCriticism.md
       - 制造与服务系统分析: Study/AMASS.md
@@ -414,7 +419,7 @@ nav:
           - 使用技巧: Study/ChatGPT/Prompt1.md
           - 古登堡计划:
               - 专有名词释疑: Study/ChatGPT/Knowledge/Terms.md
-              
+
       - 我的碎碎念:
           - 我的2022: Study/Talks/My2022.md
           - 荐文: Study/Talks/Articles_recomend.md

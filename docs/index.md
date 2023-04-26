@@ -29,19 +29,20 @@ statistics: true
 
 === "<font size = 6>:fontawesome-solid-book: </font><font size = 6 face = "savoye LET">About The NoteBook</font>"
 
-    - 💹 站点统计：页面总数：{{pages}} 
+    - 💹 网站页面总数：{{pages}} ；
     
     - 🔠 总字数：{{words}} ；
     
     - 🦾 代码块行数：{{codes}} ；
 
-    - 🛩️ 网站运行时间：<span id="web-time"></span>
+    - 🛩️ 网站运行时间：<span id="web-time"></span>；
 
 === "<font size = 6>:fontawesome-solid-envelope: </font><font size = 6 face = "savoye LET">Contact Me</font>"
 
     - 📮 邮箱 `xiaoxiaowayne@163.com`
 
 <br>
+
 
 
 <center> <font face = "Apple chancery" size = 5>Bienvenue sur mon site! 🌼</font></center>

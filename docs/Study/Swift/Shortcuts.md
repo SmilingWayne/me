@@ -13,3 +13,29 @@
     - 自定义随的内容（最强大功能），增强鲁棒性；
     - 精彩二选一
 - 链接：[https://www.icloud.com/shortcuts/d8f7454b5e474e37b7591f0082d1b6eb](https://www.icloud.com/shortcuts/d8f7454b5e474e37b7591f0082d1b6eb) （初代版本）
+
+
+## 复制粘贴小🔧
+
+- shift + command + 5，截图。选中区域后，按住control + option（去除背景阴影色）再点击截图画面，就可以直接图片复制到剪贴板。
+
+
+
+## dock双指上滑展示该程序所有窗口
+
+- 在终端输入：
+  
+```text
+defaults write com.apple.dock scroll-to-open -bool true && killall Dock
+```
+
+- 当然也可以在桌面选中这个程序用control + 方向下键
+
+- 如何关闭：
+
+```text
+defaults write com.apple.dock scroll-to-open -bool false && killall Dock
+```
+
+
+- preview 中一页一页地滑动而不是一点点地：option  + 方向下键
