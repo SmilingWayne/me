@@ -169,6 +169,7 @@ nav:
               - 问题回答: Literature/Literacy/Western_humanist/Questions.md
               - 巴赫金文学批评: Literature/Literacy/Western_humanist/BakhtinianLiteraryCriticism.md
               - 新历史主义: Literature/Literacy/Western_humanist/NewHistorism.md
+              - 文化批评: Literature/Literacy/Western_humanist/CulturalCriticism.md
           - 批判性思维的形成: Literature/Literacy/Formation_critical_thinking.md
           - 天真的和感伤的小说家: Literature/Literacy/Naive_novlist.md
           - 浪漫主义(牛津通识读本): Literature/Literacy/Romanticism.md
@@ -318,8 +319,9 @@ nav:
           - Study/TextEdit/index.md
           - LaTex:
               - 入门知识: Study/TextEdit/LaTeX/pieces.md
-              - LaTeX语法合集一: Study/TextEdit/LaTeX/LatexNotes.md
-              - LaTeX语法合集二-集合相关: Study/TextEdit/LaTeX/SetTheory.md
+              - LaTeX｜1-零零碎碎: Study/TextEdit/LaTeX/LatexNotes.md
+              - LaTeX｜2-集合相关: Study/TextEdit/LaTeX/SetTheory.md
+              - LaTeX｜3-矩阵多行对齐: Study/TextEdit/LaTeX/Matrix.md
           - Markdown:
               - 色样表合集: Study/TextEdit/Markdown/MarkdownSyntax2.md
               - 常用的语法(with plugins): Study/TextEdit/Markdown/MarkdownSyntax1.md
@@ -363,6 +365,7 @@ nav:
           - 参数估计: Study/Statistics/Parameter_estimation.md
           - 多维随机变量: Study/Statistics/Multi_dimensional_r_v.md
       - 小红书｜Python藏宝箱:
+          - 数据结构大合集: Study/PythonPackages/Data_struct_recomend.md
           - PyEcharts合集: Study/PythonPackages/Pyecharts1.md
           - 一些小玩具: Study/PythonPackages/MagicSquare.md
           - pipreqs: Study/PythonPackages/PIPREQS.md
@@ -401,6 +404,7 @@ nav:
           - shortcuts快捷指令使用指南: Study/Swift/Shortcuts.md
           - Apple的奇奇怪怪: Study/Swift/AppleScript.md
       - 语言学习:
+          - 法语笔记: Study/English/French.md  
           - 英语笔记: Study/English/English.md
           - 英语记忆: Study/English/Words.md
           - 英文作文: Study/English/EnglishEssay.md
@@ -430,9 +434,12 @@ nav:
           - 没有整理的: Study/Talks/pieces.md
           - 战争: Study/Talks/Russia.md
           - 知识分享: Study/Talks/Knowledge_share.md
+          - 语言: Study/Talks/About_language.md
       - 计算社会学｜复杂系统｜仿真:
           - 基于主体的建模方法: Study/SimulationCSS/AboutABM.md
           - 复杂系统: Study/SimulationCSS/Notes.md
+          - 计算社会科学: Study/SimulationCSS/SocialScience.md
+          - 系统动力学: Study/SimulationCSS/SystemDynamics.md
 site_author: SmilingWayne
 repo_name: SmilingWayne/me
 repo_url: https://github.com/SmilingWayne/me
