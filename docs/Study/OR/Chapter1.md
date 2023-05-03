@@ -71,7 +71,7 @@ $$ x \geq 0\tag{1-10}$$
     - 列出单纯形表，要求$(B^{-1}b)_{i} \geq 0$
     - 进行最优性判断，如果所有的$\sigma_{j} = (c^{T} - c^{T}_B B^{-1}A)_j \leq 0$，那么当前基本可行解就是最优解；否则进入下一步
     - 确定换入变量：如果存在$\sigma_j > 0$，那么计算：$\mathop{\max} \left\{ \sigma_j | \sigma_j > 0 \right\} = \sigma_s$,将对应的列变量$x_s$当作换入变量
-    - 确定换出变量：检查换入变量$x_s$所在的第$s$列，<font color = red>如果所有的$a_{is} \leq 0$，那么线性规划问题有无界解</font>；如果存在$a_{is} > 0$，那么计算 $\theta = \mathop{\min} \left\{ \dfrac{b_i}{a_{is}} | a_{is} > 0 \right\} = \dfrac{b_r}{a_{rs}}$ 。把对应的行变量$x_r$作为换出变量，$a_{rs}$ 作为旋转主元。
+    - 确定换出变量：检查换入变量$x_s$所在的第$s$列，<font color = red>如果所有的$a_{is} \leq 0$，那么线性规划问题有解但是目标函数无界</font>；如果存在$a_{is} > 0$，那么计算 $\theta = \mathop{\min} \left\{ \dfrac{b_i}{a_{is}} | a_{is} > 0 \right\} = \dfrac{b_r}{a_{rs}}$ 。把对应的行变量$x_r$作为换出变量，$a_{rs}$ 作为旋转主元。
     - 重复2-4步骤，直到计算结束；
 - 单纯形法的延伸
     - **人工变量法**：如果不能在系数矩阵中观察到单位矩阵，可以通过添加虚构的人工变量来构造单位矩阵。（人工变量的取值一定要是0，所以如果检验数$\sigma_j \leq 0$，基变量中依然有人工变量并且不为0，那么原问题无可行解
@@ -124,3 +124,30 @@ $$ x \geq 0\tag{1-10}$$
     - 无穷多最优解：
     - 无界解：
     - 退化和循环
+
+
+## 例题详解单纯形法
+
+- 给定例题：
+
+$$\max \hspace{4pt} 2x_1 + x_2$$
+
+$$\text{s.t.} \left\{ \begin{aligned} 3x_1 + 5x_2 & \leq 15 \\ 6x_1 + 2x_2 & \leq 24 \\ x_1, x_2 &\geq 0\end{aligned} \right.$$
+
+- 标准化后的结果：
+
+$$\max \hspace{4pt} 2x_1 + x_2 + 0x_3 + 0x_4$$
+
+$$\text{s.t.} \left\{ \begin{aligned} 3x_1 + 5x_2 + x_3 & & = 15 \\ 6x_1 + 2x_2 & x_4 & = 24 \\ x_1, x_2 , x_3, x_4&\geq 0\end{aligned} \right.$$
+
+$$\def\arraystretch{1.5}
+   \begin{array}{c|c|c|c|c|c|c}
+   \hline
+   \hline
+   & & & -2 & -3 & -4 & 0   \cr \hline
+   \textbf{c}_{\textbf{B}} & \textbf{x}_{\textbf{B}} & \textbf{b} & x_1 & x_2 & x_3 & x_4  \cr \hline
+   0 & x_3 & 15 & 3  & 5 & 1 & 0   \cr \hline
+   0 & x_4 & 24  & [6] & 2 & 0 & 1    \cr \hline
+    &  &  & 0 & 0 & -9/5 & -8/5    \cr \hline
+    \hline
+\end{array}$$
