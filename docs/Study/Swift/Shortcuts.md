@@ -39,3 +39,14 @@ defaults write com.apple.dock scroll-to-open -bool false && killall Dock
 
 
 - preview 中一页一页地滑动而不是一点点地：option  + 方向下键
+
+
+
+## macOS：文件已损坏，移动到废纸篓
+
+
+- 最近Update：因为要使用citespace做个文献分析，而citespace每个版本都是有expire时效的，需要重新下载（我的就是要重新下载）。
+- 但是很不幸下载下来出现了不少问题。记录一下解决方案：
+    - [https://zhuanlan.zhihu.com/p/542646562](https://zhuanlan.zhihu.com/p/542646562)，提供了一些命令行操作的方法；
+    - [https://www.bilibili.com/read/cv14204425](https://www.bilibili.com/read/cv14204425)。macOS绕过公证、设置数字签名的方法；
+- [x] 问题已解决。

@@ -7,7 +7,6 @@
         - 1.guard可以把不符合条件的处理事件前置，以免程序猿在开发中有遗漏的情况出现。
         - 2.guard还可以减少条件语句中的嵌套数量，使代码更简洁易读。
 
-
 - `String(X)` ：把X转化成string类型
 
 - 判断字符类型：
@@ -52,4 +51,35 @@ print(st.removeFirst())
 print(st.removeLast())
 // 3
 // y
+```
+
+
+- 遍历
+
+```Swift
+
+var a = [[Int]]
+for idx in 1..< a.count { a in 
+    print(in)
+}
+```
+
+- 声明一个空列表
+
+```Swift
+var used = [Bool](repeating: false, count: n)
+var tasks : [Int] = []
+
+```
+
+- inout 参数： 函数传入地址而不是值
+
+```Swift
+
+    func backtrack(_ track: inout [Int], _ nums: [Int], _ used: inout [Bool]) {
+    }
+
+    // 引用的时候：
+
+    backtrack(&track, nums, &used)
 ```

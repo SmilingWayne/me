@@ -10,9 +10,6 @@ statistics: true
 
 <p></p>
 
-
-
-
 === "<font size = 6>:fontawesome-solid-paw: </font><font size = 6 face = "savoye LET" >About Me</font>"
 
     - 🧑‍🎓 一个时刻想要变得不普通的普通人。你可以叫我 "笑笑" . 
@@ -47,31 +44,15 @@ statistics: true
 
 <center> <font face = "Apple chancery" size = 5>Bienvenue sur mon site! 🌼</font></center>
 
+
 - 💻 PC端：点击顶部导航栏选择主题，左侧查看目录；
 - 📱 移动端：点击左上角图标选择内容；
 - 🔍 搜索：支持中文检索。
-
 
 [^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.
 [^2]: 语出宋代黄庭坚[《杂诗七首》](https://www.gushici.net/shici/102/102214.html)。
 [^3]: Liberalism is a political and moral philosophy based on the rights of the individual, liberty, consent of the governed, political equality and equality before the law. (From Wiki)
 
-<!-- :octicons-file-code-24: &nbsp; __{file.ext}__ -->
-
-<!-- ## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        about.md  # Some testing texts.
-        ...       # Other markdown pages, images and other files. -->
 
 
 <script>

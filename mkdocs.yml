@@ -170,6 +170,8 @@ nav:
               - 巴赫金文学批评: Literature/Literacy/Western_humanist/BakhtinianLiteraryCriticism.md
               - 新历史主义: Literature/Literacy/Western_humanist/NewHistorism.md
               - 文化批评: Literature/Literacy/Western_humanist/CulturalCriticism.md
+              - 精神分析: Literature/Literacy/Western_humanist/Psycho.md
+              - 解构主义: Literature/Literacy/Western_humanist/Deconstruction.md
           - 批判性思维的形成: Literature/Literacy/Formation_critical_thinking.md
           - 天真的和感伤的小说家: Literature/Literacy/Naive_novlist.md
           - 浪漫主义(牛津通识读本): Literature/Literacy/Romanticism.md
@@ -403,8 +405,9 @@ nav:
           - macOS快捷键: Study/Swift/Keyshortcuts.md
           - shortcuts快捷指令使用指南: Study/Swift/Shortcuts.md
           - Apple的奇奇怪怪: Study/Swift/AppleScript.md
+          - Swift基础: Study/Swift/SwiftBasics.md
       - 语言学习:
-          - 法语笔记: Study/English/French.md  
+          - 法语笔记: Study/English/French.md
           - 英语笔记: Study/English/English.md
           - 英语记忆: Study/English/Words.md
           - 英文作文: Study/English/EnglishEssay.md
@@ -414,7 +417,7 @@ nav:
           - 管理学导论: Study/Management/Management.md
           - 计划: Study/Management/Plan.md
           - 组织: Study/Management/Organize.md
-          - 领导: Study/Management/Lead.md
+          - 重点: Study/Management/Remain.md
       - 论文: Study/Undergraduate_essay.md
       - VScode技巧: Study/Vscode/keys.md
       - ChatGPT:
@@ -554,4 +557,4 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/SmilingWayne
 
-copyright: Copyright &copy; 2001 - 2023 xiaoxiaoWayne
+copyright: Copyright &copy; 2022 - 2023 xiaoxiaoWayne

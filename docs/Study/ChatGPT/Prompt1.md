@@ -3,6 +3,8 @@
 ## 宗旨
 
 
+- [https://learningprompt.wiki/docs](https://learningprompt.wiki/docs)：一个prompt指南。最近OpenAI又和Andrew Ng出了一个Prompt的教程，口碑还可以。
+
 ### **<font color = Crisma>尽可能地给背景信息、具体需求</font>**
 
 - 如果不给定背景、不限制语境，ChatGPT有时候会发疯乱说，或者完全不回答你想要的，此时**可以补上相关信息**；
