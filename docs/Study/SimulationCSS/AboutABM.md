@@ -54,3 +54,18 @@
 - 找一下，具体的参数（衡量指标是什么）
 - 找一下，项目属性和测定（data collection）
 - 找一下，瑜瑜！（✅ 找到了！）
+
+
+
+## Refer 
+
+- 项目管理的优秀期刊推荐
+  - Journal of Construction Engineering and Management ｜ JCEM 
+  - International Journal of Project Management ｜ IJPM
+  - Journal of Management in Engineering ｜ JME 
+  - Construction Management and Economics ｜ CME
+  - Journal of Cleaner Production ｜  JCP   
+  - Engineering, Construction and Architectural Management ｜ ECAM 
+  - Journal of Computing in Civil Engineering ｜ JCCE 
+  - International Journal of Civil Engineering ｜ IJCE
+  - Sustainability 
