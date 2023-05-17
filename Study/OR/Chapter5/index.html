@@ -19,7 +19,7 @@
         <link rel="next" href="../Chapter6/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.13">
     
     
       
@@ -8803,7 +8803,7 @@
 <li>对任意<span class="arithmatex">\(p \in R^n， p^{T} \nabla^2 f(x^*) p \geq 0\)</span>，也就是Hessian 矩阵半正定。</li>
 </ul>
 </li>
-<li>定理 5.4 二阶充分条件——无约束情形：设函数<span class="arithmatex">\(f\)</span>在 <span class="arithmatex">\(R^{n}\)</span> 上具有二阶连续偏导数，如果满足<span class="arithmatex">\(\nabla f(x^* ) =0\)</span>，且对任意<span class="arithmatex">\(p \in R^n\)</span>， <span class="arithmatex">\(p^{T} \nabla^2 f(x^*) p \geq 0\)</span>，也就是Hessian 矩阵<strong>正定</strong>，那么<span class="arithmatex">\(x^*\)</span> 是<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(R^{n}\)</span>上的严格局部极小点。</li>
+<li>定理 5.4 二阶充分条件——无约束情形：设函数<span class="arithmatex">\(f\)</span>在 <span class="arithmatex">\(R^{n}\)</span> 上具有二阶连续偏导数，如果满足<span class="arithmatex">\(\nabla f(x^* ) =0\)</span>，且对任意<span class="arithmatex">\(p \in R^n\)</span>， <span class="arithmatex">\(p^{T} \nabla^2 f(x^*) p \geq 0\)</span>，也就是Hessian 矩阵<strong>正定</strong>，那么<span class="arithmatex">\(x^{*}\)</span> 是<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(R^{n}\)</span>上的严格局部极小点。</li>
 </ul>
 <hr />
 <h2 id="53">5.3 凸函数和凸规划<a class="headerlink" href="#53" title="Permanent link">⚓︎</a></h2>
@@ -8811,13 +8811,17 @@
 <ul>
 <li><strong>凸函数</strong>: 设<span class="arithmatex">\(f\)</span>是定义在凸集 <span class="arithmatex">\(\Omega\)</span> 上的函数，若对任意实数 <span class="arithmatex">\(0 \leq \alpha \leq 1\)</span>，以及任意两点 <span class="arithmatex">\(x, y \in  \Omega\)</span>，有</li>
 </ul>
-<pre class="arithmatex">\[f(\alpha x + (1-\alpha) y) \leq \alpha f(x) + (1-\alpha) f(y)\]</pre>
-<p>则称<span class="arithmatex">\(f\)</span>是凸集 <span class="arithmatex">\(\Omega\)</span> 上的<strong>凸函数</strong>。</p>
+<pre class="arithmatex">\[f ( \alpha x + (1-\alpha) y) \leq \alpha f(x) + (1-\alpha) f(y)\]</pre>
 <ul>
-<li><strong>严格凸函数</strong>：设 <span class="arithmatex">\(f\)</span> 是定义在凸集 <span class="arithmatex">\(\Omega\)</span> 上的函数，若对任意实数 <span class="arithmatex">\(0 &lt; \alpha &lt; 1\)</span> 以及任意两点 <span class="arithmatex">\(x, y \in \Omega\)</span>，且 <span class="arithmatex">\(x \neq y\)</span> 有：</li>
+<li>
+<p>则称 <span class="arithmatex">\(f\)</span> 是凸集 <span class="arithmatex">\(\Omega\)</span> 上的凸函数。</p>
+</li>
+<li>
+<p>严格凸函数：设 <span class="arithmatex">\(f\)</span> 是定义在凸集 <span class="arithmatex">\(\Omega\)</span> 上的函数，若对任意实数 <span class="arithmatex">\(0 &lt; \alpha &lt; 1\)</span> 以及任意两点 <span class="arithmatex">\(x, y \in \Omega\)</span>，且 <span class="arithmatex">\(x \neq y\)</span> 有：</p>
+</li>
 </ul>
-<p><span class="arithmatex">\(<span class="arithmatex">\(f(\alpha x + (1-\alpha) y) &lt; \alpha f(x) + (1-\alpha) f(y)\)</span>\)</span>
-则称<span class="arithmatex">\(f\)</span>是凸集 <span class="arithmatex">\(\Omega\)</span> 上的<strong>严格凸函数</strong>。</p>
+<pre class="arithmatex">\[f(\alpha x + (1-\alpha) y) &lt; \alpha f(x) + (1-\alpha) f(y)\]</pre>
+<p>则称<span class="arithmatex">\(f\)</span>是凸集 <span class="arithmatex">\(\Omega\)</span> 上的<strong>严格凸函数</strong>。</p>
 <h3 id="532">5.3.2 凸函数的性质<a class="headerlink" href="#532" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li><strong>性质5.1</strong> ： 设<span class="arithmatex">\(f\)</span>是定义在凸集 <span class="arithmatex">\(\Omega\)</span> 上的凸函数，<span class="arithmatex">\(x_1, x_2,..,x_m\)</span> 是 <span class="arithmatex">\(\Omega\)</span> 中的<span class="arithmatex">\(m\)</span>个点，数 <span class="arithmatex">\(\alpha_1, \alpha_2,..,\alpha_m \geq 0\)</span>，且 <span class="arithmatex">\(\sum \limits^{m}_{i = 1} a_i = 1\)</span>，则：</li>
@@ -8909,11 +8913,11 @@
 <h3 id="561">5.6.1 梯度法<a class="headerlink" href="#561" title="Permanent link">⚓︎</a></h3>
 <p>假设5.24中目标函数<span class="arithmatex">\(f\)</span>在<span class="arithmatex">\(R^n\)</span>上一阶连续可微，存在极小点<span class="arithmatex">\(x^{*}\)</span>，用<span class="arithmatex">\(x_k\)</span> 表示极小点的第<span class="arithmatex">\(k\)</span>次近似，为了找到<span class="arithmatex">\(k+1\)</span>次的迭代点，需要在<span class="arithmatex">\(x_k\)</span> 沿着方向<span class="arithmatex">\(d_k\)</span>做射线</p>
 <pre class="arithmatex">\[x = x_k + \alpha d_k, \alpha \geq 0\]</pre>
-<p>满足 <span class="arithmatex">\(\nabla f(x_k)^{T} d_k &lt; 0\)</span>的方向称为下降方向。考虑：$ \Vert \nabla f(x_k) \Vert \cdot \Vert d_k \Vert \cdot \cos \theta$，当 <span class="arithmatex">\(\theta = \pi\)</span> 时，上述值最小，此时搜索方向为负梯度方向。</p>
+<p>满足 <span class="arithmatex">\(\nabla f(x_k)^{T} d_k &lt; 0\)</span>的方向称为下降方向。考虑：<span class="arithmatex">\(\Vert \nabla f(x_k) \Vert \cdot \Vert d_k \Vert \cdot \cos \theta\)</span>，当 <span class="arithmatex">\(\theta = \pi\)</span> 时，上述值最小，此时搜索方向为负梯度方向。</p>
 <p>选定负梯度方向后，还需要确定步长 <span class="arithmatex">\(\alpha_k\)</span>。可以选择：</p>
 <ol>
 <li>试算：任取一个值，检验是否满足 <span class="arithmatex">\(f(x_k +  \alpha_k d_k) &lt; f(x_k)\)</span>，如果不满足就减小 <span class="arithmatex">\(\alpha_k\)</span>；</li>
-<li>沿着搜索方向进行一维搜索，也就是求使得<span class="arithmatex">\(f(x)\)</span> 最小的 <span class="arithmatex">\(\alpha_k\)</span>：</li>
+<li>沿着搜索方向进行一维搜索，也就是求使得 <span class="arithmatex">\(f(x)\)</span> 最小的 <span class="arithmatex">\(\alpha_k\)</span>：</li>
 </ol>
 <pre class="arithmatex">\[\mathop{\min} \limits_{\alpha_k \geq 0} f(x_k + \alpha_k d_k)\]</pre>
 <blockquote>
@@ -8951,24 +8955,22 @@
 <ul>
 <li>有效约束</li>
 <li>有效约束下标记集</li>
-<li><strong>正则点</strong>：对于约束优化问题(5.4)，如果在可行点<span class="arithmatex">\(\overline{x}\)</span>处，各个有效约束的梯度向量，也就是 <span class="arithmatex">\(\{  \nabla g_i (\overline{x}), i \in A(\overline{x}) \}\)</span>线性无关，就称<span class="arithmatex">\(\overline{x}\)</span>是约束条件的一个<strong>正则点</strong>。</li>
+<li><strong>正则点</strong>：对于约束优化问题(5.4)，如果在可行点<span class="arithmatex">\(\overline{x}\)</span>处，各个有效约束的梯度向量，也就是 <span class="arithmatex">\(\{  \nabla g_i ( \overline{x}), i \in A(\overline{x}) \}\)</span> 线性无关，就称<span class="arithmatex">\(\overline{x}\)</span>是约束条件的一个<strong>正则点</strong>。</li>
 </ul>
 <h3 id="572">5.7.2 可行方向和下降方向<a class="headerlink" href="#572" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li>
-<p>考虑非线性规划问题：
-<span class="arithmatex">\(<span class="arithmatex">\(\mathop{\min} f(x) \\  s.t. \hspace{4pt}  g_i(x) \geq 0, i = 1,2,...,l\)</span>\)</span></p>
-</li>
-<li>
-<p><strong>可行方向</strong>：如果任取一个<span class="arithmatex">\(x_0\)</span>，对方向<span class="arithmatex">\(d \in R^n\)</span>，存在 <span class="arithmatex">\(\alpha_0 &gt; 0\)</span>，当 <span class="arithmatex">\(0 \leq \alpha \alpha_0\)</span>，下式成立：<span class="arithmatex">\(g_i(x_0 + \alpha d) \geq 0, i = 1,2,...,l\)</span>，则称<span class="arithmatex">\(d\)</span>为 <span class="arithmatex">\(x_0\)</span>的<strong>可行方向</strong>。</p>
-</li>
+<li>考虑非线性规划问题：</li>
 </ul>
-<p>如果<span class="arithmatex">\(x_0\)</span>的某一方向既是该点的可行方向，又是该点的下降方向，那么称它是这个点的可行下降方向，有：</p>
+<pre class="arithmatex">\[\mathop{\min} f(x) \\  s.t. \hspace{4pt}  g_i(x) \geq 0, i = 1,2,...,l\]</pre>
+<ul>
+<li><strong>可行方向</strong>：如果任取一个<span class="arithmatex">\(x_0\)</span>，对方向<span class="arithmatex">\(d \in R^n\)</span>，存在 <span class="arithmatex">\(\alpha_0 &gt; 0\)</span>，当 <span class="arithmatex">\(0 \leq \alpha \alpha_0\)</span>，下式成立：<span class="arithmatex">\(g_i(x_0 + \alpha d) \geq 0, i = 1,2,...,l\)</span>，则称<span class="arithmatex">\(d\)</span>为 <span class="arithmatex">\(x_0\)</span> 的<strong>可行方向</strong>。</li>
+</ul>
+<p>如果 <span class="arithmatex">\(x_0\)</span> 的某一方向既是该点的可行方向，又是该点的下降方向，那么称它是这个点的可行下降方向，有：</p>
 <pre class="arithmatex">\[\left\{ \begin{aligned}  \nabla f(x_0)^{T} d  &amp; &lt; 0 \\ \nabla g_i(x_0)^T d &amp; &gt; 0, i \in A(x_0) \end{aligned} \right.\]</pre>
 <h3 id="573-kkt">5.7.3 库恩-塔克条件（KKT条件）<a class="headerlink" href="#573-kkt" title="Permanent link">⚓︎</a></h3>
 <p>K-T 条件是确定某点为局部最优解的一阶必要条件，只要是最优点、同时也是正则点就必须满足这个条件。但是一般来说，它不是充分条件，满足这个条件的点不一定是最优点。不过对于凸规划来说，KT条件既是必要条件也是充分条件。</p>
 <p>对于此类问题：</p>
-<pre class="arithmatex">\[\mathop{\min} f(x) \\ s.t. \hspace{4pt} g_i(x) \geq 0, \hspace{4pt}i = 1,2,...,l\]</pre>
+<pre class="arithmatex">\[\mathop{\min} f(x) \\ s.t. \hspace{4pt} g_i(x) \geq 0, \hspace{4pt} i = 1,2,...,l\]</pre>
 <p>有如下定理：</p>
 <ul>
 <li>定理 5.5 设 <span class="arithmatex">\(x^*\)</span> 是如上约束优化问题的局部极小点，<span class="arithmatex">\(f(x)\)</span> 和 <span class="arithmatex">\(g_i(x)\)</span> 在点 <span class="arithmatex">\(x^*\)</span> 处有一阶连续偏导，并且<span class="arithmatex">\(x^*\)</span> 是约束条件的一个正则点，则存在向量 <span class="arithmatex">\(\mu = (u^{*}_{1}, u^{*}_{2}, ..., u^{*}_{l} )^{T}\)</span>，使得下述条件成立：</li>
@@ -8995,7 +8997,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 28, 2023 11:50:29</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 17, 2023 22:15:11</span>
       
         <br>
         Created:
@@ -9076,7 +9078,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.b4d07000.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       

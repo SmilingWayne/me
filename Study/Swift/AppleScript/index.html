@@ -19,7 +19,7 @@
         <link rel="next" href="../SwiftBasics/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.13">
     
     
       
@@ -7579,6 +7579,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#macos-13" class="md-nav__link">
+    macOS  13 输入法卡顿解决方案🔧
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reminder" class="md-nav__link">
     reminder和备忘录的关键词功能
   </a>
@@ -8368,6 +8375,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#macos-13" class="md-nav__link">
+    macOS  13 输入法卡顿解决方案🔧
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reminder" class="md-nav__link">
     reminder和备忘录的关键词功能
   </a>
@@ -8404,7 +8418,7 @@
 
 <h1 id="_1">苹果工具箱🔧<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 664 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 2 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1317 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 4 分钟</p>
 </div>
 <h2 id="applescript-automator">AppleScript | Automator<a class="headerlink" href="#applescript-automator" title="Permanent link">⚓︎</a></h2>
 <ul>
@@ -8445,8 +8459,55 @@
 <ul>
 <li>右下角探头探脑的小jiojio</li>
 <li>快捷键 fn + Q 即可</li>
-<li>Safari 中支持New Quick Note，可以保存网页和内容</li>
+<li>Safari 中支持New Quick Note，可以保存网页和内容
+<br>
+<br>
+<br>
+<br>
+<br></li>
 </ul>
+<h2 id="macos-13">macOS  13 输入法卡顿解决方案🔧<a class="headerlink" href="#macos-13" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p>这个问题还是挺普遍的，原因很清楚了但是Apple似乎一直没有修复这个Bug：简体中文输入法(Simplified Chinese Input Method)和系统不兼容；</p>
+</li>
+<li>
+<p>之前也有小🍠博主推荐了三种解决思路，原po有暂时的方法（1，2）有根治的方法（3），强烈建议大家移步最后一图去详细了解。总共三个：</p>
+</li>
+<li>👉 终端(terminal)命令强制终止</li>
+<li>👉 活动监视器强制终止</li>
+<li>👉 更换自己的输入法</li>
+<li>我很有幸在本月（一边写论文一边）卡顿了将近十次。上述三种方法均尝试过，都是有效的，但是遇到了几个问题：</li>
+<li><strong>卡顿发生的时候整个电脑几乎全部无响应</strong>，只要点击了程序或者文件，就<strong>立刻无响应需要强制关闭重开</strong>，鼠标点击、键盘输入十分缓慢，以至于解决方案一和二虽能实现，但是耗时太长，很容易心态b溃。我第一次耗了10min才从终端输入完毕</li>
+<li>方案3，对原生输入法有巨大依赖的本人不友好，接受不了突然更换输入法，适应时间太长</li>
+<li>我用图二的方法解决的，思路是在crontab（一种操作系统命令？）中设置每2h关闭重启一次中文输入法。</li>
+<li>
+<p>目前没有遇到问题！</p>
+</li>
+<li>
+<p>先在融合搜索中输入terminal（终端），打开之后输入命令</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>crontab -e
+</code></pre></div>
+<ol>
+<li>此时会打开一个系统文件，但是你会发现直接输入啥也改不了，需要一些特殊方法输入（熟悉vim的小伙伴应该懂怎么做），具体操作就是先摁一下键盘i 键，然后你就可以在这里输入了，具体只需要输入</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>0 */2 * * * kill `pgrep SCIM`
+</code></pre></div>
+<p>（注意⚠️ 最后那个不是单引号，是电脑键盘esc下面那个波浪号，用英文输入法打出来就是那个小啾啾了）</p>
+<p>（再注意⚠️，上面命令里的2表示“每隔两小时kill一次输入法，如果不放心可以把2改成1，这样就每隔一小时kill一次输入法了）</p>
+<ol>
+<li>输入完了之后先摁一下esc键（退出编辑模式），然后直接输入</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>:wq
+</code></pre></div>
+<p>注意⚠️ 冒号也是英文的。这个指令表明退出这个文件。</p>
+<p>4⃣️ 这个时候按道理说会出现图3⃣️说的一个提示，告诉你terminal要更改你的系统设置blabla，点击allow即可。</p>
+<p>大功告成~
+<br>
+<br></p>
+<p><br></p>
 <h2 id="reminder">reminder和备忘录的关键词功能<a class="headerlink" href="#reminder" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>很好用，可以进行一些简单的分类</li>
@@ -8470,7 +8531,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 8, 2023 10:17:18</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 17, 2023 22:15:11</span>
       
         <br>
         Created:
@@ -8551,7 +8612,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.b4d07000.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
