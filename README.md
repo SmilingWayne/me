@@ -1,24 +1,4 @@
-# 笑笑的站
+# 笑笑的个人网站
 
-- You can find:
-
-## Books I read
-- Literature
-- Philosophy
-- History 
-- Arts 
-- ...
-> Rank doesn't stand for priority.
-
-## Notes
-
-- Operations Research
-- Linear Algebra
-- Calculus
-- Statistics
-- Probability Theory 
-- Supply Chain Management in Excel
-- Some small tools
-- ...
-
-> Rank doesn't stand for priority.
+- 这里是我的个人网站页面。你可以直接叫我“笑笑”
+- 很多奇奇怪怪的内容。也有一些宝藏。
