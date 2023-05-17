@@ -71,7 +71,7 @@ $$\nabla^{2}f(x^{*}) =
 - 定理 5.3 二阶必要条件——无约束情形：设函数$f$在 $R^{n}$ 上具有二阶连续偏导数，如果$x^{*}$ 是$f$在$R^{n}$上的局部极小点，那么必然有：
     - $\nabla f(x^* ) =0$
     - 对任意$p \in R^n， p^{T} \nabla^2 f(x^*) p \geq 0$，也就是Hessian 矩阵半正定。
-- 定理 5.4 二阶充分条件——无约束情形：设函数$f$在 $R^{n}$ 上具有二阶连续偏导数，如果满足$\nabla f(x^* ) =0$，且对任意$p \in R^n$， $p^{T} \nabla^2 f(x^*) p \geq 0$，也就是Hessian 矩阵**正定**，那么$x^*$ 是$f$在$R^{n}$上的严格局部极小点。
+- 定理 5.4 二阶充分条件——无约束情形：设函数$f$在 $R^{n}$ 上具有二阶连续偏导数，如果满足$\nabla f(x^* ) =0$，且对任意$p \in R^n$， $p^{T} \nabla^2 f(x^*) p \geq 0$，也就是Hessian 矩阵**正定**，那么$x^{*}$ 是$f$在$R^{n}$上的严格局部极小点。
 
 -----
 
@@ -80,14 +80,15 @@ $$\nabla^{2}f(x^{*}) =
 ### 5.3.1 凸函数的定义
 
 - **凸函数**: 设$f$是定义在凸集 $\Omega$ 上的函数，若对任意实数 $0 \leq \alpha \leq 1$，以及任意两点 $x, y \in  \Omega$，有
-  
-$$f(\alpha x + (1-\alpha) y) \leq \alpha f(x) + (1-\alpha) f(y)$$
 
-则称$f$是凸集 $\Omega$ 上的**凸函数**。
+$$f ( \alpha x + (1-\alpha) y) \leq \alpha f(x) + (1-\alpha) f(y)$$
 
-- **严格凸函数**：设 $f$ 是定义在凸集 $\Omega$ 上的函数，若对任意实数 $0 < \alpha < 1$ 以及任意两点 $x, y \in \Omega$，且 $x \neq y$ 有：
+- 则称 $f$ 是凸集 $\Omega$ 上的凸函数。
+
+- 严格凸函数：设 $f$ 是定义在凸集 $\Omega$ 上的函数，若对任意实数 $0 < \alpha < 1$ 以及任意两点 $x, y \in \Omega$，且 $x \neq y$ 有：
 
 $$f(\alpha x + (1-\alpha) y) < \alpha f(x) + (1-\alpha) f(y)$$
+
 则称$f$是凸集 $\Omega$ 上的**严格凸函数**。
 
 ### 5.3.2 凸函数的性质
@@ -189,14 +190,15 @@ $$\mathop{\min} \limits_{x \in R^n} f(x) \tag{5.24}$$
 
 $$x = x_k + \alpha d_k, \alpha \geq 0$$
 
-满足 $\nabla f(x_k)^{T} d_k < 0$的方向称为下降方向。考虑：$ \Vert \nabla f(x_k) \Vert \cdot \Vert d_k \Vert \cdot \cos \theta$，当 $\theta = \pi$ 时，上述值最小，此时搜索方向为负梯度方向。
+满足 $\nabla f(x_k)^{T} d_k < 0$的方向称为下降方向。考虑：$\Vert \nabla f(x_k) \Vert \cdot \Vert d_k \Vert \cdot \cos \theta$，当 $\theta = \pi$ 时，上述值最小，此时搜索方向为负梯度方向。
 
 选定负梯度方向后，还需要确定步长 $\alpha_k$。可以选择：
 
 1. 试算：任取一个值，检验是否满足 $f(x_k +  \alpha_k d_k) < f(x_k)$，如果不满足就减小 $\alpha_k$；
-2. 沿着搜索方向进行一维搜索，也就是求使得$f(x)$ 最小的 $\alpha_k$：
+2. 沿着搜索方向进行一维搜索，也就是求使得 $f(x)$ 最小的 $\alpha_k$：
 
 $$\mathop{\min} \limits_{\alpha_k \geq 0} f(x_k + \alpha_k d_k)$$
+
 
 > 方向 $d_{k + 1}$ 和 $d_{k}$ 正交，其迭代过程实际上是沿着“之”字形前进的。
 
@@ -227,16 +229,17 @@ $$\mathop{\min} \limits_{\alpha_k \geq 0} f(x_k + \alpha_k d_k)$$
 
 - 有效约束
 - 有效约束下标记集
-- **正则点**：对于约束优化问题(5.4)，如果在可行点$\overline{x}$处，各个有效约束的梯度向量，也就是 $\{  \nabla g_i (\overline{x}), i \in A(\overline{x}) \}$线性无关，就称$\overline{x}$是约束条件的一个**正则点**。
+- **正则点**：对于约束优化问题(5.4)，如果在可行点$\overline{x}$处，各个有效约束的梯度向量，也就是 $\{  \nabla g_i ( \overline{x}), i \in A(\overline{x}) \}$ 线性无关，就称$\overline{x}$是约束条件的一个**正则点**。
   
 ### 5.7.2 可行方向和下降方向
 
 - 考虑非线性规划问题：
+
 $$\mathop{\min} f(x) \\  s.t. \hspace{4pt}  g_i(x) \geq 0, i = 1,2,...,l$$
 
-- **可行方向**：如果任取一个$x_0$，对方向$d \in R^n$，存在 $\alpha_0 > 0$，当 $0 \leq \alpha \alpha_0$，下式成立：$g_i(x_0 + \alpha d) \geq 0, i = 1,2,...,l$，则称$d$为 $x_0$的**可行方向**。
+- **可行方向**：如果任取一个$x_0$，对方向$d \in R^n$，存在 $\alpha_0 > 0$，当 $0 \leq \alpha \alpha_0$，下式成立：$g_i(x_0 + \alpha d) \geq 0, i = 1,2,...,l$，则称$d$为 $x_0$ 的**可行方向**。
 
-如果$x_0$的某一方向既是该点的可行方向，又是该点的下降方向，那么称它是这个点的可行下降方向，有：
+如果 $x_0$ 的某一方向既是该点的可行方向，又是该点的下降方向，那么称它是这个点的可行下降方向，有：
 
 $$\left\{ \begin{aligned}  \nabla f(x_0)^{T} d  & < 0 \\ \nabla g_i(x_0)^T d & > 0, i \in A(x_0) \end{aligned} \right.$$
 
@@ -247,7 +250,7 @@ K-T 条件是确定某点为局部最优解的一阶必要条件，只要是最�
 
 对于此类问题：
 
-$$\mathop{\min} f(x) \\ s.t. \hspace{4pt} g_i(x) \geq 0, \hspace{4pt}i = 1,2,...,l$$
+$$\mathop{\min} f(x) \\ s.t. \hspace{4pt} g_i(x) \geq 0, \hspace{4pt} i = 1,2,...,l$$
 
 有如下定理：
 
