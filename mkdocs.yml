@@ -28,6 +28,7 @@ nav:
           - 我们时代的社会思考与阅读主张: Philosophy/Thoughts_in_our_time.md
 
       - 政治哲学:
+          - 君主论: Philosophy/ThePrince.md
           - 论政府: Philosophy/Government.md
           - 政治学: Philosophy/Politics.md
           - 政治神学: Philosophy/Theology_politics.md
@@ -332,6 +333,7 @@ nav:
           - Chapter1: Study/Calculus/Math2.md
           - 笔记2(Unfin): Study/Calculus/20230406.md
           - 笔记3(Unfin): Study/Calculus/GammaFunction.md
+          - 和差化积: Study/Calculus/Prosthaphaeresis.md
       - 线性代数:
           - 总结: Study/LinearAlgebra/Conclusion.md
           - chapter1: Study/LinearAlgebra/Chapter1.md
@@ -400,6 +402,10 @@ nav:
           - 提高供应链盈利能力的杠杆(Chapter_13.3): Study/Supplychain/SupplyChain17.md
           - 供应链中的运输(Chapter_14_1): Study/Supplychain/SupplyChain18.md
           - 供应链采购合同分析: Study/Supplychain/SupplyChain19.md
+      - 供应链管理理论与案例:
+          - 第一章｜导论: Study/SCMTheory/Chapter1.md
+          - 第二章｜采购-I: Study/SCMTheory/Chapter2.md
+          - 第三章｜采购-II: Study/SCMTheory/Chapter3.md
       - 果系产品使用:
           - CS193p: Study/Swift/CS193p1.md
           - macOS快捷键: Study/Swift/Keyshortcuts.md
@@ -498,7 +504,6 @@ plugins:
       exclude:
         - index.md
       enabled: true
-
   - git-revision-date-localized:
       type: datetime
       custom_format: "%d %B %Y"
