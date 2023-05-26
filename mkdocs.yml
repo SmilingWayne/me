@@ -173,6 +173,7 @@ nav:
               - 文化批评: Literature/Literacy/Western_humanist/CulturalCriticism.md
               - 精神分析: Literature/Literacy/Western_humanist/Psycho.md
               - 解构主义: Literature/Literacy/Western_humanist/Deconstruction.md
+              - 后现代主义: Literature/Literacy/Western_humanist/Postmodernism.md
           - 批判性思维的形成: Literature/Literacy/Formation_critical_thinking.md
           - 天真的和感伤的小说家: Literature/Literacy/Naive_novlist.md
           - 浪漫主义(牛津通识读本): Literature/Literacy/Romanticism.md
@@ -329,6 +330,8 @@ nav:
               - 色样表合集: Study/TextEdit/Markdown/MarkdownSyntax2.md
               - 常用的语法(with plugins): Study/TextEdit/Markdown/MarkdownSyntax1.md
               - 字体推荐: Study/TextEdit/Markdown/Markdown.md
+              - mkdocs构建教程: Study/TextEdit/Markdown/Mkdocs_Tutorials1.md
+
       - 微积分:
           - Chapter1: Study/Calculus/Math2.md
           - 笔记2(Unfin): Study/Calculus/20230406.md
@@ -494,11 +497,19 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js
   - javascripts/extra.js
   - javascripts/mathjax.js
+#   - javascripts/loadMermaid.js
 #   - https://polyfill.io/v3/polyfill.min.js?features=es6
 #   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
   - statistics
+  - mermaid2:
+      version: 10.2.0
+      arguments:
+        securityLevel: "loose"
+  - search:
+      separator: '[\s\u200b\-]'
+      lang: zh
   - git-authors:
       show_contribution: true
       exclude:
@@ -514,9 +525,6 @@ plugins:
       exclude:
         - index.md
       enabled: true
-  - search:
-      separator: '[\s\u200b\-]'
-      lang: ja
 
 markdown_extensions:
   - admonition
@@ -537,7 +545,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:mermaid2.fence_mermaid
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.mark

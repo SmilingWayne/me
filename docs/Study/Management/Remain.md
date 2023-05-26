@@ -65,6 +65,19 @@
     - 瘦狗：市场占有率低、业务增长率低，一般可以放弃。
     - 一般由金牛的现金流投资明星和幼童来快速发展。麦当劳一个例子。从幼童到明星到金牛。
 
+
+```mermaid
+%%{init: {"quadrantChart": {"chartWidth": 400, "chartHeight": 400, "quadrantLabelFontSize": 20}, "themeVariables": {"quadrant1TextFill": "#ff0000"} }}%%
+quadrantChart
+    title Boston Matrix: Four Quadrants Analysis
+    x-axis Market Share Low -->  Market Share High
+    y-axis Revenue Growth Low -->  Revenue Growth High
+    quadrant-1 Stars
+    quadrant-2 Young Child
+    quadrant-3 Thin Dogs
+    quadrant-4 Golden Bulls
+```
+
 ![](./pictures/Picture3.png){: style="height:350px"}
 
   - 产品生命周期分析 ：指的是产品随着时间的流逝，经过的一些阶段。分为四个阶段，不同产品在每个阶段的时间不同。处于不同生命周期的产品应制定适宜该周期的策略。
