@@ -3,7 +3,7 @@
 }
 @font-face {  	
     font-family: 'LXGW';  	
-    src: url('./font/LXGWWenKaiGBScreen.woff') format('woff');/*IE*/  	
+    src: url('https://fastly.jsdelivr.net/gh/SmilingWayne/StaticResources@Fonts/fonts/LXGWWenKaiGBScreen.woff') format('woff');/*IE*/  	
 }
 
 
