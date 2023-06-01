@@ -174,6 +174,7 @@ nav:
               - 精神分析: Literature/Literacy/Western_humanist/Psycho.md
               - 解构主义: Literature/Literacy/Western_humanist/Deconstruction.md
               - 后现代主义: Literature/Literacy/Western_humanist/Postmodernism.md
+              - 后殖民主义: Literature/Literacy/Western_humanist/Postcolonialism.md
           - 批判性思维的形成: Literature/Literacy/Formation_critical_thinking.md
           - 天真的和感伤的小说家: Literature/Literacy/Naive_novlist.md
           - 浪漫主义(牛津通识读本): Literature/Literacy/Romanticism.md
@@ -264,6 +265,7 @@ nav:
       - yan/index.md
       - 我的规划: yan/yanPlans.md
       - 我的用书: yan/yanBooks.md
+      - 我的细节: yan/yanHabits.md
       - 闲聊: yan/yanTalks.md
   - 想/在做的事:
       - ToDo/index.md
@@ -409,6 +411,7 @@ nav:
           - 第一章｜导论: Study/SCMTheory/Chapter1.md
           - 第二章｜采购-I: Study/SCMTheory/Chapter2.md
           - 第三章｜采购-II: Study/SCMTheory/Chapter3.md
+          - 第四章｜订货-I: Study/SCMTheory/Chapter4.md
       - 果系产品使用:
           - CS193p: Study/Swift/CS193p1.md
           - macOS快捷键: Study/Swift/Keyshortcuts.md
@@ -427,7 +430,6 @@ nav:
           - 计划: Study/Management/Plan.md
           - 组织: Study/Management/Organize.md
           - 重点: Study/Management/Remain.md
-      - 论文: Study/Undergraduate_essay.md
       - VScode技巧: Study/Vscode/keys.md
       - ChatGPT:
           - 安装: Study/ChatGPT/Register.md

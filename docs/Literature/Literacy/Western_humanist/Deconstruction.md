@@ -30,10 +30,20 @@
 - No icon.(The rise of Deconstruction)  
   - god is questioned.
 
+ 
+
+- Derrida: 1930~2004, Deconstruction: it has been variously regarded as a way of reading, a mode of writing, and, above all, a way of challenging interpretations of texts based upon conventional notions of the stability of the human self, the external world, and of language and meaning. 挑战基于传统的人类自我、外在世界和语言意义的稳定性上的传统观念。
+    - 1967 La Voix et la phenomene( Speech and the phenomenon )
+    - Husserl / Freud / Foucault
 
 
-
-
+- It's not amenable to any static definition or systematization because the meaning of the terms it employs is always shifting and fluid.
+- Deconstruction is often regarded as undermining all tendency toward systenmatization.
+- Logocentrism: 解构主义最基础的阐释内容，就是展示逻辑中心主义在任何文本中的使用；
+    - The stability and authority of the Logos, the divine world
+    - Logos: "statement", "discourse", "to speak"
+    - Logos = The truth itself : rational represent.
+    - Judeo-Christian meaning.(Dodd? Who's that?)
 
 
 - Derrida的西方哲学的分类: speech / writing （《红字》：public interrigate: 霍桑的小说）/ presence / absence（在一些场合他无法说，但回到私处就可以写成东西）
