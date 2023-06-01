@@ -5,6 +5,13 @@ nav:
   - ˗ˋˏᰔᩚˎˊ˗: index.md
   - 哲学:
       - Philosophy/index.md
+      - 📚 哲学家词典:
+          - 阿尔都塞: Philosophy/Philosophers/Altusser.md
+          - 德里达: Philosophy/Philosophers/Derrida.md
+          - 福柯: Philosophy/Philosophers/Foucault.md
+          - 马尔库塞: Philosophy/Philosophers/Marcuse.md
+          - 罗兰巴特: Philosophy/Philosophers/RolandBarthes.md
+
       - 马克思主义哲学:
           - 🥰 毛: Philosophy/Mao.md
           - 基础知识: Philosophy/basic.md
@@ -460,9 +467,11 @@ repo_url: https://github.com/SmilingWayne/me
 
 docs_dir: ./docs
 theme:
-  locale: en
+  language: "zh"
   name: material
   custom_dir: docs/overrides/
+  font: false
+  #     text: Noto Serif SC
   #   custom_dir: /docs/stylesheets/
   features:
     - content.tabs.link
@@ -494,6 +503,7 @@ theme:
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css
+  - stylesheets/extra.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js
