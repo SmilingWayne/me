@@ -40,8 +40,6 @@ statistics: true
 
 <br>
 
-
-
 <center> <font face = "Apple chancery" size = 5>Bienvenue sur mon site! 🌼</font></center>
 
 

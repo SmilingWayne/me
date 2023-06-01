@@ -4,6 +4,9 @@
 ## 关于汇总的汇总
 
 - [https://gitlab.com/awesomeai/awesome-chatgpt-zh](https://gitlab.com/awesomeai/awesome-chatgpt-zh)： 一个长期更新的汇总；
+
+- [Poe](https://poe.com/)：我愿称之关于汇总的汇总。免费注册可以免费使用Claude-instant / Sage / ChatGPT免费版，付费使用GPT-4等大模型。
+    - 这些模型各异，他们的使用区别见[https://zhuanlan.zhihu.com/p/614720305](https://zhuanlan.zhihu.com/p/614720305)
 ## 链接大汇总
 
 - [https://github.com/reorx/awesome-chatgpt-api](https://github.com/reorx/awesome-chatgpt-api)；
@@ -35,6 +38,9 @@
 - [https://immersive-translate.owenyoung.com](https://immersive-translate.owenyoung.com)：沉浸式多平台翻译工具；支持Safari, Chrome, Edge，最重要的是他能给你把显示的翻译、原文都显示在网页上；效果很不错；
 - Voice Control，在小红书看到的一个GPT插件，可以支持语音输入+把GPT输出语音读出来，很适合**模拟英文面试**！
 
+
+## 自动生成网页 / PPT 等 
+- [Gamma](https://gamma.app/): Gamma App，适合生成PPT / 网站等；
 
 ## iOS AI 生产力插件
 
