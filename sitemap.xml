@@ -446,6 +446,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/SmilingWayne/me/Literature/Literacy/Western_humanist/GenderAndBody/</loc>
+         <lastmod>2023-06-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/SmilingWayne/me/Literature/Literacy/Western_humanist/NewCriticism/</loc>
          <lastmod>2023-06-01</lastmod>
          <changefreq>daily</changefreq>
@@ -867,6 +872,31 @@
     </url>
     <url>
          <loc>https://github.com/SmilingWayne/me/Philosophy/basic/</loc>
+         <lastmod>2023-06-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/SmilingWayne/me/Philosophy/Philosophers/Altusser/</loc>
+         <lastmod>2023-06-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/SmilingWayne/me/Philosophy/Philosophers/Derrida/</loc>
+         <lastmod>2023-06-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/SmilingWayne/me/Philosophy/Philosophers/Foucault/</loc>
+         <lastmod>2023-06-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/SmilingWayne/me/Philosophy/Philosophers/Marcuse/</loc>
+         <lastmod>2023-06-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/SmilingWayne/me/Philosophy/Philosophers/RolandBarthes/</loc>
          <lastmod>2023-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
