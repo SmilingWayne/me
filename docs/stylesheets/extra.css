@@ -1,12 +1,16 @@
-:root {
+/* :root {
     --md-text-font: "LXGW"; 
 }
 @font-face {  	
     font-family: 'LXGW';  	
-    src: url('https://fastly.jsdelivr.net/gh/SmilingWayne/StaticResources@Fonts/fonts/LXGWWenKaiGBScreen.woff') format('woff');/*IE*/  	
-}
+    src: url('https://fastly.jsdelivr.net/gh/SmilingWayne/StaticResources@Fonts/fonts/LXGWWenKaiGBScreen.woff') format('woff');
+} */
 
-
+:root {
+    --md-text-font: "JetBrains Mono", "LXGW WenKai Screen"; 
+    --md-code-font: "JetBrains Mono";
+  }
+  
 
 /* 
 @font-face {
