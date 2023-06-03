@@ -44,9 +44,11 @@ $$\mathop{\min}\limits_{x \in \Omega} \hspace{2pt}f(x) \tag{5.4}$$
 - **定理5.1**: 设 f 是定义在集合 $\Omega \in R^n$ 上的一阶连续可微函数，如果 $x^*$ 是$f$在 $\Omega$ 上的局部极小点，那么对 $x^{*}$ 的任意可行方向 $p \in R^{n}$，有:
 
 
-$$ \nabla f(x^*)^{T}p \geq 0$$ 其中
+$$\nabla f(x^*)^{T}p \geq 0$$ 
 
-$$ \nabla f(x^{*}) = \{ \dfrac{\partial f(x^{*})}{\partial x_1}, \dfrac{f(x^{*})}{\partial x_2}, ..., \dfrac{\partial f(x^{*})}{\partial x_n}\}$$
+其中
+
+$$\nabla f(x^{*}) = \{ \dfrac{\partial f(x^{*})}{\partial x_1}, \dfrac{f(x^{*})}{\partial x_2}, ..., \dfrac{\partial f(x^{*})}{\partial x_n}\}$$
 
 是函数$f$在点$x^*$处的梯度(Gradiant)，也就是一阶偏导数，梯度方向是函数f在点x的等值线的法线方向，沿着这个方向函数值增加最快。
 
