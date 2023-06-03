@@ -2,10 +2,9 @@
 statistics: true
 ---
 
-# <font face = "KaiTi">(๑• . •๑)</font>
+# (๑• . •๑)
 
-<!-- For full documentation visit [mkdocs.org](https://www.mkdocs.org). Nice to see you. This is xiao xiao! -->
-<!-- <center><font face = "savoye LET" size = 6>A Very Brief Introduction</font></center> -->
+
 <br>
 
 <p></p>
