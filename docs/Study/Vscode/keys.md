@@ -33,3 +33,9 @@
 |    <font size = 4>移动到文本最末尾</font>     | <font size = 4>⌘ + ↓</font>          | <font size = 4>Ctrl + ↓</font>         |
 |      <font size = 4>跳跃到某一行</font>       | <font size = 4>ctrl + G</font>       | <font size = 4>Ctrl + G</font>         |
 |      <font size = 4>分屏到右边</font>       | <font size = 4>command + \</font>       | <font size = 4>Ctrl + \</font>         |
+
+
+
+------
+
+- `launch.json`： 用来debug的文件
