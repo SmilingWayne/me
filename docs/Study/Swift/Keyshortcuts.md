@@ -29,3 +29,6 @@
 - preview 中一页一页地滑动而不是一点点地： ++option+arrow-up++ 或者 ++option+arrow-down++
 - 快速全屏： ==我使用次数很多的== : ++ctrl+command+f++
 - 浏览器返回前一个页面： ++command+arrow-left++
+- 现实隐藏的文件： ++shift+command+period++
+- 改变文件默认打开方式：按住++option++ 再选择打开的方式
+
