@@ -101,3 +101,21 @@ crontab -e
     > Swift REPL 的使用非常简单。用户只需要在终端中输入“swift”命令即可进入 REPL 环境。一旦进入 REPL 环境，用户就可以输入任何有效的 Swift 代码，并查看结果。在 REPL 中，用户可以使用 Swift 中的所有语言特性和标准库函数。
     > 
     > 总的来说，Swift REPL 是一种非常有用的工具，可以加速代码开发和调试的过程，并提高学习 Swift 的效率。   
+
+
+- 什么是homebrew
+> 一种安装命令行程序
+
+- 什么是clang
+> Apple 平台的一种编译器。
+
+- 为什么.exe 文件在mac上无法打开使用
+> 因为数组组织方式在windows和mac上是完全不同的，必须要用专门的文件方法改变文件的数据组织格式。
+
+- 什么是gcc / g++
+> gcc: Linux 平台下一种C语言的编译器
+> g++：Linux 平台下cpp的编译器
+
+```text
+g++ hello.cpp -o hello.out
+```
