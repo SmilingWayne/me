@@ -1,6 +1,5 @@
 # 名词解释
 
-
 - AI : Artificial Intelligence
 - AIGC: Artificial Intelligence Generated Contents AI生成内容
 - RLHF: Reinforcement Learning Human Factors?
@@ -14,7 +13,7 @@
 - CI / CD?
 - Codium
 - Emacs:
-> Emacs  ，最初名为 EMACS（“Editor MACroS”的首字母缩写词），是一个以可扩展性为特征的文本编辑器家族。 使用最广泛的变体  GNU Emacs 的手册将其描述为“可扩展、可定制、自文档化、实时显示编辑器”。 第一个 Emacs 的开发始于 20 世纪 70 年代中期，其直接后代 GNU Emacs 的工作仍在积极进行；最新版本为 28.2，于 2022 年 9 月发布。 Emacs 有超过 10,000 个内置命令，其用户界面允许用户将这些命令组合成宏以自动执行工作。 Emacs 的实现通常具有 Lisp 编程语言的方言，允许用户和开发人员为编辑器编写新的命令和应用程序。
+> Emacs ，最初名为 EMACS（“Editor MACroS”的首字母缩写词），是一个以可扩展性为特征的文本编辑器家族。 使用最广泛的变体  GNU Emacs 的手册将其描述为“可扩展、可定制、自文档化、实时显示编辑器”。 第一个 Emacs 的开发始于 20 世纪 70 年代中期，其直接后代 GNU Emacs 的工作仍在积极进行；最新版本为 28.2，于 2022 年 9 月发布。 Emacs 有超过 10,000 个内置命令，其用户界面允许用户将这些命令组合成宏以自动执行工作。 Emacs 的实现通常具有 Lisp 编程语言的方言，允许用户和开发人员为编辑器编写新的命令和应用程序。
 - Neovim: 类似Emacs?
 > Embedding：词嵌入
 > prompt: 提示词

@@ -341,7 +341,9 @@ nav:
               - 常用的语法(with plugins): Study/TextEdit/Markdown/MarkdownSyntax1.md
               - 字体推荐: Study/TextEdit/Markdown/Markdown.md
               - mkdocs构建教程: Study/TextEdit/Markdown/Mkdocs_Tutorials1.md
-
+      - 其他平台电子笔记:
+          - 网页设计与制作: Study/Mubu/WebsiteDesign.md
+          - 信息检索: Study/Mubu/InfoRetreval.md
       - 微积分:
           - Chapter1: Study/Calculus/Math2.md
           - 笔记2(Unfin): Study/Calculus/20230406.md
