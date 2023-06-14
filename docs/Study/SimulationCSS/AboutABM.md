@@ -1,4 +1,4 @@
-# guidelines for ABM
+# 基于主体的建模（Agent-Based Modeling）
 
 ##  ABM 是否合适：
 
@@ -22,7 +22,6 @@
   - [https://blog.csdn.net/qq_41103204/article/details/105437287](https://blog.csdn.net/qq_41103204/article/details/105437287)
   - 一篇经典的创新扩散效应的论文（描述新产品怎么在群体中获得使用的过程）
   - The coefficient p is called the coefficient of innovation, external influence or advertising effect. The coefficient q is called the coefficient of imitation, internal influence or word-of-mouth effect. 系数p称为创新系数、外部影响系数或广告效应系数。系数q称为模仿系数、内部影响系数或口碑效应系数。
-
 
 
 
@@ -67,3 +66,14 @@
   - Journal of Computing in Civil Engineering ｜ JCCE 
   - International Journal of Civil Engineering ｜ IJCE
   - Sustainability 
+
+
+
+## ABM 模型的几个经典模型
+
+- 传染病效果仿真
+- 道路交通情况仿真
+- 森林大火模型仿真
+- 居民居住聚类偏好特征（by谢林）
+  - 相似性偏好值
+  - 一些非常小的居民相似度偏好值变化会导致均衡值的不同
