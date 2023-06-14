@@ -182,6 +182,7 @@ nav:
               - 解构主义: Literature/Literacy/Western_humanist/Deconstruction.md
               - 后现代主义: Literature/Literacy/Western_humanist/Postmodernism.md
               - 后殖民主义: Literature/Literacy/Western_humanist/Postcolonialism.md
+              - 身体和性别: Literature/Literacy/Western_humanist/GenderAndBody.md
           - 批判性思维的形成: Literature/Literacy/Formation_critical_thinking.md
           - 天真的和感伤的小说家: Literature/Literacy/Naive_novlist.md
           - 浪漫主义(牛津通识读本): Literature/Literacy/Romanticism.md
@@ -281,54 +282,102 @@ nav:
       - 术: ToDo/ToCode.md
       - 事: ToDo/ToDo.md
       - LeetCode:
-          - 2022/4/19: ToDo/LeetCode/2022.4.19 Leetcode 日常刷题.md
-          - 2022/4/27: ToDo/LeetCode/2022.4.27 Leetcode 日常刷题.md
-          - 2022/3/24: ToDo/LeetCode/2022.3.24 Leetcode 日常练习.md
-          - 2022/4/12: ToDo/LeetCode/2022.4.12 Leetcode 日常刷题.md
-          - 2022/5/08: ToDo/LeetCode/2022.5.08 Leetcode 每日一题.md
-          - 2022/5/29: ToDo/LeetCode/2022.5.29 Leetcode 每日一题.md
-          - 2022/4/09: ToDo/LeetCode/2022.4.09 Leetcode 日常刷题.md
-          - 2022/3/30: ToDo/LeetCode/2022.3.30 Leetcode日常练习.md
-          - 2022/4/28: ToDo/LeetCode/2022.4.28 Leetcode 日常刷题.md
-          - 2022/4/02: ToDo/LeetCode/2022.4.02 Leetcode 日常刷题.md
-          - 2022/4/23: ToDo/LeetCode/2022.4.23 Leetcode 日常刷题.md
-          - 2022/4/06: ToDo/LeetCode/2022.4.06 日常刷题.md
-          - 2022/5/09: ToDo/LeetCode/2022.5.09 Leetcode 每日一题.md
-          - 2022/4/29: ToDo/LeetCode/2022.4.29 Leetcode 日常刷题.md
-          - 2022/3/26: ToDo/LeetCode/2022.3.26 Leetcode刷题 - 并查集.md
-          - 2022/3/13: ToDo/LeetCode/2022-3-13LeetCode 刷题.md
-          - 2022/4/08: ToDo/LeetCode/2022.4.08 Leetcode 日常刷题.md
-          - 2022/3/25: ToDo/LeetCode/2022.3.25 Leetcode.md
-          - 2022/4/19: ToDo/LeetCode/2022.4.19 Leetcode 练习与模板.md
-          - 2022/3/26: ToDo/LeetCode/2022.3.26 Leetcode 日常刷题.md
-          - 2022/4/14: ToDo/LeetCode/2022.4.14 Leetcode日常刷题 bitset.md
-          - 2022/3/12: ToDo/LeetCode/2022-3-12 Leetcode每日一题.md
-          - 2022/4/16: ToDo/LeetCode/2022.4.16 Leetcode日常刷题.md
-          - 2022/4/10: ToDo/LeetCode/2022.4.10 Leetcode 日常刷题.md
-          - 2022/3/27: ToDo/LeetCode/2022.3.27 Leetcode 刷题.md
-          - 2022/5/02: ToDo/LeetCode/2022.5.2 Leetcode日常练习.md
-          - 2022/4/01: ToDo/LeetCode/2022.4.01 Leetcode 每日一题.md
-          - 2022/5/01: ToDo/LeetCode/2022.5.01 Leetcode 每日一题.md
-          - 2022/4/25: ToDo/LeetCode/2022.4.25 Leetcode 日常刷题.md
-          - 2022/4/21: ToDo/LeetCode/2022.4.21 Leetcode 日常刷题.md
-          - 2022/4/07: ToDo/LeetCode/2022.4.07 Leetcode日常刷题.md
+          - ToDo/LeetCode/index.md
+          - 模板: ToDo/LeetCode/Template.md
           - 2022/3/11: ToDo/LeetCode/2022-3-11Leetcode每日一题.md
-          - 2022/3/31: ToDo/LeetCode/2022.3.31 Leetcode 日常刷题.md
-          - 2022/4/11: ToDo/LeetCode/2022.4.11 Leetcode 日常刷题.md
-          - 2022/3/13: ToDo/LeetCode/2022.3.13 Leetcode练习.md
           - 2022/4/24: ToDo/LeetCode/2022.4.24 C++ 练习.md
-          - 2022/4/26: ToDo/LeetCode/2022.4.26 Leetcode 刷题.md
-          - 2022/4/17: ToDo/LeetCode/2022.4.17 Leetcode日常刷题.md
-          - 2022/5/04: ToDo/LeetCode/2022.5.04 Leetcode 每日一题.md
-          - 2022/3/16: ToDo/LeetCode/2022.3.16 LeetCode日常练习.md
-          - 2022/3/25: ToDo/LeetCode/2022.3.25 Leetcode 刷题总结.md
-          - 2022/3/26: ToDo/LeetCode/2022.3.26 Leetcode 复习.md
-          - 2022/3/14: ToDo/LeetCode/2022.3.14 LeetCode 每日一题.md
-          - 2022/3/28: ToDo/LeetCode/2022.3.28 Leetcode刷题.md
-          - 2022/4/15: ToDo/LeetCode/2022.4.15 Leetcode 日常刷题.md
+          - 1_two-sum.md: ToDo/LeetCode/1/1_two-sum.md
+          - 1003_check-if-word-is-valid-after-substitutions.md: ToDo/LeetCode/1/1003_check-if-word-is-valid-after-substitutions.md
+          - 1014_best-sightseeing-pair.md: ToDo/LeetCode/1/1014_best-sightseeing-pair.md
+          - 1021_remove-outermost-parentheses.md: ToDo/LeetCode/1/1021_remove-outermost-parentheses.md
+          - 1023_camelcase-matching.md: ToDo/LeetCode/1/1023_camelcase-matching.md
+          - 1047_remove-all-adjacent-duplicates-in-string.md: ToDo/LeetCode/1/1047_remove-all-adjacent-duplicates-in-string.md
+          - 1048_longest-string-chain.md: ToDo/LeetCode/1/1048_longest-string-chain.md
+          - 1079_letter-tile-possibilities.md: ToDo/LeetCode/1/1079_letter-tile-possibilities.md
+          - 1131_rank-transform-of-an-array.md: ToDo/LeetCode/1/1131_rank-transform-of-an-array.md
+          - 1156_swap-for-longest-repeated-character-substring.md: ToDo/LeetCode/1/1156_swap-for-longest-repeated-character-substring.md
+          - 1170_compare-strings-by-frequency-of-the-smallest-character.md: ToDo/LeetCode/1/1170_compare-strings-by-frequency-of-the-smallest-character.md
+          - 1190_reverse-substrings-between-each-pair-of-parrentheses.md: ToDo/LeetCode/1/1190_reverse-substrings-between-each-pair-of-parrentheses.md
+          - 1202_smallest-string-with-swaps.md: ToDo/LeetCode/1/1202_smallest-string-with-swaps.md
+          - 1209_remove-all-adjacent-duplicates-in-string-ii.md: ToDo/LeetCode/1/1209_remove-all-adjacent-duplicates-in-string-ii.md
+          - 1233_remove-sub-folders-from-the-file-system.md: ToDo/LeetCode/1/1233_remove-sub-folders-from-the-file-system.md
+          - 1239_maximum-length-of-a-concatenated-string-with-unique-characters.md: ToDo/LeetCode/1/1239_maximum-length-of-a-concatenated-string-with-unique-characters.md
+          - 1248_count-number-of-nice-subarrays.md: ToDo/LeetCode/1/1248_count-number-of-nice-subarrays.md
+          - 1249_minimum-remove-to-make-valid-parentheses.md: ToDo/LeetCode/1/1249_minimum-remove-to-make-valid-parentheses.md
+          - 1305_all-elements-in-two-binary-search-trees.md: ToDo/LeetCode/1/1305_all-elements-in-two-binary-search-trees.md
+          - 1319_number-of-operations-to-make-network-conneted.md: ToDo/LeetCode/1/1319_number-of-operations-to-make-network-conneted.md
+          - 1365_How-Many-Numbers-Are-Smaller-Than-the-Current-Number.md: ToDo/LeetCode/1/1365_How-Many-Numbers-Are-Smaller-Than-the-Current-Number.md
+          - 141_linked-list-cycle.md: ToDo/LeetCode/1/141_linked-list-cycle.md
+          - 142_linked-list-cycleii.md: ToDo/LeetCode/1/142_linked-list-cycleii.md
+          - 1451_rearrange-words-in-a-sentence.md: ToDo/LeetCode/1/1451_rearrange-words-in-a-sentence.md
+          - 1452_people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.md: ToDo/LeetCode/1/1452_people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.md
+          - 1461_check-if-a-string-contains-all-binary-codes-of-size-k.md: ToDo/LeetCode/1/1461_check-if-a-string-contains-all-binary-codes-of-size-k.md
+          - 1487_making-file-names-unique.md: ToDo/LeetCode/1/1487_making-file-names-unique.md
+          - 1513_number-of-substrings-with-only-1s.md: ToDo/LeetCode/1/1513_number-of-substrings-with-only-1s.md
+          - 1525_number-of-good-ways-to-split-a-string.md: ToDo/LeetCode/1/1525_number-of-good-ways-to-split-a-string.md
+          - 1541_minimum-insertions-to-balance-a-parentheses-string.md: ToDo/LeetCode/1/1541_minimum-insertions-to-balance-a-parentheses-string.md
+          - 1544_make-the-string-great.md: ToDo/LeetCode/1/1544_make-the-string-great.md
+          - 166_fraction-to-recurring-decimal.md: ToDo/LeetCode/1/166_fraction-to-recurring-decimal.md
+          - 1663_smallest-string-with-a-given-numeric-value.md: ToDo/LeetCode/1/1663_smallest-string-with-a-given-numeric-value.md
+          - 1750_minimum-length-of-string-after-deleting-similar-ends.md: ToDo/LeetCode/1/1750_minimum-length-of-string-after-deleting-similar-ends.md
+          - 1823_find-the-winner-of-the-circular-game.md: ToDo/LeetCode/1/1823_find-the-winner-of-the-circular-game.md
+          - 19_remove-Nth-node-from-end-of-list.md: ToDo/LeetCode/1/19_remove-Nth-node-from-end-of-list.md
+          - 2_add-two-numbers.md: ToDo/LeetCode/2/2_add-two-numbers.md
+          - 20_valid-parentheses.md: ToDo/LeetCode/2/20_valid-parentheses.md
+          - 206_reverse-linked-list.md: ToDo/LeetCode/2/206_reverse-linked-list.md
+          - 216_combination-sum-iii.md: ToDo/LeetCode/2/216_combination-sum-iii.md
+          - 2182_construct-string-with-repeat-limit.md: ToDo/LeetCode/2/2182_construct-string-with-repeat-limit.md
+          - 2191_sort-the-jumbled-numbers.md: ToDo/LeetCode/2/2191_sort-the-jumbled-numbers.md
+          - 3_longest-substring-without-repeating-characters.md: ToDo/LeetCode/3/3_longest-substring-without-repeating-characters.md
+          - 32_longest-valid-parentheses.md: ToDo/LeetCode/3/32_longest-valid-parentheses.md
+          - 334_increasing-triplet-subsequence.md: ToDo/LeetCode/3/334_increasing-triplet-subsequence.md
+          - 380_insert-delete-getrandom-o1.md: ToDo/LeetCode/3/380_insert-delete-getrandom-o1.md
+          - 398_random-pick-index.md: ToDo/LeetCode/3/398_random-pick-index.md
+          - 415_add-strings.md: ToDo/LeetCode/4/415_add-strings.md
+          - 416_partition-equal-subset-sum.md: ToDo/LeetCode/4/416_partition-equal-subset-sum.md
+          - 417_pacific-atlantic-water-flow.md: ToDo/LeetCode/4/417_pacific-atlantic-water-flow.md
+          - 424_longest-repeating-character-replacement.md: ToDo/LeetCode/4/424_longest-repeating-character-replacement.md
+          - 427_construct-quad-tree.md: ToDo/LeetCode/4/427_construct-quad-tree.md
+          - 43_multiply-strings.md: ToDo/LeetCode/4/43_multiply-strings.md
+          - 433_minimum-genetic-mutation.md: ToDo/LeetCode/4/433_minimum-genetic-mutation.md
+          - 435_non-overlapping-intervals.md: ToDo/LeetCode/4/435_non-overlapping-intervals.md
+          - 442_find-all-duplicates-in-an-array.md: ToDo/LeetCode/4/442_find-all-duplicates-in-an-array.md
+          - 468_validate-ip-address.md: ToDo/LeetCode/4/468_validate-ip-address.md
+          - 470_implement-rand10-using-rand7.md: ToDo/LeetCode/4/470_implement-rand10-using-rand7.md
+          - 503_next-greater-element-ii.md: ToDo/LeetCode/5/503_next-greater-element-ii.md
+          - 518_coin-change-ii.md: ToDo/LeetCode/5/518_coin-change-ii.md
+          - 529_minesweeper.md: ToDo/LeetCode/5/529_minesweeper.md
+          - 537_complex-number-multiplication.md: ToDo/LeetCode/5/537_complex-number-multiplication.md
+          - 547_number-of-provinces.md: ToDo/LeetCode/5/547_number-of-provinces.md
+          - 590_n-ary-tree-postorder-traversal.md: ToDo/LeetCode/5/590_n-ary-tree-postorder-traversal.md
+          - 599_minimum-index-sum-of-two-lists.md: ToDo/LeetCode/5/599_minimum-index-sum-of-two-lists.md
+          - 682_baseball-game.md: ToDo/LeetCode/6/682_baseball-game.md
+          - 686_repeated-string-match.md: ToDo/LeetCode/6/686_repeated-string-match.md
+          - 693_binary-number-with-alternating-bits.md: ToDo/LeetCode/6/693_binary-number-with-alternating-bits.md
+          - 703_kth-largest-element-in-a-stream.md: ToDo/LeetCode/7/703_kth-largest-element-in-a-stream.md
+          - 739_daily-temperatures.md: ToDo/LeetCode/7/739_daily-temperatures.md
+          - 752_open-the-lock.md: ToDo/LeetCode/7/752_open-the-lock.md
+          - 780_reaching-points.md: ToDo/LeetCode/7/780_reaching-points.md
+          - 816_ambiguous-coordinates.md: ToDo/LeetCode/8/816_ambiguous-coordinates.md
+          - 819_most-common-word.md: ToDo/LeetCode/8/819_most-common-word.md
+          - 821_shortest-distance-to-a-character.md: ToDo/LeetCode/8/821_shortest-distance-to-a-character.md
+          - 860_lemonade-change.md: ToDo/LeetCode/8/860_lemonade-change.md
+          - 863_all-nodes-distance-k-in-binarytree.md: ToDo/LeetCode/8/863_all-nodes-distance-k-in-binarytree.md
+          - 868_binary-gap.md: ToDo/LeetCode/8/868_binary-gap.md
+          - 876_middle-of-the-linked-list.md: ToDo/LeetCode/8/876_middle-of-the-linked-list.md
+          - 883_projection-area-of-3d-shapes.md: ToDo/LeetCode/8/883_projection-area-of-3d-shapes.md
+          - 894_all-possible-full-binary-trees.md: ToDo/LeetCode/8/894_all-possible-full-binary-trees.md
+          - 905_sort-array-by-parity.md: ToDo/LeetCode/9/905_sort-array-by-parity.md
+          - 922_sort-array-by-parity-ii.md: ToDo/LeetCode/9/922_sort-array-by-parity-ii.md
+          - 93_restore-ip-addresses.md: ToDo/LeetCode/9/93_restore-ip-addresses.md
+          - 94_binary-tree-inorder-traversal.md: ToDo/LeetCode/9/94_binary-tree-inorder-traversal.md
+          - 942_di-string-match.md: ToDo/LeetCode/9/942_di-string-match.md
+          - 954_array-of-doubled-pairs.md: ToDo/LeetCode/9/954_array-of-doubled-pairs.md
+          - 981_time-based-key-value-store.md: ToDo/LeetCode/9/981_time-based-key-value-store.md
   - 学习:
       - Study/index.md
       - 小红书资源分享站: Study/xhs_list.md
+      - 学习资源存储站: Study/Materials_list.md
       - 小红书｜文本编辑:
           - Study/TextEdit/index.md
           - LaTex:
@@ -343,6 +392,8 @@ nav:
               - mkdocs构建教程: Study/TextEdit/Markdown/Mkdocs_Tutorials1.md
       - 其他平台电子笔记:
           - 网页设计与制作: Study/Mubu/WebsiteDesign.md
+          - 网页设计简单参数标注（应试用）: Study/Mubu/network.md
+          - Js简单参数标注（应试用）: Study/Mubu/Javs.md
           - 信息检索: Study/Mubu/InfoRetreval.md
       - 微积分:
           - Chapter1: Study/Calculus/Math2.md
@@ -429,13 +480,19 @@ nav:
           - shortcuts快捷指令使用指南: Study/Swift/Shortcuts.md
           - Apple的奇奇怪怪: Study/Swift/AppleScript.md
           - Swift基础: Study/Swift/SwiftBasics.md
+          - 软件推荐之Raycast: Study/Swift/Ray.md
       - 语言学习:
           - 法语笔记: Study/English/French.md
           - 英语笔记: Study/English/English.md
           - 英语记忆: Study/English/Words.md
           - 英文作文: Study/English/EnglishEssay.md
+          - 一些零散的英语笔记: Study/English/SomePres.md
           - 英语文学批评: Study/English/LiteraryCriticism.md
+          - 英文情诗(All this I did): Study/English/AllthisIdid.md
+
       - 制造与服务系统分析: Study/AMASS.md
+      - 发展经济学:
+          - 重点提纲: Study/DevelopEco/chapter1.md
       - 管理学:
           - 管理学导论: Study/Management/Management.md
           - 计划: Study/Management/Plan.md
@@ -451,6 +508,7 @@ nav:
 
       - 我的碎碎念:
           - 我的2022: Study/Talks/My2022.md
+          - 关于仙林: Study/Talks/About_xianlin.md
           - 荐文: Study/Talks/Articles_recomend.md
           - 荐书: Study/Talks/Books_recomend.md
           - 古典音乐: Study/Talks/Classical_music.md
@@ -509,11 +567,13 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css
   - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
   - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
-  #   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
   - stylesheets/extra.css
+  #   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
   - javascripts/extra.js
   - javascripts/mathjax.js
 #   - javascripts/loadMermaid.js
