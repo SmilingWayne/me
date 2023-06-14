@@ -1,0 +1,232 @@
+/*create table 出版信息表
+(出版社 char(20) not null primary key,
+出版社地址 char(20),
+出版社联系方式 char(20)
+);
+create table 图书类别表
+(类别号 char(20) not null primary key,
+类别 char(20) ,
+类别信息 char(20) ,
+备注 char(20)
+);
+*/
+/*use work5;
+create table 图书信息表
+(图书号 char(20) not null primary key,
+图书名 char(20),
+出版社 char(20),
+类别号 char(20),
+作者 char(20),
+foreign key(类别号) references 图书类别表(类别号),
+foreign key(出版社) references 出版信息表(出版社)
+);
+*/
+/*insert into 出版信息表
+values('南京大学出版社','栖霞区163号','18300000000');
+insert into 图书类别表
+values('987123','教科书','无','无');
+insert into 图书信息表
+values('567','高等数学','南京大学出版社','987123','张亮');
+*/
+/*insert into 图书类别表
+values('A','哲学','','');
+select * from 图书类别表
+
+create table 进货订单
+(
+进货单号 char(20) not null primary key,
+进货人 char(20) not null,
+备注 char(20)
+);
+create table 销售订单
+(销售单号 char(20) not null primary key,
+购买者 char(20),
+备注 char(20)
+);
+CREATE TABLE 进货详情表( 
+进货项号 char(20) primary key,
+进货单号 char(20),
+图书号 char(20),
+图书数量 char(20),
+进货日期 date,
+进货价格 char(20),
+foreign key(进货单号) references 进货订单(进货单号),
+foreign key(图书号) references 图书信息表(图书号));
+
+create table 销售详情表
+(
+销售项号 char(20) primary key,
+ 
+销售单号 char(20),
+ 
+图书号 char(20),
+ 
+图书数量 int,
+ 
+销售日期 date,
+ 
+销售价格 char(20),
+foreign key(销售单号) references 销售订单(销售单号),
+foreign key(图书号) references 图书信息表(图书号)
+);
+
+
+
+create table 库存信息表
+(
+图书号 char(20) not null primary key,
+图书数 char(20) not null ,
+入库信息 char(20) not null,
+出库信息 char(20) not null
+);
+*/
+/*insert into 库存信息表
+values('567','100','无','无');
+
+create view see1
+as
+select work5.图书信息表.图书号,work5.图书信息表.图书名, work5.图书类别表.类别号,work5.库存信息表.图书数 
+from 图书信息表, 图书类别表, 库存信息表 
+where work5.图书信息表.图书号 = work5.库存信息表.图书号 and work5.图书信息表.类别号=work5.图书类别表.类别号;
+
+select * from see1;
+
+create table 进货订单
+(
+进货单号 char(20) not null primary key,
+进货人 char(20) not null,
+备注 char(20)
+);
+CREATE TABLE 进货详情表( 
+进货项号 char(20) primary key,
+进货单号 char(20),
+图书号 char(20),
+图书数量 int,
+进货日期 date,
+进货价格 char(20),
+foreign key(进货单号) references 进货订单(进货单号),
+foreign key(图书号) references 图书信息表(图书号));
+create table 库存信息表
+(
+图书号 char(20) not null primary key,
+图书数 int not null ,
+入库信息 char(20) not null,
+出库信息 char(20) not null
+);
+
+*/
+/*
+insert into 进货订单
+values('101','张三','无');
+
+insert into 进货详情表
+values('1','101','567',200,'2020-10-11','20');
+
+insert into 进货详情表 
+values('2', '101','567','200','2020-09-01','20');
+*/
+
+/*create trigger 进货销售 
+after insert
+on 进货详情表 
+for each row 
+update 库存信息表 set 图书数 = 图书数 + new.图书数量 where  new.图书号 = 图书号;
+*/
+
+/*insert into 进货订单
+values('102','李四','优惠');
+insert into 进货详情表
+values('2','102','567',200,'2019-10-11',20);
+
+select * from 库存信息表;
+*/
+/*delimiter $$
+create trigger 进货销售
+after insert
+on 进货详情表
+
+for each row 
+begin
+set @a = new.图书数量;
+set @b = new.图书号;
+IF(select 库存信息表.图书号 from 库存信息表 where 库存信息表.图书号 = @b) is null then
+	insert into 库存信息表 values(@b,@a,'无','无');
+else
+	update 库存信息表 set 库存信息表.图书数 = 库存信息表.图书数 + @a where  库存信息表.图书号 = @b;
+    end if;
+    end;
+    $$
+    */
+/*insert into 进货订单
+values('103','王华','优惠');
+insert into 进货详情表
+values('3','103','567',200,'2019-04-11',20);
+select * from 库存信息表;
+*/
+
+
+
+/*insert into 销售订单
+values('110','周云','促销');
+insert into 销售详情表
+values('101','110','567',300,'2020-11-30','20');
+*/
+/*delimiter $$
+create trigger 销售触发器
+after insert on 销售详情表 
+for each row
+begin 
+set @a = new.图书号;
+set @b = new.图书数量;
+if(select 库存信息表.图书号 from 库存信息表 where 库存信息表.图书号 = @a)is not null then
+	if(select 库存信息表.图书数 where 库存信息表.图书数 >= @b and 库存信息表.图书号 = @a) is not null then
+    update 库存信息表 
+    set 库存信息表.图书数 = 库存信息表.图书数 - @b
+    where 库存信息表.图书号 = @a;
+    else 
+    
+    signal sqlstate 'HY000' set message_text = '库存数量不足';
+    end if;
+    end if;
+end;
+*/
+
+/*insert into 销售详情表
+values('102','112','567',300,'2020-11-30','20');
+*/
+/*delimiter $$
+create trigger 销售触发器
+after insert on 销售详情表 
+for each row
+begin 
+set @a = new.图书号;
+set @b = new.图书数量;
+if(select 库存信息表.图书号 from 库存信息表 where 库存信息表.图书号 = @a)is not null then
+	
+    update 库存信息表 
+    set 库存信息表.图书数 = 库存信息表.图书数 - @b
+    where 库存信息表.图书号 = @a;
+
+    end if;
+end;
+$$
+*/
+/*delimiter $$
+create trigger 销售触发器
+after insert on 销售详情表 
+for each row
+begin 
+set @a = new.图书号;
+set @b = new.图书数量;
+set @c = new.销售日期;
+if(select 库存信息表.图书号 from 库存信息表 where 库存信息表.图书号 = @a)is not null then
+	
+    update 库存信息表.出库信息, 库存信息表.出库信息
+    set 出库信息 = concat('时间',@c) and 库存信息表.图书数 = 库存信息表.图书数 - @b
+    where 库存信息表.图书号 = @a;
+    end if;
+end;
+$$
+
+*/
+
