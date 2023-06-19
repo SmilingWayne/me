@@ -47,7 +47,6 @@
 | 3 | longest-substring-without-repeating-characters | [Link](./3/3_longest-substring-without-repeating-characters.md) | Unknown | Unknown | Unknown |
 | 32 | longest-valid-parentheses | [Link](./3/32_longest-valid-parentheses.md) | Unknown | Unknown | Unknown |
 | 334 | increasing-triplet-subsequence | [Link](./3/334_increasing-triplet-subsequence.md) | Unknown | Unknown | Unknown |
-| 36 | er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof | [Link](./3/36_er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof.md) | Unknown | Unknown | Unknown |
 | 380 | insert-delete-getrandom-o1 | [Link](./3/380_insert-delete-getrandom-o1.md) | Unknown | Unknown | Unknown |
 | 398 | random-pick-index | [Link](./3/398_random-pick-index.md) | Unknown | Unknown | Unknown |
 | 415 | add-strings | [Link](./4/415_add-strings.md) | Unknown | Unknown | Unknown |

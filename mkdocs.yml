@@ -161,6 +161,7 @@ nav:
           - 魏晋玄学: Literature/Literacy/Xuan_xue.md
           - 西方正典: Literature/Literacy/Western_classic.md
           - 增广贤文: Literature/Literacy/Zeng_guang_xian_wen.md
+          - 加缪手记: Literature/Literacy/Camus_script.md
           - 🇫🇷巴黎评论: Literature/Literacy/Paris_review.md
           - 🇫🇷作家笔记: Literature/Literacy/Writers_notes.md
           - 天朝遥远: Literature/Literacy/Dynasty.md
@@ -201,6 +202,7 @@ nav:
           - 《1984》: Literature/Novel/1984.md
           - 撒马尔罕: Literature/Novel/Samarkhan.md
           - 生死疲劳: Literature/Novel/Forever_fatigue.md
+          - 百年孤独: Literature/Novel/100_years_solitude.md
           - 五号屠场: Literature/Novel/Slaughterhouse_five.md
           - 平凡的世界: Literature/Novel/Common_world.md
           - 沉默的病人: Literature/Novel/Silent_patient.md
@@ -235,6 +237,7 @@ nav:
       - 书:
           - 🇫🇷记忆之场: History/Field_of_memory.md
           - 🇫🇷断头王后: History/Marie_antoinette.md
+          - 战国歧途: History/Zhanguo_qitu.md
           - 荒诞医学史: History/Ridiculous_medics.md
           - 罗马帝国简史: History/Roman_empire_brief_history.md
           - 世界史碎片: History/World.md
@@ -450,7 +453,6 @@ nav:
           - 集合操作: Study/PythonPackages/PythonPieces5.md
       - 小红书｜供应链管理:
           - Little's_Law: Study/Supplychain/LittlesLaw.md
-          - 牛鞭效应: Study/Supplychain/Niubian.md
           - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
           - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
           - 时间序列预测模型与框架：ARMA/Winter(Chapter_7.5/7.6): Study/Supplychain/SupplyChain3.md
@@ -473,7 +475,9 @@ nav:
           - 第一章｜导论: Study/SCMTheory/Chapter1.md
           - 第二章｜采购-I: Study/SCMTheory/Chapter2.md
           - 第三章｜采购-II: Study/SCMTheory/Chapter3.md
-          - 第四章｜订货-I: Study/SCMTheory/Chapter4.md
+          - 第四章｜订货（全三章）: Study/SCMTheory/Chapter4.md
+          - 第五章｜啤酒游戏: Study/SCMTheory/Chapter5.md
+          - 第六章｜供应链的协调与激励: Study/SCMTheory/Chapter6.md
       - 果系产品使用:
           - CS193p: Study/Swift/CS193p1.md
           - macOS快捷键: Study/Swift/Keyshortcuts.md
