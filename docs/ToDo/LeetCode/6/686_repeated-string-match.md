@@ -1,8 +1,11 @@
-#### [686. 重复叠加字符串匹配](https://leetcode-cn.com/problems/repeated-string-match/)
+# 686_重复叠加字符串匹配
 
----
+!!! note
+    <!-- 这里记载考察的数据结构、算法等 -->
+    哈希表 | 动态规划
 
-难度：【Medium】
+
+- 🔑🔑 难度：<span style = "color:gold; font-weight:bold">Medium</span>
 
 给定两个字符串 a 和 b，寻找重复叠加字符串 a 的最小次数，使得字符串 b 成为叠加后的字符串 a 的子串，如果不存在则返回 -1。
 
@@ -15,9 +18,7 @@
 输出：3
 解释：a 重复叠加三遍后为 "abcdabcdabcd", 此时 b 是其子串。
 ```
-
-
-
+----
 - 一个十分暴力的解法：如果想要能包含解决，一定满足以下条件：
   - Cdabcdabcdab 也就是要么一段里面第前面加上一段，要么是一段里面后面加上一段
   - aaaa 对 a，直接重复
@@ -49,9 +50,6 @@ class Solution {
             sb.append(a);
         }
         return -1;
-        
-        
-
     }
 }
 
