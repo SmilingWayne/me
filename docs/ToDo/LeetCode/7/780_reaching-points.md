@@ -1,5 +1,3 @@
-2022.4.09 Leetcode 日常刷题
-
 #### [780. 到达终点](https://leetcode-cn.com/problems/reaching-points/)
 
 🔑🔑 考点：数学
