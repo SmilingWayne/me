@@ -12,12 +12,17 @@
 <!-- <span style = "color:Green; font-weight:bold">Easy</span> 简单 -->
 
 <!-- 题目简介 -->
-> Write Here 
+
+>
+> 
+```
+```
 
 ------
 
-> 解析
+??? note 
 
+    
 -------------
 
 === "Java"
