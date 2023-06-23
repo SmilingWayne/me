@@ -10,7 +10,6 @@
 | 1047 | remove-all-adjacent-duplicates-in-string | [Link](./1/1047_remove-all-adjacent-duplicates-in-string.md) | Unknown | Unknown | Unknown |
 | 1048 | longest-string-chain | [Link](./1/1048_longest-string-chain.md) | Unknown | Unknown | Unknown |
 | 1079 | letter-tile-possibilities | [Link](./1/1079_letter-tile-possibilities.md) | Unknown | Unknown | Unknown |
-| 1131 | rank-transform-of-an-array | [Link](./1/1131_rank-transform-of-an-array.md) | Unknown | Unknown | Unknown |
 | 1156 | swap-for-longest-repeated-character-substring | [Link](./1/1156_swap-for-longest-repeated-character-substring.md) | Unknown | Unknown | Unknown |
 | 1170 | compare-strings-by-frequency-of-the-smallest-character | [Link](./1/1170_compare-strings-by-frequency-of-the-smallest-character.md) | Unknown | Unknown | Unknown |
 | 1190 | reverse-substrings-between-each-pair-of-parrentheses | [Link](./1/1190_reverse-substrings-between-each-pair-of-parrentheses.md) | Unknown | Unknown | Unknown |
@@ -20,8 +19,10 @@
 | 1239 | maximum-length-of-a-concatenated-string-with-unique-characters | [Link](./1/1239_maximum-length-of-a-concatenated-string-with-unique-characters.md) | Unknown | Unknown | Unknown |
 | 1248 | count-number-of-nice-subarrays | [Link](./1/1248_count-number-of-nice-subarrays.md) | Unknown | Unknown | Unknown |
 | 1249 | minimum-remove-to-make-valid-parentheses | [Link](./1/1249_minimum-remove-to-make-valid-parentheses.md) | Unknown | Unknown | Unknown |
+| 13 | roman-to-integer | [Link](./1/13_roman-to-integer.md) | Easy | HashTable | Unknown |
 | 1305 | all-elements-in-two-binary-search-trees | [Link](./1/1305_all-elements-in-two-binary-search-trees.md) | Unknown | Unknown | Unknown |
 | 1319 | number-of-operations-to-make-network-conneted | [Link](./1/1319_number-of-operations-to-make-network-conneted.md) | Unknown | Unknown | Unknown |
+| 1331 | rank-transform-of-an-array | [Link](./1/1331_rank-transform-of-an-array.md) | Medium | Unknown | Unknown |
 | 1365 | How-Many-Numbers-Are-Smaller-Than-the-Current-Number | [Link](./1/1365_How-Many-Numbers-Are-Smaller-Than-the-Current-Number.md) | Unknown | Unknown | Unknown |
 | 141 | linked-list-cycle | [Link](./1/141_linked-list-cycle.md) | Unknown | Unknown | Unknown |
 | 142 | linked-list-cycleii | [Link](./1/142_linked-list-cycleii.md) | Unknown | Unknown | Unknown |
@@ -39,11 +40,12 @@
 | 1823 | find-the-winner-of-the-circular-game | [Link](./1/1823_find-the-winner-of-the-circular-game.md) | Unknown | Unknown | Unknown |
 | 19 | remove-Nth-node-from-end-of-list | [Link](./1/19_remove-Nth-node-from-end-of-list.md) | Unknown | Unknown | Unknown |
 | 2 | add-two-numbers | [Link](./2/2_add-two-numbers.md) | Unknown | Unknown | Unknown |
-| 20 | valid-parentheses | [Link](./2/20_valid-parentheses.md) | Unknown | Unknown | Unknown |
+| 20 | valid-parentheses | [Link](./2/20_valid-parentheses.md) | Easy | Stack, String | Unknown |
 | 206 | reverse-linked-list | [Link](./2/206_reverse-linked-list.md) | Unknown | Unknown | Unknown |
 | 216 | combination-sum-iii | [Link](./2/216_combination-sum-iii.md) | Unknown | Unknown | Unknown |
 | 2182 | construct-string-with-repeat-limit | [Link](./2/2182_construct-string-with-repeat-limit.md) | Unknown | Unknown | Unknown |
 | 2191 | sort-the-jumbled-numbers | [Link](./2/2191_sort-the-jumbled-numbers.md) | Unknown | Unknown | Unknown |
+| 2496 | maximum-value-of-a-string-in-an-array | [Link](./2/2496_maximum-value-of-a-string-in-an-array.md) | Easy | String | Unknown |
 | 3 | longest-substring-without-repeating-characters | [Link](./3/3_longest-substring-without-repeating-characters.md) | Unknown | Unknown | Unknown |
 | 32 | longest-valid-parentheses | [Link](./3/32_longest-valid-parentheses.md) | Unknown | Unknown | Unknown |
 | 334 | increasing-triplet-subsequence | [Link](./3/334_increasing-triplet-subsequence.md) | Unknown | Unknown | Unknown |
@@ -90,5 +92,9 @@
 | 942 | di-string-match | [Link](./9/942_di-string-match.md) | Unknown | Unknown | Unknown |
 | 954 | array-of-doubled-pairs | [Link](./9/954_array-of-doubled-pairs.md) | Unknown | Unknown | Unknown |
 | 981 | time-based-key-value-store | [Link](./9/981_time-based-key-value-store.md) | Unknown | Unknown | Unknown |
-| JZ 36 | er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof | [Link](./Offer/36_er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof.md) | Unknown | Unknown | Unknown |
+| 16.19 | pond-sizes-lcci | [Link](./Offer/16-19_interview.md) | Medium | DFS | Unknown |
+| Offer-36 | er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof | [Link](./Offer/36_er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof.md) | Unknown | Unknown | Unknown |
+| Offer-13 | robot-moving-range | [Link](./Offer/13_robot-moving-range.md) | Medium | DFS | Unknown |
+| Offer-14 | cutting-ropes | [Link](./Offer/14_cutting-rope.md) | Medium | DP | Same as 343 |
+| Offer-49 | uglg-number | [Link](./Offer/49_ugly-number.md) | Medium | DP | Same as 264 |
 

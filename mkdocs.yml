@@ -139,6 +139,7 @@ nav:
           - 冲绳札记: Literature/Essay/Chongshen.md
           - 记忆记忆: Literature/Essay/Remember_memory.md
           - 火的记忆: Literature/Essay/Memory_fire.md
+          - 怀旧的未来: Literature/Essay/Nostalgia.md
           - 人间食粮: Literature/Essay/Life_food.md
           - 山河袈裟: Literature/Essay/Shan_he_jia_sha.md
           - 牛棚杂忆: Literature/Essay/Cowshed_memo.md
@@ -233,6 +234,7 @@ nav:
           - 欧罗巴笔记: History/Europe.md
           - 🇫🇷法兰西笔记: History/France.md
           - 🇸🇦阿拉伯笔记: History/Arabians.md
+          - 🇮🇳印度笔记: History/India.md
           - 🇮🇩印度尼西亚笔记: History/Indonesia.md
       - 书:
           - 🇫🇷记忆之场: History/Field_of_memory.md
@@ -287,7 +289,6 @@ nav:
       - LeetCode:
           - ToDo/LeetCode/index.md
           - 模板: ToDo/LeetCode/Template.md
-          - 2022/3/11: ToDo/LeetCode/2022-3-11Leetcode每日一题.md
           - 2022/4/24: ToDo/LeetCode/2022.4.24 C++ 练习.md
           - 1_two-sum.md: ToDo/LeetCode/1/1_two-sum.md
           - 1003_check-if-word-is-valid-after-substitutions.md: ToDo/LeetCode/1/1003_check-if-word-is-valid-after-substitutions.md
@@ -297,7 +298,7 @@ nav:
           - 1047_remove-all-adjacent-duplicates-in-string.md: ToDo/LeetCode/1/1047_remove-all-adjacent-duplicates-in-string.md
           - 1048_longest-string-chain.md: ToDo/LeetCode/1/1048_longest-string-chain.md
           - 1079_letter-tile-possibilities.md: ToDo/LeetCode/1/1079_letter-tile-possibilities.md
-          - 1131_rank-transform-of-an-array.md: ToDo/LeetCode/1/1131_rank-transform-of-an-array.md
+          - 1331_rank-transform-of-an-array.md: ToDo/LeetCode/1/1131_rank-transform-of-an-array.md
           - 1156_swap-for-longest-repeated-character-substring.md: ToDo/LeetCode/1/1156_swap-for-longest-repeated-character-substring.md
           - 1170_compare-strings-by-frequency-of-the-smallest-character.md: ToDo/LeetCode/1/1170_compare-strings-by-frequency-of-the-smallest-character.md
           - 1190_reverse-substrings-between-each-pair-of-parrentheses.md: ToDo/LeetCode/1/1190_reverse-substrings-between-each-pair-of-parrentheses.md
@@ -307,6 +308,7 @@ nav:
           - 1239_maximum-length-of-a-concatenated-string-with-unique-characters.md: ToDo/LeetCode/1/1239_maximum-length-of-a-concatenated-string-with-unique-characters.md
           - 1248_count-number-of-nice-subarrays.md: ToDo/LeetCode/1/1248_count-number-of-nice-subarrays.md
           - 1249_minimum-remove-to-make-valid-parentheses.md: ToDo/LeetCode/1/1249_minimum-remove-to-make-valid-parentheses.md
+          - 13_roman-to-integer: ToDo/LeetCode/1/13_roman-to-integer.md
           - 1305_all-elements-in-two-binary-search-trees.md: ToDo/LeetCode/1/1305_all-elements-in-two-binary-search-trees.md
           - 1319_number-of-operations-to-make-network-conneted.md: ToDo/LeetCode/1/1319_number-of-operations-to-make-network-conneted.md
           - 1365_How-Many-Numbers-Are-Smaller-Than-the-Current-Number.md: ToDo/LeetCode/1/1365_How-Many-Numbers-Are-Smaller-Than-the-Current-Number.md
@@ -377,6 +379,11 @@ nav:
           - 942_di-string-match.md: ToDo/LeetCode/9/942_di-string-match.md
           - 954_array-of-doubled-pairs.md: ToDo/LeetCode/9/954_array-of-doubled-pairs.md
           - 981_time-based-key-value-store.md: ToDo/LeetCode/9/981_time-based-key-value-store.md
+          - 16-19_interview.md: ToDo/LeetCode/Offer/16-19_interview.md
+          - Offer_13_robot-moving-range.md: ToDo/LeetCode/Offer/13_robot-moving-range.md
+          - Offer_14_cutting-ropes.md: ToDo/LeetCode/Offer/14_cutting-rope.md
+          - Offer_49_ugly-number.md: ToDo/LeetCode/Offer/49_ugly-number.md
+
   - 学习:
       - Study/index.md
       - 小红书资源分享站: Study/xhs_list.md
@@ -478,6 +485,7 @@ nav:
           - 第四章｜订货（全三章）: Study/SCMTheory/Chapter4.md
           - 第五章｜啤酒游戏: Study/SCMTheory/Chapter5.md
           - 第六章｜供应链的协调与激励: Study/SCMTheory/Chapter6.md
+          - 第七章｜供应链整合: Study/SCMTheory/Chapter7.md
       - 果系产品使用:
           - CS193p: Study/Swift/CS193p1.md
           - macOS快捷键: Study/Swift/Keyshortcuts.md

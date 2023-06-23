@@ -1,29 +1,36 @@
-# 206_中文题目
+# 206_反转链表
 
 <!-- 所有文件名必须是该题目的英文名 -->
 
 !!! note
     <!-- 这里记载考察的数据结构、算法等 -->
-    哈希表 | 动态规划
+    链表 ｜ 经典题
 
-- 🔑🔑 难度：
+- 🔑🔑 难度：<span style = "color:Green; font-weight:bold">Easy</span>
 <!-- <span style = "color:gold; font-weight:bold">Medium</span> 中等 -->
 <!-- <span style = "color:crisma; font-weight:bold">High</span> 困难 -->
 <!-- <span style = "color:Green; font-weight:bold">Easy</span> 简单 -->
 
 <!-- 题目简介 -->
-> Write Here 
+> 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
+
+
+```
+输入：head = [1,2,3,4,5]
+输出：[5,4,3,2,1]
+```
 
 ------
 
 > 解析
+> 一种是递归做法，一种是迭代做法
 
 -------------
 
 === "Java"
 
     ```java
-    
+    // 迭代法
     class Solution {
         public ListNode reverseList(ListNode head) {
             ListNode prev = null;
@@ -60,4 +67,24 @@
         }
     }
 
+    ```
+
+=== "Python"
+
+    ```Python
+    
+    # Definition for singly-linked list.
+    # class ListNode:
+    #     def __init__(self, val=0, next=None):
+    #         self.val = val
+    #         self.next = next
+    class Solution:
+        def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+            if head == None or head.next == None:
+                return head
+            
+            cur = self.reverseList(head.next)
+            head.next.next = head
+            head.next = None
+            return cur
     ```
