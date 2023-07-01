@@ -298,7 +298,7 @@ nav:
           - 1047_remove-all-adjacent-duplicates-in-string.md: ToDo/LeetCode/1/1047_remove-all-adjacent-duplicates-in-string.md
           - 1048_longest-string-chain.md: ToDo/LeetCode/1/1048_longest-string-chain.md
           - 1079_letter-tile-possibilities.md: ToDo/LeetCode/1/1079_letter-tile-possibilities.md
-          - 1331_rank-transform-of-an-array.md: ToDo/LeetCode/1/1131_rank-transform-of-an-array.md
+          - 1331_rank-transform-of-an-array.md: ToDo/LeetCode/1/1331_rank-transform-of-an-array.md
           - 1156_swap-for-longest-repeated-character-substring.md: ToDo/LeetCode/1/1156_swap-for-longest-repeated-character-substring.md
           - 1170_compare-strings-by-frequency-of-the-smallest-character.md: ToDo/LeetCode/1/1170_compare-strings-by-frequency-of-the-smallest-character.md
           - 1190_reverse-substrings-between-each-pair-of-parrentheses.md: ToDo/LeetCode/1/1190_reverse-substrings-between-each-pair-of-parrentheses.md
@@ -390,12 +390,14 @@ nav:
       - 学习资源存储站: Study/Materials_list.md
       - 小红书｜文本编辑:
           - Study/TextEdit/index.md
-          - LaTex:
+          - LaTeX:
               - 入门知识: Study/TextEdit/LaTeX/pieces.md
               - LaTeX｜1-零零碎碎: Study/TextEdit/LaTeX/LatexNotes.md
               - LaTeX｜2-集合相关: Study/TextEdit/LaTeX/SetTheory.md
               - LaTeX｜3-矩阵多行对齐: Study/TextEdit/LaTeX/Matrix.md
+              - LaTeX｜4-Overleaf论文写作: Study/TextEdit/LaTeX/Overleaf.md
           - Markdown:
+              - 快速入门: Study/TextEdit/Markdown/MarkdownQuickStart.md
               - 色样表合集: Study/TextEdit/Markdown/MarkdownSyntax2.md
               - 常用的语法(with plugins): Study/TextEdit/Markdown/MarkdownSyntax1.md
               - 字体推荐: Study/TextEdit/Markdown/Markdown.md
@@ -486,6 +488,7 @@ nav:
           - 第五章｜啤酒游戏: Study/SCMTheory/Chapter5.md
           - 第六章｜供应链的协调与激励: Study/SCMTheory/Chapter6.md
           - 第七章｜供应链整合: Study/SCMTheory/Chapter7.md
+          - 第八章｜供应链物流管理: Study/SCMTheory/Chapter8.md
       - 果系产品使用:
           - CS193p: Study/Swift/CS193p1.md
           - macOS快捷键: Study/Swift/Keyshortcuts.md
@@ -507,8 +510,6 @@ nav:
           - 重点提纲: Study/DevelopEco/chapter1.md
       - 管理学:
           - 管理学导论: Study/Management/Management.md
-          - 计划: Study/Management/Plan.md
-          - 组织: Study/Management/Organize.md
           - 重点: Study/Management/Remain.md
       - VScode技巧: Study/Vscode/keys.md
       - ChatGPT:

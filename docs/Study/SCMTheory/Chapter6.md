@@ -121,6 +121,10 @@ $$q^* = (a - c)/4 \\ w^* = (a + c) / 2 \\ p^* = (3a + c)/4$$
 
 
 
+<figure markdown>
+  ![Image title](../picx/SCMTheory/Marginal.png){ width="450" }
+  <figcaption>双重边际效应的解释</figcaption>
+</figure>
 
 ### 双重边际效应带来的问题
 
