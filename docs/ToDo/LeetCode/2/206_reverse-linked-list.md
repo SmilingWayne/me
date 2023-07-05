@@ -88,3 +88,17 @@
             head.next = None
             return cur
     ```
+
+    ```Python
+
+        # 迭代做法 
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        pre = None
+        cur = head
+        while cur:
+            nxt = cur.next
+            cur.next = pre
+            pre = cur
+            cur = nxt
+        return pre  
+    ```
