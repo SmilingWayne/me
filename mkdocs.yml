@@ -12,13 +12,15 @@ nav:
           - 马尔库塞: Philosophy/Philosophers/Marcuse.md
           - 罗兰巴特: Philosophy/Philosophers/RolandBarthes.md
 
-      - 马克思主义哲学:
+      - 大唯物主义:
           - 🥰 毛: Philosophy/Mao.md
           - 基础知识: Philosophy/basic.md
           - 马克思主义宗教观研究: Philosophy/Marxism_religion.md
           - 苏联解体与颜色革命: Philosophy/Color_revolution.md
           - 先知三部曲: Philosophy/Farseer.md
           - 论游击战: Philosophy/Guerrilla_warfare.md
+          - 李大钊文集: Philosophy/Li_da_zhao.md
+          - 中国无神论史纲: Philosophy/Atheism_history.md
 
       - 宗教哲学:
           - 基督教: Philosophy/Christian.md
@@ -66,6 +68,7 @@ nav:
           - 乡土中国: Philosophy/Rural_china.md
           - 福柯(牛津通识读本): Philosophy/Facult.md
           - 西太平洋上的航海者: Philosophy/Voyagers_western_pacific_ocean.md
+          - 论人类不平等的起源与基础: Philosophy/Discours_linegalite.md
 
       - 其他:
           - 哲思与海——一部诗意的哲学随笔: Philosophy/Phi_and_sea.md
@@ -79,7 +82,7 @@ nav:
       - 诗歌:
           - Poems/index.md
           - 外国诗:
-              - 散落碎片: Poems/Middle_east.md
+              - 散落碎片: Poems/Missing.md
               - 🇫🇷愤怒与神秘: Poems/Anger_and_mystery.md
               - 🇫🇷恶之花: Poems/Fleurs_du_mal.md
               - 🇮🇹神曲: Poems/Divine_comedy.md
@@ -155,6 +158,7 @@ nav:
           - 象征主义碎片: Literature/Essay/Impressionalism_pieces.md
           - 博尔赫斯谈话录: Literature/Essay/Borges.md
           - 别走，万一好笑呢: Literature/Essay/Stay.md
+          - 那天夜里，我看见了巴黎: Literature/Essay/That_night_paris.md
           - 阅读是一座随身携带的避难所: Literature/Essay/Reading_shelter.md
           - 禅与摩托车维修艺术: Literature/Essay/Zen_motor_maintanence.md
       - 文论:
@@ -172,6 +176,7 @@ nav:
           - 文字的力量: Literature/Literacy/Power_of_words.md
           - 沉默的大多数: Literature/Literacy/Silent_most.md
           - 给青年诗人的信: Literature/Literacy/To_young_poets.md
+          - 普鲁斯特的凝视: Literature/Literacy/Prust_gaze.md
           - 西方人文主义精神:
               - 人文主义和俄国形式主义: Literature/Literacy/Western_humanist/RussianFormalism.md
               - 新批评学派的主张与对新批评学派的批评: Literature/Literacy/Western_humanist/NewCriticism.md
@@ -207,6 +212,7 @@ nav:
           - 五号屠场: Literature/Novel/Slaughterhouse_five.md
           - 平凡的世界: Literature/Novel/Common_world.md
           - 沉默的病人: Literature/Novel/Silent_patient.md
+          - 包法利夫人: Literature/Novel/Madam_Bovary.md
           - 三个火枪手: Literature/Novel/Three_riflers.md
           - 雪落香杉树: Literature/Novel/Snow_falls.md
           - 潘神的迷宫: Literature/Novel/Labyrinth_pan.md
@@ -347,6 +353,7 @@ nav:
           - 433_minimum-genetic-mutation.md: ToDo/LeetCode/4/433_minimum-genetic-mutation.md
           - 435_non-overlapping-intervals.md: ToDo/LeetCode/4/435_non-overlapping-intervals.md
           - 442_find-all-duplicates-in-an-array.md: ToDo/LeetCode/4/442_find-all-duplicates-in-an-array.md
+          - 445_add-two-numbers-ii.md: ToDo/LeetCode/4/445_add-two-numbers-ii.md
           - 468_validate-ip-address.md: ToDo/LeetCode/4/468_validate-ip-address.md
           - 470_implement-rand10-using-rand7.md: ToDo/LeetCode/4/470_implement-rand10-using-rand7.md
           - 503_next-greater-element-ii.md: ToDo/LeetCode/5/503_next-greater-element-ii.md
