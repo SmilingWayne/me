@@ -46,6 +46,7 @@
 | 2182 | construct-string-with-repeat-limit | [Link](./2/2182_construct-string-with-repeat-limit.md) | Unknown | Unknown | Unknown |
 | 2191 | sort-the-jumbled-numbers | [Link](./2/2191_sort-the-jumbled-numbers.md) | Unknown | Unknown | Unknown |
 | 2496 | maximum-value-of-a-string-in-an-array | [Link](./2/2496_maximum-value-of-a-string-in-an-array.md) | Easy | String | Unknown |
+| 2600 | k-items-with-the-maximum-sum | [Link](./2/2600_k-items-with-the-maximum-sum.md) | Easy | If else | Unknown |
 | 3 | longest-substring-without-repeating-characters | [Link](./3/3_longest-substring-without-repeating-characters.md) | Unknown | Unknown | Unknown |
 | 32 | longest-valid-parentheses | [Link](./3/32_longest-valid-parentheses.md) | Unknown | Unknown | Unknown |
 | 334 | increasing-triplet-subsequence | [Link](./3/334_increasing-triplet-subsequence.md) | Unknown | Unknown | Unknown |
@@ -59,6 +60,7 @@
 | 43 | multiply-strings | [Link](./4/43_multiply-strings.md) | Unknown | Unknown | Unknown |
 | 433 | minimum-genetic-mutation | [Link](./4/433_minimum-genetic-mutation.md) | Unknown | Unknown | Unknown |
 | 435 | non-overlapping-intervals | [Link](./4/435_non-overlapping-intervals.md) | Unknown | Unknown | Unknown |
+| 436 | find-right-interval | [Link](./4/436_find-right-interval.md) | Medium | Sort + Bisect | Unknown |
 | 442 | find-all-duplicates-in-an-array | [Link](./4/442_find-all-duplicates-in-an-array.md) | Unknown | Unknown | Unknown |
 | 468 | validate-ip-address | [Link](./4/468_validate-ip-address.md) | Unknown | Unknown | Unknown |
 | 470 | implement-rand10-using-rand7 | [Link](./4/470_implement-rand10-using-rand7.md) | Unknown | Unknown | Unknown |
