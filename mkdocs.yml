@@ -66,6 +66,7 @@ nav:
       - 人类学/社会学:
           - 倦怠社会: Philosophy/Society_of_fatigue.md
           - 乡土中国: Philosophy/Rural_china.md
+          - 古代社会: Philosophy/Ancient_society.md
           - 福柯(牛津通识读本): Philosophy/Facult.md
           - 西太平洋上的航海者: Philosophy/Voyagers_western_pacific_ocean.md
           - 论人类不平等的起源与基础: Philosophy/Discours_linegalite.md
@@ -109,7 +110,7 @@ nav:
           - Plays/index.md
           - 戏剧:
               - 💖浮士德: Plays/Faust.md
-              - 广岛之恋: Plays/Hiroshima.md
+              - 🇫🇷广岛之恋: Plays/Hiroshima.md
               - 🇬🇧爱的徒劳: Plays/Loves_labors_lost.md
               - 🇬🇧奥赛罗: Plays/Othello.md
               - 🇬🇧麦克白: Plays/Macbeth.md
@@ -118,14 +119,14 @@ nav:
               - 🇬🇧理查二世: Plays/Richard_II.md
               - 🇬🇧暴风雨: Plays/Storms.md
               - 🇬🇧仲夏夜之梦: Plays/Mid_summer_nights_dream.md
-              - 海鸥: Plays/Seagull.md
-              - 美狄亚: Plays/Media.md
-              - 牡丹亭: Plays/Mu_dan_ting.md
-              - 桃花扇: Plays/Tao_hua_shan.md
-              - 铸剑·哈姆雷特: Plays/Swords_hamlet.md
-              - 圣女贞德: Plays/Jean_de_arc.md
+              - 🇷🇺海鸥: Plays/Seagull.md
+              - 🇬🇷美狄亚: Plays/Media.md
+              - 🇨🇳牡丹亭: Plays/Mu_dan_ting.md
+              - 🇨🇳桃花扇: Plays/Tao_hua_shan.md
+              - 🇨🇳铸剑·哈姆雷特: Plays/Swords_hamlet.md
+              - 🇬🇧圣女贞德: Plays/Jean_de_arc.md
               - 🇬🇧罗密欧与朱丽叶: Plays/Romeo_juliet.md
-              - 长明: Plays/Long_daylight.md
+              - 🇨🇳长明: Plays/Long_daylight.md
           - 影视:
               - 🇯🇵切腹: Plays/Seppuku.md
               - 🇺🇸慕尼黑: Plays/Munich.md
@@ -133,8 +134,8 @@ nav:
               - 🇫🇷精疲力尽: Plays/Exhausted.md
               - 🇫🇷五至七时的克莱奥: Plays/Cleo.md
               - 🇨🇳中国姑娘: Plays/La_chinioise.md
-              - 宇宙探索编辑部: Plays/A_journey_to_the_west.md
-              - 无主之作: Plays/Werk_ohne_autor.md
+              - 🇨🇳宇宙探索编辑部: Plays/A_journey_to_the_west.md
+              - 🇩🇪无主之作: Plays/Werk_ohne_autor.md
       - 随笔:
           - Literature/Essay/index.md
           - 小于一: Literature/Essay/Less_than_one.md
@@ -167,6 +168,7 @@ nav:
           - 西方正典: Literature/Literacy/Western_classic.md
           - 增广贤文: Literature/Literacy/Zeng_guang_xian_wen.md
           - 加缪手记: Literature/Literacy/Camus_script.md
+          - 魏尔伦: Literature/Literacy/Verlain.md
           - 🇫🇷巴黎评论: Literature/Literacy/Paris_review.md
           - 🇫🇷作家笔记: Literature/Literacy/Writers_notes.md
           - 天朝遥远: Literature/Literacy/Dynasty.md
@@ -206,6 +208,7 @@ nav:
           - 同情者: Literature/Novel/Sympathatic.md
           - 华氏451: Literature/Novel/Fahrenheit_451.md
           - 《1984》: Literature/Novel/1984.md
+          - 希腊神话合集: Literature/Novel/Greek/Myth_1.md
           - 撒马尔罕: Literature/Novel/Samarkhan.md
           - 生死疲劳: Literature/Novel/Forever_fatigue.md
           - 百年孤独: Literature/Novel/100_years_solitude.md
@@ -233,6 +236,7 @@ nav:
       - History/index.md
       - 笔记本:
           - 🇬🇷希腊笔记: History/Greece.md
+          - 十年历史: History/Culture_revo.md
           - 🇯🇵日本笔记: History/Japan_notes.md
           - 🇲🇱非洲笔记: History/Africa.md
           - 🇰🇿中亚笔记: History/Mid_asia.md
@@ -244,12 +248,16 @@ nav:
           - 🇮🇩印度尼西亚笔记: History/Indonesia.md
       - 书:
           - 🇫🇷记忆之场: History/Field_of_memory.md
+          - 🇪🇸阿尔罕布拉: History//Alhambra.md
           - 🇫🇷断头王后: History/Marie_antoinette.md
           - 战国歧途: History/Zhanguo_qitu.md
           - 荒诞医学史: History/Ridiculous_medics.md
           - 罗马帝国简史: History/Roman_empire_brief_history.md
           - 世界史碎片: History/World.md
+          - 世界史就是经济史: History/Econo_history.md
           - 西印度毁灭述略: History/Destroy_western_india.md
+          - 🇫🇷圣巴特洛缪大屠杀: History/San_bateromeo.md
+          - 🇺🇸崛起的前夜: History/US.md
           - 人类的群星闪耀时: History/Human_stars.md
           - 阿拉伯伊斯兰文化史: History/Arabian_islamic_history.md
           - 🇫🇷法国资产阶级史(上): History/Bourgeoisie.md
@@ -294,6 +302,13 @@ nav:
       - 事: ToDo/ToDo.md
       - LeetCode:
           - ToDo/LeetCode/index.md
+          - 自写代码:
+              - 检查是否平衡二叉树: ToDo/LeetCode/0/001_check-balance-binarytree.md
+              - 汉诺塔: ToDo/LeetCode/0/002_tower-of-hanoi.md
+              - 找到数组的深度: ToDo/LeetCode/0/003_find-the-depth-of-arrays.md
+              - 最长公共子串: ToDo/LeetCode/0/004_longest-common-string.md
+              - 让字符串对称的最小删除字符: ToDo/LeetCode/0/005_delete-min-words-making-string-symmetry.md
+              - A-star算法: ToDo/LeetCode/0/006_Astar.md
           - 模板: ToDo/LeetCode/Template.md
           - 2022/4/24: ToDo/LeetCode/2022.4.24 C++ 练习.md
           - 1_two-sum.md: ToDo/LeetCode/1/1_two-sum.md
@@ -324,6 +339,7 @@ nav:
           - 1452_people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.md: ToDo/LeetCode/1/1452_people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.md
           - 1461_check-if-a-string-contains-all-binary-codes-of-size-k.md: ToDo/LeetCode/1/1461_check-if-a-string-contains-all-binary-codes-of-size-k.md
           - 1487_making-file-names-unique.md: ToDo/LeetCode/1/1487_making-file-names-unique.md
+          - 15_3sum.md: ToDo/LeetCode/1/15_3sum.md
           - 1513_number-of-substrings-with-only-1s.md: ToDo/LeetCode/1/1513_number-of-substrings-with-only-1s.md
           - 1525_number-of-good-ways-to-split-a-string.md: ToDo/LeetCode/1/1525_number-of-good-ways-to-split-a-string.md
           - 1541_minimum-insertions-to-balance-a-parentheses-string.md: ToDo/LeetCode/1/1541_minimum-insertions-to-balance-a-parentheses-string.md
@@ -335,13 +351,20 @@ nav:
           - 19_remove-Nth-node-from-end-of-list.md: ToDo/LeetCode/1/19_remove-Nth-node-from-end-of-list.md
           - 2_add-two-numbers.md: ToDo/LeetCode/2/2_add-two-numbers.md
           - 20_valid-parentheses.md: ToDo/LeetCode/2/20_valid-parentheses.md
+          - 204_count-primes.md: ToDo/LeetCode/2/204_count-primes.md
+          - 2049_count-nodes-with-the-highest-score.md: ToDo/LeetCode/2/2049_count-nodes-with-the-highest-score.md
           - 206_reverse-linked-list.md: ToDo/LeetCode/2/206_reverse-linked-list.md
           - 216_combination-sum-iii.md: ToDo/LeetCode/2/216_combination-sum-iii.md
+          - 2178_maximum-split-of-positive-even-integers.md: ToDo/LeetCode/2/2178_maximum-split-of-positive-even-integers.md
           - 2182_construct-string-with-repeat-limit.md: ToDo/LeetCode/2/2182_construct-string-with-repeat-limit.md
           - 2191_sort-the-jumbled-numbers.md: ToDo/LeetCode/2/2191_sort-the-jumbled-numbers.md
+          - 2496_maximum-value-of-a-string-in-an-array.md: ToDo/LeetCode/2/2496_maximum-value-of-a-string-in-an-array.md
+          - 2600_k-items-with-the-maximum-sum.md: ToDo/LeetCode/2/2600_k-items-with-the-maximum-sum.md
           - 3_longest-substring-without-repeating-characters.md: ToDo/LeetCode/3/3_longest-substring-without-repeating-characters.md
           - 32_longest-valid-parentheses.md: ToDo/LeetCode/3/32_longest-valid-parentheses.md
+          - 322_coin-change.md: ToDo/LeetCode/3/322_coin-change.md
           - 334_increasing-triplet-subsequence.md: ToDo/LeetCode/3/334_increasing-triplet-subsequence.md
+          - 345_reverse-vowels-of-a-string.md: ToDo/LeetCode/3/345_reverse-vowels-of-a-string.md
           - 380_insert-delete-getrandom-o1.md: ToDo/LeetCode/3/380_insert-delete-getrandom-o1.md
           - 398_random-pick-index.md: ToDo/LeetCode/3/398_random-pick-index.md
           - 415_add-strings.md: ToDo/LeetCode/4/415_add-strings.md
@@ -352,8 +375,10 @@ nav:
           - 43_multiply-strings.md: ToDo/LeetCode/4/43_multiply-strings.md
           - 433_minimum-genetic-mutation.md: ToDo/LeetCode/4/433_minimum-genetic-mutation.md
           - 435_non-overlapping-intervals.md: ToDo/LeetCode/4/435_non-overlapping-intervals.md
+          - 436_find-right-interval.md: ToDo/LeetCode/4/436_find-right-interval.md
           - 442_find-all-duplicates-in-an-array.md: ToDo/LeetCode/4/442_find-all-duplicates-in-an-array.md
           - 445_add-two-numbers-ii.md: ToDo/LeetCode/4/445_add-two-numbers-ii.md
+          - 463_island-perimeter.md: ToDo/LeetCode/4/463_island-perimeter.md
           - 468_validate-ip-address.md: ToDo/LeetCode/4/468_validate-ip-address.md
           - 470_implement-rand10-using-rand7.md: ToDo/LeetCode/4/470_implement-rand10-using-rand7.md
           - 503_next-greater-element-ii.md: ToDo/LeetCode/5/503_next-greater-element-ii.md
@@ -369,6 +394,7 @@ nav:
           - 703_kth-largest-element-in-a-stream.md: ToDo/LeetCode/7/703_kth-largest-element-in-a-stream.md
           - 739_daily-temperatures.md: ToDo/LeetCode/7/739_daily-temperatures.md
           - 752_open-the-lock.md: ToDo/LeetCode/7/752_open-the-lock.md
+          - 766_toeplitz-matrix.md: ToDo/LeetCode/7/766_toeplitz-matrix.md
           - 780_reaching-points.md: ToDo/LeetCode/7/780_reaching-points.md
           - 816_ambiguous-coordinates.md: ToDo/LeetCode/8/816_ambiguous-coordinates.md
           - 819_most-common-word.md: ToDo/LeetCode/8/819_most-common-word.md
@@ -380,15 +406,18 @@ nav:
           - 883_projection-area-of-3d-shapes.md: ToDo/LeetCode/8/883_projection-area-of-3d-shapes.md
           - 894_all-possible-full-binary-trees.md: ToDo/LeetCode/8/894_all-possible-full-binary-trees.md
           - 905_sort-array-by-parity.md: ToDo/LeetCode/9/905_sort-array-by-parity.md
+          - 914_x-of-a-kind-in-a-deck-of-cards.md: ToDo/LeetCode/9/914_x-of-a-kind-in-a-deck-of-cards.md
           - 922_sort-array-by-parity-ii.md: ToDo/LeetCode/9/922_sort-array-by-parity-ii.md
           - 93_restore-ip-addresses.md: ToDo/LeetCode/9/93_restore-ip-addresses.md
           - 94_binary-tree-inorder-traversal.md: ToDo/LeetCode/9/94_binary-tree-inorder-traversal.md
           - 942_di-string-match.md: ToDo/LeetCode/9/942_di-string-match.md
+          - 945_minimum-increment-to-make-array-unique.md: ToDo/LeetCode/9/945_minimum-increment-to-make-array-unique.md
           - 954_array-of-doubled-pairs.md: ToDo/LeetCode/9/954_array-of-doubled-pairs.md
           - 981_time-based-key-value-store.md: ToDo/LeetCode/9/981_time-based-key-value-store.md
           - 16-19_interview.md: ToDo/LeetCode/Offer/16-19_interview.md
           - Offer_13_robot-moving-range.md: ToDo/LeetCode/Offer/13_robot-moving-range.md
           - Offer_14_cutting-ropes.md: ToDo/LeetCode/Offer/14_cutting-rope.md
+          - 36_er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof.md: ToDo/LeetCode/Offer/36_er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof.md
           - Offer_49_ugly-number.md: ToDo/LeetCode/Offer/49_ugly-number.md
 
   - 学习:
@@ -445,6 +474,7 @@ nav:
               - 第一章: Study/OR/ORExercise/Chapter1_wk.md
               - 第二章: Study/OR/ORExercise/Chapter2_wk.md
               - 第三章: Study/OR/ORExercise/Chapter3_wk.md
+              - 第四章: Study/OR/ORExercise/Chapter4_wk.md
               - 图论和网络: Study/OR/ORExercise/Chapter7_wk.md
       - 概率论:
           - 统计学基础: Study/Statistics/Statistics_method.md
@@ -467,6 +497,7 @@ nav:
           - 对...的理解: Study/PythonPackages/PythonPieces3.md
           - 带*的变量: Study/PythonPackages/PythonPieces4.md
           - 集合操作: Study/PythonPackages/PythonPieces5.md
+          - R语言数据集(Partial): Study/PythonPackages/Rdata.md
       - 小红书｜供应链管理:
           - Little's_Law: Study/Supplychain/LittlesLaw.md
           - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
@@ -513,6 +544,7 @@ nav:
           - 英文情诗(All this I did): Study/English/AllthisIdid.md
 
       - 制造与服务系统分析: Study/AMASS.md
+      - 暑期学校-智能决策与算法: Study/fleet.md
       - 发展经济学:
           - 重点提纲: Study/DevelopEco/chapter1.md
       - 管理学:
@@ -624,7 +656,9 @@ plugins:
       exclude:
         - index.md
       enabled: true
-
+  - blogging:
+      dirs: # The directories to be included
+        - Arts
 markdown_extensions:
   - admonition
   - meta
