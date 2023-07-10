@@ -20,8 +20,7 @@ statistics: true
     - 💖 “毕竟几人真得鹿，不知终日梦为鱼。”[^2]
 
     - 🧸 <font face = "American Typewriter" >INFP</font> / 谨慎的自由主义[^3]者 / 努力学习语言.ing。
-    
-    - 📝 我的书 / 影记录可以看[我的豆瓣](https://www.douban.com/people/174239371/)。那里和这里一样静悄悄。
+
 
 === "<font size = 6>:fontawesome-solid-book: </font><font size = 6 face = "savoye LET">About The NoteBook</font>"
 
@@ -38,6 +37,7 @@ statistics: true
     - 📮 邮箱 `xiaoxiaowayne@163.com`
 
 <br>
+
 
 <center> <font face = "Apple chancery" size = 5>Bienvenue sur mon site! 🌼</font></center>
 
