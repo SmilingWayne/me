@@ -2,8 +2,6 @@
 
 ##  ABM 是否合适：
 
-
-
 ## 设计模型：
 
 - Scope of the model: 模型的范围是什么？

@@ -6,6 +6,7 @@
     - [https://bbruceyuan.com/post/raycast-tutorial-1.html#_1-什么是-raycast0](https://bbruceyuan.com/post/raycast-tutorial-1.html#_1-什么是-raycast)
     - [https://www.raycast.com/](https://www.raycast.com/) : 官方链接
     - [https://manual.raycast.com/](https://manual.raycast.com/) : 官方链接
+    > 一款很好用的软件，快捷键爱好者狂喜。 
 
 - Mac上可以替代Spot light的工具。个人目前正在使用。
 - 其实是一个大一号的Spotlight。插件生态很友好，快捷键爱好者必备的用品。
@@ -17,6 +18,7 @@
 - ✅ 日期计算器：
     - days until June 5 2023
     - hours until MM DD YYYY 类似输入格式，可以替代日期倒计时功能
+    - days from June 5 2023 to July 1 2024，计算日期之间的天数
 - ✅ 货币计算器：💰
     - 你的金额 要转换的货币 转换成的货币，比如 `1200 rmb euro`，就会出现1200rmb等价的欧元。
 
@@ -27,4 +29,4 @@
 ### 自定义快捷键
 
 > 防止自己忘记，同时也算是做个记录📝
-- 查看历史剪贴板： ++ctrl+command+bracket-left++ （这个功能直接取代了我的copyless这个软件，可以说是很好上手）
+- 查看历史剪贴板： ++ctrl+command+bracket-left++ （这个功能直接取代了我的copyless软件，可以说是很好上手）
