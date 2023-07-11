@@ -97,6 +97,28 @@ $$ y_j \geq 0 \hspace{12pt} (i = 1,...,m)$$
 
 > 上表中 `规范约束` 指的是前文`对称形式`下求解目标函数的性质和约束条件的大小约束对应关系，即：求解极大对应“$\leq$”，而求解极小对应“$\geq$”
 
+### 2.1.2 对偶问题的矩阵表示
+
+- 我们考虑标准形式：
+
+$$\min c^T x$$
+
+$$\text{s.t.} \left\{ \begin{aligned} Ax = b \\ x \geq 0 \\ \end{aligned} \right.$$
+
+- 其对偶问题是：
+
+$$\max b^T y$$
+
+$$\text{s.t.} \left\{ \begin{aligned} A^Ty \leq c  \end{aligned} \right.$$
+
+---------
+
+- 同理，任何一种线性规划问题都可以写成标准形式并利用标准形式，写出对偶形式，比如我们考虑如下的问题。
+
+$$\min d^T x$$
+
+$$\text{s.t.} \left\{ \begin{aligned} Ax = b \\ x \geq 0 \\ \end{aligned} \right.$$
+
 
 ## 2.2 对偶理论
 

@@ -3,6 +3,38 @@
 
 ## 07.07 Afternoon
 
+Deterministic Model
+
+- 线性整数规划。
+
+1. Aviation Planning Problems
+    1. Schedule Design Problem. (Tactical)
+    2. Fleet Assign Problem. (Tactical)
+    3. Aircraft Routing. (Operational)
+    4. Crew Scheduling Problem
+    5. 
+- [x] FAP: 
+- Input: 
+    - A set of legs / fleets
+    - A set of fleets for each fleet we know the num of Aircrafts
+- output：
+    - Assign each leg a fleet
+- Assumption:
+    - The scheduling is repeated daily(weekly)
+- Objective:
+    - Max profit && min costs
+    - Max / min \sum \ sum x_{ij}; s.t. \sum_j x_{ij} \geq 1 \forall i \sum_i x_{ij} \leq 1; \forall j
+- Questions: 
+    - 不同的flights 之间是有关联关系的；传统models不可行	
+- [x] Time-Space Network：时空网络
+- G(N,E)
+- Node: N marked by n, represent a takeoff or landing at an airport.
+- Edges: 
+    - Flight edges: 代表航班
+    - Cycle edges: 代表在地面的(aircraft stay on the ground)
+    - Warp around edge：aircraft stay overnight
+
+----------
 
 
 |  Col  | Dep-station | Deptime | ArrS  |  Arr  |
@@ -384,10 +416,8 @@ $$Ax  = b \\ x  \geq 0$$
   
 !!! note "如何评估一个route是好还是不好？"
     - $\alpha_f$：为了cover 这个flight，需要付出多少的effort
-
     - 检验数： $\bar{c_r} = \sum_{f \in r} \alpha_f - \gamma + \beta_{s^+} - \beta_{s^-} - c_r$ （$\gamma$ 意思是多用一个Aft需要多付出的成本）
     - $\bar{c_r} = \sum_{f \in r} \alpha_f - \gamma + \beta_{s^+} - \beta_{s^-} - \sum_{f \in r} c_f$
-
     > 检查不同方案的reduced cost判断是否能...
 
 
@@ -435,7 +465,7 @@ $$Ax  = b \\ x  \geq 0$$
 ## Delay & Propagated Delay（延误和连锁延误）
 - 连锁延误：前一个航班延误了，这一个航班也跟着延误了。
     - 飞机有损伤的延误: $(\text{NDP}_A - \text{Buf}_{AB})^+$,这种延误很难用OR解决。
-    - （Non-Drop-Delay）PD: $PD_c = (\text{PD}_{B} - \text{Buf}_{BC})^+  = ((\text{NPP}_A - \text{Buf}_{AB})^+ - \text{Buf}^+_{BC}$ 
+    - （Non-Drop-Delay）$PD_c = (\text{PD}_{B} - \text{Buf}_{BC})^+  = ((\text{NPP}_A - \text{Buf}_{AB})^+ - \text{Buf}^+_{BC}$ 
     > 根据历史数据算一算延误时间，把时间放到飞行时间中去。 
     - $PD_B = \sum_d (\text{NDP}_{Ad} - \text{Buf}_{AB})^+ \times \text{Prob}_d = \sum_d (\text{NDP}_{Ad} - \text{Buf}_{AB})^+ - \text{Buf}_{BC})^+ \times \text{Prob}_d$
 
@@ -451,4 +481,6 @@ $$Ax  = b \\ x  \geq 0$$
 
 
 -----------
+
+
 

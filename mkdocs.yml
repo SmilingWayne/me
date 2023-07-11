@@ -697,7 +697,6 @@ markdown_extensions:
       block_tag: "pre"
   - toc:
       permalink: ⚓︎
-
 extra:
   social:
     - icon: fontawesome/brands/github
