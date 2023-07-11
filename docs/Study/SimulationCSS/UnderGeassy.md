@@ -2,8 +2,8 @@
 ## 文献：
 
 - Understanding effects of BIM on collaborative design and construction: An empirical study in China
-> BIM: Building Information Modeling
->> Owners, constructors, designers working together
+> BIM: Building Information Modeling，说白了就是一个3D的CAD，可以把建筑物构造变成三维的而不是二维的。
+> > Owners, constructors, designers working together
 > 8 concepts influencing BIM // 3 types
 
 - The co-creation of values-in-use at the front end of infrastructure development programs
@@ -47,10 +47,6 @@ Differentiation
 
     4. 模型行为检验（是否符合现实？）
 
-
-
-
-
 - 首先我们现实中需要完成**重大工程**（ 特性：项目的*临时性、独特性*）
 
 - 重大工程管理中**需要创新**，而重大工程中的创新依赖于**一个大的创新生态系统**多主体之间的紧密联系（依赖关系、合同关系、间接关系etc），与其他的“创新”有区别。
@@ -65,7 +61,7 @@ Differentiation
 
 针对这个模型，要做的事：
 > **描述** 🎯（生态系统网络中各方的行为？） 
->
+> 
 > rule-based：描述一些规则，对行为的**抽象**、**提取**
 > 
 > -> 宏观（国家政策差异？文化差异？）
