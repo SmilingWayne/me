@@ -8453,15 +8453,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#42" class="md-nav__link">
-    4.2 分支定界法
+  <a href="#42-branch-and-bound" class="md-nav__link">
+    4.2 分支定界（Branch and Bound）法
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#43" class="md-nav__link">
-    4.3 割平面法
+  <a href="#43-cutting-planes" class="md-nav__link">
+    4.3 割平面（Cutting Planes）法
   </a>
   
 </li>
@@ -10654,15 +10654,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#42" class="md-nav__link">
-    4.2 分支定界法
+  <a href="#42-branch-and-bound" class="md-nav__link">
+    4.2 分支定界（Branch and Bound）法
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#43" class="md-nav__link">
-    4.3 割平面法
+  <a href="#43-cutting-planes" class="md-nav__link">
+    4.3 割平面（Cutting Planes）法
   </a>
   
 </li>
@@ -10834,7 +10834,7 @@
 
 <h1 id="_1">整数规划<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 3114 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 10 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 3119 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 10 分钟</p>
 </div>
 <h2 id="41">4.1 问题和模型<a class="headerlink" href="#41" title="Permanent link">⚓︎</a></h2>
 <ul>
@@ -10845,7 +10845,7 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="42">4.2 分支定界法<a class="headerlink" href="#42" title="Permanent link">⚓︎</a></h2>
+<h2 id="42-branch-and-bound">4.2 分支定界（Branch and Bound）法<a class="headerlink" href="#42-branch-and-bound" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p>给整数规划的松弛问题分别添加两个不同的约束条件，将其分解成两个线性规划问题（子问题），子问题的可行域包含了原整数规划的全部可行解，舍弃了一部分非整数可行解（包含松弛问题的非整数最优解）。此时整数点就在可行域的边界上，从而有机会成为子问题的最优解。一般情况下分支还可以和定界相结合，只考虑最优值比界限“好”的分支，剔除最优解比界限“差”的分支。界限也是可以变化的，常用“好”的界限替代“坏”的界限</p>
@@ -10869,7 +10869,7 @@
 <li>修改上下界，按照以下规则：1⃣️ 在各个分支问题中，找出目标函数值最大者作为新的上界；2⃣️ 从已符合整数条件的分支中找出目标函数最大者作为新的下界；</li>
 <li>比较和去支。在各个分支的目标函数值中，如果有小于<span class="arithmatex">\(z\)</span>者，则去掉此支，表明此问题已经探清，否则继续分支。同样如果在分支过程中，相应的线性规划问题不可行，就不必再继续分支了。如此反复直到得到<span class="arithmatex">\(z = z^* = \overline{z}\)</span>为止。也就得到最终最优解<span class="arithmatex">\(x^{*}\)</span>。</li>
 </ul>
-<h2 id="43">4.3 割平面法<a class="headerlink" href="#43" title="Permanent link">⚓︎</a></h2>
+<h2 id="43-cutting-planes">4.3 割平面（Cutting Planes）法<a class="headerlink" href="#43-cutting-planes" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>基本思想：首先求解相应的线性规划，然后不断增加适当的线性约束，<strong>将原可行域割去不含整数可行解的一部分</strong>，最终得到一个具有整数坐标的极点的可行域，而该极点正好是原整数规划问题的最优解。</li>
 <li>
@@ -11091,7 +11091,7 @@ s.t \hspace{4pt} \left\{ \begin{aligned} \sum \limits^{n}_{i=1} x_{ij} = 1 , i =
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 28, 2023 11:50:29</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 12, 2023 01:40:10</span>
       
         <br>
         创建日期:

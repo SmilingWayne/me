@@ -10431,6 +10431,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#710-afternoon" class="md-nav__link">
+    7.10 Afternoon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#711-morning" class="md-nav__link">
+    7.11 Morning
+  </a>
+  
+    <nav class="md-nav" aria-label="7.11 Morning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-bin-packing-problem" class="md-nav__link">
+    The Bin Packing Problem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dw" class="md-nav__link">
+    DW 分解
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benders" class="md-nav__link">
+    Benders 分解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -10452,8 +10501,9 @@
 
 <h1 id="_1">大规模整数规划算法<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 22 个字 </p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 336 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 1 分钟</p>
 </div>
+<h2 id="710-afternoon">7.10 Afternoon<a class="headerlink" href="#710-afternoon" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p>仿射独立。</p>
@@ -10467,14 +10517,52 @@
 <li>
 <p>Functional Failure</p>
 </li>
+<li>
+<p>useless cut callback</p>
+</li>
 </ul>
+<blockquote>
+<p>一些比较没用的算法：蚁群那种的：都是随机的搜索，跟随你搜索范围的扩大而扩大。</p>
+</blockquote>
+<hr />
+<h2 id="711-morning">7.11 Morning<a class="headerlink" href="#711-morning" title="Permanent link">⚓︎</a></h2>
+<h3 id="the-bin-packing-problem">The Bin Packing Problem<a class="headerlink" href="#the-bin-packing-problem" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>给定 K个容量1的箱子和n个物品（i=1,...n），大小是s_i \in  (0, 1]</li>
+<li>
+<p>找到最小的能够装下所有物品的最小的箱子的数量。</p>
+</li>
+<li>
+<p>拉格朗日函数会给出一个下界，我们找一个最好的下界，也就是加一个max函数</p>
+</li>
+<li>拉格朗日对偶（LD）两次使用对偶把max-min转化成min。</li>
+<li>对偶Gap（Duality Gap)</li>
+</ul>
+<h3 id="dw">DW 分解<a class="headerlink" href="#dw" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>用来求解一些具有特殊性质的线性规划问题。<ul>
+<li>含有大量的0矩阵，约束条件都是一块一块地在对角线出现等；</li>
+<li>利用多面体表示定理，将等式约束F_1 x_1 = b_1, F_2 x_2 = b_2 转换成了许多的新变量；</li>
+</ul>
+</li>
+</ul>
+<p>!!! question 什么是多面体表示定理？
+    极点和极线具体怎么做？</p>
+<ul>
+<li>DW分解可以扩展成把矩阵扩展成不止两块的情况；</li>
+</ul>
+<hr />
+<h3 id="benders">Benders 分解<a class="headerlink" href="#benders" title="Permanent link">⚓︎</a></h3>
+<p><span class="arithmatex">\(\min \sum_{i \in M} \sum_{j \in N} c_{ij} x_{ij} + \sum_{j \in N}f_j y_j\)</span></p>
+<p><span class="arithmatex">\(\sum_{j \in N} x_{ij} = 1\)</span></p>
+<p><span class="arithmatex">\(\sum_{} x_{ij} q_i \leq y_i \omega\)</span></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 10, 2023 15:25:48</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 12, 2023 01:40:10</span>
       
         <br>
         创建日期:

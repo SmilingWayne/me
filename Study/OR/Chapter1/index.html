@@ -10567,7 +10567,7 @@
   <h1>线性规划、单纯形法（plus pro max版）</h1>
 
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 2903 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 10 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 2451 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 8 分钟</p>
 </div>
 <h2 id="_1">模型和解<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <hr />
@@ -10655,9 +10655,7 @@
 <li>重复2-4步骤，直到计算结束；</li>
 </ul>
 </li>
-<li>
-<p>单纯形法的延伸</p>
-<ul>
+<li>单纯形法的延伸<ul>
 <li><strong>人工变量法</strong>：如果不能在系数矩阵中观察到单位矩阵，可以通过添加虚构的人工变量来构造单位矩阵。（人工变量的取值一定要是0，所以如果检验数<span class="arithmatex">\(\sigma_j \leq 0\)</span>，基变量中依然有人工变量并且不为0，那么原问题无可行解<ul>
 <li>大M法：在目标函数中的人工变量乘M（极大数）【不适用计算机运算】</li>
 <li>两阶段法：Step.1 目标函数为最小化“所有人工变量和”(<span class="arithmatex">\(\mathop{\min} -x_6-x_7\)</span>)的线性规划问题，找到一个基本可行解（或者判断是否无可行解）；Step.2 去除人工变量，重新引入原问题的目标函数，利用第一阶段的解作为初始基本可行解</li>
@@ -10686,41 +10684,11 @@
 <p class="admonition-title">Tip</p>
 <p>感谢这个链接提供的帮助；<a href="https://www.bilibili.com/video/BV15E411H7it/">Bilbili</a></p>
 </div>
-<ul>
-<li><strong>列生成算法</strong>：切木材/钢筋/纸卷的现实问题：工厂生产的钢筋长度定值，但是客户的<strong>需求</strong>的长度不同，问如何在满足顾客需求情况下，让<strong>浪费</strong>最少？ <ul>
-<li>一个模型是基于IP的，但是不是很好；</li>
-<li>一个正常的建模是基于切割方案的数量的IP：<ul>
-<li><span class="arithmatex">\(n\)</span> : 切割方案的总数</li>
-<li><span class="arithmatex">\(x_j\)</span> : 按照第j种切割方案切割的钢筋的数量</li>
-<li><span class="arithmatex">\(a_{ij}\)</span>: 按照第j种切割方案切割下来的第i种小钢筋的数量</li>
-<li>
-<pre class="arithmatex">\[\mathop{\min} \sum \limits^{n}_{j = 1} x_j\]</pre>
-</li>
-<li>
-<pre class="arithmatex">\[s.t. \sum \limits^{n}_{j = 1}a_{ij}x_j \geq n_i, i = 1,2,3...,m\]</pre>
-</li>
-<li>
-<pre class="arithmatex">\[x_j \in Z^{+} , j \in {1,2,3,...,n}\]</pre>
-</li>
-<li>这个问题不是很好求解，因为本质上还是个IP；一般而言会先松弛，允许<span class="arithmatex">\(x_j\)</span> 先取正实数，变成LPM（线性规划松弛问题），得到的结果<strong>全部向上取整</strong>，一定可以得到原问题的可行解（是满足所有约束的，但是浪费会更大一点）</li>
-<li>下一个问题：如何确定切割的总共方法数？</li>
-<li>能否新加入一列（也就是一个切割方案），使得目标函数值更优呢？或者能不能证明不存在新加入方案使它最优”<ul>
-<li>找一个<span class="arithmatex">\(a_j\)</span>，使得<span class="arithmatex">\(c_j - c^T_B B^{-1} a_j &lt; 0\)</span></li>
-<li>转化为另一个<strong>优化问题</strong>，找到检验数的最小值，如果最小值都&gt;0，<strong>恰恰说明了</strong>原问题已经达到最优解了；
-<img alt="" src="../../picx/OR1/OR-01-02.png" /> </li>
-<li><span class="arithmatex">\(c_j\)</span> 始终是1；<span class="arithmatex">\(c^T_B B^{-1}\)</span> 是对偶最优解；
-<img alt="" src="../../picx/OR1/OR-01-04.png" />      </li>
-<li>所以看起来就像是生成了一个新的列一样。   </li>
-</ul>
 </li>
 </ul>
-</li>
-<li>Column Generation:在非基变量很多的情况下，传统单纯形法需要对比所有的非基变量，但是这种情况下并不需要这样做。对于基变量，可以只涉及很少的一两个非基变量，就实现出入基操作，而不需要遍历reduced cost。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<blockquote>
+<p>列生成算法的部分已迁移至<a href="../Chapter12/">第12章</a></p>
+</blockquote>
 <div class="admonition tips">
 <p class="admonition-title">Tips</p>
 <p>“线性”的含义：严格的比例、可叠加、可分性、确定性（所以整数规划是独立出来的）
@@ -10742,7 +10710,7 @@
 <li>标准化后的结果：</li>
 </ul>
 <pre class="arithmatex">\[\max \hspace{4pt} 2x_1 + x_2 + 0x_3 + 0x_4\]</pre>
-<pre class="arithmatex">\[\text{s.t.} \left\{ \begin{aligned} 3x_1 + 5x_2 + x_3 &amp; &amp; = 15 \\ 6x_1 + 2x_2 &amp; x_4 &amp; = 24 \\ x_1, x_2 , x_3, x_4&amp;\geq 0\end{aligned} \right.\]</pre>
+<pre class="arithmatex">\[\text{s.t.} \left\{ \begin{aligned} 3x_1 + 5x_2 + x_3 &amp; &amp; = 15 \\ 6x_1 + 2x_2 &amp; + x_4 &amp; = 24 \\ x_1, x_2 , x_3, x_4&amp;\geq 0\end{aligned} \right.\]</pre>
 <pre class="arithmatex">\[\def\arraystretch{1.5}
    \begin{array}{c|c|c|c|c|c|c}
    \hline
@@ -10754,13 +10722,16 @@
     &amp;  &amp;  &amp; 0 &amp; 0 &amp; -9/5 &amp; -8/5    \cr \hline
     \hline
 \end{array}\]</pre>
+<blockquote>
+<p>这一部分需要补充全。</p>
+</blockquote>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 4, 2023 00:52:09</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 12, 2023 01:40:10</span>
       
         <br>
         创建日期:
