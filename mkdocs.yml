@@ -661,6 +661,7 @@ plugins:
   - blogging:
       dirs: # The directories to be included
         - Arts
+
 markdown_extensions:
   - admonition
   - meta
