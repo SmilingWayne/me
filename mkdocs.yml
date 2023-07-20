@@ -242,6 +242,7 @@ nav:
           - 🇰🇿中亚笔记: History/Mid_asia.md
           - 🇷🇺苏联笔记: History/Soviet_union.md
           - 欧罗巴笔记: History/Europe.md
+          - 玛戈王后: History/Margot.md
           - 🇫🇷法兰西笔记: History/France.md
           - 🇸🇦阿拉伯笔记: History/Arabians.md
           - 🇮🇳印度笔记: History/India.md
@@ -349,6 +350,7 @@ nav:
           - 1750_minimum-length-of-string-after-deleting-similar-ends.md: ToDo/LeetCode/1/1750_minimum-length-of-string-after-deleting-similar-ends.md
           - 1823_find-the-winner-of-the-circular-game.md: ToDo/LeetCode/1/1823_find-the-winner-of-the-circular-game.md
           - 19_remove-Nth-node-from-end-of-list.md: ToDo/LeetCode/1/19_remove-Nth-node-from-end-of-list.md
+          - 1911_maximum_alternating-subsequence-sum.md: ToDo/LeetCode/1/1911_maximum_alternating-subsequence-sum.md
           - 2_add-two-numbers.md: ToDo/LeetCode/2/2_add-two-numbers.md
           - 20_valid-parentheses.md: ToDo/LeetCode/2/20_valid-parentheses.md
           - 204_count-primes.md: ToDo/LeetCode/2/204_count-primes.md
