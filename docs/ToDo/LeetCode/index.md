@@ -39,6 +39,7 @@
 | 1750 | minimum-length-of-string-after-deleting-similar-ends | [Link](./1/1750_minimum-length-of-string-after-deleting-similar-ends.md) | Unknown | Unknown | Unknown |
 | 1823 | find-the-winner-of-the-circular-game | [Link](./1/1823_find-the-winner-of-the-circular-game.md) | Unknown | Unknown | Unknown |
 | 19 | remove-Nth-node-from-end-of-list | [Link](./1/19_remove-Nth-node-from-end-of-list.md) | Unknown | Unknown | Unknown |
+| 1911 | maximum_alternating-subsequence-sum.md | [Link](./1/1911_maximum_alternating-subsequence-sum.md) | Medium | DP | Unknown |
 | 2 | add-two-numbers | [Link](./2/2_add-two-numbers.md) | Unknown | Unknown | Unknown |
 | 20 | valid-parentheses | [Link](./2/20_valid-parentheses.md) | Easy | Stack, String | Unknown |
 | 206 | reverse-linked-list | [Link](./2/206_reverse-linked-list.md) | Unknown | Unknown | Unknown |
