@@ -87,6 +87,7 @@ nav:
               - 🇫🇷愤怒与神秘: Poems/Anger_and_mystery.md
               - 🇫🇷恶之花: Poems/Fleurs_du_mal.md
               - 🇮🇹神曲: Poems/Divine_comedy.md
+              - 🇬🇧失乐园: Poems/Paradise_lost.md
               - 🇷🇺是你在歌唱？是我在遐想: Poems/Yesenin.md
               - 🇷🇺穿裤子的云: Poems/Mayakovsky.md
               - 🇵🇹卢济塔尼亚人之歌: Poems/Luzitania.md
@@ -94,6 +95,7 @@ nav:
               - 🇮🇹耶路撒冷的解放: Poems/Jerusalem_liberation.md
               - 生命与希望之歌: Poems/Poems_de_life_hope.md
               - 🇬🇷伊利亚特: Poems/Illiad.md
+              - 🇬🇷奥德赛: Poems/Odyssey.md
               - 🇱🇧纪伯伦诗选: Poems/Gibran.md
               - 🇩🇪德国，一个冬天的童话: Poems/German_winter_fairytale.md
               - 🇬🇧坎特伯雷故事集: Poems/Canterbery.md
@@ -206,6 +208,7 @@ nav:
           - 双城记: Literature/Novel/Stories_of_two_cities.md
           - 罗生门: Literature/Novel/Rashomon.md
           - 同情者: Literature/Novel/Sympathatic.md
+          - 巨人传: Literature/Novel/Giants.md
           - 华氏451: Literature/Novel/Fahrenheit_451.md
           - 《1984》: Literature/Novel/1984.md
           - 希腊神话合集: Literature/Novel/Greek/Myth_1.md
@@ -257,7 +260,6 @@ nav:
           - 世界史碎片: History/World.md
           - 世界史就是经济史: History/Econo_history.md
           - 西印度毁灭述略: History/Destroy_western_india.md
-          - 🇫🇷圣巴特洛缪大屠杀: History/San_bateromeo.md
           - 🇺🇸崛起的前夜: History/US.md
           - 人类的群星闪耀时: History/Human_stars.md
           - 阿拉伯伊斯兰文化史: History/Arabian_islamic_history.md
@@ -549,6 +551,7 @@ nav:
       - 暑期学校-智能决策与算法: Study/fleet.md
       - 发展经济学:
           - 重点提纲: Study/DevelopEco/chapter1.md
+      - 国际贸易: Study/IntTrad/InternationalTrade.md
       - 管理学:
           - 管理学导论: Study/Management/Management.md
           - 重点: Study/Management/Remain.md
@@ -658,9 +661,9 @@ plugins:
       exclude:
         - index.md
       enabled: true
-  - blogging:
-      dirs: # The directories to be included
-        - Arts
+#   - blogging:
+#       dirs: # The directories to be included
+#         - Arts
 
 markdown_extensions:
   - admonition

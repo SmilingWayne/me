@@ -11,7 +11,7 @@ statistics: true
 
 === "<font size = 6>:fontawesome-solid-paw: </font><font size = 6 face = "savoye LET" >About Me</font>"
 
-    - 🧑‍🎓 一个时刻想要变得不普通的普通人。你可以叫我 "笑笑" . 
+    - 🧑‍🎓 一个时刻想要变得不普通的普通人。你可以叫我 "笑笑" 。
 
     - 📖 喜欢阅读，有时观影，偶尔编程 :material-language-python: | :material-language-swift: | :material-language-java:，不事劳作。
 
@@ -19,7 +19,7 @@ statistics: true
 
     - 💖 “毕竟几人真得鹿，不知终日梦为鱼。”[^2]
 
-    - 🧸 <font face = "American Typewriter" >INFP</font> / 谨慎的自由主义[^3]者 / 努力学习语言.ing。
+    - 🧸 <font face = "American Typewriter" >INFJ-T</font> / 谨慎的自由主义[^3]者 / 努力学习语言中。
 
 
 === "<font size = 6>:fontawesome-solid-book: </font><font size = 6 face = "savoye LET">About The NoteBook</font>"
@@ -34,8 +34,12 @@ statistics: true
 
 === "<font size = 6>:fontawesome-solid-envelope: </font><font size = 6 face = "savoye LET">Contact Me</font>"
 
-    - 📮 邮箱 `xiaoxiaowayne@163.com`
+    - :fontawesome-solid-envelope:  `xiaoxiaowayne@163.com`
+    - :fontawesome-brands-github: [传送门](https://github.com/SmilingWayne)
+    - 小红书: Wayne是笑笑🦆, ID：934340072
 
+
+<!-- brands/regular/solid -->
 <br>
 
 
@@ -46,9 +50,9 @@ statistics: true
 - 📱 移动端：点击左上角图标选择内容；
 - 🔍 搜索：支持中文检索。
 
-[^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.
+[^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.(From WiKi)
 [^2]: 语出宋代黄庭坚[《杂诗七首》](https://www.gushici.net/shici/102/102214.html)。
-[^3]: Liberalism is a political and moral philosophy based on the rights of the individual, liberty, consent of the governed, political equality and equality before the law. (From Wiki)
+[^3]: Liberalism is a political and moral philosophy based on the rights of the individual, liberty, consent of the governed, political equality and equality before the law. (From WiKi)
 
 
 

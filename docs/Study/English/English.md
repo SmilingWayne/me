@@ -98,6 +98,7 @@ ca. 大约（特指日期近似）
 ===  "4"
     distress 痛苦、忧虑、贫困、不幸
 
+
     haunt ?
 
     torment 折磨，令人痛苦的东西
@@ -165,4 +166,18 @@ ca. 大约（特指日期近似）
 
     compartment 卧房，隔间
 
-    
+
+
+> Nowadays, there has been growing awareness that ... / plays a very significant role in  
+>
+> We college students also have to take our responsibility 
+>
+> - as adults, Being independent of ... as soon as possible lightens the financial burden on them
+>
+> - fulfilling our filial duty to the best of our abilities allows them to enjoy life in mild life years
+>
+> highly motivated students..., unmotivated students, in contrast, ...
+>
+> In addition, proper methods are a contributing factor in ...
+>
+> 
