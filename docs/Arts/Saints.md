@@ -1,5 +1,7 @@
 # 关于西方艺术中的圣徒
 
+!!! abstract "关于"
+    内容参考[传送门](https://www.bilibili.com/video/BV1Rv4y157df)链接。
 
 - 圣彼得：
     - 耶稣的大弟子，持有钥匙🔑，控制凡人升入天堂的钥匙。
