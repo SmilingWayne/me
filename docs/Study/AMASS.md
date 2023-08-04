@@ -194,7 +194,6 @@
 - Throughput and Capacity
 
   - **<u>*Capacity is the maximum sustainable throughput.*</u>**
-  - ![Screen Shot 2021-12-26 at 7.45.06 PM](/Study/picx/AMASS-pics/Screen Shot 2021-12-26 at 7.45.06 PM.png)
   - 一种是input rate限制，一种是demand rate限制，一种是system capacity限制
 
 - 为何throughput analysis很重要？

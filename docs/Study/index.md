@@ -21,7 +21,7 @@
     - [ ] [$\LaTeX$篇](./TextEdit/LaTeX/LatexNotes.md)；
     - [ ] Markdown篇，有好几篇。
     - [ ] [Overleaf实例](./TextEdit/LaTeX/Overleaf.md)
-- [ ] 果系使用指南（6/x）随缘更新，本是Apple开发笔记，但是（由于懒惰）逐渐退化成了macOS/iOS使用技巧与黑科技分享；
+- [ ] [果系使用指南](./Swift/SwiftBasics.md)（6/x）随缘更新，本是Apple开发笔记，但是（由于懒惰）逐渐退化成了macOS/iOS使用技巧与黑科技分享；
 - [ ] 微积分： 实际上是数学二，慢慢补坑；
 - [ ] 线性代数：希望我能够再好好学学；
 - [ ] 概率论与统计学综合（7/x）：某人学得最差的一门数学课；
