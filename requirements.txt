@@ -3,7 +3,7 @@ numpy==1.23.3
 mkdocs-material==9.1.21
 mkdocs-git-revision-date-localized-plugin==1.1.0
 mkdocs-git-authors-plugin==0.7.0
-jieba==0.42.1
-mkdocs-statistics-plugin==0.1.2
-mkdocs-mermaid2-plugin==0.6.0
-mkdocs-blogging-plugin==2.2.9
+jieba
+mkdocs-statistics-plugin
+mkdocs-mermaid2-plugin
+mkdocs-blogging-plugin
