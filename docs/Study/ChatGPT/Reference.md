@@ -11,11 +11,12 @@
 
 - [https://github.com/reorx/awesome-chatgpt-api](https://github.com/reorx/awesome-chatgpt-api)；
 
-- [https://app.slack.com/workspace-signin?redir=%2Fgantry%2Fauth%3Fapp%3Dclient%26lc%3D1682178349%26return_to%3D%252Fclient%252FT05569L0T2L%252F%26teams%3D](Claude)：Claude，OpenAI前科学家搞的，效果很不错，一些特定回答水平已经超过ChatGPT。
+- [Claude](https://app.slack.com/workspace-signin?redir=%2Fgantry%2Fauth%3Fapp%3Dclient%26lc%3D1682178349%26return_to%3D%252Fclient%252FT05569L0T2L%252F%26teams%3D)：Claude，OpenAI前科学家搞的，效果很不错，一些特定回答水平已经超过ChatGPT。
   - 个人感觉Claude在解决“单次提问型问题”上思路有时超过ChatGPT，但是写代码和上下文逻辑理解是比较落后的
   - 一个典型的例子是通过和他沟通我的毕业论文，他很精确地给出了一个量化思路；但是GPT比较浮于表面
   - 另一个典型例子是解决Excel的问题时候，他给出的步骤往往非常详尽。
   - 免费，但是现在需要梯子了。
+  - 最新更新：大家都快去用他家的Claude 2！！！谷歌邮箱注册，可以直接读10MB以内的PDF文档！而且还是免费的！（要梯子），希望尽快开通API！
 --------------
 
 

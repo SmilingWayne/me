@@ -1,8 +1,4 @@
 # 祖传秘籍
 
-
-<figure markdown>
-![](../../Study/)
-
-</figure>
-
+!!! abstract "待补充"
+    ？

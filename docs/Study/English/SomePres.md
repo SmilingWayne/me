@@ -1,6 +1,9 @@
 
 # Virginia Woolf~
 
+!!! abstract "About"
+    是大一英语课的一次汇报的电子版稿件。历经了第一次macOS浩劫（指发生于2020年7月27日的误删系统事件）后依然通过印象笔记的云笔记功能保存下来，成为为数不多的大一英语课电子文物。特记录如下。
+
 Hello everyone, have you ever finished reading some books and felt shocked in the end, can’t wait to shout at the writer: What does the novel talk about? It doesn’t make any sense. Well, today the book I’m goona talk about is just like that. Here’s The Mark On the Wall, written by Virginia Woolf and first published in 1919.
 
 Before I start my introduction part, I have to admit that the first time I saw the end of this novel, I felt like an innocent boy who is tricked by is closest friend in Halloween. I mean, it’s too ridiculous for me to accept that. You know, some kind of, wired, right? But if you dig into that genre, the Stream of Consciousness novel, you can never forget the beauty of Woolf.

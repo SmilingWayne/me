@@ -661,9 +661,9 @@ plugins:
       exclude:
         - index.md
       enabled: true
-#   - blogging:
-#       dirs: # The directories to be included
-#         - Arts
+  - blogging:
+      dirs: # The directories to be included
+        - Arts
 
 markdown_extensions:
   - admonition
