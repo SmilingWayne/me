@@ -71,3 +71,11 @@
     en = in  
 
     les 复数 
+
+
+- si 如果，si l‘amour existe 如果爱存在
+
+
+- 关系代词qui， que， ou 关系代词，代替前文出现过的东西（类似英文中的that / who / where）
+
+- Je connais une femma 
