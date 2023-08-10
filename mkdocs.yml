@@ -138,6 +138,7 @@ nav:
               - 🇨🇳中国姑娘: Plays/La_chinioise.md
               - 🇨🇳宇宙探索编辑部: Plays/A_journey_to_the_west.md
               - 🇩🇪无主之作: Plays/Werk_ohne_autor.md
+              - 🇨🇦空中浩劫: Plays/Air_crash_investigation.md
       - 随笔:
           - Literature/Essay/index.md
           - 小于一: Literature/Essay/Less_than_one.md
@@ -556,10 +557,11 @@ nav:
           - 管理学导论: Study/Management/Management.md
           - 重点: Study/Management/Remain.md
       - VScode技巧: Study/Vscode/keys.md
-      - ChatGPT:
+      - 人工智能工具们:
           - 安装: Study/ChatGPT/Register.md
           - 其他AI工具: Study/ChatGPT/Reference.md
-          - 使用技巧: Study/ChatGPT/Prompt1.md
+          - GPT Prompt技巧: Study/ChatGPT/Prompt1.md
+          - Stable Diffusion 部署管窥: Study/ChatGPT/StableDiffusion.md
           - 古登堡计划:
               - 专有名词释疑: Study/ChatGPT/Knowledge/Terms.md
 
