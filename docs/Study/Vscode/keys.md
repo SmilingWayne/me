@@ -32,10 +32,25 @@
 |    <font size = 4>移动到文本最开头</font>     | <font size = 4>⌘ + ↑</font>          | <font size = 4>Ctrl + ↑</font>         |
 |    <font size = 4>移动到文本最末尾</font>     | <font size = 4>⌘ + ↓</font>          | <font size = 4>Ctrl + ↓</font>         |
 |      <font size = 4>跳跃到某一行</font>       | <font size = 4>ctrl + G</font>       | <font size = 4>Ctrl + G</font>         |
-|      <font size = 4>分屏到右边</font>       | <font size = 4>command + \</font>       | <font size = 4>Ctrl + \</font>         |
+|       <font size = 4>分屏到右边</font>        | <font size = 4>command + \</font>    | <font size = 4>Ctrl + \</font>         |
 
 
 
 ------
 
 - `launch.json`： 用来debug的文件
+- 更换ARM架构的Apple Silicon之后，VS code 提醒
+
+```text
+You are running an emulated version of Visual Studio Code. For better performance download the native arm64 version of Visual Studio Code build for your machine.
+```
+
+> 表明有更加高效的VS code，自己现在用的是模拟版；解决方法是去官网下载专供Apple Silicon的VScode并最好把自己原来的删除掉（不然你用快捷键打开可能打开的还是原版）
+>
+
+
+- 什么是App的冷启动和热启动？
+    - **冷启动**：当启动应用时，后台没有该应用的进程，这时系统会重新创建一个新的进程分配给该应用；
+    - **热启动**：当启动应用时，后台已有该应用的进程（例：按home键回到桌面，但是该应用的进程是依然会保留在后台，可进入任务列表查看），所以在已有进程的情况下，这种启动会从已有的进程中来启动应用；
+
+> 用ARM特供的VScode 冷启动速度明显流畅快速了很多。

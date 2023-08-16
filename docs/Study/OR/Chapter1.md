@@ -8,7 +8,7 @@
 
 $$\mathop{\max}(\mathop{\min})z = \sum^{n}_{j = 1}{c_jx_j}$$
 
-$$s.t. \sum^{n}_{j = 1}{a_{ij} }{x_j} \leq ( =, \geq) b_i , (i = 1,...m)$$
+$$\text{s.t.} \sum^{n}_{j = 1}{a_{ij} }{x_j} \leq ( =, \geq) b_i , (i = 1,...m)$$
 
 $$x_j \geq 0, (j = 1,...n)$$
 
@@ -137,3 +137,13 @@ $$\def\arraystretch{1.5}
 
 
 > 这一部分需要补充全。
+
+
+> Operations Research： 台湾翻译成“作业研究”，我更喜欢国内的这个翻译：“运筹学”
+>
+> - Introduction to LP
+> - Geometric Interpretation of LP
+> - Simplex Method
+> - Duality and Sensitivity Analysis
+> - Interior Point Method （摆脱了Simplex Method的框架，从内部逼近；在有限时间内的多项式算法）
+> - Related Topics
