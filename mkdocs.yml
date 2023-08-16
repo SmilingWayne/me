@@ -539,6 +539,7 @@ nav:
           - Apple的奇奇怪怪: Study/Swift/AppleScript.md
           - Swift基础: Study/Swift/SwiftBasics.md
           - 软件推荐之Raycast: Study/Swift/Ray.md
+          - macOS下寻找电子书的一些方法: Study/Swift/FindBooks.md
       - 语言学习:
           - 法语笔记: Study/English/French.md
           - 英语笔记: Study/English/English.md
@@ -547,8 +548,8 @@ nav:
           - 一些零散的英语笔记: Study/English/SomePres.md
           - 英语文学批评: Study/English/LiteraryCriticism.md
           - 英文情诗(All this I did): Study/English/AllthisIdid.md
-
       - 制造与服务系统分析: Study/AMASS.md
+      - 一些高中笔记: Study/HighSchool.md
       - 暑期学校-智能决策与算法: Study/fleet.md
       - 发展经济学:
           - 重点提纲: Study/DevelopEco/chapter1.md
@@ -577,6 +578,7 @@ nav:
           - 战争: Study/Talks/Russia.md
           - 知识分享: Study/Talks/Knowledge_share.md
           - 语言: Study/Talks/About_language.md
+
       - 计算社会学｜复杂系统｜仿真:
           - 基于主体的建模方法: Study/SimulationCSS/AboutABM.md
           - 复杂系统: Study/SimulationCSS/Notes.md
