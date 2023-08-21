@@ -6,8 +6,7 @@
 
 关于爱情以及誓言，以后有空填补上。
 
-B站有戏剧版本：
-`https://www.bilibili.com/video/BV1S54y1D7bA/`
+B站有戏剧版本：[传送门](https://www.bilibili.com/video/BV1S54y1D7bA/);
 
 ## 摘记
 ----

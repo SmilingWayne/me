@@ -18,30 +18,58 @@ All this I would gladly have forgone for the sake of one minute of your company,
 > 一首情诗
 >
 > delve 钻研，迷人的，妩媚的
+> 
 > tune in
+> 
 > sit in for rows
+> 
 > peer review
+> 
 > non-technically-oriented
+> 
 > corrosive: 腐蚀的
+> 
 > malevolent：恶意，狠毒
+> 
 > coup：政变？
+> 
 > enraptured = be captured by
+> 
 > Jekyll and Hyde situation 双重人格
+> 
 > hypnotized：使着迷、催眠、恍惚
+> 
 > cicadas：蝉壳
+> 
 > emerald：绿宝石、祖母绿、翡翠？
+> 
 > ponderously 笨重地、生硬地
+> 
 > murderously 
+> 
 > astringent：收敛的、涩的
+> 
 > hoarse 嘶哑的
+> 
 > sleek 圆滑的
+> 
 > cobweb 蛛网、圈套
+> 
 > heather 欧石楠
+> 
 > squeak 告密、吱吱声
+> 
 > skittering 深红的，鲜红的，罪恶深的
+> 
 > **cornflower 矢车菊**
+> 
 > glossy 光滑的，有光泽的
+> 
 > raven 渡鸦
+> 
 > rattlesnake 响尾蛇
+> 
 > admonishment 训诫，警告
+> 
 > crisp
+> 
