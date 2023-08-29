@@ -14,6 +14,7 @@
 - [x] **管理学**（4/4）毕竟是做管理的！（理直气壮）
 - [x] Python 包推荐（8/8） 目前停更；
 - [x] **制造与服务系统分析**(1/1)，AKA：“运营管理”。我的物流启蒙～ Analysis of Manufacturing And Service System (AMASS)
+- [x] [高中文学笔记](./HighSchool.md) (1/1) 
 
 
 ## 🐌 正在更新
