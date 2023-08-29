@@ -462,6 +462,9 @@ nav:
           - chapter3: Study/LinearAlgebra/Chapter3.md
           - chapter4: Study/LinearAlgebra/Chapter4.md
           - chapter5: Study/LinearAlgebra/Chapter5.md
+          - MIT | Course_1: Study/LinearAlgebra/MIT_course_1.md
+          - MIT | Course_2: Study/LinearAlgebra/MIT_course_2.md
+          - MIT | Course_3: Study/LinearAlgebra/MIT_course_3.md
       - 运筹学:
           - Study/OR/index.md
           - 线性规划、单纯形法（plus pro max版）: Study/OR/Chapter1.md
@@ -570,11 +573,13 @@ nav:
       - 我的碎碎念:
           - 我的2022: Study/Talks/My2022.md
           - 关于仙林: Study/Talks/About_xianlin.md
+          - 一些歌词: Study/Talks/Music_lines.md
           - 荐文: Study/Talks/Articles_recomend.md
           - 荐书: Study/Talks/Books_recomend.md
           - 古典音乐: Study/Talks/Classical_music.md
           - 女性主义: Study/Talks/Feminism_talks.md
           - 长者: Study/Talks/Him.md
+          - 关于记忆和记忆崇拜: Study/Talks/About_memory.md
           - 没有整理的: Study/Talks/pieces.md
           - 战争: Study/Talks/Russia.md
           - 知识分享: Study/Talks/Knowledge_share.md
@@ -651,24 +656,24 @@ plugins:
   - search:
       separator: '[\s\u200b\-]'
       lang: zh
-  - git-authors:
-      show_contribution: true
-      exclude:
-        - index.md
-      enabled: true
-  - git-revision-date-localized:
-      type: datetime
-      custom_format: "%d %B %Y"
-      timezone: Asia/Shanghai
-      locale: en
-      fallback_to_build_date: false
-      enable_creation_date: true
-      exclude:
-        - index.md
-      enabled: true
-  - blogging:
-      dirs: # The directories to be included
-        - Arts
+#   - git-authors:
+#       show_contribution: true
+#       exclude:
+#         - index.md
+#       enabled: true
+#   - git-revision-date-localized:
+#       type: datetime
+#       custom_format: "%d %B %Y"
+#       timezone: Asia/Shanghai
+#       locale: en
+#       fallback_to_build_date: false
+#       enable_creation_date: true
+#       exclude:
+#         - index.md
+#       enabled: true
+#   - blogging:
+#       dirs: # The directories to be included
+#         - Arts
 
 markdown_extensions:
   - admonition
