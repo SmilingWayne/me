@@ -87,6 +87,7 @@ nav:
               - 散落碎片: Poems/Missing.md
               - 🇫🇷愤怒与神秘: Poems/Anger_and_mystery.md
               - 🇫🇷恶之花: Poems/Fleurs_du_mal.md
+              - 🇫🇷烧酒与爱情: Poems/Shochu_and_love.md
               - 🇮🇹神曲: Poems/Divine_comedy.md
               - 🇬🇧失乐园: Poems/Paradise_lost.md
               - 🇷🇺是你在歌唱？是我在遐想: Poems/Yesenin.md
@@ -144,6 +145,7 @@ nav:
           - Literature/Essay/index.md
           - 小于一: Literature/Essay/Less_than_one.md
           - 二手时间: Literature/Essay/Second_hand_time.md
+          - 问题之书: Literature/Essay/Book_of_questions.md
           - 冲绳札记: Literature/Essay/Chongshen.md
           - 记忆记忆: Literature/Essay/Remember_memory.md
           - 火的记忆: Literature/Essay/Memory_fire.md
@@ -182,6 +184,7 @@ nav:
           - 文字的力量: Literature/Literacy/Power_of_words.md
           - 沉默的大多数: Literature/Literacy/Silent_most.md
           - 给青年诗人的信: Literature/Literacy/To_young_poets.md
+          - 英国文学中的海洋: Literature/Literacy/British_literature_sea.md
           - 普鲁斯特的凝视: Literature/Literacy/Prust_gaze.md
           - 西方人文主义精神:
               - 人文主义和俄国形式主义: Literature/Literacy/Western_humanist/RussianFormalism.md
@@ -465,6 +468,8 @@ nav:
           - MIT | Course_1: Study/LinearAlgebra/MIT_course_1.md
           - MIT | Course_2: Study/LinearAlgebra/MIT_course_2.md
           - MIT | Course_3: Study/LinearAlgebra/MIT_course_3.md
+          - MIT | Course_4: Study/LinearAlgebra/MIT_course_4.md
+          - MIT | Course_5: Study/LinearAlgebra/MIT_course_5.md
       - 运筹学:
           - Study/OR/index.md
           - 线性规划、单纯形法（plus pro max版）: Study/OR/Chapter1.md
@@ -479,6 +484,8 @@ nav:
           - 排队论: Study/OR/Chapter9.md
           - 仓储论（EOQ模型和它的一万个分身）: Study/OR/Chapter10.md
           - 博弈论: Study/OR/Chapter11.md
+          - 求解器使用:
+              - OR-tools_1: Study/OR/Solvers/Ortools.md
           - 练习题:
               - 第一章: Study/OR/ORExercise/Chapter1_wk.md
               - 第二章: Study/OR/ORExercise/Chapter2_wk.md
@@ -500,7 +507,9 @@ nav:
           - pipreqs: Study/PythonPackages/PIPREQS.md
           - Python二分排序函数Bisect: Study/PythonPackages/PythonBisect.md
           - 微信读书可视化: Study/PythonPackages/PythonPieces6.md
+          - Python｜一些命令行: Study/PythonPackages/PythonPieces7.md
           - matplotlib技巧: Study/PythonPackages/Matplotlib.md
+          - Deque-小抄: Study/PythonPackages/Python_deque.md
           - Itertools-小抄: Study/PythonPackages/PythonPieces1.md
           - NamedTuple-小抄: Study/PythonPackages/PythonPieces2.md
           - 对...的理解: Study/PythonPackages/PythonPieces3.md
@@ -656,24 +665,24 @@ plugins:
   - search:
       separator: '[\s\u200b\-]'
       lang: zh
-#   - git-authors:
-#       show_contribution: true
-#       exclude:
-#         - index.md
-#       enabled: true
-#   - git-revision-date-localized:
-#       type: datetime
-#       custom_format: "%d %B %Y"
-#       timezone: Asia/Shanghai
-#       locale: en
-#       fallback_to_build_date: false
-#       enable_creation_date: true
-#       exclude:
-#         - index.md
-#       enabled: true
-#   - blogging:
-#       dirs: # The directories to be included
-#         - Arts
+  - git-authors:
+      show_contribution: true
+      exclude:
+        - index.md
+      enabled: true
+  - git-revision-date-localized:
+      type: datetime
+      custom_format: "%d %B %Y"
+      timezone: Asia/Shanghai
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
+      exclude:
+        - index.md
+      enabled: true
+  - blogging:
+      dirs: # The directories to be included
+        - Arts
 
 markdown_extensions:
   - admonition

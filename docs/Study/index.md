@@ -1,7 +1,7 @@
 # 📒 我的学习笔记
 
 !!! Tips "鸡汤"
-    <font size = 4>时刻让自己变得不普通。</font>
+    时刻让自己变得不普通。
 
 > 内容很杂。简单做了个分类。
 
@@ -20,12 +20,12 @@
 ## 🐌 正在更新
 - [ ] **文本编辑**（10/10）随缘更新，目测会长期更新。
     - [ ] [$\LaTeX$篇](./TextEdit/LaTeX/LatexNotes.md)；
-    - [ ] Markdown篇，有好几篇。
+    - [x] Markdown篇，有好几篇，推荐[快速入门](./TextEdit/Markdown/MarkdownQuickStart.md)。
     - [ ] [Overleaf实例](./TextEdit/LaTeX/Overleaf.md)
 - [ ] [果系使用指南](./Swift/SwiftBasics.md)（6/x）随缘更新，本是Apple开发笔记，但是（由于懒惰）逐渐退化成了macOS/iOS使用技巧与黑科技分享；
 - [ ] 微积分： 实际上是数学二，慢慢补坑；
-- [ ] 线性代数：希望我能够再好好学学；
-- [ ] 概率论与统计学综合（7/x）：某人学得最差的一门数学课；
+- [ ] 线性代数：希望我能够再好好学学；正在有序推进MIT线代；
+- [ ] 概率论与统计学综合（7/x）：某人学得最差的一门数学课！没有之一！
 - [ ] ChatGPT（3/3）；已有内容：
     - [手把手注册教程](./ChatGPT/Register.md)；
     - [Prompt经验总结](./ChatGPT/Prompt1.md)；

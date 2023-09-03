@@ -5,8 +5,6 @@
     - 2022年MacBook Pro，512GB + 16GB，Ventura 13.5， Apple Silicon M2
 
 
-
-
 !!! note "参考链接"
     - [英文版：如何在Apple Silicon上安装webUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon)，理论上说这一份文档就够了，但是你需要一些前置知识，并不是零基础。
     - [中文版｜B站｜本地部署Stable Diffusion](https://www.bilibili.com/video/BV1Pb411X79e/?spm_id_from=333.788&vd_source=1a29610636fa88d6406dc45fc2d153ba)：很可爱的Up主，讲得十分干货十分具体，按照她的来就可，她整理的资源也非常全面；
