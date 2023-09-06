@@ -20,10 +20,10 @@ $$\def\arraystretch{2}
    \hline
    \hline
    \text{单词/短语} & 中文 &   \text{单词/短语} & 中文 \cr \hline \hline
-   \text{premium} &    & \text{transit}    &     \cr \hline    
-   \text{premise} & \alpha   &   \text{transfer}  &     \cr \hline    
-   \text{premier} & \alpha   &   \text{transient}  &     \cr \hline    
-   \text{preoccupation} & \alpha   &   \text{transaction}  &     \cr \hline  
+   \text{premium} &  保险费，额外费  & \text{transit}    &     \cr \hline    
+   \text{premise} & 前提，以...为假设   &   \text{transfer}  &     \cr \hline    
+   \text{premier} &  总理  &   \text{transient}  &     \cr \hline    
+   \text{preoccupation} &  关注，使人全神贯注的事情   &   \text{transaction}  &     \cr \hline  
    \text{preconception} & \alpha   &  \text{transmit}    &     \cr \hline  
    \text{prevalent} & \alpha   &   \text{transform}   &     \cr \hline  
    \text{prevail} & \alpha   &   \text{transport}   &     \cr \hline  
