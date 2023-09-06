@@ -1,5 +1,7 @@
 ---
 statistics: true
+hide:
+  - feedback
 ---
 
 # (๑• . •๑)
