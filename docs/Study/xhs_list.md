@@ -25,6 +25,7 @@
 - [x] Python 垃圾邮件分类：[传送门](https://gitee.com/smilingwayne/mlbag)
 - [x] Python 一键生成PDF报告： [传送门](https://gitee.com/smilingwayne/python-data-structure-algorithm/tree/master/Toys/PDFToys/PDFGenerator)
 - [x] Python 写个天气预报自动化脚本: [传送门](https://github.com/SmilingWayne/emailbot)
+- [ ] Python Ortools求解器：[传送门](https://github.com/SmilingWayne/ORtoolsTutorials)
 ### Excel篇
 - 🌟🌟用Excel做供应链运营管理（全26篇）：
     - 链接: [传送门](https://pan.baidu.com/s/1UPYWF7UXyK_AuYdhsdwU_w) 提取码: qbvo ;
