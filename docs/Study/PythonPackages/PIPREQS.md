@@ -3,7 +3,10 @@
 在开源Python项目中常常会看到 requirements.txt文件，大概长这样：
 
 
-<img src = "../../picx/PIPREQS/pipreqs1.png" height = "150px">
+<figure markdown>
+  ![Image title](../../Study/picx/PIPREQS/pipreqs1.png){ width="400" }
+  <figcaption>示意图</figcaption>
+</figure>
 
 这种txt文件可以简单清晰地告知其他使用者需要调用的开源模块，方便使用。一种比较常见的方法是，先进入Python安装环境，在终端里用这样一条语句输出requirements：
 
@@ -14,11 +17,12 @@ pip freeze > requirements.txt
 但是这样输出有一些不好，因为它会输出你当前环境中所有的模块，即使相当一部分模块在项目中并没有用到，它也会保存下来，比如这样：
 
 
-<figure>
-
-![](../../Study/picx/PIPREQS/pipreqs2.png){: style="height: 100px"}
-
+<figure markdown>
+  ![Image title](../../Study/picx/PIPREQS/pipreqs2.png){ width="400" }
+  <figcaption>示意图</figcaption>
 </figure>
+
+
 
 
 很不实用，而且动辄几百行。
@@ -36,6 +40,9 @@ pipreqs ./
 
 它会扫描每一个文档，把其中用到的库（以及版本）都输出，舍弃掉那些没有用到的库。等运行完毕后所以同一个项目内容就缩减到：
 
-<img src = "../../picx/PIPREQS/pipreqs3.png" height = "150px">
 
+<figure markdown>
+  ![Image title](../../Study/picx/PIPREQS/pipreqs3.png){ width="400" }
+  <figcaption>示意图</figcaption>
+</figure>
 短短几行。很实用。

@@ -133,11 +133,13 @@ nav:
               - 🇨🇳长明: Plays/Long_daylight.md
           - 影视:
               - 🇯🇵切腹: Plays/Seppuku.md
+              - 🇺🇸云图: Plays/Cloud_atlas.md
               - 🇺🇸慕尼黑: Plays/Munich.md
               - 🇺🇸地心引力: Plays/Gravity.md
               - 🇫🇷精疲力尽: Plays/Exhausted.md
               - 🇫🇷五至七时的克莱奥: Plays/Cleo.md
               - 🇨🇳中国姑娘: Plays/La_chinioise.md
+              - 🇨🇳精武英雄: Plays/Jingwu_yingxiong.md
               - 🇨🇳宇宙探索编辑部: Plays/A_journey_to_the_west.md
               - 🇩🇪无主之作: Plays/Werk_ohne_autor.md
               - 🇨🇦空中浩劫: Plays/Air_crash_investigation.md
@@ -257,6 +259,7 @@ nav:
           - 🇮🇩印度尼西亚笔记: History/Indonesia.md
       - 书:
           - 🇫🇷记忆之场: History/Field_of_memory.md
+          - 大征服: History/Great_conquest.md
           - 🇪🇸阿尔罕布拉: History//Alhambra.md
           - 🇫🇷断头王后: History/Marie_antoinette.md
           - 战国歧途: History/Zhanguo_qitu.md
@@ -486,8 +489,6 @@ nav:
           - 排队论: Study/OR/Chapter9.md
           - 仓储论（EOQ模型和它的一万个分身）: Study/OR/Chapter10.md
           - 博弈论: Study/OR/Chapter11.md
-          - 求解器使用:
-              - OR-tools_1: Study/OR/Solvers/Ortools.md
           - 练习题:
               - 第一章: Study/OR/ORExercise/Chapter1_wk.md
               - 第二章: Study/OR/ORExercise/Chapter2_wk.md
@@ -554,6 +555,7 @@ nav:
           - Apple的奇奇怪怪: Study/Swift/AppleScript.md
           - Swift基础: Study/Swift/SwiftBasics.md
           - 软件推荐之Raycast: Study/Swift/Ray.md
+          - macOS下Mail使用学校邮箱: Study/Swift/About_mail.md
           - macOS下寻找电子书的一些方法: Study/Swift/FindBooks.md
       - 语言学习:
           - 法语笔记: Study/English/French.md
@@ -664,27 +666,27 @@ plugins:
       version: 10.2.0
       arguments:
         securityLevel: "loose"
-  - search:
-      separator: '[\s\u200b\-]'
-      lang: zh
-  - git-authors:
-      show_contribution: true
-      exclude:
-        - index.md
-      enabled: true
-  - git-revision-date-localized:
-      type: datetime
-      custom_format: "%d %B %Y"
-      timezone: Asia/Shanghai
-      locale: en
-      fallback_to_build_date: false
-      enable_creation_date: true
-      exclude:
-        - index.md
-      enabled: true
-  - blogging:
-      dirs: # The directories to be included
-        - Arts
+#   - search:
+#       separator: '[\s\u200b\-]'
+#       lang: zh
+#   - git-authors:
+#       show_contribution: true
+#       exclude:
+#         - index.md
+#       enabled: true
+#   - git-revision-date-localized:
+#       type: datetime
+#       custom_format: "%d %B %Y"
+#       timezone: Asia/Shanghai
+#       locale: en
+#       fallback_to_build_date: false
+#       enable_creation_date: true
+#       exclude:
+#         - index.md
+#       enabled: true
+#   - blogging:
+#       dirs: # The directories to be included
+#         - Arts
 
 markdown_extensions:
   - admonition
@@ -742,7 +744,7 @@ extra:
         - icon: material/emoticon-sad-outline
           name: This page could be improved
           data: 0
-          note: >- 
+          note: >-
             Thanks for your feedback! Help us improve this page by
             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
 
