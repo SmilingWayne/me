@@ -1,11 +1,14 @@
 # Raycast
 
 
-!!! info
+!!! info "Info"
+
     参考的🔗： 
+
     - [https://bbruceyuan.com/post/raycast-tutorial-1.html#_1-什么是-raycast0](https://bbruceyuan.com/post/raycast-tutorial-1.html#_1-什么是-raycast)
     - [https://www.raycast.com/](https://www.raycast.com/) : 官方链接
     - [https://manual.raycast.com/](https://manual.raycast.com/) : 官方链接
+
     > 一款很好用的软件，快捷键爱好者狂喜。 
 
 - Mac上可以替代Spot light的工具。个人目前正在使用。
@@ -29,5 +32,7 @@
 ### 自定义快捷键
 
 > 防止自己忘记，同时也算是做个记录📝
+
+
 - 查看历史剪贴板： ++ctrl+command+bracket-left++ （这个功能直接取代了我的copyless软件，可以说是很好上手）
 - Option + “[” : 使用单词翻译功能；
