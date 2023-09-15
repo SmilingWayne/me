@@ -21,7 +21,9 @@ hide:
 
     - 💖 “毕竟几人真得鹿，不知终日梦为鱼。”[^2]
 
-    - 🧸 <font face = "American Typewriter" >INFJ-T</font> / 谨慎的自由主义[^3]者 / 努力学习语言中。
+    - 🧸 <font face = "American Typewriter" >INFJ-T</font> / 谨慎的自由主义[^3]者 / 努力学习语言中
+          
+        > (中文 / English / Français)。
 
 
 === "<font size = 6>:fontawesome-solid-book: </font><font size = 6 face = "savoye LET">About The NoteBook</font>"
@@ -30,7 +32,7 @@ hide:
     
     - 🔠 总字数：{{words}} ；
     
-    - 🦾 代码块行数：{{codes}} ；
+    - 🤖 代码块行数：{{codes}} ；
 
     - 🛩️ 网站运行时间：<span id="web-time"></span>；
 
@@ -52,9 +54,9 @@ hide:
 - 📱 移动端：点击左上角图标选择内容；
 - 🔍 搜索：支持中文检索。
 
-[^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.(From WiKi)
+[^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.(From [WiKi](https://en.wikipedia.org/wiki/Violin_Concerto_(Tchaikovsky)))
 [^2]: 语出宋代黄庭坚[《杂诗七首》](https://www.gushici.net/shici/102/102214.html)。
-[^3]: Liberalism is a political and moral philosophy based on the rights of the individual, liberty, consent of the governed, political equality and equality before the law. (From WiKi)
+[^3]: Liberalism is a political and moral philosophy based on the rights of the individual, liberty, consent of the governed, political equality and equality before the law. (From [WiKi](https://en.wikipedia.org/wiki/Liberalism))
 
 
 
