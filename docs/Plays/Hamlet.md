@@ -7,6 +7,35 @@
 
     - 延宕的哈姆雷特与忧伤的公主👸。
 
+    > To be, or not to be: that is the question:
+    Whether 'tis nobler in the mind to suffer
+    The slings and arrows of outrageous fortune,
+    Or to take arms against a sea of troubles,
+    And by opposing end them? To die: to sleep;
+    > No more; and by a sleep to say we end
+    > The heart-ache and the thousand natural shocksThat flesh is heir to, 'tis a     
+    consummation Devoutly to be wish'd. To die, to sleep; To sleep: perchance to dream: ay, there's the rub; For in that sleep of death what dreams may come When we have shuffled off this mortal coil, Must give us pause: there's the respect
+    > That makes calamity of so long life;
+    > For who would bear the whips and scorns of time,
+    > The oppressor's wrong, the proud man's contumely,
+    > The pangs of despised love, the law's delay,
+    > The insolence of office and the spurns
+    That patient merit of the unworthy takes
+    When he himself might his quietus make
+    With a bare bodkin? who would fardels bear
+    To grunt and sweat under a weary life
+    But that the dread of something after death,
+    > The undiscover'd country from whose bourn
+    > No traveller returns, puzzles the will
+    > And makes us rather bear those ills we have
+    > Than fly to others that we know not of?
+    > Thus conscience does make cowards of us all;
+    > And thus the native hue of resolution
+    > Is sicklied o'er with the pale cast of thought,
+    > And enterprises of great pith and moment
+    > With this regard their currents turn awry,
+
+And lose the name of action.
 ------
 
 
@@ -119,5 +148,9 @@
 3、莎翁的缺陷在于刻意人格脸谱化，不过在当时脸谱化不是错，而是一种社会公认的正确。每个人物的性格其实是偏向固定的，而哈姆莱特的性格是复杂的，所以很多读者去分析他，但是从剧情和其他角度来说，可能有更好的戏剧，因为哈姆莱特并不是一个在剧情上完美的戏剧。
 4、考据派
 
-## 后记
 
+
+> To die, to sleep, no more, and by the sleep we say 
+
+!!! note "链接"
+    [B站](https://www.bilibili.com/bangumi/play/ep406151?theme=movie&spm_id_from=333.337.0.0)

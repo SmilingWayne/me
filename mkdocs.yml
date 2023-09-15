@@ -330,6 +330,8 @@ nav:
           - 1047_remove-all-adjacent-duplicates-in-string.md: ToDo/LeetCode/1/1047_remove-all-adjacent-duplicates-in-string.md
           - 1048_longest-string-chain.md: ToDo/LeetCode/1/1048_longest-string-chain.md
           - 1079_letter-tile-possibilities.md: ToDo/LeetCode/1/1079_letter-tile-possibilities.md
+          - 121_best-time-to-buy-and-sell-stock.md: ToDo/LeetCode/1/121_best-time-to-buy-and-sell-stock.md
+          - 122_best-time-to-buy-and-sell-stock-ii.md: ToDo/LeetCode/1/122_best-time-to-buy-and-sell-stock-ii.md
           - 1331_rank-transform-of-an-array.md: ToDo/LeetCode/1/1331_rank-transform-of-an-array.md
           - 1156_swap-for-longest-repeated-character-substring.md: ToDo/LeetCode/1/1156_swap-for-longest-repeated-character-substring.md
           - 1170_compare-strings-by-frequency-of-the-smallest-character.md: ToDo/LeetCode/1/1170_compare-strings-by-frequency-of-the-smallest-character.md
@@ -371,6 +373,7 @@ nav:
           - 2182_construct-string-with-repeat-limit.md: ToDo/LeetCode/2/2182_construct-string-with-repeat-limit.md
           - 2191_sort-the-jumbled-numbers.md: ToDo/LeetCode/2/2191_sort-the-jumbled-numbers.md
           - 2496_maximum-value-of-a-string-in-an-array.md: ToDo/LeetCode/2/2496_maximum-value-of-a-string-in-an-array.md
+          - 2840_check-if-strings-can-be-made-equal-with-operations-ii: ToDo/LeetCode/2/2840_check-if-strings-can-be-made-equal-with-operations-ii.md
           - 2600_k-items-with-the-maximum-sum.md: ToDo/LeetCode/2/2600_k-items-with-the-maximum-sum.md
           - 3_longest-substring-without-repeating-characters.md: ToDo/LeetCode/3/3_longest-substring-without-repeating-characters.md
           - 32_longest-valid-parentheses.md: ToDo/LeetCode/3/32_longest-valid-parentheses.md
@@ -568,6 +571,7 @@ nav:
       - 制造与服务系统分析: Study/AMASS.md
       - 一些高中笔记: Study/HighSchool.md
       - 暑期学校-智能决策与算法: Study/fleet.md
+      - Git 使用指南: Study/Git_use.md
       - 发展经济学:
           - 重点提纲: Study/DevelopEco/chapter1.md
       - 国际贸易: Study/IntTrad/InternationalTrade.md
