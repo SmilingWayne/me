@@ -15,6 +15,8 @@
 | 1190 | reverse-substrings-between-each-pair-of-parrentheses | [Link](./1/1190_reverse-substrings-between-each-pair-of-parrentheses.md) | Unknown | Unknown | Unknown |
 | 1202 | smallest-string-with-swaps | [Link](./1/1202_smallest-string-with-swaps.md) | Unknown | Unknown | Unknown |
 | 1209 | remove-all-adjacent-duplicates-in-string-ii | [Link](./1/1209_remove-all-adjacent-duplicates-in-string-ii.md) | Unknown | Unknown | Unknown |
+| 121 | best-time-to-buy-and-sell-stock | [Link](./1/121_best-time-to-buy-and-sell-stock.md) | Easy | DP | 🌟 |
+| 122 | best-time-to-buy-and-sell-stock | [Link](./1/122_best-time-to-buy-and-sell-stock-ii.md) | Medium | DP | 🌟🌟 |
 | 1233 | remove-sub-folders-from-the-file-system | [Link](./1/1233_remove-sub-folders-from-the-file-system.md) | Unknown | Unknown | Unknown |
 | 1239 | maximum-length-of-a-concatenated-string-with-unique-characters | [Link](./1/1239_maximum-length-of-a-concatenated-string-with-unique-characters.md) | Unknown | Unknown | Unknown |
 | 1248 | count-number-of-nice-subarrays | [Link](./1/1248_count-number-of-nice-subarrays.md) | Unknown | Unknown | Unknown |
@@ -48,6 +50,7 @@
 | 2191 | sort-the-jumbled-numbers | [Link](./2/2191_sort-the-jumbled-numbers.md) | Unknown | Unknown | Unknown |
 | 2496 | maximum-value-of-a-string-in-an-array | [Link](./2/2496_maximum-value-of-a-string-in-an-array.md) | Easy | String | Unknown |
 | 2600 | k-items-with-the-maximum-sum | [Link](./2/2600_k-items-with-the-maximum-sum.md) | Easy | If else | Unknown |
+| 2840 | check-if-strings-can-be-made-equal-with-operations-ii | [Link](./2/2840_check-if-strings-can-be-made-equal-with-operations-ii.md) | Medium | String | Unknown |
 | 3 | longest-substring-without-repeating-characters | [Link](./3/3_longest-substring-without-repeating-characters.md) | Unknown | Unknown | Unknown |
 | 32 | longest-valid-parentheses | [Link](./3/32_longest-valid-parentheses.md) | Unknown | Unknown | Unknown |
 | 334 | increasing-triplet-subsequence | [Link](./3/334_increasing-triplet-subsequence.md) | Unknown | Unknown | Unknown |
