@@ -34,7 +34,7 @@ hide:
     
     - 🤖 代码块行数：{{codes}} ；
 
-    - 🛩️ 网站运行时间：<span id="web-time"></span>；
+    - 🛩️ 网站运行时间：<span id="web-time"></span> ；
 
 === "<font size = 6>:fontawesome-solid-envelope: </font><font size = 6 face = "savoye LET">Contact Me</font>"
 
