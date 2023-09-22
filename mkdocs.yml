@@ -675,27 +675,27 @@ plugins:
       version: 10.2.0
       arguments:
         securityLevel: "loose"
-#   - search:
-#       separator: '[\s\u200b\-]'
-#       lang: zh
-#   - git-authors:
-#       show_contribution: true
-#       exclude:
-#         - index.md
-#       enabled: true
-#   - git-revision-date-localized:
-#       type: datetime
-#       custom_format: "%d %B %Y"
-#       timezone: Asia/Shanghai
-#       locale: en
-#       fallback_to_build_date: false
-#       enable_creation_date: true
-#       exclude:
-#         - index.md
-#       enabled: true
-#   - blogging:
-#       dirs: # The directories to be included
-#         - Arts
+  - search:
+      separator: '[\s\u200b\-]'
+      lang: zh
+  - git-authors:
+      show_contribution: true
+      exclude:
+        - index.md
+      enabled: true
+  - git-revision-date-localized:
+      type: datetime
+      custom_format: "%d %B %Y"
+      timezone: Asia/Shanghai
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
+      exclude:
+        - index.md
+      enabled: true
+  - blogging:
+      dirs: # The directories to be included
+        - Arts
 
 markdown_extensions:
   - admonition
