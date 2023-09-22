@@ -54,3 +54,15 @@ You are running an emulated version of Visual Studio Code. For better performanc
     - **热启动**：当启动应用时，后台已有该应用的进程（例：按home键回到桌面，但是该应用的进程是依然会保留在后台，可进入任务列表查看），所以在已有进程的情况下，这种启动会从已有的进程中来启动应用；
 
 > 用ARM特供的VScode 冷启动速度明显流畅快速了很多。
+
+
+--------
+
+
+- 支持在终端中直接用Vscode 打开文件：++command+shift+p++，在窗口中输入shell command 就可以出现“把code添加到路径中”，设置好之后就可以直接通过终端打开当前文件路径的文件夹了。
+
+
+- 我的快捷输入方式：
+
+> VScode 是支持自定义快速输入的，你只要输入一个短句，会自动把符合格式的长句子输出出来。具体方法是：左上角菜单栏 Code -> Settings -> Configure User Snippets，可以选择在哪些文件中用什么方法输入。
+

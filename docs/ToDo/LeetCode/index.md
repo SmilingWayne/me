@@ -45,6 +45,7 @@
 | 2 | add-two-numbers | [Link](./2/2_add-two-numbers.md) | Unknown | Unknown | Unknown |
 | 20 | valid-parentheses | [Link](./2/20_valid-parentheses.md) | Easy | Stack, String | Unknown |
 | 206 | reverse-linked-list | [Link](./2/206_reverse-linked-list.md) | Unknown | Unknown | Unknown |
+| 213 | house-robber-ii | [Link](./2/213_house-robber-ii.md) | Medium | DP  | 🌟 |
 | 216 | combination-sum-iii | [Link](./2/216_combination-sum-iii.md) | Unknown | Unknown | Unknown |
 | 2182 | construct-string-with-repeat-limit | [Link](./2/2182_construct-string-with-repeat-limit.md) | Unknown | Unknown | Unknown |
 | 2191 | sort-the-jumbled-numbers | [Link](./2/2191_sort-the-jumbled-numbers.md) | Unknown | Unknown | Unknown |
@@ -54,6 +55,7 @@
 | 3 | longest-substring-without-repeating-characters | [Link](./3/3_longest-substring-without-repeating-characters.md) | Unknown | Unknown | Unknown |
 | 32 | longest-valid-parentheses | [Link](./3/32_longest-valid-parentheses.md) | Unknown | Unknown | Unknown |
 | 334 | increasing-triplet-subsequence | [Link](./3/334_increasing-triplet-subsequence.md) | Unknown | Unknown | Unknown |
+| 337 | house-robber-iii.md | [Link](./3/337_house-robber-iii.md) | Medium | DP | Unknown |
 | 380 | insert-delete-getrandom-o1 | [Link](./3/380_insert-delete-getrandom-o1.md) | Unknown | Unknown | Unknown |
 | 398 | random-pick-index | [Link](./3/398_random-pick-index.md) | Unknown | Unknown | Unknown |
 | 415 | add-strings | [Link](./4/415_add-strings.md) | Unknown | Unknown | Unknown |
