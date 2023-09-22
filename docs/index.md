@@ -21,7 +21,7 @@ hide:
 
     - 💖 “毕竟几人真得鹿，不知终日梦为鱼。”[^2]
 
-    - 🧸 <font face = "American Typewriter" >INFJ-T</font> / 谨慎的自由主义[^3]者 / 努力学习语言中
+    - 🧸 <font face = "American Typewriter" >INFJ-T</font> / 谨慎的自由主义[^3]者 / 努力学习语言中。
           
         > (中文 / English / Français)。
 
