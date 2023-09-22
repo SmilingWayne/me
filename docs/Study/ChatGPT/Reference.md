@@ -66,8 +66,6 @@
 - [https://chatexcel.com/](https://chatexcel.com/)。效果还不错！免费，限制文件大小5MB，20行
   - 但是如果你是个熟练的Exceler那我还是建议自己抠Excel表格
 
-
-
 ## 语音转文字
 
 - [Whisper](https://github.com/openai/whisper), 也是OpenAI做的。
