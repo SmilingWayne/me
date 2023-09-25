@@ -70,3 +70,237 @@ BOL：Bill of Logistics (类似BOM)
 > 
 > 1. 获取企业实际数据的；
 > 2. 有实际意义；
+
+
+--------
+
+## 0925 Discrete Optimization
+
+!!! note "preliminaries"
+    - Graph Theory / Linear Programming  / duality problem
+
+
+!!! note "Overview"
+    $P = \min f(x), x \in F$， x 是一组向量，$f$是目标函数；如果 $F \neq 0$， 说明有可行解
+
+    $f(x^*) \leq f(x), \forall x$，最优值；
+
+    $z(P)$：最小的目标函数值。$z(p) = \infty$，不可行, $z(p) = - \infty$，无界解
+
+
+    ----------
+
+    $$\min f(x) \\
+    s.t. \begin{align}\begin{equation*}
+    \begin{cases}
+    g_i(x) \leq 0, i = 1,...,m \\ 
+    h_j(x) = 0,  j = 1,...,p \\
+    \end{cases}
+    \end{equation*}\end{align}$$
+
+    1. Non-linear Programming (More complex)
+    2. Convex ~(Complex)
+    3. Linear Programming(Medium)
+
+    ------
+
+    ### 离散优化、组合优化
+
+    $f, g_i, h_j \text{ are linear}, x \in \text{Integer}$
+
+    组合优化：从集合里选择一些元素出来，（选择很多）求使得成本最小的一个 **“组合”**；
+
+    $N = \{1,2... n\}$, finite set.
+
+    $c: n \rightarrow R$ cost functions
+
+    $\mathbf{F}: 2^N$ : 可行集合；
+
+    $w(S) = \sum_{i \in S} c_i$
+
+    Combinatorial Opt Problem: $\min w(S): S \in \mathbf{F}$
+
+    ------------
+
+
+    IP problem: 
+
+    【建模表示同上，略过】
+
+    MILP：
+
+    【建模同上，略过】
+
+
+!!! note "TSP"
+
+    $N, (i, j), c(\{i, j\})$：每个城市都是从 $N- 1$ 个边里面选（ $N$ 个城市到其他点的路径构成一个集合，从这个集合里选一个路，和其他 $N- 1$路构成一个“组合”。但是有成环约束；
+
+
+    $\delta$ 的定义是什么？一个点在这集合里头，一个点不在这个集合里头；
+
+    > 跟这个点相邻的边，一共有两条边；
+    > 
+    > **子环消除约束**
+
+
+    $$\min \sum c_e x_e \\
+    \text{s.t. } 
+    \begin{aligned}\begin{equation*}
+    \begin{cases}
+    \sum_{e \in \delta(\{h\})} x_e = 2 , \hspace{10pt} \forall h \in V\\
+    \sum_{e \in \delta(\{S\})} x_e \geq 2, \hspace{10pt} S \in V, | S | > 2\\
+    x_e \in \{ 0, 1\}
+    \end{cases}
+    \end{equation*}\end{aligned}$$
+
+    $|S|$ 表示集合中边的个数；
+
+
+    --------------
+
+
+    ### 另一种技巧
+
+    
+    $y_j$ 是这个节点在最终回路中的位置：消除子环约束的时候怎么保证  $x_ij = 1$ 的时候$y_j= y_i+ 1$： 
+    
+    $y_j \geq y_i + 1 + (x_{ij} - 1)M$ ；这个约束只有 $N - 1$ 个，因为最后一个节点不需要有这个约束；
+
+    - 实际上计算角度来说更好的是上面那个约束更多的模型：因为加了大 M 的算法计算效果普遍不好；因为 $x_j$ 被松弛之后， 这个约束就没用了。
+
+    在这种TSP问题中，模型中一定有一个变量是在表示，随着路径发展不断递增的记录；
+
+
+
+!!! example "指派问题"
+
+    $N$ 人 assign 到 $N$ 个任务，总成本最小；
+
+    解的个数 $n!$
+
+    **Advanced: 带容量约束的指派问题。难度就会高一点**。
+
+    问题建模:
+    
+    $$\min \sum \sum c_{ij} x_{ij} \\
+    s.t. 
+    \begin{aligned}\begin{equation*}
+    \begin{cases}
+    \sum_j x_{ij} = 1, \forall i \\ 
+    \sum_i x_{ij} = 1, \forall j \\
+    x_{ij} = \{0, 1\}
+    \end{cases}
+    \end{equation*}\end{aligned}$$
+
+
+    --------
+
+    引入变量 $y_i$ 表示这个节点在环里的位置（借助无向图改成的有向图）
+
+!!! note "0-1 Knapsack"
+
+    问题略过；
+
+==从理论上的问题难度角度说，指派问题（P问题）的难度要简单很多。背包问题是更难的问题。== 虽然实际上可以解得很快；
+
+
+!!! note "Packing && Cover"
+
+    N 是有限集，M 的每个元素都是 N 的一个子集； M 是其中子集的下标的集合；
+
+    $S \in M$ is a cover ：相当于从 M 中选中几个元素，这些元素的并集恰好可以把原来的N中的所有元素都覆盖住；
+
+    $S \in M$ is a packing：如果从M中选中的子集互相之间是不相交的，那么称这样选中的子集是一个packing。
+
+    如果一个选中的集合既是packing又是cover，说明S是个partition。
+
+
+    - 最小权重cover问题； w(S) 越小越好；同时也是Cover；
+    - 最大packing问题： w(S) 越大越好；同时也是packing；
+
+
+### 整数规划的建模
+
+
+!!! abstract "Abstract"
+    1. Modeling with Integer Variables Modeling techniques
+    2. Modeling with Exponentially Many Constraints（指数级别的约束）
+    3. Modeling with Exponentially Many Variables（指数级别的变量）
+    4. Notes and References
+    5. Bibliography
+
+
+!!! info "Techniques"
+    
+    0-1 Binary variables： 
+    
+    > - Yes or No
+    > - 两段不连续的集合；
+    > - 包含 “if”这种逻辑决策的话： if ..., then constraint ... 
+    > - fixed cost: 选址产生的固定成本；
+    > - 分段线性函数；
+
+!!! info "notation"
+
+    - weight of subset S of M: \sum_{j \in S} c_j
+    - 某个 $N$ 里的元素 $i$ 出现在 $j$ 指定的子集合里的话，就取 1，否则是 0 （incident matrix） $[ a_{ij} ]$, $n \times m$，每个矩阵元素都是一个0-1变量；
+
+    1. Set Covering Problem: 
+
+    $$\min \sum c_j x_j \\
+    \text{s.t.} \hspace{5pt} Ax \geq e$$
+
+    2. Set Packing Problem:
+
+    $$\max \sum c_j x_j \\
+    \text{s.t.} \hspace{5pt} Ax \geq e$$
+
+    3. Set Partitioning Problem:
+
+
+!!! info "forcing constraint"
+    
+    不带容量限制的选址问题。(UFLP)
+
+    （可以选择的地址）$N = 1,2,3... , n, M = 1,..., m$ (服务的顾客)
+
+    仓库有固定成本 $f_j, \hspace{5pt} j \in N$，考虑运输成本  $c_{ij}$ , 对顾客的需求做了正则化之后，把需求压缩成1.
+
+    $$\min \sum\sum c_{ij} x_{ij}  + \sum f_j y_j \\ 
+    \text{s.t.}
+    \begin{align}\begin{equation*}
+    \begin{cases}
+    \sum x_{ij} \leq y_j f_j \\ 
+    \sum_i x_{ij} = 1, \forall j \\
+    0 \leq x_{ij} \leq 1 , \hspace{5pt} \forall  i \in M, \forall j \in N     \\
+    y_j \in \{0, 1\}
+    \end{cases}
+    \end{equation*}\end{align}$$
+
+
+!!! info "Disjoint Constraints"
+
+    x 决策变量；
+
+    $ax \leq b, cx \leq d$, 可以同时满足，但是至少要保证一个是可以满足的；
+
+    引入0-1 变量 y：
+
+    $ax \geq yb \hspace{15pt} cx \geq (1 - y)d$，前提是 a, c必须是非负的
+
+    $\sum y_i \geq k, a_i x \geq b_i y_i$： $y_i$ 是 0-1 变量， 至少有 $k$ 个条件满足；
+
+
+!!! info "分段线性函数"
+
+    用一系列有序数对进行分段线性化： 利用拐点进行表示；
+
+    用 $y_i$ 整数变量查看传入的变量究竟输入哪一段。
+
+    对lambda 也做了正则化处理。
+
+    如果分段线性函数是凸的，此时不需要引入0 - 1整数变量，只需要取最大（？）
+
+
+
