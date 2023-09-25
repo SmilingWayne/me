@@ -1,5 +1,5 @@
 site_name: 笑笑的站
-site_url: https://github.com/SmilingWayne/me
+site_url: https://github.com/SmlingWayne/me
 
 nav:
   - ˗ˋˏᰔᩚˎˊ˗: index.md
@@ -24,7 +24,6 @@ nav:
 
       - 宗教哲学:
           - 基督教: Philosophy/Christian.md
-          - 西方宗教常识: Philosophy/Western_religion.md
           - 世界宗教: Philosophy/World_religion.md
           - 犹太人与犹太教(牛津通识读本): Philosophy/Jews.md
           - 相似之书: Philosophy/Book_of_resemblance.md
@@ -483,6 +482,7 @@ nav:
           - MIT | Course_6: Study/LinearAlgebra/MIT_course_6.md
           - MIT | Course_7: Study/LinearAlgebra/MIT_course_7.md
           - MIT | Course_8: Study/LinearAlgebra/MIT_course_8.md
+          - MIT | Course_9: Study/LinearAlgebra/MIT_course_9.md
       - 运筹学:
           - Study/OR/index.md
           - 线性规划、单纯形法（plus pro max版）: Study/OR/Chapter1.md

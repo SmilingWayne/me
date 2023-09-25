@@ -66,3 +66,7 @@ You are running an emulated version of Visual Studio Code. For better performanc
 
 > VScode 是支持自定义快速输入的，你只要输入一个短句，会自动把符合格式的长句子输出出来。具体方法是：左上角菜单栏 Code -> Settings -> Configure User Snippets，可以选择在哪些文件中用什么方法输入。
 
+- 运行Markdown preview插件出现："princexml" is required to be installed.的解决方案：
+
+> 没有安装princexml。可以前去 [Princexml install](https://www.princexml.com/doc/installing/) 探索安装；
+
