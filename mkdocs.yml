@@ -62,6 +62,7 @@ nav:
           - 美的历程: Philosophy/Voyage_of_beauty.md
           - 浪漫主义的根源: Philosophy/Root_of_romanticism.md
           - 谈美: Philosophy/About_beauty.md
+          - 哲学美学: Philosophy/Phi_and_aesthic.md
 
       - 人类学/社会学:
           - 倦怠社会: Philosophy/Society_of_fatigue.md
@@ -299,6 +300,7 @@ nav:
           - 现代主义: Arts/Modernism.md
           - 碎片艺术: Arts/Pieces.md
           - 西方艺术中的圣徒形象: Arts/Saints.md
+      - 🇪🇺20世纪西方艺术家: Arts/20_century_artists.md
   - 考研:
       - yan/index.md
       - 我的规划: yan/yanPlans.md
@@ -483,6 +485,8 @@ nav:
           - MIT | Course_7: Study/LinearAlgebra/MIT_course_7.md
           - MIT | Course_8: Study/LinearAlgebra/MIT_course_8.md
           - MIT | Course_9: Study/LinearAlgebra/MIT_course_9.md
+          - MIT | Course_10: Study/LinearAlgebra/MIT_course_10.md
+          - MIT | Course_11: Study/LinearAlgebra/MIT_course_11.md
       - 运筹学:
           - Study/OR/index.md
           - 线性规划、单纯形法（plus pro max版）: Study/OR/Chapter1.md
