@@ -66,11 +66,13 @@ $N(A^T)$ : $\mathcal{R}^m$ 空间的一个子空间；
     > 矩阵的列空间和行空间的维数是相同的。
 
 !!! example "对上述情况的解释"
-    考虑矩阵 $\begin{bmatrix} \textcolor{red}{1} & 2 & 3 & 1 \\ 1 & \textcolor{red}{1} & 2 & 1 \\ 1 & 2 &3 & 1 \end{bmatrix}$，主元已经标注在图中，所以，其行空间的基是：$\begin{bmatrix} 1 & 2 & 3 & 1 \end{bmatrix} , \begin{bmatrix} 1 & 1 & 2 & 1 \end{bmatrix}$，列空间的基是 $\begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}, \begin{bmatrix} 2 \\ 1 \\ 2 \end{bmatrix}$.
+    考虑矩阵 $A = \begin{bmatrix} \textcolor{red}{1} & 2 & 3 & 1 \\ 1 & \textcolor{red}{1} & 2 & 1 \\ 1 & 2 &3 & 1 \end{bmatrix}$，主元已经标注在图中，所以，其行空间的基是：$\begin{bmatrix} 1 & 2 & 3 & 1 \end{bmatrix} , \begin{bmatrix} 1 & 1 & 2 & 1 \end{bmatrix}$，列空间的基是 $\begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}, \begin{bmatrix} 2 \\ 1 \\ 2 \end{bmatrix}$.
 
     > 当 $A$ 是 $n\times n$的矩阵，秩为 $r < n$ 时，列空间与行空间都是 $R^n$ 空间中的一个 $R^r$ 的子空间，但是两者不是一个空间。比如 $\mathcal{R}^3$ 空间里，$r=2$, 表示列空间与行空间分别是2个平面，这两个平面可能差别很大。
 
-    我们再看这个矩阵的行简化梯形矩阵：$\begin{bmatrix} 1 & 0 & 1 & 1 \\ 0 & 1 & 1 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}$
+    我们再看这个矩阵的行简化梯形矩阵：$R = \begin{bmatrix} 1 & 0 & 1 & 1 \\ 0 & 1 & 1 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}$，很明显 R 和 A的列空间是不同的。但是它们具有相同的行空间。因为不管 $A$ 的行向量怎么线性组合，总能通过 $R$ 的行向量线性组合表示出来，换句话说，只需要做从 $A$ 到 $R$ 矩阵的逆运算，就可以直接从 $R$ 变成 $A$。一言以蔽之就是： ==行变换对行空间没有影响，但是列空间发生了变化。==
+
+    我们同样可以得出结论，矩阵 A 行空间的基，就是 R 的前 r 行的向量。（first r rows of R）
 
 !!! note "对于零空间"
     $\text{dim}(N(A)) = n - r$，也就是自由变量的数量。可以想到，如果列不满秩，我们对自由变量任意取值，总能找到特殊解，满足$Ax = 0$。
@@ -79,3 +81,51 @@ $N(A^T)$ : $\mathcal{R}^m$ 空间的一个子空间；
 
 !!! note "对于左零空间"
     $\text{dim}(N(A^T)) = m - r$，推导过程类似：因为是对原来矩阵做了转置，所以维数等于行数减去秩。
+
+    解答疑问：为什么是“左零空间”这个叫法：
+
+    原来应该写作A^Ty = 0，y 在 N(A^T) 中。现在我们希望把 y 放到左边来，用 A 来代替 $A^T$（回忆：矩阵左乘向量表示行变换）,有 $y^TA = 0$，y^T 左乘 A 得到 0，原来的零空间是  $Ax = 0$， 是A 右乘一个向量，现在乘到左边来了。
+
+
+!!! note "如何求左零空间的基"
+
+    在之前从A到R的简化过程中，也包含了左零空间的一些信息。这不是显而易见的，但的确如此。
+
+    我们利用Gauss-Jordan Elimination，进行计算。回忆从 A 到 R 的过程。
+
+    $\text{rref} \begin{bmatrix} A_{m \times n}  & I_{m \times m} \end{bmatrix} \rightarrow\begin{bmatrix} R_{m \times n} & E_{m \times m} \end{bmatrix}$，在这里如果把中间所有的行变换累积起来用 E 表示，我们有$E \begin{bmatrix} A_{m \times n}  & I_{m \times m} \end{bmatrix} = \begin{bmatrix} R_{m \times n} & E_{m \times m} \end{bmatrix}$，$EA = R$。在之前讲逆矩阵求法的时候，我们知道一个可逆矩阵的$\text{rref} = I$，此时边上的$E_{m \times m}$ 就是最终的 $A^{-1}$。现在我们换一个视角，A不是可逆的情况下，$EA = R，R$ 下面有一些0行，而能够使得这些行为0的行变换，其实早就已经存储在了$E$矩阵中。
+
+    举个例子：
+
+    $\begin{bmatrix} -1 & 2 & 0 \\ 1& -1&0 \\ \color{red}{-1}  & \color{red}{0}  & \color{red}{1}  \end{bmatrix} \begin{bmatrix} 1 & 2 & 3 & 1 \\ 1 & 1 & 2  &1 \\ 1 & 2 & 3 & 1 \end{bmatrix}= \begin{bmatrix} 1 & 0 & 1 & 1 \\ 0 & 1 & 1 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}$
+
+    这里我们想知道是什么变换导致了 $R$ 最后一行的零向量，这恰恰对应了，$E$ 矩阵中 $r$ 行以后的所有行向量，（$\text{row1} \times -1  +  \text{row2} \times 0 + \text{row3} \times 1 = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}$，加红的这一行，也就是左零空间的基。
+
+    --------
+
+    所以，结论如下：
+
+    1. 左零空间的维数是 $m - r$，m是矩阵行数，r是矩阵的秩；
+    2. 通过 Gauss-Jordan Elimination，我们不仅可以直接求得左零空间的基，还可以求得左零空间本身；
+
+
+对零空间、左零空间的一个小总结：
+
+1. 求零空间，实际上是在找一个产生零的列向量的线性组合；
+2. 求左零空间，实际上是在找一个产生零的行向量的线性组合；
+
+
+### 一个延伸
+
+
+我们之前的讨论集中在向量空间上；现在我们把视野拓宽到矩阵维度上，把矩阵看作一个向量（遵守向量的运算法则），我们通过一个矩阵，可以想到哪些它的子空间：
+
+1. 所有上三角矩阵组成的子空间；
+2. 所有对称矩阵组成的子空间；
+3. 对角矩阵的子空间；
+
+对于第三个，一个 $m \times m$ 的对角矩阵的子空间，其维数为3（可以找到三个基：$\begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}, \begin{bmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix},
+\begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix}
+$
+
+这里主要讲的就是，把 $R^n$ 的概念拓展到 $R^{m \times n}$
