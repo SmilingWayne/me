@@ -2,11 +2,12 @@
 ----
 
 - **线性规划**（Linear Programming）：是在**线形约束**下**求解线性目标函数最优值**的数学理论和方法。
-    - ==决策变量==(Decision Variables):
-    - ==目标函数==(Objective Function):
-    - ==约束条件==(Constraints):
+- 三要素：
+    - 决策变量(Decision Variables):
+    - 目标函数(Objective Function):
+    - 约束条件(Constraints):
 
-$$\mathop{\max}(\mathop{\min})z = \sum^{n}_{j = 1}{c_jx_j}$$
+$$\max(\min)z = \sum^{n}_{j = 1}{c_jx_j}$$
 
 $$\text{s.t.} \sum^{n}_{j = 1}{a_{ij} }{x_j} \leq ( =, \geq) b_i , (i = 1,...m)$$
 
@@ -14,9 +15,9 @@ $$x_j \geq 0, (j = 1,...n)$$
 
 - 线性规划模型的标准形式
 
-$$\mathop{\max} \quad z = \sum^{n}_{j = 1}{c_jx_j}$$
+$$\mathop{\max}  z = \sum^{n}_{j = 1}{c_jx_j}$$
 
-$$s.t. \sum^{n}_{j = 1}{a_{ij} }{x_j} = b_i , (i = 1,...m)$$
+$$\text{s.t.} \sum^{n}_{j = 1}{a_{ij} }{x_j} = b_i , (i = 1,...m)$$
 
 $$x_j \geq 0, (j = 1,...n)$$
 
@@ -24,9 +25,9 @@ $$x_j \geq 0, (j = 1,...n)$$
 - **剩余变量**：引入非负变量，把"$\geq$"不等式约束转换为等式约束，这样的变量就是剩余变量；
 - 满足约束条件（1-9）和（1-10）的解 $x = (x_1, x_2,....,x_n)^{T}$ 称为线性规划的**可行解**`(Feasible solution)`，全部可行解的集合称为**可行域**(Feasible Region).
 
-$$\mathop{\max} \quad z = c^{T}x\tag{1-8}$$
+$$\max \quad z = c^{T}x\tag{1-8}$$
 
-$$s.t. Ax = b\tag{1-9}$$
+$$\text{s.t.} Ax = b\tag{1-9}$$
 
 $$ x \geq 0\tag{1-10}$$
 
@@ -37,13 +38,14 @@ $$ x \geq 0\tag{1-10}$$
 - 基向量：组成基的各个列向量，称为**基向量**；
 - 基变量：与基向量相对应的各个变量称为**基变量**；
 - **基本解**`(Basic Solution)`：令系数矩阵非基变量为0，得到的方程组的解，称为**基本解**；
-- 基本解的个数是有限的，最多有$C^{m}_{n}$个。
+- 基本解的个数是有限的，最多有$C^{m}_{n}$个（想象一下，从 $n$ 列中抽 $m$ 列出来，总共几个抽法？）。
 - 基本可行解`(Basic Feasible Solution)`：满足非负约束条件（1-10）的基本解；
 - 最优基本可行解`(Basic Feasible Solution)`：使目标函数(1-8)达到最大的基本可行解
 - 最优基`（Optimal Basis)`：最优基本可行解对应的基；
-- 凸集`(Convex Set)`:设$x_1,x_2 \in x$ 是集合S内的任意两点，如果对于任意的$x = \alpha x_1 + (1-\alpha)x_2,  0 \leq \alpha \leq 1$有$x \in S$，那么集合$S$就是凸集；（给定集合$C$，$C$中任意两点的连线仍在$C$中，那么$C$就是凸集；
-- 凸集的顶点（极点）：如果凸集C中不存在任何两个不同的点$X_1,X_2$，使得$X$在线段$X_1X_2$，就说$X$是凸集$C$的顶点。 
+- 凸集`(Convex Set)`:设 $x_1,x_2 \in x$ 是集合S内的任意两点，如果对于任意的 $x = \alpha x_1 + (1-\alpha)x_2,  0 \leq \alpha \leq 1$ 有 $x \in S$，那么集合$S$就是凸集；（给定集合 $C$，$C$ 中任意两点的连线仍在 $C$ 中，那么 $C$ 就是凸集；
+- 凸集的顶点（极点）：如果凸集C中不存在任何两个不同的点 $X_1,X_2$，使得 $X$ 在线段 $X_1X_2$，就说 $X$ 是凸集 $C$ 的顶点。 
 - 两个凸集的交集仍然是凸集
+
 
 ### 图解法：
 
@@ -91,7 +93,7 @@ $$ x \geq 0\tag{1-10}$$
         - 锁定主元，除以本身，系数列向量完成更新，对于非主元的其他元素，用同样的转化即可，对于原本仍然在基里的变量，没有任何变化（因为只0和1）
         - ![](../picx/OR1/OR-1-1.png)
         - 目的就是直接把$x_2$转化成$x_5$的形式，只需要对整个矩阵（包括b）做初等行变换即可；
-    !!! Tip
+    !!! note ""
         感谢这个链接提供的帮助；[Bilbili](https://www.bilibili.com/video/BV15E411H7it/)
 
 
@@ -111,29 +113,79 @@ $$ x \geq 0\tag{1-10}$$
 
 ## 例题详解单纯形法
 
-- 给定例题：
+- 给定例题，用单纯形法求解此例题。
 
-$$\max \hspace{4pt} 2x_1 + x_2$$
+$$\max z = 2x_1 + x_2  \\
+\\
+\text{s.t.} \begin{align*}\begin{equation*}
+\begin{cases}
+& &5 x_2  &\leq 15 \\ 
+&6x_1 &+ 2x_2  &\leq 24 \\
+&x_1 & +   x_2  &\leq 5 \\ 
+&&x_1, x_2  &\geq 0
+\end{cases}
+\end{equation*}\end{align*}$$
 
-$$\text{s.t.} \left\{ \begin{aligned} 3x_1 + 5x_2 & \leq 15 \\ 6x_1 + 2x_2 & \leq 24 \\ x_1, x_2 &\geq 0\end{aligned} \right.$$
 
 - 标准化后的结果：
 
-$$\max \hspace{4pt} 2x_1 + x_2 + 0x_3 + 0x_4$$
+$$\max z = 2x_1 + x_2  + 0x_3 + 0x_4 + 0x_5\\
+\\
+\text{s.t.} \begin{align*}\begin{equation*}
+\begin{cases}
+& &5 x_2 + x_3 & & &= 15 \\ 
+&6x_1 &+ 2x_2 &+x_4 & &=24 \\
+&x_1 & +   x_2 & &+x_5 &= 5 \\ 
+&&x_1, x_2 x_3, x_4, x_5 &\geq 0
+\end{cases}
+\end{equation*}\end{align*}$$
 
-$$\text{s.t.} \left\{ \begin{aligned} 3x_1 + 5x_2 + x_3 & & = 15 \\ 6x_1 + 2x_2 & + x_4 & = 24 \\ x_1, x_2 , x_3, x_4&\geq 0\end{aligned} \right.$$
+据此列出第一个单纯形表如下。可以发现有大于零的检验数。所以基本可行解不是最优解，我们选择 $x_1$ 是入基变量，因为其检验数更大 (2 > 1)。同时，随之逐渐增大，$x_4$ 应该是出基变量，因为用 $\mathbb{b}$ 列除以出基的 $x_1$ 列向量对应元素， $\dfrac{24}{6} < \dfrac{5}{1}$，说明 $x_4$ 最先达到上限。
 
 $$\def\arraystretch{1.5}
-   \begin{array}{c|c|c|c|c|c|c}
+   \begin{array}{c|c|c|c|c|c|c|c}
    \hline
    \hline
-   & & & -2 & -3 & -4 & 0   \cr \hline
-   \textbf{c}_{\textbf{B}} & \textbf{x}_{\textbf{B}} & \textbf{b} & x_1 & x_2 & x_3 & x_4  \cr \hline
-   0 & x_3 & 15 & 3  & 5 & 1 & 0   \cr \hline
-   0 & x_4 & 24  & [6] & 2 & 0 & 1    \cr \hline
-    &  &  & 0 & 0 & -9/5 & -8/5    \cr \hline
+   & & & 2 & 1 & 0 & 0 & 0   \cr \hline
+   \textbf{c}_{\textbf{B}} & \textbf{x}_{\textbf{B}} & \textbf{b} & x_1 & x_2 & x_3 & x_4 & x_5 \cr \hline
+   0 & x_3 & 15 & 0  & 5 & 1 & 0 & 0  \cr \hline
+   0 & x_4 & 24  & \colorbox{lightgreen}{[6]} & 2 & 0 & 1  & 0  \cr \hline
+   0 & x_5 & 5  & 1 & 1 & 0 & 0  & 1  \cr \hline
+   r_c &  &  & 2 & 1 & 0 & 0 & 0    \cr \hline
     \hline
 \end{array}$$
+
+进行出入基操作后，我们得到如下的单纯形表格。可见还有一个检验数是非负的。我们如法炮制用上面的思路确定出入基变量（出: $x_2$， 入： $x_5$）。进行第二次单纯形迭代。
+
+$$\def\arraystretch{1.5}
+   \begin{array}{c|c|c|c|c|c|c|c}
+   \hline
+   \hline
+   & & & 2 & 1 & 0 & 0 & 0   \cr \hline
+   \textbf{c}_{\textbf{B}} & \textbf{x}_{\textbf{B}} & \textbf{b} & x_1 & x_2 & x_3 & x_4 & x_5 \cr \hline
+   0 & x_3 & 15 & 0  & 5 & 1 & 0 & 0  \cr \hline
+   2 & x_1 & 4  & 1 & 2/6 & 0 & 1/6  & 0  \cr \hline
+   0 & x_5 & 1  & 0 & \colorbox{lightgreen}{[4/6]} & 0 & -1/6  & 1  \cr \hline
+   r_c &  &  & 0 & 1/3 & 0 & -1/3 & 0    \cr \hline
+    \hline
+\end{array}$$
+
+迭代完成后，我们发现，所有的检验数 $\sigma_j \leq 0$，并且基变量中不含有人工变量，此时的基本可行解就是最优解$( \dfrac{7}{2}, \dfrac{3}{2}, \dfrac{15}{2}, 0 ,0 )$。求得目标函数最大值是 $\dfrac{17}{2}$.
+
+$$\def\arraystretch{1.5}
+   \begin{array}{c|c|c|c|c|c|c|c}
+   \hline
+   \hline
+   & & & 2 & 1 & 0 & 0 & 0   \cr \hline
+   \textbf{c}_{\textbf{B}} & \textbf{x}_{\textbf{B}} & \textbf{b} & x_1 & x_2 & x_3 & x_4 & x_5 \cr \hline
+   0 & x_3 & 15/2 & 0  & 0 & 1 & 5/4 & -15/2  \cr \hline
+   2 & x_4 & 7/2  & 1 & 0 & 0 & 1/4  & -1/2  \cr \hline
+   1 & x_2 & 3/2  & 0 & 1 & 0 & -1/4  & 3/2  \cr \hline
+   r_c &  &  & 0 & 0 & 0 & \colorbox{lightblue}{-1/4} & \colorbox{lightblue}{-1/2}    \cr \hline
+    \hline
+\end{array}$$
+
+
 
 
 > 这一部分需要补充全。
