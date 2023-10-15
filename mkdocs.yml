@@ -1,5 +1,6 @@
 site_name: 笑笑的站
 site_url: https://github.com/SmlingWayne/me
+site_description: 笑笑的个人网站
 
 nav:
   - ˗ˋˏᰔᩚˎˊ˗: index.md
@@ -501,6 +502,7 @@ nav:
           - 排队论: Study/OR/Chapter9.md
           - 仓储论（EOQ模型和它的一万个分身）: Study/OR/Chapter10.md
           - 博弈论: Study/OR/Chapter11.md
+          - TSP问题: Study/OR/TSP.md
           - 练习题:
               - 第一章: Study/OR/ORExercise/Chapter1_wk.md
               - 第二章: Study/OR/ORExercise/Chapter2_wk.md
@@ -679,6 +681,7 @@ plugins:
       version: 10.2.0
       arguments:
         securityLevel: "loose"
+  - tags
   - search:
       separator: '[\s\u200b\-]'
       lang: zh
@@ -700,6 +703,14 @@ plugins:
   - blogging:
       dirs: # The directories to be included
         - Arts
+
+#   - rss:
+#       match_path: Study/.*
+#       date_from_meta:
+#         as_creation: date
+#       categories:
+#         - categories
+#         - tags
 
 markdown_extensions:
   - admonition
