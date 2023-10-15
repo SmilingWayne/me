@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="笑笑的个人网站">
+      
       
         <meta name="author" content="SmilingWayne">
       
@@ -20,7 +22,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
@@ -28,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.bd3936ea.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.35e1ed30.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
@@ -11851,6 +11853,8 @@
       
         
       
+        
+      
     
     
     
@@ -12206,6 +12210,26 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../TSP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSP问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
     
     
       
@@ -12228,10 +12252,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_9_14" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_9_15" >
         
           
-          <label class="md-nav__link" for="__nav_8_9_14" id="__nav_8_9_14_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_9_15" id="__nav_8_9_15_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -12242,8 +12266,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_9_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_9_14">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_9_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_9_15">
             <span class="md-nav__icon md-icon"></span>
             练习题
           </label>
@@ -15102,34 +15126,35 @@
   <h1>线性规划、单纯形法（plus pro max版）</h1>
 
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 2520 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 8 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 2611 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 9 分钟</p>
 </div>
 <h2 id="_1">模型和解<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <hr />
 <ul>
-<li><strong>线性规划</strong>（Linear Programming）：是在<strong>线形约束</strong>下<strong>求解线性目标函数最优值</strong>的数学理论和方法。<ul>
-<li><mark>决策变量</mark>(Decision Variables):</li>
-<li><mark>目标函数</mark>(Objective Function):</li>
-<li><mark>约束条件</mark>(Constraints):</li>
+<li><strong>线性规划</strong>（Linear Programming）：是在<strong>线形约束</strong>下<strong>求解线性目标函数最优值</strong>的数学理论和方法。</li>
+<li>三要素：<ul>
+<li>决策变量(Decision Variables):</li>
+<li>目标函数(Objective Function):</li>
+<li>约束条件(Constraints):</li>
 </ul>
 </li>
 </ul>
-<pre class="arithmatex">\[\mathop{\max}(\mathop{\min})z = \sum^{n}_{j = 1}{c_jx_j}\]</pre>
+<pre class="arithmatex">\[\max(\min)z = \sum^{n}_{j = 1}{c_jx_j}\]</pre>
 <pre class="arithmatex">\[\text{s.t.} \sum^{n}_{j = 1}{a_{ij} }{x_j} \leq ( =, \geq) b_i , (i = 1,...m)\]</pre>
 <pre class="arithmatex">\[x_j \geq 0, (j = 1,...n)\]</pre>
 <ul>
 <li>线性规划模型的标准形式</li>
 </ul>
-<pre class="arithmatex">\[\mathop{\max} \quad z = \sum^{n}_{j = 1}{c_jx_j}\]</pre>
-<pre class="arithmatex">\[s.t. \sum^{n}_{j = 1}{a_{ij} }{x_j} = b_i , (i = 1,...m)\]</pre>
+<pre class="arithmatex">\[\mathop{\max}  z = \sum^{n}_{j = 1}{c_jx_j}\]</pre>
+<pre class="arithmatex">\[\text{s.t.} \sum^{n}_{j = 1}{a_{ij} }{x_j} = b_i , (i = 1,...m)\]</pre>
 <pre class="arithmatex">\[x_j \geq 0, (j = 1,...n)\]</pre>
 <ul>
 <li><strong>松驰变量</strong>：引入非负变量，把"<span class="arithmatex">\(\leq\)</span>"不等式约束转换为等式约束，这样的<span class="arithmatex">\(y_i\)</span>就是松弛变量</li>
 <li><strong>剩余变量</strong>：引入非负变量，把"<span class="arithmatex">\(\geq\)</span>"不等式约束转换为等式约束，这样的变量就是剩余变量；</li>
 <li>满足约束条件（1-9）和（1-10）的解 <span class="arithmatex">\(x = (x_1, x_2,....,x_n)^{T}\)</span> 称为线性规划的<strong>可行解</strong><code>(Feasible solution)</code>，全部可行解的集合称为<strong>可行域</strong>(Feasible Region).</li>
 </ul>
-<pre class="arithmatex">\[\mathop{\max} \quad z = c^{T}x\tag{1-8}\]</pre>
-<pre class="arithmatex">\[s.t. Ax = b\tag{1-9}\]</pre>
+<pre class="arithmatex">\[\max \quad z = c^{T}x\tag{1-8}\]</pre>
+<pre class="arithmatex">\[\text{s.t.} Ax = b\tag{1-9}\]</pre>
 <pre class="arithmatex">\[ x \geq 0\tag{1-10}\]</pre>
 <ul>
 <li>
@@ -15141,12 +15166,12 @@
 <li>基向量：组成基的各个列向量，称为<strong>基向量</strong>；</li>
 <li>基变量：与基向量相对应的各个变量称为<strong>基变量</strong>；</li>
 <li><strong>基本解</strong><code>(Basic Solution)</code>：令系数矩阵非基变量为0，得到的方程组的解，称为<strong>基本解</strong>；</li>
-<li>基本解的个数是有限的，最多有<span class="arithmatex">\(C^{m}_{n}\)</span>个。</li>
+<li>基本解的个数是有限的，最多有<span class="arithmatex">\(C^{m}_{n}\)</span>个（想象一下，从 <span class="arithmatex">\(n\)</span> 列中抽 <span class="arithmatex">\(m\)</span> 列出来，总共几个抽法？）。</li>
 <li>基本可行解<code>(Basic Feasible Solution)</code>：满足非负约束条件（1-10）的基本解；</li>
 <li>最优基本可行解<code>(Basic Feasible Solution)</code>：使目标函数(1-8)达到最大的基本可行解</li>
 <li>最优基<code>（Optimal Basis)</code>：最优基本可行解对应的基；</li>
-<li>凸集<code>(Convex Set)</code>:设<span class="arithmatex">\(x_1,x_2 \in x\)</span> 是集合S内的任意两点，如果对于任意的<span class="arithmatex">\(x = \alpha x_1 + (1-\alpha)x_2,  0 \leq \alpha \leq 1\)</span>有<span class="arithmatex">\(x \in S\)</span>，那么集合<span class="arithmatex">\(S\)</span>就是凸集；（给定集合<span class="arithmatex">\(C\)</span>，<span class="arithmatex">\(C\)</span>中任意两点的连线仍在<span class="arithmatex">\(C\)</span>中，那么<span class="arithmatex">\(C\)</span>就是凸集；</li>
-<li>凸集的顶点（极点）：如果凸集C中不存在任何两个不同的点<span class="arithmatex">\(X_1,X_2\)</span>，使得<span class="arithmatex">\(X\)</span>在线段<span class="arithmatex">\(X_1X_2\)</span>，就说<span class="arithmatex">\(X\)</span>是凸集<span class="arithmatex">\(C\)</span>的顶点。 </li>
+<li>凸集<code>(Convex Set)</code>:设 <span class="arithmatex">\(x_1,x_2 \in x\)</span> 是集合S内的任意两点，如果对于任意的 <span class="arithmatex">\(x = \alpha x_1 + (1-\alpha)x_2,  0 \leq \alpha \leq 1\)</span> 有 <span class="arithmatex">\(x \in S\)</span>，那么集合<span class="arithmatex">\(S\)</span>就是凸集；（给定集合 <span class="arithmatex">\(C\)</span>，<span class="arithmatex">\(C\)</span> 中任意两点的连线仍在 <span class="arithmatex">\(C\)</span> 中，那么 <span class="arithmatex">\(C\)</span> 就是凸集；</li>
+<li>凸集的顶点（极点）：如果凸集C中不存在任何两个不同的点 <span class="arithmatex">\(X_1,X_2\)</span>，使得 <span class="arithmatex">\(X\)</span> 在线段 <span class="arithmatex">\(X_1X_2\)</span>，就说 <span class="arithmatex">\(X\)</span> 是凸集 <span class="arithmatex">\(C\)</span> 的顶点。 </li>
 <li>两个凸集的交集仍然是凸集</li>
 </ul>
 <h3 id="_2">图解法：<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h3>
@@ -15215,8 +15240,7 @@
 </ul>
 </li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<div class="admonition note">
 <p>感谢这个链接提供的帮助；<a href="https://www.bilibili.com/video/BV15E411H7it/">Bilbili</a></p>
 </div>
 </li>
@@ -15237,24 +15261,68 @@
 </div>
 <h2 id="_4">例题详解单纯形法<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>给定例题：</li>
+<li>给定例题，用单纯形法求解此例题。</li>
 </ul>
-<pre class="arithmatex">\[\max \hspace{4pt} 2x_1 + x_2\]</pre>
-<pre class="arithmatex">\[\text{s.t.} \left\{ \begin{aligned} 3x_1 + 5x_2 &amp; \leq 15 \\ 6x_1 + 2x_2 &amp; \leq 24 \\ x_1, x_2 &amp;\geq 0\end{aligned} \right.\]</pre>
+<pre class="arithmatex">\[\max z = 2x_1 + x_2  \\
+\\
+\text{s.t.} \begin{align*}\begin{equation*}
+\begin{cases}
+&amp; &amp;5 x_2  &amp;\leq 15 \\ 
+&amp;6x_1 &amp;+ 2x_2  &amp;\leq 24 \\
+&amp;x_1 &amp; +   x_2  &amp;\leq 5 \\ 
+&amp;&amp;x_1, x_2  &amp;\geq 0
+\end{cases}
+\end{equation*}\end{align*}\]</pre>
 <ul>
 <li>标准化后的结果：</li>
 </ul>
-<pre class="arithmatex">\[\max \hspace{4pt} 2x_1 + x_2 + 0x_3 + 0x_4\]</pre>
-<pre class="arithmatex">\[\text{s.t.} \left\{ \begin{aligned} 3x_1 + 5x_2 + x_3 &amp; &amp; = 15 \\ 6x_1 + 2x_2 &amp; + x_4 &amp; = 24 \\ x_1, x_2 , x_3, x_4&amp;\geq 0\end{aligned} \right.\]</pre>
+<pre class="arithmatex">\[\max z = 2x_1 + x_2  + 0x_3 + 0x_4 + 0x_5\\
+\\
+\text{s.t.} \begin{align*}\begin{equation*}
+\begin{cases}
+&amp; &amp;5 x_2 + x_3 &amp; &amp; &amp;= 15 \\ 
+&amp;6x_1 &amp;+ 2x_2 &amp;+x_4 &amp; &amp;=24 \\
+&amp;x_1 &amp; +   x_2 &amp; &amp;+x_5 &amp;= 5 \\ 
+&amp;&amp;x_1, x_2 x_3, x_4, x_5 &amp;\geq 0
+\end{cases}
+\end{equation*}\end{align*}\]</pre>
+<p>据此列出第一个单纯形表如下。可以发现有大于零的检验数。所以基本可行解不是最优解，我们选择 <span class="arithmatex">\(x_1\)</span> 是入基变量，因为其检验数更大 (2 &gt; 1)。同时，随之逐渐增大，<span class="arithmatex">\(x_4\)</span> 应该是出基变量，因为用 <span class="arithmatex">\(\mathbb{b}\)</span> 列除以出基的 <span class="arithmatex">\(x_1\)</span> 列向量对应元素， <span class="arithmatex">\(\dfrac{24}{6} &lt; \dfrac{5}{1}\)</span>，说明 <span class="arithmatex">\(x_4\)</span> 最先达到上限。</p>
 <pre class="arithmatex">\[\def\arraystretch{1.5}
-   \begin{array}{c|c|c|c|c|c|c}
+   \begin{array}{c|c|c|c|c|c|c|c}
    \hline
    \hline
-   &amp; &amp; &amp; -2 &amp; -3 &amp; -4 &amp; 0   \cr \hline
-   \textbf{c}_{\textbf{B}} &amp; \textbf{x}_{\textbf{B}} &amp; \textbf{b} &amp; x_1 &amp; x_2 &amp; x_3 &amp; x_4  \cr \hline
-   0 &amp; x_3 &amp; 15 &amp; 3  &amp; 5 &amp; 1 &amp; 0   \cr \hline
-   0 &amp; x_4 &amp; 24  &amp; [6] &amp; 2 &amp; 0 &amp; 1    \cr \hline
-    &amp;  &amp;  &amp; 0 &amp; 0 &amp; -9/5 &amp; -8/5    \cr \hline
+   &amp; &amp; &amp; 2 &amp; 1 &amp; 0 &amp; 0 &amp; 0   \cr \hline
+   \textbf{c}_{\textbf{B}} &amp; \textbf{x}_{\textbf{B}} &amp; \textbf{b} &amp; x_1 &amp; x_2 &amp; x_3 &amp; x_4 &amp; x_5 \cr \hline
+   0 &amp; x_3 &amp; 15 &amp; 0  &amp; 5 &amp; 1 &amp; 0 &amp; 0  \cr \hline
+   0 &amp; x_4 &amp; 24  &amp; \colorbox{lightgreen}{[6]} &amp; 2 &amp; 0 &amp; 1  &amp; 0  \cr \hline
+   0 &amp; x_5 &amp; 5  &amp; 1 &amp; 1 &amp; 0 &amp; 0  &amp; 1  \cr \hline
+   r_c &amp;  &amp;  &amp; 2 &amp; 1 &amp; 0 &amp; 0 &amp; 0    \cr \hline
+    \hline
+\end{array}\]</pre>
+<p>进行出入基操作后，我们得到如下的单纯形表格。可见还有一个检验数是非负的。我们如法炮制用上面的思路确定出入基变量（出: <span class="arithmatex">\(x_2\)</span>， 入： <span class="arithmatex">\(x_5\)</span>）。进行第二次单纯形迭代。</p>
+<pre class="arithmatex">\[\def\arraystretch{1.5}
+   \begin{array}{c|c|c|c|c|c|c|c}
+   \hline
+   \hline
+   &amp; &amp; &amp; 2 &amp; 1 &amp; 0 &amp; 0 &amp; 0   \cr \hline
+   \textbf{c}_{\textbf{B}} &amp; \textbf{x}_{\textbf{B}} &amp; \textbf{b} &amp; x_1 &amp; x_2 &amp; x_3 &amp; x_4 &amp; x_5 \cr \hline
+   0 &amp; x_3 &amp; 15 &amp; 0  &amp; 5 &amp; 1 &amp; 0 &amp; 0  \cr \hline
+   2 &amp; x_1 &amp; 4  &amp; 1 &amp; 2/6 &amp; 0 &amp; 1/6  &amp; 0  \cr \hline
+   0 &amp; x_5 &amp; 1  &amp; 0 &amp; \colorbox{lightgreen}{[4/6]} &amp; 0 &amp; -1/6  &amp; 1  \cr \hline
+   r_c &amp;  &amp;  &amp; 0 &amp; 1/3 &amp; 0 &amp; -1/3 &amp; 0    \cr \hline
+    \hline
+\end{array}\]</pre>
+<p>迭代完成后，我们发现，所有的检验数 <span class="arithmatex">\(\sigma_j \leq 0\)</span>，并且基变量中不含有人工变量，此时的基本可行解就是最优解<span class="arithmatex">\(( \dfrac{7}{2}, \dfrac{3}{2}, \dfrac{15}{2}, 0 ,0 )\)</span>。求得目标函数最大值是 <span class="arithmatex">\(\dfrac{17}{2}\)</span>.</p>
+<pre class="arithmatex">\[\def\arraystretch{1.5}
+   \begin{array}{c|c|c|c|c|c|c|c}
+   \hline
+   \hline
+   &amp; &amp; &amp; 2 &amp; 1 &amp; 0 &amp; 0 &amp; 0   \cr \hline
+   \textbf{c}_{\textbf{B}} &amp; \textbf{x}_{\textbf{B}} &amp; \textbf{b} &amp; x_1 &amp; x_2 &amp; x_3 &amp; x_4 &amp; x_5 \cr \hline
+   0 &amp; x_3 &amp; 15/2 &amp; 0  &amp; 0 &amp; 1 &amp; 5/4 &amp; -15/2  \cr \hline
+   2 &amp; x_4 &amp; 7/2  &amp; 1 &amp; 0 &amp; 0 &amp; 1/4  &amp; -1/2  \cr \hline
+   1 &amp; x_2 &amp; 3/2  &amp; 0 &amp; 1 &amp; 0 &amp; -1/4  &amp; 3/2  \cr \hline
+   r_c &amp;  &amp;  &amp; 0 &amp; 0 &amp; 0 &amp; \colorbox{lightblue}{-1/4} &amp; \colorbox{lightblue}{-1/2}    \cr \hline
     \hline
 \end{array}\]</pre>
 <blockquote>
@@ -15275,7 +15343,7 @@
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 16, 2023 23:01:56</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 15, 2023 23:56:53</span>
       
         <br>
         创建日期:
@@ -15399,7 +15467,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.94c44541.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
