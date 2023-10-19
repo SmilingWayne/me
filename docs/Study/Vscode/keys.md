@@ -70,3 +70,13 @@ You are running an emulated version of Visual Studio Code. For better performanc
 
 > 没有安装princexml。可以前去 [Princexml install](https://www.princexml.com/doc/installing/) 探索安装；
 
+
+--------
+
+## 快捷输入方式
+
+
+快速选择范围内的行：
+
+++command++ ++shift++ + 鼠标点选
+
