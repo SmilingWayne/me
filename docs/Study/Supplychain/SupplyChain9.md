@@ -12,9 +12,10 @@ $\sigma_d =$ 需求标准差
 
 $z =$ 与服务水平概率对应的标准差数
 
-
 <figure markdown>
-![](../../Study/picx/SCM09/SupplyChain9Pic2.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251203376.png)
+
 </figure>
 
 ---
@@ -42,5 +43,7 @@ $z\sigma_d \sqrt{t_b + L} =$ 安全库存，和平均需求一起反映了系统
 $I =$当前库存
 
 <figure markdown>
-![](../../Study/picx/SCM09/SupplyChain9pic3.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251203377.png)
+
 </figure>

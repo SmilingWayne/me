@@ -17,7 +17,8 @@
 #### Q.2. 战略管理过程包括哪几个环节？
   - 战略管理是一个动态过程，规范而全面的战略管理可以分为战略分析、战略评价与选择、战略实施与控制。
 
-![](./pictures/Picture1.jpg){: style="height:350px"}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251058067.jpg){: style="height:350px"}
+
 
 
 -------------------
@@ -85,8 +86,9 @@ quadrantChart
     - 成熟期：增长缓下来甚至停滞不前。维持最低水平投入来保持。
     - 衰退期：战略清算 放弃。
 
-![](./pictures/Picture4.png){: style="height:350px"}
-![](./pictures/Picture5.png){: style="height:350px"}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251058068.png){: style="height:350px"}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251058069.png){: style="height:350px"}
+
 
   - 价值链分析
   - 将企业作为整体来考量，分析目的是找出最基本的价值链，然后分解为各个单独的作业，根据企业整体目标进行权衡取舍，实现成本最低 价值增值最大的目标。

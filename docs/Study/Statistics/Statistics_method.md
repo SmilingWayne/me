@@ -123,7 +123,7 @@ Group_3: Rating Low(x = 3)
 
 <figure markdown>
 
-![](../picx/Statistics/Statistic.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251121256.png)
 
 </figure>
 
@@ -136,7 +136,7 @@ Group_3: Rating Low(x = 3)
 
 <figure markdown>
 
-![](../picx/Statistics/Statistics2.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251121257.png)
 
 </figure>
 
@@ -156,7 +156,7 @@ Group_3: Rating Low(x = 3)
 
 <figure markdown>
 
-![](../pcix/../picx/Statistics/zscore.webp)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251122146.webp)
 
 </figure>
 

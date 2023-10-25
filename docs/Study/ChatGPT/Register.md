@@ -27,14 +27,17 @@
     - 无法注册的时候会显示，出现第一个说明它识别出你的邮箱无法注册（来源于众所周知的地区），不要用这个邮箱了，出现第二个说明你尝试太多，隔个20min再试，或者梯子重新换个IP；
     - 亲测163邮箱/qq邮箱/126邮箱都出现了1错误；**（2023-04-03）**
 
-![](./GPT/Failure.png){: style="height:350px"}
-![](./GPT/Failure2.png){: style="height:350px"}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251042128.png){: style="height:350px"}
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251042129.png){: style="height:350px"}
+
+
 
 - 至于如何注册谷歌邮箱...以后再写教程吧。如果上述bug都没有出现，你会看到下面的Verify Your Email界面，如果出现如Step.1 所示的结果，说明我们已经成功一半了！这个时候你需要去邮箱里找Open AI发来的邮件，也就是Step.2所示；确认之后到注册的界面刷新会看到Step.3。提示你还要验证身份。此时进入下一步。
 
-![](./GPT/SuccessMailBox.png){: style="height:400px"}
-![](./GPT/SuccessMailBox2.png){: style="height:300px"}
-![](./GPT/MailBoxCheck.png){: style="height: 400px"}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251043860.png){: style="height:400px"}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251043859.png){: style="height:300px"}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251043861.png){: style="height: 400px"}
 
 
 
@@ -47,26 +50,31 @@
    - 注册账号之后，右上角点击充值按钮，滑到最底下有支付宝的界面，点进去扫码充值；充多少钱随意，**1-2美元就够用好几次了，折下来最多15块钱不到**； 
    - 上述充值过程可以提前做好；
     
-![支付界面](./GPT/ALi.png){: style="height: 300px;text-aligned:"} 
-   
+
+![支付界面](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251045881.png){: style="height: 300px;text-aligned:"} 
+
+
+
 
 
 1. 在支付宝支付完就充值成功了，左上角的余额应该就有显示了，此时先别着急买手机号，因为手机号使用有时效，建议先去Open AI官网Sign Up的地方输入你准备的邮箱，看会不会出现前面说的那个错误，核实一下能否注册，**邮箱不搞定，下面的步骤就用不上**。如果邮箱通过了，那么就继续下面的步骤；
 
-![](./GPT/SMS2.png)
-![](./GPT/Buying.png){: style="height: 450px"}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251045884.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251045883.png){: style="height: 450px"}
+
 
 1. 具体的购买方法，就在SMS左侧有个搜索窗口输入OpenAI就有相关服务了，你可以选择虚拟号码所在地点。我最开始用印度尼西亚的，效果不错，据说印度的也还可以，**和VPN一样，不要使用香港、意大利等地的虚拟手机号，没有用**；
    - 注意每个号码有时限，20min，收到短信会自动把消息更新到站点上；
 
 - 买完之后应该是类似这样的：
 
-![](./GPT/SuccessBuy.png){: style="height: 400px"}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251045885.png){: style="height: 400px"}
 
 - 在OpenAI的验证手机号码的界面，选择国家（我上面是印度尼西亚的，这个亲测一直好用），然后输入手机号，注意，要求输入手机号的地方OpenAI官网有个前缀（印尼地区是62，此时你的手机号只需要输图中62后面的所有的数字即可（包括括号里的数字也要输入），然后等验证码。
 
-![](./GPT/Result.png){: style="height:400px"}
-![](./GPT/PhoneN.png){: style="height:400px"}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251048702.png){: style="height:400px"}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251048701.png){: style="height:400px"}
+
 
 - 不出意外就会收到SMS截获的验证码，输入～大功告成。
 
