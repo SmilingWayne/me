@@ -15479,14 +15479,14 @@
 <p>单纯形法的求解：</p>
 <ul>
 <li>列初始表时候需要把<span class="arithmatex">\(d^{\pm}\)</span> 都列进去，注意检验数的不同，检验数要根据<span class="arithmatex">\(P\)</span>（也就是优先因子的情况罗列），然后按照优先因子的大到小比较；</li>
-<li>
-<p>用单纯形法迭代，直到检验数都大于0
-<img alt="" src="../../picx/OR3/OR-3-1.png" /></p>
-</li>
-<li>
-<p>某非基变量的检验数都是0，说明有无穷多组最优解；可以对d^{+}_1 和  d^{+}_3 作为入基变量，继续迭代； 
-<img alt="" src="../../picx/OR3/OR-3-2.png" /> </p>
-</li>
+<li>用单纯形法迭代，直到检验数都大于0</li>
+</ul>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251200190.png" /></p>
+<ul>
+<li>某非基变量的检验数都是0，说明有无穷多组最优解；可以对d^{+}_1 和  d^{+}_3 作为入基变量，继续迭代； </li>
+</ul>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251200191.png" /></p>
+<ul>
 <li>在某些问题下，各个检验数字为0但是优先因子对应的系数不全为正数，此时为负数的优先因子的系数表明要求没有全部实现；</li>
 <li>也可以对优先因子给定权重进行计算（直接转化成一个线性规划问题）</li>
 <li>优先级分层优化：先对第一级优先因子建模计算 <span class="arithmatex">\(\mathop{\min} d^{?}_1\)</span>，单纯形法求解看看最优解是否为0，如果是，代表第一层级可以满足，就往第二层级，依次检查；如果有一个层级最优解不是零，说明无法满足这个层级的需求～</li>
@@ -15526,7 +15526,7 @@
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 28, 2023 11:50:29</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 25, 2023 12:08:15</span>
       
         <br>
         创建日期:
