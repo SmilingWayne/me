@@ -323,7 +323,7 @@
     2. 每次补货数量都是Q
 
 
-  - ![Screen Shot 2021-12-27 at 10.41.00 AM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 10.41.00 AM.png)
+![Screen Shot 2021-12-27 at 10.41.00 AM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 10.41.00 AM.png)
 
   - Average Inventory $= Q/2$
 
@@ -331,7 +331,7 @@
 
   - $K * R/Q$ 【平均订货成本average ordering cost】；H *（Q/2）【平均库存保管成本】；c X R 【平均原料采购成本】
 
-  - $TC = \dftac{KR}{Q}$(这里是1/T求购买频率) $+ \dfrac{HQ}{2}+cR$
+  - $TC = \dfrac{KR}{Q}$(这里是1/T求购买频率) $+ \dfrac{HQ}{2}+cR$
 
   - $$Q_{opt} = \sqrt{\frac{2RK}{H}}
     \\

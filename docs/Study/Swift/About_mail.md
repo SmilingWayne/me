@@ -6,9 +6,8 @@ macOS  上有个很常用（当然对于一些非重度爱好者可能根本不�
 1.  首先进入mail界面（图一1），选择邮箱要选“其他邮箱账户”，最底下那个选项；
 2.  选完之后会先让你输入账号、昵称和密码（图一2），但是这里你输入了等于没用，因为不管输入啥都会继续要你输入更加详细的内容（图一3），所以我们直接就图一3需要写的内容讲起。
 
-
 <figure markdown>
-  ![Image title](./Figures/Mail-1.png){ width="600" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251156046.png){ width="600" }
   <figcaption>图1</figcaption>
 </figure>
 
@@ -17,7 +16,7 @@ macOS  上有个很常用（当然对于一些非重度爱好者可能根本不�
 - Password：重点。**这个不是你登录password学校邮箱时候的password**，具体步骤参考图二1.2.3步：你需要去网页版的南大邮箱 -> 微信绑定 -> 在安全登录板块的客户端专用密码处，“生成新密码”，复制即可，后续不会再展示，把这个复制的密码粘贴到mail的密码上，一个16位的数字-字符串。
 
 <figure markdown>
-  ![Image title](./Figures/Mail-2.png){ width="600" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251156047.png){ width="600" }
   <figcaption>图1</figcaption>
 </figure>
 

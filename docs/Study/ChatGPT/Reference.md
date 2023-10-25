@@ -41,6 +41,20 @@
 - Midjourney: 有免费额度；效果很好；在discord上使用；
 - Stable Diffusion，想试试Apple Silicon 上可以搞定的那个SD。见[具体链接](./StableDiffusion.md)。部署在本地的webui。
   - [https://zhuanlan.zhihu.com/p/610580694](https://zhuanlan.zhihu.com/p/610580694)，从Mochi Diffusion 上手开始实现
+- 一些开箱即用的免费文生图： 
+    - [playground AI](https://playgroundai.com)，质感特别像Canva。效果不错。支持Canvas直接导入；
+    - [Bing Image Creator](https://www.bing.com/images/create), 用的是最新的DALL.E.3，微软自己搞的。每个用户会有初始小金币，可以用来加速生成，但是耗尽了也没问题，因为只会生成速度变慢，不会说完全用不了；但是速度确实比较堪忧；会一下生成4张，效果比我想象的要好很多；
+    - [Leonardo AI](https://app.leonardo.ai/ai-generations)，在固定时间内有使用次数限制，但是每天就会更新一次，所以可以续着用。可以有多个模型选，提供了一定程度的定制；
+
+![](https://raw.githubusercontent.com/SmilingWayne/picsrepo/main/202310251030259.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251030257.jpeg)
+
+![](https://raw.githubusercontent.com/SmilingWayne/picsrepo/main/202310251030258.jpg)
+
+
+
+> 由上到下分别是： PlayGroundAI, Bing Image Creator, Leonardo AI. Prompt是：pre raphaelite style oil painting texture young lady, flowers nearby, looking at the sea.
 
 ## 浏览器插件
 

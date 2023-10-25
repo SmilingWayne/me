@@ -2,8 +2,9 @@
 <b>幻方(Magic Square)</b>是一种将数字安排在正方形格子中，使每行、列和对角线上的数字和都相等的方法。正方形格子的边长就是阶数。
 
 譬如下面的四个就都是三阶幻方。其对角线、每行、每列的和都是15。
+
 <figure markdown>
-  ![Image title](../picx/MagicSquare/magic1.png){ width="300" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251106221.png){ width="300" }
   <figcaption>Magic Square</figcaption>
 </figure>
 
@@ -32,7 +33,7 @@
 
 
 <figure markdown>
-  ![Image title](../picx/MagicSquare/Magic2.png){ width="300" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251106222.png){ width="300" }
   
 </figure>
 
@@ -48,7 +49,7 @@
 2. 每个小方阵<b>对角线</b>上的数字，换成和它互补的数。
 
 <figure markdown>
-  ![Image title](../picx/MagicSquare/Magic3.png){ width="400" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251106223.png){ width="400" }
   <figcaption>Magic Square</figcaption>
 </figure>
 <!-- 
@@ -74,7 +75,7 @@
 
 
 <figure markdown>
-  ![Image title](../picx/MagicSquare/Magic4.png){ width="400" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251109292.png){ width="400" }
   <figcaption>Magic Square</figcaption>
 </figure>
 
@@ -96,7 +97,7 @@
 做法其实很简单，C语言入门课程都会有讲。首先将2到n范围内的所有整数写在一张一维表里，其中2是最小的素数。将表中所有2的倍数划去，此时表中剩下的最小的数字是3，3无法被更小的数整除，所以3是素数。再将表中所有3的倍数划去......以此类推，如果表中剩余的最小数是m，则m就是素数，将表中所有m的倍数划去，这样反复操作，就能依次枚举n以内的素数，时间复杂度为$O(nloglogn)$
 
 <figure markdown>
-  ![Image title](../picx/MagicSquare/sieve1.png){ width="400" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251109293.png){ width="400" }
   <figcaption>Magic Square</figcaption>
 </figure>
 
@@ -143,12 +144,12 @@
 以防大家⬇️ 错，我用的Charles长这样👇
 
 <figure markdown>
-  ![Image title](../picx/MagicSquare/charles.png){ width="350" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251109290.png){ width="350" }
   
 </figure>
 
 <figure markdown>
-  ![Image title](../picx/MagicSquare/结果2.png){ width="350" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251109294.png){ width="350" }
 </figure>
 
 
@@ -165,7 +166,7 @@
 
 
 <figure markdown>
-  ![Image title](../picx/MagicSquare/LatinSquare.jpeg){ width="100" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251109291.jpeg){ width="100" }
 </figure>
 
 拉丁方可以视作数独的一种松弛形式，不同于数独的九宫格，拉丁方没有“宫”的设计，而只有“格”。也就是说，数独是一种更加严格的拉丁方。

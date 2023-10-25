@@ -117,7 +117,7 @@
 - 5级制造、6级制造（发挥供应链的规模经济效益），区别如下图。
 
 <figure markdown>
-  ![Image title](../picx/SCMTheory/L5andL6.png){ width="450" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251118059.png){ width="450" }
   <figcaption>五级和六级制造的区别</figcaption>
 </figure>
 
@@ -196,18 +196,17 @@
 
 ### 案例介绍
 
-
 - 如何识别库存图：
 
 <figure markdown>
-  ![Image title](../picx/SCMTheory/Explaination.png){ width="450" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251115853.png){ width="450" }
   <figcaption>库存图解释</figcaption>
 </figure>
 
 - 结合现实制造环节的分析：
 
 <figure markdown>
-  ![Image title](../picx/SCMTheory/InventoryAnalysis.png){ width="450" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251115854.png){ width="450" }
   <figcaption>库存分析</figcaption>
 </figure>
 

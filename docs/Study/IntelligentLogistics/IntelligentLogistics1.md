@@ -495,3 +495,17 @@ $\begin{vmatrix} 1 & 2 & 3 \\ 1 & 2 & 4 \end{vmatrix}$
 ### 对偶单纯形法
 
 
+## 1023 不同的建模方式（Alternative Formulations）
+
+
+整数规划
+
+表示定理：两种表示方式。
+
+
+### Uncapacitated Lot-Sizing Problem 
+
+ft：在t周期是否生产
+pt：在t周期的单位生产成本
+ht：单位库存成本；
+dt：t时期的需求

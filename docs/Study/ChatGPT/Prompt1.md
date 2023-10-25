@@ -11,7 +11,7 @@
 
 <figure markdown>
 
-![](../picx/Prompt/Prompt3.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251052121.png)
 
 </figure>
 
@@ -19,7 +19,8 @@
 
 <figure markdown>
 
-![](../picx/Prompt/Prompt3-2.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251052398.png)
+
 
 </figure>
 
@@ -27,7 +28,7 @@
 
 <figure markdown>
 
-![](../picx/Prompt/Prompt3-3.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251052399.png)
 
 </figure>
 
@@ -39,9 +40,12 @@
 - 把自己的需求尽可能详细地写出来，比如翻译时候，可以补充：“括号内请不要翻译”，然后补充一个例子：
 
 
+
+
+
 <figure markdown>
 
-![](../picx/Prompt/Prompt1.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251053237.png)
 
 </figure>
 
@@ -50,7 +54,7 @@
 
 <figure markdown>
 
-![](../picx/Prompt/Prompt2-2.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251053238.png)
 
 </figure>
 
@@ -61,11 +65,12 @@
 - 启示是如果我们希望它按照一定思路做一个事情，**那么把这个解决问题的过程、思路展示给他**，或者在交流中及时给他灌输我们想要它做的**具体的**步骤，往往更可能得到想要的结果。
 
 - 下面是一个玩（tiao）弄（jiao）ChatGPT的实例：
-![](./picx/Prompt/../../../picx/Prompt/Prompt5.png)
-![](./picx/Prompt/../../../picx/Prompt/Prompt6.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251053239.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251053240.png)
 
 <figure markdown>
 
-![](./picx/Prompt/../../../picx/Prompt/Prompt7.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251053241.png)
 
 </figure>

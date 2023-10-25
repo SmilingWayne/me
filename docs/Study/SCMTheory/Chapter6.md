@@ -119,10 +119,8 @@ $$q^* = (a - c)/4 \\ w^* = (a + c) / 2 \\ p^* = (3a + c)/4$$
 >
 > 将 $\Omega$ 代入零售商的p中，可以计算出$\Omega_r = (a - c)^2 / 4$，此时总利润为 $3(a - c)^2 / 16$，小于集中决策的总利润。
 
-
-
 <figure markdown>
-  ![Image title](../picx/SCMTheory/Marginal.png){ width="450" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251118060.png){ width="450" }
   <figcaption>双重边际效应的解释</figcaption>
 </figure>
 

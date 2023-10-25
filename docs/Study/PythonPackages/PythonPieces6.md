@@ -2,9 +2,9 @@
 
 前两天看Hello Github看到一个很有意思的Python小项目。大家都熟悉Github首页上的日历海报图，像这样：
 
-![](./OUT_FOLDER/Pic1.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251151274.png)
 
-但是毫无疑问自己做起啦会有麻烦～
+但是毫无疑问自己做起来会有麻烦～
 
 这个时候就需要万能的Python出场了。我们用到一个Python包GithubPoster。可以**在Python环境下**用pip直接安装：
 
@@ -15,7 +15,7 @@ pip3 install -U 'github_poster[all]
 
 安装过程如下：
 
-![](./OUT_FOLDER/Pic2.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251151275.png)
 
 接下来是最难的步骤：获取你微信读书的cookies，有了cookies就可以获取你的阅读记录信息了。步骤如下：
 
@@ -41,11 +41,12 @@ github_poster weread --weread_cookie
 
 - 6⃣️ 最后在命令行执行你的一长串字符命令即可。我的命令（的部分）如下：
 
-![](./OUT_FOLDER/Pic6.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251151276.png)
 
 - 7⃣️ 等他执行完毕，会在你当前目录下出现一个文件夹：OUT_FOLDER，文件夹里会有一个svg文件，在浏览器或者别的可以打开的软件中打开即可。
 
-![](./OUT_FOLDER/Pic7.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251151277.png){: style = "width: 100px"}
 
-![](./OUT_FOLDER/weread.svg)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251151278.svg)
 

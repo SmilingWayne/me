@@ -53,7 +53,7 @@ data = [[d[1], d[0], d[2]] for d in data]
 
 <figure markdown>
 
-![3D柱状图](./OUT_FOLDER/3Dcolumns.png)
+![3D柱状图](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251130709.png)(./OUT_FOLDER/3Dcolumns.png)
 
 </figure>
 
@@ -140,8 +140,11 @@ s.render("sankey_diagram12.html") # 也支持保存为图片
 
 ```
 
+
+
+
 <figure markdown>
 
-![](./OUT_FOLDER/Sanki.png){:style height=150px}
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251130711.png){: style height=150 }
 
 </figure>

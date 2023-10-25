@@ -19,7 +19,7 @@
     - 其他小技巧二：使用截取具体窗口截图时按住 ++option++ ，可以消去窗口自带的阴影
   
 <figure markdown>
-  ![](../picx/Apple/ScreenShot.png){ width="500" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251204317.png){ width="500" }
   <figcaption>上：没有消去阴影；下：消去阴影后</figcaption>
 </figure>
 

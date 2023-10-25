@@ -78,3 +78,57 @@
     ```
 
 
+
+!!! note "仓库里的Git文件过大如何解决"
+
+    git的宗旨是记录下你对这个文件夹的所有操作记录，所以如果不小心把一些很大的pdf或者其他中间文件也放上去的话，git中的object会很大。这不仅要求我们注意仓库的文件大小，也说明必须好好搞gitignore 文件！！
+
+    而如果这个情况已经发生了，该怎么减小这个git文件？这就是这里需要解决的事情。准确说你需要一个叫 BFG的清理软件：[跳转链接](https://github.com/rtyley/bfg-repo-cleaner/)。并且在进行所有操作之前，最好先“**暂时关闭分支保护**”
+
+
+    然后，并不是完全按照官网操作就可以解决问题了，需要在一开始做一个小小的修改，其他步骤按照操作指南分别操作即可。
+
+    前置条件是在电脑上要安装Java虚拟机。这一部分可以自行搜索解决。
+
+    按照[操作指南](https://rtyley.github.io/bfg-repo-cleaner/) 第一步进行操作的时候，要输入：
+
+    ```shell
+    git clone --mirror git://example.com/some-big-repo.git
+    ```
+
+    这一步是没问题的，但是按照上面的介绍到最后git push 到原来仓库的git文件的时候，如果仓库有关闭的pull request，会提示出错：
+
+
+    ```shell
+    To https://github.com/username/repository.git
+    ! [remote rejected]     refs/pull/1/head -> refs/pull/1/head (deny updating a hidden ref)
+    error: failed to push some refs to 'https://github.com/username/repository.git'
+    ```
+
+    并且在取消分支保护 + 强行合并分支的情况下依然无法解决，后来搜索到的原因见[这个链接](https://stackoverflow.com/questions/34265266/remote-rejected-errors-after-mirroring-a-git-repository)，里面很清楚地解答了：
+
+    > The refs beginning 'refs/pull' are synthetic read-only refs created by GitHub - you can't update (and therefore 'clean') them, because they reflect branches that may well actually come from other repositories - ones that submitted pull-requests to you.
+
+    解决方案是把上面第一步`git clone` 语句 替换成：
+
+    ```shell
+
+    git clone --bare git://example.com/some-big-repo.git
+
+    ```
+
+    然后按照BFG的操作手册进行，就完成了！
+
+    以我的这个仓库为例，最开始瘦身Git之前，repo 大小（在github 的 setting -> repository 里可以查看）是 238 MB，清除完毕后是73.9MB。效果十分显著。
+
+    ---------
+
+    一些小技巧：
+
+    如果想要了解特定Github开源仓库的信息，可以直接从API 获取。具体使用方法如下：
+
+    按照链接： `https://api.github.com/repos/{这里写你的用户名，不用加括号}/{这里写你的仓库名，不用加括号}` 在浏览器访问即可。
+
+    比如 https://api.github.com/repos/squidfunk/mkdocs-material 这个链接，就可以直接访问mkdocs materials 作者这个仓库的具体信息。包括仓库大小等具体统计数据。
+
+    
