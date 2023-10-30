@@ -489,6 +489,9 @@ nav:
           - MIT | Course_9: Study/LinearAlgebra/MIT_course_9.md
           - MIT | Course_10: Study/LinearAlgebra/MIT_course_10.md
           - MIT | Course_11: Study/LinearAlgebra/MIT_course_11.md
+          - MIT | Course_12: Study/LinearAlgebra/MIT_course_12.md
+          - MIT | Course_13: Study/LinearAlgebra/MIT_course_13.md
+          - MIT | Course_14: Study/LinearAlgebra/MIT_course_14.md
       - 运筹学:
           - Study/OR/index.md
           - 线性规划、单纯形法（plus pro max版）: Study/OR/Chapter1.md

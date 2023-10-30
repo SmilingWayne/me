@@ -46,11 +46,11 @@
     - [Bing Image Creator](https://www.bing.com/images/create), 用的是最新的DALL.E.3，微软自己搞的。每个用户会有初始小金币，可以用来加速生成，但是耗尽了也没问题，因为只会生成速度变慢，不会说完全用不了；但是速度确实比较堪忧；会一下生成4张，效果比我想象的要好很多；
     - [Leonardo AI](https://app.leonardo.ai/ai-generations)，在固定时间内有使用次数限制，但是每天就会更新一次，所以可以续着用。可以有多个模型选，提供了一定程度的定制；
 
-![](https://raw.githubusercontent.com/SmilingWayne/picsrepo/main/202310251030259.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251030259.png)
 
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251030257.jpeg)
 
-![](https://raw.githubusercontent.com/SmilingWayne/picsrepo/main/202310251030258.jpg)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251030258.jpg)
 
 
 

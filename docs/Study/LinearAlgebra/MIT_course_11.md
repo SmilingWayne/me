@@ -77,9 +77,18 @@ $A  = \begin{bmatrix} 1 & 4 & 5 \\ 2 & 8 & 10 \end{bmatrix}$，这个矩阵，�
 
 在 $\mathcal{R}^4$ 中，$v = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \\ v_4 \end{bmatrix}$，这个向量满足：各个分量之和为0。我们让 $S$ 是在$\mathcal{R}^4$中所有分量之和为0的向量构成的集合。
 
-这个S是否构成一个子空间？答案是：能。那么它的维数和基是什么？
+这个S是否构成一个子空间？答案是：Yes。那么它的维数和基是什么？
 
-我们换个思路就可以发现，这里的S实际上是某个矩阵的零空间： $\begin{bmatrix} 1 & 1 & 1 & 1 \end{bmatrix} v = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \\ v_4 \end{bmatrix} = 0$，这个表示是恒成立的。$S$ 等价于 $N(A), (A = \begin{bmatrix} 1 & 1 & 1 &1 \end{bmatrix})$。所以$S$的维数就是$A$的零空间的维数， $\text{dim}(S) = \text{dim}(N(A)) = 3$，同理可以求出其基 : $\begin{bmatrix} -1 \\ 1 \\ 0 \\ 0 \end{bmatrix} , \begin{bmatrix} -1 \\ 0 \\ 1 \\ 0 \end{bmatrix}, \begin{bmatrix} -1 \\ 0 \\ 0 \\ 1 \end{bmatrix}$。
+> 为什么构成子空间？比如对这样一个满足条件的向量，进行加法和数乘运算，分量之和一定还是0.所以集合对加法和数乘封闭。
+
+我们换个思路就可以发现，这里的S实际上是某个矩阵的零空间： $\begin{bmatrix} 1 & 1 & 1 & 1 \end{bmatrix} v = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \\ v_4 \end{bmatrix} = 0$，这个表示是恒成立的。也就是 $Av = 0$， $S$ 等价于 $N(A), $， $v$ 构成了$A$的零空间。($A = \begin{bmatrix} 1 & 1 & 1 &1 \end{bmatrix})$。所以$S$的维数就是$A$的零空间的维数， $\text{dim}(S) = \text{dim}(N(A)) = 3$，这里的零空间是三维的，对三个自由变量分别赋值，得到$S$的基 $\begin{bmatrix} -1 \\ 1 \\ 0 \\ 0 \end{bmatrix} , \begin{bmatrix} -1 \\ 0 \\ 1 \\ 0 \end{bmatrix}, \begin{bmatrix} -1 \\ 0 \\ 0 \\ 1 \end{bmatrix}$。
 
 
 借助 [前一章](./MIT_course_10.md) 的结论，我们可以推出很多A矩阵的性质：
+
+这里直接看看矩阵A的4个基本子空间都是什么：
+
+1. 矩阵 $A$ 的行空间，维数为1，也就是行向量的任意倍数组成的子空间，一条线；
+2. 矩阵 $A$ 的零空间，是3维的，要找出零空间的基，特殊解，要求出特殊解，首先要找自由变量，然后分别赋值1和0.
+3. 矩阵 $A$ 的列空间是一维空间的子集，因为m=1, 每一列只有1个分量。某个数的任意倍数构成了 $R^1$. 其实也是一条line.
+4. 矩阵A的左零空间呢？就是 $A$ 转置的零空间，$m - r = 0$.
