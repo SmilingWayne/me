@@ -119,3 +119,43 @@ crontab -e
 ```text
 g++ hello.cpp -o hello.out
 ```
+
+
+## 在mac上生成文件目录结构
+
+```
+.
+├── code
+│   └── clean_data.ipynb
+├── figures
+│   ├── ChannelFigure.png
+│   ├── Sales_Sku1_Store1.png
+│   └── Sales_Sku432_Store6.png
+├── 公开数据
+│   ├── offline_store_sku_quant.csv
+│   ├── test.csv
+│   └── test_item.csv
+└── 评测脚本
+    └── 参赛选手自测程序说明
+```
+
+windows下在CMD中可以直接用指令tree来生成树状图。在mac下也有对应的方法。
+
+1. 用brew安装tree
+
+```shell
+brew install tree
+```
+
+2. 进入你想要生成结构的文件（根目录）
+3. 在命令行执行：
+
+```shell
+tree
+```
+
+就可以了。如果你想要更加准确地进行控制（比如生成一级目录），那就：
+
+```shell
+tree -L 1
+```
