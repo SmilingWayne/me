@@ -505,13 +505,87 @@ $\begin{vmatrix} 1 & 2 & 3 \\ 1 & 2 & 4 \end{vmatrix}$
 
 ### Uncapacitated Lot-Sizing Problem 
 
-ft：在 $t$ 周期是否生产
-pt：在 $t$ 周期的单位生产成本
-ht：单位库存成本；
-dt：在 $t$ 时期的需求
+$f_t$：在 $t$ 周期是否生产
+$p_t$：在 $t$ 周期的单位生产成本
+$h_t$：单位库存成本；
+$d_t$：在 $t$ 时期的需求
 
 
 ----------
 
-### 1030 
+### 1030 Branch and Bound // Cutting Planes 
+
+Branch and Bound: 把整数规划问题进行分解。目的是让目标取值一定要是整数。对凸包，关注优化方向相关的区域。
+
+Cutting planes: 把优化方向的非整数部分切割掉。（有效不等式 -> 得到更强的模型和更好的界）
+
+对系数全部 除以一个正整数，并且向下取整。（有一个数学证明）
+
+
+CUT!
+
+所有的有效割平面可以通过同样的方法得到。
+
+- Clique Cut. 
+
+$$\begin{aligned}\begin{equation*}
+\begin{cases}
+x_1 + x_2 \leq 1 \\ 
+x_2 + x_3 \leq 1 \\ 
+x_1 + x_3 \leq 1 \\
+\end{cases}
+\end{equation*}\end{aligned}$$
+
+有：$$x_1 + x_2 + x_3 \leq 1$$
+
+【补充一张图】
+
+如果冲突图是完全的，那么就构成了Clique Cut（团割）
+
+
+$$\min \sum_{p \in P}c_p x_p \\
+\text{s.t.} 
+\begin{aligned}\begin{equation*}
+\begin{cases}
+\sum a_{ip} x_p = 1, \forall i 
+\end{cases}
+\end{equation*}\end{aligned}$$
+
+**subset row inequality**
+
+
+$$\sum \frac{a_{ip} + a_{jp} + a_{kp}}{2} x_p \leq  3/2, a_{ip} \in Z$$
+
+如果P属性中3个有至少2个是1，那么 $x_p$ 就一定要选。
+
+
+## Cover Cut 
+
+$$\sum a_i x_i \leq b, a_i, b \in Z, x_i \in \{0, 1\}$$
+
+$$7x_1 + 6x_2 + 5x_3 + 4x_4 \leq 12$$ 
+
+有： 
+$$\begin{aligned}\begin{equation*}
+\begin{cases}
+x_1 + x_2 \leq 1 \\ 
+x_3 + x_4  +x_5 \leq 2
+\end{cases}
+\end{equation*}\end{aligned}$$
+
+进一步地，有 $x_1 + x_2 + x_3 + x_4 \leq 2$。升维操作。
+
+
+e.g. 
+
+$$7x_1 + 8x_2 + 6x_3  + 4x_4 + 6x_5 + 5x_6 \leq 24$$
+
+
+$$\begin{aligned}\begin{equation*}
+\begin{cases}
+x1 + x2 + x3 + x5 \leq 3 \\
+x_1 + x_2 + x_3 + x_4 + x_5 + x_6 \leq 4
+\end{cases}
+\end{equation*}\end{aligned}$$
+
 
