@@ -522,6 +522,7 @@ nav:
           - 参数估计: Study/Statistics/Parameter_estimation.md
           - 多维随机变量: Study/Statistics/Multi_dimensional_r_v.md
       - 小红书｜Python藏宝箱:
+          - 经（踩）验（坑）分（历）享（史）: Study/PythonPackages/Tricks.md
           - 数据结构大合集: Study/PythonPackages/Data_struct_recomend.md
           - PyEcharts合集: Study/PythonPackages/Pyecharts1.md
           - 一些小玩具: Study/PythonPackages/MagicSquare.md
@@ -610,6 +611,7 @@ nav:
       - Talks/index.md
       - 关于我的101问: Talks/101_asks.md
       - 我的2022: Talks/My2022.md
+      - 2023年末: Talks/2023_con.md
       - 关于仙林: Talks/About_xianlin.md
       - 一些歌词: Talks/Music_lines.md
       - 荐文: Talks/Articles_recomend.md
@@ -619,7 +621,6 @@ nav:
       - 长者: Talks/Him.md
       - 关于记忆和记忆崇拜: Talks/About_memory.md
       - 没有整理的: Talks/pieces.md
-      - 战争: Talks/Russia.md
       - 知识分享: Talks/Knowledge_share.md
       - 语言: Talks/About_language.md
 
