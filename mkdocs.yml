@@ -8,7 +8,6 @@ nav:
       - Philosophy/index.md
       - 📚 哲学家词典:
           - 阿尔都塞: Philosophy/Philosophers/Altusser.md
-          - 德里达: Philosophy/Philosophers/Derrida.md
           - 福柯: Philosophy/Philosophers/Foucault.md
           - 马尔库塞: Philosophy/Philosophers/Marcuse.md
           - 罗兰巴特: Philosophy/Philosophers/RolandBarthes.md
@@ -70,6 +69,7 @@ nav:
           - 乡土中国: Philosophy/Rural_china.md
           - 古代社会: Philosophy/Ancient_society.md
           - 福柯(牛津通识读本): Philosophy/Facult.md
+          - 宗教生活的初级形式: Philosophy/Primal_format_of_religion_life.md
           - 西太平洋上的航海者: Philosophy/Voyagers_western_pacific_ocean.md
           - 论人类不平等的起源与基础: Philosophy/Discours_linegalite.md
 
