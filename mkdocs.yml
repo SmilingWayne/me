@@ -509,6 +509,7 @@ nav:
           - 仓储论（EOQ模型和它的一万个分身）: Study/OR/Chapter10.md
           - 博弈论: Study/OR/Chapter11.md
           - TSP问题: Study/OR/TSP.md
+          - 拉格朗日松弛: Study/OR/LR.md
           - 练习题:
               - 第一章: Study/OR/ORExercise/Chapter1_wk.md
               - 第二章: Study/OR/ORExercise/Chapter2_wk.md
