@@ -709,10 +709,9 @@ plugins:
       exclude:
         - index.md
       enabled: true
-  - blogging:
-      dirs: # The directories to be included
-        - Arts
-
+#   - blogging:
+#       dirs: # The directories to be included
+#         - Arts
 #   - rss:
 #       match_path: Study/.*
 #       date_from_meta:
@@ -751,8 +750,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    # Update 2023.12.18 for locations
   - admonition
   - pymdownx.arithmatex:
       generic: true
