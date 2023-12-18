@@ -2,17 +2,17 @@
 
 
 {% block content %}
-  
-  
-  {{ super() }}
-  
-  {% if git_page_authors %}
+
+
+{{ super() }}
+
+<!-- {% if git_page_authors %}
     <div class="md-source-date">
       <small>
           Authors: {{ git_page_authors | default('enable mkdocs-git-authors-plugin') }}
       </small>
     </div>
     
-  {% endif %}
+  {% endif %} -->
 
 {% endblock %}
