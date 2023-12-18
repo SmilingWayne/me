@@ -32,6 +32,7 @@
     - [英语](./English/English.md)（一个渴望双语生活的人） 
     - 和一些其他的语言学习零碎的笔记；
 - [ ] [交通相关研讨课](./Symposium/0922Fri.md)；研一阶段一门交通相关的研讨课。相关方向：用户均衡、随机用户均衡、交通拥堵收费等其他一系列内容；
+- [ ] [智慧物流](./IntelligentLogistics/IntelligentLogistics1.md)；智慧物流（AKA：物流优化智能算法与整数规划）
 
 ## 💤 计划中
 

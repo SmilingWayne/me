@@ -6,11 +6,14 @@ nav:
   - ˗ˋˏᰔᩚˎˊ˗: index.md
   - 哲学:
       - Philosophy/index.md
+      - 精读系列:
+          - 规训与惩罚: Philosophy/Principles_and_punish.md
       - 📚 哲学家词典:
           - 阿尔都塞: Philosophy/Philosophers/Altusser.md
           - 福柯: Philosophy/Philosophers/Foucault.md
           - 马尔库塞: Philosophy/Philosophers/Marcuse.md
           - 罗兰巴特: Philosophy/Philosophers/RolandBarthes.md
+          - 德里达:  Philosophy/Philosophers/Derrida.md
 
       - 大唯物主义:
           - 🥰 毛: Philosophy/Mao.md
@@ -589,6 +592,7 @@ nav:
           - 英文情诗(All this I did): Study/English/AllthisIdid.md
       - 制造与服务系统分析: Study/AMASS.md
       - 一些高中笔记: Study/HighSchool.md
+      - 智慧物流: Study/IntelligentLogistics/IntelligentLogistics1.md
       - 暑期学校-智能决策与算法: Study/fleet.md
       - Git 使用指南: Study/Git_use.md
       - 发展经济学:
