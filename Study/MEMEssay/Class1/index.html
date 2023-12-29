@@ -9,7 +9,7 @@
 <meta content="SmilingWayne" name="author"/>
 <link href="https://github.com/SmlingWayne/me/Study/MEMEssay/Class1/" rel="canonical"/>
 <link href="../../../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.5.3, mkdocs-material-9.5.2" name="generator"/>
+<meta content="mkdocs-1.5.3, mkdocs-material-9.5.3" name="generator"/>
 <title>工程管理设计研究与论文写作 - 笑笑的站</title>
 <link href="../../../assets/stylesheets/main.50c56a3b.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
@@ -5200,7 +5200,21 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#1214">
 <span class="md-ellipsis">
-      1214 设计假设
+      1214 解决方案设计
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1221">
+<span class="md-ellipsis">
+      1221 解决方案评估
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1228">
+<span class="md-ellipsis">
+      1228 摘要
     </span>
 </a>
 </li>
@@ -5213,7 +5227,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="_1">工程管理设计研究与论文写作<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"></path></svg></span> 约 2479 个字 <span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"></path></svg></span> 7 行代码 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"></path></svg></span> 预计阅读时间 8 分钟</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"></path></svg></span> 约 3047 个字 <span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"></path></svg></span> 7 行代码 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"></path></svg></span> 预计阅读时间 10 分钟</p>
 </div>
 <blockquote>
 <p>15150533263</p>
@@ -5450,6 +5464,10 @@ graph LR;
 <p>情境、问题、解决方案的理论和方法、确定研究不足、确定研究问题；</p>
 <h2 id="1109">1109 文献综述<a class="headerlink" href="#1109" title="Permanent link">⚓︎</a></h2>
 <h3 id="_10">文献综述的目的<a class="headerlink" href="#_10" title="Permanent link">⚓︎</a></h3>
+<blockquote>
+<p>重点：
+</p>
+</blockquote>
 <ul>
 <li>促进探索性的认识；</li>
 <li>以当前研究不足为目的，形成研究问题和创新点的提炼；</li>
@@ -5504,18 +5522,93 @@ graph LR;
 <p>问题、预期、现状和预期的偏差、设计（实施）</p>
 <p>确定边界条件和范围、</p>
 <p>作业：整理研究方案；2.问题研究时候的研究方案是什么样子的？为什么要设计这样一个研究方案进行研究？（有些文献里可能没有，留意一下）</p>
-<h2 id="1214">1214 设计假设<a class="headerlink" href="#1214" title="Permanent link">⚓︎</a></h2>
+<blockquote>
+<p>解决方案设计 </p>
+</blockquote>
+<h2 id="1214">1214 解决方案设计<a class="headerlink" href="#1214" title="Permanent link">⚓︎</a></h2>
+<blockquote>
+<p>CIMO框架: 情境 (Context); 干预 (Intervention):解决方案;机制 (Mechanisms):设计假设，干预产生的作用形式，在什么背景下，这些机制才能发挥作用。 结果(Outcomes)</p>
+</blockquote>
+<div class="admonition example">
+<p class="admonition-title">JIT and CIMO框架</p>
+<p>IT用于汽车组装线的库存成本的案例: </p>
+<ul>
+<li>采用JIT是干预机制(I)</li>
+<li>库存成本是结果(O)</li>
+<li>汽车组装线是背景(C)</li>
+<li>其中的机制(M)是JIT的组成，比如用看板引导物流</li>
+</ul>
+</div>
+<ul>
+<li>设计假设与具体方案的关系<ul>
+<li>设计方案是对设计假设的具体化</li>
+<li>设计假设与设计方案的一对一、一对多、多对多的关系 </li>
+<li>设计假设的确定性与解决方案的多样性</li>
+</ul>
+</li>
+</ul>
 <div class="admonition example">
 <p class="admonition-title">桥梁工程钢箱梁采购与制造</p>
 <p>谁来承担？</p>
 <p>把风险转移给最能承担问题的一方。</p>
+<blockquote>
+<p>甲控模式</p>
+</blockquote>
 </div>
+<ul>
+<li>搜索解决方案<ul>
+<li>顺序性启发式搜索 (Gigerenzer, Reb, &amp; Luan, 2022)。 ü 搜索线索:<ul>
+<li>是否有卓越能力</li>
+<li>是否是让人敬佩的</li>
+<li>他能否提升进入团队的平均水平。</li>
+</ul>
+</li>
+<li>搜索规则:搜索线索的排序。<ul>
+<li>如从卓越能力开始，然后是是否让人敬佩，最后是是否能提升团队平均水平。</li>
+</ul>
+</li>
+<li>停止规则:某一线索提示是结束。</li>
+<li>决策规则:依据结束所需要的行为，如聘用、不聘用。</li>
+</ul>
+</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">最小化假阳性 vs 最小化措施</p>
+<p>最小化假阳性 vs 最小化错失(聘用，但能力并未都满足)。</p>
+<ul>
+<li>最小化阳性中考虑以满足卓越能力的人，作为后续两个线索的候选人</li>
+<li>最小化错失是即便是不满足卓越能力这一项，仍然作为后续两个线索的候选人，并且在</li>
+</ul>
+<blockquote>
+<p>满足任一线索条件都可以雇佣。</p>
+</blockquote>
+</div>
+<h2 id="1221">1221 解决方案评估<a class="headerlink" href="#1221" title="Permanent link">⚓︎</a></h2>
+<p>评估:对解决方案的属性和某些特征的系统评价。</p>
+<p>评估的目的</p>
+<ol>
+<li>证实解决方案的有效性:解决方案与结果之间存在不可预测因素 </li>
+<li>进行理论验证</li>
+<li>为解决方案的修改和调整提供依据</li>
+<li>为设计实施方案提供基础</li>
+<li>
+<p>验证责任性、传播和启发</p>
+</li>
+<li>
+<p>关于作业... </p>
+</li>
+</ol>
+<blockquote>
+<p>分析评估的目标、范围、内容、基准是什么(已有模型or？？？)</p>
+</blockquote>
+<h2 id="1228">1228 摘要<a class="headerlink" href="#1228" title="Permanent link">⚓︎</a></h2>
+<p>看下PPT啊喂！</p>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="最后更新">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 18, 2023 11:07:06</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 29, 2023 14:07:05</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="创建日期">
