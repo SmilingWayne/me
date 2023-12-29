@@ -24,16 +24,22 @@
 
 二. 摘录
 1. 世间最纯的珍宝石无瑕的名誉，人一旦名声扫地，就不过是涂粉的模胚，绘彩的黏土，忠贞之士胸中的果敢，才是深藏不露的奇宝异珍。
+
 > Mine honor is my life, both grow in one, 
 > Take honor from me, and my life is done.
+
 2. 豹子须由雄狮驯服
 > Lions make leopards tame.
+
 3. 当看到世间时间成熟，上苍炽热的报复就会暴雨般泻向凶犯的头顶。
 > When they see the hour ripe on earth, will rain hot vengeance on offenders’ heads.
+
 4. 愿你的祈祷加固我的甲胄，愿你的祝福砥砺我的矛尖。
 > Add proof unto mine armor with thy prayers, and with thy blessings steel my lance’s point.
-4. 他那黄金般无拘无束的自由。
+
+5. 他那黄金般无拘无束的自由。
 > His golden uncontrolled enfranchisement.
+
 5. 照耀你的暖日也会照我身，辉映君王的金色阳光，也会使我的流放流金溢彩。
 6. 我从陛下手中得到的，应该是丰厚的奖赏，而不是惨遭发配，流落他乡，远离朝堂。
 7. 让万念俱灰的麻木，成为看守我的狱卒。
