@@ -18,14 +18,21 @@
   - 一个典型的例子是通过和他沟通我的毕业论文，他很精确地给出了一个量化思路；但是GPT比较浮于表面
   - 另一个典型例子是解决Excel的问题时候，他给出的步骤往往非常详尽。
   - 免费，但是现在需要梯子了。
-  - 最新更新：大家都快去用他家的[Claude 2](https://claude.ai/chats)！！！谷歌邮箱注册，可以直接读10MB以内的PDF文档！而且还是免费的！（要梯子），希望尽快开通API！
+  - 最新更新：大家都快去用他家的[Claude 2](https://claude.ai/chats)！！！谷歌邮箱注册，可以直接读10MB以内的PDF文档！而且还是免费的！（现在有限制了）（要梯子），希望尽快开通API！
 
-- [Bard](https://bard.google.com/): 谷歌的Bard，有时候蠢蠢的（不敢回答），有时候回答很详细，也不知道什么原理，但是注册什么的只要有Google 邮箱确实非常方便；
+- [Bard](https://bard.google.com/): 谷歌的Bard，有时候蠢蠢的（不敢回答），有时候回答很详细，也不知道什么原理，但是注册什么的只要有Google 邮箱。确实非常方便。测试下来他的上下文也不长。个人觉得谷歌是想把大模型融入到用户的日常中，比如AI从你的邮件信息、地址搜索信息、浏览信息中入手，充当你的Personal Assistant。
+
 
 --------------
 
 - [Llama 2 online](https://huggingface.co/chat/)。在线版的Llama 2，编程效果不好，但是想一些点子，出出主意还是很方便的。中文使用下来感觉一般般，可以凑合地当个翻译；
     - Llama 2 目前7B的版本可以部署在macOS本地并且跑了，但是7B的效果挺差劲的，我看了好几个反馈都是如此，而70B的（也就是上面链接的）效果就还好，建议还是先观望，不着急入手。
+    - [Meta自己的Llama实用教程](https://ai.meta.com/llama/get-started/)。
+
+- [免费好用的中文GPT，可以读文档也可以读网页内容](https://kimi.moonshot.cn/)： 亲测效果不错，而且应该是针对中文做过相关的优化，感觉僵硬感少了很多。
+
+
+- [ChatGLM：中国LLM](https://github.com/THUDM/ChatGLM3)
 
 - 下面是我自己用过的：
 
@@ -77,10 +84,11 @@
 
 ## 让机器人帮你操作GPT
 
-- [https://chatexcel.com/](https://chatexcel.com/)。效果还不错！免费，限制文件大小5MB，20行
+- [https://chatexcel.com/](https://chatexcel.com/)。效果还不错！免费，限制文件大小5MB，20列
   - 但是如果你是个熟练的Exceler那我还是建议自己抠Excel表格
 
 ## 语音转文字
 
 - [Whisper](https://github.com/openai/whisper), 也是OpenAI做的。
     - 一个目前的工作流：下载到视频（[B站](https://xbeibeix.com/api/bilibili/)等对应不同的下载方式），飞书妙记自动识别英文、导出txt文稿；把txt文稿丢到Claude 2 中进行文本问答，从而总结归纳；
+    - [一个网页版Demo](https://huggingface.co/spaces/Xenova/distil-whisper-web)：transformer.js 允许你在网页端直接用whisper，甚至你可以直接录一段话让他转译出来。甚至允许你导出成json格式，也可以上传视频！
