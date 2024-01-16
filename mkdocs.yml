@@ -13,7 +13,7 @@ nav:
           - 福柯: Philosophy/Philosophers/Foucault.md
           - 马尔库塞: Philosophy/Philosophers/Marcuse.md
           - 罗兰巴特: Philosophy/Philosophers/RolandBarthes.md
-          - 德里达:  Philosophy/Philosophers/Derrida.md
+          - 德里达: Philosophy/Philosophers/Derrida.md
 
       - 大唯物主义:
           - 🥰 毛: Philosophy/Mao.md
@@ -618,7 +618,7 @@ nav:
       - Talks/index.md
       - 关于我的101问: Talks/101_asks.md
       - 我的2022: Talks/My2022.md
-      - 2023年末: Talks/2023_con.md
+      - 2023年终总结和一些感想: Talks/2023_con.md
       - 关于仙林: Talks/About_xianlin.md
       - 一些歌词: Talks/Music_lines.md
       - 荐文: Talks/Articles_recomend.md
@@ -690,10 +690,10 @@ extra_javascript:
 
 plugins:
   - statistics
-  - mermaid2:
-      version: 10.2.0
-      arguments:
-        securityLevel: "loose"
+  #   - mermaid2:
+  #       version: 10.2.0
+  #       arguments:
+  #         securityLevel: "loose"
   - tags
   - search:
       separator: '[\s\u200b\-]'
@@ -743,7 +743,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.mark
@@ -755,8 +755,10 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-    # Update 2023.12.18 for locations
+      emoji_generator:
+        !!python/name:material.extensions.emoji.to_svg # Update 2023.12.18 for locations
+
+
   - admonition
   - pymdownx.arithmatex:
       generic: true

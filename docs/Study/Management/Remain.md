@@ -67,7 +67,6 @@
 
 
 ```mermaid
-%%{init: {"quadrantChart": {"chartWidth": 400, "chartHeight": 400, "quadrantLabelFontSize": 20}, "themeVariables": {"quadrant1TextFill": "#ff0000"} }}%%
 quadrantChart
     title Boston Matrix: Four Quadrants Analysis
     x-axis Market Share Low -->  Market Share High
@@ -326,7 +325,17 @@ quadrantChart
  
 - 概述控制的过程
     - 第一步：制定标准 ：控制的关键因素包含：出现偏差的可能性大的因素，直接决定工作成效的重点因素，能使控制最有效又最经济的因素。可以通过统计性方法，经验判断法，技术分析法等方法制定标准，要求制定出的标准有可衡量性，公平性，可实现性和适当的弹性。
-
     - 第二步：衡量绩效：首先选择衡量方式，包括亲自观察，分析统计资料，召开会议，抽样调查。之后，评价衡量结果，确定衡量频度，建立信息系统。
-
     - 第三步：纠正偏差：如果偏差可以接受，或者改进成本过高，可以不采取行动，也可以在生产技术，管理方式，组织结构，人事安排等方面着手改进绩效。
+
+
+-------------
+
+> TODO: 需要进行文档整理归纳
+
+#### 管理与领导力 Q1:
+
+#### 管理与领导力 Q2: 概述控制的主要类型和控制的三阶段流程（此问题同上Q.26，不赘述）
+
+#### 管理与领导力 Q3: 
+
