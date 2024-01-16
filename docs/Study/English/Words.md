@@ -1,8 +1,11 @@
 # 记一下各种奇怪的英语单词
 
+!!! note "历史"
+   如果没有记错的话，应该是备考英语时候准备的。现在已经停滞下来了哈哈哈哈
+
 - `In` 短语家族
   - in short
-  - in essence
+  - in essence: 从本质上讲
   - in case 
   - in turn
   - in return
