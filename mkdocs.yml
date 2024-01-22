@@ -448,8 +448,9 @@ nav:
   - 学习:
       - Study/index.md
       - 小红书资源分享站: Study/xhs_list.md
-      - 研讨会资料:
+      - 文献阅读与组会资料:
           - 交通网络均衡｜20230922: Study/Symposium/0922Fri.md
+          - 20240122报告: Study/Symposium/Articles.md
       - 学习资源存储站: Study/Materials_list.md
       - 小红书｜文本编辑:
           - Study/TextEdit/index.md
