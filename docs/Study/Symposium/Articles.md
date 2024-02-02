@@ -2,16 +2,20 @@
 
 !!! example "Summary"
 
+    > Transportmetrica A ｜ TR part E logistics
+
     - VRP路线规划 ｜ 货运车辆调度 ｜ 毕设相关
     - Truck and Drones 规划
     - 货车车队platoon
     - 鲁棒优化相关
     - 电动公交车相关
     - 对两本期刊的总结
+    
+    > 带链接的为相关性较强的
 
 --------
 
-## VRP 路线规划｜货运卡车｜毕设相关：
+## VRP 路线规划｜货运卡车｜物流相关
 
 1. [Sadati, M. E. H., & Çatay, B. (2021). A hybrid variable neighborhood search approach for the multi-depot green vehicle routing problem. Transportation Research Part E: Logistics and Transportation Review, 149, 102293.](https://www.sciencedirect.com/science/article/pii/S1366554521000673)
 
@@ -31,12 +35,11 @@
 3. [Chung-Cheng Lu, Ali Diabat, Yi-Ting Li, Yu-Min Yang (2021).  Combined passenger and parcel transportation using a mixed fleet of electric and gasoline vehicles. Transportation Research Part E: Logistics and Transportation Review, 164, 102757.](https://www.sciencedirect.com/science/article/pii/S1366554521003045)
 
 - 特征：混合车队（有新能源和燃油汽车）、集送货和运客一体（combined passenger and parcel transportation problem with a mixed fleet (CPPT-MF).
-- Multi-layer 路线网络
+- Multi-layer 路线网络：一辆车就是一个网络
 
 4. **Yuan, Y., Cattaruzza, D., Ogier, M., Semet, F., & Vigo, D. (2021). A column generation based heuristic for the generalized vehicle routing problem with time windows. Transportation Research Part E: Logistics and Transportation Review, 152, 102391.**
 
 - 列生成方法、广义车辆路径
-
 
 
 5. **Dönmez, S., Koç, Ç., & Altıparmak, F. (2022). The mixed fleet vehicle routing problem with partial recharging by multiple chargers: Mathematical model and adaptive large neighborhood search. Transportation Research Part E: Logistics and Transportation Review, 167, 102917.**
@@ -64,7 +67,7 @@
 
 8.  [Wang, M., Miao, L., & Zhang, C. (2021). A branch-and-price algorithm for a green location routing problem with multi-type charging infrastructure. Transportation Research Part E: Logistics and Transportation Review, 156, 102529.](https://www.sciencedirect.com/science/article/pii/S136655452100288X):
 
-> 有多类型充电基础设施（GLRP-CI）的绿色基础设施建设问题，旨在确定同时确定仓库位置的决策，有换电（BSI）又有充电设备（FCI）在配电系统中路由电动汽车（EV）。 aic-flow model. 目标是最小化总成本，包括配备BSI或FCI的仓库的每日固定成本、电动汽车的行驶成本、电池的持有成本和充电的电力成本，并从目标函数中减去将能量送回电网的潜在利润。
+> 有多类型充电基础设施（GLRP-CI）的绿色基础设施建设问题，旨在确定同时确定仓库位置的决策，有换电（BSI）又有充电设备（FCI）在配电系统中路由电动汽车（EV）。 arc-flow model. 目标是最小化总成本，包括配备BSI或FCI的仓库的每日固定成本、电动汽车的行驶成本、电池的持有成本和充电的电力成本，并从目标函数中减去将能量送回电网的潜在利润。
 
 
 9.  [Huang, N., Li, J., Zhu, W., & Qin, H. (2021). The multi-trip vehicle routing problem with time windows and unloading queue at depot. Transportation Research Part E: Logistics and Transportation Review, 152, 102370.](https://www.sciencedirect.com/science/article/pii/S1366554521001381)
@@ -76,7 +79,6 @@
 > - solomon + Branch and Bound
 > 
 > - label setting
-> 
 
 
 10. Giménez-Palacios, I., Parreño, F., Álvarez-Valdés, R., Paquay, C., Oliveira, B. B., Carravilla, M. A., & Oliveira, J. F. (2022). First-mile logistics parcel pickup: Vehicle routing with packing constraints under disruption. Transportation Research Part E: Logistics and Transportation Review, 164, 102812.
@@ -101,7 +103,7 @@
 14. 能源相关：Zhang, Q., Qi, J., & Zhen, L. (2023). Optimization of integrated energy system considering multi-energy collaboration in carbon-free hydrogen port. Transportation Research Part E: Logistics and Transportation Review, 180, 103351.
     1.  Unit Commitment：决策何时开机关机、发电水平、多少储能、购能情况；1）表示PIES运行成本的最小化，包括机组的启动和关闭成本、发电成本和购电成本。
 
-15. [**Guschinsky, N., Kovalyov, M. Y., Pesch, E., & Rozin, B. (2023). Cost minimizing decisions on equipment and charging schedule for electric buses in a single depot. Transportation Research Part E: Logistics and Transportation Review, 180, 103337.**](https://www.sciencedirect.com/science/article/pii/S1366554523003253) :
+15. [Guschinsky, N., Kovalyov, M. Y., Pesch, E., & Rozin, B. (2023). Cost minimizing decisions on equipment and charging schedule for electric buses in a single depot. Transportation Research Part E: Logistics and Transportation Review, 180, 103337.](https://www.sciencedirect.com/science/article/pii/S1366554523003253) :
     - 每次旅行在给定时间在同一个仓库开始和结束，电动巴士在那里为电池充电。问题在于确定电动巴士的电池型号、不同类型的充电器数量和电动巴士的每日循环充电时间表，以便将 （a） 充电设备的每日总成本、电池磨损和消耗的能量，以及 （b） 电动巴士充电中断（切换）的总数降至最低。约束条件包括供电的上限、在第二天为每辆电动巴士执行转移任务之前恢复初始电池能量状态，以及每辆电动巴士在所有电动巴士和访问的每次仓库访问中的最大开关次数的上限。提出了一种双层分解方法，将与详细充电计划和开关次数相关的决策和约束转移到较低级别的问题中。
 
 16. [Lin, N., Akkerman, R., Kanellopoulos, A., Hu, X., Wang, X., & Ruan, J. (2023). Vehicle routing with heterogeneous service types: Optimizing post-harvest preprocessing operations for fruits and vegetables in short food supply chains. Transportation Research Part E: Logistics and Transportation Review, 172, 103084. ](https://www.sciencedirect.com/science/article/pii/S1366554523000728)在问题中，新鲜农产品由移动预处理设施在现场进行预处理，或在集中地点收集进行预处理。对于集中预处理，使用普通卡车收集产品并将其运输到预处理站。对于移动预处理，使用专用预处理车进行现场预处理。我们考虑了使用不同预处理技术的多种类型的预处理车辆的可能性，代表同一过程的不同技术或同一技术的不同版本:旨在为在短食品供应链中进行预加工操作提供一种有效的途径。我们既考虑了移动预处理单元的异构车队，也考虑了拾取产品进行集中预处理的可能性。由此产生的问题是具有时间窗的经典异构车队车辆路径问题 （HFVRPTW） 的变体
@@ -110,7 +112,7 @@
 17. [Chen, C., Demir, E., Huang, Y., & Qiu, R. (2021). The adoption of self-driving delivery robots in last mile logistics. Transportation research part E: logistics and transportation review, 146, 102214.](https://www.sciencedirect.com/science/article/pii/S1366554520308565#s0015)
 
 - 引入了具有时间窗口和送货机器人的新车辆路径问题：**最后一公里物流**。目标函数：**最小化路线行驶总时间**。有vehicle也有robot，robot负责最后节点的配送，vehicle负责运输到中转，有时间窗口；
-- 两阶段数学规划；先对站点做了cluster；solomon dataset
+- 两阶段数学规划；先对站点做了cluster；数据集是solomon dataset
 
 
 
@@ -190,14 +192,15 @@
 
 
 
-3. Lee, E., Cen, X., & Lo, H. K. (2021). Zonal-based flexible bus service under elastic stochastic demand. Transportation Research Part E: Logistics and Transportation Review, 152, 102367.
+3. [Lee, E., Cen, X., & Lo, H. K. (2021). Zonal-based flexible bus service under elastic stochastic demand. Transportation Research Part E: Logistics and Transportation Review, 152, 102367.](https://www.sciencedirect.com/science/article/pii/S1366554521001356)
 
 - 随机规划、提供门到门服务的灵活公交车，多名乘客共享车辆，从而减少了城市网络的拥堵。根据历史需求特征将灵活公交分配到分区路线。在需求实现后，乘客可以享受定期服务或临时服务，以尽量减少临时服务成本和绕行时间成本的总和。
 
 4. **Zhan, X., Szeto, W. Y., & Chen, X. M. (2022). A simulation–optimization framework for a dynamic electric ride-hailing sharing problem with a novel charging strategy. Transportation Research Part E: Logistics and Transportation Review, 159, 102615.**
 
-- 仿真优化、网约车电动汽车充电策略、
-- MILP和MINLP的输出更新和跟踪乘客的状态和充电站的充电过程。结果表明，在动态网约车匹配问题中，所提出的充电策略在充电等待时间更短、匹配率更高的情况下优于基准。通过改变初始充电状态（SOC）、REV数量、各充电站充电桩数、充满电时间、充电桩分布等不同场景，检验了所提充电策略的鲁棒性
+> 仿真优化、网约车电动汽车充电策略
+> 
+> MILP和MINLP的输出更新和跟踪乘客的状态和充电站的充电过程。结果表明，在动态网约车匹配问题中，所提出的充电策略在充电等待时间更短、匹配率更高的情况下优于基准。通过改变初始充电状态（SOC）、REV数量、各充电站充电桩数、充满电时间、充电桩分布等不同场景，检验了所提充电策略的鲁棒性
 
 
 5. Tran, C. Q., Keyvan-Ekbatani, M., Ngoduy, D., & Watling, D. (2021). Stochasticity and environmental cost inclusion for electric vehicles fast-charging facility deployment. Transportation Research Part E: Logistics and Transportation Review, 154, 102460.
@@ -211,13 +214,12 @@
 
 7. Huang, D., Wang, Y., Jia, S., Liu, Z., & Wang, S. (2023). A Lagrangian relaxation approach for the electric bus charging scheduling optimisation problem. Transportmetrica A: Transport Science, 19(2), 2023690.
 
-- 拉格朗日松弛框架（之前看过）
+- 拉格朗日松弛框架（同研讨课汇报论文） 
 
 
-8. Tran, C. Q., Ngoduy, D., Keyvan-Ekbatani, M., & Watling, D. (2021). A user equilibrium-based fast-charging location model considering heterogeneous vehicles in urban networks. Transportmetrica A: Transport Science, 17(4), 439-461.
+8. [Tran, C. Q., Ngoduy, D., Keyvan-Ekbatani, M., & Watling, D. (2021). A user equilibrium-based fast-charging location model considering heterogeneous vehicles in urban networks. Transportmetrica A: Transport Science, 17(4), 439-461.](https://www.tandfonline.com/doi/abs/10.1080/23249935.2020.1785579)
    
-- 快充站点位置设置
-
+- 快充站点位置设置：在混合汽油和电动汽车的城市网络中，快速充电站在交通平衡流和电动汽车渗透率方面的最佳位置识别问题。提出了一种双层优化框架，其中上层旨在通过最小化总行程时间和充电基础设施的安装成本来定位
 
 9. Thanh, V. V., Su, W., & Wang, B. (2022). Optimal DC microgrid operation with model predictive control-based voltage-dependent demand response and optimal battery dispatch. Energies, 15(6), 2140.
 
@@ -290,7 +292,7 @@
 
 
 
-!!! note "Some topics"
+!!! note "Some Other topics"
     
     - ride sharing: with Autonomous electric vehicle: 电动无人车的共享交通
     - pedestrian-vehicle flow estimation 行人和车辆流量估计
@@ -318,3 +320,4 @@
     - data-driven method
 
 
+---------
