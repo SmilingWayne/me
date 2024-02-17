@@ -623,6 +623,7 @@ nav:
       - 从经天路到小粉桥（2023年终总结）: Talks/2023_con.md
       - 神秘学手记: Talks/Occult.md
       - 关于仙林: Talks/About_xianlin.md
+      - 关于语言: Talks/About_language.md
       - 一些歌词: Talks/Music_lines.md
       - 荐文: Talks/Articles_recomend.md
       - 荐书: Talks/Books_recomend.md
@@ -632,7 +633,7 @@ nav:
       - 关于记忆和记忆崇拜: Talks/About_memory.md
       - 没有整理的: Talks/pieces.md
       - 知识分享: Talks/Knowledge_share.md
-      - 语言: Talks/About_language.md
+      
 
 site_author: SmilingWayne
 repo_name: SmilingWayne/me
