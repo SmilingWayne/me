@@ -77,6 +77,7 @@ nav:
           - 论人类不平等的起源与基础: Philosophy/Discours_linegalite.md
 
       - 其他:
+          - 🇯🇵日本思想小史: Philosophy/Japan_philosophers.md
           - 哲思与海——一部诗意的哲学随笔: Philosophy/Phi_and_sea.md
           - 福柯(牛津通识读本): Philosophy/Facult.md
           - 实用主义: Philosophy/Pragmatism.md
@@ -633,7 +634,6 @@ nav:
       - 关于记忆和记忆崇拜: Talks/About_memory.md
       - 没有整理的: Talks/pieces.md
       - 知识分享: Talks/Knowledge_share.md
-      
 
 site_author: SmilingWayne
 repo_name: SmilingWayne/me
