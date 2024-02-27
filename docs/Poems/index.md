@@ -6,6 +6,10 @@
 
 - [ ] 各种诗歌：史诗 ｜ 长诗 ｜ 现代诗 ｜ 中外古典 ；
 
+!!! abstract "印象深刻的"
+    - [伊利亚特](./Illiad.md) ｜ [奥德赛](./Odyssey.md) ｜ 
+    - [木心](./Muxin.md) ｜ [中国古典诗](./ClassicChinese_shi.md) ｜ [辛词选](./Xinqiji_ci.md) ｜  [月光落在左手上](./Moonlight_left_hand.md) ｜ 
+
 ----------
 
 - 💻 PC端：点击顶部导航栏选择主题，左侧查看目录；
