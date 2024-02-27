@@ -550,6 +550,7 @@ nav:
           - R语言数据集(Partial): Study/PythonPackages/Rdata.md
       - 小红书｜供应链管理:
           - Little's_Law: Study/Supplychain/LittlesLaw.md
+          - 研究生课程：供应链管理与物流: Study/SupplyChain/202401SupplyChain.md
           - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
           - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
           - 时间序列预测模型与框架：ARMA/Winter(Chapter_7.5/7.6): Study/Supplychain/SupplyChain3.md
@@ -624,7 +625,6 @@ nav:
       - 请回答，2022: Talks/My2022.md
       - 从经天路到小粉桥（2023年终总结）: Talks/2023_con.md
       - 神秘学手记: Talks/Occult.md
-      - 关于仙林: Talks/About_xianlin.md
       - 关于语言: Talks/About_language.md
       - 一些歌词: Talks/Music_lines.md
       - 荐文: Talks/Articles_recomend.md
