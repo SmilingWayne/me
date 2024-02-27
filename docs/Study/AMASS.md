@@ -830,73 +830,66 @@ EOQ模型和报童模型。【要回去仔细看，比如什么是安全库存�
 2. 长期预测没有短期预测准确
 3. 个体预测没有群体预测准确（risk pooling）
 
- 
 
-整体的、个体的之间的分担：叫做risk pooling：风险分担、风险组合、风险对冲。把总体的pooling在一起。
 
- 
 
-短期的长期的：在库存管理时，有哪些，举措，应用到了这一点？
+!!! abstract "Cheatsheet"
 
- 
+   - 整体的、个体的之间的分担：叫做risk pooling：风险分担、风险组合、风险对冲。把总体的pooling在一起。
 
-有哪些举措pooling在一起？【vitru】
+   - 短期的长期的：在库存管理时，有哪些，举措，应用到了这一点？ 
 
- 
+   - 有哪些举措pooling在一起？【vitru】
 
-Postponement引用了什么原理？-》短期比长期的原理，差异化。【安全库存和西格玛有关，西格玛的那个公式？】
+   - Postponement引用了什么原理？-》短期比长期的原理，差异化。【安全库存和西格玛有关，西格玛的那个公式？】
 
   
 
-计划对未来的安排：长期中期短期。
+    计划对未来的安排：长期中期短期。
 
-MRP：MRP的三大XX，最后决定了XX order receipt、MPS、。。。
+    MRP：MRP的三大XX，最后决定了XX order receipt、MPS、。。。
 
-Push pull？
+    Push pull？
 
-Schedule的一些问题：大概解决什么问题？
+    Schedule的一些问题：大概解决什么问题？
 
-Schedule三个很重要的要素：（1）资源（2）任务；（3）目标；
+    Schedule三个很重要的要素：（1）资源（2）任务；（3）目标；
 
-分配资源做哪些任务？这么做的安排是那些？scheduling的时候，jobshop scheduling涉及的两大任务：分配：dispatch、assignment，loading把任务安排给谁；排序（一系列的排序规则：FIFO、SPT (最短时间优先)，sequence rule；priority rule优先级排序：先是谁后是谁？
+    分配资源做哪些任务？这么做的安排是那些？scheduling的时候，jobshop scheduling涉及的两大任务：分配：dispatch、assignment，loading把任务安排给谁；排序（一系列的排序规则：FIFO、SPT (最短时间优先)，sequence rule；priority rule优先级排序：先是谁后是谁？
 
-最后得出了什么结论？【看下ppt】
+    最后得出了什么结论？【看下ppt】
 
- 
+    比较的是影响flow rate，inventory
+    
+    四道大题：前面20判断题；稍微改一改就有错的：
 
-比较的是影响flow rate，inventory
+    e.g什么是安全库存？Reorder point点？安全库存指在补货点的库存量。
 
- 
+    
 
-四道大题：前面20判断题；稍微改一改就有错的：
+    SPT在所有规则最好的->NO
 
-e.g什么是安全库存？Reorder point点？安全库存指在补货点的库存量。
+    
 
- 
+    十道选择题单选。
 
-SPT在所有规则最好的->NO
+    
 
- 
+    简答题：课上都讲过的概念。
 
-十道选择题单选。
+    
 
- 
+    流程分析题：要计算flow time，capacity，inventory，
 
-简答题：课上都讲过的概念。
+    注意要先画流程图。
 
- 
+    要花一点时间，不然可能有点绕，要回去看看案例CRU，cranberry等。
 
-流程分析题：要计算flow time，capacity，inventory，
+    有的内容就是书上的题目。
 
-注意要先画流程图。
+    
 
-要花一点时间，不然可能有点绕，要回去看看案例CRU，cranberry等。
-
-有的内容就是书上的题目。
-
- 
-
-判断题主要还是看意思。
+    判断题主要还是看意思。
 
 
 
