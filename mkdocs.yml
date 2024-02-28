@@ -71,7 +71,6 @@ nav:
           - 倦怠社会: Philosophy/Society_of_fatigue.md
           - 乡土中国: Philosophy/Rural_china.md
           - 古代社会: Philosophy/Ancient_society.md
-          - 福柯(牛津通识读本): Philosophy/Facult.md
           - 宗教生活的初级形式: Philosophy/Primal_format_of_religion_life.md
           - 西太平洋上的航海者: Philosophy/Voyagers_western_pacific_ocean.md
           - 论人类不平等的起源与基础: Philosophy/Discours_linegalite.md
@@ -79,7 +78,6 @@ nav:
       - 其他:
           - 🇯🇵日本思想小史: Philosophy/Japan_philosophers.md
           - 哲思与海——一部诗意的哲学随笔: Philosophy/Phi_and_sea.md
-          - 福柯(牛津通识读本): Philosophy/Facult.md
           - 实用主义: Philosophy/Pragmatism.md
           - 亚里士多德的世界(牛津通识读本): Philosophy/World_of_aristotle.md
           - 如何阅读一本书: Philosophy/How_to_read.md
@@ -320,7 +318,6 @@ nav:
       - 闲聊: yan/yanTalks.md
   - 想/在做的事:
       - ToDo/index.md
-      - 书: ToDo/ToRead.md
       - 术: ToDo/ToCode.md
       - 事: ToDo/ToDo.md
       - LeetCode:
@@ -596,6 +593,7 @@ nav:
           - 一些零散的英语笔记: Study/English/SomePres.md
           - 英语文学批评: Study/English/LiteraryCriticism.md
           - 英文情诗(All this I did): Study/English/AllthisIdid.md
+          - 葛底斯堡演说(Gettysburg_Address): Study/English/Gettysburg_Address.md
       - 制造与服务系统分析: Study/AMASS.md
       - 一些高中笔记: Study/HighSchool.md
       - 智慧物流: Study/IntelligentLogistics/IntelligentLogistics1.md
