@@ -29,8 +29,7 @@
     - Llama 2 目前7B的版本可以部署在macOS本地并且跑了，但是7B的效果挺差劲的，我看了好几个反馈都是如此，而70B的（也就是上面链接的）效果就还好，建议还是先观望，不着急入手。
     - [Meta自己的Llama实用教程](https://ai.meta.com/llama/get-started/)。
 
-- [免费好用的中文GPT，可以读文档也可以读网页内容](https://kimi.moonshot.cn/)： 亲测效果不错，而且应该是针对中文做过相关的优化，感觉僵硬感少了很多。
-
+- [免费好用的中文GPT Kimi，可以读文档也可以读网页内容](https://kimi.moonshot.cn/)： 亲测效果不错，而且应该是针对中文做过相关的优化，感觉僵硬感少了很多。无需翻墙。
 
 - [ChatGLM：中国LLM](https://github.com/THUDM/ChatGLM3)
 
