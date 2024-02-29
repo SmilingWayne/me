@@ -49,8 +49,7 @@
         - 混合策略
 
 
-- 后续：正在写最优化的笔记。（已停更）
 - 本部分来源《运筹学》 机械工业出版社。如有需要建议使用清华的运筹教材，英文教材推荐 Bertsimas 和 Tsitsiklis 1997 的Introduction to linear optimization。
 
-> 求解器使用部分目前更新中，可能后续不会合并了。见[我的Github仓库](https://github.com/SmilingWayne/ORtoolsTutorials)
+> 求解器使用部分目前更新中，后续不会合并到这个仓库里了，以Jupyter Notebook形式展现。见[我的Github仓库](https://github.com/SmilingWayne/ORtoolsTutorials)
 
