@@ -35,4 +35,16 @@
 
 
 - 查看历史剪贴板： ++ctrl+command+bracket-left++ （这个功能直接取代了我的copyless软件，可以说是很好上手）
-- Option + “[” : 使用单词翻译功能；
+- Option + “[” : 使用单词翻译功能;
+- ++Command++ + ++[++ : 快捷粘贴，这个功能非常好用，支持自定义插入的内容，比如可以插入当前的时间：
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202403021238945.png)
+
+- （这个是统一的）输入`store`，唤起插件市场，可以找你想要的插件；
+
+
+### 我使用的一些插件
+
+1. word count：可以快速统计字数、段落数，自动生成阅读时间；
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202403021225676.png)
