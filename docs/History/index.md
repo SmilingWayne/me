@@ -47,8 +47,9 @@
         - [科邦篇-1](https://zhuanlan.zhihu.com/p/543259732): 安善 ｜ 哈图沙
         - [科邦篇-2](https://zhuanlan.zhihu.com/p/546940964): 博洛尼亚 ｜ 非斯 ｜ 米特拉
         - [科邦篇-3](https://zhuanlan.zhihu.com/p/567635666): 那烂陀 ｜ 帕伦克 ｜ 斯德哥尔摩 ｜ 塔鲁加
+        - [文邦篇-1](https://zhuanlan.zhihu.com/p/653405115): 塔那那利佛 ｜ 阿瑜陀耶 ｜ 卡瓜纳 ｜ 摩亨朱达罗 ｜ 南马都尔 ｜ 拉帕努伊
 
-    - [文明6全文明标志考证]()
+    - [文明6全文明标志考证](https://www.zhihu.com/column/c_1544120309493747712)
         - [第一篇](https://zhuanlan.zhihu.com/p/554539473): 美国 ｜ 阿拉伯 ｜ 澳大利亚 ｜ 阿兹特克 ｜ 巴比伦 ｜ 巴西 ｜ 拜占庭
         - [第二篇](https://zhuanlan.zhihu.com/p/558281354)：加拿大 ｜ 中国 ｜ 克里 ｜ 荷兰 ｜ 埃及 ｜ 英国 ｜ 埃塞俄比亚
         - [第三篇](https://zhuanlan.zhihu.com/p/554168257): 法国 ｜ 高卢 ｜ 格鲁吉亚 ｜ 德国 ｜ 大哥伦比亚
