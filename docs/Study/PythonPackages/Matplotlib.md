@@ -1,4 +1,4 @@
-- Matplotlib 多子图：
+## 用matplotlib绘制多子图
 
 ```Python
 
@@ -29,3 +29,6 @@ axes["C"].bar(range(len(data)), data, color=["r","g", "b"])
 fig.savefig("./Show.png")
 
 ```
+
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202403061913089.png)

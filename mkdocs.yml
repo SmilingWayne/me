@@ -329,7 +329,6 @@ nav:
               - 最长公共子串: ToDo/LeetCode/0/004_longest-common-string.md
               - 让字符串对称的最小删除字符: ToDo/LeetCode/0/005_delete-min-words-making-string-symmetry.md
               - A-star算法: ToDo/LeetCode/0/006_Astar.md
-          - 模板: ToDo/LeetCode/Template.md
           - 2022/4/24: ToDo/LeetCode/2022.4.24 C++ 练习.md
           - 1_two-sum.md: ToDo/LeetCode/1/1_two-sum.md
           - 1003_check-if-word-is-valid-after-substitutions.md: ToDo/LeetCode/1/1003_check-if-word-is-valid-after-substitutions.md
@@ -379,12 +378,14 @@ nav:
           - 206_reverse-linked-list.md: ToDo/LeetCode/2/206_reverse-linked-list.md
           - 213_house-robber-ii.md: ToDo/LeetCode/2/213_house-robber-ii.md
           - 216_combination-sum-iii.md: ToDo/LeetCode/2/216_combination-sum-iii.md
+          - 225_implement-stack-using-queues.md: ToDo/LeetCode/2/225_implement-stack-using-queues.md
           - 2178_maximum-split-of-positive-even-integers.md: ToDo/LeetCode/2/2178_maximum-split-of-positive-even-integers.md
           - 2182_construct-string-with-repeat-limit.md: ToDo/LeetCode/2/2182_construct-string-with-repeat-limit.md
           - 2191_sort-the-jumbled-numbers.md: ToDo/LeetCode/2/2191_sort-the-jumbled-numbers.md
           - 2496_maximum-value-of-a-string-in-an-array.md: ToDo/LeetCode/2/2496_maximum-value-of-a-string-in-an-array.md
-          - 2840_check-if-strings-can-be-made-equal-with-operations-ii: ToDo/LeetCode/2/2840_check-if-strings-can-be-made-equal-with-operations-ii.md
           - 2600_k-items-with-the-maximum-sum.md: ToDo/LeetCode/2/2600_k-items-with-the-maximum-sum.md
+          - 2840_check-if-strings-can-be-made-equal-with-operations-ii: ToDo/LeetCode/2/2840_check-if-strings-can-be-made-equal-with-operations-ii.md
+          - 2917_find-the-k-or-of-an-array: ToDo/LeetCode/2/2917_find-the-k-or-of-an-array.md
           - 3_longest-substring-without-repeating-characters.md: ToDo/LeetCode/3/3_longest-substring-without-repeating-characters.md
           - 32_longest-valid-parentheses.md: ToDo/LeetCode/3/32_longest-valid-parentheses.md
           - 322_coin-change.md: ToDo/LeetCode/3/322_coin-change.md
@@ -448,7 +449,7 @@ nav:
 
   - 学习:
       - Study/index.md
-      - 组会艺术大赏！: 
+      - 组会艺术大赏！:
           - 202309至202401: Study/TeamMeeting/0920.md
           - 0308: Study/TeamMeeting/0308Prep.md
       - 小红书资源分享站: Study/xhs_list.md
@@ -537,20 +538,17 @@ nav:
           - 数据结构大合集: Study/PythonPackages/Data_struct_recomend.md
           - PyEcharts合集: Study/PythonPackages/Pyecharts1.md
           - 一些小玩具: Study/PythonPackages/MagicSquare.md
-          - pipreqs: Study/PythonPackages/PIPREQS.md
+          - 项目依赖管理pipreqs: Study/PythonPackages/PIPREQS.md
           - Python二分排序函数Bisect: Study/PythonPackages/PythonBisect.md
           - 微信读书可视化: Study/PythonPackages/PythonPieces6.md
-          - Python｜一些命令行: Study/PythonPackages/PythonPieces7.md
+          - Python一些命令行操作: Study/PythonPackages/PythonPieces7.md
           - matplotlib技巧: Study/PythonPackages/Matplotlib.md
-          - Deque-小抄: Study/PythonPackages/Python_deque.md
+          - Collections中的若干数据结构: Study/PythonPackages/Python_deque.md
           - Itertools-小抄: Study/PythonPackages/PythonPieces1.md
-          - NamedTuple-小抄: Study/PythonPackages/PythonPieces2.md
-          - 对...的理解: Study/PythonPackages/PythonPieces3.md
-          - 带*的变量: Study/PythonPackages/PythonPieces4.md
-          - 集合操作: Study/PythonPackages/PythonPieces5.md
+          - Python解包运算符: Study/PythonPackages/PythonPieces3.md
           - R语言数据集(Partial): Study/PythonPackages/Rdata.md
       - 小红书｜供应链管理:
-          - Little's_Law: Study/Supplychain/LittlesLaw.md
+          - 利特尔定律: Study/Supplychain/LittlesLaw.md
           - 研究生课程：供应链管理与物流: Study/SupplyChain/202401SupplyChain.md
           - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
           - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md

@@ -44,7 +44,7 @@
     - [ ] [法语](./English/French.md)（会说一点点点）
     - [ ] [英语](./English/English.md)（一个渴望双语生活的人） 
     - 一些其他的语言学习零碎的笔记；
-
+    - [x] [葛底斯堡演说](./English/Gettysburg_Address.md)：不仅是林肯，更是USA。
 ------
 
 

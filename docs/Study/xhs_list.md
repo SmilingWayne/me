@@ -2,10 +2,6 @@
 
 - 当前页面链接：[https://smilingwayne.github.io/me/Study/xhs_list](https://smilingwayne.github.io/me/Study/xhs_list)
 
-### ChatGPT篇
-
-- [x] ChatGPT 安装教程：[传送门](./ChatGPT/Register.md)
-- [x] ChatGPT Prompt使用经验：[传送门](./ChatGPT/Prompt1.md)
 
 ### Python篇
 

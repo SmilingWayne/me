@@ -47,11 +47,13 @@
 | 206 | reverse-linked-list | [Link](./2/206_reverse-linked-list.md) | Unknown | Unknown | Unknown |
 | 213 | house-robber-ii | [Link](./2/213_house-robber-ii.md) | Medium | DP  | 🌟 |
 | 216 | combination-sum-iii | [Link](./2/216_combination-sum-iii.md) | Unknown | Unknown | Unknown |
+| 225 | implement-stack-using-queues | [Link](./2/225_implement-stack-using-queues.md) | Easy | Stack & Queue | Unknown |
 | 2182 | construct-string-with-repeat-limit | [Link](./2/2182_construct-string-with-repeat-limit.md) | Unknown | Unknown | Unknown |
 | 2191 | sort-the-jumbled-numbers | [Link](./2/2191_sort-the-jumbled-numbers.md) | Unknown | Unknown | Unknown |
 | 2496 | maximum-value-of-a-string-in-an-array | [Link](./2/2496_maximum-value-of-a-string-in-an-array.md) | Easy | String | Unknown |
 | 2600 | k-items-with-the-maximum-sum | [Link](./2/2600_k-items-with-the-maximum-sum.md) | Easy | If else | Unknown |
 | 2840 | check-if-strings-can-be-made-equal-with-operations-ii | [Link](./2/2840_check-if-strings-can-be-made-equal-with-operations-ii.md) | Medium | String | Unknown |
+| 2917 | find-the-k-or-of-an-array | [Link](./2/2917_find-the-k-or-of-an-array.md) | Easy | Bit  | Unknown |
 | 3 | longest-substring-without-repeating-characters | [Link](./3/3_longest-substring-without-repeating-characters.md) | Unknown | Unknown | Unknown |
 | 32 | longest-valid-parentheses | [Link](./3/32_longest-valid-parentheses.md) | Unknown | Unknown | Unknown |
 | 334 | increasing-triplet-subsequence | [Link](./3/334_increasing-triplet-subsequence.md) | Unknown | Unknown | Unknown |
