@@ -16282,7 +16282,7 @@
 
 <h1 id="truck-and-drones">Truck and Drones<a class="headerlink" href="#truck-and-drones" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1798 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 6 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1729 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 6 分钟</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">调度模式</p>
@@ -16299,15 +16299,27 @@
 <p>同时运行，但是互不干扰；</p>
 </div>
 <h2 id="fstsp">FSTSP<a class="headerlink" href="#fstsp" title="Permanent link">⚓︎</a></h2>
-<p><span class="arithmatex">\(x_{ij}\)</span>：卡车是否从 <span class="arithmatex">\(i\)</span> 开往 <span class="arithmatex">\(j\)</span> 点；
-<span class="arithmatex">\(y_{ijk}\)</span>： UAV是否从 <span class="arithmatex">\(i\)</span> 起飞服务 <span class="arithmatex">\(j\)</span> 地最后在 <span class="arithmatex">\(k\)</span> 降落在卡车上。
-<span class="arithmatex">\(t_j\)</span>： 卡车到达 <span class="arithmatex">\(j\)</span> 地的时间
-<span class="arithmatex">\(t_{j}^{'}\)</span>： UAV到达 <span class="arithmatex">\(j\)</span> 地的时间</p>
+<ul>
+<li><span class="arithmatex">\(x_{ij}\)</span>：卡车是否从 <span class="arithmatex">\(i\)</span> 开往 <span class="arithmatex">\(j\)</span> 点；</li>
+<li><span class="arithmatex">\(y_{ijk}\)</span>： UAV是否从 <span class="arithmatex">\(i\)</span> 起飞服务 <span class="arithmatex">\(j\)</span> 地最后在 <span class="arithmatex">\(k\)</span> 降落在卡车上。</li>
+<li><span class="arithmatex">\(t_j\)</span>： 卡车到达 <span class="arithmatex">\(j\)</span> 地的时间</li>
+<li><span class="arithmatex">\(t_{j}^{'}\)</span>： UAV到达 <span class="arithmatex">\(j\)</span> 地的时间</li>
+</ul>
 <p>其他参数：</p>
+<ul>
+<li>
 <p><span class="arithmatex">\(s_L, s_R\)</span>: 卡车成员释放无人机和回收无人机所需的时间</p>
-<p>辅助决策变量： <span class="arithmatex">\(p_{ij}\)</span> 顾客 <span class="arithmatex">\(i\)</span> 在 <span class="arithmatex">\(j\)</span> 之前被服务，则为1，目的是约束飞机的飞行要是连续的。 p_{0j} = 1，约束起点必须是在所有顾客之前被访问。</p>
-<p>每个飞机每次只能访问一个顾客。</p>
+</li>
+<li>
+<p>辅助决策变量： <span class="arithmatex">\(p_{ij}\)</span> 顾客 <span class="arithmatex">\(i\)</span> 在 <span class="arithmatex">\(j\)</span> 之前被服务，则为1，目的是约束飞机的飞行要是连续的。 <span class="arithmatex">\(p_{0j} = 1\)</span>，约束起点必须是在所有顾客之前被访问。</p>
+</li>
+<li>
 <p>辅助决策变量：<span class="arithmatex">\(1 \leq u_i \leq c + 2\)</span> 。限制子环路。</p>
+</li>
+</ul>
+<blockquote>
+<p>每个飞机每次只能访问一个顾客。</p>
+</blockquote>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202403061443287.png" /></p>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202403061443109.png" /></p>
 <h3 id="heuristic-for-fstsp">Heuristic for FSTSP<a class="headerlink" href="#heuristic-for-fstsp" title="Permanent link">⚓︎</a></h3>
@@ -16347,7 +16359,7 @@
 </ol>
 <p>直到没有优化为止。</p>
 </blockquote>
-<p>论文的数值实验：10～20个客户（小），大部分可被无人机访问；大部分节点都在UAV的可达范围内。 problems were generated with either 10 or 20 customers, such that 80–90% of customers were UAV-eligible. The truck and UAV speeds were fixed at 25 miles/h,  the UAV having a flight endurance of 30 min. The depot location was selected as being either near the center of all customers, near the edge of the customer region, or at the origin (as with the FSTSP test problems). Customer locations were generated such that either 20%, 40%, 60%, or 80% of all customers were located within the UAV’s range of the depot.</p>
+<p>论文的数值实验：10～20个客户（小），大部分可被无人机访问；大部分节点都在UAV的可达范围内。 problems were generated with either 10 or 20 customers, such that 80–90% of customers were UAV-eligible. The truck and UAV speeds were fixed at 25 miles/h,  the UAV having a flight endurance of 30 min. The depot location was selected as being either near the center of all customers, near the edge of the customer region, or at the origin (as with the FSTSP test problems). Customer locations were generated such that either 20%, 40%, 60%, or 80% of all customers were located within the UAV’s range of the depot. 两个节点之间的距离，对于卡车是曼哈顿距离，对于无人机，是欧氏距离。</p>
 <hr />
 <h3 id="pdtspfstsp">PDTSP和FSTSP的结果对比：<a class="headerlink" href="#pdtspfstsp" title="Permanent link">⚓︎</a></h3>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202403061524244.png" /></p>
@@ -16396,12 +16408,15 @@
 <span class="arithmatex">\(B_j\)</span> ： 所有编号小于 <span class="arithmatex">\(j\)</span> 的工作的集合；</p>
 <p>决策变量： </p>
 <p><span class="arithmatex">\(x_{iy}\)</span>, 工作 <span class="arithmatex">\(i\)</span> 是否分配给机器 <span class="arithmatex">\(y\)</span>, <span class="arithmatex">\(\forall i \in N, y \in Y\)</span></p>
-<p><span class="arithmatex">\(a_{ijy}\)</span>, 工作 <span class="arithmatex">\(i\)</span> 和 <span class="arithmatex">\(j\)</span> 是否被分配给机器 <span class="arithmatex">\(y\)</span> ；<span class="arithmatex">\(\forall i \in B_j, j \in N, y \in Y\)</span></p>
+<p><span class="arithmatex">\(a_{ijy}\)</span>, 工作 <span class="arithmatex">\(i\)</span> 和 <span class="arithmatex">\(j\)</span> 是否同时被分配给机器 <span class="arithmatex">\(y\)</span> ；<span class="arithmatex">\(\forall i \in B_j, j \in N, y \in Y\)</span></p>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202403050950579.png" /></p>
-<p>(1.2.3). 表示不同工作在机器上的分配情况；
-(4). 每个任务只能被分到一个机器上；
-(5). 计算总的完成时间；
-(6). 约束每个任务的完成时间不早于最晚完成时间；</p>
+<blockquote>
+<p>(1.2.3). 表示不同工作在机器上的分配情况；</p>
+<p>(4). 每个任务只能被分到一个机器上；</p>
+<p>(5). 计算总的完成时间；</p>
+<p>(6). 约束每个任务的完成时间不早于最晚完成时间；
+</p>
+</blockquote>
 <hr />
 <p>主问题，是在许多个“排班方案”里选择一部分，从而达到最优。</p>
 <ul>
@@ -16411,20 +16426,18 @@
 <p><span class="arithmatex">\(F^s\)</span> : 该列任务所需的时间；</p>
 </li>
 <li>
-<p>X_{iys} : 任务 i 是否被分给y机器，并采用s列的工序安排；这个值是子问题产生的一个常量。</p>
+<p><span class="arithmatex">\(X_{iys}\)</span> : 任务 <span class="arithmatex">\(i\)</span> 是否被分给 <span class="arithmatex">\(y\)</span> 机器，并采用 <span class="arithmatex">\(s\)</span> 列的工序安排；这个值是子问题产生的一个常量。</p>
 </li>
 <li>
-<p>Z_s: s列是否被选作一个解；</p>
+<p><span class="arithmatex">\(Z_s\)</span>: <span class="arithmatex">\(s\)</span>列是否被选作一个解；</p>
 </li>
 </ul>
-<p>子问题，是生成一些“排班方案”</p>
-<p>产生初始解：SWPT和LPT。</p>
-<h2 id="tad">多车站、考虑时间窗口的TaD问题<a class="headerlink" href="#tad" title="Permanent link">⚓︎</a></h2>
-<ul>
-<li>HAM A M. Integrated Scheduling of M-Truck ，M-Drone ，and M-Depot Constrained by Time-Window，Drop-Pickup，and M-Visit using Constraint Programming[J]. Transportation Research Part C：Emerging Technologies， 2018， 91 ： 1-14.</li>
-</ul>
-<p>场景： 单depot，车必须TSP走，UAV只能运送一单货。意思是如果UAV取了货，下一站必须到目的地；如果UAV刚送完货，下一站要么回到车上，要么去取货点；无人机的充电（换电池）的时间可以被忽略；不同顾客有不同的送货优先级。</p>
-<p>求解方法：约束规划问题；</p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202403072209280.png" /></p>
+<blockquote>
+<p>主问题与原问题的对应</p>
+</blockquote>
+<p>子问题转化成“生成主问题的一列”，使得这一列的检验数（reduced cost）是负的。这样把这列加入主问题一定可以让主问题更优。</p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202403072210659.png" /></p>
 
 
 
@@ -16447,7 +16460,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 7, 2024 20:16:11</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 8, 2024 09:46:58</span>
   </span>
 
     
