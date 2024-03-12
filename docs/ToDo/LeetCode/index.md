@@ -21,6 +21,7 @@
 | 1239 | maximum-length-of-a-concatenated-string-with-unique-characters | [Link](./1/1239_maximum-length-of-a-concatenated-string-with-unique-characters.md) | Unknown | Unknown | Unknown |
 | 1248 | count-number-of-nice-subarrays | [Link](./1/1248_count-number-of-nice-subarrays.md) | Unknown | Unknown | Unknown |
 | 1249 | minimum-remove-to-make-valid-parentheses | [Link](./1/1249_minimum-remove-to-make-valid-parentheses.md) | Unknown | Unknown | Unknown |
+| 1261 | find-elements-in-a-contaminated-binary-tree.md | [Link](./1/1261_find-elements-in-a-contaminated-binary-tree.md) | Medium | DFS / HashMap | Unknown |
 | 13 | roman-to-integer | [Link](./1/13_roman-to-integer.md) | Easy | HashTable | Unknown |
 | 1305 | all-elements-in-two-binary-search-trees | [Link](./1/1305_all-elements-in-two-binary-search-trees.md) | Unknown | Unknown | Unknown |
 | 1319 | number-of-operations-to-make-network-conneted | [Link](./1/1319_number-of-operations-to-make-network-conneted.md) | Unknown | Unknown | Unknown |

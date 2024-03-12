@@ -339,6 +339,7 @@ nav:
           - 1079_letter-tile-possibilities.md: ToDo/LeetCode/1/1079_letter-tile-possibilities.md
           - 121_best-time-to-buy-and-sell-stock.md: ToDo/LeetCode/1/121_best-time-to-buy-and-sell-stock.md
           - 122_best-time-to-buy-and-sell-stock-ii.md: ToDo/LeetCode/1/122_best-time-to-buy-and-sell-stock-ii.md
+          - 1261_find-elements-in-a-contaminated-binary-tree.md: ToDo/LeetCode/1/1261_find-elements-in-a-contaminated-binary-tree.md
           - 1331_rank-transform-of-an-array.md: ToDo/LeetCode/1/1331_rank-transform-of-an-array.md
           - 1156_swap-for-longest-repeated-character-substring.md: ToDo/LeetCode/1/1156_swap-for-longest-repeated-character-substring.md
           - 1170_compare-strings-by-frequency-of-the-smallest-character.md: ToDo/LeetCode/1/1170_compare-strings-by-frequency-of-the-smallest-character.md
