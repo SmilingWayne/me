@@ -13,3 +13,38 @@
 - Queer theory:Teresa de Lauretis
 - Levi-Strauss: analysis of kinship: women as gifts, exchanges between men.
 - Lesbian Feminism is not concerned with hating men but rather with celebrating the life choices of women who love women.
+
+-----------
+
+
+
+## Textbook conclusion
+
+
+### Main Representative People and Works:
+    - Simone de Beauvoir - The Second Sex (1949)
+    - Judith Butler - Gender Trouble (1990), Bodies That Matter (1993)
+    - Eve Kosofsky Sedgwick - Between Men (1985), Epistemology of the Closet (1990)
+    - Michel Foucault - The History of Sexuality (1976-1984)
+    - Monique Wittig - The Straight Mind (1992)
+
+### Brief History and Current Conditions:
+    - Emerged from feminist theory and LGBTQ movements in the 20th century
+    - Challenged biological essentialism and the naturalization of gender/sexuality
+    - Currently an influential perspective in humanities and cultural studies
+    - Faces criticism from some feminist/queer thinkers for being too theoretical
+
+### Main Ideas and Influence:
+    - Gender and sexuality are socially constructed categories, not natural/essential
+    - Heteronormativity is critically analyzed as an institutionalized discourse
+    - Proposes new ways of thinking identity, embodiment, desire beyond binaries  
+    - Influenced theories of performativity, queer theory, intersectional analysis
+    - Impacted cultural understandings and representations of gender/sexuality
+
+### Modern Comments and Reception:
+    - Praised for deconstructing oppressive norms and binaries
+    - Criticized by some as detached from lived realities and political struggles  
+    - Debated for the scope and limits of the "social construction" argument
+    - Raised questions about the materiality of bodies and biological factors
+    - Opened up new areas of inquiry across multiple disciplines
+
