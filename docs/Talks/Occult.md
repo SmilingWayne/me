@@ -73,22 +73,22 @@
 |      🌟Draco       |              Dragon               |               天龙座，天空中最大的星座之一。希腊神话中守卫赫斯珀里德斯花园的龙。               |
 |     🌟Equuleus     |           Little horse            |                                         小马座，见下。                                         |
 |     🌟Eridanus     |               River               |           波江座，见[链接](https://www.constellation-guide.com/constellation-list/)            |
-|      Fornax       |              Furnace              |                                                                                                |
-|      🌟Gemini      |               Twins               |                                                                                                |
-|       Grus        |               Crane               |                                                                                                |
-|     🌟Hercules     |       Hercules, son of Zeus       |                                                                                                |
-|    Horologium     |               Clock               |                                                                                                |
-|      🌟Hydra       |            Sea serpent            |                                                                                                |
-|      Hydrus       |            Water snake            |                                                                                                |
-|       Indus       |              Indian               |                                                                                                |
-|      Lacerta      |              Lizard               |                                                                                                |
-|       🌟Leo        |               Lion                |                                                                                                |
-|     Leo Minor     |            Little lion            |                                                                                                |
-|      🌟Lepus       |               Hare                |                                                                                                |
-|      🌟Libra       |              Balance              |                                                                                                |
-|      🌟Lupus       |               Wolf                |                                                                                                |
-|       Lynx        |               Lynx                |                                                                                                |
-|       🌟Lyra       |           Lyre or harp            |                                                                                                |
+|      Fornax       |              Furnace              |                     天炉座，1756 拉卡耶 用于化学实验的小型燃料加热器命名。                     |
+|      🌟Gemini      |               Twins               |       双子座，希腊神话中的双胞胎 Castor 和 Polydeuces。母亲是天鹅座相关的斯巴达女王莱达        |
+|       Grus        |               Crane               |                        天鹤座，荷兰天文学家进行了命名，不过没有相关传说                        |
+|     🌟Hercules     |       Hercules, son of Zeus       |                               武仙座，Hercules的故事后续继续补充                               |
+|    Horologium     |               Clock               |       时钟座，拉卡耶 观测，名字来源于摆钟的发明者克里斯蒂安·惠更斯（Christiaan Huygens）       |
+|      🌟Hydra       |            Sea serpent            |     长蛇座（九头蛇），88星座里最大的，与赫拉克勒斯的第二项工作有关。是一种巨大的多头生物。     |
+|      Hydrus       |            Water snake            |                                       水蛇座，与神话无关                                       |
+|       Indus       |              Indian               |         印第安座，印第安人通常被描绘成拿着箭或长矛，好像在打猎，可能是马达加斯加的改版         |
+|      Lacerta      |              Lizard               |                   蝎虎座，与神话无关，荷兰人赫维留斯（Hevelius）在1690年描述                   |
+|       🌟Leo        |               Lion                |              狮子座，最古老的被发现的星座，希腊人、美索不达米亚都描述过（BC4000）              |
+|     Leo Minor     |            Little lion            |                                       小狮座，和神话无关                                       |
+|      🌟Lepus       |               Hare                |               天兔座，通常被描绘成猎户座或他的猎犬猎杀的野兔。方位在猎户座的脚下               |
+|      🌟Libra       |              Balance              |       天秤座，被描绘成希腊正义女神戴克（或Astraea）持有的天平，由邻近的处女座星座代表。        |
+|      🌟Lupus       |               Wolf                |      豺狼座，现在天狼星座的恒星曾经是半人马座的一部分。它们代表了被半人马刺穿的献祭动物。      |
+|       Lynx        |               Lynx                |                   天猫座，填补两个相邻星座，御夫座和大熊座之间相对较大的空白                   |
+|       🌟Lyra       |           Lyre or harp            |                   天琴座，代表七弦琴，与希腊音乐家和诗人俄耳甫斯的神话有关。                   |
 |       Mensa       |          Table mountain           |                                                                                                |
 |   Microscopium    |            Microscope             |                                                                                                |
 |     Monoceros     |              Unicorn              |                                                                                                |
@@ -171,6 +171,8 @@
 
 
 
+!!! note "天琴座"
+    俄耳浦斯，他在酒神之手下走到了尽头。当他经过时，他的七弦琴被扔进了河里。宙斯派了一只老鹰去拿七弦琴，把他们俩都放在天空中。
 
 ----------
 

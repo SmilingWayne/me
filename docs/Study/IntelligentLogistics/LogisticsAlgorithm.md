@@ -164,4 +164,26 @@
 >
 > Randomization的情况：如果多种heuristic大家都是一样的，怎么选择？（加一个随机选的情况）
 
+------
 
+## 0321  Look Ahead and Tree Search
+
+
+> Maximal Space 对剩余空间的表达。
+
+
+!!! note "GRASP"
+
+!!! note "ALNS "
+    构造启发式算法
+
+
+
+- `container loading problem.`
+
+
+- 塑料袋装箱问题： L \times W  的塑料袋，待装入物品有n个 物品 i 的尺寸 $L_i \times w_i \times h_i$ 。
+
+- `Project Scheduling`
+
+- `Diving heuristic`
