@@ -12750,6 +12750,8 @@
       
         
       
+        
+      
     
     
       
@@ -13050,11 +13052,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../OR/TSP/" class="md-nav__link">
+      <a href="../../OR/Chapter12/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    TSP问题
+    高级运筹学技巧1：列生成方法
   </span>
   
 
@@ -13075,7 +13077,28 @@
         
   
   <span class="md-ellipsis">
-    拉格朗日松弛
+    高级运筹学技巧2：拉格朗日松弛
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OR/TSP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    运筹学经典建模：TSP问题
   </span>
   
 
@@ -13114,10 +13137,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_10_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_10_17" >
         
           
-          <label class="md-nav__link" for="__nav_8_10_16" id="__nav_8_10_16_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_10_17" id="__nav_8_10_17_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -13128,8 +13151,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_10_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_10_16">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_10_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_10_17">
             <span class="md-nav__icon md-icon"></span>
             练习题
           </label>
@@ -16170,6 +16193,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#0328-solution-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      0328 Solution Representation
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -16193,7 +16225,7 @@
 
 <h1 id="_1">物流优化算法<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1268 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 4 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1941 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 6 分钟</p>
 </div>
 <p>考核方式：见PPT。都是课堂作业。<mark>这个课的上课时间不是10:10AM，而是10:00AM。别起太迟</mark> .</p>
 <div class="admonition abstract">
@@ -16358,7 +16390,7 @@
 <p><code>container loading problem.</code></p>
 </li>
 <li>
-<p>塑料袋装箱问题： L \times W  的塑料袋，待装入物品有n个 物品 i 的尺寸 <span class="arithmatex">\(L_i \times w_i \times h_i\)</span> 。</p>
+<p>塑料袋装箱问题： <span class="arithmatex">\(L \times W\)</span>  的塑料袋，待装入物品有 <span class="arithmatex">\(n\)</span> 个 物品 <span class="arithmatex">\(i\)</span> 的尺寸 <span class="arithmatex">\(L_i \times w_i \times h_i\)</span> 。</p>
 </li>
 <li>
 <p><code>Project Scheduling</code></p>
@@ -16367,6 +16399,66 @@
 <p><code>Diving heuristic</code></p>
 </li>
 </ul>
+<hr />
+<h2 id="0328-solution-representation">0328 Solution Representation<a class="headerlink" href="#0328-solution-representation" title="Permanent link">⚓︎</a></h2>
+<p>为什么这么重要？会影响算法实现的效果。</p>
+<p>可能用到的数据结构：BitSet, Tree, List</p>
+<ul>
+<li>
+<p>0-1背包问题，项目数量很多，但是实际背包里选择的项目比较有限，此时选择BitSet效果更好；</p>
+</li>
+<li>
+<p>n 皇后问题。如何输出所有的解。</p>
+</li>
+</ul>
+<blockquote>
+<p>二维数组， 或者一个一维数组，第k个元素表示第k列的皇后所在的位置（可以减少很多解的检查）；或者， [(a,1), (b,2 )....]</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">TSP with Hard Time Windows</p>
+<p>记时间窗口 <span class="arithmatex">\([a, b]\)</span> 如果在开始之前到达，必须等到开始时间才能上架。如果在结束之后到达，就是不可行的；</p>
+<p>如何设计解的表达。</p>
+<blockquote>
+<p>9 AM （服务A）, (+40min), 10 AM （服务B）... 存在的问题：可能有很多的可行解，因为也可以 9:01 AM （服务A） （+40min）, 10: 04 AM （服务B）...</p>
+</blockquote>
+<p>这种表达不好。</p>
+<p>改成序列表示。访问的序列只是和你在不同节点之间的距离有关。所以可以用TSP的表达。但，这里的解的表达对应的是<strong>一组可行解</strong>。</p>
+<blockquote>
+<p><span class="arithmatex">\([ A, B, C, E, D, G, H, F, I]\)</span>。把第一层决策：决定访问顺序，当作一个主问题，而从这一组可行解里得到具体的访问时间，通过解决子问题来求解。</p>
+</blockquote>
+<p>如何求解子问题：遍历这些硬时间窗，解码出一个可行解。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">TSP with Hard and Soft Time Windows</p>
+<p>允许早到，但是要有惩罚值，允许晚到，但是晚到也有惩罚值；同时也有硬的时间窗口（很大）。用于在Hard TW找不到可行解的情况下。</p>
+<p>依然是先确定访问顺序，再确定访问时间。</p>
+<p>用DP可以在<span class="arithmatex">\(O(n\log n)\)</span> 来求解最好的访问的时间。<code>IBaraki An iterated local Search algorithm</code> </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">2-D Strip Packing</p>
+<p>可以确定一个货物的摆放序列，只知道货物放的顺序，不知道具体放在哪里。而且没法在多项式时间内算出最佳摆放位置。</p>
+<p>解决子问题就是用构造式算法来解码。</p>
+</div>
+<blockquote>
+<p>上述这些依赖解码的都是“非直接解表达”</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">CVRP</p>
+<p>Heuristic-Lin-Kernighan. 研究一下。</p>
+</div>
+<blockquote>
+<p>如果解码不能实现解空间的一一对应，而是两个解码后对应到同一个解，或者说</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">2DVPP-GC: A packing Problem</p>
+<p>怎么设计解的表达？</p>
+<p>一个序列，进行划分。怎么进行划分，让最后的费用最小。</p>
+<p>把划分问题转换成<strong>最短路问题</strong>。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">TPTT 问题</p>
+<p>先决策选哪些承运人。一串 <span class="arithmatex">\([0, 1]\)</span>。如何给这些承运人分配集装箱的量。  </p>
+</div>
 
 
 
@@ -16389,7 +16481,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 23, 2024 21:51:50</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 28, 2024 18:37:17</span>
   </span>
 
     
