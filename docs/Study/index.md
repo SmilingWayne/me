@@ -21,7 +21,7 @@
 - [ ] **文本编辑**（10/10）随缘更新，目测会长期更新。不会写笔记的文学家不是好的工程师。
     - [ ] [$\LaTeX$ 篇](./TextEdit/LaTeX/LatexNotes.md)；
     - [x] Markdown篇，有好几篇，推荐[快速入门](./TextEdit/Markdown/MarkdownQuickStart.md)。
-    - [ ] [Overleaf实例](./TextEdit/LaTeX/Overleaf.md)：一些在~~（本科毕业）~~论文撰写过程中的小记录；
+    - [ ] [Overleaf实例](./TextEdit/LaTeX/Overleaf.md)：一些在（本科）论文撰写过程中的小记录；
     - [ ] [VSCode快捷键CheatSheet](./Vscode/keys.md)：生命苦短，你需要快捷键。
 - [ ] [果系使用指南](./Swift/SwiftBasics.md)（8/?）随缘更新，本是想学Apple开发，但是~~由于懒惰~~逐渐退化成了macOS/iOS使用技巧与黑科技分享。现在看比较抽象的是，这个文件夹我竟然用Apple自己的编程语言Swift来命名。
     - [x] [终极快捷键拥趸](./Swift/Keyshortcuts.md)：狂野的快捷键爱好者不允许任何东西玷污键盘与触控板；
@@ -31,9 +31,10 @@
     - [x] [快捷指令：从轻松入门到入土为安](./Swift/Shortcuts.md)：请记住，Apple用户的Privilege在这里已经尽数体现了。
 - [ ] 线性代数：正在有序推进MIT线代（15/35），我愿称之为宇宙第一课。部分笔记尚未电子化。[点我跳转到第一章](./LinearAlgebra/MIT_course_1.md)
 - [ ] 组会艺术大赏！：那些年，我看过的论文。
-    - [ ] [20240102](./TeamMeeting/Articles.md) ： Too Young! Too NAIVE! 
-    - [ ] 2024308: Comming!
-- [ ] [系统建模](./Symposium/0922Fri.md)；研一阶段一门交通相关的研讨课。相关方向：用户均衡、随机用户均衡、交通拥堵收费、电动公交车充电调度、V2G（Vehicle to Grid）和电网充放电策略等；内容~~就像我组~~一样杂糅。
+    - [x] [20240102](./TeamMeeting/Articles.md) ： Too Young! Too NAIVE! 
+    - [x] [20240308](./TeamMeeting/0308Prep.md): Truck & Drones 问题及其若干拓展；
+    - [ ] [20240315](./TeamMeeting/0315Prep.md): 简要略。
+- [ ] [系统建模](./Symposium/0922Fri.md)；研一阶段一门交通相关的研讨课。相关方向：用户均衡、随机用户均衡、交通拥堵收费、电动公交车充电调度、V2G（Vehicle to Grid）和电网充放电策略等；内容就像我组一样杂糅。
 - [x] [智慧物流](./IntelligentLogistics/IntelligentLogistics1.md)；智慧物流（AKA：物流优化智能算法与整数规划）：如果你能读懂全课程的90%，你已经可以秒杀全国99.9%的物流从业者了。（注：笔者使用了夸张的修辞手法）
 - [x] [工程管理类论文写作方法](./MEMEssay/Class1.md): 如听。但是记了不少东西。存着吧，存着吧～
 - [ ] ChatGPT；已有内容：
@@ -45,6 +46,8 @@
     - [ ] [英语](./English/English.md)（一个渴望双语生活的人） 
     - 一些其他的语言学习零碎的笔记；
     - [x] [葛底斯堡演说](./English/Gettysburg_Address.md)：不仅是林肯，更是USA。
+
+
 ------
 
 
@@ -63,7 +66,7 @@
 - [ ] 概率论与统计学综合（7/x）：某人学得最差的一门数学课！没有之一！
 - [ ] 微积分： 实际上是数学二，意义不大。暂时停更。
 - [ ] 最优化原理（🔒🔒）
-- [ ] [统计学](./Statistics/Basics.md)
+- [ ] [统计学](./Statistics/Basics.md)。计划找个机会重新调整并编写。
 
 -----
 

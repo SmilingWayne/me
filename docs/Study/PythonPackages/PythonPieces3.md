@@ -25,3 +25,6 @@ students = [Student(*row) for row in df.itertuples(index=False, name=None)]
 
 1. 仅限可迭代对象：* 只能用于可迭代对象，例如列表、元组、集合等。
 避免过度使用：虽然 * 在许多情况下都很有用，但在复杂的函数调用或在需要明确指定参数的情况下，过度使用可能会导致代码难以理解。
+
+
+
