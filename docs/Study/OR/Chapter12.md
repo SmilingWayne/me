@@ -35,7 +35,7 @@
     2. 开始时，只需要一个可行的基。（Initially, find feasible variables）
     3. 最终要生成一个最优基。（Optimal basis!）
 
-假设我们枚举单纯形表所有的列，这个单纯形表对应的就是**主问题（Master Problem, MP）**。一开始，我们没有枚举所有的列，此时的单纯形表是不完整的，对主问题的描述也不完整，这张表对应的就是 **受限主问题（Restricted Master Problem, RMP）** 。 而，解决“找到一个列，加入到受限子问题中”这个过程的问题，就是**子问题（Sub Problem）**。
+假设我们枚举单纯形表所有的列，这个单纯形表对应的就是**主问题（Master Problem, MP）**。一开始，我们没有枚举所有的列，此时的单纯形表是不完整的，对主问题的描述也不完整，这张表对应的就是 **受限主问题（Restricted Master Problem, RMP）** 。 而，解决“找到一个列，加入到受限主问题中”这个过程的问题，就是**子问题（Sub Problem）**。
 
 !!! quote "列生成，对基采用了隐枚举的方式，利用求解**子问题**，从**受限主问题**不断生成更好的基，直到出现**最优基**，此时受限主问题便等价于主问题，但是结构更加轻巧。"
 
@@ -110,7 +110,7 @@
 $$\min \sum_j c_j x_j \\
 s.t. \begin{aligned}\begin{equation*}
 \begin{cases}
-\sum \mathbb{a_j} \mathbb{x_j} \geq \mathbb{b} \\
+\sum_j \mathbb{a_j} \mathbb{x_j} \geq \mathbb{b} \\
 x_j \in \mathbf{Z}
 \end{cases}
 \end{equation*}\end{aligned}$$
@@ -144,7 +144,7 @@ x_3 + x_7 + x_8 + 2x_9 + x_{11} + x_{12} + .. & \geq 40
 
 
 !!! question "这种方法存在的问题"
-    1. 如果木材的长度增加，我可以切出来的木板数量一定是**指数增长**的，我们上面的式子<u>其实没有枚举完全部的切法。</u>
+    1. 如果木材的长度增加，我可以切出来的木板数量一定是**指数增长**的，上面的式子<u>尚未枚举完全部的切法。</u>
     
     > （想象一下，如果你的原材料都是100，150，200的长度木材，但是你需要的都是4，5，9寸这种短木材，你100就可以切：25个4，或者23个4，1 个5 ... 情况很多很多）
    
@@ -158,9 +158,12 @@ x_3 + x_7 + x_8 + 2x_9 + x_{11} + x_{12} + .. & \geq 40
 
 我们用算法解这个RMP之后，就想，我们能不能得到一个新的Pattern，让原来的结果更好。
 
-> Can I get a pattern, to improve the current solution?
+
+> 逻辑上，和单纯形法类似，每次进-出基，要能实现一次Improve。
+> 
+> > Can I get a pattern, to improve the current solution?
 >
-> 这里的逻辑，和单纯形法是一样的，回想一下，每次进-出基，就是实现了一次Improve。唯一的区别在哪里？
+> 区别：
 > 
 > 单纯形法的进、出基变量，一开始就已经存在在单纯形表里了。**而在列生成里，进基变量不在模型里，而是要你去找的。** 
 
@@ -175,7 +178,7 @@ x_3 + x_7 + x_8 + 2x_9 + x_{11} + x_{12} + .. & \geq 40
 !!! example "" 
     本文语境下，**检验数**（reduced cost）的表达式统一记为 ： $\delta_{n + 1} - c_{n + 1} = \omega a_{n + 1} - c_j  = \sum \omega_i a_{ij} - c_j$。在此标记下，**对于最小化问题，求得最优解的条件是每个变量的检验数，都是非正的**。
 
-!!! note "展开讲讲"
+!!! note "对偶的意义"
     这里结合一下前面的数据来解释一下对偶的意义。
 
     案例里约束对应的右端项 $\mathbb{b} = \begin{bmatrix} 30 \\ 20 \\ 40 \end{bmatrix}$ , $\omega_1, \omega_2, \omega_3$ 分别对应这三个约束，就是约束 $i$ 对应的对偶成本（影子价格）。经济意义是，要多切出一个（4寸or，5寸or 7寸）的木板，可以**获得的价值**。
@@ -187,7 +190,7 @@ x_3 + x_7 + x_8 + 2x_9 + x_{11} + x_{12} + .. & \geq 40
 
 我们可以写出模型：
 
-$$\max \delta_{n + 1} - c_{n + 1} \\
+$$\max \delta_{n + 1} - c_{n + 1} = \sum_i \omega_i a_{ij} - c_j\\
 s.t. \begin{aligned}\begin{equation*}
 \begin{cases}
  \sum^m_{i = 1} a_{ij} l_i \leq L_k \\
@@ -320,7 +323,7 @@ a_{ij} \in Z^*
 
 - Iter 3: 这时候RMP有5个变量了。解下来 $x^* = \begin{bmatrix} 15 \\ 0 \\ 0 \\ 20  / 3 \\ 20 \end{bmatrix}, \delta^* = 322. \omega = \begin{bmatrix} 5 / 2 \\ 10 / 3 \\ 9 / 2 \end{bmatrix}$
 
-这里继续求解子问题。公式太长直接略过，写结果。
+这里继续求解子问题。
 
 1. $a_j = \begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix}, \delta_j - c_1 = 0.82$;
 
@@ -414,7 +417,13 @@ x_s \in \{0, 1 \}
 
 我们可以把主问题的检验数写出来：
 
-【待补充】
+
+$$c^{'}_s =  \lambda_0 + \sum_j \lambda_j a_{js} - c_s$$
+
+这里的 $\lambda_0$ 对应的是第二个约束的对偶成本，因为这个约束与我们生成的列 $a_{js}$ 无关，所以 $\lambda_0$ 实际是一个常数。
+
+所以，我们的子问题的目标函数就是看， $\sum^n_{j = 1} [ \lambda_j - \omega_j (\sum^J_{k = 1} a_{ks}p_k) ] a_{js}$ 的最大值。
+
 
 
 !!! note "备注：一些Generalization"
@@ -430,6 +439,7 @@ x_s \in \{0, 1 \}
 所以最终把并行机的排程变成了一个单机的排程问题。
 
 
+
 !!! note "单机排程情况下解的特性"
     基于假设3，无论选择哪些工作给机器 $i$ ，这些工作执行的先后顺序，一定满足如下顺序：
 
@@ -442,9 +452,19 @@ x_s \in \{0, 1 \}
 
 CVRP的建模方式：Two-index formulation。
 
-仿照前面的建模 
+仿照前面的建模。
 
+$$\min \sum_s c_s x_s \\ \begin{aligned}\begin{equation*}
+s.t. \begin{cases}
+\sum a_{js} x_s = 1, \forall \text{customer} \\
+\sum x_s \leq 1,  \forall \text{vehicle}\\
+x_s \in \{0, 1 \}
+\end{cases}
+\end{equation*}\end{aligned}$$
 
+Reduced Cost: $\sum_{j \in J} \alpha_j - c_s + \lambda_0$ 
+
+Sub Problem: **Contrainted Shortest Path Problem**
 
 !!! abstract "一些想法"
     上述这些问题的主问题，都变成了一种：
@@ -454,5 +474,4 @@ CVRP的建模方式：Two-index formulation。
     这种建模方式，也可以叫 Set-covering Modeling。是解决一些大规模问题很好用的建模方法。
 
 
-Lazy Constraints: https://how-to.aimms.com/Articles/332/332-Implicit-Dantzig-Fulkerson-Johnson.html
 
