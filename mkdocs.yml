@@ -450,13 +450,16 @@ nav:
 
   - 学习:
       - Study/index.md
-      - 组会艺术大赏！:
+      - 组会与相关学术内容:
           - 202309至202401: Study/TeamMeeting/0920.md
-          - 0308: Study/TeamMeeting/0308Prep.md
+          - 系统建模与优化｜20230922: Study/TeamMeeting/0922Fri.md
+          - 20240122报告: Study/TeamMeeting/Articles.md
+          - 0308TeamMeeting: Study/TeamMeeting/0308Prep.md
+          - 0315TeamMeeting: Study/TeamMeeting/0315Prep.md
+          - 0322TeamMeeting: Study/TeamMeeting/0322Prep.md
+          - 0329TeamMeeting(Me): Study/OR/Chapter12.md
+          - 2024年综合运输系统运营管理学术研讨会: Study/TeamMeeting/0329Prep.md
       - 小红书资源分享站: Study/xhs_list.md
-      - 文献阅读与组会资料:
-          - 交通网络均衡｜20230922: Study/Symposium/0922Fri.md
-          - 20240122报告: Study/Symposium/Articles.md
       - 学习资源存储站: Study/Materials_list.md
       - 小红书｜文本编辑:
           - Study/TextEdit/index.md
@@ -626,7 +629,7 @@ nav:
   - 我的碎碎念:
       - Talks/index.md
       - 关于我的101问: Talks/101_asks.md
-      - 请回答，2022: Talks/My2022.md
+      - 请回答，2022（2022年终总结）: Talks/My2022.md
       - 从经天路到小粉桥（2023年终总结）: Talks/2023_con.md
       - 神秘学手记: Talks/Occult.md
       - 关于语言: Talks/About_language.md
