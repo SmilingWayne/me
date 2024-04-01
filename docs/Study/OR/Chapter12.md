@@ -10,10 +10,6 @@
     
     - 准备过程同样参考了[这个知乎文章](https://zhuanlan.zhihu.com/p/508388014)，以及[OR文章](https://zhuanlan.zhihu.com/p/118516953)
 
-    
-
-
-
 
 ## 从单纯形法开始
 
@@ -469,9 +465,28 @@ Sub Problem: **Contrainted Shortest Path Problem**
 !!! abstract "一些想法"
     上述这些问题的主问题，都变成了一种：
     
-    >从一系列方案中（按照一定规则）选出一些方案，汇总，从而构造成原来问题的解。
+    > 从一系列方案中（按照一定规则）选出一些方案，汇总，从而构造成原来问题的解。
 
     这种建模方式，也可以叫 Set-covering Modeling。是解决一些大规模问题很好用的建模方法。
 
 
+---------
+
+## G 的汇报
+
+- 不确定的：很小的偏差。
+
+- Stochastic Uncertainty: 知道不确定性的规律；
+- Knightian  Uncertainty: 不知道不确定性的规律：建立不确定集；
+
+- 分布估计方法：
+- 核密度估计
+
+- 线性因子模型
+- 控制不确定集合的大小；
+- budget Uncertainty Set: 
+
+> 对偶: Duality
+>
+> - 周一上午10:00， 204
 
