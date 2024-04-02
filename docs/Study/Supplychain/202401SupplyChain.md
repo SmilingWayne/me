@@ -106,3 +106,24 @@ FSD: 智能驾驶。
     不是订单，是一种承诺。MPS揭示了未来什么时候可以获得产品，以此形成销售人员向客户承诺交互的基础。
 
     物料需求计算：**生产逐级展开**。 MPS -> MRP（Material Request Plan，原材料采购计划，包含加工计划、采购计划）
+
+
+## 0401 
+
+理解供应链不确定性。
+
+!!! note "Apple的消费者定位和xiaomi的消费者定位"
+    Apple: 追求个性、用户体验的“最优”
+
+    xiaomi: “性价比之王”
+
+!!! note "Uncertainty"
+    responsiveness:Ability To
+
+    - responde to winde ranges of quantities demand
+    - meet short lead times
+    - handle a large variety of products
+    - meet a very high service level 
+
+- 怎样确定多样化、定制化的程度和种类？
+- ATO： 行业应用：从电脑到手机，现在在汽车领域。
