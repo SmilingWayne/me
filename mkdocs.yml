@@ -87,7 +87,6 @@ nav:
       - 诗歌:
           - Poems/index.md
           - 外国诗:
-              - 散落碎片: Poems/Missing.md
               - 🇫🇷愤怒与神秘: Poems/Anger_and_mystery.md
               - 🇫🇷恶之花: Poems/Fleurs_du_mal.md
               - 🇫🇷烧酒与爱情: Poems/Shochu_and_love.md
@@ -107,6 +106,7 @@ nav:
               - 🇩🇪致后代: Poems/To_descendant.md
               - 🇬🇧坎特伯雷故事集: Poems/Canterbery.md
               - 🇺🇸我用古典的方式爱过你: Poems/Emily.md
+              - 🇩🇪死亡赋格: Poems/Death_fuge.md
               - 疑问集: Poems/Collections_of_doubt.md
           - 中国诗:
               - 辛弃疾词: Poems/Xinqiji_ci.md
@@ -460,7 +460,6 @@ nav:
           - 0329TeamMeeting(Me): Study/OR/Chapter12.md
           - 2024年综合运输系统运营管理学术研讨会: Study/TeamMeeting/0329Prep.md
       - 小红书资源分享站: Study/xhs_list.md
-      - 学习资源存储站: Study/Materials_list.md
       - 小红书｜文本编辑:
           - Study/TextEdit/index.md
           - LaTeX:
