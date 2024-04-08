@@ -108,4 +108,5 @@
 | Offer-13 | robot-moving-range | [Link](./Offer/13_robot-moving-range.md) | Medium | DFS | Unknown |
 | Offer-14 | cutting-ropes | [Link](./Offer/14_cutting-rope.md) | Medium | DP | Same as 343 |
 | Offer-49 | uglg-number | [Link](./Offer/49_ugly-number.md) | Medium | DP | Same as 264 |
-
+| 01-08 | zero-matrix-lcci | [Link](./0/0108_zero-matrix-lcci.md) | Medium | Array |  |
+| 02-05 | sum-lists-lcci | [Link](./0/0205_sum-lists-lcci.md) | Medium | LinkedList |  |
