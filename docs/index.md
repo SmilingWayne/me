@@ -57,7 +57,7 @@ hide:
 
     - :fontawesome-solid-pen-nib: [我的豆瓣](https://www.douban.com/people/174239371/)；
 
-    - 小红书: [Wayne是笑笑🦆](https://www.xiaohongshu.com/user/profile/5d1238860000000011038629)；
+    - :simple-xiaohongshu: [Wayne是笑笑🦆](https://www.xiaohongshu.com/user/profile/5d1238860000000011038629)；
 
 
 <!-- brands/regular/solid -->

@@ -127,3 +127,16 @@ FSD: 智能驾驶。
 
 - 怎样确定多样化、定制化的程度和种类？
 - ATO： 行业应用：从电脑到手机，现在在汽车领域。
+
+## 0408 供应链不确定性、响应Map
+
+
+- Reducing the cost of demand uncertainty through accurate response to early sales. Fisher et al., ?
+
+要求：不只是说谁做了什么，而是要讲故事，有2-3条线。讲实践问题的演化。
+
+参考Fisher1和Fisher2模型的。理论和实践是如何结合的。
+
+- 不同产品，各自的需求函数是怎么写的？
+- 多周期的报童模型。
+

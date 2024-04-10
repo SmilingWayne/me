@@ -39,6 +39,7 @@
 | 1544 | make-the-string-great | [Link](./1/1544_make-the-string-great.md) | Unknown | Unknown | Unknown |
 | 166 | fraction-to-recurring-decimal | [Link](./1/166_fraction-to-recurring-decimal.md) | Unknown | Unknown | Unknown |
 | 1663 | smallest-string-with-a-given-numeric-value | [Link](./1/1663_smallest-string-with-a-given-numeric-value.md) | Unknown | Unknown | Unknown |
+| 1702 | maximum-binary-string-after-change | [Link](./1/1702_maximum-binary-string-after-change) | Medium | Rule-based | Unknown |
 | 1750 | minimum-length-of-string-after-deleting-similar-ends | [Link](./1/1750_minimum-length-of-string-after-deleting-similar-ends.md) | Unknown | Unknown | Unknown |
 | 1823 | find-the-winner-of-the-circular-game | [Link](./1/1823_find-the-winner-of-the-circular-game.md) | Unknown | Unknown | Unknown |
 | 19 | remove-Nth-node-from-end-of-list | [Link](./1/19_remove-Nth-node-from-end-of-list.md) | Unknown | Unknown | Unknown |
@@ -52,6 +53,7 @@
 | 2182 | construct-string-with-repeat-limit | [Link](./2/2182_construct-string-with-repeat-limit.md) | Unknown | Unknown | Unknown |
 | 2191 | sort-the-jumbled-numbers | [Link](./2/2191_sort-the-jumbled-numbers.md) | Unknown | Unknown | Unknown |
 | 2496 | maximum-value-of-a-string-in-an-array | [Link](./2/2496_maximum-value-of-a-string-in-an-array.md) | Easy | String | Unknown |
+| 2529 | maximum-count-of-positive-integer-and-negative-integer | [Link](./2/2529_maximum-count-of-positive-integer-and-negative-integer.md) | Easy | Binary Search | Unknown |
 | 2600 | k-items-with-the-maximum-sum | [Link](./2/2600_k-items-with-the-maximum-sum.md) | Easy | If else | Unknown |
 | 2840 | check-if-strings-can-be-made-equal-with-operations-ii | [Link](./2/2840_check-if-strings-can-be-made-equal-with-operations-ii.md) | Medium | String | Unknown |
 | 2917 | find-the-k-or-of-an-array | [Link](./2/2917_find-the-k-or-of-an-array.md) | Easy | Bit  | Unknown |
@@ -109,4 +111,5 @@
 | Offer-14 | cutting-ropes | [Link](./Offer/14_cutting-rope.md) | Medium | DP | Same as 343 |
 | Offer-49 | uglg-number | [Link](./Offer/49_ugly-number.md) | Medium | DP | Same as 264 |
 | 01-08 | zero-matrix-lcci | [Link](./0/0108_zero-matrix-lcci.md) | Medium | Array |  |
+| 02-04 | partition-list-lcci | [Link](./0/0204_partition-list-lcci.md) | Medium | LinkedList |  |
 | 02-05 | sum-lists-lcci | [Link](./0/0205_sum-lists-lcci.md) | Medium | LinkedList |  |
