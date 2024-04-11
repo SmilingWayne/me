@@ -460,7 +460,7 @@ nav:
           - 0322TeamMeeting: Study/TeamMeeting/0322Prep.md
           - 0329TeamMeeting(Me): Study/OR/Chapter12.md
           - 2024年综合运输系统运营管理学术研讨会: Study/TeamMeeting/0329Prep.md
-      - 小红书资源分享站: Study/xhs_list.md
+      - 小红书｜资源分享外链: Study/xhs_list.md
       - 小红书｜文本编辑:
           - Study/TextEdit/index.md
           - LaTeX:
@@ -475,11 +475,41 @@ nav:
               - 常用的语法(with plugins): Study/TextEdit/Markdown/MarkdownSyntax1.md
               - 字体推荐: Study/TextEdit/Markdown/Markdown.md
               - mkdocs构建教程: Study/TextEdit/Markdown/Mkdocs_Tutorials1.md
-      - 其他平台电子笔记:
-          - 网页设计与制作: Study/Mubu/WebsiteDesign.md
-          - 网页设计简单参数标注（应试用）: Study/Mubu/network.md
-          - Js简单参数标注（应试用）: Study/Mubu/Javs.md
-          - 信息检索: Study/Mubu/InfoRetreval.md
+      - 小红书｜Python藏宝箱:
+          - 经（踩）验（坑）分（历）享（史）: Study/PythonPackages/Tricks.md
+          - 数据结构大合集: Study/PythonPackages/Data_struct_recomend.md
+          - PyEcharts合集: Study/PythonPackages/Pyecharts1.md
+          - 一些小玩具: Study/PythonPackages/MagicSquare.md
+          - 项目依赖管理pipreqs: Study/PythonPackages/PIPREQS.md
+          - Python二分排序函数Bisect: Study/PythonPackages/PythonBisect.md
+          - 微信读书可视化: Study/PythonPackages/PythonPieces6.md
+          - Python一些命令行操作: Study/PythonPackages/PythonPieces7.md
+          - matplotlib技巧: Study/PythonPackages/Matplotlib.md
+          - Collections中的若干数据结构: Study/PythonPackages/Python_deque.md
+          - Itertools-小抄: Study/PythonPackages/PythonPieces1.md
+          - Python解包运算符: Study/PythonPackages/PythonPieces3.md
+          - R语言数据集(Partial): Study/PythonPackages/Rdata.md
+      - 小红书｜供应链管理:
+          - 利特尔定律: Study/Supplychain/LittlesLaw.md
+          - 研究生课程：供应链管理与物流: Study/SupplyChain/202401SupplyChain.md
+          - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
+          - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
+          - 时间序列预测模型与框架：ARMA/Winter(Chapter_7.5/7.6): Study/Supplychain/SupplyChain3.md
+          - 经济订货批量模型(EOQ)(Chapter_11.3): Study/Supplychain/SupplyChain4.md
+          - EOQ模型的订货量确定与周期盘点(Chapter_11.3.2): Study/Supplychain/SupplyChain9.md
+          - 供应链综合计划策略I(Chapter_8.4): Study/Supplychain/SupplyChain7.md
+          - 供应链综合计划策略II：案例分析(Chapter_8.5): Study/Supplychain/SupplyChain11.md
+          - 规模经济管理：数量折扣I(Chapter_11.4): Study/Supplychain/SupplyChain5.md
+          - 规模经济管理：数量折扣II(Chapter_11.4): Study/Supplychain/SupplyChain8.md
+          - 运营管理：排队论: Study/Supplychain/SupplyChain6.md
+          - 安全库存：基于给定策略(Chapter_12.2): Study/Supplychain/SupplyChain10.md
+          - 安全库存：聚集/供给不确定/零件的情况(Chapter_12.3): Study/Supplychain/SupplyChain12.md
+          - 报童模型I：最优可获得性水平的确定(Chapter_13.2): Study/Supplychain/SupplyChain14.md
+          - 报童模型II：沃尔玛案例分析(Chapter_13.2): Study/Supplychain/SupplyChain15.md
+          - Excel进行供应链绩效模拟(Chapter_13.Appendix): Study/Supplychain/SupplyChain16.md
+          - 提高供应链盈利能力的杠杆(Chapter_13.3): Study/Supplychain/SupplyChain17.md
+          - 供应链中的运输(Chapter_14_1): Study/Supplychain/SupplyChain18.md
+          - 供应链采购合同分析: Study/Supplychain/SupplyChain19.md
       - 微积分:
           - Chapter1: Study/Calculus/Math2.md
           - 笔记2(Unfin): Study/Calculus/20230406.md
@@ -538,41 +568,6 @@ nav:
           - 大数定律和中心极限定理: Study/Statistics/Big_number.md
           - 参数估计: Study/Statistics/Parameter_estimation.md
           - 多维随机变量: Study/Statistics/Multi_dimensional_r_v.md
-      - 小红书｜Python藏宝箱:
-          - 经（踩）验（坑）分（历）享（史）: Study/PythonPackages/Tricks.md
-          - 数据结构大合集: Study/PythonPackages/Data_struct_recomend.md
-          - PyEcharts合集: Study/PythonPackages/Pyecharts1.md
-          - 一些小玩具: Study/PythonPackages/MagicSquare.md
-          - 项目依赖管理pipreqs: Study/PythonPackages/PIPREQS.md
-          - Python二分排序函数Bisect: Study/PythonPackages/PythonBisect.md
-          - 微信读书可视化: Study/PythonPackages/PythonPieces6.md
-          - Python一些命令行操作: Study/PythonPackages/PythonPieces7.md
-          - matplotlib技巧: Study/PythonPackages/Matplotlib.md
-          - Collections中的若干数据结构: Study/PythonPackages/Python_deque.md
-          - Itertools-小抄: Study/PythonPackages/PythonPieces1.md
-          - Python解包运算符: Study/PythonPackages/PythonPieces3.md
-          - R语言数据集(Partial): Study/PythonPackages/Rdata.md
-      - 小红书｜供应链管理:
-          - 利特尔定律: Study/Supplychain/LittlesLaw.md
-          - 研究生课程：供应链管理与物流: Study/SupplyChain/202401SupplyChain.md
-          - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
-          - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
-          - 时间序列预测模型与框架：ARMA/Winter(Chapter_7.5/7.6): Study/Supplychain/SupplyChain3.md
-          - 经济订货批量模型(EOQ)(Chapter_11.3): Study/Supplychain/SupplyChain4.md
-          - EOQ模型的订货量确定与周期盘点(Chapter_11.3.2): Study/Supplychain/SupplyChain9.md
-          - 供应链综合计划策略I(Chapter_8.4): Study/Supplychain/SupplyChain7.md
-          - 供应链综合计划策略II：案例分析(Chapter_8.5): Study/Supplychain/SupplyChain11.md
-          - 规模经济管理：数量折扣I(Chapter_11.4): Study/Supplychain/SupplyChain5.md
-          - 规模经济管理：数量折扣II(Chapter_11.4): Study/Supplychain/SupplyChain8.md
-          - 运营管理：排队论: Study/Supplychain/SupplyChain6.md
-          - 安全库存：基于给定策略(Chapter_12.2): Study/Supplychain/SupplyChain10.md
-          - 安全库存：聚集/供给不确定/零件的情况(Chapter_12.3): Study/Supplychain/SupplyChain12.md
-          - 报童模型I：最优可获得性水平的确定(Chapter_13.2): Study/Supplychain/SupplyChain14.md
-          - 报童模型II：沃尔玛案例分析(Chapter_13.2): Study/Supplychain/SupplyChain15.md
-          - Excel进行供应链绩效模拟(Chapter_13.Appendix): Study/Supplychain/SupplyChain16.md
-          - 提高供应链盈利能力的杠杆(Chapter_13.3): Study/Supplychain/SupplyChain17.md
-          - 供应链中的运输(Chapter_14_1): Study/Supplychain/SupplyChain18.md
-          - 供应链采购合同分析: Study/Supplychain/SupplyChain19.md
       - 供应链管理理论与案例:
           - 第一章｜导论: Study/SCMTheory/Chapter1.md
           - 第二章｜采购-I: Study/SCMTheory/Chapter2.md
@@ -626,6 +621,11 @@ nav:
           - 复杂系统: Study/SimulationCSS/Notes.md
           - 计算社会科学: Study/SimulationCSS/SocialScience.md
           - 系统动力学: Study/SimulationCSS/SystemDynamics.md
+      - 其他平台电子笔记:
+          - 网页设计与制作: Study/Mubu/WebsiteDesign.md
+          - 网页设计简单参数标注（应试用）: Study/Mubu/network.md
+          - Js简单参数标注（应试用）: Study/Mubu/Javs.md
+          - 信息检索: Study/Mubu/InfoRetreval.md
   - 我的碎碎念:
       - Talks/index.md
       - 关于我的101问: Talks/101_asks.md
@@ -682,6 +682,8 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+  icon:
+    annotation: material/arrow-right-circle
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css
