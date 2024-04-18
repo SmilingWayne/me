@@ -27,7 +27,7 @@
 | 1319 | number-of-operations-to-make-network-conneted | [Link](./1/1319_number-of-operations-to-make-network-conneted.md) | Unknown | Unknown | Unknown |
 | 1331 | rank-transform-of-an-array | [Link](./1/1331_rank-transform-of-an-array.md) | Medium | Unknown | Unknown |
 | 1365 | How-Many-Numbers-Are-Smaller-Than-the-Current-Number | [Link](./1/1365_How-Many-Numbers-Are-Smaller-Than-the-Current-Number.md) | Unknown | Unknown | Unknown |
-| 141 | linked-list-cycle | [Link](./1/141_linked-list-cycle.md) | Unknown | Unknown | Unknown |
+| 141 | linked-list-cycle | [Link](./1/141_linked-list-cycle.md) | Medium | LinkedList | Unknown |
 | 142 | linked-list-cycleii | [Link](./1/142_linked-list-cycleii.md) | Unknown | Unknown | Unknown |
 | 1451 | rearrange-words-in-a-sentence | [Link](./1/1451_rearrange-words-in-a-sentence.md) | Unknown | Unknown | Unknown |
 | 1452 | people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list | [Link](./1/1452_people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.md) | Unknown | Unknown | Unknown |
@@ -57,6 +57,7 @@
 | 2600 | k-items-with-the-maximum-sum | [Link](./2/2600_k-items-with-the-maximum-sum.md) | Easy | If else | Unknown |
 | 2840 | check-if-strings-can-be-made-equal-with-operations-ii | [Link](./2/2840_check-if-strings-can-be-made-equal-with-operations-ii.md) | Medium | String | Unknown |
 | 2917 | find-the-k-or-of-an-array | [Link](./2/2917_find-the-k-or-of-an-array.md) | Easy | Bit  | Unknown |
+| 2924 | find-champion-ii | [Link](./2/2924_find-champion-ii.md) | Medium | Graph  | Unknown |
 | 3 | longest-substring-without-repeating-characters | [Link](./3/3_longest-substring-without-repeating-characters.md) | Unknown | Unknown | Unknown |
 | 32 | longest-valid-parentheses | [Link](./3/32_longest-valid-parentheses.md) | Unknown | Unknown | Unknown |
 | 334 | increasing-triplet-subsequence | [Link](./3/334_increasing-triplet-subsequence.md) | Unknown | Unknown | Unknown |
@@ -75,6 +76,7 @@
 | 442 | find-all-duplicates-in-an-array | [Link](./4/442_find-all-duplicates-in-an-array.md) | Unknown | Unknown | Unknown |
 | 468 | validate-ip-address | [Link](./4/468_validate-ip-address.md) | Unknown | Unknown | Unknown |
 | 470 | implement-rand10-using-rand7 | [Link](./4/470_implement-rand10-using-rand7.md) | Unknown | Unknown | Unknown |
+| 48 | rotate-image | [Link](./4/48_rotate-image.md) | Medium | Matrix | Same as 01-07 |
 | 503 | next-greater-element-ii | [Link](./5/503_next-greater-element-ii.md) | Unknown | Unknown | Unknown |
 | 518 | coin-change-ii | [Link](./5/518_coin-change-ii.md) | Unknown | Unknown | Unknown |
 | 529 | minesweeper | [Link](./5/529_minesweeper.md) | Unknown | Unknown | Unknown |
@@ -113,3 +115,8 @@
 | 01-08 | zero-matrix-lcci | [Link](./0/0108_zero-matrix-lcci.md) | Medium | Array |  |
 | 02-04 | partition-list-lcci | [Link](./0/0204_partition-list-lcci.md) | Medium | LinkedList |  |
 | 02-05 | sum-lists-lcci | [Link](./0/0205_sum-lists-lcci.md) | Medium | LinkedList |  |
+| 02-07 | intersection-of-two-linked-lists-lcci | [Link](./0/0207_intersection-of-two-linked-lists-lcci.md) | Easy | LinkedList |  |
+| 03-01 | three-in-one-lcci | [Link](./0/0301_three-in-one-lcci.md) | Easy | Stack |  |
+| 03-03 | stack-of-plates-lcci | [Link](./0/0303_stack-of-plates-lcci.md) | Medium | Stack |  |
+
+<!-- Not DONE -->

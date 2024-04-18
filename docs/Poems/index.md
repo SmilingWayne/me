@@ -6,7 +6,7 @@
 
 - [ ] 各种诗歌：史诗 ｜ 长诗 ｜ 现代诗 ｜ 中外古典 ；
 - [ ] [中国古典·词](./ClassicChinese_ci.md) ｜ [辛弃疾词](./Xinqiji_ci.md) ｜ [花间集](Hua_jian_ci.md) ｜ [木心诗选](./Muxin.md) ｜ [月光落在左手上](./Moonlight_left_hand.md)
-- [ ] [恶之花](./Fleurs_du_mal.md) ｜ [伊利亚特](./Illiad.md) ｜ [布莱希特](./To_descendant.md) 
+- [ ] [恶之花](./Fleurs_du_mal.md) （及 [相关论著](./About_Fleurs_du_mal.md) ）｜ [伊利亚特](./Illiad.md) ｜ [布莱希特](./To_descendant.md) 
 
 
 ----------

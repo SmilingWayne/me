@@ -31,7 +31,7 @@
     - **Chapter. 11** [博弈论](./Chapter11.md)
     - **Chapter. 12** 一些高级的运筹学技巧与建模
         - [列生成算法](./Chapter12.md)：征服大规模线性规划问题的第一步；
-        - [分支定价算法](./BranchAndPrice.md)：更快，更快的整数规划。
+        - [分支定价算法](./BranchAndPrice.md)：更快，更标准，更严格的整数规划。
         - Benders Decomposition：好羡慕学得懂的那些孩子。
         - [拉格朗日松弛](./LR.md): 拉格朗日松弛，养活了大半个运筹理论。
         - Danzig Wolfe Decomposition：好像还是没有学会。
