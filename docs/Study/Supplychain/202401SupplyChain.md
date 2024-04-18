@@ -133,10 +133,38 @@ FSD: 智能驾驶。
 
 - Reducing the cost of demand uncertainty through accurate response to early sales. Fisher et al., ?
 
-要求：不只是说谁做了什么，而是要讲故事，有2-3条线。讲实践问题的演化。
+课程汇报的要求：不只是说谁做了什么，而是要讲故事，有2-3条线。讲实践问题的演化。
 
 参考Fisher1和Fisher2模型的。理论和实践是如何结合的。
 
 - 不同产品，各自的需求函数是怎么写的？
 - 多周期的报童模型。
+
+
+## 0415 
+
+美团和抖音的竞争：新的威胁、新的需求
+
+```
+A Frame work for Structing Drivers 
+
+
+Competitive Strategy ----> Supply Chain Strategy
+
+
+<---- Efficiency   Supply Chain Structure    ----> Responsiveness 
+
+Logistics drivers: 
+
+Facilities  < -- > Inventory  < -- > Transportation(大众)
+
+Cross Functional Drivers
+
+Information < -- > Sourcing   < -- > Pricing
+
+```
+
+不同的公司的资源禀赋是不一样的。
+
+奇瑞、小鹏、理想、蔚来、特斯拉、比亚迪
 
