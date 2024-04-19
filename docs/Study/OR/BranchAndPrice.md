@@ -104,7 +104,6 @@ $$\min \sum^n_{j} w_j C_j$$
 
 $$\min \sum_{s \in S} c_s x_s$$
 
-
 $$\begin{aligned}
 \text{s.t.}\begin{equation*}
 \begin{cases}
@@ -152,7 +151,7 @@ $$c_s = \sum^n_{j = 1} \omega_j C_j(s) =  \sum^n_{j = 1} \omega_j a_{js} [\sum^j
 
 !!! note "在机器调度问题中，把并行机调度的问题记作： $P_m || \sum^n_{j = 1} \omega_j C_j$"
 
------
+--------
 
 ### Pricing Problem 
 
@@ -170,7 +169,7 @@ $$c^{'}_s = c_s - \lambda_0 - \sum^n_{j = 1}\lambda_j a_{js}\\
 
 所以求Pricing Problem，就是要找一下**检验数最小**的备选方案，看看这个方案对应的检验数是否是负数，如果是，就加入主函数，如果最小检验数都 $>= 0$ 了，说明已经找到了最优解，停止。
 
-定价问题，就是输出一个（或者一些）方案，这些方案的检验数 $< 0$。反映在主问题里，就是一个 0 和 1 组成的、长度为 $n$ 的列向量 $\mathbf{a_{s + 1}} = (a_{1,s+1}, a_{2,s+1}, ..., a_{n, s + 1})^T$。
+定价问题，就是输出一个（或者一些）方案，这些方案的检验数 $< 0$。反映在主问题里，就是一个 0 和 1 组成的、长度为 $n$ 的列向量 $\mathbf{a_{s + 1}} = (1, a_{1,s+1}, a_{2,s+1}, ..., a_{n, s + 1})^T$。
 
 
 
@@ -191,7 +190,7 @@ $$c^{'}_s = c_s - \lambda_0 - \sum^n_{j = 1}\lambda_j a_{js}\\
 
 所以我们可以写出**状态转移方程**：
 
-$$F_j(t) = \min \{ F_{j - 1} (t - p_j) + \omega_j t - \lambda_t, F_{j - 1}(t)\}$$
+$$F_j(t) = \min \{ F_{j - 1} (t - p_j) + \omega_j t - \lambda_j, F_{j - 1}(t)\}$$
 
 初始化如下：
 
@@ -199,7 +198,7 @@ $$\begin{aligned}
 F_j(t) = \begin{equation*}
 \begin{cases}
 -\lambda_0 , \hspace{10pt} t = 0, j = 0 \\ 
--\infty, \hspace{10pt} \text{Otherwise} \\
+\infty, \hspace{10pt} \text{Otherwise} \\
 \end{cases}
 \end{equation*}
 \end{aligned}$$
@@ -250,8 +249,6 @@ def processing_bound(benchmark):
 
 #### When to Branch?
 
-
-
 什么时候不需要分支？也就是终止条件是什么？
 
 1. $x^{*}$ 是整数的。每个元素都已经是Integer;
@@ -271,7 +268,6 @@ def processing_bound(benchmark):
 
 一些基础的想法肯定是：进行分枝，第一支，保证这个方案一定不选；第二支：保证这个方案一定选。但是这种分枝可能会在后续的列生成中，继续生成被设为 0 的这一列。因此，作者**基于可行的完成时间**进行分枝。
 
-
 因为经过上面的检验，结果一定是违反 Theorem 1 的。这说明一定存在至少一个工作 $J_j$，满足：
 
 $$\sum_{s \in S^*} C_j(s) x^*_s > \min \{ C_j(s) | x^*_s > 0 \}$$
@@ -287,6 +283,7 @@ $$\sum_{s \in S^*} C_j(s) x^*_s > \min \{ C_j(s) | x^*_s > 0 \}$$
     情况一： 给工作 $j$ 设置一个Deadline，规定这个工作必须在 $\min \{ C_j(s) | x^*_s > 0 \}$ 之前完成。也就意味着工作必须不晚于 $\min \{ C_j(s) | x^*_s > 0 \} - p_j$ 开始。
 
     情况二： 给工作 $j$ 设置一个开始时间，意味着这个工作的开始时间(Release Time) $r_j$ 至少是：$\min \{ C_j(s) | x^*_s > 0 \} + 1 - p_j$。
+
 
 
 

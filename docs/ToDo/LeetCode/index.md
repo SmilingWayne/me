@@ -118,5 +118,7 @@
 | 02-07 | intersection-of-two-linked-lists-lcci | [Link](./0/0207_intersection-of-two-linked-lists-lcci.md) | Easy | LinkedList |  |
 | 03-01 | three-in-one-lcci | [Link](./0/0301_three-in-one-lcci.md) | Easy | Stack |  |
 | 03-03 | stack-of-plates-lcci | [Link](./0/0303_stack-of-plates-lcci.md) | Medium | Stack |  |
+| 04-08 | first-common-ancestor-lcci | [Link](./0/0408_first-common-ancestor-lcci.md) | Medium | Tree / Recursion |  |
+
 
 <!-- Not DONE -->
