@@ -647,8 +647,9 @@ nav:
 site_author: SmilingWayne
 repo_name: SmilingWayne/me
 repo_url: https://github.com/SmilingWayne/me
+edit_uri: edit/main/docs
 
-docs_dir: ./docs
+docs_dir: docs/
 theme:
   language: "zh"
   name: material
@@ -667,8 +668,8 @@ theme:
     # - navigation.expand
     # - navigation.top
     - navigation.indexes
-    - content.action.edit
-    - content.action.view
+    # - content.action.edit
+    # - content.action.view
 
   palette:
     - media: "(prefers-color-scheme: light)"
