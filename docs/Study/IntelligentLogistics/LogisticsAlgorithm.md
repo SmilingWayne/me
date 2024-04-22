@@ -1,7 +1,7 @@
 # 物流优化算法
 
 
-考核方式：见PPT。都是课堂作业。==这个课的上课时间不是10:10AM，而是10:00AM。别起太迟== .
+考核方式：见PPT。都是课堂作业。==这个课的上课时间不是10:10AM，而是10:00AM。别起太迟== . 可以看作上学期课程 [智慧物流](Study/IntelligentLogistics/IntelligentLogistics1.md) 的姊妹篇。
 
 !!! abstract "计算复杂性理论"
 
