@@ -60,3 +60,26 @@
 `Palatino` ：<font face="Palatino" size = 6 color = Coral >Q W E R T Y U I O a s d f g h j k  + - Aa Bb Cc Dd Ee Ff Kk Ll Mm 1 2 3 4 5 6 7 8 9 Palatino</font>
 
 `Skia` ：<font face="skia" size = 6 color = DarkSlateGrey >Q W E R T Y U I O a s d f g h j k  + - Aa Bb Cc Dd Ee Ff Kk Ll Mm 1 2 3 4 5 6 7 8 9 Skia</font>
+
+--------
+
+!!! warning "检测一下页面的特殊字符显示效果。"
+
+- 𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡zʎxʍʌ
+    
+- nʇsɹbdouɯʞɾıɥƃɟǝpɔq∀ZʎXMΛ∩⊥SᴚὉԀONW˥ʞſIHƃℲƎᗡϽq∀𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡𝟢𝟣𝟤𝟥𝟦𝟧𝟨𝟩𝟪𝟫𓀀𓀁𓀄𓀉𓀈𓀎𓀜𓀛𓀚𓀭𓀬𓀺𓁅𓀿𓁁𓁌𓁘𓁕𓁚𓁜𓁤
+
+- 𝓮𝓐𝓡ᝰꫛꫀ  / ᭙ᦔꪀꪑᦔ /  ᝰꫀꪶꪖρડ꧖ꦿ `鲸落`  
+
+- ᝰꫛꪮꪮꫜ `月亮` /  ᥴꪶꪮ᭙ꪀ /  ꪱꪷ ꪶꪱᴋꫀ ꪗꪮᝰ  `I Like You` /  ᝰꫛꫀꪝ `特别`
+
+- ꪫ꫁ꪁꪶꪗ ꪗꪫ꫁ꪙ 
+
+- এ᭄ℒꪮꪜ꧖.
+
+- ꪶⅈᧁꫝt光 /  Rꫀᦔꫀꪑρtiꪮꪀ `救赎` / Sꫀꪀડitiꪜꫀ `敏感`
+
+- ꫀડρꫀᥴⅈꪖꪶꪶꪗ `especially`
+
+- ꀿªᵖᵖᵞ︎ꔛ♡ `盐于律己`
+- ◡̈ ᶜᵘᵗᵉ `甜以待人`

@@ -39,7 +39,7 @@
 | 1544 | make-the-string-great | [Link](./1/1544_make-the-string-great.md) | Unknown | Unknown | Unknown |
 | 166 | fraction-to-recurring-decimal | [Link](./1/166_fraction-to-recurring-decimal.md) | Unknown | Unknown | Unknown |
 | 1663 | smallest-string-with-a-given-numeric-value | [Link](./1/1663_smallest-string-with-a-given-numeric-value.md) | Unknown | Unknown | Unknown |
-| 1702 | maximum-binary-string-after-change | [Link](./1/1702_maximum-binary-string-after-change) | Medium | Rule-based | Unknown |
+| 1702 | maximum-binary-string-after-change | [Link](./1/1702_maximum-binary-string-after-change.md) | Medium | Rule-based | Unknown |
 | 1750 | minimum-length-of-string-after-deleting-similar-ends | [Link](./1/1750_minimum-length-of-string-after-deleting-similar-ends.md) | Unknown | Unknown | Unknown |
 | 1823 | find-the-winner-of-the-circular-game | [Link](./1/1823_find-the-winner-of-the-circular-game.md) | Unknown | Unknown | Unknown |
 | 19 | remove-Nth-node-from-end-of-list | [Link](./1/19_remove-Nth-node-from-end-of-list.md) | Unknown | Unknown | Unknown |
@@ -116,7 +116,6 @@
 | 02-04 | partition-list-lcci | [Link](./0/0204_partition-list-lcci.md) | Medium | LinkedList |  |
 | 02-05 | sum-lists-lcci | [Link](./0/0205_sum-lists-lcci.md) | Medium | LinkedList |  |
 | 02-07 | intersection-of-two-linked-lists-lcci | [Link](./0/0207_intersection-of-two-linked-lists-lcci.md) | Easy | LinkedList |  |
-| 03-01 | three-in-one-lcci | [Link](./0/0301_three-in-one-lcci.md) | Easy | Stack |  |
 | 03-03 | stack-of-plates-lcci | [Link](./0/0303_stack-of-plates-lcci.md) | Medium | Stack |  |
 | 04-08 | first-common-ancestor-lcci | [Link](./0/0408_first-common-ancestor-lcci.md) | Medium | Tree / Recursion |  |
 

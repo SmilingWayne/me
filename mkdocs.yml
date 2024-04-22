@@ -11,6 +11,7 @@ nav:
       - 📚 哲学家词典:
           - 阿尔都塞: Philosophy/Philosophers/Altusser.md
           - 福柯: Philosophy/Philosophers/Foucault.md
+          - 福柯集: Philosophy/Philosophers/Foucault_collections.md
           - 马尔库塞: Philosophy/Philosophers/Marcuse.md
           - 罗兰巴特: Philosophy/Philosophers/RolandBarthes.md
           - 德里达: Philosophy/Philosophers/Derrida.md
@@ -113,6 +114,7 @@ nav:
               - 中国古典知识随录: Poems/Classic_pieces.md
               - 辛弃疾词: Poems/Xinqiji_ci.md
               - 木心诗选: Poems/Muxin.md
+              - 花间集新注: Poems/Hua_jian_ci.md
               - 月光停在左手上: Poems/Moonlight_left_hand.md
               - 中国古典-诗: Poems/ClassicChinese_shi.md
               - 中国古典-词: Poems/ClassicChinese_ci.md
@@ -471,11 +473,10 @@ nav:
               - LaTeX｜3-矩阵多行对齐: Study/TextEdit/LaTeX/Matrix.md
               - LaTeX｜4-Overleaf论文写作: Study/TextEdit/LaTeX/Overleaf.md
           - Markdown:
-              - 快速入门: Study/TextEdit/Markdown/MarkdownQuickStart.md
+              - 🌟 快速入门: Study/TextEdit/Markdown/MarkdownQuickStart.md
               - 色样表合集: Study/TextEdit/Markdown/MarkdownSyntax2.md
               - 常用的语法(with plugins): Study/TextEdit/Markdown/MarkdownSyntax1.md
-              - 字体推荐: Study/TextEdit/Markdown/Markdown.md
-              - mkdocs构建教程: Study/TextEdit/Markdown/Mkdocs_Tutorials1.md
+              - 我的字体研究: Study/TextEdit/Markdown/Markdown.md
       - 小红书｜Python藏宝箱:
           - 经（踩）验（坑）分（历）享（史）: Study/PythonPackages/Tricks.md
           - 数据结构大合集: Study/PythonPackages/Data_struct_recomend.md
@@ -490,9 +491,10 @@ nav:
           - Itertools-小抄: Study/PythonPackages/PythonPieces1.md
           - Python解包运算符: Study/PythonPackages/PythonPieces3.md
           - R语言数据集(Partial): Study/PythonPackages/Rdata.md
+          - Pandas CheatSheet: Study/PythonPackages/PythonPieces8.md
       - 小红书｜供应链管理:
           - 利特尔定律: Study/Supplychain/LittlesLaw.md
-          - 研究生课程：供应链管理与物流: Study/SupplyChain/202401SupplyChain.md
+          - 研究生课程：供应链管理与物流: Study/Supplychain/202401SupplyChain.md
           - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
           - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
           - 时间序列预测模型与框架：ARMA/Winter(Chapter_7.5/7.6): Study/Supplychain/SupplyChain3.md
@@ -554,6 +556,7 @@ nav:
           - 博弈论: Study/OR/Chapter11.md
           - 高级运筹学技巧1：列生成方法: Study/OR/Chapter12.md
           - 高级运筹学技巧2：拉格朗日松弛: Study/OR/LR.md
+          - 高级运筹学技巧3: 分支定价： Study/OR/BranchAndPrice.md
           - 运筹学经典建模：TSP问题: Study/OR/TSP.md
           - 练习题:
               - 第一章: Study/OR/ORExercise/Chapter1_wk.md
@@ -599,9 +602,12 @@ nav:
           - 葛底斯堡演说(Gettysburg_Address): Study/English/Gettysburg_Address.md
       - 制造与服务系统分析: Study/AMASS.md
       - 一些高中笔记: Study/HighSchool.md
-      - 智慧物流: Study/IntelligentLogistics/IntelligentLogistics1.md
+      - 研究生课程：智慧物流: Study/IntelligentLogistics/IntelligentLogistics1.md
+      - 研究生课程：物流优化算法: Study/IntelligentLogistics/LogisticsAlgorithm.md
       - 暑期学校-智能决策与算法: Study/fleet.md
       - Git 使用指南: Study/Git_use.md
+      - 工程经济学: Study/Engineering_eco.md
+      - 工程管理类论文写作: Study/MEMEssay/Class1.md
       - 发展经济学:
           - 重点提纲: Study/DevelopEco/chapter1.md
       - 国际贸易: Study/IntTrad/InternationalTrade.md
@@ -633,6 +639,7 @@ nav:
       - 请回答，2022（2022年终总结）: Talks/My2022.md
       - 从经天路到小粉桥（2023年终总结）: Talks/2023_con.md
       - 神秘学手记: Talks/Occult.md
+      - 失眠漫记: Talks/Insomia.md
       - 关于语言: Talks/About_language.md
       - 一些歌词: Talks/Music_lines.md
       - 荐文: Talks/Articles_recomend.md
