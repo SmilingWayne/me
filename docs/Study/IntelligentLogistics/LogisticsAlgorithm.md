@@ -335,14 +335,135 @@
 
 相当于一次操作，都进行了很多次2-Opt操作。
 
-自适应的情况：要给删除算子计算一个权重。怎么选的过程就体现了自适应的情况。
+自适应的情况：要给删除算子计算一个权重。怎么选的过程就体现了**自适应**的情况。
 
 轮盘赌的算法：通过随机概率来选择算子。
 
 > Ejection Chain Operator 弹射链。插入的节点需要把（如果有）弹出的其他的点，继续插入到后面的节点里。
 
-有一次课堂作业：带冲突的Bin-Packing问题。
+**这一次课有课堂作业：带冲突的Bin-Packing问题。**
 
 1. C的方案，弹射链：把不好的弹射出去。
 2. 大邻域搜索：
 
+-----
+
+
+## 0425 
+
+变邻域搜索、迭代邻域搜索。
+
+!!! note "迭代邻域搜索" 
+    Iterated Local Search: 
+    :   Local Search
+        Perturbation
+        acceptance criterion.
+    
+    迭代的次数越多，会进行扰动、也会陷入局部最优。
+
+在循环迭代的过程中只有两个：1. Local Search 2. 扰动。
+
+
+本质是在100个空间里找局部最优解，并且找到其中的最优解。是在巨大的解空间内做Sampling。
+
+
+什么样的问题适合这个结构呢？
+
+
+> 问题可以设计出很好的neighbourhood的结构，并且一次进行搜索的效果很高。
+>
+> 算子是迭代邻域内最重要的部分。
+
+怎么进行这种sampling，用什么方法进行sampling更有可能找到更好的解。
+
+> 举例子：找到中国最高的山。
+
+-----
+
+迭代邻域搜索可以视为一种两层的局部搜索。
+
+
+1. 初始解的生成，以及初始解对解的效果的影响。
+2. 对于扰动，有一些“我觉得最优解里大概率会用到的”，这部分不必进行破坏。同时，可能多次Pertubation会导致迭代之后反复陷入局部最优。（离开了，但很快又回到了原地）。模拟退火：以概率的情况接受某个解，或者，只允许 K 次接受这个解。怎么设置Pertubation Size 
+
+
+!!! note "QAP 问题"
+    https://optimization.cbe.cornell.edu/index.php?title=Quadratic_assignment_problem
+
+---------
+
+### VNS (Variable Neighbourhood Search)
+
+很多个算子，先用哪些后用哪些？
+
+首先能找到一个Local Minimum。
+
+邻域变换的问题：什么时候开始用下一个算子？
+
+现在有4个算子，
+
+通过算子 $k$ 基于当前解 $x$ 找到新的解 $x^{'}$，那move到更好的解。这时候开始用2号算子再算。如果找到最优解了，那么跳到新的最优解，继续用1号算子。如此反复，直到保证了4个算子都是最优的为止。
+
+注意到，1号算子总是使用得最频繁的。所以1算子尽量要快；此外，可能有许多种类似的算子（车辆路径问题的删除加入操作）是否存在包含等关系。
+
+
+> 适合的问题：能用Local Search做的，都很适合用这些方法。
+>
+
+## 0428 调休上课
+
+
+复习
+:   Neighbourhood：邻域是什么
+
+:   Set: 
+
+:   算子：Operator有哪些？
+
+
+> Metaheuristic 需要思考：什么时候跳出？怎么跳出？
+
+!!! abstract "一些其他的启发式算法"
+
+
+### Simulated Annealing 
+
+> 控制温度变化的速率。通过参数对算法收敛进行控制：选择一个更差解的概率。核心在于如何更新接受更差解的概率 $p$， 也就是怎么接受邻居解。
+
+
+接受条件：
+
+$$p(T, s, s^{'}) = \begin{aligned}\begin{equation*}
+\begin{cases}
+1, \hspace{15pt} \text{if}  \ \ f(s^{'}) \leq f(s) \\
+\exp{(\dfrac{f(s) - f(s^{'})}{T} )} ,\hspace{10pt} else
+\end{cases}
+\end{equation*}\end{aligned}$$
+
+如何控制初始的 t，也可以优化调整。
+
+
+### Yabu Search 
+
+在一定的迭代周期后把边释放出来。
+
+> Trajectory-based 
+
+### Genetic Algorithm 
+
+> 略
+
+
+### 2DVPP问题
+
+> 问题描述见“解的表达”。
+
+要让单位体积的费用越少越好：每一个箱子的单位价格越少越好。
+
+如何设计变异算子？什么时候进行变异？（与最小价格的差距越大的，要进行变异，volumn 和 weight都有一个fitness参数进行评估）
+
+> Cross Over: 把大家最好的片段拿出来进行组合。
+> 
+> Mutation: Shuffle Shake：可能会把fitness = 0的移到后面去；
+> 
+> Relocate：对准则进行微调；

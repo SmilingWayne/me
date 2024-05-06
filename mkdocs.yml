@@ -266,10 +266,12 @@ nav:
           - 🇷🇺苏联笔记: History/Soviet_union.md
           - 欧罗巴笔记: History/Europe.md
           - 玛戈王后: History/Margot.md
+          - 🇪🇸卡斯蒂利亚的伊莎贝拉: History/Isabella.md
           - 🕌中东笔记: History/Mid_east.md
           - 🇫🇷法兰西笔记: History/France.md
           - 🇸🇦阿拉伯笔记: History/Arabians.md
           - 🇮🇳印度笔记: History/India.md
+          - 🇳🇱荷兰东印度公司笔记: History/Netherland_colony.md
           - 🇮🇩印度尼西亚笔记: History/Indonesia.md
       - 书:
           - 🇫🇷记忆之场: History/Field_of_memory.md
@@ -556,7 +558,7 @@ nav:
           - 博弈论: Study/OR/Chapter11.md
           - 高级运筹学技巧1：列生成方法: Study/OR/Chapter12.md
           - 高级运筹学技巧2：拉格朗日松弛: Study/OR/LR.md
-          - 高级运筹学技巧3: 分支定价： Study/OR/BranchAndPrice.md
+          - 高级运筹学技巧3：分支定价: Study/OR/BranchAndPrice.md
           - 运筹学经典建模：TSP问题: Study/OR/TSP.md
           - 练习题:
               - 第一章: Study/OR/ORExercise/Chapter1_wk.md
@@ -639,17 +641,17 @@ nav:
       - 请回答，2022（2022年终总结）: Talks/My2022.md
       - 从经天路到小粉桥（2023年终总结）: Talks/2023_con.md
       - 神秘学手记: Talks/Occult.md
-      - 失眠漫记: Talks/Insomia.md
+      - 2023年末-失眠漫记: Talks/Insomia.md
       - 关于语言: Talks/About_language.md
+      - 关于知识分享: Talks/Knowledge_share.md
+      - 关于记忆和记忆崇拜: Talks/About_memory.md
       - 一些歌词: Talks/Music_lines.md
       - 荐文: Talks/Articles_recomend.md
       - 荐书: Talks/Books_recomend.md
       - 古典音乐: Talks/Classical_music.md
       - 女性主义: Talks/Feminism_talks.md
       - 长者: Talks/Him.md
-      - 关于记忆和记忆崇拜: Talks/About_memory.md
       - 没有整理的: Talks/pieces.md
-      - 知识分享: Talks/Knowledge_share.md
 
 site_author: SmilingWayne
 repo_name: SmilingWayne/me

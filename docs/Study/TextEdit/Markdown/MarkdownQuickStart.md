@@ -1,15 +1,18 @@
-# Markdown 极简入门
+# Markdown 入门｜我的笔记工作流
 
 
 !!! note "说在前面"
-    - [Markdown 语法的扩展使用](https://markdown.com.cn/extended-syntax/availability.html)
-    - [Markdown Basics](https://daringfireball.net/projects/markdown/basics)
-    - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-    - 我的日常使用工具：Visual Studio Code  + Markdown All In One 插件。安装即用。
+    - 我的日常记笔记工具：电脑，Visual Studio Code  + Markdown All In One 插件（如下）。安装即用。支持**同步预览**。
 
     ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202404221551789.png)
 
     （正如其简介说的，All You Need to write Markdown）
+
+    我在电脑端的记笔记窗口长这样：
+
+
+    ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202404270037162.png)
+
 
 ------------
 
@@ -96,18 +99,22 @@
 
 **语法** : 
 
+```
+> 这是第一句话
+> 
+> - 这是第一句话的一个要点
+> - 这是第一句话的第二个要点
+```
+
+**预览** :
+
 > 这是第一句话
 > 
 > - 这是第一句话的一个要点
 > - 这是第一句话的第二个要点
 
-**预览** :
-```
-> 这是第一句话
-> 
-> - 这是第一句话的一个要点
-> - 这是第一句话的第二个要点
-```
+
+
 
 
 -----------------
@@ -118,7 +125,7 @@
 **语法** :
 
 ```
-<https://markdown.com.cn> 
+<YOUR HYPE LINK> 
 ```
 
 **预览** :
@@ -130,20 +137,29 @@
 
 ## 带格式化的超链接
 
+```
+I love supporting the **[EFF](YOUR LINK 1)**.
+This is the *[Markdown Guide](YOUR LINK 2)*.
+See the section on [`code`](YOUR LINK 3).
+```
+
+
+
+**预览：**
 
 I love supporting the **[EFF](https://eff.org)**.
 This is the *[Markdown Guide](https://www.markdownguide.org)*.
 See the section on [`code`](./MarkdownQuickStart.md).
-
-```
-I love supporting the **[EFF](https://eff.org)**.
-This is the *[Markdown Guide](https://www.markdownguide.org)*.
-See the section on [`code`](./MarkdownQuickStart.md).
-```
 
 -----------
 
 ## 带超链接的图片
+
+```text
+[![This is the homepage of my site]
+(YOUR PHOTO PATH "我的网页照片")]
+(YOUR HYPER LINK)
+```
 
 [![This is the homepage of my site](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202404201118510.png "我的网页照片")](https://smilingwayne.github.io/me/)
 
@@ -157,6 +173,39 @@ See the section on [`code`](./MarkdownQuickStart.md).
 ```
 ~~Nooooo!!~~
 ```
+    
+## 分割线
+
+
+- 专起一行输入`---------`，只要大于等于3个“-”就行。
+
+
+
+
+
+## 行内代码块
+
+- 用`\`` 符号对代码进行包裹即可；如： 
+
+> `Hello!`
+
+
+## 代码块
+
+**语法** : (最后一行 {data-source-line} 是插件自动添加的，不需要写这个，直接用```进行包裹即可)
+
+```text
+```Python
+print("Hi! This is Python")
+```
+```
+
+**预览** ：
+
+```Python
+print("Hi! This is Python")
+```
+
 
 
 ---------
@@ -170,58 +219,25 @@ See the section on [`code`](./MarkdownQuickStart.md).
 
    
 
-    
-----------
-
-## 分割线
-
-
-- 专起一行输入`---------`，只要大于等于3个“-”就行。
-
-
----------
-
-
-## 行内代码块
-
-- 用`\`` 符号对代码进行包裹即可；如： 
-
-> `Hello!`
-
-
-## 代码块
-
-**语法** :
-```text 
-    
-    ```Python
-    print("Hi! This is Python")
-    ```
-
-```
-
-**预览** ：
-
-```Python
-print("Hi! This is Python")
-```
 
 ---------------
 
 ## 任务列表
 
+
+
 **语法** :
 ```text 
-- [x] 刷牙
-- [x] 洗漱
-- [ ]  归还图书
+- [x] 任务1
+- [x] 任务2
+- [ ] 任务3
 ```
 
 **预览** :
 
-- [x] 刷牙
-- [x] 洗漱
-- [ ] 归还图书
+- [x] 任务1
+- [x] 任务2
+- [ ] 任务3
 
 
 ------
@@ -229,24 +245,46 @@ print("Hi! This is Python")
 ## 输入上下标
 
 
-!!! note "下标"
+!!! note "下标 / 上标"
 
-    **语法** :```H~2~O```
+    **语法** :```H~2~O``` / ```19^th^century```
 
-    **预览** : H~2~O
+    **预览** : H~2~O / 19^th^century
 
-
-!!! note  "下标"
-
-    **语法** :```19^th^century```
-
-    **预览** :19^th^century
-
+    
 
 ---------
 
 
-## Admonition
+## 表格 
+
+> **用途** ：不解释。就是表格。
+
+
+**语法** ：
+
+```text 
+| Function name | Description                |
+| ------------- | -------------------------- |
+| `help()`      | Display the help window.   |
+| `destroy()`   | **Destroy your computer!** |
+```
+
+**预览**：
+
+| Function name | Description                |
+| ------------- | -------------------------- |
+| `help()`      | Display the help window.   |
+| `destroy()`   | **Destroy your computer!** |
+
+
+
+--------
+
+## Admonition 💗💗（👍）
+
+> 备注：我最喜欢的一种语法。可以制作一个文本框。设置文本框样式，在文本框内还可以兼容大部分Markdown语法，显示效果很好。并且在Vscode里预览渲染也很快。
+
 
 ```text 
 !!! note / question / abstract / quote / answer / question "你的标题"
@@ -258,6 +296,9 @@ print("Hi! This is Python")
 ```text 
 !!! note "这是我的标题"
     这里是我的内容
+
+!!! example "这是一个例子"
+    这是例子的内容
 ```
 
 > *预览如下：*
@@ -265,6 +306,8 @@ print("Hi! This is Python")
 !!! note "这是我的标题"
     这里是我的内容
 
+!!! example "这是一个例子"
+    这是例子的内容
 ------
 
 
@@ -311,6 +354,8 @@ the family Rosaceae.
 Banana
 :   Yellow!
 
+Orange
+:   The fruit! Not the color!
 
 ```
 **预览** :
@@ -321,6 +366,9 @@ the family Rosaceae.
 
 Banana
 :   Yellow!
+
+Orange
+:   The fruit! Not the color!
 
 
 ----------

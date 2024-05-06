@@ -4,7 +4,9 @@
 
 !!! note
     <!-- 这里记载考察的数据结构、算法等 -->
-    递归 ｜ 二叉树
+    递归 ｜ 二叉树 
+
+    2024.05.03 复习到一次。没做出来。
 
 - 🔑🔑 难度：<span style = "color:gold; font-weight:bold">Medium</span>
 <!-- <span style = "color:gold; font-weight:bold">Medium</span> 中等 -->
@@ -46,9 +48,11 @@
                 return None
             
             if root == p or root == q:
+                # 一旦这个节点等于p或q的任何一个，返回非空的这个节点
                 return root 
 
             nodel = self.lowestCommonAncestor(root.left, p, q)
+            # 如果在left分支没有p，q，这个nodel一定是None的，只要有一个p，q出现，nodel就不是负的
             noder = self.lowestCommonAncestor(root.right ,p, q)
 
             if nodel and noder:
