@@ -67,7 +67,8 @@
 | 415 | add-strings | [Link](./4/415_add-strings.md) | Unknown | Unknown | Unknown |
 | 416 | partition-equal-subset-sum | [Link](./4/416_partition-equal-subset-sum.md) | Unknown | Unknown | Unknown |
 | 417 | pacific-atlantic-water-flow | [Link](./4/417_pacific-atlantic-water-flow.md) | Unknown | Unknown | Unknown |
-| 424 | longest-repeating-character-replacement | [Link](./4/424_longest-repeating-character-replacement.md) | Unknown | Unknown | Unknown |
+| 42 | trapping-rain-water | [Link](./4/42_trapping-rain-water.md) | Hard | DP | Unknown |
+| 424 | longest-repeating-character-replacement | [Link](./4/424_longest-repeating-character-replacement.md) | Unknown | Unknown | 🌟🌟 |
 | 427 | construct-quad-tree | [Link](./4/427_construct-quad-tree.md) | Unknown | Unknown | Unknown |
 | 43 | multiply-strings | [Link](./4/43_multiply-strings.md) | Unknown | Unknown | Unknown |
 | 433 | minimum-genetic-mutation | [Link](./4/433_minimum-genetic-mutation.md) | Unknown | Unknown | Unknown |
@@ -88,6 +89,7 @@
 | 686 | repeated-string-match | [Link](./6/686_repeated-string-match.md) | Unknown | Unknown | Unknown |
 | 693 | binary-number-with-alternating-bits | [Link](./6/693_binary-number-with-alternating-bits.md) | Unknown | Unknown | Unknown |
 | 703 | kth-largest-element-in-a-stream | [Link](./7/703_kth-largest-element-in-a-stream.md) | Unknown | Unknown | Unknown |
+| 72 | edit-distance | [Link](./7/72_edit-distance.md) | Medium | DP | ✨ |
 | 739 | daily-temperatures | [Link](./7/739_daily-temperatures.md) | Unknown | Unknown | Unknown |
 | 752 | open-the-lock | [Link](./7/752_open-the-lock.md) | Unknown | Unknown | Unknown |
 | 780 | reaching-points | [Link](./7/780_reaching-points.md) | Unknown | Unknown | Unknown |
