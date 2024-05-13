@@ -467,3 +467,37 @@ $$p(T, s, s^{'}) = \begin{aligned}\begin{equation*}
 > Mutation: Shuffle Shake：可能会把fitness = 0的移到后面去；
 > 
 > Relocate：对准则进行微调；
+
+--------
+
+## 0509 多目标优化问题 （Mutli Objective optimization）
+
+解空间是完全一样的，但是评价解的方式是不同的。
+
+因为解空间不同，上述的启发式算法都可以应用到多目标优化当中去。
+
+> Portfolio Investment / Scheduling of Truck routes
+
+!!! info "概念"
+    - 支配解和非支配解。
+    - 帕累托前沿面：无法单方面改变XX来获得更好的解。
+
+> 加权和方法。（weighted sum method）
+>
+> - 如何确定权重？
+
+!!! quote "需要得到一系列均匀分布的非支配解。"
+
+> $\epsilon$-constraint method 
+>
+> - 给所有的目标加一个上界。
+> 
+>
+
+- Branch and Bound for biobjective optimization:
+
+实质是在求帕累托前沿的一系列点。
+
+
+
+
