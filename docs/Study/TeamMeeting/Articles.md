@@ -342,8 +342,9 @@ Time-dependent road:
 - [中金的低空经济报告](https://mp.weixin.qq.com/s/q57cKrzUjX0ij8eEl68nvg)
 
 > 适用于短距离物流配送的是多旋翼无人机。拥有自动飞行功能，**垂直起降**的特点使其对起降场地的要求不高。目前多旋翼主要通过电力驱动，续航时间较短、负载相对小，主要用于短途的物流配送。
->
-> 
+
+
+
 - 一些用于物流配送的无人机指标: 
     - 亿航GD2.0X 物流版：最大巡航速度：40km/h，满载最大航程：10km，充电时长 <= 90min，最大载荷 0.45 kg
     - 亿航Falcon B 物流版：最大巡航速度：80km/h，满载最大航程：19km，充电时长 <= 90km，最大载荷 5kg
@@ -387,3 +388,32 @@ $$\begin{aligned}\begin{equation*}
 \sum \limits_{(i,j) \in V_k} x_{ij} = a_k, \forall k
 \end{cases}
 \end{equation*}\end{aligned}$$
+
+
+$$\begin{aligned}\begin{equation*}
+g(t) = \begin{cases}
+TT_c, \text{if} \ \ t \leq a - TT_c \\ 
+t\dfrac{v_c - v_f}{v_f} + a \dfrac{v_f - v_c}{v_f} + TT_f, \text{if} \ \ a - TT_c < t < a , \\
+TT_f, \text{if} \ \ t \geq a
+\end{cases}
+\end{equation*}\end{aligned}$$
+
+假设从 i 到 j 有多个路径。记函数
+
+$\tau^p_{ij}(.)$ 表示i到j的路径 的行驶时间函数。记共有 $M^p_{ij}$ 个时间间隔。一个服务周期的时间是 $[b^{pm}_{ij}, b^{M^p_{ij} + 1}]$ 。记开始和结束时间 $L$ 和 $U$。 
+
+
+
+
+$$\begin{aligned}
+    \text{Min.} \quad & \sum_{k \in V} \sum_{i \in N} \sum_{j \in N} c_{ij} x_{ijk} \\
+    \text{s.t.} \quad & \sum_{k \in V} \sum_{j \in N} x_{ijk} = 1 \quad \forall i \in C \\
+                      & \sum_{i \in N} d_i \sum_{j \in N} x_{ijk} \leq Q \quad \forall k \in V \\
+                      & \sum_{j \in N} x_{0jk} = 1 \quad \forall k \in V \\
+                      & \sum_{i \in N} x_{ihk} - \sum_{j \in N} x_{hjk} = 0 \quad \forall h \in C, \forall k \in V \\
+                      & \sum_{i \in N} x_{i,n+1,k} = 1 \quad \forall k \in V \\
+                      & x_{ijk} (s_{ik} + serv_i + t_{ij}^k - s_{jk}) \leq 0 \quad \forall i, j \in N, \forall k \in V \\
+                      & a_i \leq s_{ik} \leq b_i \quad \forall i \in N, \forall k \in V \\
+                      & t_{ij}^k = \text{PWL}(s_{ik} + serv_i) \quad \forall i, j \in N, \forall k \in V \\
+                      & x_{ijk} \in \{0, 1\} \quad \forall i \in N, \forall k \in V
+\end{aligned}$$

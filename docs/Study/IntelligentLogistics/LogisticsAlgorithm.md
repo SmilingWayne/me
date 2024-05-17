@@ -500,4 +500,18 @@ $$p(T, s, s^{'}) = \begin{aligned}\begin{equation*}
 
 
 
+## 0516 多目标优化问题
 
+
+CAN：解决双目标线性规划问题。Aneja and Nair
+
+
+
+MOEA ： 多目标进化算法：可以并行、编解码、设计简便；
+
+如何把单目标的推广到多目标的？需要考虑什么？
+
+- 有多个目标值，要通过多个目标值确定解是好还是不好。
+- NSGA-II：crossover, mutation, fitness, 轮盘赌。
+
+重要的是如何设计fitness
