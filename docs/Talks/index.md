@@ -4,7 +4,7 @@
 !!! abstract "胡思乱想的人最可爱！"
     
 
-<font size = 6 face = "SnellRoundHand" >Never stop.</font>
+<font size = 6 face = "SnellRoundHand" >Never stop thinking, talking and dreaming.</font>
 
 
 
