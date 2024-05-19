@@ -25,6 +25,7 @@
 
 **文本编辑**（10/10）
 :   随缘更新，目测是一个长期企划。不会写笔记的文学家不是好的工程师。
+
     - [ ] [$\LaTeX$ 篇](./TextEdit/LaTeX/LatexNotes.md)；
     - [x] Markdown篇，有好几篇，推荐[快速入门](./TextEdit/Markdown/MarkdownQuickStart.md)。
     - [ ] [Overleaf实例](./TextEdit/LaTeX/Overleaf.md)：一些在（本科）论文撰写过程中的小记录；
@@ -32,6 +33,7 @@
 
 **[果系使用指南](./Swift/SwiftBasics.md)**（8/?）
 :   随缘更新，本是想学Apple开发，理想泡沫破灭后逐渐退化成了macOS/iOS使用技巧与黑科技分享。现在看比较抽象的是，这个文件夹我竟然用Apple自己的编程语言Swift来命名。
+
     - [x] [终极快捷键拥趸](./Swift/Keyshortcuts.md)：狂野的快捷键爱好者不允许任何东西玷污键盘与触控板；
     - [x] [在你的macOS上使用你的学校邮箱](./Swift/About_mail.md) ：简介的内置软件Mail不希望自己的存在成为底栏和侧栏的点缀；
     - [x] [Raycast：唤起你的B格](./Swift/Ray.md)：很多年后，面对Alfred，我依然不愿意说聚焦搜索是时代的眼泪；
@@ -40,6 +42,7 @@
 
 **组会艺术大赏**
 :   那些年，我看过的论文（以及听过的讲座）。
+
     - [x] [20240102](./TeamMeeting/Articles.md)：Too Young! Too NAIVE! 
     - [x] [20240308](./TeamMeeting/0308Prep.md): Truck & Drones 问题及其若干拓展；
     - [ ] [20240315](./TeamMeeting/0315Prep.md): 简要略。
@@ -49,6 +52,7 @@
 
 人工智能技术及相关:
 :   一个很业余的人尽力让自己不那么业余（虽然改变不了自己业余的现状）的故事。
+
     - [x] [2023.04手把手注册OpenAI教程](./ChatGPT/Register.md)；(2024.03.05 Update: 现在没这么麻烦了！)
     - [ ] [Prompt经验总结](./ChatGPT/Prompt1.md)；（2024.03.05 Update：现在比这个先进多了！）
     - [x] [AI小词典](./ChatGPT/Knowledge/Terms.md)：解释一些从前没有见过的名词。扫盲。
@@ -57,6 +61,7 @@
 
 **语言学习相关（7/7）**
 :   好点看，好点学。
+
     - [ ] [法语](./English/French.md)（会说一点点点）
     - [ ] [英语](./English/English.md)（一个渴望双语生活的人） 
     - 一些其他的语言学习零碎的笔记；
@@ -73,6 +78,7 @@
 
 **本科的一些孤儿课程**
 :   指“其实上的时候挺感兴趣的，上完也有收获，当初也付出了不少精力，也留下了可观的电子笔记但太可惜暂时没空电子化” 的那一部分课程。
+
     - [ ] 国际贸易
     - [ ] 发展经济学
     - [ ] 信息系统（这个其实用到挺多的）
