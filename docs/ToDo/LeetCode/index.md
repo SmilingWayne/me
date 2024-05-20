@@ -1,4 +1,7 @@
-# My LeetCode Exercise
+# 我的Leetcode刷题记录
+
+!!! warning "正在思考把这一部分的内容从网站独立出去，形成一个单独的刷题仓库。因为占用了太多网页。"
+
 
 | Index | Intro | Solution | Difficulty | Keywords | Notes |
 | :---: | :---: | :------: | :--------: | :------: | :---: |
@@ -26,6 +29,7 @@
 | 1305 | all-elements-in-two-binary-search-trees | [Link](./1/1305_all-elements-in-two-binary-search-trees.md) | Unknown | Unknown | Unknown |
 | 1319 | number-of-operations-to-make-network-conneted | [Link](./1/1319_number-of-operations-to-make-network-conneted.md) | Unknown | Unknown | Unknown |
 | 1331 | rank-transform-of-an-array | [Link](./1/1331_rank-transform-of-an-array.md) | Medium | Unknown | Unknown |
+| 136 | single-number | [Link](./1/136_single-number) | Easy | Bit | Unknown |
 | 1365 | How-Many-Numbers-Are-Smaller-Than-the-Current-Number | [Link](./1/1365_How-Many-Numbers-Are-Smaller-Than-the-Current-Number.md) | Unknown | Unknown | Unknown |
 | 141 | linked-list-cycle | [Link](./1/141_linked-list-cycle.md) | Medium | LinkedList | Unknown |
 | 142 | linked-list-cycleii | [Link](./1/142_linked-list-cycleii.md) | Unknown | Unknown | Unknown |
@@ -75,6 +79,7 @@
 | 435 | non-overlapping-intervals | [Link](./4/435_non-overlapping-intervals.md) | Unknown | Unknown | Unknown |
 | 436 | find-right-interval | [Link](./4/436_find-right-interval.md) | Medium | Sort + Bisect | Unknown |
 | 442 | find-all-duplicates-in-an-array | [Link](./4/442_find-all-duplicates-in-an-array.md) | Unknown | Unknown | Unknown |
+| 45 | jump-game-ii | [Link](./4/45_jump-game-ii.md) | Medium | Greedy | Unknown |
 | 468 | validate-ip-address | [Link](./4/468_validate-ip-address.md) | Unknown | Unknown | Unknown |
 | 470 | implement-rand10-using-rand7 | [Link](./4/470_implement-rand10-using-rand7.md) | Unknown | Unknown | Unknown |
 | 48 | rotate-image | [Link](./4/48_rotate-image.md) | Medium | Matrix | Same as 01-07 |
@@ -83,6 +88,7 @@
 | 529 | minesweeper | [Link](./5/529_minesweeper.md) | Unknown | Unknown | Unknown |
 | 537 | complex-number-multiplication | [Link](./5/537_complex-number-multiplication.md) | Unknown | Unknown | Unknown |
 | 547 | number-of-provinces | [Link](./5/547_number-of-provinces.md) | Unknown | Unknown | Unknown |
+| 55 | jump-game | [Link](./5/55_jump-game.md) | Medium | Greedy | Unknown |
 | 590 | n-ary-tree-postorder-traversal | [Link](./5/590_n-ary-tree-postorder-traversal.md) | Unknown | Unknown | Unknown |
 | 599 | minimum-index-sum-of-two-lists | [Link](./5/599_minimum-index-sum-of-two-lists.md) | Unknown | Unknown | Unknown |
 | 682 | baseball-game | [Link](./6/682_baseball-game.md) | Unknown | Unknown | Unknown |
