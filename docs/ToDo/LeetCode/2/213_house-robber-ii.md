@@ -26,7 +26,15 @@
 
 ------
 
-??? note 
+!!! note "打家劫舍的模板"
+
+    ```Python
+    def rob_(nums):
+        f0 = f1 = 0
+        for x in nums:
+            f0, f1 = f1, max(f0 + x, f1)
+        return f1
+    ```
 
     
 -------------
