@@ -86,9 +86,11 @@
 | 503 | next-greater-element-ii | [Link](./5/503_next-greater-element-ii.md) | Unknown | Unknown | Unknown |
 | 518 | coin-change-ii | [Link](./5/518_coin-change-ii.md) | Unknown | Unknown | Unknown |
 | 529 | minesweeper | [Link](./5/529_minesweeper.md) | Unknown | Unknown | Unknown |
+| 53 | maximum-subarray | [Link](./5/53_maximum-subarray.md) | Medium | DP | ✨ |
 | 537 | complex-number-multiplication | [Link](./5/537_complex-number-multiplication.md) | Unknown | Unknown | Unknown |
 | 547 | number-of-provinces | [Link](./5/547_number-of-provinces.md) | Unknown | Unknown | Unknown |
 | 55 | jump-game | [Link](./5/55_jump-game.md) | Medium | Greedy | Unknown |
+| 56 | merge-intervals | [Link](./5/56_merge-intervals.md) | Medium | List | Unknown |
 | 590 | n-ary-tree-postorder-traversal | [Link](./5/590_n-ary-tree-postorder-traversal.md) | Unknown | Unknown | Unknown |
 | 599 | minimum-index-sum-of-two-lists | [Link](./5/599_minimum-index-sum-of-two-lists.md) | Unknown | Unknown | Unknown |
 | 682 | baseball-game | [Link](./6/682_baseball-game.md) | Unknown | Unknown | Unknown |
