@@ -6,7 +6,7 @@
 
 
 !!! note "参考链接"
-    - [英文版：如何在Apple Silicon上安装webUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon)，理论上说这一份文档就够了，但是你需要一些前置知识，并不是零基础。
+    - [英文版：如何在Apple Silicon上安装webUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon)，理论上说这一份文档就够了，但是你需要一些前置知识，并不是零基础。不过，无论如何，都建议详细地阅读这个文档的每一个角落。他甚至告诉了你怎么查看模型运行时候的内存压力图。
     - [中文版｜B站｜本地部署Stable Diffusion](https://www.bilibili.com/video/BV1Pb411X79e/?spm_id_from=333.788&vd_source=1a29610636fa88d6406dc45fc2d153ba)：很可爱的Up主，讲得十分干货十分具体，按照她的来就可，她整理的资源也非常全面；
 
 
@@ -15,7 +15,7 @@
 1. 安装[homebrew](https://brew.sh)；macOS使用者几乎必备的工具
 2. 安装[Xcode](https://developer.apple.com/xcode/)；非必需，但是我老早以前就装好了，但凡涉及到需要执行`xcode-select --install` 命令的都是这玩意；本来是专门为Apple公司产品开发的一个工具，但是其内部配置和macOS深度集成，一些零基础的同学不妨用空间换效率，虽然大了一点，但是起码可以省很多事；
 3. 从[Github仓库](https://github.com/AUTOMATIC1111/stable-diffusion-webui)克隆，可以看我上面的中文推荐链接；
-4. 进入下载下的文件夹，执行。
+4. 进入下载下的文件夹，执行安装命令。
 
 
 ## 我遇到的特殊的bug
@@ -88,6 +88,86 @@ Model loaded in 4.4s (load weights from disk: 0.4s, create model: 0.5s, apply we
 
 - 在浏览器端打开 “Running on local URL”后的那个链接，即可。
 
+----
+
+
+## 20240521 更新一下从0到1部署过程中出现的新问题
+
+1. 出现报错：
+
+```
+AttributeError: 'NoneType' object has no attribute 'lowvram'
+```
+
+这个情况的本质，在[这个链接](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/15568)里面已经说得很详细：需要重新安装整个repo，因为一开始下载的Stable Diffusion的模型文件可能是不完整有损坏的。
+
+
+2. 出现报错 
+
+```
+Cannot convert a MPS Tensor to float64 dtype as the MPS framework doesn't support float64. Please use float32 instead
+```
+
+这个问题在PyTorch使用中也会出现，主要是Apple Silicon的MPS框架支持的浮点数精度不匹配的问题。在[这个链接](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/12907) 已经讨论了很多。也有一些解决方案，但是不少方案的意思是，强制用CPU而不调用GPU进行渲染。
+
+> 比如这一种解决方案：打开 `webui-macos-env.sh`文件，修改同前缀的命令为： `export COMMANDLINE_ARGS="--skip-torch-cuda-test --no-half --use-cpu all"`。
+
+这样可以解决问题但是不治本。因为实际上是强制使用CPU进行渲染，速度真的会慢得感人。同等Prompt以及模型、尺寸，配合Apple Silicon的加速，512x512可以在至少可以在30～40s出图，但是只用cpu会跑201s。
+
+我的解决方案（在Apple Silicon M2, Ventura 13.5上测试通过）：
+
+- 在上面提到的 `webui-macos-env.sh`，对应的那一行，修改成： 
+
+```
+export COMMANDLINE_ARGS="--skip-torch-cuda-test --upcast-sampling --no-half-vae --disable-model-loading-ram-optimization"`
+```
+- 然后， 在运行 `./webui.sh` 命令的时候，修改命令为 
+
+```
+./webui.sh --opt-split-attention-v1
+```
+
+然后，就可以正常切换模型并运行了。(同样[参考Reddit链接](https://www.reddit.com/r/StableDiffusion/comments/1bk9pc2/cannot_convert_a_mps_tensor_to_float64_dtype_as/))
+
+3. 对于一些Git Fetch超时、无法download 某某文件夹的问题，**优先考虑：自己的梯子是否通畅、网速是否够快。**
+
 -------------
 
 
+## 一些笔记和记录
+
+- Stable Diffusion 3 （Up to date），目前正在用的是Stable Diffusion 2.1. 请记住这家公司：Stability AI。
+- Pruned的模组：生成速度会相比快一点；
+- emonly模组：压缩过的模组：图的效果差一点。
+- FP16 / FP32：浮点位的精度。FP16是默认的精度：适合用来训练、用插件生成图；
+- Full / -trained / emerged： 如果基于LoRA进行训练，要优先选用Full的模组。
+
+!!! note "What is VAE"
+    变分自动编码器 （VAE） 是一种技术，用于提高使用文本到图像模型 Stable Diffusion 创建的 AI 生成图像的质量。VAE将图像编码为潜在空间，然后将该潜在空间解码为新的、更高质量的图像。
+
+    - .safecensor / .ckpt / .pt：(直接丢到webui对应的那个文件夹即可)
+
+**What is SDXL**
+:    Stable Diffusion XL，也称为 SDXL， 是 Stability AI 发布的下一代开放权重 AI 图像合成模型。代表了 AI 图像生成模型的最新进展。它擅长生成逼真的面孔，在图像中生成清晰的文本，并增强整体图像构图。
+
+    > "more vibrant and accurate colors, better lighting, contrast, and shadows."
+
+    SDXL 也允许用户使用一小组图像专门针对特定主题或主题生成图像。这种微调功能使用户能够更轻松地创建自定义图像。
+
+**What is CLip**
+:   查阅一下资料解释。
+
+-----
+
+!!! warning "用于测试的一份cheatsheet"
+
+比如你下载下Counterfeit V3.0 的模型之后，设置Prompt：
+
+```
+(masterpiece, best quality),1girl with long white hair sitting in a field of green plants and flowers, her hand under her chin, warm lighting, white dress, blurry foreground
+```
+
+其他的随便，图片大小512x512，理应在30s左右能出图。
+
+
+-----

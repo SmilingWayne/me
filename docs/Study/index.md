@@ -41,7 +41,7 @@
     - [x] [快捷指令：从轻松入门到入土为安](./Swift/Shortcuts.md)：请记住，Apple用户的Privilege在这里已经尽数体现了。
 
 **组会艺术大赏**
-:   那些年，我看过的论文（以及听过的讲座）。
+:   那些年，我看过的论文（以及听过的讲座）。我是不会告诉你[这里](https://pan.baidu.com/s/1GdGyLi8-J1Cy6Iey4vMEyA) 有下载链接的 （code: n7sb）。
 
     - [x] [20240102](./TeamMeeting/Articles.md)：Too Young! Too NAIVE! 
     - [x] [20240308](./TeamMeeting/0308Prep.md): Truck & Drones 问题及其若干拓展；
