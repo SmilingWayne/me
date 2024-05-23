@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.23">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
@@ -12136,6 +12136,8 @@
       
         
       
+        
+      
     
     
       
@@ -12179,6 +12181,27 @@
   
   <span class="md-ellipsis">
     经（踩）验（坑）分（历）享（史）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PythonPackages/SOS_Conda/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    conda，你看到我们管理环境时的泪了吗
   </span>
   
 
@@ -15724,6 +15747,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#20240521-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      20240521 更新一下从0到1部署过程中出现的新问题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一些笔记和记录
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -16607,6 +16648,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#20240521-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      20240521 更新一下从0到1部署过程中出现的新问题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一些笔记和记录
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -16637,7 +16696,7 @@
 
 <h1 id="webui-stable-diffusion-apple-silicon">WebUI + Stable Diffusion 在 Apple Silicon下的安装教程<a class="headerlink" href="#webui-stable-diffusion-apple-silicon" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 466 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 45 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 2 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1347 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 45 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 5 分钟</p>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">我的设备</p>
@@ -16648,7 +16707,7 @@
 <div class="admonition note">
 <p class="admonition-title">参考链接</p>
 <ul>
-<li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon">英文版：如何在Apple Silicon上安装webUI</a>，理论上说这一份文档就够了，但是你需要一些前置知识，并不是零基础。</li>
+<li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon">英文版：如何在Apple Silicon上安装webUI</a>，理论上说这一份文档就够了，但是你需要一些前置知识，并不是零基础。不过，无论如何，都建议详细地阅读这个文档的每一个角落。他甚至告诉了你怎么查看模型运行时候的内存压力图。</li>
 <li><a href="https://www.bilibili.com/video/BV1Pb411X79e/?spm_id_from=333.788&amp;vd_source=1a29610636fa88d6406dc45fc2d153ba">中文版｜B站｜本地部署Stable Diffusion</a>：很可爱的Up主，讲得十分干货十分具体，按照她的来就可，她整理的资源也非常全面；</li>
 </ul>
 </div>
@@ -16661,7 +16720,7 @@
 </li>
 <li>安装<a href="https://developer.apple.com/xcode/">Xcode</a>；非必需，但是我老早以前就装好了，但凡涉及到需要执行<code>xcode-select --install</code> 命令的都是这玩意；本来是专门为Apple公司产品开发的一个工具，但是其内部配置和macOS深度集成，一些零基础的同学不妨用空间换效率，虽然大了一点，但是起码可以省很多事；</li>
 <li>从<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Github仓库</a>克隆，可以看我上面的中文推荐链接；</li>
-<li>进入下载下的文件夹，执行。</li>
+<li>进入下载下的文件夹，执行安装命令。</li>
 </ul>
 <h2 id="bug">我遇到的特殊的bug<a class="headerlink" href="#bug" title="Permanent link">⚓︎</a></h2>
 <ol>
@@ -16727,6 +16786,73 @@
 <li>在浏览器端打开 “Running on local URL”后的那个链接，即可。</li>
 </ul>
 <hr />
+<h2 id="20240521-01">20240521 更新一下从0到1部署过程中出现的新问题<a class="headerlink" href="#20240521-01" title="Permanent link">⚓︎</a></h2>
+<ol>
+<li>出现报错：</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>AttributeError: &#39;NoneType&#39; object has no attribute &#39;lowvram&#39;
+</code></pre></div>
+<p>这个情况的本质，在<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/15568">这个链接</a>里面已经说得很详细：需要重新安装整个repo，因为一开始下载的Stable Diffusion的模型文件可能是不完整有损坏的。</p>
+<ol>
+<li>出现报错 </li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Cannot convert a MPS Tensor to float64 dtype as the MPS framework doesn&#39;t support float64. Please use float32 instead
+</code></pre></div>
+<p>这个问题在PyTorch使用中也会出现，主要是Apple Silicon的MPS框架支持的浮点数精度不匹配的问题。在<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/12907">这个链接</a> 已经讨论了很多。也有一些解决方案，但是不少方案的意思是，强制用CPU而不调用GPU进行渲染。</p>
+<blockquote>
+<p>比如这一种解决方案：打开 <code>webui-macos-env.sh</code>文件，修改同前缀的命令为： <code>export COMMANDLINE_ARGS="--skip-torch-cuda-test --no-half --use-cpu all"</code>。</p>
+</blockquote>
+<p>这样可以解决问题但是不治本。因为实际上是强制使用CPU进行渲染，速度真的会慢得感人。同等Prompt以及模型、尺寸，配合Apple Silicon的加速，512x512可以在至少可以在30～40s出图，但是只用cpu会跑201s。</p>
+<p>我的解决方案（在Apple Silicon M2, Ventura 13.5上测试通过）：</p>
+<ul>
+<li>在上面提到的 <code>webui-macos-env.sh</code>，对应的那一行，修改成： </li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>export COMMANDLINE_ARGS=&quot;--skip-torch-cuda-test --upcast-sampling --no-half-vae --disable-model-loading-ram-optimization&quot;`
+</code></pre></div>
+- 然后， 在运行 <code>./webui.sh</code> 命令的时候，修改命令为 </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>./webui.sh --opt-split-attention-v1
+</code></pre></div>
+<p>然后，就可以正常切换模型并运行了。(同样<a href="https://www.reddit.com/r/StableDiffusion/comments/1bk9pc2/cannot_convert_a_mps_tensor_to_float64_dtype_as/">参考Reddit链接</a>)</p>
+<ol>
+<li>对于一些Git Fetch超时、无法download 某某文件夹的问题，<strong>优先考虑：自己的梯子是否通畅、网速是否够快。</strong></li>
+</ol>
+<hr />
+<h2 id="_1">一些笔记和记录<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Stable Diffusion 3 （Up to date），目前正在用的是Stable Diffusion 2.1. 请记住这家公司：Stability AI。</li>
+<li>Pruned的模组：生成速度会相比快一点；</li>
+<li>emonly模组：压缩过的模组：图的效果差一点。</li>
+<li>FP16 / FP32：浮点位的精度。FP16是默认的精度：适合用来训练、用插件生成图；</li>
+<li>Full / -trained / emerged： 如果基于LoRA进行训练，要优先选用Full的模组。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">What is VAE</p>
+<p>变分自动编码器 （VAE） 是一种技术，用于提高使用文本到图像模型 Stable Diffusion 创建的 AI 生成图像的质量。VAE将图像编码为潜在空间，然后将该潜在空间解码为新的、更高质量的图像。</p>
+<ul>
+<li>.safecensor / .ckpt / .pt：(直接丢到webui对应的那个文件夹即可)</li>
+</ul>
+</div>
+<dl>
+<dt><strong>What is SDXL</strong></dt>
+<dd>
+<p>Stable Diffusion XL，也称为 SDXL， 是 Stability AI 发布的下一代开放权重 AI 图像合成模型。代表了 AI 图像生成模型的最新进展。它擅长生成逼真的面孔，在图像中生成清晰的文本，并增强整体图像构图。</p>
+<blockquote>
+<p>"more vibrant and accurate colors, better lighting, contrast, and shadows."</p>
+</blockquote>
+<p>SDXL 也允许用户使用一小组图像专门针对特定主题或主题生成图像。这种微调功能使用户能够更轻松地创建自定义图像。</p>
+</dd>
+<dt><strong>What is CLip</strong></dt>
+<dd>查阅一下资料解释。</dd>
+</dl>
+<hr />
+<div class="admonition warning">
+<p class="admonition-title">用于测试的一份cheatsheet</p>
+</div>
+<p>比如你下载下Counterfeit V3.0 的模型之后，设置Prompt：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>(masterpiece, best quality),1girl with long white hair sitting in a field of green plants and flowers, her hand under her chin, warm lighting, white dress, blurry foreground
+</code></pre></div>
+<p>其他的随便，图片大小512x512，理应在30s左右能出图。</p>
+<hr />
 
 
 
@@ -16751,7 +16877,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 25, 2023 12:08:15</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 22, 2024 00:41:56</span>
   </span>
 
     
@@ -16863,7 +16989,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
