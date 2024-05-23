@@ -59,6 +59,7 @@
 | 2496 | maximum-value-of-a-string-in-an-array | [Link](./2/2496_maximum-value-of-a-string-in-an-array.md) | Easy | String | Unknown |
 | 2529 | maximum-count-of-positive-integer-and-negative-integer | [Link](./2/2529_maximum-count-of-positive-integer-and-negative-integer.md) | Easy | Binary Search | Unknown |
 | 2600 | k-items-with-the-maximum-sum | [Link](./2/2600_k-items-with-the-maximum-sum.md) | Easy | If else | Unknown |
+| 279 | perfect-squares | [Link](./2/279_perfect-squares.md) | Medium | DP | Unknown |
 | 2840 | check-if-strings-can-be-made-equal-with-operations-ii | [Link](./2/2840_check-if-strings-can-be-made-equal-with-operations-ii.md) | Medium | String | Unknown |
 | 2917 | find-the-k-or-of-an-array | [Link](./2/2917_find-the-k-or-of-an-array.md) | Easy | Bit  | Unknown |
 | 2924 | find-champion-ii | [Link](./2/2924_find-champion-ii.md) | Medium | Graph  | Unknown |
@@ -88,6 +89,7 @@
 | 529 | minesweeper | [Link](./5/529_minesweeper.md) | Unknown | Unknown | Unknown |
 | 53 | maximum-subarray | [Link](./5/53_maximum-subarray.md) | Medium | DP | ✨ |
 | 537 | complex-number-multiplication | [Link](./5/537_complex-number-multiplication.md) | Unknown | Unknown | Unknown |
+| 543 | diameter-of-binary-tree| [Link](./5/543_diameter-of-binary-tree.md) | Easy | DFS | Unknown |
 | 547 | number-of-provinces | [Link](./5/547_number-of-provinces.md) | Unknown | Unknown | Unknown |
 | 55 | jump-game | [Link](./5/55_jump-game.md) | Medium | Greedy | Unknown |
 | 56 | merge-intervals | [Link](./5/56_merge-intervals.md) | Medium | List | Unknown |

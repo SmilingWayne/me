@@ -483,6 +483,7 @@ nav:
               - 我的字体研究: Study/TextEdit/Markdown/Markdown.md
       - 小红书｜Python藏宝箱:
           - 经（踩）验（坑）分（历）享（史）: Study/PythonPackages/Tricks.md
+          - conda，你看到我们管理环境时的泪了吗: Study/PythonPackages/SOS_Conda.md
           - 数据结构大合集: Study/PythonPackages/Data_struct_recomend.md
           - PyEcharts合集: Study/PythonPackages/Pyecharts1.md
           - 一些小玩具: Study/PythonPackages/MagicSquare.md
