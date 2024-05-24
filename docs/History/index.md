@@ -14,7 +14,7 @@
 |    [一个大国的崛起与崩溃](./Rise_and_fall.md)     |    未整理的苏联史    |   🐌    |
 | [拉丁美洲被切开的血管](./Latin_american_blood.md) |     南美洲殖民史     |   ✅    |
 |       [卡斯蒂利亚的伊莎贝拉](./Isabella.md)       | 卡斯蒂利亚的伊莎贝拉 |   ✅    |
-|    [荷兰东印度公司](./Netherland_colony.md.md)    |  香料群岛的那些故事  |   🚀    |
+|    [荷兰东印度公司](./Netherland_colony.md)    |  香料群岛的那些故事  |   🚀    |
 
 
 !!! question "目前感到棘手的"
