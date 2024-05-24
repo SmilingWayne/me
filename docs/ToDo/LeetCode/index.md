@@ -29,7 +29,7 @@
 | 1305 | all-elements-in-two-binary-search-trees | [Link](./1/1305_all-elements-in-two-binary-search-trees.md) | Unknown | Unknown | Unknown |
 | 1319 | number-of-operations-to-make-network-conneted | [Link](./1/1319_number-of-operations-to-make-network-conneted.md) | Unknown | Unknown | Unknown |
 | 1331 | rank-transform-of-an-array | [Link](./1/1331_rank-transform-of-an-array.md) | Medium | Unknown | Unknown |
-| 136 | single-number | [Link](./1/136_single-number) | Easy | Bit | Unknown |
+| 136 | single-number | [Link](./1/136_single-number.md) | Easy | Bit | Unknown |
 | 1365 | How-Many-Numbers-Are-Smaller-Than-the-Current-Number | [Link](./1/1365_How-Many-Numbers-Are-Smaller-Than-the-Current-Number.md) | Unknown | Unknown | Unknown |
 | 141 | linked-list-cycle | [Link](./1/141_linked-list-cycle.md) | Medium | LinkedList | Unknown |
 | 142 | linked-list-cycleii | [Link](./1/142_linked-list-cycleii.md) | Unknown | Unknown | Unknown |

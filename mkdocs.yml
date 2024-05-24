@@ -228,6 +228,7 @@ nav:
           - 罗生门: Literature/Novel/Rashomon.md
           - 同情者: Literature/Novel/Sympathatic.md
           - 巨人传: Literature/Novel/Giants.md
+          - 侦探小说: Literature/Novel/Detective.md
           - 华氏451: Literature/Novel/Fahrenheit_451.md
           - 《1984》: Literature/Novel/1984.md
           - 希腊神话合集: Literature/Novel/Greek/Myth_1.md
@@ -274,6 +275,7 @@ nav:
           - 🇫🇷法兰西笔记｜1871~Now: History/France_1871_now.md
           - 🇸🇦阿拉伯笔记: History/Arabians.md
           - 🇮🇳印度笔记: History/India.md
+          - 十字军简史: History/Cruciata.md
           - 🇳🇱荷兰东印度公司笔记: History/Netherland_colony.md
           - 🇮🇩印度尼西亚笔记: History/Indonesia.md
       - 书:
@@ -330,6 +332,7 @@ nav:
       - 事: ToDo/ToDo.md
       - LeetCode:
           - ToDo/LeetCode/index.md
+          - SQL: ToDo/LeetCode/SQL.md
           - 自写代码:
               - 检查是否平衡二叉树: ToDo/LeetCode/0/001_check-balance-binarytree.md
               - 汉诺塔: ToDo/LeetCode/0/002_tower-of-hanoi.md
@@ -455,6 +458,25 @@ nav:
           - Offer_14_cutting-ropes.md: ToDo/LeetCode/Offer/14_cutting-rope.md
           - 36_er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof.md: ToDo/LeetCode/Offer/36_er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof.md
           - Offer_49_ugly-number.md: ToDo/LeetCode/Offer/49_ugly-number.md
+          - 0108_zero-matrix-lcci.md: ToDo/LeetCode/0/0108_zero-matrix-lcci.md
+          - 0204_partition-list-lcci.md: ToDo/LeetCode/0/0204_partition-list-lcci.md
+          - 0205_sum-lists-lcci.md: ToDo/LeetCode/0/0205_sum-lists-lcci.md
+          - 0207_intersection-of-two-linked-lists-lcci.md: ToDo/LeetCode/0/0207_intersection-of-two-linked-lists-lcci.md
+          - 0303_stack-of-plates-lcci.md: ToDo/LeetCode/0/0303_stack-of-plates-lcci.md
+          - 0408_first-common-ancestor-lcci.md: ToDo/LeetCode/0/0408_first-common-ancestor-lcci.md
+          - 136_single-number.md: ToDo/LeetCode/1/136_single-number.md
+          - 1702_maximum-binary-string-after-change.md: ToDo/LeetCode/1/1702_maximum-binary-string-after-change.md
+          - 2529_maximum-count-of-positive-integer-and-negative-integer.md: ToDo/LeetCode/2/2529_maximum-count-of-positive-integer-and-negative-integer.md
+          - 279_perfect-squares.md: ToDo/LeetCode/2/279_perfect-squares.md
+          - 2924_find-champion-ii.md: ToDo/LeetCode/2/2924_find-champion-ii.md
+          - 42_trapping-rain-water.md: ToDo/LeetCode/4/42_trapping-rain-water.md
+          - 45_jump-game-ii.md: ToDo/LeetCode/4/45_jump-game-ii.md
+          - 48_rotate-image.md: ToDo/LeetCode/4/48_rotate-image.md
+          - 53_maximum-subarray.md: ToDo/LeetCode/5/53_maximum-subarray.md
+          - 543_diameter-of-binary-tree.md: ToDo/LeetCode/5/543_diameter-of-binary-tree.md
+          - 55_jump-game.md.md: ToDo/LeetCode/5/55_jump-game.md.md
+          - 56_merge-intervals.md: ToDo/LeetCode/5/56_merge-intervals.md
+          - 72_edit-distance.md: ToDo/LeetCode/7/72_edit-distance.md
 
   - 学习:
       - Study/index.md
@@ -481,6 +503,7 @@ nav:
               - 色样表合集: Study/TextEdit/Markdown/MarkdownSyntax2.md
               - 常用的语法(with plugins): Study/TextEdit/Markdown/MarkdownSyntax1.md
               - 我的字体研究: Study/TextEdit/Markdown/Markdown.md
+              - Mermaid嵌入: Study/TextEdit/Markdown/Mkdocs_Tutorials1.md
       - 小红书｜Python藏宝箱:
           - 经（踩）验（坑）分（历）享（史）: Study/PythonPackages/Tricks.md
           - conda，你看到我们管理环境时的泪了吗: Study/PythonPackages/SOS_Conda.md
@@ -669,6 +692,7 @@ theme:
   name: material
   custom_dir: docs/overrides/
   font: false
+  logo: images/Favicon.png
   #     text: Noto Serif SC
   #   custom_dir: /docs/stylesheets/
   features:

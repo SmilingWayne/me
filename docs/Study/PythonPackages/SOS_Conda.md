@@ -203,3 +203,6 @@ CONDA_SUBDIR=osx-64 conda create py310_x64 python=3.10
 ------
 
 !!! quote "我只有一个感触：重装确实能解决问题。如果没有，那就多重装几个。"
+
+
+> [一些链接](https://taylorreiter.github.io/2022-04-05-Managing-multiple-architecture-specific-installations-of-conda-on-apple-M1/)
