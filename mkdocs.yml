@@ -230,6 +230,7 @@ nav:
           - 巨人传: Literature/Novel/Giants.md
           - 侦探小说: Literature/Novel/Detective.md
           - 华氏451: Literature/Novel/Fahrenheit_451.md
+          - 流年的飞沫: Literature/Novel/Lecume_des_jours.md
           - 《1984》: Literature/Novel/1984.md
           - 希腊神话合集: Literature/Novel/Greek/Myth_1.md
           - 撒马尔罕: Literature/Novel/Samarkhan.md
@@ -379,6 +380,7 @@ nav:
           - 1544_make-the-string-great.md: ToDo/LeetCode/1/1544_make-the-string-great.md
           - 166_fraction-to-recurring-decimal.md: ToDo/LeetCode/1/166_fraction-to-recurring-decimal.md
           - 1663_smallest-string-with-a-given-numeric-value.md: ToDo/LeetCode/1/1663_smallest-string-with-a-given-numeric-value.md
+          - 1673_find-the-most-competitive-subsequence.md: ToDo/LeetCode/1/1673_find-the-most-competitive-subsequence.md
           - 1750_minimum-length-of-string-after-deleting-similar-ends.md: ToDo/LeetCode/1/1750_minimum-length-of-string-after-deleting-similar-ends.md
           - 1823_find-the-winner-of-the-circular-game.md: ToDo/LeetCode/1/1823_find-the-winner-of-the-circular-game.md
           - 19_remove-Nth-node-from-end-of-list.md: ToDo/LeetCode/1/19_remove-Nth-node-from-end-of-list.md
@@ -474,7 +476,7 @@ nav:
           - 48_rotate-image.md: ToDo/LeetCode/4/48_rotate-image.md
           - 53_maximum-subarray.md: ToDo/LeetCode/5/53_maximum-subarray.md
           - 543_diameter-of-binary-tree.md: ToDo/LeetCode/5/543_diameter-of-binary-tree.md
-          - 55_jump-game.md.md: ToDo/LeetCode/5/55_jump-game.md.md
+          - 55_jump-game.md: ToDo/LeetCode/5/55_jump-game.md
           - 56_merge-intervals.md: ToDo/LeetCode/5/56_merge-intervals.md
           - 72_edit-distance.md: ToDo/LeetCode/7/72_edit-distance.md
 

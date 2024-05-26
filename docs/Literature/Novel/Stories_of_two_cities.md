@@ -10,6 +10,5 @@
 
     推荐几个跳转链接：
 
-    1. [断头王后](../../History/Marie_antoinette.md)；
-    2. [法兰西笔记](../../History/France.md)
+    1. [1572～1789年的法国历史](../../History/France_1572_1789.md)；
 
