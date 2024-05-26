@@ -157,6 +157,11 @@ export COMMANDLINE_ARGS="--skip-torch-cuda-test --upcast-sampling --no-half-vae 
 **What is CLip**
 :   查阅一下资料解释。
 
+**What is LoRA**
+:   说来话长。这个慢慢解释。
+
+**What is ControlNet**
+:   说来话长，这个也慢慢结束。
 -----
 
 !!! warning "用于测试的一份cheatsheet"
@@ -171,3 +176,12 @@ export COMMANDLINE_ARGS="--skip-torch-cuda-test --upcast-sampling --no-half-vae 
 
 
 -----
+
+
+## 附后记及鸣谢
+
+
+!!! quote "谨以两张隐去真实信息但取材自真实情感、真实场景的AI创作，表达笔者对某位南国佳人的真挚感谢。"
+
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202405270012027.png)
