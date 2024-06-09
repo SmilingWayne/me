@@ -93,6 +93,7 @@
 | 547 | number-of-provinces | [Link](./5/547_number-of-provinces.md) | Unknown | Unknown | Unknown |
 | 55 | jump-game | [Link](./5/55_jump-game.md) | Medium | Greedy | Unknown |
 | 56 | merge-intervals | [Link](./5/56_merge-intervals.md) | Medium | List | Unknown |
+| 560 | subarray-sum-equals-k | [Link](./5/560_subarray-sum-equals-k.md) | Medium | HashMap, Pre-Sum | Unknown |
 | 590 | n-ary-tree-postorder-traversal | [Link](./5/590_n-ary-tree-postorder-traversal.md) | Unknown | Unknown | Unknown |
 | 599 | minimum-index-sum-of-two-lists | [Link](./5/599_minimum-index-sum-of-two-lists.md) | Unknown | Unknown | Unknown |
 | 682 | baseball-game | [Link](./6/682_baseball-game.md) | Unknown | Unknown | Unknown |

@@ -195,7 +195,7 @@ CONDA_SUBDIR=osx-arm64 conda create -n py310_arm python=3.10
 而如果你想要 `x86_64` 的， 你需要下面的命令：
 
 ```shell
-CONDA_SUBDIR=osx-64 conda create py310_x64 python=3.10
+CONDA_SUBDIR=osx-64 conda create -n py310_x64 python=3.10
 ```
 
 这里的含义是，基于 `osx-64` 架构创建了一个叫做 `py310_x64` 的Python 3.10（默认是最新版本：3.10.14）环境。

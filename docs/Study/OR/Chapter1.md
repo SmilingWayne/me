@@ -179,17 +179,14 @@ $$\def\arraystretch{1.5}
    & & & 2 & 1 & 0 & 0 & 0   \cr \hline
    \textbf{c}_{\textbf{B}} & \textbf{x}_{\textbf{B}} & \textbf{b} & x_1 & x_2 & x_3 & x_4 & x_5 \cr \hline
    0 & x_3 & 15/2 & 0  & 0 & 1 & 5/4 & -15/2  \cr \hline
-   2 & x_4 & 7/2  & 1 & 0 & 0 & 1/4  & -1/2  \cr \hline
+   2 & x_1 & 7/2  & 1 & 0 & 0 & 1/4  & -1/2  \cr \hline
    1 & x_2 & 3/2  & 0 & 1 & 0 & -1/4  & 3/2  \cr \hline
    r_c &  &  & 0 & 0 & 0 & \colorbox{lightblue}{-1/4} & \colorbox{lightblue}{-1/2}    \cr \hline
     \hline
 \end{array}$$
 
 
-
-
-> 这一部分需要补充全。
-
+!!! quote "特别感谢热心网友wzy对该单纯形表笔误做出的纠正。欢迎大家继续捉虫！"
 
 > Operations Research： 台湾翻译成“作业研究”，我更喜欢国内的这个翻译：“运筹学”
 >
