@@ -545,8 +545,6 @@ nav:
           - 供应链采购合同分析: Study/Supplychain/SupplyChain19.md
       - 微积分:
           - Chapter1: Study/Calculus/Math2.md
-          - 笔记2(Unfin): Study/Calculus/20230406.md
-          - 笔记3(Unfin): Study/Calculus/GammaFunction.md
           - 和差化积: Study/Calculus/Prosthaphaeresis.md
           - 变上限积分函数: Study/Calculus/VariUpper.md
       - 线性代数:
@@ -572,6 +570,7 @@ nav:
           - MIT | Course_14: Study/LinearAlgebra/MIT_course_14.md
       - 运筹学:
           - Study/OR/index.md
+          - 运筹学刷题本: Study/OR/ORExercise/Works.md
           - 线性规划、单纯形法（plus pro max版）: Study/OR/Chapter1.md
           - 灵敏度分析: Study/OR/Chapter1_plugin.md
           - 对偶理论及对偶单纯形法（一种哲学）: Study/OR/Chapter2.md
@@ -579,7 +578,7 @@ nav:
           - DEA的扩展: Study/OR/Chapter3_plugin.md
           - 整数规划、求解算法和指派问题: Study/OR/Chapter4.md
           - 非线性规划、凸规划理论（最优化基础）: Study/OR/Chapter5.md
-          - 动态规划及几个典型题（该学背包了）: Study/OR/Chapter6.md
+          - 动态规划: Study/OR/Chapter6.md
           - 图论算法及其求解: Study/OR/Chapter7.md
           - 排队论: Study/OR/Chapter9.md
           - 仓储论（EOQ模型和它的一万个分身）: Study/OR/Chapter10.md
@@ -587,8 +586,8 @@ nav:
           - 高级运筹学技巧1：列生成方法: Study/OR/Chapter12.md
           - 高级运筹学技巧2：拉格朗日松弛: Study/OR/LR.md
           - 高级运筹学技巧3：分支定价: Study/OR/BranchAndPrice.md
-          - 运筹学经典建模：TSP问题: Study/OR/TSP.md
-          - 运筹学刷题本: Study/OR/ORExercise/Works.md
+          - 经典运筹学问题：TSP问题: Study/OR/TSP.md
+          - 经典运筹学问题：VRP问题: Study/OR/VRP.md
       - 概率论:
           - 统计学基础: Study/Statistics/Statistics_method.md
           - 基础知识与贝叶斯理论: Study/Statistics/Basics.md

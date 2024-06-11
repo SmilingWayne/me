@@ -1,5 +1,6 @@
-## 模型和解
-----
+# 线性规划、单纯形法
+
+
 
 - **线性规划**（Linear Programming）：是在**线形约束**下**求解线性目标函数最优值**的数学理论和方法。
 - 三要素：
@@ -196,3 +197,4 @@ $$\def\arraystretch{1.5}
 > - Duality and Sensitivity Analysis
 > - Interior Point Method （摆脱了Simplex Method的框架，从内部逼近；在有限时间内的多项式算法）
 > - Related Topics
+
