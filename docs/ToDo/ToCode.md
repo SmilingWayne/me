@@ -1,20 +1,15 @@
-## To do list:
------
+# 未定代码簿
+
+!!! abstract "旧游无处不堪寻。无寻处，惟有少年心。[^1]"
+
+<font size = 6 face = "SnellRoundHand" >Just do something.</font>
+
+- [ ] PuzzleSolver: Tetremino
+- [ ] PuzzleSolver: Shikaku
+- [ ] PuzzleSolver: Heyawake
+- [ ] PuzzleSolver: Grand Tour
+- [ ] PuzzleSolver: Mathematical Modeling: text and description. Algorithm Intro (Obviously most of current puzzles have not been well-described, including input format).
+- [ ] Truck & Drones: Modeling, scenarios. (😧)
 
 
-### 🚀 正在进行中
-
-
-- [x] 运筹
-- [ ] 微积分
-- [x] 线性代数
-- [ ] 统计学、计量经济学
-- [ ] 概率论
-- [ ] 机器学习对应经典算法更新到小红书
-- [x] 仿真
-    - [ ] NetLogo的使用体验
-- [ ] Apple / Swift / ObjC 
-- [ ] 学一下怎么写Python的开源包和自用工具
-### 🪫 未开始
-
-
+[^1]: 语出宋代章良能[《小重山·柳暗花明春事深》](https://www.gushici.net/shici/40/56635.html)。

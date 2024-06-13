@@ -100,7 +100,7 @@ d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
 
 怎么有启发地理解这个模型呢。就是我们把每个变想象成一个静止长度 $c_e$ 的弹簧。把开始节点设为 0.尝试把这个图拉伸得尽可能地长，直到不能拉伸任何弹簧。我们整个图能被拉伸的最长的距离，也就是从 $s$ 到 $t$ 的最短路。*（这个仔细理解，会发现简直妙极）*
 
-【补充图】
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202406120857738.png)
 
 !!! quote "[参考链接：MIT](https://ocw.mit.edu/courses/15-082j-network-optimization-fall-2010/87ee338a701dcd52784c86daef642113_MIT15_082JF10_lec15.pdf) | [参考链接：Stanford](https://web.stanford.edu/~ashishg/cs261/win21/notes/l9_note.pdf)"
 
@@ -132,7 +132,11 @@ d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
 
 ----
 
+
+
 例题：给定初始矩阵，求任意两点的最短路长。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202406120859048.png)
 
 $$D = D^{(0)} = \begin{bmatrix}
 0 & 5 & 1 & 2 & \infty \\

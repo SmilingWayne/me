@@ -29,5 +29,5 @@
 - 🔍 搜索支持中文检索。
 
 
-[^1]: 语出辛弃疾[《水调歌头·我饮不须劝》](https://www.gushici.net/shici/12/50379.html)
+[^1]: 语出辛弃疾[《水调歌头·我饮不须劝》.](https://www.gushici.net/shici/12/50379.html)
 [^2]: From poem "[Chanson d’automne](https://poets.org/poem/chanson-dautomne)" by French Poet Paul Verlaine(1844-1896). 
