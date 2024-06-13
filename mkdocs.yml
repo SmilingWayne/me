@@ -329,8 +329,8 @@ nav:
       - 闲聊: yan/yanTalks.md
   - 想/在做的事:
       - ToDo/index.md
-      - 术: ToDo/ToCode.md
-      - 事: ToDo/ToDo.md
+      - 可能推进的项目: ToDo/ToCode.md
+      - 想做的事情（敷衍版）: ToDo/ToDo.md
       - LeetCode:
           - ToDo/LeetCode/index.md
           - SQL: ToDo/LeetCode/SQL.md
