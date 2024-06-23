@@ -138,6 +138,19 @@ conda update conda
 
 哇，效果拔群。直接删除 `~/anaconda3` 文件夹，按照[官网](https://docs.anaconda.com/free/anaconda/install/mac-os/)的方案，下载 Apple Silicon对应的版本，一路Agree就可以了。等待的时间在5min内。
 
+不过在macOS上安装Anaconda也是有一些需要注意的有意思的地方。比如[官网](https://docs.anaconda.com/anaconda/install/mac-os/)就提到实际上有两种安装的方式，一种是下载pkg，这是比较傻瓜的，还有一种是通过终端进行安装。我因为不直接使用anaconda，所以选用了第二种方式。这两种方式是有区别的：
+
+第一种pkg安装的话，anaconda3会出现在 `opt/anaconda/`的文件目录下；
+
+第二种终端安装的话，anaconda3出现在 `~/anaconda3`的文件目录下。我个人一般是重度VScode办公用户，所以用的是终端。
+
+!!! note "终端安装Anaconda的指南"
+    其实按照官网来一步步就可以了。
+
+    要注意的是下载的不再是pkg包，而是[安装链接网站](https://www.anaconda.com/download/success) 下面Apple部分，Command Line Tool的 `.sh`的安装包！
+
+    下载下来之后在终端bash 执行 `.sh` 脚本进行安装。具体的操作不赘述。上面的链接已经给出了安装方法。
+
 这是安装好后的base环境的 `conda info`
 
 
@@ -200,9 +213,36 @@ CONDA_SUBDIR=osx-64 conda create -n py310_x64 python=3.10
 
 这里的含义是，基于 `osx-64` 架构创建了一个叫做 `py310_x64` 的Python 3.10（默认是最新版本：3.10.14）环境。
 
+执行的过程中所有卡住的地方只需要一路“y” (yes) 下去就行了。
+
+速度很快，如果上面的执行完毕了，那么终端命令：
+
+```shell
+conda info --envs
+```
+
+执行后应该会看到如下的输出：
+
+```text
+# conda environments:
+#
+base                     /Users/apple/anaconda3
+py310_arm                /Users/apple/anaconda3/envs/py310_arm
+py310_x64                /Users/apple/anaconda3/envs/py310_x64
+
+```
+
+基本就大功告成了。
+
+
+
 ------
 
 !!! quote "我只有一个感触：重装确实能解决问题。如果没有，那就多重装几个。"
 
 
 > [一些链接](https://taylorreiter.github.io/2022-04-05-Managing-multiple-architecture-specific-installations-of-conda-on-apple-M1/)
+
+
+!!! note "Some notes from VScode"
+    You may have installed Python packages into your global environment, which can cause conflicts between package versions. Would you like to create a virtual environment with these packages to isolate your dependencies?
