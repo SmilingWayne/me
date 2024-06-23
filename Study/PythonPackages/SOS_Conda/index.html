@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
@@ -16943,7 +16943,7 @@
 
 <h1 id="conda">一个老登踩坑Conda环境的悲惨经历<a class="headerlink" href="#conda" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1775 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 42 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 6 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 2134 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 49 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 8 分钟</p>
 </div>
 <p>事情是这样的。</p>
 <p>接到上级通知“熟悉摸索”一下Mindopt求解器的过程中，有一个调用求解器的方法是把安装包放到本地，然后用Python调用，这样可以不依赖阿里达摩院提供的在线建模平台进行本地使用。中间有一个步骤是这样的。<a href="https://solver.damo.alibaba.com/doc/html/testing/compile-python.html#python-installation-pip">网页看这里</a></p>
@@ -17034,6 +17034,15 @@
 <p class="admonition-title">在此之前，建议对 <code>/Users/{你的用户名}/anaconda3/envs</code> 下的环境做一个简单的备份。 </p>
 </div>
 <p>哇，效果拔群。直接删除 <code>~/anaconda3</code> 文件夹，按照<a href="https://docs.anaconda.com/free/anaconda/install/mac-os/">官网</a>的方案，下载 Apple Silicon对应的版本，一路Agree就可以了。等待的时间在5min内。</p>
+<p>不过在macOS上安装Anaconda也是有一些需要注意的有意思的地方。比如<a href="https://docs.anaconda.com/anaconda/install/mac-os/">官网</a>就提到实际上有两种安装的方式，一种是下载pkg，这是比较傻瓜的，还有一种是通过终端进行安装。我因为不直接使用anaconda，所以选用了第二种方式。这两种方式是有区别的：</p>
+<p>第一种pkg安装的话，anaconda3会出现在 <code>opt/anaconda/</code>的文件目录下；</p>
+<p>第二种终端安装的话，anaconda3出现在 <code>~/anaconda3</code>的文件目录下。我个人一般是重度VScode办公用户，所以用的是终端。</p>
+<div class="admonition note">
+<p class="admonition-title">终端安装Anaconda的指南</p>
+<p>其实按照官网来一步步就可以了。</p>
+<p>要注意的是下载的不再是pkg包，而是<a href="https://www.anaconda.com/download/success">安装链接网站</a> 下面Apple部分，Command Line Tool的 <code>.sh</code>的安装包！</p>
+<p>下载下来之后在终端bash 执行 <code>.sh</code> 脚本进行安装。具体的操作不赘述。上面的链接已经给出了安装方法。</p>
+</div>
 <p>这是安装好后的base环境的 <code>conda info</code></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>active environment : base
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    active env location : /Users/apple/anaconda3/envs/py310_arm
@@ -17079,6 +17088,18 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nv">CONDA_SUBDIR</span><span class="o">=</span>osx-64<span class="w"> </span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>py310_x64<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
 </code></pre></div>
 <p>这里的含义是，基于 <code>osx-64</code> 架构创建了一个叫做 <code>py310_x64</code> 的Python 3.10（默认是最新版本：3.10.14）环境。</p>
+<p>执行的过程中所有卡住的地方只需要一路“y” (yes) 下去就行了。</p>
+<p>速度很快，如果上面的执行完毕了，那么终端命令：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>conda<span class="w"> </span>info<span class="w"> </span>--envs
+</code></pre></div>
+<p>执行后应该会看到如下的输出：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a># conda environments:
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>#
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>base                     /Users/apple/anaconda3
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>py310_arm                /Users/apple/anaconda3/envs/py310_arm
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>py310_x64                /Users/apple/anaconda3/envs/py310_x64
+</code></pre></div>
+<p>基本就大功告成了。</p>
 <hr />
 <div class="admonition quote">
 <p class="admonition-title">我只有一个感触：重装确实能解决问题。如果没有，那就多重装几个。</p>
@@ -17086,6 +17107,10 @@
 <blockquote>
 <p><a href="https://taylorreiter.github.io/2022-04-05-Managing-multiple-architecture-specific-installations-of-conda-on-apple-M1/">一些链接</a></p>
 </blockquote>
+<div class="admonition note">
+<p class="admonition-title">Some notes from VScode</p>
+<p>You may have installed Python packages into your global environment, which can cause conflicts between package versions. Would you like to create a virtual environment with these packages to isolate your dependencies?</p>
+</div>
 
 
 
@@ -17110,7 +17135,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 9, 2024 21:55:49</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 23, 2024 11:02:59</span>
   </span>
 
     
