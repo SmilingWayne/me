@@ -1,26 +1,42 @@
-# 👋笑笑的个人网站
+# 笑笑的网站<br>xiaoxiao's website
 
-- 这里是我的个人网站。你可以直接叫我“笑笑”。
-- 很高兴能在网络世界遇见你。希望你也喜欢这个安静的小田园。
-- 网站里什么都有，仔细看会发现其实什么都没有🤣。
+🇨🇳你好！🇬🇧Hello! 🇫🇷Bonjour! 🇪🇸Hola! 🇷🇺привет! 🇸🇦 مرحباً 
 
-> 你觉得里面有什么，完全取决于你自己想要看到什么。**这是一本开源的生命书。**
+- 😃 我是笑笑，一个普通人。这里是我的个人网站！
+
+- 🥰 很高兴能在网络世界和你相遇。希望你也喜欢这个安静的小田园，不妨进来小坐，浅尝一杯咖啡。
+
+- 🚀 最初是个人知识库，后来变成知识分享站，现在偶尔发挥情绪回收厂的作用。时不时会出现一些知识干货或者碎碎念。
+
+- 💪 目标是让文字与记录在这里野蛮生长。
+
+
 
 -----------
 
-> English Version
+> English Translation:
 
-# 👋xiaoxiao's personal Website
+- 😃 My name is `"xiaoxiao"` (Pronounced as "/ɕjɑʊ˥˩/ /ɕjɑʊ˥˩/" in [IPA](https://www.internationalphoneticalphabet.org). In Mandarin It means "**Smile!** 😊", of course another anagram "Slime" is also my nickname), an ordinary person. This is my personal website!
 
-- Hello! This is my personal webpage. You can call me "xiaoxiao"(In Mandarian It means "Smile!😊") or "Slime" directly.
-- 🥰🥰 Nice to meet you here~ Welcome to this idyllic site!
-- There's **Nothing** and **Everything** here. For everything you can see is wholly dependent on what you wanna see. 
+- 🥰 Thrilled to meet you here in cyber world! Hope you also like this quiet little oasis. Feel free to drop by for some rest, with maybe a cup of coffee~
 
-> This is an Open-source life book of mine.
->
 
-- Tools: 
-    - [Mkdocs](https://www.mkdocs.org), 
-    - Theme: [Mkdocs Materials](https://squidfunk.github.io/mkdocs-material/), 
-    - Deployment: [Github Pages](https://pages.github.com), 
-    - Plugins: [Mkdocs Statistics Plugins](https://github.com/TonyCrane/mkdocs-statistics-plugin)
+- 🚀 Initially, it was a personal knowledge base, later 
+evolved into knowledge-sharing platform, recently, it occasionally serves as my emotion-catharsis plant. You may see some knowledge sharing or personal thoughts from time to time. 
+
+- 💪 The goal is to let my words and records grow freely and wildly here.
+
+------
+
+# Tools and Plugins 
+
+- My Website: [Link](https://smilingwayne.github.io/me/).
+- Demo: [Mkdocs](https://www.mkdocs.org).
+- Theme: [Mkdocs Materials](https://squidfunk.github.io/mkdocs-material/).
+- Deployment: [Github Pages](https://pages.github.com).
+- Plugins: [Mkdocs Statistics Plugins](https://github.com/TonyCrane/mkdocs-statistics-plugin), [Mkdocs Git revision](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)
+- Repo pictures easy sync & upload: [PicGo](https://picgo.github.io/PicGo-Doc/)
+- Repo pictures storage: [My Repo](https://github.com/SmilingWayne/picsrepo).
+- Font: [霞鹜文楷](https://github.com/lxgw/LxgwWenKai-Screen).
+- Setup and deployment tutorials: [Video](https://www.bilibili.com/video/BV1hL4y1w72r/) (In Mandarin).
+
