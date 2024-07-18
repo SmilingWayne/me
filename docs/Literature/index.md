@@ -1,9 +1,9 @@
 # 📝 文学
 
 
-!!! quote "**总有人还在维持文字的体面。**"
+!!! quote "**青云衣兮白霓裳，举长矢兮射天狼。操余弧兮反沦降，援北斗兮酌桂浆。[^1]**"
 
-<font size = 6 face = "SnellRoundHand" >Encore un moment!</font>
+<font size = 6 face = "SnellRoundHand" >Encore un moment!</font>[^2]
 
 **诗歌**
 :   各种意义上的诗歌：长诗｜史诗｜现代诗｜古典诗等。
@@ -48,3 +48,7 @@
 - 💻 PC端：点击顶部导航栏选择主题，左侧查看目录；
 - 📱 移动端：点击左上角图标选择内容；
 - 🔍 搜索：支持中文检索。
+
+
+[^1]: 出自战国·屈原《[楚辞·九歌·东君](https://baike.baidu.com/item/九歌·东君/699350)》。
+[^2]: Full quotations may be `Encore un moment, monsieur le bourreau, un petit moment!` It's said to be the last words of **Comtesse Du Barry**(1743~1793), mistress of Louis XV (the King of France), before she was guillotined in Place de la Concorde, Paris. Some existentialists describe their anxiety, boredom, alienation and meaninglessness via this sentence.
