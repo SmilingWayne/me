@@ -11,7 +11,10 @@
     --md-code-font: "JetBrains Mono";
   }
   
-
+.md-typeset .admonition,
+.md-typeset details {
+    font-size: 14px
+}
 /* 
 @font-face {
     font-display: auto;
