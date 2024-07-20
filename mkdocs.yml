@@ -189,7 +189,7 @@ nav:
           - 加缪手记: Literature/Literacy/Camus_script.md
           - 魏尔伦: Literature/Literacy/Verlain.md
           - 🇫🇷巴黎评论: Literature/Literacy/Paris_review.md
-          - 🇫🇷作家笔记: Literature/Literacy/Writers_notes.md
+          - 作家笔记: Literature/Literacy/Writers_notes.md
           - 天朝遥远: Literature/Literacy/Dynasty.md
           - 🇫🇷法语文学: Literature/Literacy/French_literature.md
           - 文学回忆录: Literature/Literacy/Literature_memo.md
@@ -258,6 +258,9 @@ nav:
           - 了不起的盖茨比: Literature/Novel/Gatsby.md
           - 红玫瑰与白玫瑰: Literature/Novel/Red_roses_white_roses.md
           - 查令十字街84号: Literature/Novel/Charline_84.md
+      - 语料库:
+          - 修辞、文字与形象化: Literature/Corpus/Metaphor.md
+          - 诡辩、哲思与抽象化: Literature/Corpus/Phi.md
 
   - 历史:
       - History/index.md
