@@ -175,7 +175,6 @@ nav:
           - 往事与随想: Literature/Essay/Memory_thoughts.md
           - 中国文学常识: Literature/Essay/Literature_knowledge.md
           - 一个人的村庄: Literature/Essay/Countryside_of_one.md
-          - 象征主义碎片: Literature/Essay/Impressionalism_pieces.md
           - 博尔赫斯谈话录: Literature/Essay/Borges.md
           - 别走，万一好笑呢: Literature/Essay/Stay.md
           - 那天夜里，我看见了巴黎: Literature/Essay/That_night_paris.md
@@ -259,6 +258,7 @@ nav:
           - 红玫瑰与白玫瑰: Literature/Novel/Red_roses_white_roses.md
           - 查令十字街84号: Literature/Novel/Charline_84.md
       - 语料库:
+          - Literature/Corpus/index.md
           - 修辞、文字与形象化: Literature/Corpus/Metaphor.md
           - 诡辩、哲思与抽象化: Literature/Corpus/Phi.md
 
@@ -331,160 +331,30 @@ nav:
       - 我的用书: yan/yanBooks.md
       - 我的细节: yan/yanHabits.md
       - 闲聊: yan/yanTalks.md
-  - 想/在做的事:
-      - ToDo/index.md
-      - 可能推进的项目: ToDo/ToCode.md
-      - 想做的事情（敷衍版）: ToDo/ToDo.md
-      - LeetCode:
-          - ToDo/LeetCode/index.md
-          - SQL: ToDo/LeetCode/SQL.md
-          - 自写代码:
-              - 检查是否平衡二叉树: ToDo/LeetCode/0/001_check-balance-binarytree.md
-              - 汉诺塔: ToDo/LeetCode/0/002_tower-of-hanoi.md
-              - 找到数组的深度: ToDo/LeetCode/0/003_find-the-depth-of-arrays.md
-              - 最长公共子串: ToDo/LeetCode/0/004_longest-common-string.md
-              - 让字符串对称的最小删除字符: ToDo/LeetCode/0/005_delete-min-words-making-string-symmetry.md
-              - A-star算法: ToDo/LeetCode/0/006_Astar.md
-          - 2022/4/24: ToDo/LeetCode/2022.4.24 C++ 练习.md
-          - 1_two-sum.md: ToDo/LeetCode/1/1_two-sum.md
-          - 1003_check-if-word-is-valid-after-substitutions.md: ToDo/LeetCode/1/1003_check-if-word-is-valid-after-substitutions.md
-          - 1014_best-sightseeing-pair.md: ToDo/LeetCode/1/1014_best-sightseeing-pair.md
-          - 1021_remove-outermost-parentheses.md: ToDo/LeetCode/1/1021_remove-outermost-parentheses.md
-          - 1023_camelcase-matching.md: ToDo/LeetCode/1/1023_camelcase-matching.md
-          - 1047_remove-all-adjacent-duplicates-in-string.md: ToDo/LeetCode/1/1047_remove-all-adjacent-duplicates-in-string.md
-          - 1048_longest-string-chain.md: ToDo/LeetCode/1/1048_longest-string-chain.md
-          - 1079_letter-tile-possibilities.md: ToDo/LeetCode/1/1079_letter-tile-possibilities.md
-          - 121_best-time-to-buy-and-sell-stock.md: ToDo/LeetCode/1/121_best-time-to-buy-and-sell-stock.md
-          - 122_best-time-to-buy-and-sell-stock-ii.md: ToDo/LeetCode/1/122_best-time-to-buy-and-sell-stock-ii.md
-          - 1261_find-elements-in-a-contaminated-binary-tree.md: ToDo/LeetCode/1/1261_find-elements-in-a-contaminated-binary-tree.md
-          - 1331_rank-transform-of-an-array.md: ToDo/LeetCode/1/1331_rank-transform-of-an-array.md
-          - 1156_swap-for-longest-repeated-character-substring.md: ToDo/LeetCode/1/1156_swap-for-longest-repeated-character-substring.md
-          - 1170_compare-strings-by-frequency-of-the-smallest-character.md: ToDo/LeetCode/1/1170_compare-strings-by-frequency-of-the-smallest-character.md
-          - 1190_reverse-substrings-between-each-pair-of-parrentheses.md: ToDo/LeetCode/1/1190_reverse-substrings-between-each-pair-of-parrentheses.md
-          - 1202_smallest-string-with-swaps.md: ToDo/LeetCode/1/1202_smallest-string-with-swaps.md
-          - 1209_remove-all-adjacent-duplicates-in-string-ii.md: ToDo/LeetCode/1/1209_remove-all-adjacent-duplicates-in-string-ii.md
-          - 1233_remove-sub-folders-from-the-file-system.md: ToDo/LeetCode/1/1233_remove-sub-folders-from-the-file-system.md
-          - 1239_maximum-length-of-a-concatenated-string-with-unique-characters.md: ToDo/LeetCode/1/1239_maximum-length-of-a-concatenated-string-with-unique-characters.md
-          - 1248_count-number-of-nice-subarrays.md: ToDo/LeetCode/1/1248_count-number-of-nice-subarrays.md
-          - 1249_minimum-remove-to-make-valid-parentheses.md: ToDo/LeetCode/1/1249_minimum-remove-to-make-valid-parentheses.md
-          - 13_roman-to-integer: ToDo/LeetCode/1/13_roman-to-integer.md
-          - 1305_all-elements-in-two-binary-search-trees.md: ToDo/LeetCode/1/1305_all-elements-in-two-binary-search-trees.md
-          - 1319_number-of-operations-to-make-network-conneted.md: ToDo/LeetCode/1/1319_number-of-operations-to-make-network-conneted.md
-          - 1365_How-Many-Numbers-Are-Smaller-Than-the-Current-Number.md: ToDo/LeetCode/1/1365_How-Many-Numbers-Are-Smaller-Than-the-Current-Number.md
-          - 141_linked-list-cycle.md: ToDo/LeetCode/1/141_linked-list-cycle.md
-          - 142_linked-list-cycleii.md: ToDo/LeetCode/1/142_linked-list-cycleii.md
-          - 1451_rearrange-words-in-a-sentence.md: ToDo/LeetCode/1/1451_rearrange-words-in-a-sentence.md
-          - 1452_people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.md: ToDo/LeetCode/1/1452_people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list.md
-          - 1461_check-if-a-string-contains-all-binary-codes-of-size-k.md: ToDo/LeetCode/1/1461_check-if-a-string-contains-all-binary-codes-of-size-k.md
-          - 1487_making-file-names-unique.md: ToDo/LeetCode/1/1487_making-file-names-unique.md
-          - 15_3sum.md: ToDo/LeetCode/1/15_3sum.md
-          - 1513_number-of-substrings-with-only-1s.md: ToDo/LeetCode/1/1513_number-of-substrings-with-only-1s.md
-          - 1525_number-of-good-ways-to-split-a-string.md: ToDo/LeetCode/1/1525_number-of-good-ways-to-split-a-string.md
-          - 1541_minimum-insertions-to-balance-a-parentheses-string.md: ToDo/LeetCode/1/1541_minimum-insertions-to-balance-a-parentheses-string.md
-          - 1544_make-the-string-great.md: ToDo/LeetCode/1/1544_make-the-string-great.md
-          - 166_fraction-to-recurring-decimal.md: ToDo/LeetCode/1/166_fraction-to-recurring-decimal.md
-          - 1663_smallest-string-with-a-given-numeric-value.md: ToDo/LeetCode/1/1663_smallest-string-with-a-given-numeric-value.md
-          - 1673_find-the-most-competitive-subsequence.md: ToDo/LeetCode/1/1673_find-the-most-competitive-subsequence.md
-          - 1750_minimum-length-of-string-after-deleting-similar-ends.md: ToDo/LeetCode/1/1750_minimum-length-of-string-after-deleting-similar-ends.md
-          - 1823_find-the-winner-of-the-circular-game.md: ToDo/LeetCode/1/1823_find-the-winner-of-the-circular-game.md
-          - 19_remove-Nth-node-from-end-of-list.md: ToDo/LeetCode/1/19_remove-Nth-node-from-end-of-list.md
-          - 1911_maximum_alternating-subsequence-sum.md: ToDo/LeetCode/1/1911_maximum_alternating-subsequence-sum.md
-          - 2_add-two-numbers.md: ToDo/LeetCode/2/2_add-two-numbers.md
-          - 20_valid-parentheses.md: ToDo/LeetCode/2/20_valid-parentheses.md
-          - 204_count-primes.md: ToDo/LeetCode/2/204_count-primes.md
-          - 2049_count-nodes-with-the-highest-score.md: ToDo/LeetCode/2/2049_count-nodes-with-the-highest-score.md
-          - 206_reverse-linked-list.md: ToDo/LeetCode/2/206_reverse-linked-list.md
-          - 213_house-robber-ii.md: ToDo/LeetCode/2/213_house-robber-ii.md
-          - 216_combination-sum-iii.md: ToDo/LeetCode/2/216_combination-sum-iii.md
-          - 225_implement-stack-using-queues.md: ToDo/LeetCode/2/225_implement-stack-using-queues.md
-          - 2178_maximum-split-of-positive-even-integers.md: ToDo/LeetCode/2/2178_maximum-split-of-positive-even-integers.md
-          - 2182_construct-string-with-repeat-limit.md: ToDo/LeetCode/2/2182_construct-string-with-repeat-limit.md
-          - 2191_sort-the-jumbled-numbers.md: ToDo/LeetCode/2/2191_sort-the-jumbled-numbers.md
-          - 2496_maximum-value-of-a-string-in-an-array.md: ToDo/LeetCode/2/2496_maximum-value-of-a-string-in-an-array.md
-          - 2600_k-items-with-the-maximum-sum.md: ToDo/LeetCode/2/2600_k-items-with-the-maximum-sum.md
-          - 2840_check-if-strings-can-be-made-equal-with-operations-ii: ToDo/LeetCode/2/2840_check-if-strings-can-be-made-equal-with-operations-ii.md
-          - 2917_find-the-k-or-of-an-array: ToDo/LeetCode/2/2917_find-the-k-or-of-an-array.md
-          - 3_longest-substring-without-repeating-characters.md: ToDo/LeetCode/3/3_longest-substring-without-repeating-characters.md
-          - 32_longest-valid-parentheses.md: ToDo/LeetCode/3/32_longest-valid-parentheses.md
-          - 322_coin-change.md: ToDo/LeetCode/3/322_coin-change.md
-          - 334_increasing-triplet-subsequence.md: ToDo/LeetCode/3/334_increasing-triplet-subsequence.md
-          - 337_house-robber-iii.md: ToDo/LeetCode/3/337_house-robber-iii.md
-          - 345_reverse-vowels-of-a-string.md: ToDo/LeetCode/3/345_reverse-vowels-of-a-string.md
-          - 380_insert-delete-getrandom-o1.md: ToDo/LeetCode/3/380_insert-delete-getrandom-o1.md
-          - 398_random-pick-index.md: ToDo/LeetCode/3/398_random-pick-index.md
-          - 415_add-strings.md: ToDo/LeetCode/4/415_add-strings.md
-          - 416_partition-equal-subset-sum.md: ToDo/LeetCode/4/416_partition-equal-subset-sum.md
-          - 417_pacific-atlantic-water-flow.md: ToDo/LeetCode/4/417_pacific-atlantic-water-flow.md
-          - 424_longest-repeating-character-replacement.md: ToDo/LeetCode/4/424_longest-repeating-character-replacement.md
-          - 427_construct-quad-tree.md: ToDo/LeetCode/4/427_construct-quad-tree.md
-          - 43_multiply-strings.md: ToDo/LeetCode/4/43_multiply-strings.md
-          - 433_minimum-genetic-mutation.md: ToDo/LeetCode/4/433_minimum-genetic-mutation.md
-          - 435_non-overlapping-intervals.md: ToDo/LeetCode/4/435_non-overlapping-intervals.md
-          - 436_find-right-interval.md: ToDo/LeetCode/4/436_find-right-interval.md
-          - 442_find-all-duplicates-in-an-array.md: ToDo/LeetCode/4/442_find-all-duplicates-in-an-array.md
-          - 445_add-two-numbers-ii.md: ToDo/LeetCode/4/445_add-two-numbers-ii.md
-          - 463_island-perimeter.md: ToDo/LeetCode/4/463_island-perimeter.md
-          - 468_validate-ip-address.md: ToDo/LeetCode/4/468_validate-ip-address.md
-          - 470_implement-rand10-using-rand7.md: ToDo/LeetCode/4/470_implement-rand10-using-rand7.md
-          - 503_next-greater-element-ii.md: ToDo/LeetCode/5/503_next-greater-element-ii.md
-          - 518_coin-change-ii.md: ToDo/LeetCode/5/518_coin-change-ii.md
-          - 529_minesweeper.md: ToDo/LeetCode/5/529_minesweeper.md
-          - 537_complex-number-multiplication.md: ToDo/LeetCode/5/537_complex-number-multiplication.md
-          - 547_number-of-provinces.md: ToDo/LeetCode/5/547_number-of-provinces.md
-          - 590_n-ary-tree-postorder-traversal.md: ToDo/LeetCode/5/590_n-ary-tree-postorder-traversal.md
-          - 599_minimum-index-sum-of-two-lists.md: ToDo/LeetCode/5/599_minimum-index-sum-of-two-lists.md
-          - 682_baseball-game.md: ToDo/LeetCode/6/682_baseball-game.md
-          - 686_repeated-string-match.md: ToDo/LeetCode/6/686_repeated-string-match.md
-          - 693_binary-number-with-alternating-bits.md: ToDo/LeetCode/6/693_binary-number-with-alternating-bits.md
-          - 703_kth-largest-element-in-a-stream.md: ToDo/LeetCode/7/703_kth-largest-element-in-a-stream.md
-          - 739_daily-temperatures.md: ToDo/LeetCode/7/739_daily-temperatures.md
-          - 752_open-the-lock.md: ToDo/LeetCode/7/752_open-the-lock.md
-          - 766_toeplitz-matrix.md: ToDo/LeetCode/7/766_toeplitz-matrix.md
-          - 780_reaching-points.md: ToDo/LeetCode/7/780_reaching-points.md
-          - 816_ambiguous-coordinates.md: ToDo/LeetCode/8/816_ambiguous-coordinates.md
-          - 819_most-common-word.md: ToDo/LeetCode/8/819_most-common-word.md
-          - 821_shortest-distance-to-a-character.md: ToDo/LeetCode/8/821_shortest-distance-to-a-character.md
-          - 860_lemonade-change.md: ToDo/LeetCode/8/860_lemonade-change.md
-          - 863_all-nodes-distance-k-in-binarytree.md: ToDo/LeetCode/8/863_all-nodes-distance-k-in-binarytree.md
-          - 868_binary-gap.md: ToDo/LeetCode/8/868_binary-gap.md
-          - 876_middle-of-the-linked-list.md: ToDo/LeetCode/8/876_middle-of-the-linked-list.md
-          - 883_projection-area-of-3d-shapes.md: ToDo/LeetCode/8/883_projection-area-of-3d-shapes.md
-          - 894_all-possible-full-binary-trees.md: ToDo/LeetCode/8/894_all-possible-full-binary-trees.md
-          - 905_sort-array-by-parity.md: ToDo/LeetCode/9/905_sort-array-by-parity.md
-          - 914_x-of-a-kind-in-a-deck-of-cards.md: ToDo/LeetCode/9/914_x-of-a-kind-in-a-deck-of-cards.md
-          - 922_sort-array-by-parity-ii.md: ToDo/LeetCode/9/922_sort-array-by-parity-ii.md
-          - 93_restore-ip-addresses.md: ToDo/LeetCode/9/93_restore-ip-addresses.md
-          - 94_binary-tree-inorder-traversal.md: ToDo/LeetCode/9/94_binary-tree-inorder-traversal.md
-          - 942_di-string-match.md: ToDo/LeetCode/9/942_di-string-match.md
-          - 945_minimum-increment-to-make-array-unique.md: ToDo/LeetCode/9/945_minimum-increment-to-make-array-unique.md
-          - 954_array-of-doubled-pairs.md: ToDo/LeetCode/9/954_array-of-doubled-pairs.md
-          - 981_time-based-key-value-store.md: ToDo/LeetCode/9/981_time-based-key-value-store.md
-          - 16-19_interview.md: ToDo/LeetCode/Offer/16-19_interview.md
-          - Offer_13_robot-moving-range.md: ToDo/LeetCode/Offer/13_robot-moving-range.md
-          - Offer_14_cutting-ropes.md: ToDo/LeetCode/Offer/14_cutting-rope.md
-          - 36_er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof.md: ToDo/LeetCode/Offer/36_er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof.md
-          - Offer_49_ugly-number.md: ToDo/LeetCode/Offer/49_ugly-number.md
-          - 0108_zero-matrix-lcci.md: ToDo/LeetCode/0/0108_zero-matrix-lcci.md
-          - 0204_partition-list-lcci.md: ToDo/LeetCode/0/0204_partition-list-lcci.md
-          - 0205_sum-lists-lcci.md: ToDo/LeetCode/0/0205_sum-lists-lcci.md
-          - 0207_intersection-of-two-linked-lists-lcci.md: ToDo/LeetCode/0/0207_intersection-of-two-linked-lists-lcci.md
-          - 0303_stack-of-plates-lcci.md: ToDo/LeetCode/0/0303_stack-of-plates-lcci.md
-          - 0408_first-common-ancestor-lcci.md: ToDo/LeetCode/0/0408_first-common-ancestor-lcci.md
-          - 136_single-number.md: ToDo/LeetCode/1/136_single-number.md
-          - 1702_maximum-binary-string-after-change.md: ToDo/LeetCode/1/1702_maximum-binary-string-after-change.md
-          - 2529_maximum-count-of-positive-integer-and-negative-integer.md: ToDo/LeetCode/2/2529_maximum-count-of-positive-integer-and-negative-integer.md
-          - 279_perfect-squares.md: ToDo/LeetCode/2/279_perfect-squares.md
-          - 2924_find-champion-ii.md: ToDo/LeetCode/2/2924_find-champion-ii.md
-          - 42_trapping-rain-water.md: ToDo/LeetCode/4/42_trapping-rain-water.md
-          - 45_jump-game-ii.md: ToDo/LeetCode/4/45_jump-game-ii.md
-          - 48_rotate-image.md: ToDo/LeetCode/4/48_rotate-image.md
-          - 53_maximum-subarray.md: ToDo/LeetCode/5/53_maximum-subarray.md
-          - 543_diameter-of-binary-tree.md: ToDo/LeetCode/5/543_diameter-of-binary-tree.md
-          - 55_jump-game.md: ToDo/LeetCode/5/55_jump-game.md
-          - 56_merge-intervals.md: ToDo/LeetCode/5/56_merge-intervals.md
-          - 72_edit-distance.md: ToDo/LeetCode/7/72_edit-distance.md
-
-  - 学习:
+  - 运筹与优化:
+      - OROpt/index.md
+      - 运筹学基础:
+          - OROpt/OR/index.md
+          - 运筹学刷题本: OROpt/OR/ORExercise/Works.md
+          - 线性规划、单纯形法（plus pro max版）: OROpt/OR/Chapter1.md
+          - 灵敏度分析: OROpt/OR/Chapter1_plugin.md
+          - 对偶理论及对偶单纯形法（一种哲学）: OROpt/OR/Chapter2.md
+          - 运输问题、目标规划和 DEA: OROpt/OR/Chapter3.md
+          - DEA的扩展: OROpt/OR/Chapter3_plugin.md
+          - 整数规划、求解算法和指派问题: OROpt/OR/Chapter4.md
+          - 非线性规划、凸规划理论（最优化基础）: OROpt/OR/Chapter5.md
+          - 动态规划: OROpt/OR/Chapter6.md
+          - 图论算法及其求解: OROpt/OR/Chapter7.md
+          - 排队论: OROpt/OR/Chapter9.md
+          - 仓储论（EOQ模型和它的一万个分身）: OROpt/OR/Chapter10.md
+          - 博弈论: OROpt/OR/Chapter11.md
+          - 高级运筹学技巧1：列生成方法: OROpt/OR/Chapter12.md
+          - 高级运筹学技巧2：拉格朗日松弛: OROpt/OR/LR.md
+          - 高级运筹学技巧3：分支定价: OROpt/OR/BranchAndPrice.md
+          - 经典运筹学问题：TSP问题: OROpt/OR/TSP.md
+          - 经典运筹学问题：VRP问题: OROpt/OR/VRP.md
+          - MAPF: OROpt/OR/MAPF.md
+  - 学习笔记:
       - Study/index.md
       - 组会与相关学术内容:
           - 202309至202401: Study/TeamMeeting/0920.md
@@ -493,7 +363,7 @@ nav:
           - 0308TeamMeeting: Study/TeamMeeting/0308Prep.md
           - 0315TeamMeeting: Study/TeamMeeting/0315Prep.md
           - 0322TeamMeeting: Study/TeamMeeting/0322Prep.md
-          - 0329TeamMeeting(Me): Study/OR/Chapter12.md
+          - 0329TeamMeeting(Me): OROpt/OR/Chapter12.md
           - 2024年综合运输系统运营管理学术研讨会: Study/TeamMeeting/0329Prep.md
       - 小红书｜资源分享外链: Study/xhs_list.md
       - 小红书｜文本编辑:
@@ -572,27 +442,6 @@ nav:
           - MIT | Course_12: Study/LinearAlgebra/MIT_course_12.md
           - MIT | Course_13: Study/LinearAlgebra/MIT_course_13.md
           - MIT | Course_14: Study/LinearAlgebra/MIT_course_14.md
-      - 运筹学与优化:
-          - Study/OR/index.md
-          - 运筹学刷题本: Study/OR/ORExercise/Works.md
-          - 线性规划、单纯形法（plus pro max版）: Study/OR/Chapter1.md
-          - 灵敏度分析: Study/OR/Chapter1_plugin.md
-          - 对偶理论及对偶单纯形法（一种哲学）: Study/OR/Chapter2.md
-          - 运输问题、目标规划和 DEA: Study/OR/Chapter3.md
-          - DEA的扩展: Study/OR/Chapter3_plugin.md
-          - 整数规划、求解算法和指派问题: Study/OR/Chapter4.md
-          - 非线性规划、凸规划理论（最优化基础）: Study/OR/Chapter5.md
-          - 动态规划: Study/OR/Chapter6.md
-          - 图论算法及其求解: Study/OR/Chapter7.md
-          - 排队论: Study/OR/Chapter9.md
-          - 仓储论（EOQ模型和它的一万个分身）: Study/OR/Chapter10.md
-          - 博弈论: Study/OR/Chapter11.md
-          - 高级运筹学技巧1：列生成方法: Study/OR/Chapter12.md
-          - 高级运筹学技巧2：拉格朗日松弛: Study/OR/LR.md
-          - 高级运筹学技巧3：分支定价: Study/OR/BranchAndPrice.md
-          - 经典运筹学问题：TSP问题: Study/OR/TSP.md
-          - 经典运筹学问题：VRP问题: Study/OR/VRP.md
-          - MAPF: Study/OR/MAPF.md
       - 概率论:
           - 统计学基础: Study/Statistics/Statistics_method.md
           - 基础知识与贝叶斯理论: Study/Statistics/Basics.md
