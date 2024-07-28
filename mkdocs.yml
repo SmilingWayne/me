@@ -476,6 +476,7 @@ nav:
           - 英文情诗(All this I did): Study/English/AllthisIdid.md
           - 英文诗选(Questions of workers): Study/English/Question_of_workers.md
           - 葛底斯堡演说(Gettysburg_Address): Study/English/Gettysburg_Address.md
+      - 网站搭建指南: Study/SiteBuild/FormatSetting.md
       - 制造与服务系统分析: Study/AMASS.md
       - 一些高中笔记: Study/HighSchool.md
       - 研究生课程：智慧物流: Study/IntelligentLogistics/IntelligentLogistics1.md
@@ -523,6 +524,7 @@ nav:
       - 关于知识分享: Talks/Knowledge_share.md
       - 关于一位长者: Talks/About_a_great_man.md
       - 关于记忆和记忆崇拜: Talks/About_memory.md
+      - 关于神与我们所相信的: Talls/About_gods.md
       - 来自上世纪60年代的回响：关于理想与我们所怀念的: Talks/About_60s.md
       - 马嵬驿与安史乱: Talks/An_shi_chaos.md
       - 一些歌词: Talks/Music_lines.md
@@ -555,7 +557,7 @@ theme:
     - search.share
     # - navigation.sections
     # - navigation.expand
-    # - navigation.top
+    - navigation.top
     - navigation.indexes
     # - content.action.edit
     # - content.action.view
