@@ -2,7 +2,7 @@
 
 !!! note "**朋霍费尔[^1]从五楼纵身一跃。**"
 
-<font size = 6 face = "SnellRoundHand" >Au revoir les enfants.</font>
+<font size = 6 face = "SnellRoundHand" >Au revoir, les enfants.</font>
     
 
 - [x] **精读系列**：计划是单拎一部分自己感触很深或者做了详细笔记的书做一些摘要和分享。目前筹备中。
