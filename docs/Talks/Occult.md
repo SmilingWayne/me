@@ -1,11 +1,12 @@
 # 神秘学札记
 
-
 !!! quote "感谢GPT-4对本页面编写提供的帮助"
 
 用来记录一些闲着无聊时候复制粘贴的东西。顺便当一个起名站。以后不知道想什么ID，就来这里找。
 
 包括但不限于：占星术、炼金术、巫魔会。
+
+我想到个电影：“乔乔的幻想世界”，这里就叫“笑笑的幻想世界”得了！妙哇！
 
 ## 中英文对应
 
@@ -351,9 +352,6 @@
 
 > 第一个想到的还是文明6哈哈哈哈！
 
-!!! note "玫瑰十字兄弟会"
-    ？
-
 !!! note "赫尔墨斯神秘主义"
     赫尔墨斯三重神（Mercurius ter Maximus）起源于希腊神赫尔墨斯（Hermes）和埃及神透特（Thoth）的融合而成的一种神的形象。是一系列广泛多样的古代和中世纪伪经典共同塑造的，奠定了各种哲学体系的基础，被称为赫尔墨斯主义。
 
@@ -369,80 +367,80 @@
 ![图示](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202402071459811.png)
 
 
-|              Name               | Intro |
-| :-----------------------------: | :---: |
-|           King  Bael            |       |
-|          Duke  Agares           |       |
-|         Prince  Vassago         |       |
-|        Marquis  Samigina        |       |
-|        President  Marbas        |       |
-|          Duke  Valefor          |       |
-|          Marquis  Amon          |       |
-|         Duke  Barbatos          |       |
-|          King  Paimon           |       |
-|         President  Buer         |       |
-|          Duke  Gusion           |       |
-|          Prince  Sitri          |       |
-|          King  Beleth           |       |
-|         Marquis  Leraje         |       |
-|          Duke  Eligos           |       |
-|           Duke  Zepar           |       |
-|     Count /President Botis      |       |
-|          Duke  Bathin           |       |
-|          Duke  Sallos           |       |
-|          King  Purson           |       |
-|     Count /President Morax      |       |
-|       Count /Prince Ipos        |       |
-|            Duke  Aim            |       |
-|        Marquis  Naberius        |       |
-| Count /President Glasya-Labolas |       |
-|           Duke  Buné            |       |
-|      Marquis /Count Ronové      |       |
-|          Duke  Berith           |       |
-|         Duke  Astaroth          |       |
-|        Marquis  Forneus         |       |
-|        President  Foras         |       |
-|         King  Asmodeus          |       |
-|     Prince /President Gäap      |       |
-|          Count  Furfur          |       |
-|       Marquis  Marchosias       |       |
-|         Prince  Stolas          |       |
-|         Marquis  Phenex         |       |
-|         Count  Halphas          |       |
-|       President  Malphas        |       |
-|           Count  Räum           |       |
-|          Duke  Focalor          |       |
-|           Duke  Vepar           |       |
-|        Marquis  Sabnock         |       |
-|          Marquis  Shax          |       |
-|        King /Count Viné         |       |
-|         Count  Bifrons          |       |
-|           Duke  Vual            |       |
-|       President  Haagenti       |       |
-|          Duke  Crocell          |       |
-|         Knight  Furcas          |       |
-|           King  Balam           |       |
-|          Duke  Alloces          |       |
-|         President  Caim         |       |
-|       Duke /Count Murmur        |       |
-|         Prince  Orobas          |       |
-|          Duke  Gremory          |       |
-|         President  Ose          |       |
-|         President  Amy          |       |
-|         Marquis  Orias          |       |
-|          Duke  Vapula           |       |
-|      King /President Zagan      |       |
-|        President  Valac         |       |
-|         Marquis  Andras         |       |
-|          Duke  Flauros          |       |
-|      Marquis  Andrealphus       |       |
-|        Marquis  Kimaris         |       |
-|         Duke  Amdusias          |       |
-|          King  Belial           |       |
-|       Marquis  Decarabia        |       |
-|          Prince  Seere          |       |
-|         Duke  Dantalion         |       |
-|       Count  Andromalius        |       |
+|              Name               |                                         Chinese Name                                         | Looks-like | tasks or skills |
+| :-----------------------------: | :------------------------------------------------------------------------------------------: | :--------: | :-------------: |
+|           King  Bael            |      恶魔(Demon)巴尔 | 声音嘶哑的国王 | 拥有使人隐形的力量，并统治着六十六个恶魔军团。       |
+|          Duke  Agares           | 公爵阿加雷斯 | ”骑在鳄鱼身上，拳头上挎着鹰的老人“ | 他教授语言，阻止和救助逃跑的人，引起地震。 |
+|         Prince  Vassago         |               瓦萨戈 | - | 被召唤来告诉魔术师过去和未来的事件，能够找到丢失的物品。               |
+|        Marquis  Samigina        |              侯爵加米金 | 最初是一匹小马，后来变成声音嘶哑的人 | 文科教授。              |
+|        President  Marbas        |      - | - | -      |
+|          Duke  Valefor          |      地狱公爵瓦勒法尔 | 一只长着人头的狮子 | 负责引诱人们偷窃，并负责盗贼之间的良好关系。      |
+|          Marquis  Amon          |    - | - |                                                                           -              |
+|         Duke  Barbatos          |      巴巴托斯 |  -  |       能理解动物的叫声，揭示被魔术师的结界隐藏的隐藏宝藏，调和争端                             |
+|          King  Paimon           |        派蒙 | 骑单峰骆驼的人 |        科学教授，知道世界上的所有事物  |
+|         President  Buer         |        布尔 |一个有几条腿的轮子，甚至是一个长着多条山羊腿的狮子头 | 教授自然和道德哲学，了解草药和植物的品质和用途，能够治愈所有疾病 |
+|          Duke  Gusion           |       古森 | 狒狒的形象 |  了解所有过去、现在和未来的事情，能理解向他提出的所有问题的意义 |
+|          Prince  Sitri          |      希特里 | 拥有豹子的脸和狮鹫的翅膀 | 让异性之间互相爱慕|
+|          King  Beleth           |      贝雷斯 | 骑一匹苍白的马 | 能在他面前听到各种各样的音乐 |
+|         Marquis  Leraje         |   勒拉杰 | 英勇英俊的弓箭手，身穿绿色衣服，拿着弓和箭袋 | 会引起激烈的战斗和争执，箭射能造成坏疽伤口。 |
+|          Duke  Eligos           |     艾利戈斯 | 拿着长矛、少尉和蛇的好骑士 |  能知晓战争的结局和士兵的命运 |
+|           Duke  Zepar           |     泽帕尔 | 穿着红色的衣服和盔甲的士兵。 | 使女人爱男人，并在爱中使他们走到一起，同样能使女人不育。 | 
+|     Count /President Botis      |     -  | - |                                                                          -  |
+|          Duke  Bathin           |    巴辛 | 一个强壮的男人，长着蛇的尾巴，骑着一匹苍白的马 | 通晓草药，会瞬移，能带人去任何想去的地方 |
+|          Duke  Sallos           |      萨利奥斯 | 一个英勇英俊的士兵，戴着公爵王冠，骑着鳄鱼。 |  具有和平主义的本性，使异性互相爱慕。 |
+|          King  Purson           |        -   | - |  - |
+|     Count /President Morax      |   摩拉克斯   | 一头长着男人脸的大公牛。 |  教授天文学和文科，教授人们草药和宝石的特点 |
+|       Count /Prince Ipos        |    伊波斯 | 一个天使的身体，一个狮子的头，一个野兔的尾巴，一个鹅的脚。 |       能够揭示所有的事情，过去、现在和未来。他可以使人变得机智和勇敢 |
+|            Duke  Aim            |  艾姆 | 一个男人，但有三个头，一个是蛇，第二个是男人，第三个是猫 | 放火烧城市、城堡和大地方，使人在各方面都变得机智 |
+|        Marquis  Naberius        |                                            -                  |   -                        |  -       |
+| Count /President Glasya-Labolas |                                            -                  |   -                        |  -       |
+|           Duke  Buné            |                                            -                  |   -                        |  -       |
+|      Marquis /Count Ronové      |                                            -                  |   -                        |  -       |
+|          Duke  Berith           |                                            -                  |   -                        |  -       |
+|         Duke  Astaroth          |                                            -                  |   -                        |  -       |
+|        Marquis  Forneus         |                                            -                  |   -                        |  -       |
+|        President  Foras         |                                            -                  |   -                        |  -       |
+|         King  Asmodeus          |                                            -                  |   -                        |  -       |
+|     Prince /President Gäap      |                                            -                  |   -                        |  -       |
+|          Count  Furfur          |                                            -                  |   -                        |  -       |
+|       Marquis  Marchosias       |                                            -                  |   -                        |  -       |
+|         Prince  Stolas          |                                            -                  |   -                        |  -       |
+|         Marquis  Phenex         |                                            -                  |   -                        |  -       |
+|         Count  Halphas          |                                            -                  |   -                        |  -       |
+|       President  Malphas        |                                            -                  |   -                        |  -       |
+|           Count  Räum           |                                            -                  |   -                        |  -       |
+|          Duke  Focalor          |                                            -                  |   -                        |  -       |
+|           Duke  Vepar           |                                            -                  |   -                        |  -       |
+|        Marquis  Sabnock         |                                            -                  |   -                        |  -       |
+|          Marquis  Shax          |                                            -                  |   -                        |  -       |
+|        King /Count Viné         |                                            -                  |   -                        |  -       |
+|         Count  Bifrons          |                                            -                  |   -                        |  -       |
+|           Duke  Vual            |                                            -                  |   -                        |  -       |
+|       President  Haagenti       |                                            -                  |   -                        |  -       |
+|          Duke  Crocell          |                                            -                  |   -                        |  -       |
+|         Knight  Furcas          |                                            -                  |   -                        |  -       |
+|           King  Balam           |                                            -                  |   -                        |  -       |
+|          Duke  Alloces          |                                            -                  |   -                        |  -       |
+|         President  Caim         |                                            -                  |   -                        |  -       |
+|       Duke /Count Murmur        |                                            -                  |   -                        |  -       |
+|         Prince  Orobas          |                                            -                  |   -                        |  -       |
+|          Duke  Gremory          |                                            -                  |   -                        |  -       |
+|         President  Ose          |                                            -                  |   -                        |  -       |
+|         President  Amy          |                                            -                  |   -                        |  -       |
+|         Marquis  Orias          |                                            -                  |   -                        |  -       |
+|          Duke  Vapula           |                                            -                  |   -                        |  -       |
+|      King /President Zagan      |                                            -                  |   -                        |  -       |
+|        President  Valac         |                                            -                  |   -                        |  -       |
+|         Marquis  Andras         |                                            -                  |   -                        |  -       |
+|          Duke  Flauros          |                                            -                  |   -                        |  -       |
+|      Marquis  Andrealphus       |                                            -                  |   -                        |  -       |
+|        Marquis  Kimaris         |                                            -                  |   -                        |  -       |
+|         Duke  Amdusias          |                                            -                  |   -                        |  -       |
+|          King  Belial           |                                            -                  |   -                        |  -       |
+|       Marquis  Decarabia        |                                            -                  |   -                        |  -       |
+|          Prince  Seere          |                                            -                  |   -                        |  -       |
+|         Duke  Dantalion         |                                            -                  |   -                        |  -       |
+|       Count  Andromalius        |                                            -                  |   -                        |  -       |
 
 
 
