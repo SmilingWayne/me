@@ -15,6 +15,10 @@
 .md-typeset details {
     font-size: 14px
 }
+
+.md-grid {
+    max-width: 1280px;   
+}
 /* 
 @font-face {
     font-display: auto;
