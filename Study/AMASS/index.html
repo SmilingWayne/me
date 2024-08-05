@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
       
@@ -96,7 +96,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#amss-00" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -12230,6 +12230,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -12257,6 +12259,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -13820,6 +13824,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -13963,10 +13969,12 @@
 
 
 
-<h1>制造与服务系统分析</h1>
-
+<h1 id="_1">制造与服务系统分析<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 6082 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 20 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 6105 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 20 分钟</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">2024.07.30 标记为待整理与优化。</p>
 </div>
 <h2 id="amss-00">AMSS 00<a class="headerlink" href="#amss-00" title="Permanent link">⚓︎</a></h2>
 <ul>
@@ -14146,7 +14154,7 @@
 </ul>
 </li>
 <li>
-<p>利特尔定律：I = R * T, <strong>Average Inventory = Throughput * Average Flow Time</strong></p>
+<p>利特尔定律：<span class="arithmatex">\(I = R * T\)</span>, <strong>Average Inventory = Throughput * Average Flow Time</strong></p>
 </li>
 <li>
 <p>A manager can select any two operational measures on which to focus, and the third is determined by the levels of the two choices</p>
@@ -14609,25 +14617,19 @@
 <li>
 <p>Lead Time Demand Analysis 不确定性分析增加随机变量L（LTD）</p>
 </li>
-<li>
-<p>$$\sigma_{LTD} = \sqrt{L} \times \sigma_{R}
-    \
-    \
-    SS = ROP - LTD = z\sigma_{LTD} = z\sqrt{L} \times \sigma_{R}
-    \
-    \
-    \sigma_{LTD} = \sqrt{LS_{R}^2 + R<sup>2S_{L}</sup>2}
-    \
-    \
-    \frac{C_u}{C_u + C_o}</p>
-<p>\
-= (p-c)/(p-c + c - v)\
-=(p-c)/(p-v)
-\
-z = \Phi^{-1}[c]
-\
-=\Phi^{-1}[(p-c)/(p-v)]$$</p>
-</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Some Equations</p>
+<pre class="arithmatex">\[\sigma_{LTD} = \sqrt{L} \times \sigma_{R}\]</pre>
+<p><span class="arithmatex">\(SS = ROP - LTD = z\sigma_{LTD} = z\sqrt{L} \times \sigma_{R}\)</span></p>
+<p><span class="arithmatex">\(\sigma_{LTD} = \sqrt{LS_{R}^2 + R^2S_{L}^2}\)</span></p>
+<p><span class="arithmatex">\(\frac{C_u}{C_u + C_o}\)</span></p>
+<p><span class="arithmatex">\(= (p-c)/(p-c + c - v)\)</span></p>
+<p><span class="arithmatex">\(=(p-c)/(p-v)\)</span></p>
+<p><span class="arithmatex">\(z = \Phi^{-1}[c]\)</span></p>
+<p><span class="arithmatex">\(=\Phi^{-1}[(p-c)/(p-v)]\)</span></p>
+</div>
+<ul>
 <li>
 <p>分析LTD的标准差，可以看出影响因素：</p>
 <ul>
@@ -14662,10 +14664,8 @@ z = \Phi^{-1}[c]
 </ul>
 </li>
 <li>Aggregation：将多个类似产品或者不同地区的产品的需求整合起来看。</li>
-<li><strong>Physical centralization：地理上将不同地区整合到一个地方【根号n效应】：</strong><ul>
-<li><img alt="Screen Shot 2021-12-27 at 1.34.57 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%201.34.57%20PM.png" /></li>
-</ul>
-</li>
+<li><strong>Physical centralization：地理上将不同地区整合到一个地方【根号n效应】：</strong>
+    <!-- - <img alt="Screen Shot 2021-12-27 at 1.34.57 PM" src="docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 1.34.57 PM.png" /> --></li>
 <li>Virtual centralization：为了满足不同地区间需求，将产品在不同地区间输送</li>
 <li>Specialization</li>
 <li>Component Commonality（MTS、ATO等策略）</li>
@@ -15093,7 +15093,7 @@ z = \Phi^{-1}[c]
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 22, 2024 16:59:43</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 6, 2024 00:38:56</span>
   </span>
 
     
