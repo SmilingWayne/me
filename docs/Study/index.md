@@ -6,7 +6,7 @@
 
 ## ✅ 已完成
 
-- [x] 运筹与优化：原“运筹学”部分，已从本目录移动到[运筹与优化](../OROpt/index.md)部分。
+- [x] **运筹与优化**：原“运筹学”部分，已从本目录移动到[运筹与优化](../OROpt/index.md)部分。
 - [x] **管理学**（4/4）：你可以不会管理，但你不能声称自己不懂管理学。
 - [x] **Python 经验包**（11/11）：随时会诈尸跑过来写点东西。如果没更新，说明真的已经变成尸体了。
 - [x] **制造与服务系统分析**(1/1)，Analysis of Manufacturing And Service System (AMASS)为数不多“我在说完中文后一定会加上它的英文翻译”的课程。aka “运营管理(Operations Management)”。我的物流启蒙～。
@@ -32,7 +32,7 @@
     - [ ] [VSCode快捷键CheatSheet](./Vscode/keys.md)：生命苦短，你需要快捷键。
 
 **[果系使用指南](./Swift/SwiftBasics.md)**（8/?）
-:   随缘更新，本是想学Apple开发，理想泡沫破灭后逐渐退化成了macOS/iOS使用技巧与黑科技分享。现在看比较抽象的是，这个文件夹我竟然用Apple自己的编程语言Swift来命名。
+:   随缘更新，本是想学Apple开发，逐渐退化成了macOS/iOS使用技巧与黑科技分享。内容比较朴实。
 
     - [x] [终极快捷键拥趸](./Swift/Keyshortcuts.md)：狂野的快捷键爱好者不允许任何东西玷污键盘与触控板；
     - [x] [在你的macOS上使用你的学校邮箱](./Swift/About_mail.md) ：简介的内置软件Mail不希望自己的存在成为底栏和侧栏的点缀；
@@ -41,7 +41,7 @@
     - [x] [快捷指令：从轻松入门到入土为安](./Swift/Shortcuts.md)：请记住，Apple用户的Privilege在这里已经尽数体现了。
 
 **组会艺术大赏**
-:   那些年，我看过的论文（以及听过的讲座）。我是不会告诉你[这里](https://pan.baidu.com/s/1GdGyLi8-J1Cy6Iey4vMEyA) 有下载链接的 （code: n7sb）。
+:   那些年，我看过的论文（以及听过的讲座）。我是不会告诉你[这里]( https://pan.baidu.com/s/1UGvfg4Hcsa9O6klue5Wvdg) 有下载链接的 （code: omor）。
 
     - [x] [20240102](./TeamMeeting/Articles.md)：Too Young! Too NAIVE! 
     - [x] [20240308](./TeamMeeting/0308Prep.md): Truck & Drones 问题及其若干拓展；

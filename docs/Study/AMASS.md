@@ -1,3 +1,7 @@
+# 制造与服务系统分析
+
+!!! warning "2024.07.30 标记为待整理与优化。"
+
 ## AMSS 00
 
 - 系统是指若干部分相互联系、相互作用形成的具有某些功能的整体。A system is a whole that cannot be taken apart without loss of its essential characteristics, and hence it must be studied as a whole.
@@ -135,7 +139,7 @@
 
       
 
-- 利特尔定律：I = R * T, **Average Inventory = Throughput * Average Flow Time**
+- 利特尔定律：$I = R * T$, **Average Inventory = Throughput * Average Flow Time**
 
   - A manager can select any two operational measures on which to focus, and the third is determined by the levels of the two choices
   - Inventory Turnover =   Throughput / Inventory = 1 / T
@@ -483,24 +487,22 @@
 
 - Lead Time Demand Analysis 不确定性分析增加随机变量L（LTD）
 
-  - $$\sigma_{LTD} = \sqrt{L} \times \sigma_{R}
-    \\
-    \\
-    SS = ROP - LTD = z\sigma_{LTD} = z\sqrt{L} \times \sigma_{R}
-    \\
-    \\
-    \sigma_{LTD} = \sqrt{LS_{R}^2 + R^2S_{L}^2}
-    \\
-    \\
-    \frac{C_u}{C_u + C_o}
+!!! note "Some Equations"
+    $$\sigma_{LTD} = \sqrt{L} \times \sigma_{R}$$
     
-    \\
-    = (p-c)/(p-c + c - v)\\
-    =(p-c)/(p-v)
-    \\
-    z = \Phi^{-1}[c]
-    \\
-    =\Phi^{-1}[(p-c)/(p-v)]$$
+    $SS = ROP - LTD = z\sigma_{LTD} = z\sqrt{L} \times \sigma_{R}$
+
+    $\sigma_{LTD} = \sqrt{LS_{R}^2 + R^2S_{L}^2}$
+    
+    $\frac{C_u}{C_u + C_o}$
+    
+    $= (p-c)/(p-c + c - v)$
+    
+    $=(p-c)/(p-v)$
+    
+    $z = \Phi^{-1}[c]$
+    
+    $=\Phi^{-1}[(p-c)/(p-v)]$
 
   - 分析LTD的标准差，可以看出影响因素：
 
@@ -528,7 +530,7 @@
     - Reduction in variability allows a decrease in safety stock and therefore reduces average inventory. 
   - Aggregation：将多个类似产品或者不同地区的产品的需求整合起来看。
   - **Physical centralization：地理上将不同地区整合到一个地方【根号n效应】：**
-    - ![Screen Shot 2021-12-27 at 1.34.57 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 1.34.57 PM.png)
+    <!-- - ![Screen Shot 2021-12-27 at 1.34.57 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 1.34.57 PM.png) -->
   - Virtual centralization：为了满足不同地区间需求，将产品在不同地区间输送
   - Specialization
   - Component Commonality（MTS、ATO等策略）
