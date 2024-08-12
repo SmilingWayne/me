@@ -10,13 +10,13 @@
 
 - 💪 目标是让文字与记录在这里野蛮生长。
 
+- 📝 一个简单的站点更新记录见 [Issues](https://github.com/SmilingWayne/me/issues/)。（起始时间：July 28, 2024）。
+
 
 
 -----------
 
-> English Translation:
-
-- 😃 My name is `"xiaoxiao"` (Pronounced as "/ɕjɑʊ˥˩/ /ɕjɑʊ˥˩/" in [IPA](https://www.internationalphoneticalphabet.org). In Mandarin It means "**Smile!** 😊", of course another anagram "Slime" is also my nickname), an ordinary person. This is my personal website!
+- 😃 My name is `"xiaoxiao"` (Pronounced as "/ɕjɑʊ˥˩/ /ɕjɑʊ˥˩/" in [IPA](https://www.internationalphoneticalphabet.org). In Mandarin It means "**Smile!** 😊"). As an ordinary person, you can call me "Wayne / Winnie". This is my personal website!
 
 - 🥰 Thrilled to meet you here in cyber world! Hope you also like this quiet little oasis. Feel free to drop by for some rest, with maybe a cup of coffee~
 
@@ -26,6 +26,8 @@ evolved into knowledge-sharing platform, recently, it occasionally serves as my 
 
 - 💪 The goal is to let my words and records grow freely and wildly here.
 
+- 📝 A simple feature collections and contents update records can be found in [Issues of the repo](https://github.com/SmilingWayne/me/issues/), since July 28, 2024.
+
 ------
 
 # Tools and Plugins 
@@ -34,8 +36,8 @@ evolved into knowledge-sharing platform, recently, it occasionally serves as my 
 - Demo: [Mkdocs](https://www.mkdocs.org).
 - Theme: [Mkdocs Materials](https://squidfunk.github.io/mkdocs-material/).
 - Deployment: [Github Pages](https://pages.github.com).
-- Plugins: [Mkdocs Statistics Plugins](https://github.com/TonyCrane/mkdocs-statistics-plugin), [Mkdocs Git revision](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)
-- Repo pictures easy sync & upload: [PicGo](https://picgo.github.io/PicGo-Doc/)
+- Plugins: [Mkdocs Statistics Plugins](https://github.com/TonyCrane/mkdocs-statistics-plugin), [Mkdocs Git revision](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin).
+- Repo pictures easy sync & upload: [PicGo](https://picgo.github.io/PicGo-Doc/).
 - Repo pictures storage: [My Repo](https://github.com/SmilingWayne/picsrepo).
 - Font: [霞鹜文楷](https://github.com/lxgw/LxgwWenKai-Screen).
 - Setup and deployment tutorials: [Video](https://www.bilibili.com/video/BV1hL4y1w72r/) (In Mandarin).
