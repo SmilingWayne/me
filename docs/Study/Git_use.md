@@ -152,3 +152,78 @@
     比如 https://api.github.com/repos/squidfunk/mkdocs-material 这个链接，就可以直接访问mkdocs materials 作者这个仓库的具体信息。包括仓库大小等具体统计数据。
 
     
+----
+
+### 移动文件的同时保留原文件的git记录
+
+1. 首先，进入git文件夹的目录中：
+
+```shell
+cd /path/to/myproject
+```
+
+2. 假定当前路径下，文档目录结构：
+
+```text
+.
+├── VRP
+│   ├── CVRP.ipynb
+│   ├── VRPPD.ipynb
+│   ├── VRPTW.ipynb
+│   └── VRPwithPenality.ipynb
+├── assets
+│   ├── data
+│   └── figures
+├── TSP.ipynb
+└── requirements.txt
+```
+
+我想要把 `TSP.ipynb` 文件移动到 `VRP` 文件夹下。
+
+通过命令：
+
+```shell
+git mv TSP.ipynb  VRP/
+```
+
+即可。此时观察文件路径，已改变为：
+
+```text
+.
+├── VRP
+│   ├── CVRP.ipynb
+│   ├── TSP.ipynb
+│   ├── VRPPD.ipynb
+│   ├── VRPTW.ipynb
+│   └── VRPwithPenality.ipynb
+├── assets
+│   ├── data
+│   └── figures
+└── requirements.txt
+```
+
+确认一下。首先执行：
+
+```shell
+git add .
+```
+
+然后执行：
+
+```shell
+git status
+```
+
+此时不出意外会看到关于 `TSP.ipynb` 的修改情况：
+
+```text
+On branch basic-dev
+Your branch is up to date with 'origin/basic-dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    TSP.ipynb -> VRP/TSP.ipynb
+```
+
+然后正常commit / push ，即可。
+
