@@ -1,5 +1,17 @@
 # TSP 问题
 
+!!! abstract "感谢GPT-4o以及Claude在本文章编写过程中提供的帮助。"
+    参考链接：
+
+    - [运筹OR帷幄的文章](https://mp.weixin.qq.com/s/tDYOxlSQHKRJkf5EcaBJ1A) (如果不想看论文，这个几乎是把知识喂给你吃的那种)；
+
+    - [Concorde Solver and intro](https://www.math.uwaterloo.ca/tsp/index.html): 比本页面精致很多、提供了丰富可视化、benchmark、求解器等的网站；
+    - [Dantzig, George, Ray Fulkerson, and Selmer Johnson. "Solution of a large-scale traveling-salesman problem." Journal of the operations research society of America 2.4 (1954): 393-410.](https://www.rand.org/content/dam/rand/pubs/papers/2014/P510.pdf); (DFJ formulation)
+
+    - [Miller, Clair E., Albert W. Tucker, and Richard A. Zemlin. "Integer programming formulation of traveling salesman problems." Journal of the ACM (JACM) 7.4 (1960): 326-329.](https://dl.acm.org/doi/10.1145/321043.321046): (MTZ formulation)
+
+    - [Gavish, Bezalel, and Stephen C. Graves. "The travelling salesman problem and related problems." (1978).](https://dspace.mit.edu/handle/1721.1/5363) : (Commodity flow formulation)
+
 
 ## 问题描述与第一种建模方法
 
@@ -13,7 +25,10 @@
 | :------: | :---------------------------: |
 | $x_{ij}$ | 0-1变量，从i到j的边是否被选中 |
 | $c_{ij}$ |         从i到j的权重          |
-|   $V$    |      所有节点构成的集合       |
+|   $V$    |  所有节点(vertex)构成的集合   |
+|   $A$    |    所有边 (arcs)构成的集合    |
+
+熟悉简单图论知识的读者可以写出下面的模型：
 
 $$\min \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ij} \\
 \text{s.t.} \begin{aligned}\begin{equation*}
@@ -24,7 +39,7 @@ x_{ij} \in \{0, 1 \}
 \end{cases}
 \end{equation*}\end{aligned}$$
 
-但是，上述框架仅仅保证出入度是相等且等于1的，无法保证不形成环路，以下情况可能是不符合要求的.
+但是，上述约束仅仅保证出入度是相等且等于1的，无法保证不形成环路，以下情况可能是不符合要求的.
 
 此时不构成一个回路，而是有两个回路了。
 
@@ -37,7 +52,7 @@ x_{ij} \in \{0, 1 \}
 3---------4                3-------4---->
 ```
 
-所以我们需要加入一个经典的子环路（Subtour）消除约束。子环路就是“没有包含所有节点 $V$ 的闭环”，访问的所有集合 $S$ 是所有节点的真子集。
+所以我们需要加入一个经典的子环路消除约束（Subtour-elimination constraints）。子环路就是“没有包含所有节点 $V$ 的闭环”，访问的所有集合 $S$ 是所有节点的真子集。
 
 我们先观察子环路的特点，比如上面的1-2-3-4 环路，可以发现4个节点中有4个边，也就是节点的数量等于这些点之间的边的数量。反过来，如果我们限制这些点之间边的数量不等于节点数，那么就一定不存在子环路了（逆否命题）。（ $\sum_{i,j \in S} x_{ij} < |S|$，往往写成 $\sum_{i,j \in S} x_{ij} \leq |S| - 1$ ）。**但是别忘了TSP最终是会回到原点的，这意味着结果中其实存在一个最大的环。因此我们需要约束最大的环不被破坏。**
 
@@ -47,7 +62,7 @@ x_{ij} \in \{0, 1 \}
 
 $\sum_{i,j \in S} x_{ij} \leq |S| - 1, \quad \forall S, 2 \leq |S| \leq |V| - 1$，
 
-> 这个约束实际上是一个枚举的思想，确保 V 的所有真子集（除去单个节点这种不可能成环的情况）都符合。
+> 这个约束实际上是一个枚举的思想，==确保 $V$ 的所有真子集（除去单个节点这种不可能成环的情况）中，节点之间相连的边数都小于等于子集大小减一==。
 >
 
 于是我们可以把完整的模型写作如下。这个模型求解效率很不错。
@@ -127,3 +142,32 @@ $$\min \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ij} \\
 \mu_i - \mu_j + Nx_{ij} \leq N - 1, \quad \forall i \in \{1,2,..., N\}, j \in \{2,3,...,N+1\}, i\neq j \\
 x_{ij} \in \{0, 1\}, \mu_i \geq 0\end{cases}
 \end{equation*}\end{aligned}$$
+
+## 第三种建模方法：基于货物流
+
+这种建模包括：
+
+1. 单类流模型（Single-Commodity Flow，SCM)，（又称作Gavish-Graves（GG）模型）
+2. 双类流模型（Two-Commodity Flow，TCM）
+3. 多类流模型（Multi-Commodity Flow，MCM）。
+
+单类流模型中，决策变量与DFJ相同， $x_{ij}$，表示边 (i,j) 是否被访问。目标函数、流平衡约束均相同。差别依然是如何对待子回路消除。
+
+$$\min \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ij}$$
+
+
+$$\begin{aligned}
+\begin{cases}
+\begin{align}
+\sum_{i \in V}x_{ij} = 1, \quad \forall j \in V, i \neq j \quad\\ 
+\sum_{j \in V}x_{ij} = 1, \quad \forall i \in V, i \neq j \quad \\ 
+y_{ij} \leq (n-1) x_{ij}, \quad \forall i,j \in V, (i, j) \in A \quad \\
+\sum_{j \in V, (1, j) \in A} y_{1j} = n - 1 \quad \\
+\sum_{i \in V, (i, j) \in A} y_{ij} - \sum_{k \in V, (j, k) \in A } y_{jk} = 1, \quad \forall j \in V \setminus \{1 \} \quad \\
+x_{ij} \in \{0, 1 \} \quad \\
+\end{align}
+\end{cases}
+\end{aligned}$$
+
+这里解释一下引入的新辅助变量 $y_{ij}$，可以视为边 $(i, j)$ 上载着的货物的流量。由于总共访问 $n$ 个节点，可以视为访问一个节点后，就在这个节点上卸下一个货，所以从该节点出发的那个边的流量就一定比到达该节点的那个边的流量小1 （对应Constr 5），同理，从起点出发的那个边的流量就一定是 $n - 1$ （对应Constr 4）。
+

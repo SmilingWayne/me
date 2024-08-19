@@ -1,3 +1,153 @@
+# 我的markdown调色盘
+
+## 风格配色汇总
+
+
+<table><tbody>
+<tr>
+    <th>配色风格</th><th>颜色RGB</th><th>颜色</th><th>配色风格</th><th>颜色RGB</th><th>颜色</th>
+</tr>
+
+<tr>
+<td rowspan="8"><font>Monet</font></td>
+<td><font>#9fbdd5</font></td><td bgcolor="#9fbdd5">#9fbdd5</td>
+<td rowspan="8"><font>Elegant</font></td>
+<td><font>#84a3a9</font></td><td bgcolor="#84a3a9">#84a3a9</td>
+</tr>
+<tr>
+<td><font>#d6e2ef</font></td><td bgcolor="#d6e2ef">#d6e2ef</td>
+<td><font>#597c8d</font></td><td bgcolor="#597c8d">#597c8d</td>
+</tr>
+<tr>
+<td><font>#cbc5d3</font></td><td bgcolor="#cbc5d3">#cbc5d3</td>
+<td><font>#d5ba82</font></td><td bgcolor="#d5ba82">#d5ba82</td>
+</tr>
+<tr>
+<td><font>#d1bdb6</font></td><td bgcolor="#d1bdb6">#d1bdb6</td>
+<td><font>#d6bbc1</font></td><td bgcolor="#d6bbc1">#d6bbc1</td>
+</tr>
+<tr>
+<td><font>#ada3a8</font></td><td bgcolor="#ada3a8">#ada3a8</td>
+<td><font>#b36a6f</font></td><td bgcolor="#b36a6f">#b36a6f</td>
+</tr>
+<tr>
+<td><font>#8f979a</font></td><td bgcolor="#8f979a">#8f979a</td>
+<td><font>-</font></td><td> - </td>
+</tr>
+<tr>
+<td><font>#e4dad1</font></td><td bgcolor="#e4dad1">#e4dad1</td>
+<td><font>-</font></td><td> - </td>
+</tr>
+<tr>
+<td><font>808e3d</font></td><td bgcolor="#808e3d">808e3d</td>
+<td><font>-</font></td><td> - </td>
+</tr>
+</table>
+
+----
+
+<table><tbody>
+<tr>
+    <th>配色风格</th><th>颜色RGB</th><th>颜色</th><th>配色风格</th><th>颜色RGB</th><th>颜色</th>
+</tr>
+<tr>
+<td rowspan="5"><font>VanGogh</font></td>
+<td><font>#4c6643</font></td><td bgcolor="#4c6643">#4c6643</td>
+<td rowspan="5"><font>CafeTarrence</font></td>
+<td><font>#6e77a2</font></td><td bgcolor="#6e77a2">#6e77a2</td>
+</tr>
+<tr>
+<td><font>#afcfa6</font></td><td bgcolor="#afcfa6">#afcfa6</td>
+<td><font>#85982c</font></td><td bgcolor="#85982c">#85982c</td>
+</tr>
+<tr>
+<td><font>#f5d44b</font></td><td bgcolor="#f5d44b">#f5d44b</td>
+<td><font>#c88324</font></td><td bgcolor="#c88324">#c88324</td>
+</tr>
+<tr>
+<td><font>#d47828</font></td><td bgcolor="#d47828">#d47828</td>
+<td><font>#edd464</font></td><td bgcolor="#edd464">#edd464</td>
+</tr>
+<tr>
+<td><font>#b73508</font></td><td bgcolor="#b73508">#b73508</td>
+<td><font>#dbd1b6</font></td><td bgcolor="#dbd1b6">#dbd1b6</td>
+</tr>
+<tr>
+</table>
+
+----
+
+<table><tbody>
+<tr>
+    <th>配色风格</th><th>颜色RGB</th><th>颜色</th><th>配色风格</th><th>颜色RGB</th><th>颜色</th>
+</tr>
+<tr>
+<td rowspan="7"><font>Irises</font></td>
+<td><font>#b7988f</font></td><td bgcolor="#b7988f">#b7988f</td>
+<td rowspan="7"><font>WheatFields</font></td>
+<td><font>#b9d8ab</font></td><td bgcolor="#b9d8ab">#b9d8ab</td>
+</tr>
+<tr>
+<td><font>#c59d17</font></td><td bgcolor="#c59d17">#c59d17</td>
+<td><font>#9bc07c</font></td><td bgcolor="#9bc07c">#9bc07c</td>
+</tr>
+<tr>
+<td><font>#92a761</font></td><td bgcolor="#92a761">#92a761</td>
+<td><font>#519b61</font></td><td bgcolor="#519b61">#519b61</td>
+</tr>
+<tr>
+<td><font>#75aa7a</font></td><td bgcolor="#75aa7a">#75aa7a</td>
+<td><font>#d2d478</font></td><td bgcolor="#d2d478">#d2d478</td>
+</tr>
+<tr>
+<td><font>#8ebcb7</font></td><td bgcolor="#8ebcb7">#8ebcb7</td>
+<td><font>#dbd1b6</font></td><td bgcolor="#dbd1b6">#dbd1b6</td>
+</tr>
+<tr>
+<td><font>#708ab9</font></td><td bgcolor="#708ab9">#708ab9</td>
+<td><font>#b0d4c5</font></td><td bgcolor="#b0d4c5">#b0d4c5</td>
+</tr>
+<tr>
+<td><font>#efdfbb</font></td><td bgcolor="#efdfbb">#efdfbb</td>
+<td><font>#b2c4d7</font></td><td bgcolor="#b2c4d7">#b2c4d7</td>
+</tr>
+</table>
+
+-----
+
+<table><tbody>
+<tr>
+    <th>配色风格</th><th>颜色RGB</th><th>颜色</th><th>配色风格</th><th>颜色RGB</th><th>颜色</th>
+</tr>
+<tr>
+<td rowspan="6"><font>Lolipop</font></td>
+<td><font>#7dabcf</font></td><td bgcolor="#7dabcf">#7dabcf</td>
+<td rowspan="6"><font>Macaron</font></td>
+<td><font>#000000</font></td><td bgcolor="#000000">#000000</td>
+</tr>
+<tr>
+<td><font>#cfe7eb</font></td><td bgcolor="#cfe7eb">#cfe7eb</td>
+<td><font>#e5ele0</font></td><td bgcolor="#e5ele0">#e5ele0</td>
+</tr>
+<tr>
+<td><font>#fbc1ad</font></td><td bgcolor="#fbc1ad">#fbc1ad</td>
+<td><font>#7dabcf</font></td><td bgcolor="#7dabcf">#7dabcf</td>
+</tr>
+<tr>
+<td><font>#f46e49</font></td><td bgcolor="#f46e49">#f46e49</td>
+<td><font>#f5cf36</font></td><td bgcolor="#f5cf36">#f5cf36</td>
+</tr>
+<tr>
+<td><font>#ffdf70</font></td><td bgcolor="#ffdf70">#ffdf70</td>
+<td><font>#d15c6b</font></td><td bgcolor="#d15c6b">#d15c6b</td>
+</tr>
+<tr>
+<td><font>#e5ele0</font></td><td bgcolor="#e5ele0">#e5ele0</td>
+<td><font>-</font></td><td> - </td>
+</tr>
+</table>
+
+
 <table><tbody>
     <tr>
         <th>方法说明</th><th>颜色名称</th><th>颜色</th>
@@ -145,3 +295,6 @@
 <tr><td><font color="black">Yellow</font></td><td><font color="Yellow">Yellow</font></td><td bgcolor="Yellow">#FFFF00</td></tr>
 <tr><td><font color="black">YellowGreen</font></td><td><font color="YellowGreen">YellowGreen</font></td><td bgcolor="YellowGreen">#9ACD32</td></tr>
 </table>
+
+
+----
