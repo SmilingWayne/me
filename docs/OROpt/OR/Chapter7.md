@@ -7,13 +7,18 @@
     1. [Stanford Course](https://web.stanford.edu/~ashishg/cs261/win21/notes/)
     2. [MIT Course (Old version)](https://ocw.mit.edu/courses/15-082j-network-optimization-fall-2010/download/)
 
-**图，(Graph)**，是一个由点集 $V$ 和 $V$ 中有限个元素的无序对构成的一个集合 $E$，二者组合形成的二元组。记为 $G = (V, E)$。 $V$ 中的元素 $v_i$ 称为顶点（Vertex），$E$ 中的元素称为边（Edge）。
+## 概念
 
-按照图中边的不同属性，可以分为**有向图、无向图**。
+**图，(Graph)**
+:   是一个由点集 $V$ 和 $V$ 中有限个元素的无序对构成的一个集合 $E$，二者组合形成的二元组。记为 $G = (V, E)$。 $V$ 中的元素 $v_i$ 称为顶点（Vertex），$E$ 中的元素称为边（Edge）。
+    
+    按照图中边的不同属性，可以分为**有向图、无向图**。
 
-一条边的两个端点如果相同，称为“环”。包含环的图，就是有环图。两个顶点如果有多重边，称为多重图。一个既没有环也没有多重边的图，称为**简单图**。
+    给边或者点赋予一定权重，表示类似成本、流量等的图，称为**赋权图**。
 
-给边或者点赋予一定权重，表示类似成本、流量等的图，称为**赋权图**。
+**环（Loop）**
+:   一条边的两个端点如果相同，称为“环”。包含环的图，就是有环图。两个顶点如果有多重边，称为多重图。==一个既没有环也没有多重边的图，称为**简单图**。==
+
 
 **连通图**
 :   如果一个图任意两点间至少存在一条链，那么这个图称为连通图；
@@ -37,16 +42,22 @@
 
 - 找每一个圈，把圈里最大的边删除掉，直到没有圈为止。
 
-## 最短路问题
+## 最短路问题: 建模、对偶问题
+
+**问题描述**
+:   设 $G = (V,E)$ 为连通图，$V$ (vertex) 表示图中的点的集合，$A$ (arcs)表示图中边的集合；图中各边 $(i, j)$ 有对应权重 $c_{ij}$，设 $s, t$ 为图中任意两点，求一条路径 （也就是一系列边的序列），使得它是从 $s$ 到 $t$ 的所有路径中总权最小的路径。
 
 
-### 最短路问题的建模(单源最短路)
+<!-- ![](https://datascience.lc/wp-content/uploads/2019/09/image-55-1024x585.png) -->
 
-决策变量： $x_{ij}$ 表示从 $i$ 到 $j$ 的边是否被选中。
 
-目标函数： $\min \sum_{i} \sum_j c_{ij} x_{ij}$
+**决策变量**
+:   $x_{ij}$ 一个 $0-1$ 变量，表示从 $i$ 到 $j$ 的边是否被选中。选中为$1$，否则$0$。
 
-约束条件：
+**目标函数**
+:   $$\min \sum \limits_{i \in V} \sum \limits_{j \in V} c_{ij} x_{ij}$$
+
+**约束条件**
 
 $$\begin{aligned}
 \sum_j x_{ij} - \sum_i x_{ji} =  \quad 
@@ -57,83 +68,185 @@ $$\begin{aligned}
 \end{cases}
 \end{aligned}$$
 
-如果精简一下，记图为 $G = (V, E)$, 决策变量精简为 $f_e$ 表明边 $e$ 是否被选择。写法是：
+如果精简一下，记图为 $G = (V, A)$, 决策变量精简为 $f_e$ 表明边 $e$ 是否被选择，这里为了和下面对偶问题结合起来，我们把这个变量松弛成一个线性变量。见（2）。
+
+$$\min \sum_{e\in E} f_e c_e$$
+
 
 $$\begin{aligned}
-\min \sum_{e\in E} f_e c_e \\
 \begin{cases}
-\sum_{(i, j) \in E} f_{(i,j)} - \sum_{(j, i) \in E} f_{(j, i)} & \geq d_j \quad \quad \forall j \in V  \\ 
+\begin{align}
+\sum_{(i, j) \in E} f_{(i,j)} - \sum_{(j, i) \in E} f_{(j, i)} & = d_j \quad \quad \forall j \in V  \\ 
 f_e & \geq 0 \quad \quad \forall e \in E
+\end{align}
 \end{cases}
 \end{aligned}$$
 
-其中 $d_j$ 是节点 $j$ 的度 （入 - 出）。并且等号约束松弛成标准形式 ($\geq$)
+其中 $d_j$ 是节点 $j$ 的度 （入度 - 出度）。最后路径上每个节点的度只有-1, 1, 0 三种。
 
 
-!!! question "针对这个建模的进一步思考"
-    最短路问题同样有对偶问题，那么这个对偶问题的含义是什么？
 
-定义一个向量 $d()$。长度是节点个数 $V$。记图为 $G = (V, E)$
+!!! question "针对这个建模的进一步思考：最短路问题的对偶问题。"
+    **最短路问题同样有对偶问题，那么这个对偶问题的含义是什么？**
 
-目标函数： $\max d(t) - d(s)$
+    为了方便写对偶问题，我们可以先把原问题约束 (1) 写成**对偶标准形式**(dual standard form)。（等号变大于等于，含义不变）
+    
+    $$\sum_{(i, j) \in E} f_{(i,j)} - \sum_{(j, i) \in E} f_{(j, i)}  \geq d_j \quad \quad \forall j \in V$$
 
-约束条件：
+    因为对于每个非start / terminal 节点，节点是流平衡的，而start节点的 $d_j = -1$，terminal 节点的 $d_j = 1$，所以所有节点的 (1) 约束加起来，可以写成 $0 \geq 0$。故而本质上该约束可替换等号。
+
+我们分析一下原来最短路问题的**矩阵表示**。
+
+$f_e = \begin{bmatrix} f_{(1,1)} & f_{(1,2)} & f_{(1,3)} & ... & f_{(2,3)} &  f_{(2,4)} & ... & f_{(a, b)}  \end{bmatrix}^T$，是一个向量，长度为边的数量。（2）对该向量里的每个元素做了约束。我们专注于约束（1），尤其是转化为对偶标准形式后的约束 （1）。
+
+可以看出，右端项 $d()$ 是一个长度为节点数的向量。除了start  / terminal 外，出入度均相等，于是：$d() = \begin{bmatrix} -1 & 0 & 0 & 0 & ... & 0 & 1 \end{bmatrix}^T$
+
+而左侧的系数矩阵，是一个 $V \times E$ 的矩阵。把所有的边提取成 $f_e$。对于如下的图：
+
+```mermaid
+flowchart LR
+    1-- (1,2) ---2
+    1-- (1,3) ---3
+    1-- (1,4) ---4
+    3-- (3,4) ---4
+    2-- (2,3) ----3
+    2-- (2,5) ----5
+    3-- (3,5) ---5
+```
+
+可以用下面的约束表示原问题：
+
+$$\begin{bmatrix}  -1 & -1 & -1 & 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 0 & -1 & -1 & 0 \\ 0 & 1 & 0 & 1 & 1 & 0 & -1 \\ 0 & 0 &  1 & -1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 1 & 1\end{bmatrix} \begin{bmatrix} f_{(1,2)} \\ f_{(1,3)} \\ f_{(1,4)} \\ f_{(4,3)} \\ f_{(2,3)} \\ f_{(3,5)} \\ f_{(3,7)} \end{bmatrix} = \begin{bmatrix} -1 \\ 0  \\ 0 \\ 0 \\ 1 \end{bmatrix}$$
+
+**系数矩阵实际上就是一个以列表示边、以行表示节点的图的关联矩阵。** 现在，我们开始写对偶问题。
+
+简单理解，我们把原问题的右端项移到目标函数上，目标函数的决策向量长度就是$d$的长度，也就是节点的数量。而右端项大部分是0，我们用 $l_v$ 表示原问题每个约束（其实就是每个节点 $v$ ）对应的对偶决策变量。可以看到除了start / terminal 外，其他节点的 $l_v$ 都是0，所以**对偶问题目标函数**即为：
+
+$$\max l_t - l_s$$
+
+其中 $l_t$ 对应 `terminal` 节点的对偶变量，$l_s$ 对应 `start` 节点的对偶变量。
+
+现在开始写**对偶问题的约束条件**。
+
+由于原问题的系数矩阵本身是边的关联矩阵，而原问题的每一列代表一条边出入节点的情况，只有一个$-1$和$1$，其余均为$0$，这个结构转置形成对偶问题的系数矩阵后，对应对偶问题决策变量的系数，所以对偶问题的约束中，每一行只有一个$-1$和$1$，其余系数为$0$. 转置后的行数对应原问题的列，也就说明，对偶问题的约束个数 = 边的个数。
+
+
+所以，**最短路问题的对偶问题**最终可以写成：
+
+$$\max l_t - l_s$$
 
 $$\begin{aligned}
-\text{s.t.} \begin{cases}
-d_v \geq 0 \quad \forall v \in V \\
-d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
+\begin{cases}
+\begin{align}
+l_q - l_p \leq c_{(p,q)}, \quad \forall (p,q) \in E \quad \\
+l_v \geq 0, \quad \forall v \in V \quad 
+\end{align}
 \end{cases}
 \end{aligned}$$
 
-**解释**
-:   这里需要再次回到“对偶”的概念上。找从 $i$ 到 $j$ 的最短路，也就是要在对偶可行的基础上，最大化 $d(v)$.
+$l_q$ 和 $l_p$  是由每个边 $(p,q)$ 的节点决定的，对应的是原问题的约束条件里与节点 $p$ 和 $q$ 有关的对偶变量。
 
-    为什么目标函数只有两个值了：因为原问题的约束的右端，只有0，1，-1三个值，并且流平衡约束的参数是 0，所以实际上只有两个非 0 右端。对应到目标函数上。
+!!! note "一个启发式的理解思路。"
+    可以把原来的图中的每一个边想象成一个无法被拉伸的线，以节点相连接，边 $e$ 的长度是 $c_e$，现在一只手拎住起点 $s$，一只手拎住重点 $t$ ，尽可能地把这个提线木偶一样的东西捋直、捋顺，（也可以理解为拎着起点，让图自然下垂）。
 
-进一步简化：
+    此时有一些边因为比较长，会悬挂在边上（比如下图中的边 $(1,3), (3,5), (5,4)$，有一些边自然下垂 $(1,2), (2,5)$。
 
-目标函数： $\max d(t)$
-
-约束条件：
-
-$$\begin{aligned}
-\text{s.t.} \begin{cases}
-d_s = 0 \\
-d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
-\end{cases}
-\end{aligned}$$
-
-怎么有启发地理解这个模型呢。就是我们把每个边想象成一个静止长度 $c_e$ 的弹簧。把开始节点设为 0.尝试把这个图拉伸得尽可能地长，直到不能拉伸任何弹簧。我们整个图能被拉伸的最长的距离，也就是从 $s$ 到 $t$ 的最短路。*（这个仔细理解，会发现简直妙极）*
+    等这张图不能再继续下垂（不能继续被你拉长捋得更顺了），此时从 $s$ 到 $t$ 的距离一定是最长的（朴实地形容就是：我们无法再捋任何一条边使得从s到t更长了），这就对应的是我们的**对偶问题**；
+    
+    反过来来想，这条从 $s$ 到 $t$ 的路径，也就是从 $s$ 到 $t$ 的最短路，因为如果不走这个路，必须要从那些悬挂着的边上走，这些边明显没有被拉紧，也就一定不会比我这条路更短了。这种方式下，对应的就是我们的**原问题**：最短路问题。
 
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202406120857738.png)
 
 !!! quote "[参考链接：MIT](https://ocw.mit.edu/courses/15-082j-network-optimization-fall-2010/87ee338a701dcd52784c86daef642113_MIT15_082JF10_lec15.pdf) | [参考链接：Stanford](https://web.stanford.edu/~ashishg/cs261/win21/notes/l9_note.pdf)"
 
 
-### Dijkstra 算法（单源最短路）
+## 求解最短路问题： Dijkstra 算法（单源最短路）
 
 !!! abstract "关于Dijkstra算法"
-    一种用于计算从单个源节点到图中所有其他节点的最短路径的算法。适用于加权图，其中要求**边的权重为非负值**
+    一种用于计算从单个源节点到图中所有其他节点的最短路径的算法。适用于加权图，其中要求**边的权重为非负值**。
 
-![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202407222344256.gif)
+<!-- ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202407222344256.gif) -->
 
 
+- Dijkstra算法采用的是一种==贪心==的策略。声明一个列表`dis`来保存**源点到各个顶点的最短距离**，并用一个集合 $T$ 保存**已经找到了最短路径的顶点的集合**。每次都从当前能抵达的节点中的最近节点出发，继续下一步寻路的过程，直到抵达目的地。
 
-- 找到从某地到某地最短的路径：广度优先搜索解决赋权有向图或者无向图的单源最短路径问题；Dijkstra算法采用的是一种贪心的策略，声明一个数组dis来保存源点到各个顶点的最短距离和一个保存已经找到了最短路径的顶点的集合，初始时，原点 s 的路径权重被赋为 0 。若对于顶点 s 存在能直接到达的边（s,m），则把dis[m]设为w（s, m）,同时把所有其他（s不能直接到达的）顶点的路径长度设为无穷大。初始时，集合T只有顶点s。 
-- 然后，从dis数组选择最小值，则该值就是源点s到该值对应的顶点的最短路径，并且把该点加入到T中，OK，此时完成一个顶点，然后，我们需要看看新加入的顶点是否可以到达其他顶点并且看看通过该顶点到达其他点的路径长度是否比源点直接到达短，如果是，那么就替换这些顶点在dis中的值。 
-- 然后，又从dis中找出最小值，重复上述动作，直到T中包含了图的所有顶点。
+**步骤**
+
+:   1. 初始时，源点 $s$ 的路径权重被赋为 0 。若对于顶点 $s$, 存在能走行的边 $(s,m)$ （意思是可以到达节点 $m$），则把 `dis[m]`设为 $c_{sm}$，同时把到所有其他的节点（也就是$s$在这一步无法到达的节点）的长度设为无穷大。这一步骤，集合`T`中仅包含源点。
+    2. 从列表`dis`中选择**最小值**，以及这个最小值对应的节点（记为 $z$）。该值就是源点 $s$ 到该节点 $z$ 的最短路径。把该点加入到 $T$ 中。OK，此时已经找到了一个点的最短路，但还没到达目标节点。
+    3. 这时，我们需要看，新加入的顶点 $z$ 是否可以**到达其他节点**，并且看看通过该节点到达其他点的路径长度是否比当前`dis`中存储的“当前最短路”要更短。如果是，那么就**更新**这些顶点在 `dis` 中的值。 
+    4. 更新完毕后，继续重复 3, 直到 $T$ 中包含了图的所有顶点。
 
 !!! warning "注意！"
-    - 无法处理负权问题
-    - 节点较多的话，计算量会加大
+    - 无法处理负权问题。
+    - 节点较多的话，计算量会加大。
 
+伪代码如下：
 
-### Floyd算法 （多源最短路）
+![](https://img2018.cnblogs.com/blog/1903168/201912/1903168-20191220004845529-3040599.jpg)
 
-- Floyd算法又称为插点法，是一种利用**动态规划的思想**寻找给定的加权图中多源点之间最短路径的算法，
+当然，在编程实现的过程中，会涉及到：**从当前所有可达节点中选择路径最短的那个节点**的过程，一般而言会通过**优先队列**来实现。
 
-- 通过一个图的权值矩阵求出它的每两点间的最短路径矩阵。
+```Python
+import heapq
+def dijkstra(graph, start, end):
+    """
+    实现Dijkstra算法，计算从起点到给定终点的最短路径和路径长度。
+    """
+    # 初始化距离字典和前驱节点字典
+    distances = {vertex: float('infinity') for vertex in graph}
+    distances[start] = 0
+    predecessors = {vertex: None for vertex in graph}
+    # 使用优先队列来存储和获取当前已知的最短距离的节点
+    priority_queue = [(0, start)]
+    while priority_queue:
+        current_distance, current_vertex = heapq.heappop(priority_queue)
+        # 如果到达终点，构建路径并返回结果
+        if current_vertex == end:
+            path = []
+            while current_vertex is not None:
+                path.append(current_vertex)
+                current_vertex = predecessors[current_vertex]
+            path.reverse()  # 逆序
+            return current_distance, path
+        # 如果从优先队列中取出的距离大于当前记录的距离，继续
+        if current_distance > distances[current_vertex]:
+            continue
+        # 遍历当前节点的所有邻接节点
+        for neighbor, weight in graph[current_vertex].items():
+            distance = current_distance + weight
+            # 只有当计算出的新距离小于当前记录的距离时，才更新距离和前驱节点，并将邻接节点添加到优先队列
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                predecessors[neighbor] = current_vertex
+                heapq.heappush(priority_queue, (distance, neighbor))
+    return float('infinity'), []  # 如果终点不可达，返回无穷大距离和空路径
+
+# 测试用的图数据
+graph = {
+    'A': {'B': 1, 'C': 4},
+    'B': {'A': 1, 'C': 2, 'D': 5},
+    'C': {'A': 4, 'B': 2, 'D': 1, 'E': 3},
+    'D': {'B': 5, 'C': 1, 'E': 5},
+    'E': {}
+}
+
+# 调用Dijkstra算法
+start_node = 'A'
+end_node = 'E'
+distance, path = dijkstra(graph, start_node, end_node)
+
+# 输出结果
+print(f"从起点 {start_node} 到终点 {end_node} 的最短路径距离为：{distance}")
+print(f"从 {start_node} 到 {end_node} 的最短路径为：{' -> '.join(path)}")
+
+```
+
+## 求解最短路问题：Floyd算法 （多源最短路）
+
+!!! quote "Floyd算法又称为插点法，是一种利用**动态规划的思想**寻找给定的加权图中多源点之间最短路径的算法。相比Dijkstra，**Floyd算法适用于负权图。**"
+    思路是基于一个图的权值矩阵，求出它的每两点间的最短路径矩阵。
+
 - 我们的点如果在最短路上，那么我们用这个点去松弛最短路上的边的话，必定会松弛成功。因此，我们要想知道一个点在哪些点的最短路上，我们只需要用这个点去松弛所有边即可，松弛指的就是，把这个点作为一个“中转点”，遍历其出度和入度，如果距离更短就刷新图；
 - 从一开始的邻接矩阵，遍历所有的节点，每次加入新结点都要更新==所有顶点之间的最短距离==，直到==所有顶点均可以作为中间顶点==之后（也就是对所有点都做了一次松弛），才算更新完毕，即可得到最终结果。
 
@@ -141,13 +254,12 @@ d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
 2. 计算 $D^{(k)} = (d^{(k)}_{ij})_{n \times n}$，其中： $d^{(k)}_{ij} = \min \{ d^{(k - 1)}_{ij}, d^{(k - 1)}_{ik} + d^{(k - 1)}_{kj} \}$
 3. $D^{(n)} = (d^{(n)}_{ij})_{n \times n}$，元素 $d^{(n)}_{ij}$ 就是从 $i$ 到 $j$ 的最短路长。
 
-----
-
-
 
 例题：给定初始矩阵，求任意两点的最短路长。
 
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202406120859048.png)
+
+首先输入我们的权重矩阵，把边的权重输入进去。
 
 $$D = D^{(0)} = \begin{bmatrix}
 0 & 5 & 1 & 2 & \infty \\
@@ -157,50 +269,67 @@ $$D = D^{(0)} = \begin{bmatrix}
 \infty & 2 & 4 & 4 & 0
 \end{bmatrix}$$
 
-开始计算！
+首先，我们输入权重矩阵（如上），$a_{ij}$ 表示从$i$到$j$的距离。开始计算！
 
+我们会依次固定网络中每一个节点。假设我们固定节点1，也就是先固定第1行和第1列的所有元素，对于矩阵中其他的元素，假设它的位置是 $(i,j)$，也就是第 $i$ 行第 $j$ 列，那么将原来的值 $a_{ij}$ 与第 $1$ 列第 $i$ 行和第 $1$ 行第 $j$ 列的元素的和进行比较： $a_{ij} = \min \{ a_{ij}, a_{0j} + a_{i0}\}$，进行更新。
+
+以此类推，第二次迭代专注节点2，第三次迭代专注节点3...，推广：如果我们专注于节点  $k$，那么固定第 $k$ 行和第 $k$ 列的元素不变，对于其他的元素，$a_{ij} = \min \{ a_{ij}, a_{kj} + a_{ik}\}$
 
 $$D^{(1)} = \begin{bmatrix}
-0 & 5 & 1 & 2 & \infty \\
-5 & 0 & (6) & (7) & 2 \\
-2 & 3 & 0 & 2 & 8 \\
-2 & (7) & (3) & 0 & 4 \\
+\colorbox{yellow}{0} & \colorbox{yellow}{5} & \colorbox{yellow}{1} & \colorbox{yellow}{2} & \infty \\
+\colorbox{yellow}{5} & 0 & (6) & (7) & 2 \\
+\colorbox{yellow}{2} & 3 & 0 & 2 & 8 \\
+\colorbox{yellow}{2} & (7) & (3) & 0 & 4 \\
 \infty & 2 & 4 & 4 & 0
 \end{bmatrix}, D^{(2)} = \begin{bmatrix}
-0 & 5 & 1 & 2 & (7) \\
-5 & 0 & 6 & 7 & 2 \\
-2 & 3 & 0 & 2 & (5) \\
-2 & 7 & 3 & 0 & 4 \\
-(7) & 2 & 4 & 4 & 0
+0 & \colorbox{yellow}{5} & 1 & 2 & (7) \\
+\colorbox{yellow}{5} & \colorbox{yellow}{0} & \colorbox{yellow}{6} & \colorbox{yellow}{7} & \colorbox{yellow}{2} \\
+2 & \colorbox{yellow}{3} & 0 & 2 & (5) \\
+2 & \colorbox{yellow}{7} & 3 & 0 & 4 \\
+(7) & \colorbox{yellow}{2} & 4 & 4 & 0
 \end{bmatrix}$$
 
 $$D^{(3)} = \begin{bmatrix}
-0 & (4) & 1 & 2 & (6) \\
-5 & 0 & 6 & 7 & 2 \\
-2 & 3 & 0 & 2 & 5 \\
-2 & (6) & 3 & 0 & 4 \\
-(6) & 2 & 4 & 4 & 0
+0 & (4) & \colorbox{yellow}{1} & 2 & (6) \\
+5 & 0 & \colorbox{yellow}{6} & 7 & 2 \\
+\colorbox{yellow}{2} & \colorbox{yellow}{3} & \colorbox{yellow}{0} & \colorbox{yellow}{2} & \colorbox{yellow}{5}\\
+2 & (6) & \colorbox{yellow}{3} & 0 & 4 \\
+(6) & 2 & \colorbox{yellow}{4} & 4 & 0
 \end{bmatrix}, D^{(4)} = \begin{bmatrix}
-0 & 4 & 1 & 2 & (6) \\
-5 & 0 & 6 & 7 & 2 \\
-2 & 3 & 0 & 2 & 5 \\
-2 & 6 & 3 & 0 & 4 \\
-6 & 2 & 4 & 4 & 0
+0 & 4 & 1 & \colorbox{yellow}{2} & (6) \\
+5 & 0 & 6 & \colorbox{yellow}{7} & 2 \\
+2 & 3 & 0 & \colorbox{yellow}{2} & 5 \\
+\colorbox{yellow}{2} & \colorbox{yellow}{6} & \colorbox{yellow}{3} & \colorbox{yellow}{0} & \colorbox{yellow}{4} \\
+6 & 2 & 4 & \colorbox{yellow}{4} & 0
 \end{bmatrix},$$
 
 $$D^{(5)} = \begin{bmatrix}
-0 & 4 & 1 & 2 & 6 \\
-5 & 0 & 6 & (6) & 2 \\
-2 & 3 & 0 & 2 & 5 \\
-2 & 6 & 3 & 0 & 4 \\
-6 & 2 & 4 & 4 & 0
+0 & 4 & 1 & 2 & \colorbox{yellow}{6} \\
+5 & 0 & 6 & (6) & \colorbox{yellow}{2} \\
+2 & 3 & 0 & 2 & \colorbox{yellow}{5} \\
+2 & 6 & 3 & 0 & \colorbox{yellow}{4} \\
+\colorbox{yellow}{6} & \colorbox{yellow}{2} & \colorbox{yellow}{4} & \colorbox{yellow}{4} & \colorbox{yellow}{0}
 \end{bmatrix},$$
+
+```Python
+
+def floydWarshall(graph):
+    dist = list(map(lambda i: list(map(lambda j: j, i)), graph))
+    for k in range(V):
+        for i in range(V):
+            for j in range(V):
+                dist[i][j] = min(dist[i][j],
+                                 dist[i][k] + dist[k][j])
+
+```
+
+!!! note "如果我不仅想知道最短路径多长，还想知道最短路径是什么，怎么修改？"
+    - 增加一个路径矩阵，记录路径，每次更新最短路径的时候，把路径矩阵也更新一下即可。
 
 
 !!! warning "注意"
     不能把负权加上最小的负数变整数这种做法，因为不是分阶段的问题，不能单纯地用DP的思想去解决。
 
-    如果想要知道路径，还需要增加一个路由矩阵。
 
 ## 最大流问题
 
@@ -234,10 +363,6 @@ $$D^{(5)} = \begin{bmatrix}
 
 - 输油管道，每个管道有运油量约束和成本，现在要从一个出发地运送特定数量的油（小于最大流的数量）到某个目的地，怎么运输，让成本最小。
 
-1. 数学模型
-2. 标号算法
-3. 具体求解
-4. 用它来表示其他问题
 
 - 思路：尽可能发挥费用少的链路的潜力，寻找一条从i到j的费用最少的链路，并使得它的潜力充分发挥出来，直到达到运输数量要求； 总是在费用最小的增广路上增加流值，直到流值达到v。
 - 标号算法
@@ -247,7 +372,7 @@ $$D^{(5)} = \begin{bmatrix}
 4. 重复1-3操作，不过找最短路时候可以用枚举法操作结束的标志就是再也不存在一条从起点到终点的最短路；
       1. 注意：如果遇到了逆向流，流量最小值要用其原本的流量大小进行比较；
 
-!!! Tip
+!!! Tip ""
     Ford-Fulkerson 的核心在于“塑造反向弧”，给了一个“纠错”的空间。使得一个已有的（但是效果不那么好的）可行的解可以在后续找的过程中被优化；
 
 ### 用最小费用流表示其他问题的建模
