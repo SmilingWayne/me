@@ -62,8 +62,8 @@
 $$\begin{aligned}
 \sum_j x_{ij} - \sum_i x_{ji} =  \quad 
 \begin{cases}
--1. \quad i = \text{start} \\ 
-1 \quad i = \text{terminal} \quad \quad \forall i \in V\\ 
+1 \quad i = \text{start} \\ 
+-1 \quad i = \text{terminal} \quad \quad \forall i \in V\\ 
 0 \quad else
 \end{cases}
 \end{aligned}$$
@@ -82,7 +82,7 @@ f_e & \geq 0 \quad \quad \forall e \in E
 \end{cases}
 \end{aligned}$$
 
-其中 $d_j$ 是节点 $j$ 的度 （入度 - 出度）。最后路径上每个节点的度只有-1, 1, 0 三种。
+其中 $d_j$ 是节点 $j$ 的度 （出度 - 入度）。最后路径上每个节点的度只有-1, 1, 0 三种。
 
 
 
@@ -93,13 +93,13 @@ f_e & \geq 0 \quad \quad \forall e \in E
     
     $$\sum_{(i, j) \in E} f_{(i,j)} - \sum_{(j, i) \in E} f_{(j, i)}  \geq d_j \quad \quad \forall j \in V$$
 
-    因为对于每个非start / terminal 节点，节点是流平衡的，而start节点的 $d_j = -1$，terminal 节点的 $d_j = 1$，所以所有节点的 (1) 约束加起来，可以写成 $0 \geq 0$。故而本质上该约束可替换等号。
+    因为对于每个非start / terminal 节点，节点是流平衡的，而start节点的 $d_j = 1$，terminal 节点的 $d_j = -1$，所以所有节点的 (1) 约束加起来，可以写成 $0 \geq 0$。故而本质上该约束可替换等号。
 
 我们分析一下原来最短路问题的**矩阵表示**。
 
 $f_e = \begin{bmatrix} f_{(1,1)} & f_{(1,2)} & f_{(1,3)} & ... & f_{(2,3)} &  f_{(2,4)} & ... & f_{(a, b)}  \end{bmatrix}^T$，是一个向量，长度为边的数量。（2）对该向量里的每个元素做了约束。我们专注于约束（1），尤其是转化为对偶标准形式后的约束 （1）。
 
-可以看出，右端项 $d()$ 是一个长度为节点数的向量。除了start  / terminal 外，出入度均相等，于是：$d() = \begin{bmatrix} -1 & 0 & 0 & 0 & ... & 0 & 1 \end{bmatrix}^T$
+可以看出，右端项 $d()$ 是一个长度为节点数的向量。除了start  / terminal 外，出入度均相等，于是：$d() = \begin{bmatrix} 1 & 0 & 0 & 0 & ... & 0 & -1 \end{bmatrix}^T$
 
 而左侧的系数矩阵，是一个 $V \times E$ 的矩阵。把所有的边提取成 $f_e$。对于如下的图：
 
@@ -116,13 +116,13 @@ flowchart LR
 
 可以用下面的约束表示原问题：
 
-$$\begin{bmatrix}  -1 & -1 & -1 & 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 0 & -1 & -1 & 0 \\ 0 & 1 & 0 & 1 & 1 & 0 & -1 \\ 0 & 0 &  1 & -1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 1 & 1\end{bmatrix} \begin{bmatrix} f_{(1,2)} \\ f_{(1,3)} \\ f_{(1,4)} \\ f_{(4,3)} \\ f_{(2,3)} \\ f_{(3,5)} \\ f_{(3,7)} \end{bmatrix} = \begin{bmatrix} -1 \\ 0  \\ 0 \\ 0 \\ 1 \end{bmatrix}$$
+$$\begin{bmatrix}  1 & 1 & 1 & 0 & 0 & 0 & 0 \\ -1 & 0 & 0 & 0 & 1 & 1 & 0 \\ 0 & -1 & 0 & -1 & -1 & 0 & 1 \\ 0 & 0 &  -1 & 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 & -1 & -1\end{bmatrix} \begin{bmatrix} f_{(1,2)} \\ f_{(1,3)} \\ f_{(1,4)} \\ f_{(3,4)} \\ f_{(2,3)} \\ f_{(3,5)} \\ f_{(3,7)} \end{bmatrix} = \begin{bmatrix} 1 \\ 0  \\ 0 \\ 0 \\ -1 \end{bmatrix}$$
 
 **系数矩阵实际上就是一个以列表示边、以行表示节点的图的关联矩阵。** 现在，我们开始写对偶问题。
 
 简单理解，我们把原问题的右端项移到目标函数上，目标函数的决策向量长度就是$d$的长度，也就是节点的数量。而右端项大部分是0，我们用 $l_v$ 表示原问题每个约束（其实就是每个节点 $v$ ）对应的对偶决策变量。可以看到除了start / terminal 外，其他节点的 $l_v$ 都是0，所以**对偶问题目标函数**即为：
 
-$$\max l_t - l_s$$
+$$\max l_s - l_t$$
 
 其中 $l_t$ 对应 `terminal` 节点的对偶变量，$l_s$ 对应 `start` 节点的对偶变量。
 
@@ -133,18 +133,18 @@ $$\max l_t - l_s$$
 
 所以，**最短路问题的对偶问题**最终可以写成：
 
-$$\max l_t - l_s$$
+$$\max l_s - l_t$$
 
 $$\begin{aligned}
 \begin{cases}
 \begin{align}
-l_q - l_p \leq c_{(p,q)}, \quad \forall (p,q) \in E \quad \\
+l_p - l_q \leq c_{(p,q)}, \quad \forall (p,q) \in E \quad \\
 l_v \geq 0, \quad \forall v \in V \quad 
 \end{align}
 \end{cases}
 \end{aligned}$$
 
-$l_q$ 和 $l_p$  是由每个边 $(p,q)$ 的节点决定的，对应的是原问题的约束条件里与节点 $p$ 和 $q$ 有关的对偶变量。
+$l_p$ 和 $l_q$  是由每个边 $(p,q)$ 的节点决定的，对应的是原问题的约束条件里与节点 $p$ 和 $q$ 有关的对偶变量。
 
 !!! note "一个启发式的理解思路。"
     可以把原来的图中的每一个边想象成一个无法被拉伸的线，以节点相连接，边 $e$ 的长度是 $c_e$，现在一只手拎住起点 $s$，一只手拎住重点 $t$ ，尽可能地把这个提线木偶一样的东西捋直、捋顺，（也可以理解为拎着起点，让图自然下垂）。
