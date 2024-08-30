@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.33">
     
     
       
@@ -54,9 +54,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
     
-      <link rel="stylesheet" href="https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css">
-    
-      <link rel="stylesheet" href="https://cdn.tonycrane.cc/lxgw/lxgwscreen.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
@@ -8890,6 +8888,15 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
+      概念
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
       最小生成树
     </span>
   </a>
@@ -8921,44 +8928,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      最短路问题
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="最短路问题">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      最短路问题的建模(单源最短路)
+      最短路问题: 建模、对偶问题
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#dijkstra" class="md-nav__link">
     <span class="md-ellipsis">
-      Dijkstra 算法（单源最短路）
+      求解最短路问题： Dijkstra 算法（单源最短路）
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#floyd" class="md-nav__link">
     <span class="md-ellipsis">
-      Floyd算法 （多源最短路）
+      求解最短路问题：Floyd算法 （多源最短路）
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -13876,6 +13868,15 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
+      概念
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
       最小生成树
     </span>
   </a>
@@ -13907,44 +13908,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      最短路问题
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="最短路问题">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      最短路问题的建模(单源最短路)
+      最短路问题: 建模、对偶问题
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#dijkstra" class="md-nav__link">
     <span class="md-ellipsis">
-      Dijkstra 算法（单源最短路）
+      求解最短路问题： Dijkstra 算法（单源最短路）
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#floyd" class="md-nav__link">
     <span class="md-ellipsis">
-      Floyd算法 （多源最短路）
+      求解最短路问题：Floyd算法 （多源最短路）
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -14026,7 +14012,7 @@
 
 <h1 id="_1">图论<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 3038 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 10 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 4774 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 61 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 17 分钟</p>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">路径规划的必修课。</p>
@@ -14036,17 +14022,22 @@
 <li><a href="https://ocw.mit.edu/courses/15-082j-network-optimization-fall-2010/download/">MIT Course (Old version)</a></li>
 </ol>
 </div>
-<p><strong>图，(Graph)</strong>，是一个由点集 <span class="arithmatex">\(V\)</span> 和 <span class="arithmatex">\(V\)</span> 中有限个元素的无序对构成的一个集合 <span class="arithmatex">\(E\)</span>，二者组合形成的二元组。记为 <span class="arithmatex">\(G = (V, E)\)</span>。 <span class="arithmatex">\(V\)</span> 中的元素 <span class="arithmatex">\(v_i\)</span> 称为顶点（Vertex），<span class="arithmatex">\(E\)</span> 中的元素称为边（Edge）。</p>
-<p>按照图中边的不同属性，可以分为<strong>有向图、无向图</strong>。</p>
-<p>一条边的两个端点如果相同，称为“环”。包含环的图，就是有环图。两个顶点如果有多重边，称为多重图。一个既没有环也没有多重边的图，称为<strong>简单图</strong>。</p>
-<p>给边或者点赋予一定权重，表示类似成本、流量等的图，称为<strong>赋权图</strong>。</p>
+<h2 id="_2">概念<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <dl>
+<dt><strong>图，(Graph)</strong></dt>
+<dd>
+<p>是一个由点集 <span class="arithmatex">\(V\)</span> 和 <span class="arithmatex">\(V\)</span> 中有限个元素的无序对构成的一个集合 <span class="arithmatex">\(E\)</span>，二者组合形成的二元组。记为 <span class="arithmatex">\(G = (V, E)\)</span>。 <span class="arithmatex">\(V\)</span> 中的元素 <span class="arithmatex">\(v_i\)</span> 称为顶点（Vertex），<span class="arithmatex">\(E\)</span> 中的元素称为边（Edge）。</p>
+<p>按照图中边的不同属性，可以分为<strong>有向图、无向图</strong>。</p>
+<p>给边或者点赋予一定权重，表示类似成本、流量等的图，称为<strong>赋权图</strong>。</p>
+</dd>
+<dt><strong>环（Loop）</strong></dt>
+<dd>一条边的两个端点如果相同，称为“环”。包含环的图，就是有环图。两个顶点如果有多重边，称为多重图。<mark>一个既没有环也没有多重边的图，称为<strong>简单图</strong>。</mark></dd>
 <dt><strong>连通图</strong></dt>
 <dd>如果一个图任意两点间至少存在一条链，那么这个图称为连通图；</dd>
 <dt><strong>树</strong></dt>
 <dd>连通且不含圈的无向图称为树；</dd>
 </dl>
-<h2 id="_2">最小生成树<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<h2 id="_3">最小生成树<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
 <h3 id="prim">Prim算法<a class="headerlink" href="#prim" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li>每次从没有选的边里选一条边，这个边权值要尽可能地小，并且使它和已有的不够成圈，直到选够 <span class="arithmatex">\(n - 1\)</span> 个边为止。</li>
@@ -14060,101 +14051,198 @@
 <ul>
 <li>找每一个圈，把圈里最大的边删除掉，直到没有圈为止。</li>
 </ul>
-<h2 id="_3">最短路问题<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
-<h3 id="_4">最短路问题的建模(单源最短路)<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
-<p>决策变量： <span class="arithmatex">\(x_{ij}\)</span> 表示从 <span class="arithmatex">\(i\)</span> 到 <span class="arithmatex">\(j\)</span> 的边是否被选中。</p>
-<p>目标函数： <span class="arithmatex">\(\min \sum_{i} \sum_j c_{ij} x_{ij}\)</span></p>
-<p>约束条件：</p>
+<h2 id="_4">最短路问题: 建模、对偶问题<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
+<dl>
+<dt><strong>问题描述</strong></dt>
+<dd>设 <span class="arithmatex">\(G = (V,E)\)</span> 为连通图，<span class="arithmatex">\(V\)</span> (vertex) 表示图中的点的集合，<span class="arithmatex">\(A\)</span> (arcs)表示图中边的集合；图中各边 <span class="arithmatex">\((i, j)\)</span> 有对应权重 <span class="arithmatex">\(c_{ij}\)</span>，设 <span class="arithmatex">\(s, t\)</span> 为图中任意两点，求一条路径 （也就是一系列边的序列），使得它是从 <span class="arithmatex">\(s\)</span> 到 <span class="arithmatex">\(t\)</span> 的所有路径中总权最小的路径。</dd>
+</dl>
+<!-- ![](https://datascience.lc/wp-content/uploads/2019/09/image-55-1024x585.png) -->
+
+<dl>
+<dt><strong>决策变量</strong></dt>
+<dd><span class="arithmatex">\(x_{ij}\)</span> 一个 <span class="arithmatex">\(0-1\)</span> 变量，表示从 <span class="arithmatex">\(i\)</span> 到 <span class="arithmatex">\(j\)</span> 的边是否被选中。选中为<span class="arithmatex">\(1\)</span>，否则<span class="arithmatex">\(0\)</span>。</dd>
+<dt><strong>目标函数</strong></dt>
+<dd>
+<pre class="arithmatex">\[\min \sum \limits_{i \in V} \sum \limits_{j \in V} c_{ij} x_{ij}\]</pre>
+</dd>
+</dl>
+<p><strong>约束条件</strong></p>
 <pre class="arithmatex">\[\begin{aligned}
 \sum_j x_{ij} - \sum_i x_{ji} =  \quad 
 \begin{cases}
--1. \quad i = \text{start} \\ 
-1 \quad i = \text{terminal} \quad \quad \forall i \in V\\ 
+1 \quad i = \text{start} \\ 
+-1 \quad i = \text{terminal} \quad \quad \forall i \in V\\ 
 0 \quad else
 \end{cases}
 \end{aligned}\]</pre>
-<p>如果精简一下，记图为 <span class="arithmatex">\(G = (V, E)\)</span>, 决策变量精简为 <span class="arithmatex">\(f_e\)</span> 表明边 <span class="arithmatex">\(e\)</span> 是否被选择。写法是：</p>
+<p>如果精简一下，记图为 <span class="arithmatex">\(G = (V, A)\)</span>, 决策变量精简为 <span class="arithmatex">\(f_e\)</span> 表明边 <span class="arithmatex">\(e\)</span> 是否被选择，这里为了和下面对偶问题结合起来，我们把这个变量松弛成一个线性变量。见（2）。</p>
+<pre class="arithmatex">\[\min \sum_{e\in E} f_e c_e\]</pre>
 <pre class="arithmatex">\[\begin{aligned}
-\min \sum_{e\in E} f_e c_e \\
 \begin{cases}
-\sum_{(i, j) \in E} f_{(i,j)} - \sum_{(j, i) \in E} f_{(j, i)} &amp; \geq d_j \quad \quad \forall j \in V  \\ 
+\begin{align}
+\sum_{(i, j) \in E} f_{(i,j)} - \sum_{(j, i) \in E} f_{(j, i)} &amp; = d_j \quad \quad \forall j \in V  \\ 
 f_e &amp; \geq 0 \quad \quad \forall e \in E
+\end{align}
 \end{cases}
 \end{aligned}\]</pre>
-<p>其中 <span class="arithmatex">\(d_j\)</span> 是节点 <span class="arithmatex">\(j\)</span> 的度 （入 - 出）。并且等号约束松弛成标准形式 (<span class="arithmatex">\(\geq\)</span>)</p>
+<p>其中 <span class="arithmatex">\(d_j\)</span> 是节点 <span class="arithmatex">\(j\)</span> 的度 （出度 - 入度）。最后路径上每个节点的度只有-1, 1, 0 三种。</p>
 <div class="admonition question">
-<p class="admonition-title">针对这个建模的进一步思考</p>
-<p>最短路问题同样有对偶问题，那么这个对偶问题的含义是什么？</p>
+<p class="admonition-title">针对这个建模的进一步思考：最短路问题的对偶问题。</p>
+<p><strong>最短路问题同样有对偶问题，那么这个对偶问题的含义是什么？</strong></p>
+<p>为了方便写对偶问题，我们可以先把原问题约束 (1) 写成<strong>对偶标准形式</strong>(dual standard form)。（等号变大于等于，含义不变）</p>
+<pre class="arithmatex">\[\sum_{(i, j) \in E} f_{(i,j)} - \sum_{(j, i) \in E} f_{(j, i)}  \geq d_j \quad \quad \forall j \in V\]</pre>
+<p>因为对于每个非start / terminal 节点，节点是流平衡的，而start节点的 <span class="arithmatex">\(d_j = 1\)</span>，terminal 节点的 <span class="arithmatex">\(d_j = -1\)</span>，所以所有节点的 (1) 约束加起来，可以写成 <span class="arithmatex">\(0 \geq 0\)</span>。故而本质上该约束可替换等号。</p>
 </div>
-<p>定义一个向量 <span class="arithmatex">\(d()\)</span>。长度是节点个数 <span class="arithmatex">\(V\)</span>。记图为 <span class="arithmatex">\(G = (V, E)\)</span></p>
-<p>目标函数： <span class="arithmatex">\(\max d(t) - d(s)\)</span></p>
-<p>约束条件：</p>
+<p>我们分析一下原来最短路问题的<strong>矩阵表示</strong>。</p>
+<p><span class="arithmatex">\(f_e = \begin{bmatrix} f_{(1,1)} &amp; f_{(1,2)} &amp; f_{(1,3)} &amp; ... &amp; f_{(2,3)} &amp;  f_{(2,4)} &amp; ... &amp; f_{(a, b)}  \end{bmatrix}^T\)</span>，是一个向量，长度为边的数量。（2）对该向量里的每个元素做了约束。我们专注于约束（1），尤其是转化为对偶标准形式后的约束 （1）。</p>
+<p>可以看出，右端项 <span class="arithmatex">\(d()\)</span> 是一个长度为节点数的向量。除了start  / terminal 外，出入度均相等，于是：<span class="arithmatex">\(d() = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 &amp; ... &amp; 0 &amp; -1 \end{bmatrix}^T\)</span></p>
+<p>而左侧的系数矩阵，是一个 <span class="arithmatex">\(V \times E\)</span> 的矩阵。把所有的边提取成 <span class="arithmatex">\(f_e\)</span>。对于如下的图：</p>
+<pre class="mermaid"><code>flowchart LR
+    1-- (1,2) ---2
+    1-- (1,3) ---3
+    1-- (1,4) ---4
+    3-- (3,4) ---4
+    2-- (2,3) ----3
+    2-- (2,5) ----5
+    3-- (3,5) ---5</code></pre>
+<p>可以用下面的约束表示原问题：</p>
+<pre class="arithmatex">\[\begin{bmatrix}  1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ -1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; -1 &amp; -1 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp;  -1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -1 &amp; -1\end{bmatrix} \begin{bmatrix} f_{(1,2)} \\ f_{(1,3)} \\ f_{(1,4)} \\ f_{(3,4)} \\ f_{(2,3)} \\ f_{(2,5)} \\ f_{(3,5)} \end{bmatrix} = \begin{bmatrix} 1 \\ 0  \\ 0 \\ 0 \\ -1 \end{bmatrix}\]</pre>
+<p><strong>系数矩阵实际上就是一个以列表示边、以行表示节点的图的关联矩阵。</strong> 现在，我们开始写对偶问题。</p>
+<p>简单理解，我们把原问题的右端项移到目标函数上，目标函数的决策向量长度就是<span class="arithmatex">\(d\)</span>的长度，也就是节点的数量。而右端项大部分是0，我们用 <span class="arithmatex">\(l_v\)</span> 表示原问题每个约束（其实就是每个节点 <span class="arithmatex">\(v\)</span> ）对应的对偶决策变量。可以看到除了start / terminal 外，其他节点的 <span class="arithmatex">\(l_v\)</span> 都是0，所以<strong>对偶问题目标函数</strong>即为：</p>
+<pre class="arithmatex">\[\max l_s - l_t\]</pre>
+<p>其中 <span class="arithmatex">\(l_t\)</span> 对应 <code>terminal</code> 节点的对偶变量，<span class="arithmatex">\(l_s\)</span> 对应 <code>start</code> 节点的对偶变量。</p>
+<p>现在开始写<strong>对偶问题的约束条件</strong>。</p>
+<p>由于原问题的系数矩阵本身是边的关联矩阵，而原问题的每一列代表一条边出入节点的情况，只有一个<span class="arithmatex">\(-1\)</span>和<span class="arithmatex">\(1\)</span>，其余均为<span class="arithmatex">\(0\)</span>，这个结构转置形成对偶问题的系数矩阵后，对应对偶问题决策变量的系数，所以对偶问题的约束中，每一行只有一个<span class="arithmatex">\(-1\)</span>和<span class="arithmatex">\(1\)</span>，其余系数为<span class="arithmatex">\(0\)</span>. 转置后的行数对应原问题的列，也就说明，对偶问题的约束个数 = 边的个数。</p>
+<p>所以，<strong>最短路问题的对偶问题</strong>最终可以写成：</p>
+<pre class="arithmatex">\[\max l_s - l_t\]</pre>
 <pre class="arithmatex">\[\begin{aligned}
-\text{s.t.} \begin{cases}
-d_v \geq 0 \quad \forall v \in V \\
-d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
+\begin{cases}
+\begin{align}
+l_p - l_q \leq c_{(p,q)}, \quad \forall (p,q) \in E \quad \\
+l_v \geq 0, \quad \forall v \in V \quad 
+\end{align}
 \end{cases}
 \end{aligned}\]</pre>
-<dl>
-<dt><strong>解释</strong></dt>
-<dd>
-<p>这里需要再次回到“对偶”的概念上。找从 <span class="arithmatex">\(i\)</span> 到 <span class="arithmatex">\(j\)</span> 的最短路，也就是要在对偶可行的基础上，最大化 <span class="arithmatex">\(d(v)\)</span>.</p>
-<p>为什么目标函数只有两个值了：因为原问题的约束的右端，只有0，1，-1三个值，并且流平衡约束的参数是 0，所以实际上只有两个非 0 右端。对应到目标函数上。</p>
-</dd>
-</dl>
-<p>进一步简化：</p>
-<p>目标函数： <span class="arithmatex">\(\max d(t)\)</span></p>
-<p>约束条件：</p>
-<pre class="arithmatex">\[\begin{aligned}
-\text{s.t.} \begin{cases}
-d_s = 0 \\
-d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
-\end{cases}
-\end{aligned}\]</pre>
-<p>怎么有启发地理解这个模型呢。就是我们把每个边想象成一个静止长度 <span class="arithmatex">\(c_e\)</span> 的弹簧。把开始节点设为 0.尝试把这个图拉伸得尽可能地长，直到不能拉伸任何弹簧。我们整个图能被拉伸的最长的距离，也就是从 <span class="arithmatex">\(s\)</span> 到 <span class="arithmatex">\(t\)</span> 的最短路。<em>（这个仔细理解，会发现简直妙极）</em></p>
+<p><span class="arithmatex">\(l_p\)</span> 和 <span class="arithmatex">\(l_q\)</span>  是由每个边 <span class="arithmatex">\((p,q)\)</span> 的节点决定的，对应的是原问题的约束条件里与节点 <span class="arithmatex">\(p\)</span> 和 <span class="arithmatex">\(q\)</span> 有关的对偶变量。</p>
+<div class="admonition note">
+<p class="admonition-title">一个启发式的理解思路。</p>
+<p>可以把原来的图中的每一个边想象成一个无法被拉伸的线，以节点相连接，边 <span class="arithmatex">\(e\)</span> 的长度是 <span class="arithmatex">\(c_e\)</span>，现在一只手拎住起点 <span class="arithmatex">\(s\)</span>，一只手拎住重点 <span class="arithmatex">\(t\)</span> ，尽可能地把这个提线木偶一样的东西捋直、捋顺，（也可以理解为拎着起点，让图自然下垂）。</p>
+<p>此时有一些边因为比较长，会悬挂在边上（比如下图中的边 <span class="arithmatex">\((1,3), (3,5), (5,4)\)</span>，有一些边自然下垂 <span class="arithmatex">\((1,2), (2,5)\)</span>。</p>
+<p>等这张图不能再继续下垂（不能继续被你拉长捋得更顺了），此时从 <span class="arithmatex">\(s\)</span> 到 <span class="arithmatex">\(t\)</span> 的距离一定是最长的（朴实地形容就是：我们无法再捋任何一条边使得从s到t更长了），这就对应的是我们的<strong>对偶问题</strong>；</p>
+<p>反过来来想，这条从 <span class="arithmatex">\(s\)</span> 到 <span class="arithmatex">\(t\)</span> 的路径，也就是从 <span class="arithmatex">\(s\)</span> 到 <span class="arithmatex">\(t\)</span> 的最短路，因为如果不走这个路，必须要从那些悬挂着的边上走，这些边明显没有被拉紧，也就一定不会比我这条路更短了。这种方式下，对应的就是我们的<strong>原问题</strong>：最短路问题。</p>
+</div>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202406120857738.png" /></p>
 <div class="admonition quote">
 <p class="admonition-title"><a href="https://ocw.mit.edu/courses/15-082j-network-optimization-fall-2010/87ee338a701dcd52784c86daef642113_MIT15_082JF10_lec15.pdf">参考链接：MIT</a> | <a href="https://web.stanford.edu/~ashishg/cs261/win21/notes/l9_note.pdf">参考链接：Stanford</a></p>
 </div>
-<h3 id="dijkstra">Dijkstra 算法（单源最短路）<a class="headerlink" href="#dijkstra" title="Permanent link">⚓︎</a></h3>
+<h2 id="dijkstra">求解最短路问题： Dijkstra 算法（单源最短路）<a class="headerlink" href="#dijkstra" title="Permanent link">⚓︎</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">关于Dijkstra算法</p>
-<p>一种用于计算从单个源节点到图中所有其他节点的最短路径的算法。适用于加权图，其中要求<strong>边的权重为非负值</strong></p>
+<p>一种用于计算从单个源节点到图中所有其他节点的最短路径的算法。适用于加权图，其中要求<strong>边的权重为非负值</strong>。</p>
 </div>
-<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202407222344256.gif" /></p>
+<!-- ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202407222344256.gif) -->
+
 <ul>
-<li>找到从某地到某地最短的路径：广度优先搜索解决赋权有向图或者无向图的单源最短路径问题；Dijkstra算法采用的是一种贪心的策略，声明一个数组dis来保存源点到各个顶点的最短距离和一个保存已经找到了最短路径的顶点的集合，初始时，原点 s 的路径权重被赋为 0 。若对于顶点 s 存在能直接到达的边（s,m），则把dis[m]设为w（s, m）,同时把所有其他（s不能直接到达的）顶点的路径长度设为无穷大。初始时，集合T只有顶点s。 </li>
-<li>然后，从dis数组选择最小值，则该值就是源点s到该值对应的顶点的最短路径，并且把该点加入到T中，OK，此时完成一个顶点，然后，我们需要看看新加入的顶点是否可以到达其他顶点并且看看通过该顶点到达其他点的路径长度是否比源点直接到达短，如果是，那么就替换这些顶点在dis中的值。 </li>
-<li>然后，又从dis中找出最小值，重复上述动作，直到T中包含了图的所有顶点。</li>
+<li>Dijkstra算法采用的是一种==贪心==的策略。声明一个列表<code>dis</code>来保存<strong>源点到各个顶点的最短距离</strong>，并用一个集合 <span class="arithmatex">\(T\)</span> 保存<strong>已经找到了最短路径的顶点的集合</strong>。每次都从当前能抵达的节点中的最近节点出发，继续下一步寻路的过程，直到抵达目的地。</li>
 </ul>
+<dl>
+<dt><strong>步骤</strong></dt>
+<dd>
+<ol>
+<li>初始时，源点 <span class="arithmatex">\(s\)</span> 的路径权重被赋为 0 。若对于顶点 <span class="arithmatex">\(s\)</span>, 存在能走行的边 <span class="arithmatex">\((s,m)\)</span> （意思是可以到达节点 <span class="arithmatex">\(m\)</span>），则把 <code>dis[m]</code>设为 <span class="arithmatex">\(c_{sm}\)</span>，同时把到所有其他的节点（也就是<span class="arithmatex">\(s\)</span>在这一步无法到达的节点）的长度设为无穷大。这一步骤，集合<code>T</code>中仅包含源点。</li>
+<li>从列表<code>dis</code>中选择<strong>最小值</strong>，以及这个最小值对应的节点（记为 <span class="arithmatex">\(z\)</span>）。该值就是源点 <span class="arithmatex">\(s\)</span> 到该节点 <span class="arithmatex">\(z\)</span> 的最短路径。把该点加入到 <span class="arithmatex">\(T\)</span> 中。OK，此时已经找到了一个点的最短路，但还没到达目标节点。</li>
+<li>这时，我们需要看，新加入的顶点 <span class="arithmatex">\(z\)</span> 是否可以<strong>到达其他节点</strong>，并且看看通过该节点到达其他点的路径长度是否比当前<code>dis</code>中存储的“当前最短路”要更短。如果是，那么就<strong>更新</strong>这些顶点在 <code>dis</code> 中的值。 </li>
+<li>更新完毕后，继续重复 3, 直到 <span class="arithmatex">\(T\)</span> 中包含了图的所有顶点。</li>
+</ol>
+</dd>
+</dl>
 <div class="admonition warning">
 <p class="admonition-title">注意！</p>
 <ul>
-<li>无法处理负权问题</li>
-<li>节点较多的话，计算量会加大</li>
+<li>无法处理负权问题。</li>
+<li>节点较多的话，计算量会加大。</li>
 </ul>
 </div>
-<h3 id="floyd">Floyd算法 （多源最短路）<a class="headerlink" href="#floyd" title="Permanent link">⚓︎</a></h3>
+<p>伪代码如下：</p>
+<p><img alt="" src="https://img2018.cnblogs.com/blog/1903168/201912/1903168-20191220004845529-3040599.jpg" /></p>
+<p>当然，在编程实现的过程中，会涉及到：<strong>从当前所有可达节点中选择路径最短的那个节点</strong>的过程，一般而言会通过<strong>优先队列</strong>来实现。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">heapq</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">def</span> <span class="nf">dijkstra</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="sd">    实现Dijkstra算法，计算从起点到给定终点的最短路径和路径长度。</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="c1"># 初始化距离字典和前驱节点字典</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">distances</span> <span class="o">=</span> <span class="p">{</span><span class="n">vertex</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;infinity&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">vertex</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">}</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">distances</span><span class="p">[</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">predecessors</span> <span class="o">=</span> <span class="p">{</span><span class="n">vertex</span><span class="p">:</span> <span class="kc">None</span> <span class="k">for</span> <span class="n">vertex</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">}</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="c1"># 使用优先队列来存储和获取当前已知的最短距离的节点</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">priority_queue</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="n">start</span><span class="p">)]</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="k">while</span> <span class="n">priority_queue</span><span class="p">:</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="n">current_distance</span><span class="p">,</span> <span class="n">current_vertex</span> <span class="o">=</span> <span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">priority_queue</span><span class="p">)</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="c1"># 如果到达终点，构建路径并返回结果</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="k">if</span> <span class="n">current_vertex</span> <span class="o">==</span> <span class="n">end</span><span class="p">:</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            <span class="n">path</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            <span class="k">while</span> <span class="n">current_vertex</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>                <span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">current_vertex</span><span class="p">)</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                <span class="n">current_vertex</span> <span class="o">=</span> <span class="n">predecessors</span><span class="p">[</span><span class="n">current_vertex</span><span class="p">]</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>            <span class="n">path</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>  <span class="c1"># 逆序</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>            <span class="k">return</span> <span class="n">current_distance</span><span class="p">,</span> <span class="n">path</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>        <span class="c1"># 如果从优先队列中取出的距离大于当前记录的距离，继续</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>        <span class="k">if</span> <span class="n">current_distance</span> <span class="o">&gt;</span> <span class="n">distances</span><span class="p">[</span><span class="n">current_vertex</span><span class="p">]:</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>            <span class="k">continue</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        <span class="c1"># 遍历当前节点的所有邻接节点</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>        <span class="k">for</span> <span class="n">neighbor</span><span class="p">,</span> <span class="n">weight</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">current_vertex</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>            <span class="n">distance</span> <span class="o">=</span> <span class="n">current_distance</span> <span class="o">+</span> <span class="n">weight</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>            <span class="c1"># 只有当计算出的新距离小于当前记录的距离时，才更新距离和前驱节点，并将邻接节点添加到优先队列</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>            <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="n">distances</span><span class="p">[</span><span class="n">neighbor</span><span class="p">]:</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>                <span class="n">distances</span><span class="p">[</span><span class="n">neighbor</span><span class="p">]</span> <span class="o">=</span> <span class="n">distance</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>                <span class="n">predecessors</span><span class="p">[</span><span class="n">neighbor</span><span class="p">]</span> <span class="o">=</span> <span class="n">current_vertex</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>                <span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">priority_queue</span><span class="p">,</span> <span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="n">neighbor</span><span class="p">))</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;infinity&#39;</span><span class="p">),</span> <span class="p">[]</span>  <span class="c1"># 如果终点不可达，返回无穷大距离和空路径</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="c1"># 测试用的图数据</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="n">graph</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>    <span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">},</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>    <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">},</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>    <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">},</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>    <span class="s1">&#39;D&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">},</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>    <span class="s1">&#39;E&#39;</span><span class="p">:</span> <span class="p">{}</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="p">}</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="c1"># 调用Dijkstra算法</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="n">start_node</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="n">end_node</span> <span class="o">=</span> <span class="s1">&#39;E&#39;</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="n">distance</span><span class="p">,</span> <span class="n">path</span> <span class="o">=</span> <span class="n">dijkstra</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">start_node</span><span class="p">,</span> <span class="n">end_node</span><span class="p">)</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="c1"># 输出结果</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;从起点 </span><span class="si">{</span><span class="n">start_node</span><span class="si">}</span><span class="s2"> 到终点 </span><span class="si">{</span><span class="n">end_node</span><span class="si">}</span><span class="s2"> 的最短路径距离为：</span><span class="si">{</span><span class="n">distance</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;从 </span><span class="si">{</span><span class="n">start_node</span><span class="si">}</span><span class="s2"> 到 </span><span class="si">{</span><span class="n">end_node</span><span class="si">}</span><span class="s2"> 的最短路径为：</span><span class="si">{</span><span class="s1">&#39; -&gt; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="floyd">求解最短路问题：Floyd算法 （多源最短路）<a class="headerlink" href="#floyd" title="Permanent link">⚓︎</a></h2>
+<div class="admonition quote">
+<p class="admonition-title">Floyd算法又称为插点法，是一种利用<strong>动态规划的思想</strong>寻找给定的加权图中多源点之间最短路径的算法。相比Dijkstra，<strong>Floyd算法适用于负权图。</strong></p>
+<p>具体的操作是：基于一个图的邻接矩阵 <span class="arithmatex">\(M\)</span>，求出它任意两点间最短路径矩阵。</p>
 <ul>
-<li>
-<p>Floyd算法又称为插点法，是一种利用<strong>动态规划的思想</strong>寻找给定的加权图中多源点之间最短路径的算法，</p>
+<li>初始矩阵的值，表示两点之间直接相连的边长度，经过算法后，最终矩阵中的值，比如 <span class="arithmatex">\(M[i][j]\)</span>，就是点 <span class="arithmatex">\(i\)</span> 与点 <span class="arithmatex">\(j\)</span> 之间的最小路径。在构建初始值时，有两点需要注意：<ul>
+<li>第一，如果一开始的图里 <span class="arithmatex">\(i, j\)</span> 两点没有直接相连的两点，那么默认<span class="arithmatex">\(M[i][j]\)</span> 为一个很大的值；</li>
+<li>第二，节点与自己的距离要设为0，也就是矩阵的对角元素都是0.</li>
+</ul>
 </li>
-<li>
-<p>通过一个图的权值矩阵求出它的每两点间的最短路径矩阵。</p>
-</li>
-<li>我们的点如果在最短路上，那么我们用这个点去松弛最短路上的边的话，必定会松弛成功。因此，我们要想知道一个点在哪些点的最短路上，我们只需要用这个点去松弛所有边即可，松弛指的就是，把这个点作为一个“中转点”，遍历其出度和入度，如果距离更短就刷新图；</li>
-<li>
+</ul>
+</div>
+<p><strong>理解“松弛”的概念</strong>。我们想要知道从 <span class="arithmatex">\(i\)</span> 到 <span class="arithmatex">\(j\)</span> 的最小值，假设我们现在有一个从 <span class="arithmatex">\(i\)</span> 到 <span class="arithmatex">\(j\)</span> 的路径 <span class="arithmatex">\(s\)</span>，这个路径不经过点 <span class="arithmatex">\(k\)</span> 。如果我们把 <span class="arithmatex">\(k\)</span> 作为从 <span class="arithmatex">\(i\)</span> 到 <span class="arithmatex">\(j\)</span> 的另一个路径的中转点，并且在最短路上，那么，从 <span class="arithmatex">\(i\)</span> 到 <span class="arithmatex">\(k\)</span> 的距离，加上从 <span class="arithmatex">\(k\)</span> 到 <span class="arithmatex">\(j\)</span> 的距离，会优于原来路径 <span class="arithmatex">\(s\)</span> 的长度。我们就用这个长度去替换原来路径 <span class="arithmatex">\(s\)</span> 的长度。这就是“松弛”的过程。</p>
+<p>实际上，节点 <span class="arithmatex">\(k\)</span> 不仅可能是 <span class="arithmatex">\((i,j)\)</span> 的最短路的中转点，还可能是其他很多点对的中转点。因此，我们要想知道一个点在哪些点对的的最短路上，我们只需要用这个点去松弛所有边即可。我们把所有的节点都作为“中转点”进行迭代，终止时候也就找到了各个点对之间的最短路径。算法所做的事情可以总结为：</p>
+<blockquote>
 <p>从一开始的邻接矩阵，遍历所有的节点，每次加入新结点都要更新==所有顶点之间的最短距离==，直到==所有顶点均可以作为中间顶点==之后（也就是对所有点都做了一次松弛），才算更新完毕，即可得到最终结果。</p>
-</li>
-<li>
-<p>输入权重矩阵： <span class="arithmatex">\(D^{(0)} = D\)</span></p>
-</li>
+</blockquote>
+<ol>
+<li>输入权重矩阵： <span class="arithmatex">\(D^{(0)} = D\)</span></li>
 <li>计算 <span class="arithmatex">\(D^{(k)} = (d^{(k)}_{ij})_{n \times n}\)</span>，其中： <span class="arithmatex">\(d^{(k)}_{ij} = \min \{ d^{(k - 1)}_{ij}, d^{(k - 1)}_{ik} + d^{(k - 1)}_{kj} \}\)</span></li>
 <li><span class="arithmatex">\(D^{(n)} = (d^{(n)}_{ij})_{n \times n}\)</span>，元素 <span class="arithmatex">\(d^{(n)}_{ij}\)</span> 就是从 <span class="arithmatex">\(i\)</span> 到 <span class="arithmatex">\(j\)</span> 的最短路长。</li>
-</ul>
-<hr />
+</ol>
 <p>例题：给定初始矩阵，求任意两点的最短路长。</p>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202406120859048.png" /></p>
+<p>首先输入我们的权重矩阵，把边的权重输入进去。</p>
 <pre class="arithmatex">\[D = D^{(0)} = \begin{bmatrix}
 0 &amp; 5 &amp; 1 &amp; 2 &amp; \infty \\
 5 &amp; 0 &amp; 10 &amp; \infty &amp; 2 \\
@@ -14162,44 +14250,59 @@ d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
 2 &amp; \infty &amp; 6 &amp; 0 &amp; 4 \\
 \infty &amp; 2 &amp; 4 &amp; 4 &amp; 0
 \end{bmatrix}\]</pre>
-<p>开始计算！</p>
+<p>首先，我们输入权重矩阵（如上），<span class="arithmatex">\(a_{ij}\)</span> 表示从<span class="arithmatex">\(i\)</span>到<span class="arithmatex">\(j\)</span>的距离。开始计算！</p>
+<p>我们会依次固定网络中每一个节点。假设我们固定节点1，也就是先固定第1行和第1列的所有元素，对于矩阵中其他的元素，假设它的位置是 <span class="arithmatex">\((i,j)\)</span>，也就是第 <span class="arithmatex">\(i\)</span> 行第 <span class="arithmatex">\(j\)</span> 列，那么将原来的值 <span class="arithmatex">\(a_{ij}\)</span> 与第 <span class="arithmatex">\(1\)</span> 列第 <span class="arithmatex">\(i\)</span> 行和第 <span class="arithmatex">\(1\)</span> 行第 <span class="arithmatex">\(j\)</span> 列的元素的和进行比较： <span class="arithmatex">\(a_{ij} = \min \{ a_{ij}, a_{0j} + a_{i0}\}\)</span>，进行更新。</p>
+<p>以此类推，第二次迭代专注节点2，第三次迭代专注节点3...，推广：如果我们专注于节点  <span class="arithmatex">\(k\)</span>，那么固定第 <span class="arithmatex">\(k\)</span> 行和第 <span class="arithmatex">\(k\)</span> 列的元素不变，对于其他的元素，<span class="arithmatex">\(a_{ij} = \min \{ a_{ij}, a_{kj} + a_{ik}\}\)</span></p>
 <pre class="arithmatex">\[D^{(1)} = \begin{bmatrix}
-0 &amp; 5 &amp; 1 &amp; 2 &amp; \infty \\
-5 &amp; 0 &amp; (6) &amp; (7) &amp; 2 \\
-2 &amp; 3 &amp; 0 &amp; 2 &amp; 8 \\
-2 &amp; (7) &amp; (3) &amp; 0 &amp; 4 \\
+\colorbox{yellow}{0} &amp; \colorbox{yellow}{5} &amp; \colorbox{yellow}{1} &amp; \colorbox{yellow}{2} &amp; \infty \\
+\colorbox{yellow}{5} &amp; 0 &amp; (6) &amp; (7) &amp; 2 \\
+\colorbox{yellow}{2} &amp; 3 &amp; 0 &amp; 2 &amp; 8 \\
+\colorbox{yellow}{2} &amp; (7) &amp; (3) &amp; 0 &amp; 4 \\
 \infty &amp; 2 &amp; 4 &amp; 4 &amp; 0
 \end{bmatrix}, D^{(2)} = \begin{bmatrix}
-0 &amp; 5 &amp; 1 &amp; 2 &amp; (7) \\
-5 &amp; 0 &amp; 6 &amp; 7 &amp; 2 \\
-2 &amp; 3 &amp; 0 &amp; 2 &amp; (5) \\
-2 &amp; 7 &amp; 3 &amp; 0 &amp; 4 \\
-(7) &amp; 2 &amp; 4 &amp; 4 &amp; 0
+0 &amp; \colorbox{yellow}{5} &amp; 1 &amp; 2 &amp; (7) \\
+\colorbox{yellow}{5} &amp; \colorbox{yellow}{0} &amp; \colorbox{yellow}{6} &amp; \colorbox{yellow}{7} &amp; \colorbox{yellow}{2} \\
+2 &amp; \colorbox{yellow}{3} &amp; 0 &amp; 2 &amp; (5) \\
+2 &amp; \colorbox{yellow}{7} &amp; 3 &amp; 0 &amp; 4 \\
+(7) &amp; \colorbox{yellow}{2} &amp; 4 &amp; 4 &amp; 0
 \end{bmatrix}\]</pre>
 <pre class="arithmatex">\[D^{(3)} = \begin{bmatrix}
-0 &amp; (4) &amp; 1 &amp; 2 &amp; (6) \\
-5 &amp; 0 &amp; 6 &amp; 7 &amp; 2 \\
-2 &amp; 3 &amp; 0 &amp; 2 &amp; 5 \\
-2 &amp; (6) &amp; 3 &amp; 0 &amp; 4 \\
-(6) &amp; 2 &amp; 4 &amp; 4 &amp; 0
+0 &amp; (4) &amp; \colorbox{yellow}{1} &amp; 2 &amp; 6 \\
+5 &amp; 0 &amp; \colorbox{yellow}{6} &amp; 7 &amp; 2 \\
+\colorbox{yellow}{2} &amp; \colorbox{yellow}{3} &amp; \colorbox{yellow}{0} &amp; \colorbox{yellow}{2} &amp; \colorbox{yellow}{5}\\
+2 &amp; (6) &amp; \colorbox{yellow}{3} &amp; 0 &amp; 4 \\
+(6) &amp; 2 &amp; \colorbox{yellow}{4} &amp; 4 &amp; 0
 \end{bmatrix}, D^{(4)} = \begin{bmatrix}
-0 &amp; 4 &amp; 1 &amp; 2 &amp; (6) \\
-5 &amp; 0 &amp; 6 &amp; 7 &amp; 2 \\
-2 &amp; 3 &amp; 0 &amp; 2 &amp; 5 \\
-2 &amp; 6 &amp; 3 &amp; 0 &amp; 4 \\
-6 &amp; 2 &amp; 4 &amp; 4 &amp; 0
+0 &amp; 4 &amp; 1 &amp; \colorbox{yellow}{2} &amp; (6) \\
+5 &amp; 0 &amp; 6 &amp; \colorbox{yellow}{7} &amp; 2 \\
+2 &amp; 3 &amp; 0 &amp; \colorbox{yellow}{2} &amp; 5 \\
+\colorbox{yellow}{2} &amp; \colorbox{yellow}{6} &amp; \colorbox{yellow}{3} &amp; \colorbox{yellow}{0} &amp; \colorbox{yellow}{4} \\
+6 &amp; 2 &amp; 4 &amp; \colorbox{yellow}{4} &amp; 0
 \end{bmatrix},\]</pre>
 <pre class="arithmatex">\[D^{(5)} = \begin{bmatrix}
-0 &amp; 4 &amp; 1 &amp; 2 &amp; 6 \\
-5 &amp; 0 &amp; 6 &amp; (6) &amp; 2 \\
-2 &amp; 3 &amp; 0 &amp; 2 &amp; 5 \\
-2 &amp; 6 &amp; 3 &amp; 0 &amp; 4 \\
-6 &amp; 2 &amp; 4 &amp; 4 &amp; 0
+0 &amp; 4 &amp; 1 &amp; 2 &amp; \colorbox{yellow}{6} \\
+5 &amp; 0 &amp; 6 &amp; (6) &amp; \colorbox{yellow}{2} \\
+2 &amp; 3 &amp; 0 &amp; 2 &amp; \colorbox{yellow}{5} \\
+2 &amp; 6 &amp; 3 &amp; 0 &amp; \colorbox{yellow}{4} \\
+\colorbox{yellow}{6} &amp; \colorbox{yellow}{2} &amp; \colorbox{yellow}{4} &amp; \colorbox{yellow}{4} &amp; \colorbox{yellow}{0}
 \end{bmatrix},\]</pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span> <span class="nf">floydWarshall</span><span class="p">(</span><span class="n">graph</span><span class="p">):</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">dist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">i</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">j</span><span class="p">:</span> <span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">)),</span> <span class="n">graph</span><span class="p">))</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">V</span><span class="p">):</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">V</span><span class="p">):</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">V</span><span class="p">):</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>                <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">],</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>                                 <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="n">dist</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">如果我不仅想知道最短路径多长，还想知道最短路径是什么，怎么修改？</p>
+<ul>
+<li>增加一个路径矩阵，记录路径，每次更新最短路径的时候，把路径矩阵也更新一下即可。</li>
+</ul>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">注意</p>
 <p>不能把负权加上最小的负数变整数这种做法，因为不是分阶段的问题，不能单纯地用DP的思想去解决。</p>
-<p>如果想要知道路径，还需要增加一个路由矩阵。</p>
 </div>
 <h2 id="_5">最大流问题<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h2>
 <div class="admonition warning">
@@ -14240,14 +14343,6 @@ d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
 <p>输油管道，每个管道有运油量约束和成本，现在要从一个出发地运送特定数量的油（小于最大流的数量）到某个目的地，怎么运输，让成本最小。</p>
 </li>
 <li>
-<p>数学模型</p>
-</li>
-<li>标号算法</li>
-<li>具体求解</li>
-<li>
-<p>用它来表示其他问题</p>
-</li>
-<li>
 <p>思路：尽可能发挥费用少的链路的潜力，寻找一条从i到j的费用最少的链路，并使得它的潜力充分发挥出来，直到达到运输数量要求； 总是在费用最小的增广路上增加流值，直到流值达到v。</p>
 </li>
 <li>标号算法</li>
@@ -14260,7 +14355,6 @@ d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
 </li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
 <p>Ford-Fulkerson 的核心在于“塑造反向弧”，给了一个“纠错”的空间。使得一个已有的（但是效果不那么好的）可行的解可以在后续找的过程中被优化；</p>
 </div>
 <h3 id="_6">用最小费用流表示其他问题的建模<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h3>
@@ -14300,7 +14394,7 @@ d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 28, 2024 11:10:27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 31, 2024 01:34:08</span>
   </span>
 
     
@@ -14418,7 +14512,7 @@ d(j) - d(i) \leq c_{ij} \quad  \forall (i, j) \in E
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.top", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.471ce7a9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.af256bd8.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       

@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.33">
     
     
       
@@ -50,9 +50,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
     
-      <link rel="stylesheet" href="https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css">
-    
-      <link rel="stylesheet" href="https://cdn.tonycrane.cc/lxgw/lxgwscreen.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
@@ -13691,6 +13689,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      从最小费用流到运输问题
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -13719,24 +13734,64 @@
 
 <h1 id="_1">最小费用流<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 293 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 1 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1112 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 4 分钟</p>
 </div>
 <p>最小费用流问题（Minimal Cost Flow Problem）在网络最优化问题中占有核心地位。可以表述如下：</p>
 <blockquote>
-<p>对每个节点 <span class="arithmatex">\(v_i\)</span> 均给定实数 <span class="arithmatex">\(b_i\)</span>， 如果 <span class="arithmatex">\(b_i &gt; 0\)</span>，那么称 <span class="arithmatex">\(b_i\)</span> 为发点，<span class="arithmatex">\(b_i\)</span> 的值为该点的供给量。如果 <span class="arithmatex">\(b_i &lt; 0\)</span>，那么称 <span class="arithmatex">\(b_i\)</span> 为收点， <span class="arithmatex">\(-b_i\)</span> 为该点的需求量。若  <span class="arithmatex">\(b_i = 0\)</span>，那么称 <span class="arithmatex">\(b_i\)</span> 为转运点。</p>
+<p>对每个节点 <span class="arithmatex">\(v_i\)</span> 均给定实数 <span class="arithmatex">\(b_i\)</span>， 如果 <span class="arithmatex">\(b_i &gt; 0\)</span>，那么称 <span class="arithmatex">\(b_i\)</span> 为发点，可以供给资源，<span class="arithmatex">\(b_i\)</span> 的值为该点的供给量。如果 <span class="arithmatex">\(b_i &lt; 0\)</span>，那么称 <span class="arithmatex">\(b_i\)</span> 为收点，需要接收资源 <span class="arithmatex">\(-b_i\)</span> 为该点的需求量。若  <span class="arithmatex">\(b_i = 0\)</span>，那么称 <span class="arithmatex">\(b_i\)</span> 为转运点。</p>
 <p>对于每条边 <span class="arithmatex">\(e_j\)</span>，给定实数 <span class="arithmatex">\(e_j\)</span>，它是在边 <span class="arithmatex">\(e_j\)</span> 上每单位流量的费用，称为费用系数。再给定正数 <span class="arithmatex">\(u_j\)</span>，它是边 <span class="arithmatex">\(e_j\)</span> 上流量的上界。</p>
 </blockquote>
 <p>最小费用流的问题就是要确定每个边上的流量 <span class="arithmatex">\(x_j\)</span>，使得不超过上界限制，并满足各个节点的供需要求，同时又使得总费用最小。对于网络，我们引入一个 <span class="arithmatex">\(m \times n\)</span> 的矩阵 <span class="arithmatex">\(A\)</span>。其中每个元素按照如下标准取值：</p>
 <pre class="arithmatex">\[\begin{aligned}\begin{equation*}
 a_{ij} = \begin{cases}
-1, \hspace{10pt} \text{if } v_i \text{starts from} e_j \\
--1, \hspace{10pt} \text{if } v_i \text{ends at} e_j \\
+1, \hspace{10pt} \text{if } e_j \quad \text{starts from} \quad v_i \\
+-1, \hspace{10pt} \text{if } e_j \quad \text{ends at} \quad v_i \\
 0, \hspace{10pt} \text{Otherwise}
 \end{cases}
 \end{equation*}\end{aligned}\]</pre>
 <p>写成矩阵形式，如下：</p>
-<pre class="arithmatex">\[\begin{bmatrix} 1 &amp; 1 &amp; . &amp; . &amp; . &amp; 1 &amp; 1 &amp; . \\ -1 &amp; . &amp; 1 &amp; 1 &amp; . &amp;  . &amp; . &amp; . \\  . &amp; -1 &amp; -1 &amp; . &amp; 1 &amp; . &amp; -1 &amp; . \\ . &amp; . &amp; . &amp; -1 &amp; -1 &amp; . &amp; . &amp; -1 \\ . &amp; . &amp; . &amp; . &amp; . &amp; -1 &amp; 1 &amp; 1 \end{bmatrix}\]</pre>
-<p>即可表示如图</p>
+<pre class="arithmatex">\[\begin{bmatrix} 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ -1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp;  0 &amp; 0 &amp; 0 \\  0 &amp; -1 &amp; -1 &amp; 0 &amp; 1 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 &amp; -1 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -1 &amp; 1 &amp; 1 \end{bmatrix}\]</pre>
+<p>即可表示如图【待补充】的网络。</p>
+<p>在前面介绍最短路问题的时候，我们也出现了这个矩阵，<strong>一般称之为节点-边关联矩阵（Node-edge incidence matrix）。</strong> </p>
+<div class="admonition note">
+<p class="admonition-title">节点-边关系矩阵</p>
+<p><span class="arithmatex">\(m \times n\)</span> 的矩阵，行表示节点，列表示边。</p>
+<p>对每一列而言，有且仅有一个1和一个-1，1表示从该节点出发，-1表示到该节点。0表示与该节点无关。</p>
+<p>对每一行而言，可能有多个1和多个-1，因为一个节点可能有多条边出发/到达，1的个数，表示从该节点出发的边数（出度）；-1的个数，表示到达该节点的边数（入度）。</p>
+</div>
+<p>于是，我们给出最小费用流的数学模型：</p>
+<pre class="arithmatex">\[\min \mathbf{cx}\]</pre>
+<pre class="arithmatex">\[\begin{aligned}
+\begin{cases}
+\begin{align}
+\mathbf{Ax} = \mathbf{b} \quad\\
+\mathbf{0} \leq \mathbf{x} \leq \mathbf{u} \quad
+\end{align}
+\end{cases}
+\end{aligned}\]</pre>
+<p>对于约束 (1) 中的每一个约束，可以表示为：</p>
+<pre class="arithmatex">\[\sum \limits_{j \in E} a_{ij} x_j = b_i , \forall i \in V\]</pre>
+<p>实际上，左边就是：</p>
+<pre class="arithmatex">\[\sum \limits_{j \in E} a_{ij} x_j = \sum \limits_{a_{ij} = 1} x_{j} - \sum \limits_{a_{ij} = -1} x_j  , \forall i \in V\]</pre>
+<blockquote>
+<p>（因为如果 <span class="arithmatex">\(a_{ij} = 0\)</span>，就不会出现 <span class="arithmatex">\(x_j\)</span> ）。</p>
+</blockquote>
+<p>等式右边的第一个和式，对应的是所有从 <span class="arithmatex">\(v_j\)</span> 离开的流量；第二个和式，对应所有汇入 <span class="arithmatex">\(v_j\)</span> 的流量。 </p>
+<p>不失一般性，我们可以假设供求总是平衡的，也就是 <span class="arithmatex">\(\sum_{i \in V} b_i = 0\)</span>，对于供大于求的图 (<span class="arithmatex">\(\sum_{i \in V} b_i &gt; 0\)</span>)，可以设置一个虚拟节点，吸收全部的过剩供给量，从每个发点添加一个虚拟边到这个虚拟节点，这个虚拟边的费用是0。这样就转化为一个供求平衡的最小费用流问题。</p>
+<p>最小费用流问题是网络流问题的<strong>重要基础</strong>，事实上，许多问题均可以被转化为这类问题，或者是最小费用流问题的一个特例。下面展开几个例子。</p>
+<hr />
+<h2 id="_2">从最小费用流到运输问题<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<p>运输问题，具体的问题描述同样可以参考<a href="../Chapter3/">第三章</a>。这里简要复习一下。</p>
+<div class="admonition note">
+<p class="admonition-title">运输问题</p>
+<p>所有节点分为供给节点和需求节点两类。各个供给节点之间没有边相连，各个需求节点之间也没有边相连，但是供给和需求节点之间可以相互抵达。以图论的概念表示，网络图就是一个Bipartite Graph。</p>
+<ul>
+<li>问题:我们需要在事先给定运费和供给量的情况下，规划从不同供给节点到不同需求节点运送的货物量，使得总运输成本最小，同时还能满足所有需求节点的需求。</li>
+</ul>
+</div>
+<p>在<a href="../Chapter3/">第三章</a>，我们已经给出了运输问题在供需平衡下的建模：</p>
+<pre class="arithmatex">\[\mathop{\min} \hspace{4pt} z = \sum \limits^{m}_{i = 1} \sum \limits^{n}_{j = 1} c_{ij}x_{ij}\]</pre>
+<pre class="arithmatex">\[s.t \hspace{4pt} \left\{ \begin{aligned} \sum \limits^{n}_{j=1} x_{ij} = a_i , i = 1,2,..,m \\ \sum \limits^{n}_{i=1} x_{ij} = b_j , j = 1,2,..,n   \\  x_{ij} \geq 0, i = 1,2,...m, j = 1,2...n  \end{aligned}  \right.\]</pre>
 
 
 
@@ -13761,7 +13816,7 @@ a_{ij} = \begin{cases}
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 12, 2024 21:52:52</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 31, 2024 01:34:08</span>
   </span>
 
     
@@ -13879,7 +13934,7 @@ a_{ij} = \begin{cases}
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.top", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.471ce7a9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.af256bd8.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
       
