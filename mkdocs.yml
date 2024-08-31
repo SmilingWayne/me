@@ -222,6 +222,7 @@ nav:
           - 蛙: Literature/Novel/Frog.md
           - 面纱: Literature/Novel/Veil.md
           - 鼠疫: Literature/Novel/Plague.md
+          - 雪国: Literature/Novel/Snow.md
           - 朝闻道: Literature/Novel/Zhao_wen_dao.md
           - 野棕榈: Literature/Novel/Wild_palm.md
           - 双城记: Literature/Novel/Stories_of_two_cities.md
@@ -346,6 +347,7 @@ nav:
           - 非线性规划、凸规划理论（最优化基础）: OROpt/OR/Chapter5.md
           - 动态规划: OROpt/OR/Chapter6.md
           - 图论算法及其求解: OROpt/OR/Chapter7.md
+          - 最小费用流问题及推广: OROpt/OR/Chapter7_1.md
           - 排队论: OROpt/OR/Chapter9.md
           - 仓储论（EOQ模型和它的一万个分身）: OROpt/OR/Chapter10.md
           - 博弈论: OROpt/OR/Chapter11.md
@@ -581,8 +583,8 @@ theme:
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css
-#   - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
-#   - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
+  #   - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  #   - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   - stylesheets/extra.css
   #   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
