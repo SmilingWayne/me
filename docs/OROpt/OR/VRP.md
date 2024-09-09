@@ -87,7 +87,7 @@ x_{ijk} \in \{0, 1\}, &  \quad \forall (i, j) \in A, \forall k \in K \quad \\
 |    $C$     |                所有客户点的集合  {1, 2, ..., n}                |
 |   $q_i$    |                       客户 $i$ 处的需求                        |
 |    $Q$     |                             车容量                             |
-|   s_{ik}   |               (new added!)  时间戳辅助变量，非负               |
+|   $s_{ik}$   |               (new added!)  时间戳辅助变量，非负               |
 | $e_i, l_i$ |            (new added!)    $i$ 节点的时间窗下/上界             |
 |  $t_{ij}$  |           (new added!)    经过边 $(i,j)$ 所花的时间            |
 |    $M$     | (new added!) 一个极大值，下界为 $\max \{ l_i - e_j + t_{ij}\}$ |
@@ -109,6 +109,7 @@ x_{ijk} \in \{0, 1\}, &  \quad \forall (i, j) \in A, \forall k \in K \quad \\
 \end{cases}
 \end{aligned}$$
 
+!!! note "注意在时间窗约束的情况下，不需要考虑去子环了，因为时间窗本来就带有去子环的效果，卡车经过的每一个节点都被赋予一个时间变量。这个变量随着车的运行会严格递增。因此首尾相接的情况必定不会存在。"
 
 ### Set partitioning formulation
 
