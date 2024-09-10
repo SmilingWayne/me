@@ -69,11 +69,3 @@ $$\text{s.t.} \begin{dcases}  \sum^{m}_{i = 1} x_{ij} \geq b_{j}, \forall j \cr 
     - semidefinite optimization
     - ...
 
-
-坦塔罗斯：希腊神话中的吕狄亚国王。因触怒主神宙斯，被罚永世站在水中。水深及下巴，但他口渴要喝水时，水就退去。头上有果树，但他饥饿想吃果子时，树枝就升高。
-
-
-## Lecture 2: Preliminaries
-
-
-### Standard form LP 
