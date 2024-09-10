@@ -1,5 +1,8 @@
 # Job Shop Problem (JSP)
 
+!!! note "Reference"
+    **Paper 1**: Wen-Yang Ku and J. Christopher Beck, Mixed Integer Programming Models for Job Shop Scheduling: A Computational Analysis, Computers and Operation Research, http://dx.doi.org/10.1016/j.cor.2016.04.006
+
 ## 问题描述
 
 现有 $n$ 个**工作**（Jobs），$j \in J；$$m$ 个**机器**（machines），$m \in M$，  每个工作都需要在**每台机器**上进行加工，但是顺序可能不同。我们把每个任务在每个机器上加工的过程称为一个工序 **（Operation）**. 
@@ -122,4 +125,13 @@ x_{ijk} \in \{0,1\} \quad \forall j \in J, i \in M, k = 1,2,...,n \quad \\
 \end{cases}
 \end{aligned}$$
 
+
+| 约束编号 |                                   含义                                   |
+| :------: | :----------------------------------------------------------------------: |
+|    12    |                    每个机器的每个位置都只能放一个工作                    |
+|    13    |                    每个任务只只占据每个机器的一个位置                    |
+|    14    | 约束一台机器上一个工作的开始加工时间必须不小于该机器前一个工作的完成时间 |
+|    16    |                               加工顺序约束                               |
+|    17    |                    最大完成时间约束，用以标记目标函数                    |
+|    18    |            任何工作在任何机器的位置上的加工开始时间不得小于0             |
 

@@ -387,15 +387,16 @@ nav:
               - Mermaid嵌入: Study/TextEdit/Markdown/Mkdocs_Tutorials1.md
       - 小红书｜Python藏宝箱:
           - 经（踩）验（坑）分（历）享（史）: Study/PythonPackages/Tricks.md
+          - 在Jupyter中美化Pandas表格: Study/PythonPackages/PandasPrettier.md
           - conda，你看到我们管理环境时的泪了吗: Study/PythonPackages/SOS_Conda.md
           - 数据结构大合集: Study/PythonPackages/Data_struct_recomend.md
           - PyEcharts合集: Study/PythonPackages/Pyecharts1.md
-          - 一些小玩具: Study/PythonPackages/MagicSquare.md
+          - 小玩具：幻方｜拉丁方: Study/PythonPackages/MagicSquare.md
           - 项目依赖管理pipreqs: Study/PythonPackages/PIPREQS.md
           - Python二分排序函数Bisect: Study/PythonPackages/PythonBisect.md
           - 微信读书可视化: Study/PythonPackages/PythonPieces6.md
           - Python一些命令行操作: Study/PythonPackages/PythonPieces7.md
-          - matplotlib技巧: Study/PythonPackages/Matplotlib.md
+          - Matplotlib相关: Study/PythonPackages/Matplotlib.md
           - Collections中的若干数据结构: Study/PythonPackages/Python_deque.md
           - Itertools-小抄: Study/PythonPackages/PythonPieces1.md
           - Python解包运算符: Study/PythonPackages/PythonPieces3.md
