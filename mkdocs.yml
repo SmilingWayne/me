@@ -78,6 +78,7 @@ nav:
           - 论人类不平等的起源与基础: Philosophy/Discours_linegalite.md
 
       - 其他:
+          - 科学管理原理: Philosophy/Principles_of_sci_mgm.md
           - 🇯🇵日本思想小史: Philosophy/Japan_philosophers.md
           - 哲思与海——一部诗意的哲学随笔: Philosophy/Phi_and_sea.md
           - 实用主义: Philosophy/Pragmatism.md
@@ -219,45 +220,46 @@ nav:
           - 拉丁美洲文学(牛津通识读本): Literature/Literacy/Latin_america_literature.md
       - 小说:
           - Literature/Novel/index.md
-          - 蛙: Literature/Novel/Frog.md
-          - 面纱: Literature/Novel/Veil.md
-          - 鼠疫: Literature/Novel/Plague.md
-          - 雪国: Literature/Novel/Snow.md
-          - 朝闻道: Literature/Novel/Zhao_wen_dao.md
-          - 野棕榈: Literature/Novel/Wild_palm.md
-          - 双城记: Literature/Novel/Stories_of_two_cities.md
-          - 罗生门: Literature/Novel/Rashomon.md
+          - 🇨🇳蛙: Literature/Novel/Frog.md
+          - 🇬🇧面纱: Literature/Novel/Veil.md
+          - 🇫🇷鼠疫: Literature/Novel/Plague.md
+          - 🇯🇵雪国: Literature/Novel/Snow.md
+          - 🇯🇵古都: Literature/Novel/Kyoto.md
+          - 🇨🇳朝闻道: Literature/Novel/Zhao_wen_dao.md
+          - 🇺🇸野棕榈: Literature/Novel/Wild_palm.md
+          - 🇬🇧双城记: Literature/Novel/Stories_of_two_cities.md
+          - 🇯🇵罗生门: Literature/Novel/Rashomon.md
           - 同情者: Literature/Novel/Sympathatic.md
-          - 巨人传: Literature/Novel/Giants.md
+          - 🇫🇷巨人传: Literature/Novel/Giants.md
           - 侦探小说: Literature/Novel/Detective.md
           - 华氏451: Literature/Novel/Fahrenheit_451.md
-          - 流年的飞沫: Literature/Novel/Lecume_des_jours.md
-          - 《1984》: Literature/Novel/1984.md
+          - 🇫🇷流年的飞沫: Literature/Novel/Lecume_des_jours.md
+          - 🇬🇧《1984》: Literature/Novel/1984.md
           - 希腊神话合集: Literature/Novel/Greek/Myth_1.md
-          - 撒马尔罕: Literature/Novel/Samarkhan.md
-          - 生死疲劳: Literature/Novel/Forever_fatigue.md
-          - 百年孤独: Literature/Novel/100_years_solitude.md
-          - 五号屠场: Literature/Novel/Slaughterhouse_five.md
-          - 平凡的世界: Literature/Novel/Common_world.md
-          - 沉默的病人: Literature/Novel/Silent_patient.md
-          - 包法利夫人: Literature/Novel/Madam_Bovary.md
-          - 三个火枪手: Literature/Novel/Three_riflers.md
-          - 雪落香杉树: Literature/Novel/Snow_falls.md
+          - 🇫🇷撒马尔罕: Literature/Novel/Samarkhan.md
+          - 🇨🇳生死疲劳: Literature/Novel/Forever_fatigue.md
+          - 🇨🇴百年孤独: Literature/Novel/100_years_solitude.md
+          - 🇺🇸五号屠场: Literature/Novel/Slaughterhouse_five.md
+          - 🇨🇳平凡的世界: Literature/Novel/Common_world.md
+          - 🇬🇧沉默的病人: Literature/Novel/Silent_patient.md
+          - 🇫🇷包法利夫人: Literature/Novel/Madam_Bovary.md
+          - 🇫🇷三个火枪手: Literature/Novel/Three_riflers.md
+          - 🇺🇸雪落香杉树: Literature/Novel/Snow_falls.md
           - 潘神的迷宫: Literature/Novel/Labyrinth_pan.md
           - 达芬奇密码: Literature/Novel/Davinci_code.md
-          - 格列佛游记: Literature/Novel/Gulliver.md
+          - 🇬🇧格列佛游记: Literature/Novel/Gulliver.md
           - 失明症漫记: Literature/Novel/Ensaio_sobre_a_cegueira.md
           - 瘟疫年纪事: Literature/Novel/Pandemic_era.md
-          - 许三观卖血记: Literature/Novel/Xu_san_guan.md
-          - 麦田里的守望者: Literature/Novel/Catcher_in_the_rye.md
-          - 查泰莱夫人的情人: Literature/Novel/Lady_Chatterley.md
-          - 房思琪的初恋乐园: Literature/Novel/Fang_si_qi.md
-          - 卡拉马佐夫兄弟: Literature/Novel/Kara_Mazov_brothers.md
-          - 东方快车谋杀案: Literature/Novel/Oriental_express.md
-          - 尼罗河上的惨案: Literature/Novel/Tragedy_niro.md
-          - 了不起的盖茨比: Literature/Novel/Gatsby.md
-          - 红玫瑰与白玫瑰: Literature/Novel/Red_roses_white_roses.md
-          - 查令十字街84号: Literature/Novel/Charline_84.md
+          - 🇨🇳许三观卖血记: Literature/Novel/Xu_san_guan.md
+          - 🇺🇸麦田里的守望者: Literature/Novel/Catcher_in_the_rye.md
+          - 🇬🇧查泰莱夫人的情人: Literature/Novel/Lady_Chatterley.md
+          - 🇨🇳房思琪的初恋乐园: Literature/Novel/Fang_si_qi.md
+          - 🇷🇺卡拉马佐夫兄弟: Literature/Novel/Kara_Mazov_brothers.md
+          - 🇬🇧东方快车谋杀案: Literature/Novel/Oriental_express.md
+          - 🇬🇧尼罗河上的惨案: Literature/Novel/Tragedy_niro.md
+          - 🇺🇸了不起的盖茨比: Literature/Novel/Gatsby.md
+          - 🇨🇳红玫瑰与白玫瑰: Literature/Novel/Red_roses_white_roses.md
+          - 🇬🇧查令十字街84号: Literature/Novel/Charline_84.md
       - 语料库:
           - Literature/Corpus/index.md
           - 修辞、文字与形象化: Literature/Corpus/Metaphor.md
