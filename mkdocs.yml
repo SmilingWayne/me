@@ -354,13 +354,15 @@ nav:
           - 排队论: OROpt/OR/Chapter9.md
           - 仓储论（EOQ模型和它的一万个分身）: OROpt/OR/Chapter10.md
           - 博弈论: OROpt/OR/Chapter11.md
-          - 高级运筹学技巧1：列生成方法: OROpt/OR/Chapter12.md
-          - 高级运筹学技巧2：拉格朗日松弛: OROpt/OR/LR.md
-          - 高级运筹学技巧3：分支定价: OROpt/OR/BranchAndPrice.md
-          - 经典运筹学问题：TSP问题: OROpt/OR/TSP.md
-          - 经典运筹学问题：VRP问题: OROpt/OR/VRP.md
-          - 经典运筹学问题：JSP问题: OROpt/OR/JSP.md
           - MAPF: OROpt/OR/MAPF.md
+      - 高级运筹学技巧1：列生成方法: OROpt/OR/Chapter12.md
+      - 高级运筹学技巧2：拉格朗日松弛: OROpt/OR/LR.md
+      - 高级运筹学技巧3：分支定价: OROpt/OR/BranchAndPrice.md
+      - 经典运筹学建模：发电机组调度(UCP): OROpt/OR/UnitCommitmentProblem.md
+      - 经典运筹学问题：批量生产问题(LSP): OROpt/OR/LotSizingProblem.md
+      - 经典运筹学问题：TSP问题: OROpt/OR/TSP.md
+      - 经典运筹学问题：VRP问题: OROpt/OR/VRP.md
+      - 经典运筹学问题：JSP问题: OROpt/OR/JSP.md
   - 学习笔记:
       - Study/index.md
       - 组会与相关学术内容:
@@ -370,7 +372,6 @@ nav:
           - 0308TeamMeeting: Study/TeamMeeting/0308Prep.md
           - 0315TeamMeeting: Study/TeamMeeting/0315Prep.md
           - 0322TeamMeeting: Study/TeamMeeting/0322Prep.md
-          - 0329TeamMeeting(Me): OROpt/OR/Chapter12.md
           - 2024年综合运输系统运营管理学术研讨会: Study/TeamMeeting/0329Prep.md
       - 小红书｜资源分享外链: Study/xhs_list.md
       - 小红书｜文本编辑:
@@ -467,6 +468,7 @@ nav:
           - 第八章｜供应链物流管理: Study/SCMTheory/Chapter8.md
       - 果系产品使用:
           - CS193p: Study/Swift/CS193p1.md
+          - AppleVisionPro试用: Study/Swift/AppleVisionPro.md
           - macOS快捷键: Study/Swift/Keyshortcuts.md
           - shortcuts快捷指令使用指南: Study/Swift/Shortcuts.md
           - Apple的奇奇怪怪: Study/Swift/AppleScript.md
