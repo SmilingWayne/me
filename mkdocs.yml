@@ -338,6 +338,7 @@ nav:
       - 闲聊: yan/yanTalks.md
   - 运筹与优化:
       - OROpt/index.md
+      - 给进组研一er的Brief: OROpt/OR/Intro.md
       - 运筹学基础:
           - OROpt/OR/index.md
           - 运筹学刷题本: OROpt/OR/ORExercise/Works.md
@@ -359,10 +360,11 @@ nav:
       - 高级运筹学技巧2：拉格朗日松弛: OROpt/OR/LR.md
       - 高级运筹学技巧3：分支定价: OROpt/OR/BranchAndPrice.md
       - 经典运筹学建模：发电机组调度(UCP): OROpt/OR/UnitCommitmentProblem.md
-      - 经典运筹学问题：批量生产问题(LSP): OROpt/OR/LotSizingProblem.md
+      - 经典运筹学建模：批量生产问题(LSP): OROpt/OR/LotSizingProblem.md
       - 经典运筹学问题：TSP问题: OROpt/OR/TSP.md
       - 经典运筹学问题：VRP问题: OROpt/OR/VRP.md
       - 经典运筹学问题：JSP问题: OROpt/OR/JSP.md
+      - 常见的0-1变量处理技巧: OROpt/OR/GeneralTechnique.md
   - 学习笔记:
       - Study/index.md
       - 组会与相关学术内容:
