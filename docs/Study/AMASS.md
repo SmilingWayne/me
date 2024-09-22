@@ -327,7 +327,7 @@
     2. 每次补货数量都是Q
 
 
-![Screen Shot 2021-12-27 at 10.41.00 AM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 10.41.00 AM.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230037306.png)
 
   - Average Inventory $= Q/2$
 
@@ -341,7 +341,7 @@
     \\
     TC_{opt} = \sqrt{2KRH} + cR$$
 
-  - ![Screen Shot 2021-12-27 at 10.53.44 AM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 10.53.44 AM.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230026222.png)
 
   - 订货决策与Lead time 的效果
 
@@ -400,7 +400,10 @@
 - **安全库存和Service Level**
 
   - 不确定性和缺货：stockout
-  - 缺货的原因：顾客表现等![Screen Shot 2021-12-27 at 12.03.29 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 12.03.29 PM.png)
+  - 缺货的原因：顾客表现等
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230027314.png)
+
   - 安全库存：是指超过平均需求之外额外设置的库存，或者说是超过预测需求为了方式需求不确定性进行缺货保护设置的库存。or **safety stock(SS)**, is the inventory held **in excess of the average demand or in excess of forecast demand to hedge against uncertainty to protect against stock-out.**
 
 - **Service Level Measures**
@@ -432,20 +435,17 @@
 
     是Standard deviation of leadtime demand，标准差。
 
-  - ![Screen Shot 2021-12-27 at 12.19.00 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 12.19.00 PM.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230028116.png)
 
-  - ![Screen Shot 2021-12-27 at 12.19.38 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 12.19.38 PM.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230028432.png)
 
-  - $$I_{s} = ROP - LTD
-    \\
-    \\
-    ROP = I_{s} + LTD
-    \\
-    \\
-    I = I_{c} + I_{s} = Q/2 + I_{s}
-    \\
-    \\
-    mean\quad demand = RL$$
+$I_{s} = ROP - LTD$
+
+$ROP = I_{s} + LTD$
+
+$I = I_{c} + I_{s} = Q/2 + I_{s}$
+
+$mean\quad demand = RL$
 
     
 
@@ -482,7 +482,10 @@
   - At any order quantity, Q, the expected marginal benefit from ordering an additional unit is (p-c) * Prob(R > Q)期望边际；期望边际成本：(c - v) *Prob(R ≤ Q)
   - 尽管边际收益是随着数量增多不断递减，但是边际成本却会不断增加
   - **F(Q*) = Cu/(Cu + Co), 其中Cu =  p - c[买少了，under-stocking], Co = c - v[买多了，over-stocking]**
-  - 选在Cu/（Cu+Co）对应的Q*最好![Screen Shot 2021-12-27 at 1.06.52 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 1.06.52 PM.png)
+  - 选在Cu/（Cu+Co）对应的Q*最好
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230030074.png)
+
   - 其中z是安全库存因子，与service level相关，我们需要减少西格玛R从而减少Q*，上面的R表示的是需求的平均值，西格玛是需求的标准差
 
 - Lead Time Demand Analysis 不确定性分析增加随机变量L（LTD）
@@ -530,7 +533,9 @@
     - Reduction in variability allows a decrease in safety stock and therefore reduces average inventory. 
   - Aggregation：将多个类似产品或者不同地区的产品的需求整合起来看。
   - **Physical centralization：地理上将不同地区整合到一个地方【根号n效应】：**
-    <!-- - ![Screen Shot 2021-12-27 at 1.34.57 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 1.34.57 PM.png) -->
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230030597.png)
+
   - Virtual centralization：为了满足不同地区间需求，将产品在不同地区间输送
   - Specialization
   - Component Commonality（MTS、ATO等策略）
@@ -551,7 +556,9 @@
     \\
     OUL = R \times (T_r + L) + SS$$
 
-  - ![Screen Shot 2021-12-27 at 1.45.01 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 1.45.01 PM.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230031514.png)
+
 
   - Tr是订货周期，L是leadtime，Tr比leadtime 长一点。
 
@@ -628,7 +635,10 @@
   - A/B/X/Y/Z: A 代表arrival pattern顾客到来的模式；B代表服务模式：service pattern， X代表并行的server数量；Y代表队的容量；Z代表队列的排序规则；
   - M/M/1：指数分布的arrivals , service
   - 柏松随机过程，指数分布的服务时间，c个服务器，buffer capacity K，无人放弃排队
-    - 队伍长度：<img src="docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 6.28.20 PM.png" alt="Screen Shot 2021-12-27 at 6.28.20 PM" style="zoom:25%;" />
+    - 队伍长度：
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230032967.png)
+
   - G/G/C
 - 提高buffer capacity, blocking and abandonment:
   - Rate at which customers enter R = Ri (1- Pb)(1- Pa)
@@ -672,7 +682,9 @@
     - Long-range planning( > 1year)
     - Medium-range planning( 6 - 18 months)
     - Short-range planning( 1day ~ <6months)
-  - ![Screen Shot 2021-12-27 at 7.05.32 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 7.05.32 PM.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230032141.png)
+
 - Aggregate  planning(AP综合预测)
   - 通过决定多公司需要留下多少雇员以及对于公司来说需要生产的产品的数量、种类
   - **竞争策略**：
@@ -697,7 +709,9 @@
     - Push: 由对需求的预测推动；
     - Pull：由下游（downstream）的需求（内部信息）拉动
   - 注意了，push和pull是针对control strategy提出来的，而不是OS，OS是M2O，M2S
-  - ![Screen Shot 2021-12-27 at 7.26.20 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 7.26.20 PM.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230032957.png)
+
 - Push Control Strategy：
   - MRP（Material Requirement Planning)
     - Def: 将Master Production Schedule**（主生产计划）** for final products转化为上游流程中所需的最终的物料需求
@@ -717,7 +731,9 @@
       9. 净需求= 总需求-预计可用量
       10. **预计入库量就是按照lotsize取最小能够覆盖净需求的量；**
       11. 本次的预计可用量 = 上一次的预计入库+上一次的预计可用-上一次的总需求
-      12. ![Screen Shot 2021-12-28 at 9.31.55 AM](docs/../picx/AMASS-pics/Screen Shot 2021-12-28 at 9.31.55 AM.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230033979.png)
+
     - MRP的首要报告（？）
     - MRP的次要报告（？）secondary report
     - MRP的具体实现：
@@ -735,17 +751,23 @@
     - 特点：包含了capacity planning 的内容在里面，拓宽了物料的定义范围；
   - ERP：Enterprise Resoucre Planning System
     - Def. 一个计算机系统，将 会计、销售、制造和公司其他功能整合在一个程序中；具体通过一个数据库实现了各个功能之间的互通；
-    - ![Screen Shot 2021-12-27 at 8.21.26 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 8.21.26 PM.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230034446.png)
+
 - Pull Strategy
   - 特征：	
     - 物料通过拉动的方式传递，与传统的推动的方式相反；
     - 迫使公司降低过高生产估计和过低生产估计
   - Kanban Production Control
-    - ​	![Screen Shot 2021-12-27 at 8.24.11 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 8.24.11 PM.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230034756.png)
+
     - 物料流和kanban反馈流
     - 实现Low WIP levels
     - **当且仅当一个产品作为产出被下游阶段所需要的时候，生产才会开始**；也就是说，每个部分是通过下一个部分被拉动的，而不是像push一样被预测所推动；**这是对当下的 顾客需求作出反应，而不是基于对未来顾客的需求的预测**；去中心化的控制（pull） vs 中心化的控制；
-    - ![Screen Shot 2021-12-27 at 8.31.07 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 8.31.07 PM.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230034580.png)
+
     - 看板的维护质量的作用；
     - 双箱系统，实现了full production完全生产，是production kanban拉动了生产开始，withdrawal kanban实现了货物的流动
 
@@ -767,11 +789,14 @@
     - low Inventory Levels: WIP and FGI(finished goods Inventory)
     - 高利用率
 - Flow units\ resources \ 
-- Flow shop: high volume system：**产量大，种类少，需要稳定的需求供给，标准化的机械设备与activities，主要注意的：生产线平衡！！**![Screen Shot 2021-12-28 at 9.58.16 AM](docs/../picx/AMASS-pics/Screen Shot 2021-12-28 at 9.58.16 AM.png)
+- Flow shop: high volume system：**产量大，种类少，需要稳定的需求供给，标准化的机械设备与activities，主要注意的：生产线平衡！！**
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230035389.png)
+
 - Intermediate-volume system：output介于两者之间
 - Job shop: low volume system：产量低但是种类多，需求复杂
 
-![Screen Shot 2021-12-27 at 9.00.39 PM](docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 9.00.39 PM.png)
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230035319.png)
 
 - 甘特图法：解决jobshop处理问题
 - 指派问题【匈牙利算法】

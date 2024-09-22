@@ -80,13 +80,8 @@
 
 ### 第九章 国际资本流动的经济效益
 
-<center>
-<figure markdown>
 
-  ![Image title](./figures/International%20cap.png){ width="400" }
-  <figcaption></figcaption>
-</figure>
-</center>
+![Image title](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202409230023738.png){ width="400" }
 
 
 
