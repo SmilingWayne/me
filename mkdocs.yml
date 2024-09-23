@@ -34,19 +34,16 @@ nav:
           - 相似之书: Philosophy/Book_of_resemblance.md
           - 我理解的伊斯兰教: Philosophy/Religion_culture.md
 
-      - 文明:
-          - 文明的冲突与世界秩序的重建: Philosophy/Collision_civilization.md
-          - 后殖民主义与世界格局(牛津通识读本): Philosophy/Postcolonialism.md
-          - 民族国家间的和平与战争: Philosophy/Peace_war_in_nation_state.md
-          - 政治的历史与边界: Philosophy/Boundary_politics.md
-          - 我们时代的社会思考与阅读主张: Philosophy/Thoughts_in_our_time.md
-
       - 政治哲学:
           - 君主论: Philosophy/ThePrince.md
           - 论政府: Philosophy/Government.md
           - 政治学: Philosophy/Politics.md
           - 政治神学: Philosophy/Theology_politics.md
           - 美国生活中的反智主义: Philosophy/Anti_intellectual_usa.md
+          - 文明的冲突与世界秩序的重建: Philosophy/Collision_civilization.md
+          - 后殖民主义与世界格局(牛津通识读本): Philosophy/Postcolonialism.md
+          - 民族国家间的和平与战争: Philosophy/Peace_war_in_nation_state.md
+          - 政治的历史与边界: Philosophy/Boundary_politics.md
           - 以赛亚伯林的遗产: Philosophy/Legacy_berlin.md
           - 自由及其背叛: Philosophy/Liberty_and_betray.md
           - 穆斯林与激进主义: Philosophy/Muslim_radicalism.md
@@ -85,6 +82,7 @@ nav:
           - 实用主义: Philosophy/Pragmatism.md
           - 亚里士多德的世界(牛津通识读本): Philosophy/World_of_aristotle.md
           - 如何阅读一本书: Philosophy/How_to_read.md
+          - 我们时代的社会思考与阅读主张: Philosophy/Thoughts_in_our_time.md
 
   - 文学:
       - Literature/index.md
