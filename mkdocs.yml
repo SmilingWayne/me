@@ -47,7 +47,6 @@ nav:
           - 政治的历史与边界: Philosophy/Boundary_politics.md
           - 以赛亚伯林的遗产: Philosophy/Legacy_berlin.md
           - 自由及其背叛: Philosophy/Liberty_and_betray.md
-          - 穆斯林与激进主义: Philosophy/Muslim_radicalism.md
           - 圣战与文明: Philosophy/Gihad_civilization.md
           - 良知对抗暴力: Philosophy/Verse_violence.md
           - 有闲阶级论: Philosophy/Leisure_class.md
@@ -296,7 +295,6 @@ nav:
           - 战国歧途: History/Zhanguo_qitu.md
           - 荒诞医学史: History/Ridiculous_medics.md
           - 罗马帝国简史: History/Roman_empire_brief_history.md
-          - 世界史碎片: History/World.md
           - 古罗马帝国军事史: History/Rome_military_history.md
           - 世界史就是经济史: History/Econo_history.md
           - 西印度毁灭述略: History/Destroy_western_india.md
@@ -321,9 +319,7 @@ nav:
           - 🇫🇷黑夜的蝴蝶: Arts/Butterfly_at_night.md
           - 🇫🇷左岸,从人民阵线到冷战作家: Arts/Left_bank.md
           - 非主流艺术史: Arts/Art_history_unfashioned.md
-          - 🇫🇷巴黎神话——从启蒙运动到超现实主义: Arts/Parisian_myth.md
           - 🇫🇷艺术引导人生——德拉克洛瓦私人日记: Arts/Delacroix.md
-          - 🇫🇷法国制造——法国文化关键词: Arts/Made_in_French.md
           - 达达和超现实主义: Arts/Dada_surrealism.md
           - 贝多芬的骰子: Arts/Beethoven.md
           - 爱的艺术: Arts/Arts_of_love.md
@@ -549,7 +545,6 @@ nav:
       - 荐书: Talks/Books_recomend.md
       - 古典音乐: Talks/Classical_music.md
       - 女性主义: Talks/Feminism_talks.md
-      - 没有整理的: Talks/pieces.md
 
 site_author: SmilingWayne
 repo_name: SmilingWayne/me
