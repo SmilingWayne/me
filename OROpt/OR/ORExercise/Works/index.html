@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
     
     
       
@@ -15100,17 +15100,26 @@ x_{ij} \geq 0, \quad i = 1, 2, 3, 4, 5; \quad j = A, B, C, D; \quad f_1, f_2, f_
 <dl>
 <dt>标记</dt>
 <dd>记 <span class="arithmatex">\(f_k(s_k)\)</span> 表示在第 <span class="arithmatex">\(k\)</span> 周期初始拥有 <span class="arithmatex">\(s_k\)</span> 台机器时能获得的最大收益。 <span class="arithmatex">\(x_{k1}\)</span> 表示在第 <span class="arithmatex">\(k\)</span> 周期投入第 1 个生产任务的机器的数量。</dd>
-</dl>
-<p><em>第四周期：</em></p>
+<dt><em>第四周期：</em></dt>
+<dd>
 <p><span class="arithmatex">\(f_4(s_4) = 10x_{41} + 7(s - x_{41})\)</span></p>
 <p>$ = 3x_{41} + 7s$</p>
+</dd>
+</dl>
 <p>所以第四周期所有的机器(<span class="arithmatex">\(s\)</span>台)都投入第一个任务。最大收益： <span class="arithmatex">\(f_4(s_4) = 10s\)</span> </p>
-<p><em>第三周期：</em></p>
+<dl>
+<dt><em>第三周期：</em></dt>
+<dd>
 <p><span class="arithmatex">\(f_3(s_3) =  10x_{31} + 7(s_3 - x_{31}) + f_4(s_4)\)</span></p>
 <p><span class="arithmatex">\(= 3x_{31} + 7s_3 + 10 * ( 2 / 3 x_{31} + 9 / 10 (s_3 - x_{31}))\)</span></p>
+</dd>
+</dl>
 <p>计算后发现，第三周期所有的机器都投入第一个任务。最大收益： <span class="arithmatex">\(f_3(s_3) = 50 / 3 * s_3\)</span></p>
 <p>以此类推到第一个周期即可。最后的答案：</p>
-<p>第一周期 100 台机器全部用于第二种任务的生产;第二周期 90 台机器全部用于第 二种任务的生产;第三周期 81 台机器全部用于第一种任务的生产;第四周期 54 台机器全部用于第一种任务的生产。</p>
+<p>第一周期 100 台机器全部用于第二种任务的生产;</p>
+<p>第二周期 90 台机器全部用于第 二种任务的生产;</p>
+<p>第三周期 81 台机器全部用于第一种任务的生产;</p>
+<p>第四周期 54 台机器全部用于第一种任务的生产。</p>
 <hr />
 <h3 id="dp_1">人员分配 ( DP )<a class="headerlink" href="#dp_1" title="Permanent link">⚓︎</a></h3>
 <p>某科研项目由 A, B, C 三个小组用不同的手段分别研究，他们失败的 概率各为 0.4, 0.6, 0.8。为了减少三个小组都失败的可能性，现决定给三个小 组中增加两名高级科学家到各小组。各小组科研项目失败概率如下表。问 如何分派科学家才能使三个小组都失败的概率(即科研项目最终失败的概 率)最小?</p>
@@ -15596,7 +15605,7 @@ x_{ij} \geq 0; \quad i = A, B, C; \quad j = 甲, 乙, 丙
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 22, 2024 16:59:43</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 12, 2024 10:43:48</span>
   </span>
 
     
@@ -15606,7 +15615,7 @@ x_{ij} \geq 0; \quad i = A, B, C; \quad j = 甲, 乙, 丙
     <span class="md-icon" title="创建日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 11, 2024 02:17:25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 12, 2024 10:43:48</span>
   </span>
 
     
