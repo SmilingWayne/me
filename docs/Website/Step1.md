@@ -1,11 +1,11 @@
-# 从零开始零成本搭建你的个人网站
+# 从零开始零成本搭建你的个人网站：一
 
 !!! abstract "说在最前面"
     本笔记会0成本、手把手搭建一个和这个页面类似的个人网站。预计会分成好几个部分完成更新。走完这一篇笔记的内容，你可以实现：
 
     1. 使用 Mkdocs 完成框架搭建；
     2. Git 基础用法；
-    3. 使用 Github Pages 完成网站托管，可以在浏览器实时访问。
+    3. 使用 Github Pages 完成网站托管，可以通过网址实时访问你的网站。
 
     现在，**我们直接开始。** 本文需要的前置配置：安装好Python，Git版本控制工具，能够用conda或者类似的依赖管理工具，创建一个Python虚拟环境；注册一个Github账号。就可以开始了。总体而言适合有一定相关基础的同学。也推荐感兴趣的同学边做边看边学。因为**一点也不难**。
 
@@ -17,11 +17,11 @@
 - [x] 注册一个Github账号；
 - [x] 安装好Git版本管理工具。
 
-|      操作系统       |  类型  |                             链接                              |
-| :-----------------: | :----: | :-----------------------------------------------------------: |
-| macOS/Windows/Linux |  Git   |                https://git-scm.com/downloads/                 |
-| macOS/Windows/Linux | Python | https://www.python.org/downloads/<br>https://www.anaconda.com |
-|         All         | github |                      https://github.com                       |
+|      操作系统       |  类型  |                                 链接                                  |
+| :-----------------: | :----: | :-------------------------------------------------------------------: |
+| macOS/Windows/Linux |  Git   |                [下载](https://git-scm.com/downloads/)                 |
+| macOS/Windows/Linux | Python | [下载](https://www.python.org/downloads/)<br>https://www.anaconda.com |
+|         All         | github |                          https://github.com                           |
 
 以下教程基于我的配置进行。由于我是macOS系统，部分路径等和windows下的稍有不同。
 
@@ -31,7 +31,7 @@
 
 !!! question "Mkdocs 是什么"
 
-    Mkdocs 是一个用 Markdown 写作，用 Python 编写的静态网站生成器。它非常轻量，可以快速搭建一个静态网站，并且可以方便地部署到 Github Pages 上。Mkdocs 的官方文档：https://www.mkdocs.org/user-guide/installation/。
+    Mkdocs 是一个用 Markdown 写作，用 Python 编写的静态网站生成器。它非常轻量，可以快速搭建一个静态网站，并且可以方便地部署到 Github Pages 上。Mkdocs 的官方文档：[参考链接](https://www.mkdocs.org/user-guide/installation/)。
 
 首先，你需要先创建一个Python虚拟环境。在终端（对应Windows中的 CMD Lines 命令行工具）里执行：
 
@@ -231,5 +231,33 @@ jobs:
 
 然后，按照三中类似步骤，把我们的上述更新推送到仓库中。具体的指令就不赘述了。
 
+这时其实还是没有托管成功的。推送完毕后，你需要前往你的仓库的 `Settings` 部分，选择左侧栏中的 `Pages`，修改构建的分支为 `gh-pages`。也就是改成下面的样子。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202410121052492.png)
 
 
+现在，再在本地随便改些东西，比如我在 `index.md` 里加一些新的文字。**再重新提交代码**，推送到仓库里。
+
+此时访问你的仓库，会发现右下角有个 `Deployments`，里面显示你的 github-pages 在排队，等待服务器部署。然后，大概等个一两分钟，就会显示部署结果。是绿色，说明部署好了。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202410121100960.png)
+
+此时，检验成果的时候到了。点击上图中部署完的那个github-pages，会出现部署详情。注意在部署成功的后面有一个包含 `github.io` 的网页链接。点击那个链接，就可以跳转到你部署的网页。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202410121103393.png)
+
+点开如图：
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202410121105600.png)
+
+会发现中间有一行我们刚刚添加的新的文字。说明我们刚刚的更新成功了！
+
+大功告成！
+
+**现在，你已经完成了Github Pages 的托管。你在这个仓库的main分支上的所有更新，都会及时同步到上述链接上发不出来。这也是个人网站/个人博客等的最原始、最基本的起点。** 后续会基于这个笔记，继续展开几个内容：
+
+1. 如何给网站赋予一些主题？
+2. 如何编排自己的目录？
+3. 如何自定义格式？
+4. 如何处理和存储网站中的图片？
+5.  ... 
