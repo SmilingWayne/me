@@ -343,6 +343,7 @@ nav:
           - 线性规划、单纯形法（plus pro max版）: OROpt/OR/Chapter1.md
           - 灵敏度分析: OROpt/OR/Chapter1_plugin.md
           - 对偶理论及对偶单纯形法（一种哲学）: OROpt/OR/Chapter2.md
+          - 线性规划对偶的解题向写法: OROpt/OR/Chapter3_ext1.md
           - 运输问题、目标规划和 DEA: OROpt/OR/Chapter3.md
           - DEA的扩展: OROpt/OR/Chapter3_plugin.md
           - 整数规划、求解算法和指派问题: OROpt/OR/Chapter4.md
