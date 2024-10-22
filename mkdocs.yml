@@ -549,6 +549,7 @@ nav:
   - 关于网站:
       - Website/index.md
       - 第一篇｜框架和托管: Website/Step1.md
+      - 第二篇｜主题和美化: Website/Step2.md
 
 site_author: SmilingWayne
 repo_name: SmilingWayne/me
