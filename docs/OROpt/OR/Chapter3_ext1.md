@@ -1,4 +1,4 @@
-# 又快又准地写线性规划的对偶问题：做题向、记忆法
+# 又快又准地写线性规划的对偶问题：做题向｜记忆法 ✅
 
 !!! note "做题向、记忆向的速成"
     运筹笔记更新到后面，前面有一些基础性的**线性规划**的东西，后台有不少同学问。然后正好开学没多久有空，就把一些去年复习线代和运筹时候的笔记再整理一下。整个笔记会以比较**做题向**的视角展开。主打一个**技巧至上、理解至上**。注意：
@@ -19,7 +19,7 @@ $$\min z = 3x_1 + 2x_2 - 4x_3 + x_4$$
 $$\text{s.t.}\begin{aligned}
 \begin{cases}
 \begin{align}
-& x_1 & + & x_2 & - & x_3 & + & x_4  \geq 10 \quad \\
+& x_1 & + & x_2 & - & 3x_3 & + & x_4  \geq 10 \quad \\
 & 2x_1 & & & + & 2x_3 & - & x_4 \leq 8 \quad \\
 & & & x_2 &+ & x_3 &+& x_4 = 6 \quad \\
 \end{align}
@@ -36,9 +36,9 @@ $$x_1 \leq 0, x_2 \geq 0, x_3 \geq 0, x_4 \quad \text{No Constr}$$
 
 我们把如下所示的两种形式，称作线性规划原问题的**规范形式**。==后续我们的所有内容都会基于这两个规范形式展开。==
 
-$${\color{red}\text{max}} \quad z = \sum^n_{j = 1} c_j x_j \quad \quad \quad \quad \quad \quad \quad {\color{blue}\text{min}} \quad w = \sum^n_{i = 1} b_i y_i$$
+$${\color{red}\text{max}} \quad z = \sum^n_{j = 1} c_j x_j \quad \quad \quad \quad \quad \quad \quad {\color{blue}\text{min}} \quad w = \sum^m_{i = 1} b_i y_i$$
 
-$$\text{s.t.} \sum^n_{j = 1}a_{ij} x_{i} \ {\color{red}\leq} \ b_i \quad (i = 1,...,m)  \quad \quad \quad   \text{s.t.} \sum^m_{i = 1}a_{ij} y_{j} \ {\color{blue}\geq} \  c_j \quad (j = 1,...,n)$$
+$$\text{s.t.} \sum^n_{j = 1}a_{ij} x_{i} \ {\color{red}\leq} \ b_i \quad (i = 1,...,m)  \quad \quad \quad   \text{s.t.} \sum^m_{i = 1}a_{ij} y_{i} \ {\color{blue}\geq} \  c_j \quad (j = 1,...,n)$$
 
 $$x_j \ {\color{red}\geq} \ 0 \quad (j = 1, ..., n)  \quad \quad  \quad \quad \quad \quad \quad \quad  y_i \ {\color{blue}\geq} \ 0 \quad (i = 1, ..., m)$$
 
@@ -134,7 +134,7 @@ y_1 - y_2 + y_3 = 1\\
 
 你应该能感觉到，既然原问题-对偶问题存在一个“决策变量-约束条件”的对应，那**对偶问题的决策变量，是不是也对应原问题的约束条件呢**，事实上确实如此。先给出**第六个重点：对偶问题决策变量的符号，依据对应的原问题约束条件的规范形式确定：如果对应原问题约束条件是规范形式，那么对偶问题的这个决策变量也是规范形式；如果对应原问题的约束条件是不规范的，那么对偶问题的这个决策变量也是不规范形式的。**
 
-不厌其烦地继续举例子。下面是原问题的约束条件。我把每个约束对应的对偶问题决策变量列在后面。
+下面是原问题的约束条件。我把每个约束对应的对偶问题决策变量列在后面。
 
 $$\min z = 3x_1 + 2x_2 - 4x_3 + x_4$$
 
