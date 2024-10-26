@@ -42,12 +42,12 @@
 
 **组会艺术大赏**
 :   那些年，我看过的论文（以及听过的讲座）。我是不会告诉你[这里]( https://pan.baidu.com/s/1UGvfg4Hcsa9O6klue5Wvdg) 有下载链接的 （code: omor）。
+    
+    覆盖的内容：
 
-    - [x] [20240102](./TeamMeeting/Articles.md)：Too Young! Too NAIVE! 
-    - [x] [20240308](./TeamMeeting/0308Prep.md): Truck & Drones 问题及其若干拓展；
-    - [ ] [20240315](./TeamMeeting/0315Prep.md): 简要略。
-    - [ ] [20240322](./TeamMeeting/0322Prep.md)：似懂非懂？主要是自己也被薅上来讲了点不打算讲的东西。
-    - [ ] [20240329](./TeamMeeting/0329Prep.md)：若干个讲座的笔记整理。
+    1. 列生成算法入门、Branch And Price及相关。
+    2. Truck & Drones 物流配送场景：问题和描述。
+    3. 低空物流经济相关。
 
 
 **人工智能技术及相关**
@@ -59,12 +59,12 @@
     - [x] [Stable Diffusion部署](./ChatGPT/StableDiffusion.md):Watch, and Learn. 
     - [x] [Ollama本地部署](./ChatGPT/Ollama.md): RAG + 本地文档，还需要继续学。
 
-**语言学习相关（7/7）**
+**语言（7/7）**
 :   正经地学学语言。
 
     - [ ] [法语](./English/French.md)（会说一点点点）
-    - [ ] [英语](./English/English.md)（一个渴望双语生活的人） 
-    - [x] [葛底斯堡演说](./English/Gettysburg_Address.md)：不仅是林肯，更是USA。
+    - [ ] [英语](./English/English.md)（一个渴望双语生活的人）
+    - [ ] [文本摘](./)
 
 
 ------

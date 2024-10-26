@@ -43,7 +43,6 @@ nav:
           - 美国生活中的反智主义: Philosophy/Anti_intellectual_usa.md
           - 文明的冲突与世界秩序的重建: Philosophy/Collision_civilization.md
           - 后殖民主义与世界格局(牛津通识读本): Philosophy/Postcolonialism.md
-          - 民族国家间的和平与战争: Philosophy/Peace_war_in_nation_state.md
           - 政治的历史与边界: Philosophy/Boundary_politics.md
           - 以赛亚伯林的遗产: Philosophy/Legacy_berlin.md
           - 自由及其背叛: Philosophy/Liberty_and_betray.md
@@ -139,7 +138,6 @@ nav:
               - 🇨🇳牡丹亭: Plays/Mu_dan_ting.md
               - 🇨🇳桃花扇: Plays/Tao_hua_shan.md
               - 🇨🇳铸剑·哈姆雷特: Plays/Swords_hamlet.md
-              - 🇬🇧圣女贞德: Plays/Jean_de_arc.md
               - 🇬🇧罗密欧与朱丽叶: Plays/Romeo_juliet.md
           - 影视:
               - 🇯🇵切腹: Plays/Seppuku.md
@@ -485,12 +483,9 @@ nav:
           - 英语笔记: Study/English/English.md
           - 英语记忆: Study/English/Words.md
           - 英文作文: Study/English/EnglishEssay.md
+          - 英语文摘: Study/English/Quotes.md
           - 一些零散的英语笔记: Study/English/SomePres.md
           - 英语文学批评: Study/English/LiteraryCriticism.md
-          - 英文情诗(All this I did): Study/English/AllthisIdid.md
-          - 英文诗选(Questions of workers): Study/English/Question_of_workers.md
-          - 葛底斯堡演说(Gettysburg_Address): Study/English/Gettysburg_Address.md
-      - 网站搭建指南: Study/SiteBuild/FormatSetting.md
       - 制造与服务系统分析: Study/AMASS.md
       - 一些高中笔记: Study/HighSchool.md
       - 研究生课程：智慧物流: Study/IntelligentLogistics/IntelligentLogistics1.md
@@ -515,10 +510,8 @@ nav:
           - 古登堡计划:
               - 专有名词释疑: Study/ChatGPT/Knowledge/Terms.md
       - 计算社会学｜复杂系统｜仿真:
-          - 基于主体的建模方法: Study/SimulationCSS/AboutABM.md
-          - 复杂系统: Study/SimulationCSS/Notes.md
-          - 计算社会科学: Study/SimulationCSS/SocialScience.md
-          - 系统动力学: Study/SimulationCSS/SystemDynamics.md
+          - Study/SimulationCSS/index.md
+          - 各种笔记: Study/SimulationCSS/Notes.md
       - 其他平台电子笔记:
           - 网页设计与制作: Study/Mubu/WebsiteDesign.md
           - 网页设计简单参数标注（应试用）: Study/Mubu/network.md

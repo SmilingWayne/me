@@ -1,3 +1,5 @@
+# 记录一些单词
+
 - 网络不好/卡了：The phone is frozen.. /
 
 The computer is lagging.
