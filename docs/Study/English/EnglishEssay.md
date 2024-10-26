@@ -5,6 +5,7 @@
 Keywords: Redneck, American working class, whiteness, hard-working, self-reliance
 
 ## 1. Introduction
+
 Researches about the etymology of redneck reckon that the word “Redneck” refer to white people living in southern states rural areas such as Alabama, Oklahoma and Mississippi. Their necks were burnt red because of too much exposure to the sun. Since the term is mainly used to describe whiteness instead of the black, the discrimination is more hidden and undetectable. Compared with inter-racial prejudice(e.g. the hatred towards the black), intra-racial prejudice like “redneck” in the meantime, exert tremendous impact on social disruption. For instance, when middle-class Americans talk about rednecks, they would naturally associate it with rural areas, low life standard and maybe a fat white male chewing tobacco. In fact, this perspective is narrow and incomplete. As China, India and many other Asian nations become competitive in low-end manufacturing, It’s unreasonable for Americans to neglect those common but hard-working whiteness who make great contributions to US agriculture and industry. Rednecks’ self-reliance and hard-work aroused Americans’ recognition about their basic values. Further investigation in this essay would link this phenomenon to rednecks’ history and give a comprehensive conclusion.
 
 ## 2. Literature Review

@@ -1,8 +1,25 @@
 # 项目管理的部分
 
+!!! note "本部分主要是2023年初的一些emmm额外的探索。目前已经远离了这个方向，但是留下一点自己的痕迹。"
 
-- 这里主要是在...讲故事。主体建模是这样的。项目管理是这样的。
-- 可以掌握一定的名词将来吹牛用。
-- 比如什么是业主？什么是承包商？什么是监管？怎么监管？博弈能够做出解析解就不要再搞仿真了。仿真的前提是你做不出来解析解，只能尽量模拟。
+主要包括的内容（见[全部笔记](./Notes.md)）：
 
-- 狼和羊的模型。
+1. ==基于主体的建模（**A**gent **B**ased **M**odeling, **ABM**）==
+2. ==系统动力学（**S**ystem  **D**ynamics, **SD**）==
+3. ==混沌理论（**Chaos** Theory）==
+4. ==合作博弈（Cooperative ~）==
+
+
+## Reference
+
+- **项目管理的期刊推荐**
+  - Journal of Construction Engineering and Management ｜ JCEM 
+  - International Journal of Project Management ｜ IJPM
+  - Journal of Management in Engineering ｜ JME 
+  - Construction Management and Economics ｜ CME
+  - Journal of Cleaner Production ｜  JCP   
+  - Engineering, Construction and Architectural Management ｜ ECAM 
+  - Journal of Computing in Civil Engineering ｜ JCCE 
+  - International Journal of Civil Engineering ｜ IJCE
+  - Sustainability 
+
