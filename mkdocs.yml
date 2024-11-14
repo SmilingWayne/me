@@ -324,7 +324,6 @@ nav:
           - 艺术的故事: Arts/Stories_of_art.md
           - 文艺复兴时期的艺术: Arts/Art_renaissance.md
           - 现代主义: Arts/Modernism.md
-          - 西方艺术中的圣徒形象: Arts/Saints.md
       - 🇪🇺20世纪西方艺术家: Arts/20_century_artists.md
   - 考研:
       - yan/index.md
@@ -342,7 +341,8 @@ nav:
           - 灵敏度分析: OROpt/OR/Chapter1_plugin.md
           - 对偶理论及对偶单纯形法（一种哲学）: OROpt/OR/Chapter2.md
           - 线性规划对偶的解题向写法: OROpt/OR/Chapter3_ext1.md
-          - 运输问题、目标规划和 DEA: OROpt/OR/Chapter3.md
+          - 运输问题: OROpt/OR/Chapter3.md
+          - 多目标规划: OROpt/OR/Chapter3_ext2.md
           - DEA的扩展: OROpt/OR/Chapter3_plugin.md
           - 整数规划、求解算法和指派问题: OROpt/OR/Chapter4.md
           - 非线性规划、凸规划理论（最优化基础）: OROpt/OR/Chapter5.md
