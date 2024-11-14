@@ -39,3 +39,4 @@ $L_{p}\left(x_{i}, x_{j}\right)=\left(\sum_{k=1}^{n}\left|x_{i}^{(k)}-x_{j}^{(k)
 适用于快速找到最接近的多个邻居。缺点是“有可能会遗漏最近的”。因为会对整个多维空间进行划分。优点是整个树最多只有 $\log_2M$ 层，可以加速搜索。
 
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202411081042708.png)
+
