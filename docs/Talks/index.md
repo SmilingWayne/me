@@ -4,8 +4,7 @@
 !!! abstract "何人览古凝眸，怅朱颜易失，翠被难留。[^1]"
     
 
-<font size = 6 face = "SnellRoundHand" >Never stop thinking, talking and dreaming.</font>
-
+<font size = 6 face = "SnellRoundHand" >Amor fati.</font>
 
 
 - 多是一些自己有感而发的小文字，2023.09.22前，这部分在[“学习”](../Study/index.md)栏内，现特地把它搬出来独立成完整的一部分。持续的自信需要不断向外输出。
@@ -19,7 +18,7 @@
     - [x] [关于知识分享](./Knowledge_share.md) ：盗火者与宙斯的博弈。
     - [x] [关于记忆与记忆崇拜](./About_memory.md) ：学生生涯后，抹去记忆是可耻的。
     - [x] [关于古典音乐](./Classical_music.md) : 音乐是我的护工，我是陶醉的梦。
-    - [x] [神秘学](./Occult.md) ：“你只可到此，不可越过。”
+    - [x] [神秘学札记](./Occult.md) : 笑笑的异想世界！
 
 **年终总结系列（有删减）**
 :   [2021年](./2021_talks.md)，[2022年](./My2022.md)，[2023年](./2023_con.md)
