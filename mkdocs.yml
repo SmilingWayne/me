@@ -364,6 +364,11 @@ nav:
       - 经典运筹学问题：JSP问题: OROpt/OR/JSP.md
       - 常见的0-1变量处理技巧: OROpt/OR/GeneralTechnique.md
   - 机器学习:
+      - ML/index.md
+      - 统计学习方法：实战:
+          - 感知机: ML/StatLearnMethod/Perceptron.md
+          - K近邻算法: ML/StatLearnMethod/KNN.md
+          - 朴素贝叶斯｜Gaussian贝叶斯分类: ML/StatLearnMethod/NaiveBayesian.md
       - 实用机器学习：笔记: ML/PracticalML/Notes.md
   - 学习笔记:
       - Study/index.md
