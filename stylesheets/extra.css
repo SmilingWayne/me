@@ -13,12 +13,19 @@
   
 .md-typeset .admonition,
 .md-typeset details {
-    font-size: 14px
+    font-size: 15px
 }
 
 .md-grid {
     max-width: 1280px;   
 }
+
+.md-typeset .admonition.inline {
+    width: 350px;   
+    column-width: auto;
+    font-size: 15px;
+}
+
 /* 
 @font-face {
     font-display: auto;
