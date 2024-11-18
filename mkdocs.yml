@@ -231,6 +231,7 @@ nav:
           - 同情者: Literature/Novel/Sympathatic.md
           - 🇫🇷巨人传: Literature/Novel/Giants.md
           - 侦探小说: Literature/Novel/Detective.md
+          - 印度之行: Literature/Novel/Journey_to_india.md
           - 华氏451: Literature/Novel/Fahrenheit_451.md
           - 🇫🇷流年的飞沫: Literature/Novel/Lecume_des_jours.md
           - 🇬🇧《1984》: Literature/Novel/1984.md
@@ -550,6 +551,7 @@ nav:
       - Website/index.md
       - 第一篇｜框架和托管: Website/Step1.md
       - 第二篇｜主题和美化: Website/Step2.md
+      - 第三篇｜字体和文本: Website/Step3.md
 
 site_author: SmilingWayne
 repo_name: SmilingWayne/me
