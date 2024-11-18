@@ -13,19 +13,37 @@ hide:
 
 === "<font size = 6>:fontawesome-solid-paw: </font><font size = 6 face = "savoye LET" >About Me</font>"
 
-    - 🧑‍🎓 一个时刻想要变得不普通的普通人。你可以叫我 "笑笑" 。
+    <br> 
 
-    - 📖 喜欢阅读，有时观影，偶尔编程 :material-language-python: | :material-language-java:，不事劳作。
+    !!! note inline "一句话介绍"
+        🧑‍🎓 一个时刻想要变得不普通的普通人。
+        
+        🥰 你可以叫我 "笑笑" 。
 
-    - 🎻 “有柴小协[^1]的日子就是好日子。”
+    !!! note inline "我的爱好" 
+        📖 喜欢阅读，有时观影。
+        
+        💻 偶尔编程 :material-language-python: | :material-language-java:，不事劳作。
 
-    - 🥀 “知君兴尽欲回舟，日暮天寒不可留。”[^2]
+    !!! abstract inline "关于音乐" 
+        🎻 “有柴小协[^1]的日子就是好日子。”
 
-    - 🧸 <font face = "American Typewriter" >INFJ-T</font>[^3] / 谨慎的自由主义[^4]者 / 努力学习语言中。
+    !!! abstract inline "关于诗歌" 
+        🥀 “知君兴尽欲回舟，日暮天寒不可留。”[^2]
+
+    !!! success inline "MBTI / 在忙什么"
+        🧸 <font face = "American Typewriter" >INFJ-T</font>[^3] 
+        
+        🎀 谨慎的自由主义[^4]者 / 努力学习语言中。
           
         > (中文 / English / Français)。
 
-    - 🌏 暂居南京。
+    !!! success inline "晃晃悠悠～"
+        🌏 暂居南京。
+
+        🐳 常年浸润在江南的朦胧与诗意中。
+
+        > 试图克服懒癌，不时热爱旅行。
 
 === "<font size = 6>:fontawesome-solid-book: </font><font size = 6 face = "savoye LET">About The NoteBook</font>"
 
