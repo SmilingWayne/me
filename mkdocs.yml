@@ -364,6 +364,7 @@ nav:
       - 经典运筹学问题：TSP问题: OROpt/OR/TSP.md
       - 经典运筹学问题：VRP问题: OROpt/OR/VRP.md
       - 经典运筹学问题：JSP问题: OROpt/OR/JSP.md
+      - 当组合优化遇到深度学习: OROpt/OR/VRPmeetsNeurIPS.md
       - 常见的0-1变量处理技巧: OROpt/OR/GeneralTechnique.md
   - 机器学习:
       - ML/index.md
