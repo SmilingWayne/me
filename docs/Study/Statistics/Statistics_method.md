@@ -73,32 +73,6 @@ Group_3: Rating Low(x = 3)
       -  拓展：回归分析中 $R^2$ 情况的分析
 
 
-## $R^2$ 的解释
-- 被模型解释的Y的部分(fraction of variation explained in Y)
-- $SS_{Total} = \sum (y_i - \bar{y})^2$ = total variation in Y
-- $SS_{Model} = \sum (\hat{y_i} - \bar{y})^2$ variation in y explained by X 
-- SS Error + SS model = SS total ;
-- $R^2 =  \dfrac{SS_{Model}}{SS_{Total}}$
-  - R^2 = 0，意味着无法用X来解释Y；（散点图的Y均值是一条和X轴平行的直线）
-  - R^2 = 1，意味着所有的y（的误差）都可以被用X解释；
-  - R^2 = 0.8，意味着80%的Y的误差可以用X解释； （coefficient of determination）
-    - 皮尔逊相关系数的平方？
-    - hat 这个符号就用来表示剔除了误差项，仅仅从x回归得到的y的期望值(expected value)；
-- 如果是多元的，一样，$y_i = b_0 + b_1x_1+ b_2x_2 + ... + u_i$
-    -  $R^2 = \dfrac{\sum (\hat{y_i} - \bar{y})^2}{\sum (y_i - \bar{y})^2}$
-- 这时候要回到刚开始的自由度。如果单regressor的情况下，此时有两个观测，自由度是0，此时的R^2 = 1（因为这两个点完全解释了这一条直线！但是这并不好！因为它不自由！）；如果有三个观测，自由度是1，$R^2$可能降到$0.8$，但是此时的模型更好了，因为有了自由度，对模型关系评价的强度就更高了；
-  
-## Adjusted $R^2$ 的解释 
-- 正如上面展开说的那样，其实$R^2$本身是很令人疑惑的，因为过高的$R^2$可能说明恰恰是缺少了自由度的。
-    - 比如三个点确定一个面，那这个面唯一确定，而不能反映关系
-
-1. more regressors to explain Y, 更多回归变量，即使这两个不相关，总有一部分$Y$能被$X$所解释；R^2 会变大；
-2. more regressors 也意味着自由度越来越低；更低的自由度往往意味着更高的$R^2$；
-      1. regressors 就是, $y = b_0 + b_1 x_1 + b_2 x_2.. + u_i$，中的$x$的个数（也就是2个）
-- 综上2点，不能仅仅看$R^2$
-- 所以我们引入了$adjusted R^2$的概念，如果1的作用大于2的作用，那么$\bar{R^2}$ 就会增加，反之减少；意味着，这个adjusted R^2 只在“你加入了一些解释变量，而且这些解释变量的解释力度大于自由度减少带来的解释力度，也就是更好滴提升模型预测能力”的时候才增加；
-
-
 
 ## 大数定律 
 
