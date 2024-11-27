@@ -551,6 +551,7 @@ nav:
       - 女性主义: Talks/Feminism_talks.md
   - 关于网站:
       - Website/index.md
+      - 第零篇｜内容快速索引: Website/tags.md
       - 第一篇｜框架和托管: Website/Step1.md
       - 第二篇｜主题和美化: Website/Step2.md
       - 第三篇｜字体和文本: Website/Step3.md
@@ -623,7 +624,8 @@ plugins:
   #       version: 10.2.0
   #       arguments:
   #         securityLevel: "loose"
-  - tags
+  - tags:
+      tags_file: Website/tags.md
   - search:
       separator: '[\s\u200b\-]'
       lang: zh
@@ -642,6 +644,7 @@ plugins:
       exclude:
         - index.md
       enabled: true
+
 #   - blogging:
 #       dirs: # The directories to be included
 #         - Arts
@@ -688,7 +691,6 @@ markdown_extensions:
         !!python/name:material.extensions.emoji.to_svg # Update 2023.12.18 for locations
 
 
-  - admonition
   - pymdownx.arithmatex:
       generic: true
       block_tag: "pre"
