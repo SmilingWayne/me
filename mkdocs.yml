@@ -372,6 +372,8 @@ nav:
           - 感知机: ML/StatLearnMethod/Perceptron.md
           - K近邻算法: ML/StatLearnMethod/KNN.md
           - 朴素贝叶斯｜Gaussian贝叶斯分类: ML/StatLearnMethod/NaiveBayesian.md
+          - 线性回归｜多元线性回归: ML/StatLearnMethod/Regression.md
+          - 广义线性模型｜方差分析: ML/StatLearnMethod/GLM_ANOVA.md
       - 实用机器学习：笔记: ML/PracticalML/Notes.md
   - 学习笔记:
       - Study/index.md
