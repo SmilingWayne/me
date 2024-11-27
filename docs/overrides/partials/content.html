@@ -1,3 +1,7 @@
+{% if "material/tags" in config.plugins and tags %}
+{% include "partials/tags.html" %}
+{% endif %}
+
 {% if page.edit_url %}
 <a href="{{ page.edit_url | replace('edit', 'commits' ) }}" title="页面修改记录" class="md-content__button md-icon">
   {% include ".icons/materials/history.svg" %}
