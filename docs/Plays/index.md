@@ -5,18 +5,7 @@
 
 <font size = 6 face = "SnellRoundHand" >About Plays.</font>
 
-**[广岛之恋](./Hiroshima.md)**
-:   玛格丽特·杜拉斯 + 阿伦·雷乃：见证新浪潮最强意识形态大棒。
-
-**[桃花扇](./Tao_hua_shan.md)**
-:   舞低杨柳楼心月，歌尽桃花扇底风 ｜ 曾恨红笺衔燕子，偏怜素扇染桃花。
-
-**[哈姆雷特](./Hamlet.md)**
-:   默然忍受命运暴虐的毒箭，或是挺身反抗人世无涯的苦难，这两种行为，哪一种更加高贵？
-
-**[中国姑娘](./La_chinioise.md)**
-:   Mao! Mao! Mao! 
-
+!!! warning "该页面部分内容维护中。"
 
 
 !!! abstract "为什么读戏剧"

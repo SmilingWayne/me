@@ -1,5 +1,10 @@
 # 荐书
 
+## [《五号屠场》](../Literature/Novel/Slaughterhouse_five.md)
+
+唔，小熊拍了拍你，丢下一个[传送门](../Literature/Novel/Slaughterhouse_five.md)。
+
+
 ## 《共产主义ABC》
 
 > 普列奥布拉任斯基
