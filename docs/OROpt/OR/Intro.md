@@ -1,60 +1,74 @@
 # 一个交通er（物流er）给研一新生的Brief
 
+目前的研究方向：**低空物流经济，多式联运交通网络。** (`Low-altitude Logistics Economy, Multimodal Transportation Network`)
+
+> （哽咽 ... 抽泣 ... 拿啤酒瓶 ... ） （小声呜咽）：低空经济、多式联运才是物流的未来！21世纪是多式联运的世纪！（声嘶力竭）
+
+以下内容不管读不读博，只要你有“导！我得水掉我的论文！”的需求，都有那么点东西能用得上。
+
 ## 论文相关
+
+### 期刊与期刊选择
 
 首先先推荐一个网站：http://www.fms-journal.net/journals/ 可以看看现在管科领域哪些期刊比较好。记得在筛选栏里选择“交通运输管理” 或者 “运筹与管理”。评级A～B的优先看。其他的谨慎看。
 
-> 质量不高的论文越看越GG.
+> 质量不高的论文越看越GG。质量很高的论文越看越牛逼。写不出来咱还不会吹牛逼了？（删掉）
 
 其次需要学会使用Google学术、论文检索技巧。这个就不展开了，我反正会的就只有：
 
 > 是否能够：
 >
-> - 按照关键词检索
+> - 按照关键词检索（全文检索、模糊检索、精确检索等）
 > - 设置文献年份
 > - 设置文献期刊来源
 
-差不多了，毕竟无志向于学术...有需要其他更高级检索的话直接Google查一下。<u>不要总是使用CNKI。</u>
+差不多了，毕竟无志向于学术...有需要其他更高级检索的话直接Google查一下。<u>不要总是使用CNKI。</u> 
 
-丢几个期刊在这里。
+另：请不要害怕多读英文。
+
+丢几个期刊在这里。（以下侧重管科 + 交通 + 物流，至少涉及其一）。
 
 Management Science （MS）
-:   很顶。感觉更偏模型场景。但是和物流是否相关，要结合论文仔细仔细筛选。
+:   顶。感觉更偏模型场景。
+
+**Manufacturing & Service Operations Management** (MSOM)
+:   顶。偏运营。我涉及得不是那么多，但是做运营、库存、博弈的多关注。
 
 Operations Research (OR)
-:   顾名思义。但是有不少和物流不相关的。要筛。
+:   顶。顾名思义。有不少和物流不相关的。请多读一读。你会觉得自己学了假OR。
 
 Transportation Science (TS)
-:   交通的，够顶，但是和物流是否相关，要结合论文仔细仔细筛选。
+:   交通，顶。请多读一读。你会发现自己蠢死了。
+
+European Journal of Operational Research(EJOR)
+:   涉及的范围也比较广。H组投/看的都比较多。运筹各个领域都有。相比于一些顶，普通人更容易看得懂！很推荐去看看。
+
+Informs Journal on Computing* (IJOC or JOC)
+:   UTD24！牛逼！咱也是商科人了！（得意）
 
 Transportation Research (Part A ~ E ) 系列（TR - A/B/C/D/E/F）
 :   A： 政策相关，侧重实证研究；
 
-    B： Methodological，其实偏重数理，看起来可能有点难。但是有一些文章是和物流供应链有关。🌟🌟🌟质量很高。
+    B： Methodological，够顶。其实偏重数理，看起来可能有点难。实际看一看吧。斯哈斯哈，确实挺难的。有一些文章是和物流供应链有关。质量很高。
 
-    C：Emerging Technologies，我看得比较多。组内用到较多的交通相关、物流相关都有涉及。质量靠谱。🌟🌟🌟
+    C：Emerging Technologies，我看得比较多。组内用到较多的交通相关、物流相关都有涉及。质量靠谱。这边的Paper是相对好懂很多的。
 
-    D： Transport and Environment，看得不多，也是偏政策和环境。看起来简单一些；
+    D：Transport and Environment，看得不多，也是偏政策和环境。
 
-    E：Logistics and Transportation Review，直接与物流相关。可以优先关注。🌟🌟🌟
+    E：Logistics and Transportation Review，直接与物流相关。现在似乎是双盲了😭。但是这边的Paper是相对好懂很多的。
 
     F：侧重心理学相关，我不怎么看。（指从没看过）
 
 
-European Journal of Operational Research(EJOR)
-:   涉及的范围也比较广。H组投/看的都比较多。运筹各个领域都有。物流也不少。很推荐去看看。
-
-INFORMS Journal on Computing 
-:   往往能找到意外之喜。
-
 其他的一些我想起来的：
 
 - Annals of Operations Research (AOR)
-- Transportmetrica A: TS，侧重于政策，感觉写Introduction会用到
+- Transportmetrica A: TS，侧重于政策，感觉写Introduction会用到。
+
 
 -----
 
-接几个中文期刊（我自己看得不算多，CNKI上期刊搜不到好的文章的话，**十分建议**搜硕士/博士论文。记得找一些好一点的学校的）。
+接几个中文期刊（我自己看得不算多，CNKI上期刊搜不到好的文章的话，**建议尽量**搜硕士/博士论文。记得找一些好一点的学校的）。
 
 - 管理科学学报	
 - 管理工程学报	
@@ -62,6 +76,11 @@ INFORMS Journal on Computing
 - 系统工程学报	
 - 管理科学 
 
+### 论文阅读
+
+请善用文献阅读工具！[Zotero](https://zotero-chinese.com/user-guide/quick-start), [EndNote](https://web.endnote.com/) (NJU给大家买了，见[链接](https://itsc.nju.edu.cn/EndNote/list.htm)。)
+
+请善用、多用各种GPT！但是不要把自己变成GPT！
 
 -----
 
@@ -112,13 +131,15 @@ INFORMS Journal on Computing
 
 [Github 低空经济](https://github.com/optimatorlab/mFSTSP-VDS)： 我最近在看的。
 
-
-----
+------
 
 
 ## 低空经济指南（政策篇）
 
 > 此处内容有删节，因为没什么干货，主要保存一些链接。
+>
+
+
 
 首先，看看**二十届三中全会**怎么说：[中共中央关于进一步全面深化改革 推进中国式现代化的决定](https://www.gov.cn/zhengce/202407/content_6963770.htm)，参考 `三·健全推动经济高质量发展体制机制`, 划重点如下：
 
@@ -142,3 +163,7 @@ INFORMS Journal on Computing
 
 赢麻了！家人们！
 
+
+### 你可能可以读的Paper!
+
+!!! warning "待更新。"
