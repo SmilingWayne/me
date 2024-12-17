@@ -1,5 +1,8 @@
 ## 向量篇 | 矩阵篇 | 行列式篇 ：
 
+!!! abstract "事实上已经有非常多人做过这个了，这里记录一些我反复查阅过的内容。"
+    Some excellent links: 
+    - [LaTeX-Math速查手册 by Emory Huang](https://latex.emoryhuang.cn/guide/)
 
 ===  "入门"
 
@@ -111,51 +114,35 @@
 
     ```
 
+## 集合操作与基础符号
+
+|    拼写    |    展示    |       拼写       |       展示       |    拼写     |    展示     |   拼写    |   展示    |
+| :--------: | :--------: | :--------------: | :--------------: | :---------: | :---------: | :-------: | :-------: |
+|   `\geq`   |   $\geq$   |      `\leq`      |      $\leq$      |   `\neq`    |   $\neq$    | `\forall` | $\forall$ |
+|   `\cup`   |   $\cup$   |      `\cap`      |      $\cap$      |   `\land`   |   $\land$   |  `\lor`   |  $\lor$   |
+|   `\neg`   |   $\neg$   | `A \setminus B`  | $A \setminus B$  | `\emptyset` | $\emptyset$ | `\subset` | $\subset$ |
+|   `\mid`   |   $\mid$   | `A \subsetneq B` | $A \subsetneq B$ |  `\exist`   |  $\exist$   |  `\And`   |  $\And$   |
+| `\because` | $\because$ |   `\therefore`   |   $\therefore$   |  `\bar{t}`  |  $\bar{t}$  |  `\bot`   |  $\bot$   |
 
 
-<center><font color = Crisma face = "Times New Roman" size = 50>LaTeX </font><font color = Crisma face = "Kaiti" size = 50>希腊字母篇</font></center>
 
-$$\def\arraystretch{2}
-   \begin{array}{|c|c|c|c|c|}
-   \hline
-   \hline
-   \text{原型} & 符号 &   \text{var} + 原型 & 首字母大写 & \text{var} + 首字母大写 \cr \hline
-   \text{alpha} &\alpha   &     &           \Alpha   &  A     \cr \hline    
-\text{beta}  & \beta &           &         \Beta &       B           \cr \hline
-\text{gamma}  & \gamma &       &            \Gamma &      \varGamma   \cr \hline
-\text{delta}  & \delta &        &           \Delta &      \varDelta   \cr \hline
-\text{epsilon}  & \epsilon &    \varepsilon &   \Epsilon  &  E          \cr \hline
-\text{zeta}  & \zeta &           &         \Zeta &       Z           \cr \hline
-\text{eta}  & \eta &              &       \Eta &        E           \cr \hline
-\text{theta}  & \theta &      \vartheta &     \Theta    &  \varTheta  \cr \hline
-\text{iota}  & \iota &         &           \Iota &       I           \cr \hline
-\text{kappa}  & \kappa &      \varkappa &     \Kappa   &   K          \cr \hline
-\text{lambda}  & \lambda &     &             \Lambda &     \varLambda  \cr \hline
-\text{mu}  & \mu &              &        \Mu &         M           \cr \hline
-\text{nu}  & \nu &               &       \Nu &         N           \cr \hline
-\text{xi}  & \xi &                &      \Xi &         \varXi      \cr \hline
-\text{原型} & 符号 &   \text{var} + 原型 & 首字母大写 & \text{var} + 首字母大写 \cr \hline
-\text{omicron}  & \omicron &       &          \Omicron &    O           \cr \hline
-\text{pi}  & \pi &         \varpi &        \Pi    &     \varPi     \cr \hline
-\text{rho}  & \rho &        \varrho &       \Rho    &    P          \cr \hline
-\text{sigma}  & \sigma &      \varsigma &     \Sigma    &  \varSigma  \cr \hline
-\text{tau}  & \tau &                   &  \Tau &        T           \cr \hline
-\text{upsilon}  & \upsilon &            &     \Upsilon &    \varUpsilon \cr \hline
-\text{phi}  & \phi &        \varphi &    \Phi&        \varPhi    \cr \hline
-\text{chi}  & \chi &            &         \Chi &        X           \cr \hline
-\text{psi}  & \psi &             &        \Psi &        \varPsi     \cr \hline
-\text{omega}  & \omega &          &         \Omega &      \varOmega   \cr \hline
-\hline
-\end{array}$$
+## 希腊字母
 
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br><br><br>
+|    拼写     |    展示     |    拼写     |    展示     |   拼写    |   展示    |     拼写      |     展示      |
+| :---------: | :---------: | :---------: | :---------: | :-------: | :-------: | :-----------: | :-----------: |
+|  `\alpha`   |  $\alpha$   |   `\rho`    |   $\rho$    |  `\iota`  |  $\iota$  |   `\Delta`    |   $\Delta$    |
+|   `\beta`   |   $\beta$   |  `\sigma`   |  $\sigma$   | `\kappa`  | $\kappa$  |   `\Theta`    |   $\Theta$    |
+|  `\gamma`   |  $\gamma$   | `\varsigma` | $\varsigma$ | `\lambda` | $\lambda$ |   `\Lambda`   |   $\Lambda$   |
+|  `\delta`   |  $\delta$   |   `\tau`    |   $\tau$    |   `\mu`   |   $\mu$   |     `\Xi`     |     $\Xi$     |
+| `\epsilon`  | $\epsilon$  | `\upsilon`  | $\upsilon$  |   `\mu`   |   $\mu$   |   `\Sigma`    |   $\Sigma$    |
+|   `\zeta`   |   $\zeta$   |   `\chi`    |   $\chi$    |   `\nu`   |   $\nu$   |  `\Upsilon`   |  $\Upsilon$   |
+|   `\eta`    |   $\eta$    |   `\psi`    |   $\psi$    |   `\xi`   |   $\xi$   |    `\Phi`     |    $\Phi$     |
+|  `\theta`   |  $\theta$   |  `\omega`   |  $\omega$   |   `\pi`   |   $\pi$   |    `\Psi`     |    $\Psi$     |
+| `\vartheta` | $\vartheta$ |  `\Gamma`   |  $\Gamma$   | `\Omega`  | $\Omega$  |  `\varOmega`  |  $\varOmega$  |
+|  `\varPsi`  |  $\varPsi$  |  `\varPhi`  |  $\varPhi$  |   `\Pi`   |   $\Pi$   | `\varepsilon` | $\varepsilon$ |
+
+
+
 
 ## 奇异字母与英文字体
 ### \mathbb{ } 
@@ -180,11 +167,12 @@ $\mathbb{1234}$
 ```LaTeX
 $\mathbf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
 $\mathbf{abcdefghijklmnopqrstuvwxyz}$
+$\mathbf{0123456789}$
 ```
 
 $\mathbf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
 $\mathbf{abcdefghijklmnopqrstuvwxyz}$
-$\mathbf{1234567890}$
+$\mathbf{0123456789}$
 
 ----
 
@@ -194,17 +182,22 @@ $\mathbf{1234567890}$
 
 
 ```LaTeX
-$\mathit{1234567890 ABCDE abcdef}$
+$\mathit{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+$\mathit{abcdefghijklmnopqrstuvwxyz}$
+$\mathit{0123456789}$
 ```
 
-$\mathit{1234567890 ABCDE abcdef}$
+$\mathit{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+$\mathit{abcdefghijklmnopqrstuvwxyz}$
+$\mathit{0123456789}$
+
 
 
 ---
 
 ### \mathcal{ }
 
-- 书法字体（仅限大写），用于方案识别，密码学概念；
+- 书法字体（**仅限大写**），用于方案识别，密码学概念；
 
 
 ```LaTeX
@@ -217,15 +210,17 @@ $\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
 
 ### \mathscr{ }
 
-- 花体字
-
-$\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
-$\mathscr{ 1234567890}$
+- 花体字，常用大写。
 
 ```LaTeX
 $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+$\mathscr{abcdefghijklmnopqrstuvwxyz}$
 $\mathscr{ 1234567890}$
 ```
+
+$\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+$\mathscr{abcdefghijklmnopqrstuvwxyz}$
+$\mathscr{ 1234567890}$
 
 ### \mathfrak{ }
 
@@ -250,10 +245,12 @@ $\mathfrak{abcdefghijklmnopqrstuvwxyz}$
 
 $\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
 $\mathtt{abcdefghijklmnopqrstuvwxyz}$
+$\mathtt{ 1234567890}$
 
 ```LaTeX
 $\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
 $\mathtt{abcdefghijklmnopqrstuvwxyz}$
+$\mathtt{ 1234567890}$
 ```
 
 ## 杂七杂八
