@@ -141,3 +141,13 @@ $$\begin{aligned}
 这个建模的方法，很适合“分枝定价”去精确地求解车辆路径问题。这个解法的子问题就是生成一些可行的路径，加入到所有的可行路径中。而这个子问题本身是在求一个“资源限制情况下的最短路问题”。
 
 
+
+## Benchmark
+
+话不多说，直接上链接：
+
+- [SINTEF](https://www.sintef.no/projectweb/top/pdptw/documentation/): 维护了两个经典的数据集，VRPTW的Solomon数据集、 G & H数据集，以及PDPTW的Li & Lim 数据集。
+- [Benchmark Update](http://combopt.org/tables/LiLim/)：同上团队维护，及时更新目前每个Case的最新找到的最优解，包括最新Improve是在什么时候找到的，什么团队找到的等。
+- [Vidal's Site](https://w1.cirrelt.ca/~vidalt/en/VRP-resources.html):还是要抱紧大佬大腿，看看人家是怎么整合资料的。
+- [Uchoa's dataset](http://www.vrp-rep.org/references/item/uchoa-et-al-2017.html)： Focus 在大规模CVRP问题，同时作者的paper做了一些很有意义的关于benchmark的总结;
+

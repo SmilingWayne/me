@@ -6,7 +6,7 @@
 >   
 >   低空经济、多式联运才是物流的未来！21世纪是多式联运的世纪！（声嘶力竭）
 
-以下内容不管读不读博，只要你有“导！我得水掉我的论文！”的需求，都有那么点东西能用得上。
+
 
 ## 论文相关
 
@@ -28,13 +28,15 @@
 
 另：请不要害怕多读英文。
 
+再次，你可以能力差，但是一定一定得会讲故事！
+
 丢几个期刊在这里。（以下侧重管科 + 交通 + 物流，至少涉及其一）。
 
 Management Science （MS）
-:   顶。感觉更偏模型场景。
+:   顶。那可太顶辣！
 
 **Manufacturing & Service Operations Management** (MSOM)
-:   顶。偏运营。我涉及得不是那么多，但是做运营、库存、博弈的多关注。
+:   UTD-24。顶。偏运营。我涉及得不是那么多，但是做运营、库存、博弈的多关注。
 
 Operations Research (OR)
 :   顶。顾名思义。有不少和物流不相关的。请多读一读。你会觉得自己学了假OR。
@@ -46,12 +48,12 @@ European Journal of Operational Research(EJOR)
 :   涉及的范围也比较广。H组投/看的都比较多。运筹各个领域都有。相比于一些顶，普通人更容易看得懂！很推荐去看看。
 
 Informs Journal on Computing* (IJOC or JOC)
-:   UTD24！牛逼！咱也是商科人了！（得意）
+:   瘦死的骆驼比马大！(UTD-24)
 
 Transportation Research (Part A ~ E ) 系列（TR - A/B/C/D/E/F）
 :   A： 政策相关，侧重实证研究；
 
-    B： Methodological，够顶。其实偏重数理，看起来可能有点难。实际看一看吧。斯哈斯哈，确实挺难的。有一些文章是和物流供应链有关。质量很高。
+    B： Methodological，够顶。其实偏重数理，看起来可能有点难。实际看一看吧。斯哈斯哈，确实挺难的。个人觉得其实和TS差距已经不是很大了。
 
     C：Emerging Technologies，我看得比较多。组内用到较多的交通相关、物流相关都有涉及。质量靠谱。这边的Paper是相对好懂很多的。
 
@@ -65,24 +67,31 @@ Transportation Research (Part A ~ E ) 系列（TR - A/B/C/D/E/F）
 其他的一些我想起来的：
 
 - Annals of Operations Research (AOR)
-- Transportmetrica A: TS，侧重于政策，感觉写Introduction会用到。
+- Transportmetrica 系列
+- Informs Journal of Production & R (IJPR) 也是运营多一点?
+- IEEE Smart Grid （一些和电网耦合相关的内容，当时读过）。
 
 
 -----
 
-接几个中文期刊（我自己看得不算多，CNKI上期刊搜不到好的文章的话，**建议尽量**搜硕士/博士论文。记得找一些好一点的学校的）。
+接几个中文期刊（我自己看得不算多，CNKI上期刊搜不到好的文章的话，可以搜搜硕士/博士论文。记得找一些好一点的学校的，但是也别得意）。
 
 - 管理科学学报	
 - 管理工程学报	
 - 系统工程理论与实践	
 - 系统工程学报	
-- 管理科学 
+
 
 ### 论文阅读
 
 请善用文献阅读工具！[Zotero](https://zotero-chinese.com/user-guide/quick-start), [EndNote](https://web.endnote.com/) (NJU给大家买了，见[链接](https://itsc.nju.edu.cn/EndNote/list.htm)。)
 
 请善用、多用各种GPT！但是不要把自己变成GPT！
+
+
+### 论文写作 
+
+- [Overleaf](https://www.overleaf.com/project). 好好写LaTeX.
 
 -----
 
@@ -112,7 +121,7 @@ Transportation Research (Part A ~ E ) 系列（TR - A/B/C/D/E/F）
 
 [运筹优化与地理信息](https://space.bilibili.com/324539730/)： 有一些搬运的视频不错。也是运筹相关。
 
-[爱可可爱生活](https://space.bilibili.com/23852932/) ： 北邮的老师。可以看他之前的Python课进行快速入门（我的Python就是看他的自学的...)。也有很多AI相关的启蒙。可惜现在不怎么更新了...
+[爱可可爱生活](https://space.bilibili.com/23852932/) ： 北邮的老师。可以看他之前的Python课进行快速入门（我的Python就是看他的自学的...)。也有很多AI相关的启蒙。
 
 最后顺便**打个广告**，中国大学Mooc上可以找到我导的[最优化](https://www.icourse163.org/course/NJU-1465971171)课程。主要是凸优化相关。可以顺带看看。如果还想了解最优化的知识，参考[西北工业大学李原老师的B站](https://space.bilibili.com/507570322/)。
 
@@ -120,10 +129,11 @@ Transportation Research (Part A ~ E ) 系列（TR - A/B/C/D/E/F）
 
 ----
 
-## 求解器
+## 编程与求解器
 
+如果你不知道怎么入门一个语言，我建议你首先熟悉一个大语言模型工具，当作Copilot，然后选定语言直接开始写。一边写一遍和大模型交流。
 
-几乎必须要熟悉的。做物流，整数规划用得多一点。考虑：Gurobi（请自行搜索资料，学会看技术文档（不难找））。入门：[TSP with Lazy Constraint](https://www.gurobi.com/documentation/current/examples/tsp_py.html)
+求解器，几乎必须要熟悉的。做物流，整数规划用得多一点。考虑：Gurobi（请自行搜索资料，学会看技术文档（不难找））。入门：[TSP with Lazy Constraint](https://www.gurobi.com/documentation/current/examples/tsp_py.html)
 
 如果是做鲁棒优化这类的，待补充，这里我不是很熟悉！需要艾特G同学。
 
@@ -132,6 +142,10 @@ Transportation Research (Part A ~ E ) 系列（TR - A/B/C/D/E/F）
 [Ortools for VRP](https://developers.google.cn/optimization/routing/vrp?hl=en)： 快速上手VRP问题。
 
 [Github 低空经济](https://github.com/optimatorlab/mFSTSP-VDS)： 我最近在看的。
+
+## 关于数值试验
+
+一定一定要常做数值试验，多试验，多写，多测试，更重要的是要勤检查。这部分待补充。
 
 ------
 
@@ -235,3 +249,13 @@ Obj：配送时间最小。Benders Cut ... 割平面 ...
 
 !!! warning "待更新。"
 
+
+## 说在最后面
+
+!!! quote "我是个很喜欢把参考链接/文献挂得到处都是的人。这次也不例外。嘿嘿。"
+    一些我觉得很有意思的链接（排名不分先后、不分首字母）：
+
+    - [NJU｜蒋炎岩老师](https://jyywiki.cn): JYY!YYDS! 鬼知道我从他这里学到了多少东西！
+        - [科研劝退信](https://jyywiki.cn/Letter.md)：读之令人拍案...建议每一个研究牲都读一读每一个链接。这里摘取一些其中提到的，i.e., [关于高校项目](https://www.zhihu.com/question/665648172)，[关于漩涡中的导师/学生](https://www.zhihu.com/question/660712361/answer/3556929091)
+    - [NJU｜何炳生老师](http://maths.nju.edu.cn/~hebma/)：师祖级别。导师中的导师。十足的数学家。我常常佩服于老一辈人的光辉品质。
+  
