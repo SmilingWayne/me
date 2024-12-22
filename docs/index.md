@@ -54,6 +54,8 @@ hide:
     - 🤖 代码块行数：{{codes}} ；
 
     - 🛩️ 网站运行时间：<span id="web-time"></span> ；
+    
+    - 🦄 本站Github仓库: [Me](https://smilingwayne.github.io/me/)。
 
     !!! abstract "本站点溯源"
 

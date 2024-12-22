@@ -24,6 +24,16 @@
 **第四篇**
 :   Working...
 
+**推荐一些优秀的个人网站**
+:   [YuKuan, Lu's website](https://lyk-love.cn/about/)：同样来自NJU的大佬！
+
+    [TonyCrane](https://note.tonycrane.cc): 对本站搭建起到关键启发的一个站点，ZJU！
+
+    [Chao Feng's Web](https://jeremy-feng.github.io/about/#关于我)：同样是mkdocs + materials主题，很精美！FDU！
+
+    [Xijie Yang's Website](https://yang-xijie.github.io):对本站搭建起到基础作用和启发的THU大佬！
+
+
 
 
 -----

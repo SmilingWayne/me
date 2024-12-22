@@ -351,8 +351,9 @@ nav:
           - 整数规划、求解算法和指派问题: OROpt/OR/Chapter4.md
           - 非线性规划、凸规划理论（最优化基础）: OROpt/OR/Chapter5.md
           - 动态规划: OROpt/OR/Chapter6.md
-          - 图论算法及其求解: OROpt/OR/Chapter7.md
+          - 图论算法:最短路问题: OROpt/OR/Chapter7.md
           - 最小费用流问题及推广: OROpt/OR/Chapter7_1.md
+          - 图论算法:最大流与最小割: OROpt/OR/Chapter7_2.md
           - 排队论: OROpt/OR/Chapter9.md
           - 仓储论（EOQ模型和它的一万个分身）: OROpt/OR/Chapter10.md
           - 博弈论: OROpt/OR/Chapter11.md
