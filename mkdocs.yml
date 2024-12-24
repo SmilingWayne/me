@@ -342,22 +342,23 @@ nav:
           - OROpt/OR/index.md
           - 运筹学刷题本: OROpt/OR/ORExercise/Works.md
           - 线性规划、单纯形法（plus pro max版）: OROpt/OR/Chapter1.md
-          - 灵敏度分析: OROpt/OR/Chapter1_plugin.md
+          - 灵敏度分析（太敏感了）: OROpt/OR/Chapter1_plugin.md
           - 对偶理论及对偶单纯形法（一种哲学）: OROpt/OR/Chapter2.md
           - 线性规划对偶的解题向写法: OROpt/OR/Chapter3_ext1.md
           - 运输问题: OROpt/OR/Chapter3.md
           - 多目标规划: OROpt/OR/Chapter3_ext2.md
-          - DEA的扩展: OROpt/OR/Chapter3_plugin.md
+          - 数据包络分析与扩展: OROpt/OR/Chapter3_plugin.md
           - 整数规划、求解算法和指派问题: OROpt/OR/Chapter4.md
-          - 非线性规划、凸规划理论（最优化基础）: OROpt/OR/Chapter5.md
+          - 非线性规划、凸规划理论: OROpt/OR/Chapter5.md
+          - 最优化基础（锥锥们觉得很赞）: OROpt/OR/Chapter5_1.md
           - 动态规划: OROpt/OR/Chapter6.md
           - 图论算法:最短路问题: OROpt/OR/Chapter7.md
-          - 最小费用流问题及推广: OROpt/OR/Chapter7_1.md
+          - 图论算法:最小费用流与推广: OROpt/OR/Chapter7_1.md
           - 图论算法:最大流与最小割: OROpt/OR/Chapter7_2.md
           - 排队论: OROpt/OR/Chapter9.md
           - 仓储论（EOQ模型和它的一万个分身）: OROpt/OR/Chapter10.md
           - 博弈论: OROpt/OR/Chapter11.md
-          - MAPF: OROpt/OR/MAPF.md
+          - 多智能体寻路(MAPF): OROpt/OR/MAPF.md
       - 高级运筹学技巧1：列生成方法: OROpt/OR/Chapter12.md
       - 高级运筹学技巧2：拉格朗日松弛: OROpt/OR/LR.md
       - 高级运筹学技巧3：分支定价: OROpt/OR/BranchAndPrice.md
