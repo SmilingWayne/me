@@ -162,6 +162,8 @@
     - 两个自变量：$z = f(u,v), u = u(x,y), v = v(x,y), \dfrac{\partial z}{\partial x} = \dfrac{\partial z}{\partial u}  \dfrac{\partial u}{\partial x} + \dfrac{\partial z}{\partial v}  \dfrac{\partial v}{\partial x}$
     - ✅：注意偏导数和导数！
 
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202412251424691.png)
+
 ### 高阶导数的概念，求简单函数的高阶导数；
 
 ### 求分段函数的导数、隐函数和参数方程确定的导数和反函数的导数
@@ -271,10 +273,8 @@ $$\int^{a}_{b}uv^{'} d(x) = uv |^{a}_{b} - \int^{a}_{b} vu^{'}d(x)$$
 - 有界闭区域上二元连续函数的性质：
     - 最大值最小值定理：如果二元函数$f(x，y)$在有界闭区域上连续，那么它在上一定有最大值和最小值，即在上至少存在两点$P_1(x_1，y_1)和P_2(x_2，y_2)$，使得对任意的$P(x，y) \in D$，都有$f(x1,y1) \leq f(x,y) \leq f(x2,y2)$
     - 介值定理：设二元函数$f(x，y)$在有界闭区域上连续，且在上取得两个不同的函数值，而常数c介于这两个函数值之间，则至少存在一点$( \xi，h) \in D$，使得$f(\xi，h) = c$;特别地，如果函数$f(x，y)$在上取得两个异号的函数值，那么至少存在一点，使得 $f(x,y) = 0$
-<figure markdown>
-  ![Image title](../picx/Math-2/M2-全微分.png)
-  <figcaption>全微分</figcaption>
-</figure>
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202412251424977.png)
 
 ### 多元函数偏导数和全微分、多元复合函数一阶、二阶偏导数、求全微分、隐函数存在定理、多元隐函数的偏导数
 

@@ -5,22 +5,22 @@
 
 <font size = 6 face = "SnellRoundHand" >Encore un moment!</font>[^2]
 
-**[诗歌](../Poems/)**
+**[诗歌](../Poems/index.md)**
 :   各种意义上的诗歌：长诗｜史诗｜现代诗｜古典诗等。
 
-**[戏剧](../Plays/)**
+**[戏剧](../Plays/index.md)**
 :   戏剧文本｜一部分观影｜观剧感想。
 
-**[小说](./Novel/)**
+**[小说](./Novel/index.md)**
 :   小说合集。各种形式的小说均包含在内。
 
-**[文论](./Literacy/)**
+**[文论](./Literacy/index.md)**
 :  散文｜文艺批评与文学理论｜文学史。
 
-**[随笔](./Literacy/)**
+**[随笔](./Essay/index.md)**
 :   历史｜哲学｜社会｜有的没的。
 
-**[语料库](./Corpus/)**
+**[语料库](./Corpus/index.md)**
 :   一些文字流浪汉。
 
 -----

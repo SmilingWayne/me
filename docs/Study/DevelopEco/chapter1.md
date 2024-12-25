@@ -47,7 +47,7 @@
 
 
 <figure markdown>
-  ![Image title](./Pictures/Pics1.png){ width="350" }
+  ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202412251420362.png){ width="350" }
   <figcaption>例图</figcaption>
 </figure>
 

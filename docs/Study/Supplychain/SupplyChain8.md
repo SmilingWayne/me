@@ -18,9 +18,6 @@ $\qquad \qquad TC = \frac{C_oD}{Q} + \frac{C_cQ}{2} + PD$
 
 - 此时该商店需要选择供应商提供的3种价格折扣，在订货量小于100时，订货价格是10💰，如果是100-200订货量，价格是8💰，其他情况就是价格为6💰。按照上述带数量折扣的公式，具体成本如下图中深色实线，呈现阶梯状。在实际中比这个会复杂很多，仅作示意。
 
-<figure markdown>
-![](../../Study/picx/SCM08/QuantityDiscount.png)
-</figure>
-<img align="middle"  src = "" height = "50%" style = "display:table-cell">
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202412251415851.png)
 
 <font FACE = "SimHei" size = 4 color = black >注意到最佳订货批量 $Q_{opt}$ 只对中间的成本曲线 $TC(d_1)$ 是可行的。并不适合最高的成本曲线 $TC$ 和最低的成本曲线 $TC(d_2)$。正在此案例中，由于不适合最低的总成本曲线，所以 $Q_{opt}$对应的总成本必须和最低总成本曲线的折扣店 $Q(d_2)$ 比较来确定最小总成本。</font>

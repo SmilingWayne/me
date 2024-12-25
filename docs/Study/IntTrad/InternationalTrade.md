@@ -108,3 +108,16 @@
     > **综上所述，对$A$而言，只要对外投资收入 > 国内生产缩减产生的亏损收入，收入将上升；对$B$而言，只要引入资本后增加的产量 > 支付给外国投资者的报酬，那么净收入将增加。**
     
     > - 系统内的总产量增加了 $S_{\Delta DEF}$ ，说明生产资源得到了优化配置；
+
+> Big Nation
+> 
+![Big Nation](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202412251429057.png)
+
+> Small Nation 
+
+![Smaall Nation](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202412251430273.png)
+
+> Consider Compensation
+>
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202412251430953.png)
