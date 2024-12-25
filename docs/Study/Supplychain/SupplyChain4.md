@@ -29,9 +29,7 @@ $$( \dfrac{Q}{2} ) H  = (\dfrac{Q}{2} )hC$$
 
 $$TC = CD + (\dfrac{D}{Q}) S + (\dfrac{Q}{2} )hC$$
 
-<figure markdown>
-![](../../Study/picx/SCM04/supplychain4.png){width = 120}
-</figure>
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202412251416644.png)
 
 
 - 就$Q$对总成本求一阶导数并令其为0，最优订货批量被称为经济订货批量(Economic Order Quantity, EOQ)，用$Q^{*}$表示。公式为:

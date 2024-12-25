@@ -86,6 +86,7 @@ quadrantChart
     - 衰退期：战略清算 放弃。
 
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251058068.png){: style="height:350px"}
+
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251058069.png){: style="height:350px"}
 
 
