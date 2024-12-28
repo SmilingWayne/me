@@ -1,12 +1,12 @@
 # 线性规划、单纯形法
 
 
-!!! quote "**线性规划**（Linear Programming）：是在==线形约束==下==求解线性目标函数最优值==的数学理论和方法。"
+!!! quote "**线性规划**（Linear Programming）：是在线形约束下求解线性目标函数最优值的数学理论和方法。"
 
 !!! note "数学规划的三要素"
-    - 决策变量(Decision Variables):
-    - 目标函数(Objective Function):
-    - 约束条件(Constraints):
+    - 决策变量 (`Decision Variables`):
+    - 目标函数 (`Objective Function`):
+    - 约束条件 (`Constraints`):
 
 我们可以把线性规划以数学语言表述为：
 
@@ -167,9 +167,9 @@ $$ x \geq 0\tag{1-3}$$
     $$\mathbf{y_q = B^{-1}p_q}$$
 
     **Step 4**  确定出基变量。如果 $y_q$ 的所有元素都小于等于 0，那么停止计算，问题为无界解；否则计算  
-    $$
-    r = \arg\min_i \left\{ \frac{\mathbf{(B^{-1}b)_i}}{\mathbf{(y_q)_i}} \,\middle|\, \mathbf{(y_q)_i} > 0 \right\}
-    $$  
+    
+    $$r = \arg\min_i \left\{ \frac{\mathbf{(B^{-1}b)_i}}{\mathbf{(y_q)_i}} \,\middle|\, \mathbf{(y_q)_i} > 0 \right\}$$  
+    
     将对应的行变量 $x_r$ 作为出基变量。
 
     **Step 5**  计算得到新基矩阵的逆 $\mathbf{B_{\text{new}}^{-1}}$，令 $\mathbf{B^{-1} = B_{\text{new}}^{-1}}$。
@@ -264,13 +264,3 @@ $$\def\arraystretch{1.5}
 
 
 !!! quote "特别感谢热心网友wzy对该单纯形表笔误做出的纠正。欢迎大家继续捉虫！"
-
-> Operations Research： 台湾翻译成“作业研究”，我更喜欢国内的这个翻译：“运筹学”
->
-> - Introduction to LP
-> - Geometric Interpretation of LP
-> - Simplex Method
-> - Duality and Sensitivity Analysis
-> - Interior Point Method （摆脱了Simplex Method的框架，从内部逼近；在有限时间内的多项式算法）
-> - Related Topics
-
