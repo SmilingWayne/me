@@ -365,9 +365,10 @@ nav:
       - 经典运筹学建模：发电机组调度(UCP): OROpt/OR/UnitCommitmentProblem.md
       - 经典运筹学建模：批量生产问题(LSP): OROpt/OR/LotSizingProblem.md
       - 经典运筹学建模：定向问题(TOP): OROpt/OR/TOP.md
-      - 经典运筹学问题：TSP问题: OROpt/OR/TSP.md
-      - 经典运筹学问题：VRP问题: OROpt/OR/VRP.md
-      - 经典运筹学问题：JSP问题: OROpt/OR/JSP.md
+      - 路径优化问题｜TSP: OROpt/OR/TSP.md
+      - 路径优化问题｜VRP: OROpt/OR/VRP.md
+      - 路径优化问题｜PDP: OROpt/OR/VRP.md
+      - 经典调度问题｜JSP: OROpt/OR/JSP.md
       - 当组合优化遇到深度学习: OROpt/OR/VRPmeetsNeurIPS.md
       - 常见的0-1变量处理技巧: OROpt/OR/GeneralTechnique.md
   - 机器学习:
