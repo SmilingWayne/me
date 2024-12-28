@@ -14610,11 +14610,19 @@
 
 <h1 id="_1">存储论<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 1639 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 2 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 5 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 1693 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 1 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 6 分钟</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">备注</p>
 <p>2023年毕业前整理的，OM相关的一些知识整理。本页面的内容多为教材搬运。</p>
+<ul>
+<li>
+<p>如有兴趣，可以移步 <a href="../../../Study/SCMTheory/Chapter4/">供应链管理：库存管理与风险分担</a>。</p>
+</li>
+<li>
+<p>本笔记剩下的部分是一些对书本摘要的简单整理。预计会在可预见的时间内删除。</p>
+</li>
+</ul>
 </div>
 <h2 id="_2">🐌要求<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <ol>
@@ -14623,23 +14631,35 @@
 <li>对价格和订货批量相关的存储模型进行分析和求解</li>
 </ol>
 <blockquote>
-<p>销售产品A，已知（1）单位成本；（2）单位时间存储费用；（3）单次订购费用；（4）商品的需求。在经营中需要对市场需求进行进货补充，问如何组织进货才能最经济？
-- 存储模型
-    - 需求：存储是为了满足需求
-    - 补充：是补充库存的手段，主要考虑从开始订货到货进仓库的这段时间；
-        - 提前期：从订单下达到货物入仓库之间的这段时间。（中间还要考虑货物到达到货物进入仓库的时间）；
-    - 存储策略：库存低于某个阈值或者固定时间的<strong>补充情况</strong>和<strong>补充数量</strong>；
-        - t-循环策略：每隔固定时间t补充一个固定存储量Q；
-        - (t-s)策略：每隔固定时间t补充到固定数量s；
-        - (s,S)策略：当前库存为I，如果 <span class="arithmatex">\(I &gt; s\)</span>,就不进行补充，如果 <span class="arithmatex">\(I &lt; s\)</span>，就补充，数量为 <span class="arithmatex">\(S - s\)</span>。在这个策略下，<span class="arithmatex">\(s\)</span>称为订货点（安全存储量）。当库存低于订货点时即将库存补充到<span class="arithmatex">\(S\)</span>。某些情况下无法实时得知具体的库存情况，就需要每隔一个固定时间<span class="arithmatex">\(t\)</span>补充一次，根据盘点的情况进行补货决策，称为<span class="arithmatex">\((t,s,S)\)</span>策略；
-    - 费用：
-        - 存储费用（与存储数量和时间成比例）
-        - 订货费用
-        - 生产费用（与生产数量成比例）
-        - 缺货损失费用
-- 研究工具
-    - 存储状态图：时间<span class="arithmatex">\(t\)</span>为横轴，实际库存<span class="arithmatex">\(Q\)</span>为纵轴；描述<span class="arithmatex">\(Q\)</span>随着时间<span class="arithmatex">\(t\)</span>变化的过程；</p>
+<p>销售产品A，已知（1）单位成本；（2）单位时间存储费用；（3）单次订购费用；（4）商品的需求。在经营中需要对市场需求进行进货补充，问如何组织进货才能最经济？</p>
 </blockquote>
+<ul>
+<li>存储模型<ul>
+<li>需求：存储是为了满足需求</li>
+<li>补充：是补充库存的手段，主要考虑从开始订货到货进仓库的这段时间；<ul>
+<li>提前期：从订单下达到货物入仓库之间的这段时间。（中间还要考虑货物到达到货物进入仓库的时间）；</li>
+</ul>
+</li>
+<li>存储策略：库存低于某个阈值或者固定时间的<strong>补充情况</strong>和<strong>补充数量</strong>；<ul>
+<li><code>t-</code>循环策略：每隔固定时间 <span class="arithmatex">\(t\)</span> 补充一个固定存储量 <span class="arithmatex">\(Q\)</span>；</li>
+<li><code>(t-s)</code>策略：每隔固定时间 <span class="arithmatex">\(t\)</span> 补充到固定数量 <span class="arithmatex">\(s\)</span>；</li>
+<li><code>(s,S)</code>策略：当前库存为 I，如果 <span class="arithmatex">\(I &gt; s\)</span>,就不进行补充，如果 <span class="arithmatex">\(I &lt; s\)</span>，就补充，数量为 <span class="arithmatex">\(S - s\)</span>。在这个策略下，<span class="arithmatex">\(s\)</span> 称为订货点（安全存储量）。当库存低于订货点时即将库存补充到<span class="arithmatex">\(S\)</span>。某些情况下无法实时得知具体的库存情况，就需要每隔一个固定时间<span class="arithmatex">\(t\)</span>补充一次，根据盘点的情况进行补货决策，称为<span class="arithmatex">\((t,s,S)\)</span>策略；</li>
+</ul>
+</li>
+<li>费用：<ul>
+<li>存储费用（与存储数量和时间成比例）</li>
+<li>订货费用</li>
+<li>生产费用（与生产数量成比例）</li>
+<li>缺货损失费用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>研究工具<ul>
+<li>存储状态图：时间 <span class="arithmatex">\(t\)</span> 为横轴，实际库存 <span class="arithmatex">\(Q\)</span> 为纵轴；描述 <span class="arithmatex">\(Q\)</span> 随着时间 <span class="arithmatex">\(t\)</span> 变化的过程；</li>
+</ul>
+</li>
+</ul>
 <h2 id="_3">确定性存储模型<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
@@ -14654,11 +14674,6 @@
 </li>
 <li>平均存储量：存储数量 <span class="arithmatex">\(\times\)</span> 存储时间（求一个定积分），同理可以推理平均缺货量</li>
 <li>将一个周期内的平均费用（=库存成本+缺货成本+订货成本）表示出来，分别求关于<span class="arithmatex">\((t,t_2)\)</span>的偏导数，求的最佳费用；</li>
-</ul>
-<p><figure markdown>
-    <img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202407221646400.png" width="width" />
-</figure></p>
-<ul>
 <li>可以得出如下结论：<ul>
 <li>最优存储周期 <span class="arithmatex">\(t = \dfrac{2c_3}{c_1 R} \times \dfrac{C_1 + C_2}{C_2} \times \dfrac{P}{P - R}\)</span></li>
 <li>经济生产批量</li>
@@ -14693,10 +14708,7 @@
 <ul>
 <li>最后一项<span class="arithmatex">\(K(Q)\)</span>是一个常数，随着<span class="arithmatex">\(Q\)</span>的变化二变化，<span class="arithmatex">\(K(Q) = K_i\)</span>，<span class="arithmatex">\(R\)</span> 是订货的批量</li>
 </ul>
-<figure>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202407221647510.png" width="width" /></p>
-<figcaption></figcaption>
-</figure>
 <ul>
 <li>找新的最优点只需要找对勾函数的原极小值点和后续的价格激励的开始点的结果；</li>
 </ul>
@@ -14803,7 +14815,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 22, 2024 17:03:08</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 29, 2024 02:23:56</span>
   </span>
 
     
