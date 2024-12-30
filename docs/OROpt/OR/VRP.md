@@ -1,8 +1,8 @@
-# 车辆路径问题（VRP）及相关
+# 车辆路径问题（VRP）｜拓展问题｜求解算法等
 
 ## 建模篇 
 
-### Naive Formulation 
+### Start from the easiest!
 
 #### VRP
 
@@ -151,4 +151,62 @@ $$\begin{aligned}
 - [Vidal's Site](https://w1.cirrelt.ca/~vidalt/en/VRP-resources.html):还是要抱紧大佬大腿，看看人家是怎么整合资料的。
 - [Uchoa's dataset](http://www.vrp-rep.org/references/item/uchoa-et-al-2017.html)： Focus 在大规模CVRP问题，同时作者的paper做了一些很有意义的关于benchmark的总结;
 
+## 其他类型的拓展
+
+注意，VRP问题很经典的一个做法（其实也是优化领域很多paper的做法）就是不断加约束。所以，==这部分不会专注于具体的问题模型简写是什么，而专注于“新约束的意义”== ，比如这个约束和其他的不同在哪里，代表了什么等。实际上，这些所有的约束都可以和前面所谓的“Time window”、“capacity”等结合起来看。也正因此，下面的问题会忽略 `TW` 以及 `Capacity` 约束。
+
+### Backhauls：取货完后再送货
+
+送货后取货问题。其实和[取送货问题(Pickup and Delivery Problem)](./PDP.md)非常类似，但是又有不同。区别在于：
+
+本问题下，不再是以“订单”来衡量了，而是回到了“顾客”，不考虑“订单”区分起终点的概念了。但是顾客的属性有区别。有一些是 `linehauls` 顾客，有一些是 `backhauls` 顾客。我们必须先从depot拿货物运给 `linehauls` 顾客，直到**服务完所有的 `linehauls` 顾客后**，再去服务 `backhauls` 顾客，从这些顾客处取。是一个**先送后取**的过程。
+
+同样地，每一个顾客都有时间窗，每一个顾客都有载重量。车辆也有载重量。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202412291859702.png)
+
+> 图中的 `L` 就是先访问的 `linehauls`，`B` 是后访问的 `backhauls` 顾客们。
+
+建模略。因为你可以**通过定义边的集合**，约束边的情况，其他的约束等，照搬整个VRPTW的模型，是一样的。参考文献：`İlker Küçükoğlu, Nursel Öztürk,An advanced hybrid meta-heuristic algorithm for the vehicle routing problem with backhauls and time windows, Computers & Industrial Engineering,Volume 86,2015,Pages 60-68,ISSN 0360-8352`
+
+### PDVRP (Pickup and Delivery Vehicle Routing Problem)
+
+乍一看，和PDPTW这类的问题有什么区别？
+
+确实没什么区别，区别在于修改了每个顾客节点的重量的情况：某个节点，允许顾客有pickup的需求，或者delivery的需求。建模时候，定义顾客节点的取货重量、送货重量即可。很容易。
+
+一个可能的，与其他取送货问题结合的场景，就是，既有PDP中“订单起终点”概念（某几个节点必须先后访问），又包含单个顾客“Pickup 需求，delivery需求”的混合取送货场景。可以参考 `Meng, S., Guo, X., Li, D., & Liu, G. (2023). The multi-visit drone routing problem for pickup and delivery services. Transportation Research Part E: Logistics and Transportation Review, 169, 102990.` 
+
+
+### Two-Echelon VRP
+
+两阶段配送VRP。前两年曾经被不少人搞过。目前快被吃烂了。所以很适合被放到我们这个笔记中珍藏起来。嘿嘿！
+
+> 这里正好说一个自己的私货。我觉得这种两阶段的VRP系统的建模与分析特别契合“多式联运”的主题。Therefore, 还是值得看一看的。
+
+
+
+## 工具篇
+
+!!! warning "未完待续 ... "
+
+好。最喜欢的部分。因为可以直接放链接。但是在开始之前，还得感谢链接的链接: 小马过河老师的几个推文。本部分的整理十分依赖于他的这个文章！[最新的几个VRP问题求解的开源工具](https://mp.weixin.qq.com/s/esrg4wASSRcowptRu3Ilfw)。
+
+### 各种库
+
+**启发式算法部分**：(标记符号表示我曾经使用过/正在使用)
+
+- [x] [PyVRP](https://github.com/PyVRP/PyVRP)。Python 上能整出这种好活确实是会整活的。工程细节等，参考 IJOC 的这个Paper： `Wouda, N.A., L. Lan, and W. Kool (2024). PyVRP: a high-performance VRP solver package. INFORMS Journal on Computing, 36(4): 943-955. https://doi.org/10.1287/ijoc.2023.0055`
+- [x] [ORTools VRP toolkit](https://developers.google.cn/optimization/routing/vrp?hl=zh-cn)。属实是真·开箱即用。支持多种约束。Ortools的经典版本。新手摸一摸，熟悉熟悉，跑跑数值试验，都是可以的。
+- [ ] [HGS-CVRP](https://github.com/vidalt/HGS-CVRP)。Vidal 大佬的，用C++写的，用来针对CVRP而设计。提供了Python的Wrapper，[PyHygese](https://github.com/chkwon/PyHygese)但是似乎不是很理想。一个很感兴趣的方法。混合遗传搜索 `(HGS)`。目前启发式SOTA看到几个都是基于此的。文章见[Hybrid genetic search for the CVRP: Open-source implementation and SWAP* neighborhood](https://www.sciencedirect.com/science/article/pii/S030505482100349X)。
+- [ ] [Filo2](https://github.com/acco93/filo2):专门为解决极大的CVRP问题（有数十万顾客节点）而设计的一个启发式算法库。特点是采用了非常快速、非常高效的邻域搜索技术。
+
+**精确式算法部分**：
+
+!!! note "如果想要彻底搞清楚精确式求解算法以及对应的细节等，首先你可以先看看发在MP上的这个文章（过于牛了）"
+    [A generic exact solver for vehicle routing and related problems. ](https://link.springer.com/article/10.1007/s10107-020-01523-z)
+    
+    不仅求解了VRP问题，还探讨（并求解了！！）很多类似的复杂组合优化问题。具体有多少还是移步链接查看吧。
+
+- [ ] [VRPSolveEasy](https://github.com/inria-UFF/VRPSolverEasy) ：专注于精确式解法的VRP仓库。作者的技术报告参考：`N. Errami, E. Queiroga, R. Sadykov, E. Uchoa. "VRPSolverEasy: a Python library for the exact solution of a rich vehicle routing problem", Technical report HAL-04057985, 2023.` 。
 
