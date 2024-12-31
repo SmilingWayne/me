@@ -39,9 +39,9 @@
 
 
 $$\begin{align}
-\text{(PDPTW)} \quad & \text{Minimize} \quad \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij}^k x_{ij}^k \tag{1} \\
-& \sum_{k \in K} \sum_{j \in V} x_{ij}^k = 1 \quad (i \in P), \tag{2} \\
-& \sum_{i \in V} x_{0i}^k = \sum_{i \in V} x_{i,2n+1}^k = 1 \quad (k \in K). \tag{3} \\
+\text{(PDPTW)} \quad & \text{Minimize} \quad \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij}^k x_{ij}^k  \\
+& \sum_{k \in K} \sum_{j \in V} x_{ij}^k = 1 \quad (i \in P), \\
+& \sum_{i \in V} x_{0i}^k = \sum_{i \in V} x_{i,2n+1}^k = 1 \quad (k \in K). \\
 \sum_{j \in V} x_{ij}^k - \sum_{j \in V} x_{n+i,j}^k &= 0 \quad (i \in P, k \in K), \\
 \sum_{j \in V} x_{ji}^k - \sum_{j \in V} x_{ij}^k &= 0 \quad (i \in P \cup D, k \in K), \\
 M(1 - x_{ij}^k) + u_j^k &\geq u_i^k + d_i + t_{ij} \quad (i, j \in V, k \in K), \\
@@ -95,10 +95,10 @@ x_{ij}^k &\in \{0, 1\} \quad (i, j \in V, k \in K).
 
 
 
-$$\begin{align}
-\text{(DARP)} \quad & \text{Minimize} \quad \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij}^k x_{ij}^k \tag{1} \\
-& \sum_{k \in K} \sum_{j \in V} x_{ij}^k = 1 \quad (i \in P), \tag{2} \\
-& \sum_{i \in V} x_{0i}^k = \sum_{i \in V} x_{i,2n+1}^k = 1 \quad (k \in K). \tag{3} \\
+$$\begin{aligned}
+\text{(DARP)} \quad & \text{Minimize} \quad \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij}^k x_{ij}^k  \\
+& \sum_{k \in K} \sum_{j \in V} x_{ij}^k = 1 \quad (i \in P)  \\
+& \sum_{i \in V} x_{0i}^k = \sum_{i \in V} x_{i,2n+1}^k = 1 \quad (k \in K). \\
 \sum_{j \in V} x_{ij}^k - \sum_{j \in V} x_{n+i,j}^k &= 0 \quad (i \in P, k \in K), \\
 \sum_{j \in V} x_{ji}^k - \sum_{j \in V} x_{ij}^k &= 0 \quad (i \in P \cup D, k \in K), \\
 M(1 - x_{ij}^k) + u_j^k &\geq u_i^k + d_i + t_{ij} \quad (i, j \in V, k \in K), \\
@@ -108,7 +108,7 @@ e_i &\leq u_i^k \leq \ell_i \quad (i \in V, k \in K), \\
 t_{i,n+i} &\leq r_i^k \leq L \quad (i \in P, k \in K), \textcolor{red}{\text{New Constr!!}}\\
 \max\{0, q_i\} &\leq w_i^k \leq \min\{Q_k, Q_k + q_i\} \quad (i \in V, k \in K), \\
 x_{ij}^k &\in \{0, 1\} \quad (i, j \in V, k \in K).
-\end{align}$$
+\end{aligned}$$
 
 
 ## Simultaneous Pickup and Delivery (SPD)
