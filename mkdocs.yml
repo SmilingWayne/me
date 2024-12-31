@@ -367,7 +367,7 @@ nav:
       - 经典运筹学建模：定向问题(TOP): OROpt/OR/TOP.md
       - 路径优化问题｜TSP: OROpt/OR/TSP.md
       - 路径优化问题｜VRP: OROpt/OR/VRP.md
-      - 路径优化问题｜PDP: OROpt/OR/VRP.md
+      - 路径优化问题｜PDP: OROpt/OR/PDP.md
       - 经典调度问题｜JSP: OROpt/OR/JSP.md
       - 当组合优化遇到深度学习: OROpt/OR/VRPmeetsNeurIPS.md
       - 常见的0-1变量处理技巧: OROpt/OR/GeneralTechnique.md
