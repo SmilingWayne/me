@@ -155,6 +155,9 @@ $$\begin{aligned}
 
 注意，VRP问题很经典的一个做法（其实也是优化领域很多paper的做法）就是不断加约束。所以，==这部分不会专注于具体的问题模型简写是什么，而专注于“新约束的意义”== ，比如这个约束和其他的不同在哪里，代表了什么等。实际上，这些所有的约束都可以和前面所谓的“Time window”、“capacity”等结合起来看。也正因此，下面的问题会忽略 `TW` 以及 `Capacity` 约束。
 
+!!! quote "关于扩展的综述"
+    - 可以参考一下TS的这篇：`Jan Christiaens, Greet Vanden Berghe (2020) Slack Induction by String Removals for Vehicle Routing Problems. Transportation Science`
+
 ### Backhauls：取货完后再送货
 
 送货后取货问题。其实和[取送货问题(Pickup and Delivery Problem)](./PDP.md)非常类似，但是又有不同。区别在于：
