@@ -3157,8 +3157,6 @@
       
         
       
-        
-      
     
     
       
@@ -3189,27 +3187,6 @@
             中国诗
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Poems/Classic_pieces/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    中国古典知识随录
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -14639,7 +14616,7 @@
 <ul>
 <li>bisect_left 和  bisect_right 和bisect 表示的意义完全相同，都是“在数组中插入数字s，使得数组有序”； ls[res] &gt; s </li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">bisect</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">bisect</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">ls</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">17</span><span class="p">]</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">index1</span> <span class="o">=</span> <span class="n">bisect</span><span class="o">.</span><span class="n">bisect</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">index2</span> <span class="o">=</span> <span class="n">bisect</span><span class="o">.</span><span class="n">bisect_left</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
@@ -14654,7 +14631,7 @@
 <li>bisect_left 表示该元素的下标；</li>
 <li>bisect_right 表示该元素下标 + 1，也就是该元素后面的元素；</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">bisect</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">bisect</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">ls</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">17</span><span class="p">]</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">index1</span> <span class="o">=</span> <span class="n">bisect</span><span class="o">.</span><span class="n">bisect</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">index2</span> <span class="o">=</span> <span class="n">bisect</span><span class="o">.</span><span class="n">bisect_left</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
@@ -14670,7 +14647,7 @@
 <li>bisect_right(ls, x)返回最右边的那个索引加1，此时ls[index3] &gt; x。</li>
 <li>专业地说，bisect_left返回小于等于x的最小索引，而bisect_right 返回大于x的最小索引；</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">bisect</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">bisect</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">ls</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">17</span><span class="p">]</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">index1</span> <span class="o">=</span> <span class="n">bisect</span><span class="o">.</span><span class="n">bisect</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">index2</span> <span class="o">=</span> <span class="n">bisect</span><span class="o">.</span><span class="n">bisect_left</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
@@ -14768,7 +14745,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2022 - 2024 xiaoxiaoWayne
+      Copyright &copy; 2022 - 2025 xiaoxiaoWayne
     </div>
   
   
