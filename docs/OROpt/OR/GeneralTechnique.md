@@ -1,4 +1,4 @@
-# 整数变量建模的一些小技巧
+# 整数变量建模/线性化的一些小技巧
 
 ## 0-1变量的三种问题结构
 
@@ -44,6 +44,73 @@ $$ax \geq yb, \quad \quad cx \geq (1-y)d$$
 
 $$\sum^m_{i = 1} y_i \geq k, \quad \quad a_i x \geq b_i y_i, \quad  y_i \in \{0, 1\}, \forall i \in \{1,2,...,m \}$$
 
+## 0-1变量的乘积式
+
+
+比如，我们有如下的情况：
+
+$$y = x_1 * x_2, x_1, x_2 \in \{0,1 \}$$
+
+如何表示y呢？
+
+你可以这样表示：
+
+$$\begin{align}
+\begin{cases}
+y \leq x_1, \\ 
+y \leq x_2, \\
+y \geq x_1 + x_2 - 1 \\
+y \in \{ 0, 1\}
+\end{cases}
+\end{align}$$
+
+怎么检查正确性呢？你可以把所有 $x_1, x_2$ 的情况展示出来，会发现 $y$ 每次都能准确地表示成你想要的数字。
+
+----
+
+如果我们问题更加复杂一点：
+
+$$y = x_1 * x_2, x_1 \in \{0,1 \}, x_2 \in [0, u]$$
+
+方法其实是一样的。因为有一个 0-1 变量，所以实际上一旦 $x_1 = 0$，那么 $y$ 其实一直是 $0$，我们的重点就是 $y$ 和 $x_2$ 的关系。
+
+$$\begin{align}
+\begin{cases}
+y \leq u x_1, \\ 
+y \leq x_2, \\
+y \geq x_2 - u(1 - x_1) \\
+y \in [0, u]
+\end{cases}
+\end{align}$$
+
+我们可以总结这个trick为更加一般的情况：
+
+$$y = x_1 * x_2, x_1 \in \{0,1 \}, x_2 \in [l, u]$$
+
+$$\begin{align}
+\begin{cases}
+y \leq x_2, \\ 
+y \geq x_2 - u(1 - x_1) \\
+ux_1 \geq y \leq ux_1
+\end{cases}
+\end{align}$$
+
+
+-----
+
+## max min / min max 问题
+
+这个很浅显易懂了：比如我们想要：$\min \{ \max x_i \}$。那么：
+
+$$\min z$$ 
+
+$$z \geq x_i, \forall  i \qquad$$
+
+同样地可以对 $\max \{ \min x_i \}$ 问题进行类似的操作。
+
+$$\max z$$ 
+
+$$z \leq x_i, \forall  i \qquad$$
 
 ## 分段线性成本函数
 
@@ -73,3 +140,9 @@ y_i \in \{0, 1\} \quad (i = 1,...,k - 1) \quad \\
 \end{align}
 \end{cases}
 \end{aligned}$$
+
+
+-----
+
+## 线性化的一些Trick 
+
