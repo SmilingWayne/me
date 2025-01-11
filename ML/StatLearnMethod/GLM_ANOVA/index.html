@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#anova" class="md-skip">
+        <a href="#t-testanova" class="md-skip">
           跳转至
         </a>
       
@@ -9693,6 +9693,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    广义线性模型｜方差分析
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -9702,6 +9713,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anova" class="md-nav__link">
+    <span class="md-ellipsis">
+      ANOVA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-matrices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Matrices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Matrices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      最后一个例子
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -14463,6 +14526,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anova" class="md-nav__link">
+    <span class="md-ellipsis">
+      ANOVA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-matrices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Matrices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Matrices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      最后一个例子
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -14491,10 +14595,99 @@
 
 
 
-<h1 id="anova">广义线性回归：ANOVA分析<a class="headerlink" href="#anova" title="Permanent link">⚓︎</a></h1>
+<h1 id="t-testanova">广义线性回归：T-test与ANOVA分析<a class="headerlink" href="#t-testanova" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 9 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间不到 1 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 1751 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 9 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 6 分钟</p>
 </div>
+<div class="admonition quote">
+<p class="admonition-title">The goal of t-test is to compare means and see if they are significantly different from each other. </p>
+</div>
+<p>我们首先考虑简单的情况。我们有两种类别，每一个类别有多个样本，每个样本都有一个指标的具体值。比如我们有两组小鼠，一组突变一组没有突变，我们分别记录这两组中所有小鼠的体重。</p>
+<p>Follow LR steps: (which is very very important!)</p>
+<ol>
+<li><strong>Find the overall mean;</strong></li>
+<li><strong>Calculate SS(mean)</strong>. 基于多类的数据计算全部数据的SS。</li>
+<li><strong>Fit a line to the data</strong>.</li>
+</ol>
+<p>在对数据进行fit的时候有不同：对不同种类的数据，每一个类都分别取mean。但是回忆LR，我们只fit出了一条线，现在有多条，怎么用一个公式表示这些线呢？</p>
+<p>有一种将两条线合并成一个单一等式的方法。采取这种方法后，后续步骤会与F检验完全相同。</p>
+<p>我们开始。</p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202501120025685.png" /></p>
+<p>我们可以form 一个矩阵：Design Matrix。这里的0-1就像是开关，决定了每个类的mean是否“开/关”。</p>
+<p>我们可以用公式 <span class="arithmatex">\(y = MEAN_{type_A} + MEAN_{type_B}\)</span> 来进行表示。这样的话，相当于我们有 <span class="arithmatex">\(2\)</span> 个参数来表示这个公式。</p>
+<ol>
+<li><strong>计算SS(fit)，也就是拟合后结果的SS。</strong></li>
+</ol>
+<p>这样，我们公式：</p>
+<pre class="arithmatex">\[F = \dfrac{[SS(mean) - SS(fit)] / (p_{fit} - p_{mean})}{SS(fit) / (n - p_{fit})}\]</pre>
+<p>就可以照搬自LR的结果了。我们把两种情况进行对比。会发现，T-test更加侧重于“类别”，即样本中多个类在某个指标变化的情况。</p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202501120025687.png" /></p>
+<p>注意了，在如上的 <code>T-test</code> 的场景下，<span class="arithmatex">\(p_{mean} = 1, p_{fit} = 2\)</span></p>
+<hr />
+<h2 id="anova">ANOVA<a class="headerlink" href="#anova" title="Permanent link">⚓︎</a></h2>
+<p><strong>我们把刚才的情况扩展到5种类别，ANOVA就在此出现了。ANOVA可以探讨这多种类别样本在某一个固定指标上是否是相同的。</strong></p>
+<p>照搬上面的操作即可。此时我们需要做一个有5组不同0-1的长长的矩阵。如图所示。分别表示5个类别情况下的不同。</p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202501120026255.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">我们刚刚使用的design matrix（就是用来表征每个类是否被选中的那个矩阵），在标准的计算中会被写成如下新的样式，即第一列全是1，后面按组别变化。</p>
+</div>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202501120028703.png" /></p>
+<p>为什么？参考下面解释：</p>
+<h2 id="design-matrices">Design Matrices<a class="headerlink" href="#design-matrices" title="Permanent link">⚓︎</a></h2>
+<p>为什么标准的T-test矩阵是：上图右边所示，而不是左边？</p>
+<p>这个新公式的含义是：</p>
+<pre class="arithmatex">\[y = 1 \times MEAN_{Type_1} + 0 \times diff(Type_1 - Type_2)\]</pre>
+<p><strong>第一列是要与 <span class="arithmatex">\(MEAN_{type_1}\)</span> 相乘，第二列意味着要与 Type1 与 Type 2 均值的差 相乘。</strong></p>
+<p>两种矩阵表达的残差是相同的。<span class="arithmatex">\(p_{fit}\)</span> 也是相同的，同样数据得到的 <span class="arithmatex">\(p-value\)</span> 也是相同的。那为什么要用右边的呢？</p>
+<blockquote>
+<p>对于那些全是0/1的matrix，很适合做T-test，或者ANOVA，适合处理那些不同类别(categories)的数据，但是我们也可以用其他的数字。</p>
+</blockquote>
+<div class="admonition example">
+<p class="admonition-title">举个例子</p>
+<p>我们以线性回归为例，假设我们的公式是：</p>
+<p>y = <strong>y-intercept</strong> + slope</p>
+<p>我们的第一列的元素需要和 y-intercept 相乘，第二列的元素需要和 slope 相乘。</p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202501120041835.png" /></p>
+<p>此时，我们引入第二列为实数（其实也就是我们的自变量在数据中的值），第一列均为1.</p>
+<p>会发现，这个矩阵的数字对应到上面那个y的公式，乘下来的结果正好就是拟合直线上的点。</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">在这种“第一列都是1”的design matrix下，我们不止可以加入0或者1，我们可以加入==任何实数== ，只要我们设置好了 <span class="arithmatex">\(y\)</span> 的表达式含义。这样，我们只需要把矩阵对应位置塞上需要的数，这个矩阵与我们的拟合曲线的参数的向量相乘，就“通过数据中的自变量找到了拟合曲线对应的点”，这有助于在表达式中刻画拟合线/面的情况。</p>
+</div>
+<p>我们可以把T-test和回归结合起来 ... </p>
+<p>比如如下的复杂情况：有两种老鼠，他们各自有自己的size-weight关系。我们能否用统计方法来检验这两种老鼠之间是否有显著的不同呢？</p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202501120029914.png" /></p>
+<blockquote>
+<p>相比T-test，<u>我们依然有两种类别，每一个类别有多个样本，但是每个样本有多个指标，比如我们有两组小鼠，一组突变一组没有突变，我们分别记录这两组中所有小鼠的<strong>体重</strong>以及<strong>大小</strong>。</u></p>
+</blockquote>
+<p>如果我们仅仅用regression，我们只会从总体中获得一个fit line；如果我们仅仅用T-test，我们仅仅能获得在不同类别的某一个指标上二者的差异等（还不一定显著）。</p>
+<p>我们想要比较的是，既能比较多个类别，又能表示fit-line！所以！<strong>Combine T-test and Regression!!!</strong></p>
+<p>怎么做呢？如下图，注意一下我们的 <span class="arithmatex">\(y\)</span> 的公式（我们默认两个线的slope相等）。我们把矩阵的最后一列用x轴填充，因为这加上 control-intercept 正好就是control的红线；而第二列则负责表示mutant造成的偏移，只在绿线的时候才取到。</p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202501120036510.png" /></p>
+<blockquote>
+<p><mark>这个矩阵的每一行，都需要和那个 y 的表达式乘起来才可以表示一个具体的点！</mark> 这个矩阵的作用，就是保证乘完之后的结果，能够表征我们的数据。每一行，对应一个数据！
+</p>
+</blockquote>
+<div class="admonition example">
+<p class="admonition-title">如果我们想要表示： y = intrcept_1 + offset + slope_1 + slope_2，也就说斜率不同的情况，怎么办呐？</p>
+<p>Here we go~</p>
+<pre class="arithmatex">\[\begin{bmatrix} 1 &amp; 0 &amp;a_1 &amp; 0 \\ 1 &amp; 0 &amp;a_2 &amp; 0 \\ 1 &amp; 0 &amp;a_3 &amp; 0 \\ 1 &amp; 0 &amp;a_4 &amp; 0 \\ 1 &amp; 0 &amp; 1 &amp; b_1 \\ 1 &amp; 0 &amp;1 &amp; b_2 \\ 1 &amp; 0 &amp;1 &amp; b_3 \\ 1 &amp; 0 &amp;1 &amp; b_4 \\  \end{bmatrix}\]</pre>
+</div>
+<p>我们用这种新方法对这两个数据进行fit，然后用F检验进行检查，会发现一个较小的p-value，说明，同时考虑样本中不同类的子样本，以及子样本的一个变量进行预测，比仅仅使用一个type的均值进行预测的simple model，效果要显著地好。</p>
+<blockquote>
+<blockquote>
+<p>当然了，你可以和其他的simple model对比，比如：<strong>考虑所有样本进行的线性回归，不考虑样本的类别</strong>；比如，仅仅考虑样本不同类别对一个指标进行T-test的预测。</p>
+</blockquote>
+<p>公式里的 <span class="arithmatex">\(p_{fancy}\)</span> 就是3，对应新模型的3个参数。 
+</p>
+</blockquote>
+<hr />
+<h3 id="_1">最后一个例子<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h3>
+<p>如果有两个实验室同时重复了实验，但是得出的结果有偏差，（batch-effect），我们该如何补偿呢？</p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202501120101879.png" /></p>
+<p>或许我们可以总结，如果要处理category的不一样，需要在 y 中加入 <span class="arithmatex">\(differece(type_a - Type_b)\)</span>，而如果是其他指标，同样需要随机应变。</p>
+<p>同样地，为了验证加上最后一列是否有必要，我们还可以继续和 simple model 进行对比：</p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202501120103938.png" /></p>
 
 
 
@@ -14519,7 +14712,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 28, 2024 00:36:13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 12, 2025 01:07:37</span>
   </span>
 
     
