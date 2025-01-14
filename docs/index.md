@@ -15,31 +15,35 @@ hide:
 
     <br> 
 
-    !!! note inline "一句话介绍"
+    !!! note inline "关于我"
         🧑‍🎓 一个时刻想要变得不普通的普通人。
         
         🥰 你可以叫我 "笑笑" 。
 
-    !!! note inline "我的爱好" 
-        📖 喜欢阅读，有时观影。
-        
-        💻 偶尔编程 :material-language-python: | :material-language-java:，不事劳作。
+        🔮 浏览此网站时，你已在和我促膝长谈。
 
-    !!! abstract inline "关于音乐" 
+    !!! note inline "爱好 / 兴趣" 
+        📖 喜欢阅读，有时观影，不时创作。
+        
+        💻 偶尔编程 :material-language-python: | :material-language-java:。
+
+        🧩 幼稚的[解谜游戏爱好者](https://github.com/SmilingWayne/PuzzleSolver)。
+
+    !!! abstract inline "" 
         🎻 “有柴小协[^1]的日子就是好日子。”
 
-    !!! abstract inline "关于诗歌" 
+    !!! abstract inline "" 
         🍁 “西园公子名无忌，南国佳人号莫愁。”[^2]
 
-    !!! success inline "MBTI / 在忙什么"
-        🧸 <font face = "American Typewriter" >INFJ-T</font>[^3] 
+    !!! success inline "MBTI / 星座 / 其他"
+        🧸 <font face = "American Typewriter" >INFJ-T</font>[^3], ♍️[^4]. 
         
-        🎀 谨慎的自由主义[^4]者 / 努力学习语言中。
+        🎀 谨慎的自由主义[^5]者 / 努力学习语言中。
           
         > (中文 / English / Français)。
 
     !!! success inline "晃晃悠悠～"
-        🌏 暂居南京。
+        🌏 暂居南京[^6]。
 
         🐳 常年浸润在江南的朦胧与诗意中。
 
@@ -77,11 +81,11 @@ hide:
 
 === "<font size = 6>:fontawesome-solid-envelope: </font><font size = 6 face = "savoye LET">Contact Me</font>"
 
-    - :fontawesome-solid-envelope:  <a href="mailto:xiaoxiaowayne@163.com">个人邮箱</a>，:fontawesome-regular-envelope: <a href = "mailto:zx_wang@smail.nju.edu.cn">NJU 邮箱</a>；
+    - :fontawesome-solid-envelope:  <a href="mailto:xiaoxiaowayne@163.com">个人邮箱</a>，:fontawesome-regular-envelope: <a href = "mailto:zx_wang@smail.nju.edu.cn">NJU 邮箱</a>.
 
     - :fontawesome-solid-pen-nib: [我的豆瓣](https://www.douban.com/people/174239371/)，Login is required.
 
-    - :simple-xiaohongshu: [Wayne是笑笑🦆](https://www.xiaohongshu.com/user/profile/5d1238860000000011038629)；
+    - :simple-xiaohongshu: [Wayne是笑笑🦆](https://www.xiaohongshu.com/user/profile/5d1238860000000011038629).
 
 
 <!-- brands/regular/solid -->
@@ -96,10 +100,11 @@ hide:
 - 🔍 搜索：支持中文检索。
 
 [^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.(From [WiKi](https://en.wikipedia.org/wiki/Violin_Concerto_(Tchaikovsky)))
-[^2]: 语出晚唐诗人韦庄[《忆昔》](https://www.gushici.net/shici/15/33023.html)。
-[^3]: In personality typology, the **Myers–Briggs Type Indicator** (MBTI) is an introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions. It enjoys popularity despite being widely regarded as pseudoscience by the scientific community. <font face = "American Typewriter" >INFJ-T</font> means ==advocates==, former 4 letters indicates **"Introverted, Intuitive, Feeling, and Judging"**, meanwhile the last T stands for **"Turbulent"**. (From [Wiki](https://en.wikipedia.org/wiki/Myers–Briggs_Type_Indicator) and [Source](https://psychreel.com/infj-t/)).
-[^4]: Liberalism is a political and moral philosophy based on the rights of the individual, liberty, consent of the governed, political equality and equality before the law. (From [WiKi](https://en.wikipedia.org/wiki/Liberalism))
-
+[^2]: From a poem [《忆昔》](https://www.gushici.net/shici/15/33023.html) by [韦庄 (Wei Zhuang)](https://en.wikipedia.org/wiki/Wei_Zhuang), a poet of the late Tang Dynasty (618 ~ 907) in China.
+[^3]: In personality typology, the **Myers–Briggs Type Indicator** (MBTI) is an introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions. It enjoys popularity despite being widely regarded as pseudoscience by the scientific community. <font face = "American Typewriter" >INFJ-T</font> means ==advocates==, former 4 letters indicates **"Introverted, iNtuitive, Feeling, Judging"**, the last T means **"Turbulent"**. (From [Wiki](https://en.wikipedia.org/wiki/Myers–Briggs_Type_Indicator) and [Source](https://psychreel.com/infj-t/)).
+[^4]: **Virgo** is the sixth astrological sign in the zodiac. Under the tropical zodiac, the Sun transits this area between August 23 and September 22 on average. (From [Wiki](https://en.wikipedia.org/wiki/Virgo_(astrology)))
+[^5]: Liberalism is a political and moral philosophy based on the rights of the individual, liberty, consent of the governed, political equality and equality before the law. (From [WiKi](https://en.wikipedia.org/wiki/Liberalism))
+[^6]: Capital of Jiangsu, a province in East China. (From [Wiki](https://en.wikipedia.org/wiki/Nanjing))
 
 
 <script>
