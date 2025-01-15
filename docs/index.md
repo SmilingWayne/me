@@ -61,7 +61,7 @@ hide:
     
     - 🦄 本站Github仓库: [Me](https://github.com/SmilingWayne/me)。A star 🌟 is the easiest way to make me happy! 😄
 
-    !!! abstract "本站点溯源"
+    !!! abstract indexinline "本站点溯源"
 
         最初计划是一个电子读书笔记仓库，记录阅读感想、生活思考和碎碎念，后陆续增补观影笔记、学习笔记、课程笔记、刷题记录，体量渐增。
 
@@ -86,6 +86,12 @@ hide:
     - :fontawesome-solid-pen-nib: [我的豆瓣](https://www.douban.com/people/174239371/)，Login is required.
 
     - :simple-xiaohongshu: [Wayne是笑笑🦆](https://www.xiaohongshu.com/user/profile/5d1238860000000011038629).
+
+!!! question indexinline ": This message is encrypted..."
+
+    A Q I U C C K P B V B K R U W F W Z B N T K C X U W Y P W J Q Y Y Z X P L T N S F T O R J  Y G R J Q X S O Z F D Z A V P U U Z M K N U S P N A N U M U E P F S E V B H A I Y W Y L O Z
+
+    > **NOTE**：All the keys needed to decrypt the message above are given on this page. Have Fun.
 
 
 <!-- brands/regular/solid -->
