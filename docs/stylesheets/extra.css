@@ -21,7 +21,13 @@
 }
 
 .md-typeset .admonition.inline {
-    width: 350px;   
+    width: 358px;   
+    column-width: auto;
+    font-size: 15px;
+}
+
+.md-typeset .admonition.indexinline {
+    width: 732px;   
     column-width: auto;
     font-size: 15px;
 }
