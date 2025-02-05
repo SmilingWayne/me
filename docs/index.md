@@ -83,6 +83,8 @@ hide:
 
     - :fontawesome-solid-envelope:  <a href="mailto:xiaoxiaowayne@163.com">个人邮箱</a>，:fontawesome-regular-envelope: <a href = "mailto:zx_wang@smail.nju.edu.cn">NJU 邮箱</a>.
 
+    >  No reply for 72h in workday: Failed to receive or accidentally omit your email, you can try to resend it.
+
     - :fontawesome-solid-pen-nib: [我的豆瓣](https://www.douban.com/people/174239371/)，Login is required.
 
     - :simple-xiaohongshu: [Wayne是笑笑🦆](https://www.xiaohongshu.com/user/profile/5d1238860000000011038629).
