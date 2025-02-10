@@ -232,6 +232,7 @@ nav:
           - 🇯🇵古都: Literature/Novel/Kyoto.md
           - 🇯🇵春雪: Literature/Novel/Spring_snow.md
           - 🇯🇵奔马: Literature/Novel/Benma.md
+          - 🇯🇵晓寺: Literature/Novel/Xiaosi.md
           - 🇯🇵罗生门: Literature/Novel/Rashomon.md
           - 🇯🇵舞！舞！舞！: Literature/Novel/Dance.md
           - 🇫🇷鼠疫: Literature/Novel/Plague.md
@@ -720,7 +721,7 @@ extra:
       link: mailto:xiaoxiaowayne@163.com
   analytics:
     provider: google
-    property: G-NVXC1ZHJ8C
+    rpoperty: G-NVXC1ZHJ8C
     feedback:
       title: Was this page helpful?
       ratings:
