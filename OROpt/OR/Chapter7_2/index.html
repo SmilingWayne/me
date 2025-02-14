@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.d7758b05.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -9625,9 +9625,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lp_1" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      基于网络流的LP的对偶
+      基于紧凑的网络流模型的对偶
     </span>
   </a>
   
@@ -10033,6 +10033,8 @@
       
         
       
+        
+      
     
     
       
@@ -10321,6 +10323,79 @@
   
   <span class="md-ellipsis">
     Lecture｜01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_5" id="__nav_8_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    动手学深度学习｜笔记
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            动手学深度学习｜笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ML/DL/CNN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    卷积神经网络
     
   </span>
   
@@ -15352,9 +15427,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lp_1" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      基于网络流的LP的对偶
+      基于紧凑的网络流模型的对偶
     </span>
   </a>
   
@@ -15397,15 +15472,16 @@
 
 <h1 id="_1">图论算法：最大流与最小割<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 5719 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 9 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 19 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 6816 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 9 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 23 分钟</p>
 </div>
 <div class="admonition quote">
 <p class="admonition-title">照例，先上链接</p>
 <ul>
-<li>首先推荐jyy（yyds！）老师的<a href="https://www.bilibili.com/video/BV1Q7411R7ie">B站教程</a>。目前中文教程中我所见的讲授最大流/最小割效果最好、信息含量够大、信息密度够高的。<strong>本篇笔记不过是对上述这个短短1h的授课视频的拙劣模仿。</strong></li>
+<li>首先<strong>强烈推荐</strong> 计算机系 jyy（yyds！）老师的<a href="https://www.bilibili.com/video/BV1Q7411R7ie">B站教程</a>。目前我所见的中文教程中，讲授最大流/最小割效果最好、信息含量足够大、信息密度足够高的。<strong>本篇笔记不过是对上述这个短短1h的授课视频的拙劣模仿。</strong></li>
 </ul>
 </div>
-<p>这个笔记会从几个部分展开。我很早以前就想写这部分内容了。没想到2024年都快结束了才堪堪开始。首先你需要知道，最大流问题实际上可以认为是最小费用流的一个特例（可参考<a href="./">最小费用流的拓展</a>。而最小费用流又可以视作一种线性规划问题的特例。我们会在后面简单讨论一下这个对偶问题的形式与含义）。</p>
+<p>这个笔记会从几个部分展开。我很早以前就想写这部分内容了。没想到2024年都快结束了才堪堪开始。首先，你需要知道，<strong>最大流问题实际上可以认为是最小费用流的一个特例（可参考<a href="./">最小费用流的拓展</a>。而最小费用流又可以视作一种线性规划问题的特例。我们会在后面简单讨论一下这个对偶问题的形式与含义）。</strong></p>
+<p>这是粗糙拟定的笔记结构：</p>
 <ul>
 <li>基础定义；以及从找路径到“割”；</li>
 <li>如何从“找最多不重复路径”过渡到最大流；</li>
@@ -15593,13 +15669,14 @@ x_i \geq 0,\forall i
 <p>什么意思呢，就是除开了 <span class="arithmatex">\(s\)</span> 和 <span class="arithmatex">\(t\)</span> 之外，其他所有节点，其流入的流量一定等于流出的。为什么呢？因为，<strong>除了 <span class="arithmatex">\(s\)</span> 和 <span class="arithmatex">\(t\)</span> 之外，其他所有节点，都是中间节点，既不是起点，也不是终点，我们不会在中间节点有流量的损失（否则我们就一定可以通过把这个流量补上，找到一个更大的流了呀！），我们也不会在中间节点有流量的增加（中间节点不会平白无故生产流量！）</strong>。</p>
 <p>具体而言，以 <span class="arithmatex">\(a\)</span> 节点为例， <span class="arithmatex">\(x_{sa} = x_{ab} + x_{ac}\)</span>, 以c节点为例，<span class="arithmatex">\(x_{sc} + x_{ac} + x_{bc} = x_{cd}\)</span>。以此类推。有多少个节点（除了起终点），就有多少个流平衡！</p>
 <p>我们把完整的、基于网络流而不是基于路径的、紧凑的建模写在这里。</p>
-<p>给定图 <span class="arithmatex">\(G = (V,E)\)</span> 以及起点 <span class="arithmatex">\(s\)</span>，终点 <span class="arithmatex">\(t\)</span>。设 <span class="arithmatex">\(x_{ij}\)</span> 是边 <span class="arithmatex">\((i,j) \in E\)</span> 上的流量。是一个连续型变量。我们用集合 <span class="arithmatex">\(\Omega^+(i)\)</span> 表示流入节点 <span class="arithmatex">\(i \in V\)</span>  的节点集合，用集合 <span class="arithmatex">\(\Omega^-(i)\)</span> 表示流出节点 <span class="arithmatex">\(i \in V\)</span>  的节点集合。那么，我们可以写出如下线性规划模型：</p>
+<p>给定图 <span class="arithmatex">\(G = (V,E)\)</span> 以及起点 <span class="arithmatex">\(s\)</span>，终点 <span class="arithmatex">\(t\)</span>。设 <span class="arithmatex">\(x_{ij}\)</span> 是边 <span class="arithmatex">\((i,j) \in E\)</span> 上的流量。是一个连续型变量。我们用集合 <span class="arithmatex">\(\Omega^+(i)\)</span> 表示流入节点 <span class="arithmatex">\(i \in V\)</span>  的节点集合，用集合 <span class="arithmatex">\(\Omega^-(i)\)</span> 表示流出节点 <span class="arithmatex">\(i \in V\)</span>  的节点集合。我们用 <span class="arithmatex">\(c(i,j)\)</span> 表示边 <span class="arithmatex">\((i,j)\)</span> 的容量。那么，我们可以写出如下线性规划模型：</p>
 <pre class="arithmatex">\[\max \sum_{j \in \Omega^-(s)} x_{sj}\]</pre>
 <p>s.t.</p>
 <pre class="arithmatex">\[\begin{aligned}
 \begin{cases}
 \begin{align}
 \sum_{j \in \Omega^+(i)} x_{ij} = \sum_{j \in \Omega^-(i)} x_{ji},\forall i \in V \setminus \{s,t\} \qquad  \\
+x_{ij} \leq c(i,j), \forall (i, j) \in E \qquad \\
 x_{ij} \geq 0, \forall (i, j) \in E \qquad
 \end{align}
 \end{cases}
@@ -15609,7 +15686,7 @@ x_{ij} \geq 0, \forall (i, j) \in E \qquad
 <p class="admonition-title">做运筹相关整理，一直想对所有经典问题的对偶情况进行一些粗浅的分析。我们开始吧。</p>
 </div>
 <h3 id="lp">基于路径的LP的对偶<a class="headerlink" href="#lp" title="Permanent link">⚓︎</a></h3>
-<p>我们先讨论那个笨拙的、基于路径的线性规划问题。</p>
+<p>我们先讨论那个笨拙的、基于路径的线性规划问题。事实上，从这个笨拙的建模开始，比从那个精简后的线性规划模型入手，更容易理解最大流对偶的本质。</p>
 <p>不言而喻地，<strong>对偶问题的决策变量是从原问题的约束条件入手的。</strong> 原问题的约束条件，对应的是每个边的容量限制。所以记图中有 <span class="arithmatex">\(|E|\)</span> 条边，我们的对偶问题就有 <span class="arithmatex">\(|E|\)</span> 个决策变量。记 <span class="arithmatex">\(y_k\)</span>。如果你想具体一点，可以逐一罗列地写成：<span class="arithmatex">\(y_{sa}, y_{ab}, y_{bc}\)</span> 等以此类推的形式。同样地，我们应该注意到，设原问题有 <span class="arithmatex">\(|M|\)</span> 个决策变量，那么对偶问题就对应了 <span class="arithmatex">\(|M|\)</span> 个约束条件。（注意这有指数多个约束，但是无妨，我们不会去解这个问题的）</p>
 <p>Furthermore，<strong>原问题的每一个决策变量都对应了一个（对偶问题的）约束</strong>，因为这个决策变量是针对“某条路径”的，所以在对偶问题的语境下，这个约束也是针对“某条路径”而给出的，它的右端项始终为1。但是系数矩阵 ... </p>
 <p>记得我们之前有 “用参数 <span class="arithmatex">\(a_{ik}\)</span> 表示路径 <span class="arithmatex">\(i \in P\)</span> 是否经过边 <span class="arithmatex">\(k\)</span>”，那么在对偶语境下，倒过来，就是：边 <span class="arithmatex">\(k\)</span> 是否被路径 <span class="arithmatex">\(i\)</span> 所经过——其表示依然可以用 <span class="arithmatex">\(a_{ik}\)</span> 这个参数！</p>
@@ -15625,14 +15702,41 @@ y_k \geq 0, \forall k \in E \qquad
 \end{aligned}\]</pre>
 <blockquote>
 <p>防止理解不了这个约束，我还是拿上图的例子来讲：</p>
-<p>对第一个路径 <span class="arithmatex">\(s \rightarrow a \rightarrow b \rightarrow t\)</span>，我们写出来的第一个约束就是： <span class="arithmatex">\(y_{s,a} + y_{a,b} + y_{b,t} \geq 1\)</span> 以此类推。</p>
+<p>对第一个路径 <span class="arithmatex">\(s \rightarrow a \rightarrow b \rightarrow t\)</span>，我们写出来的第一个约束就是： <span class="arithmatex">\(y_{s,a} + y_{a,b} + y_{b,t} \geq 1\)</span> 以此类推。别忘了, <span class="arithmatex">\(a\)</span> 参数，不管下标如何，要么是0，要么是1.</p>
 </blockquote>
-<p>那么回过头来看这个对偶问题，<strong>你做的事情实际上是，在每个边都已赋予一个权重的情况下，要求一个 <span class="arithmatex">\(y_k\)</span>。我们假设令 <span class="arithmatex">\(y_k \in \{ 0, 1\}\)</span>，就是要在所有的路径（路径反正是由边组成的，每个边有其权重）中，选一些边出来，使得选出来的边，其能够覆盖所有的路径（这也就是为什么，有路径个约束，同时约束是 <span class="arithmatex">\(\geq 1\)</span>）的前提下，还能使得权重最小。</strong></p>
+<p>那么回过头来看这个对偶问题，<strong>你做的事情实际上是，在每个边都已赋予一个权重的情况下，要求一个 <span class="arithmatex">\(y_k\)</span>。我们假设令 <span class="arithmatex">\(y_k \in \{ 0, 1\}\)</span>，就是要在所有的路径（路径反正是由边组成的，每个边有其权重）中，选一些边出来，使得选出来的边，其能够覆盖所有的路径（这也就是为什么，有路径个约束，同时约束是 <span class="arithmatex">\(\geq 1\)</span>）的前提下，还能使得权重最小。</strong> </p>
+<p><mark>而，如果我们把 “覆盖所有的路径” 换一种思路来思考...一些边覆盖了所有的路径，不就意味着，拿掉这些边后，我们找到了一个种办法，分开了起点和终点 .... 不就是 ... 割？！！</mark> </p>
+<p>当然了，严格来说，<strong>上面这个表达式，就是最小割问题的一个线性松弛</strong> （因为我们 <span class="arithmatex">\(y_k\)</span> 毕竟还是 continous的嘛.）针对这些细节的表述，你可以参考 <a href="https://theory.stanford.edu/~trevisan/cs261/lecture15.pdf">这个链接</a> 给出的数学证明。</p>
 <p>如果你的直觉足够强，你可以想象成下图所示，左侧每个长线都表示一个从 <span class="arithmatex">\(s\)</span> 到 <span class="arithmatex">\(t\)</span> 的路径，因为它们由不同的边组成，所以每一段的权重各有不同（以不同颜色表示）。而我们的最终解就是下面右图所示的那样。</p>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202412222013103.png" /></p>
 <p><strong>这些选出来的边，也就构成了一个最小的割。</strong> 这就是为什么，在本质上，最大流和最小割是互为对偶，又冥冥之中互有联系的原因。</p>
-<h3 id="lp_1">基于网络流的LP的对偶<a class="headerlink" href="#lp_1" title="Permanent link">⚓︎</a></h3>
-<p>推荐链接：https://theory.stanford.edu/~trevisan/cs261/lecture15.pdf。等有空再补充好。</p>
+<h3 id="_6">基于紧凑的网络流模型的对偶<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h3>
+<p>现在，是时候跳出上面基于路径的对偶，转而看一看我们精简后的，你最经常见到的网络流模型的对偶了。</p>
+<p>在<a href="https://theory.stanford.edu/~trevisan/cs261/lecture15.pdf">链接（上面已经给出过了）</a> 中，我们知道，可以证明这个路径的建模方式与最大流的问题是完全等价的。某种意义上，我们可以得到一种启示，即，我们对网络流模型的建模，和上面给出的这个对偶，也有千丝万缕的关系。我们开始。</p>
+<p>首先我们知道，对偶变量一定对应着原问题的某个约束，而网络流模型有2组约束：流平衡、容量约束。同时，我们知道，网络流的流平衡约束的数量，等于节点数 - 2 (因为头尾节点没有)；而网络流的容量约束的数量，等于图中边的数量。但，你同样应该注意到，对于流平衡约束，移项后，右端项是0，也就是这部分约束的对偶变量不会出现在对偶问题的目标函数中。</p>
+<p>我们开始手撕。</p>
+<p>我们定义对偶变量 <span class="arithmatex">\(y_{(u,v)}\)</span>，也就是边 <span class="arithmatex">\((u,v)\)</span> 在原问题的容量约束所对应的那个对偶变量；我们同样定义对偶变量 <span class="arithmatex">\(y_u\)</span>，也就是节点 <span class="arithmatex">\(u\)</span> 在原问题的流平衡约束所对应的那个对偶变量。</p>
+<pre class="arithmatex">\[\min \sum_{(u,v) \in E} c(u,v) y_{u,v}\]</pre>
+<pre class="arithmatex">\[\begin{aligned}
+\begin{cases}
+\begin{align}
+y_v + y_{s,v} \geq 1  \qquad  \forall v : (s, v) \in E \qquad \\
+y_v - y_u + y_{u,v} \geq 0 \qquad \forall (u,v) \in E, u \neq s, v \neq t \qquad \\
+-y_u + y_{u,t} \geq 0, \qquad \forall u: (u,t) \in E \qquad
+\end{align}
+\end{cases}
+\end{aligned}\]</pre>
+<p>这个看起来确实很 Mysterious ... 因为看起来怪怪的。这是因为最大流里有容量约束导致的。</p>
+<p>第一组，针对的是原问题中从起点出发的所有路径，也就是原问题决策变量的对应路径；</p>
+<p>第二组，针对的是原问题中，所有不从起点出发，也不到达终点的路径；</p>
+<p>第三组，针对的是原问题中，所有到达终点的路径；</p>
+<p>至于为什么前面的系数矩阵有正有负，要写成这种形式（这似乎已经尽可能简洁了！）可以留作课后习题。<strong>提示一下，可以从节点-边关系矩阵入手。</strong> 原问题如果只看流平衡矩阵，行数就是节点数，列数就是边数。而一行中是可以有很多1，-1的，但是一列只有一个1和一个-1，分别表示出点和入点。</p>
+<p><strong>如果再把容量约束拴到这个矩阵下面，会发现，这个容量约束的矩阵好巧不巧哦，正好是个单位阵！太整齐了吧！（想象下，因为容量是要限制所有边的，所以 ... ）</strong></p>
+<p>这个“整齐”带来的后果是，转置到对偶问题的系数矩阵之后，每一行恰好一个。这也就解释了为什么，偏偏对偶问题的每一个约束都有一个 <span class="arithmatex">\(y_{s,v} / y_{u,v} / y_{u,t}\)</span> 。知道了这一点，你可以试着把这几项先捂住不看，只看前面的，再来理解前面的正负关系，就容易多了。</p>
+<p>（别忘了右端项！）</p>
+<div class="admonition abstract">
+<p class="admonition-title">这部分拖了几乎一年，在2025.02.14终于完成了内容整合。不容易！</p>
+</div>
 
 
 
@@ -15657,7 +15761,7 @@ y_k \geq 0, \forall k \in E \qquad
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 22, 2024 20:18:40</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 14, 2025 20:55:32</span>
   </span>
 
     
