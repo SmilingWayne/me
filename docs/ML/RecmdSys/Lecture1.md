@@ -557,5 +557,10 @@ $\cos (\mathbf{a}, \mathbf{b}) = \dfrac{\langle \mathbf{a}, \mathbf{b} \rangle}{
 
 ## Lecture 10. 正负样本的选择
 
+### 正样本
 
-Working ...
+正样本：**曝光且有点击的用户-物品二元组。**
+
+!!! note "问题"
+    少部分物品占据大多数点击。 正样本大多是热门物品。
+ 
