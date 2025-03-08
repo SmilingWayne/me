@@ -10143,15 +10143,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 边分配规则
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -15707,15 +15698,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 边分配规则
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -16003,22 +15985,15 @@
 <li><strong>得分函数设计</strong></li>
 </ol>
 <p>采用<strong>线性加权组合</strong>方式：</p>
-<pre class="arithmatex">\[
-C_{\text{greedy}}(p) = \underbrace{f(v_i,p) + f(v_j,p)}_{\text{Replication}} + \underbrace{\epsilon \cdot \frac{\text{max\_size} - \text{min\_size}}{\text{min\_size}}}_{\text{Balance}}
-\]</pre>
+<pre class="arithmatex">\[C_{\text{greedy}}(p) = \underbrace{f(v_i,p) + f(v_j,p)}_{\text{Replication}} + \underbrace{\epsilon \cdot \frac{\text{max\_size} - \text{min\_size}}{\text{min\_size}}}_{\text{Balance}}\]</pre>
 <p><strong>复制项</strong>（Replication Term）：</p>
-<p>[
-  f(v,p) = 
-  \begin{cases} 
-  1 &amp; \text{if } p \in A(v) \
+<pre class="arithmatex">\[f(v,p) = \begin{cases} 
+  1 &amp; \text{if } p \in A(v) \\
   0 &amp; \text{otherwise}
-  \end{cases}
-  ]
-  鼓励选择已有顶点副本的分区</p>
+  \end{cases}\]</pre>
+<p>鼓励选择已有顶点副本的分区</p>
 <p><strong>平衡项</strong>（Balance Term）：</p>
-<p>[
-  \epsilon \cdot \frac{\text{max_size} - \text{min_size}}{\text{min_size}}
-  ]</p>
+<pre class="arithmatex">\[\epsilon \cdot \frac{\text{max\_size} - \text{min\_size}}{\text{min\_size}}\]</pre>
 <p>动态调整负载均衡权重（<span class="arithmatex">\(\epsilon\)</span>为调节系数）</p>
 <ol>
 <li><strong>分配决策流程</strong></li>
@@ -16089,47 +16064,49 @@ C_{\text{greedy}}(p) = \underbrace{f(v_i,p) + f(v_j,p)}_{\text{Replication}} + \
 <p><strong>动态度数跟踪</strong></p>
 </li>
 </ul>
-<p>部分度数（Partial Degree）**：流式处理中实时维护顶点度数表，每处理一条边<span class="arithmatex">\( e=(v_i, v_j) \)</span>时更新<span class="arithmatex">\( \delta(v_i) \)</span>和<span class="arithmatex">\( \delta(v_j) \)</span>（无需预计算全图度数）。</p>
+<p>部分度数（Partial Degree）**：流式处理中实时维护顶点度数表，每处理一条边 <span class="arithmatex">\( e=(v_i, v_j) \)</span>时更新<span class="arithmatex">\( \delta(v_i) \)</span>和<span class="arithmatex">\( \delta(v_j) \)</span>（无需预计算全图度数）。</p>
 <ul>
-<li>
-<p><strong>归一化度数</strong>：计算顶点<span class="arithmatex">\( v_i \)</span>的相对度数权重：
-  [
-  \theta(v_i) = \frac{\delta(v_i)}{\delta(v_i) + \delta(v_j)}
-  ]</p>
-</li>
+<li><strong>归一化度数</strong>：计算顶点<span class="arithmatex">\( v_i \)</span>的相对度数权重：</li>
+</ul>
+<pre class="arithmatex">\[\theta(v_i) = \frac{\delta(v_i)}{\delta(v_i) + \delta(v_j)}\]</pre>
+<ol>
 <li>
 <p><strong>分区评分函数</strong>：为每个分区<span class="arithmatex">\( p \)</span>计算得分<span class="arithmatex">\( C_{\text{HDRF}}(v_i, v_j, p) \)</span>，由两部分组成：</p>
 </li>
 <li>
-<p><strong>复制优化项（<span class="arithmatex">\( C_{\text{REP}} \)</span>）</strong>：鼓励将边分配到已有顶点副本的分区。
-  [
-  C_{\text{REP}}^{\text{HDRF}}(v_i, v_j, p) = g(v_i, p) + g(v_j, p)
-  ]
-  • <span class="arithmatex">\( g(v, p) \)</span>定义：
-    [
-    g(v, p) = 
-    \begin{cases} 
-    1 + (1 - \theta(v)) &amp; \text{若 } p \text{ 已包含 } v \text{ 的副本} \
-    0 &amp; \text{否则}
-    \end{cases}
-    ]
-  • <strong>逻辑</strong>：优先选择已包含顶点副本的分区，且高度顶点（<span class="arithmatex">\( \theta \)</span>值大）的复制收益更高。</p>
+<p><strong>复制优化项（<span class="arithmatex">\( C_{\text{REP}} \)</span>）</strong>：鼓励将边分配到已有顶点副本的分区。</p>
+</li>
+</ol>
+<pre class="arithmatex">\[C_{\text{REP}}^{\text{HDRF}}(v_i, v_j, p) = g(v_i, p) + g(v_j, p)\]</pre>
+<p><span class="arithmatex">\( g(v, p) \)</span> 定义：</p>
+<pre class="arithmatex">\[g(v, p) = 
+\begin{cases} 
+1 + (1 - \theta(v)) &amp; \text{若 } p \text{ 已包含 } v \text{ 的副本} \\
+0 &amp; \text{否则}
+\end{cases}\]</pre>
+<ul>
+<li>
+<p><strong>逻辑</strong>：优先选择已包含顶点副本的分区，且高度顶点（<span class="arithmatex">\( \theta \)</span>值大）的复制收益更高。</p>
+</li>
+<li>
+<p><strong>负载均衡项（<span class="arithmatex">\( C_{\text{BAL}} \)</span>）</strong>：通过参数<span class="arithmatex">\( \lambda \)</span>控制分区大小平衡：</p>
 </li>
 </ul>
-<p>• <strong>负载均衡项（<span class="arithmatex">\( C_{\text{BAL}} \)</span>）</strong>：通过参数<span class="arithmatex">\( \lambda \)</span>控制分区大小平衡：
-  [
-  C_{\text{BAL}}^{\text{HDRF}}(p) = \lambda \cdot \frac{\text{max_size} - |p|}{\varepsilon + \text{max_size} - \text{min_size}}
-  ]
-  • <span class="arithmatex">\( \lambda \)</span>的作用：
-    ◦ <span class="arithmatex">\( \lambda = 0 \)</span>：完全忽略平衡（类似纯贪心）
-    ◦ <span class="arithmatex">\( 0 &lt; \lambda \leq 1 \)</span>：仅在复制分数相同时打破平衡
-    ◦ <span class="arithmatex">\( \lambda &gt; 1 \)</span>：强制增强平衡（应对有序输入流）
-    ◦ <span class="arithmatex">\( \lambda \to \infty \)</span>：退化为随机分配</p>
-<h4 id="3">3. <strong>边分配规则</strong><a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h4>
-<p>将边<span class="arithmatex">\( e=(v_i, v_j) \)</span>分配给得分最高的分区<span class="arithmatex">\( p^* \)</span>，并更新顶点副本位置：
-[
-p^* = \arg\max_p \left[ C_{\text{REP}}^{\text{HDRF}}(v_i, v_j, p) + C_{\text{BAL}}^{\text{HDRF}}(p) \right]
-]</p>
+<pre class="arithmatex">\[C_{\text{BAL}}^{\text{HDRF}}(p) = \lambda \cdot \frac{\text{max\_size} - |p|}{\varepsilon + \text{max\_size} - \text{min\_size}}\]</pre>
+<ul>
+<li><span class="arithmatex">\( \lambda \)</span>的作用：</li>
+<li><span class="arithmatex">\( \lambda = 0 \)</span>：完全忽略平衡（类似纯贪心）</li>
+<li><span class="arithmatex">\( 0 &lt; \lambda \leq 1 \)</span>：仅在复制分数相同时打破平衡</li>
+<li><span class="arithmatex">\( \lambda &gt; 1 \)</span>：强制增强平衡（应对有序输入流）</li>
+<li>
+<p><span class="arithmatex">\( \lambda \to \infty \)</span>：退化为随机分配</p>
+</li>
+<li>
+<p><strong>边分配规则</strong></p>
+</li>
+</ul>
+<p>将边<span class="arithmatex">\( e=(v_i, v_j) \)</span>分配给得分最高的分区<span class="arithmatex">\( p^* \)</span>，并更新顶点副本位置：</p>
+<pre class="arithmatex">\[p^* = \arg\max_p \left[ C_{\text{REP}}^{\text{HDRF}}(v_i, v_j, p) + C_{\text{BAL}}^{\text{HDRF}}(p) \right]\]</pre>
 <h3 id="_5">核心创新点<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
 <ol>
 <li><strong>动态度数感知</strong>：通过流式更新的部分度数<span class="arithmatex">\( \delta(v) \)</span>近似真实度数，避免预处理</li>
@@ -16197,7 +16174,7 @@ p^* = \arg\max_p \left[ C_{\text{REP}}^{\text{HDRF}}(v_i, v_j, p) + C_{\text{BAL
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 4, 2025 21:32:44</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="March 9, 2025 00:21:43">March 9, 2025 00:21:43</span>
   </span>
 
     
@@ -16207,7 +16184,7 @@ p^* = \arg\max_p \left[ C_{\text{REP}}^{\text{HDRF}}(v_i, v_j, p) + C_{\text{BAL
     <span class="md-icon" title="创建日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 4, 2025 21:32:44</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="March 4, 2025 21:32:44">March 4, 2025 21:32:44</span>
   </span>
 
     
