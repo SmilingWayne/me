@@ -179,26 +179,25 @@ DBH的做法是，考虑新入的边 (i,j) 的两个节点 i 和 j，分别的�
 
 采用**线性加权组合**方式：
 
-\[
-C_{\text{greedy}}(p) = \underbrace{f(v_i,p) + f(v_j,p)}_{\text{Replication}} + \underbrace{\epsilon \cdot \frac{\text{max\_size} - \text{min\_size}}{\text{min\_size}}}_{\text{Balance}}
-\]
+
+$$C_{\text{greedy}}(p) = \underbrace{f(v_i,p) + f(v_j,p)}_{\text{Replication}} + \underbrace{\epsilon \cdot \frac{\text{max\_size} - \text{min\_size}}{\text{min\_size}}}_{\text{Balance}}$$
+
 
 **复制项**（Replication Term）：
   
-  \[
-  f(v,p) = 
-  \begin{cases} 
+
+$$f(v,p) = \begin{cases} 
   1 & \text{if } p \in A(v) \\
   0 & \text{otherwise}
-  \end{cases}
-  \]
-  鼓励选择已有顶点副本的分区
+  \end{cases}$$
+
+鼓励选择已有顶点副本的分区
 
 **平衡项**（Balance Term）：
   
-  \[
-  \epsilon \cdot \frac{\text{max\_size} - \text{min\_size}}{\text{min\_size}}
-  \]
+
+$$\epsilon \cdot \frac{\text{max\_size} - \text{min\_size}}{\text{min\_size}}$$
+
 
 动态调整负载均衡权重（\(\epsilon\)为调节系数）
 
@@ -249,44 +248,46 @@ graph TD
 
 1. **动态度数跟踪**
 
-部分度数（Partial Degree）**：流式处理中实时维护顶点度数表，每处理一条边\( e=(v_i, v_j) \)时更新\( \delta(v_i) \)和\( \delta(v_j) \)（无需预计算全图度数）。
+部分度数（Partial Degree）**：流式处理中实时维护顶点度数表，每处理一条边 \( e=(v_i, v_j) \)时更新\( \delta(v_i) \)和\( \delta(v_j) \)（无需预计算全图度数）。
 
 - **归一化度数**：计算顶点\( v_i \)的相对度数权重：
-  \[
-  \theta(v_i) = \frac{\delta(v_i)}{\delta(v_i) + \delta(v_j)}
-  \]
+
+$$\theta(v_i) = \frac{\delta(v_i)}{\delta(v_i) + \delta(v_j)}$$
+
 
 2. **分区评分函数**：为每个分区\( p \)计算得分\( C_{\text{HDRF}}(v_i, v_j, p) \)，由两部分组成：
 
 - **复制优化项（\( C_{\text{REP}} \)）**：鼓励将边分配到已有顶点副本的分区。
-  \[
-  C_{\text{REP}}^{\text{HDRF}}(v_i, v_j, p) = g(v_i, p) + g(v_j, p)
-  \]
-  • \( g(v, p) \)定义：
-    \[
-    g(v, p) = 
-    \begin{cases} 
-    1 + (1 - \theta(v)) & \text{若 } p \text{ 已包含 } v \text{ 的副本} \\
-    0 & \text{否则}
-    \end{cases}
-    \]
-  • **逻辑**：优先选择已包含顶点副本的分区，且高度顶点（\( \theta \)值大）的复制收益更高。
 
-• **负载均衡项（\( C_{\text{BAL}} \)）**：通过参数\( \lambda \)控制分区大小平衡：
-  \[
-  C_{\text{BAL}}^{\text{HDRF}}(p) = \lambda \cdot \frac{\text{max\_size} - |p|}{\varepsilon + \text{max\_size} - \text{min\_size}}
-  \]
-  • \( \lambda \)的作用：
-    ◦ \( \lambda = 0 \)：完全忽略平衡（类似纯贪心）
-    ◦ \( 0 < \lambda \leq 1 \)：仅在复制分数相同时打破平衡
-    ◦ \( \lambda > 1 \)：强制增强平衡（应对有序输入流）
-    ◦ \( \lambda \to \infty \)：退化为随机分配
+$$C_{\text{REP}}^{\text{HDRF}}(v_i, v_j, p) = g(v_i, p) + g(v_j, p)$$
 
-#### 3. **边分配规则**
+\( g(v, p) \) 定义：
+
+$$g(v, p) = 
+\begin{cases} 
+1 + (1 - \theta(v)) & \text{若 } p \text{ 已包含 } v \text{ 的副本} \\
+0 & \text{否则}
+\end{cases}$$
+
+
+- **逻辑**：优先选择已包含顶点副本的分区，且高度顶点（\( \theta \)值大）的复制收益更高。
+
+- **负载均衡项（\( C_{\text{BAL}} \)）**：通过参数\( \lambda \)控制分区大小平衡：
+
+$$C_{\text{BAL}}^{\text{HDRF}}(p) = \lambda \cdot \frac{\text{max\_size} - |p|}{\varepsilon + \text{max\_size} - \text{min\_size}}$$
+
+- \( \lambda \)的作用：
+  - \( \lambda = 0 \)：完全忽略平衡（类似纯贪心）
+  - \( 0 < \lambda \leq 1 \)：仅在复制分数相同时打破平衡
+  - \( \lambda > 1 \)：强制增强平衡（应对有序输入流）
+  - \( \lambda \to \infty \)：退化为随机分配
+
+3. **边分配规则**
+
 将边\( e=(v_i, v_j) \)分配给得分最高的分区\( p^* \)，并更新顶点副本位置：
-\[
-p^* = \arg\max_p \left[ C_{\text{REP}}^{\text{HDRF}}(v_i, v_j, p) + C_{\text{BAL}}^{\text{HDRF}}(p) \right]
-\]
+
+$$p^* = \arg\max_p \left[ C_{\text{REP}}^{\text{HDRF}}(v_i, v_j, p) + C_{\text{BAL}}^{\text{HDRF}}(p) \right]$$
+
 
 
 
