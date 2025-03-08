@@ -1,12 +1,12 @@
 # 一个交通er（物流er）给研一新生的Brief
 
-我目前的研究方向：**低空物流经济，多式联运交通网络。** (`Low-altitude Logistics Economy, Multimodal Transportation Network`)。本文内容同样可能对管理科学与工程、工业工程、交通与运输工程、运营管理等类似专业的同学有一些帮助（也可能没有，看了才知道）。
+我目前的研究方向：**低空物流经济，多式联运交通网络。** (`Low-altitude Logistics Economy, Multimodal Transportation Network`)。本文内容同样可能对管理科学与工程、工业工程（[什么是工业工程(Industrial Engineering)？](https://baike.baidu.com/item/工业工程/333880)）、交通与运输工程、运营管理等类似专业的同学有一些帮助（也可能没有，看了才知道）。
+
+P.S. 如果你是前述若干专业的**本科生**，可以看看由南大IE本科生团队编写的[课程入门手册(NJU IE Course Guide)](https://njuwallspider.github.io/IECourseGuide/)。如果你是数学系、计算机科学技术系、人工智能系专业的同学，~~请您到讲台上来！~~，本页面的内容或许略显小儿科。
 
 > （哽咽 ... 抽泣 ... 拿啤酒瓶 ... ） （小声呜咽）：
 >   
 >   低空经济、多式联运才是物流的未来！（声嘶力竭）21世纪是多式联运的世纪！（擦眼泪）
-
-P.S. 如果你是工业工程、供应链管理等专业的**本科生**，可以看看由南大IE本科生团队编写的[课程入门手册(NJU IE Course Guide)](https://njuwallspider.github.io/IECourseGuide/) （太厉害了！）。
 
 
 ## 论文相关
@@ -27,7 +27,7 @@ P.S. 如果你是工业工程、供应链管理等专业的**本科生**，可�
 
 差不多了，毕竟无志向于学术...有需要其他更高级检索的话直接Google查一下。<u>不要总使用CNKI。</u> 
 
-==另：请不要害怕阅读英文。合理使用大模型与翻译软件== 。
+==另：请不要害怕阅读英文。**合理**使用大模型与翻译软件== 。
 
 再次，你可以能力差，但是一定一定得会讲故事，要自圆其说。
 
@@ -54,7 +54,7 @@ P.S. 如果你是工业工程、供应链管理等专业的**本科生**，可�
 **Informs Journal on Computing (IJOC or JOC)**
 :   瘦死的骆驼比马大！(UTD-24)
 
-<u>Transportation Research (Part A ~ E ) 系列（TR - A/B/C/D/E/F）</u>
+<u>Transportation Research (Part A ~ E ) 系列（TR Part - A/B/C/D/E/F）</u>
 :   A： 政策相关，侧重实证研究；
 
     B： Methodological，够顶。其实偏重数理，看起来可能有点难。实际看一看吧。斯哈斯哈，真挺难的。<u>个人觉得其实和TS差距已经不大了。</u>
@@ -70,7 +70,7 @@ P.S. 如果你是工业工程、供应链管理等专业的**本科生**，可�
 **IEEE Transactions on Intelligent Transportation Systems (T-ITS)**
 :   TITS: 看到过不少和本专业paper很相关的。
 
-一些做算法的可能还会看到 **C**omputers & **O**perations **R**esearch (COR),  **C**omputers & **I**ndustrial **E**ngineering 的文章。
+一些做算法的可能还会看到 **C**omputers & **O**perations **R**esearch (COR),  **C**omputers & **I**ndustrial **E**ngineering (CIE) 的文章。
 
 其他的一些我想起来的：
 
@@ -82,7 +82,7 @@ P.S. 如果你是工业工程、供应链管理等专业的**本科生**，可�
 
 -----
 
-接几个中文期刊（我自己看得不算多，CNKI上期刊搜不到好的文章的话，可以搜搜硕士/博士论文。记得找一些好一点的学校的，但是也别得意）。
+接几个中文期刊（我自己看得不算多，CNKI上期刊搜不到好的文章的话，可以搜搜硕士/博士论文。记得找一些好一点的学校的（当然也不能一概而论）。我经常搜清华大学IE的文章。咱读不了清华还看不了清华的paper么！）
 
 - 管理科学学报	
 - 管理工程学报	
