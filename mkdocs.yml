@@ -365,6 +365,8 @@ nav:
           - 图论算法:最短路问题: OROpt/OR/Chapter7.md
           - 图论算法:最小费用流与推广: OROpt/OR/Chapter7_1.md
           - 图论算法:最大流与最小割: OROpt/OR/Chapter7_2.md
+          - 图论算法:极大团与独立集: OROpt/OR/Chapter7_3.md
+          - 图论算法:二分图与匹配问题: OROpt/OR/Chapter7_4.md
           - 排队论: OROpt/OR/Chapter9.md
           - 仓储论（EOQ模型和它的一万个分身）: OROpt/OR/Chapter10.md
           - 博弈论: OROpt/OR/Chapter11.md
@@ -386,6 +388,7 @@ nav:
       - ML/index.md
       - 统计学习方法：实战:
           - 感知机: ML/StatLearnMethod/Perceptron.md
+          - 机器学习中的常用指标: ML/StatLearnMethod/AUC.md
           - K近邻算法: ML/StatLearnMethod/KNN.md
           - 朴素贝叶斯｜Gaussian贝叶斯分类: ML/StatLearnMethod/NaiveBayesian.md
           - 线性回归｜多元线性回归: ML/StatLearnMethod/Regression.md
