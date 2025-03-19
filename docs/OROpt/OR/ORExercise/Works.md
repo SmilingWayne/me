@@ -806,13 +806,23 @@ $$\max \sum_{i,j \in \text{H}} x_{i,j}$$
 
 !!! success "参考答案"
     (2, 5) with folding at amonacid 3.
+    
     (5, 12) with folding at amonacid 8.
+    
     (6, 11) with folding at amonacid 8.
+    
     (12, 17) with folding at amonacid 14.
+    
     (17, 20) with folding at amonacid 18.
+    
     (20, 25) with folding at amonacid 22.
+    
     (25, 28) with folding at amonacid 26.
+    
     (28, 31) with folding at amonacid 29.
+    
     (31, 46) with folding at amonacid 38.
+    
     (33, 44) with folding at amonacid 38.
+    
 
