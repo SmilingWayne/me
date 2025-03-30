@@ -97,7 +97,7 @@ print(my_list)
 ```
 
 
-**- 由于 `random` 库生成的是伪随机数，其结果是可重复的。可以通过 `random.seed(a=None, version=2)` 函数设置随机数种子，当 `a` 相同时，后续生成的随机数序列也相同**。
+**由于 `random` 库生成的是伪随机数，其结果是可重复的。可以通过 `random.seed(a=None, version=2)` 函数设置随机数种子，当 `a` 相同时，后续生成的随机数序列也相同**。
 
 例如：
 ```python
