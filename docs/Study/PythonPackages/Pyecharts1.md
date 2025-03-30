@@ -145,6 +145,6 @@ s.render("sankey_diagram12.html") # 也支持保存为图片
 
 <figure markdown>
 
-![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251130711.png){: style height=150 }
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202310251130711.png){: style height=350 }
 
 </figure>
