@@ -240,6 +240,7 @@ nav:
           - 🇯🇵金阁寺: Literature/Novel/Jinge.md
           - 🇯🇵罗生门: Literature/Novel/Rashomon.md
           - 🇯🇵舞！舞！舞！: Literature/Novel/Dance.md
+          - 🇯🇵源氏物语(ToDo): Literature/Novel/Tale_of_Genji.md
           - 🇫🇷鼠疫: Literature/Novel/Plague.md
           - 🇫🇷巨人传: Literature/Novel/Giants.md
           - 🇫🇷波斯人信札: Literature/Novel/Letters_from_persian.md
@@ -395,6 +396,7 @@ nav:
           - 朴素贝叶斯｜Gaussian贝叶斯分类: ML/StatLearnMethod/NaiveBayesian.md
           - 线性回归｜多元线性回归: ML/StatLearnMethod/Regression.md
           - 广义线性模型｜方差分析: ML/StatLearnMethod/GLM_ANOVA.md
+          - PageRank算法: ML/StatLearnMethod/PageRank.md
       - 实用机器学习：笔记: ML/PracticalML/Notes.md
       - 推荐系统:
           - Lecture｜01: ML/RecmdSys/Lecture1.md

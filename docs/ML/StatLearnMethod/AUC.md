@@ -9,7 +9,7 @@
 3. 原本是Positive，但预测为 Negative；（**F**alse **N**egative）
 4. 原本是Negative，但预测为 Positive；（**F**alse **P**ositive）
 
-> 一种记忆方法是，上述所有的Positive 和 Negative 都是基于“预测的结果”。因此，只有当预测和实际是一样的时候，才是 True ~ ，否则是 False ~ ...
+> 一种记忆方法是，上述所有的Positive 和 Negative 都是“预测的结果”。因此，只有当预测和实际是一样的时候，才是 True ~ ，否则是 False ~ ...
 
 我们可以绘制出如下的图：
 
@@ -180,6 +180,41 @@ $$AUC = \sum^n_{i = 1} \dfrac{(FPR_i - FPR_{i-1}) \times (TPR_i + TPR_{i - 1})}{
 
 **注意，AUC反映模型对正负样本的排序能力，与样本数量无关。**
 
+我们可以把完整的代码搓出来：
+
+```python
+
+def manual_tpr_fpr(y_true, y_pred_prob, threshold):
+
+    y_pred = np.where(y_pred_prob >= threshold, 1, 0)
+    
+    # Get TP, FP, TN, FN
+    tp = np.sum((y_pred == 1) & (y_true == 1))
+    fp = np.sum((y_pred == 1) & (y_true == 0))
+    tn = np.sum((y_pred == 0) & (y_true == 0))
+    fn = np.sum((y_pred == 0) & (y_true == 1))
+    
+    # Get TPR, FPR ... 
+    tpr = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+    fpr = fp / (fp + tn) if (fp + tn) > 0 else 0.0
+    
+    return tpr, fpr
+
+if __name__ == "__main__":
+    threshold_np = sorted(y_score.tolist(), reverse = True)
+    y_true = y_test
+    auc_score_manual = 0
+    prev_tpr = 0; prev_fpr = 0
+    for idx, threshold in enumerate(threshold_np):
+        tpr, fpr = manual_tpr_fpr(y_true, y_score, threshold)
+        # print(round(threshold,6), round(tpr, 6), round(fpr, 6))
+        if idx > 0:
+            auc_score_manual += (fpr - prev_fpr) * (tpr + prev_tpr) / 2
+        prev_tpr, prev_fpr = tpr, fpr 
+    print(f"Manual Check AUC: {auc_score_manual}")
+    # Is the same as above!
+```
+
 ---
 
 ## PR-curve
@@ -257,6 +292,7 @@ $$AP = \sum_{k=1}^{N} Precision(k) \cdot \Delta Recall(k)$$
 ---
 
 ## F1 Score 
+
 
 
 ----
