@@ -1,6 +1,6 @@
 # 📜 历史
 
-!!! Tip "**然而，我终究无法对生命的苦难做出感激的姿态。**"
+!!! Tip "**然而，我终究无法对生命的苦难作出感激的姿态。**"
 
 <font size = 6 face = "SnellRoundHand" >Devenir immortel, et puis, mourir.</font> [^1]
 
