@@ -386,6 +386,7 @@ nav:
       - 路径优化问题｜PDP: OROpt/OR/PDP.md
       - 经典调度问题｜JSP: OROpt/OR/JSP.md
       - 图划分问题｜GP: OROpt/OR/GraphPartition.md
+      - 航班分配问题｜FAP: OROpt/OR/FAP.md
       - 当组合优化遇到深度学习: OROpt/OR/VRPmeetsNeurIPS.md
       - 常见的0-1变量处理技巧: OROpt/OR/GeneralTechnique.md
   - 机器学习:

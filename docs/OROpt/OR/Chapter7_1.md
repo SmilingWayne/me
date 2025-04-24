@@ -177,4 +177,27 @@ flowchart LR
 
 上述建模方式，实际上是，虚拟边流入节点 $v_s$ 的流量就要在原来的网络上以零费用返回节点 $v_t$，也就是说只要不超过各边的流通能力，从 $v_s$ 到 $v_t$ 的流量越大。
 
+---
 
+## 最小费用流问题的对偶
+
+我们定义一个最大加权闭包问题（Maximum weight closure Problem）。首先我们给定一张图：$G = (N, A)$，每个节点 $i$ 有一个权重 $w_i$.
+
+我们定义一个图的闭包（Closure）是：
+
+一个节点的集合 $S \subseteq N$，且原图中没有任意一个边流出这个节点集合。也就是说，如果 $i \in S$, 且 $(i, j) \in A$，那么 $j \in S$. 
+
+此时我们的最大加权闭包问题，就是给定一张图，**找到它的一个最大的加权闭包**。其数学模型为：
+
+$$\max \sum_{i \in N} w_i y_i$$
+
+s.t.
+
+$$\begin{aligned}
+\begin{cases}
+y_i - y_j \leq 0 \qquad \forall (i, j) \in A \\
+0 \leq y_i \leq 1 \qquad \forall i \in N
+\end{cases}
+\end{aligned}$$
+
+其中，$y_i$ 表示是否选节点 $i$.
