@@ -227,3 +227,60 @@ Changes to be committed:
 
 然后正常commit / push ，即可。
 
+
+### 一些规范
+
+Git 提交规范（特别是 Angular 规范，这是 Conventional Commits 规范的一个流行实现）中的 `feat`、`fix`、`chore` 以及其他。
+
+这些类型是用来标识每次提交（commit）的主要目的，使得提交历史更加清晰、易于理解，并且可以基于这些类型自动生成更新日志（Changelog）或进行语义化版本控制（Semantic Versioning）。
+
+
+
+其中 `<type>` 就是我们讨论的这些关键字。
+
+**`feat` (feature)**
+:   表示新增了一个功能（feature）。当你为代码库添加了一个新的特性时使用。这些提交通常会在版本更新时导致次版本号（minor version）增加（例如从 1.1.0 到 1.2.0），并且会出现在最终用户的更新日志中。
+
+- `feat: add user login functionality`
+- `feat(api): implement endpoint for fetching user profiles`
+
+**`fix` (bug fix)**
+:   表示修复了一个 Bug。当你修复了代码中的一个错误时使用。这些提交通常会在版本更新时导致修订号（patch version）增加（例如从 1.1.0 到 1.1.1），并且也会出现在更新日志中。
+
+- `fix: correct calculation error in payment module`
+- `fix(ui): resolve issue where button was not clickable on mobile`
+
+**`chore` (chore / miscellaneous)**
+:   表示一些杂项的变动，通常是与构建过程、辅助工具、配置或库的更新等相关，这些变动不直接修改源代码的业务逻辑或用户界面。
+
+用于那些不影响生产代码、用户功能或修复 Bug 的提交。例如：修改 `.gitignore` 文件、更新依赖库（且不涉及功能改变）、调整构建脚本等。`chore` 类型的提交通常**不会**出现在最终用户的更新日志中。
+
+
+- `chore: update dependencies to latest versions`
+- `chore(build): adjust webpack configuration for faster builds`
+- `chore: add linting rule for variable naming`
+
+**`perf` (performance):**
+:   提升性能的代码更改。 `perf: optimize image loading speed by using lazy loading`
+
+**除了 `feat`、`fix`、`chore` 之外，还有许多其他常用的类型，常见的包括：**
+
+* **`docs`** (documentation):
+    * **含义**：仅仅修改了文档（例如 README、注释、JSDoc 等）。
+
+* **`style`**:
+    * **含义**：代码格式的修改，不影响代码逻辑（例如空格、格式化、缺少分号等）。
+* **`refactor`**:
+    * **含义**：代码重构，既没有修复 Bug 也没有添加新功能。指那些改进代码结构、可读性或性能，但并未改变其外在行为的修改。
+    * **示例**: `refactor: simplify user authentication logic`
+
+* **`test`**:
+    * **含义**：添加缺失的测试或修正现有的测试。
+* **`build`**:
+    * **含义**：影响构建系统或外部依赖关系的更改（例如 gulp、broccoli、npm、webpack 等）。
+    * **示例**: `build: switch from webpack to esbuild for faster bundling`
+* **`ci`** (continuous integration):
+    * **含义**：对 CI 配置文件和脚本的更改（例如 Travis, Circle, BrowserStack, SauceLabs 等）。
+    * **示例**: `ci: fix deployment script for staging environment`
+* **`revert`**:
+    * **含义**：撤销之前的某个提交。通常会自动生成，格式类似 `revert: feat(auth): add SSO login`，并在 body 中说明撤销了哪个 commit hash。

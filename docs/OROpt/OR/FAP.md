@@ -55,7 +55,7 @@ where \( c_{fi} \) captures:
 
 ---
 
-## **Constraints:**
+### **Constraints:**
 
 1. **Cover Constraints:**
 
@@ -83,15 +83,15 @@ Ensure the fleet size limit isn't exceeded: 限制机队规模
 
 $$\sum_{i \in O(f)} X_{fi} + \sum_{o \in C} Y_{fo t t^+} \leq S(f), \quad \forall f \in F$$
 
-#### 5. **Variable Bounds:**
-- Binary conditions:
-  $$
-  X_{fi} \in \{0,1\}
-  $$
-- Non-negativity:
-  $$
-  Y_{fo t t^+} \geq 0
-  $$
+### **Variable Bounds:**
+
+Binary conditions:
+
+$$X_{fi} \in \{0,1\}$$
+
+Non-negativity:
+
+$$Y_{fo t t^+} \geq 0$$
 
 ---
 
@@ -120,27 +120,26 @@ The Fleet Assignment Problem is efficiently solvable by sophisticated mathematic
 
 ### **Summary of Equations:**
 - **Objective:** 
-  $$
-  \min \sum_{i \in L} \sum_{f \in F} c_{fi} X_{fi}
-  $$
+
+$$\min \sum_{i \in L} \sum_{f \in F} c_{fi} X_{fi}$$
+
 - **Cover constraint:** 
-  $$
-  \sum_{f \in F} X_{fi} = 1, \quad \forall i \in L
-  $$
+
+$$\sum_{f \in F} X_{fi} = 1, \quad \forall i \in L$$
+
 - **Balance constraint:** 
-  $$
-  \sum_{d} X_{fdo t^-} + Y_{fo t^- t} - \sum_{d} X_{fod t} - Y_{fo t t^+} = 0, \quad \forall \{f,o,t\} \in N
-  $$
+
+$$\sum_{d} X_{fdo t^-} + Y_{fo t^- t} - \sum_{d} X_{fod t} - Y_{fo t t^+} = 0, \quad \forall \{f,o,t\} \in N$$
+
 - **Required-through constraint:** 
-  $$
-  X_{fi} - X_{fj} = 0, \quad \forall (i,j) \in H
-  $$
+
+$$X_{fi} - X_{fj} = 0, \quad \forall (i,j) \in H$$
+
 - **Fleet size constraint:** 
-  $$
-  \sum_{i \in O(f)} X_{fi} + \sum_{o \in C} Y_{fo t t^+} \leq S(f), \quad \forall f \in F
-  $$
+
+$$\sum_{i \in O(f)} X_{fi} + \sum_{o \in C} Y_{fo t t^+} \leq S(f), \quad \forall f \in F$$
+
 - **Bounds and integrality:** 
-  $$
-  X_{fi} \in \{0,1\}, \quad Y_{fo t t^+} \geq 0
-  $$
+
+$$X_{fi} \in \{0,1\}, \quad Y_{fo t t^+} \geq 0$$
 

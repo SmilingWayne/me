@@ -1,7 +1,7 @@
 # 变上/下限积分函数
 
 
-!!! note
+!!! note ""
     参考链接：
     [链接1](https://zhuanlan.zhihu.com/p/376629429)
     [链接2](https://zhuanlan.zhihu.com/p/376629429)
