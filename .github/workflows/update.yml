@@ -48,4 +48,13 @@ jobs: # 工作流的具体内容
       #     pip install setuptools==71.1.0
       #     pip install --no-build-isolation
       # - run: pip install mkdocs-material  mkdocs-git-revision-date-localized-plugin  mkdocs-git-authors-plugin jieba  mkdocs-statistics-plugin  mkdocs-mermaid2-plugin  mkdocs-blogging-plugin --no-build-isolation # 使用pip包管理工具安装mkdocs-materials
-      - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
+
+      - run: mkdocs build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+      # - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
