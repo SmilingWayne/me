@@ -79,7 +79,7 @@ jobs: # 工作流的具体内容
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: https://github.com/SmlingWayne/me # MkDocs 默认输出目录
+          publish_dir: https://smilingwayne.github.io/me/ # MkDocs 默认输出目录
           force_orphan: true # 强制重置分支历史
           keep_files: false # 完全覆盖旧文件
           user_name: "github-actions[bot]"
