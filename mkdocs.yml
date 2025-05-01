@@ -1,6 +1,7 @@
 site_name: 笑笑的站
 site_url: https://github.com/SmlingWayne/me
 site_description: 笑笑的个人网站
+site_dir: site
 
 nav:
   - ˗ˋˏᰔᩚˎˊ˗: index.md
