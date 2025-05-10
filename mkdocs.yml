@@ -260,6 +260,7 @@ nav:
           - 🇬🇧沉默的病人: Literature/Novel/Silent_patient.md
           - 🇬🇧格列佛游记: Literature/Novel/Gulliver.md
           - 🇬🇧瘟疫年纪事: Literature/Novel/Pandemic_era.md
+          - 🇬🇧德伯家的苔丝: Literature/Novel/Tess.md
           - 🇬🇧东方快车谋杀案: Literature/Novel/Oriental_express.md
           - 🇬🇧尼罗河上的惨案: Literature/Novel/Tragedy_niro.md
           - 🇬🇧查令十字街84号: Literature/Novel/Charline_84.md
@@ -399,6 +400,7 @@ nav:
           - K近邻算法: ML/StatLearnMethod/KNN.md
           - 朴素贝叶斯｜Gaussian贝叶斯分类: ML/StatLearnMethod/NaiveBayesian.md
           - 线性回归｜多元线性回归: ML/StatLearnMethod/Regression.md
+          - 逻辑回归｜广义线性模型: ML/StatLearnMethod/LogisticRegression.md
           - 广义线性模型｜方差分析: ML/StatLearnMethod/GLM_ANOVA.md
           - PageRank算法: ML/StatLearnMethod/PageRank.md
           - SVD｜PCA: ML/StatLearnMethod/SVD.md
