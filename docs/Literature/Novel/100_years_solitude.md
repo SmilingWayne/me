@@ -1,7 +1,8 @@
 # 百年孤独
 
 (网图：人物关系表)
-![](./figures/relations.png)
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202505101718549.png)
 
 ## 我的摘记
 ---------------------
