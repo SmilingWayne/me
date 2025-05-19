@@ -1,3 +1,8 @@
+# Deque & Namedtuple 
+
+!!! note ""
+    2025.05.20 兼容新插件格式。
+
 ## Python中的deque：双端队列
 
 !!! quote "感谢GPT-4在本页面编写过程中的协助"
