@@ -52,6 +52,12 @@ jobs: # 工作流的具体内容
       - name: Install dependencies
         run: python3 -m pip install -r ./requirements.txt
 
+      - name: Install modified mkdocs-statistics-plugin
+        run: |
+          git clone https://github.com/SmilingWayne/mkdocs-statistics-plugin
+          pip install ./mkdocs-statistics-plugin
+          rm -rf mkdocs-statistics-plugin
+      - run: pip cache purge
       - run: mkdocs build
 
       #  待完成：放在requirement.txt 文件夹里！
