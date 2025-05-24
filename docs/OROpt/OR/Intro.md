@@ -1,6 +1,6 @@
 # 一个交通er（物流er）给研一新生的Brief
 
-我目前的研究方向：**低空物流经济，多式联运交通网络。** (`Low-altitude Logistics Economy, Multimodal Transportation Network`)。本文内容同样可能对管理科学与工程、工业工程（[什么是工业工程(Industrial Engineering)？](https://baike.baidu.com/item/工业工程/333880)）、交通与运输工程、运营管理等类似专业的同学有一些帮助（也可能没有，看了才知道）。
+我目前的研究方向：**低空物流经济，多式联运交通网络。** (`Low-altitude Logistics Economy, Multimodal Transportation Network`)。本文内容同样可能对管理科学与工程、工业工程（[什么是工业工程(Industrial Engineering)](https://baike.baidu.com/item/工业工程/333880)）、交通与运输工程、运营管理等类似专业的同学有一些帮助（也可能没有，看了才知道）。
 
 P.S. 如果你是前述若干专业的**本科生**，可以看看由南大IE本科生团队编写的[课程入门手册(NJU IE Course Guide)](https://njuwallspider.github.io/IECourseGuide/)。如果你是数学系、计算机科学技术系、人工智能系专业的同学，~~请您到讲台上来！~~，本页面的内容或许略显小儿科。
 

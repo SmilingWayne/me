@@ -2,31 +2,27 @@
 
 🇨🇳你好！🇬🇧Hello! 🇫🇷Bonjour! 🇪🇸Hola! 🇷🇺привет! 🇸🇦 مرحباً 
 
-- 😃 我是笑笑，一个普通人。这里是我的个人网站！
 
-- 🥰 很高兴能在网络世界和你相遇。希望你也喜欢这个安静的小田园，不妨进来小坐，浅尝一杯咖啡。
+My name is `"xiaoxiao"` (“笑笑”, Pronounced as "/ɕjɑʊ˥˩/ /ɕjɑʊ˥˩/" in [IPA](https://www.internationalphoneticalphabet.org). In Mandarin It means "**Smile!** 😊"). You can call me "Wayne / Winnie". Welcome to [my personal website](https://smilingwayne.github.io/me/)!
 
-- 🚀 最初是个人知识库，后来变成知识分享站，现在偶尔发挥情绪回收厂的作用。时不时会出现一些知识干货或者碎碎念。
+Glad to meet you here in cyber world! Hope you also like this place! Feel free to drop by for a cup of coffee ☕️~
 
-- 💪 目标是让文字与记录在这里野蛮生长。
+Initially, it was built for reading notes and knowledge sharing. Later it evolved into a diversified personal website. Now you can find not only aforementioned contents but self-learning notes, personal thoughts, site-building guidelines and so on.
 
-- 📝 一个简单的站点更新记录见 [Issues](https://github.com/SmilingWayne/me/issues/)。（起始时间：July 28, 2024）。
+Features, contents update log and bug-fix records can be found in [Issues of the repo](https://github.com/SmilingWayne/me/issues/), since July 28, 2024. The browser counts of each page begins at May 20, 2025.
 
+Enjoy yourself!
 
+----
 
------------
+👋 你好！你可以叫我笑笑！
 
-- 😃 My name is `"xiaoxiao"` (Pronounced as "/ɕjɑʊ˥˩/ /ɕjɑʊ˥˩/" in [IPA](https://www.internationalphoneticalphabet.org). In Mandarin It means "**Smile!** 😊"). As an ordinary person, you can call me "Wayne / Winnie". This is my personal website!
+很高兴在网络世界遇到你！希望你同样喜欢这里。欢迎你有空来这里喝一杯咖啡☕️ ～
 
-- 🥰 Thrilled to meet you here in cyber world! Hope you also like this quiet little oasis. Feel free to drop by for some rest, with maybe a cup of coffee~
+最初，本站点只是用于记录读书笔记和知识分享。后来，变成了一个内容庞杂的个人网站。现在你还能找到学习笔记、个人思考、网站搭建指南等等内容。
 
+你可以在本站点的 [Issue](https://github.com/SmilingWayne/me/issues/) 中找到本站点的功能更新、内容更新记录和 Bug 修复记录，起始时间 July 28, 2024。所有页面的浏览量记录始于 May 20, 2025.
 
-- 🚀 Initially, it was a personal knowledge base, later 
-evolved into knowledge-sharing platform, recently, it occasionally serves as my emotion-catharsis plant. You may see some knowledge sharing or personal thoughts from time to time. 
-
-- 💪 The goal is to let my words and records grow freely and wildly here.
-
-- 📝 A simple feature collections and contents update records can be found in [Issues of the repo](https://github.com/SmilingWayne/me/issues/), since July 28, 2024.
 
 ------
 
@@ -35,8 +31,8 @@ evolved into knowledge-sharing platform, recently, it occasionally serves as my 
 - My Website: [Link](https://smilingwayne.github.io/me/).
 - Demo: [Mkdocs](https://www.mkdocs.org).
 - Theme: [Mkdocs Materials](https://squidfunk.github.io/mkdocs-material/).
-- Deployment: [Github Pages](https://pages.github.com).
-- Plugins: [Mkdocs Statistics Plugins](https://github.com/TonyCrane/mkdocs-statistics-plugin), [Mkdocs Git revision](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin).
+- Deployment: [Github Pages](https://pages.github.com). Details can be found in workflows.
+- Plugins: [Mkdocs Statistics Plugins](https://github.com/TonyCrane/mkdocs-statistics-plugin) (self-modified),  [Mkdocs Git revision](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin). Details can be found in `requirements.txt`.
 - Repo pictures easy sync & upload: [PicGo](https://picgo.github.io/PicGo-Doc/).
 - Repo pictures storage: [My Repo](https://github.com/SmilingWayne/picsrepo).
 - Font: [霞鹜文楷](https://github.com/lxgw/LxgwWenKai-Screen).
