@@ -409,6 +409,7 @@ nav:
           - Lecture｜01: ML/RecmdSys/Lecture1.md
       - 动手学深度学习｜笔记:
           - 卷积神经网络: ML/DL/CNN.md
+          - 循环神经网络: ML/DL/RNN.md
   - 学习笔记:
       - Study/index.md
       - 组会与相关学术内容:
