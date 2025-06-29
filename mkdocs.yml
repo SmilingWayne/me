@@ -11,7 +11,7 @@ nav:
           - 规训与惩罚: Philosophy/Principles_and_punish.md
           - 景观社会: Philosophy/Society_of_spectacles.md
           - 西西弗神话: Philosophy/Sisyphus.md
-      - 📚 哲学家词典:
+      - 哲学家词典:
           - 阿尔都塞: Philosophy/Philosophers/Altusser.md
           - 福柯: Philosophy/Philosophers/Foucault.md
           - 福柯集: Philosophy/Philosophers/Foucault_collections.md
@@ -19,7 +19,7 @@ nav:
           - 罗兰巴特: Philosophy/Philosophers/RolandBarthes.md
           - 德里达: Philosophy/Philosophers/Derrida.md
 
-      - 大唯物主义:
+      - 主流意识形态:
           - 不怎么精美的毛选摘: Philosophy/Mao.md
           - 基础知识: Philosophy/basic.md
           - 马克思主义宗教观研究: Philosophy/Marxism_religion.md
@@ -70,10 +70,11 @@ nav:
           - 谈美: Philosophy/About_beauty.md
           - 哲学美学: Philosophy/Phi_and_aesthic.md
 
-      - 人类学/社会学:
+      - 人类学/社会学/法学:
           - 倦怠社会: Philosophy/Society_of_fatigue.md
           - 乡土中国: Philosophy/Rural_china.md
           - 古代社会: Philosophy/Ancient_society.md
+          - 论犯罪与刑罚: Philosophy/About_crimes.md
           - 宗教生活的初级形式: Philosophy/Primal_format_of_religion_life.md
           - 西太平洋上的航海者: Philosophy/Voyagers_western_pacific_ocean.md
           - 论人类不平等的起源与基础: Philosophy/Discours_linegalite.md
