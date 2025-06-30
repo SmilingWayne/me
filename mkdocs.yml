@@ -379,6 +379,7 @@ nav:
           - 图论算法:最大流与最小割: OROpt/OR/Chapter7_2.md
           - 图论算法:极大团与独立集: OROpt/OR/Chapter7_3.md
           - 图论算法:二分图与匹配问题: OROpt/OR/Chapter7_4.md
+          - 图论建模:多商品网络流: OROpt/OR/Chapter7_5.md
           - 排队论: OROpt/OR/Chapter9.md
           - 仓储论（EOQ模型和它的一万个分身）: OROpt/OR/Chapter10.md
           - 博弈论: OROpt/OR/Chapter11.md
