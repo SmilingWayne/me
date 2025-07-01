@@ -384,18 +384,19 @@ nav:
           - 仓储论（EOQ模型和它的一万个分身）: OROpt/OR/Chapter10.md
           - 博弈论: OROpt/OR/Chapter11.md
           - 多智能体寻路(MAPF): OROpt/OR/MAPF.md
-      - 高级运筹学技巧1：列生成方法: OROpt/OR/Chapter12.md
-      - 高级运筹学技巧2：拉格朗日松弛: OROpt/OR/LR.md
-      - 高级运筹学技巧3：分支定价: OROpt/OR/BranchAndPrice.md
-      - 经典运筹学建模：发电机组调度(UCP): OROpt/OR/UnitCommitmentProblem.md
-      - 经典运筹学建模：批量生产问题(LSP): OROpt/OR/LotSizingProblem.md
-      - 经典运筹学建模：定向问题(TOP): OROpt/OR/TOP.md
-      - 路径优化问题｜TSP: OROpt/OR/TSP.md
-      - 路径优化问题｜VRP: OROpt/OR/VRP.md
-      - 路径优化问题｜PDP: OROpt/OR/PDP.md
-      - 经典调度问题｜JSP: OROpt/OR/JSP.md
+      - 算法｜列生成方法: OROpt/OR/Chapter12.md
+      - 算法｜拉格朗日松弛: OROpt/OR/LR.md
+      - 算法｜分支定价: OROpt/OR/BranchAndPrice.md
+      - 路径规划｜TOP: OROpt/OR/TOP.md
+      - 路径规划｜TSP: OROpt/OR/TSP.md
+      - 路径规划｜VRP: OROpt/OR/VRP.md
+      - 路径规划｜PDP: OROpt/OR/PDP.md
+      - 生产｜批量生产 (LSP): OROpt/OR/LotSizingProblem.md
+      - 调度｜车间调度 (JSP): OROpt/OR/JSP.md
+      - 调度｜发电机组调度(UCP): OROpt/OR/UnitCommitmentProblem.md
       - 图划分问题｜GP: OROpt/OR/GraphPartition.md
-      - 航班分配问题｜FAP: OROpt/OR/FAP.md
+      - 航班分配｜FAP: OROpt/OR/FAP.md
+      - 机组排班｜CAP: OROpt/OR/CrewSch.md
       - 当组合优化遇到深度学习: OROpt/OR/VRPmeetsNeurIPS.md
       - 常见的0-1变量处理技巧: OROpt/OR/GeneralTechnique.md
   - 机器学习:
