@@ -385,6 +385,7 @@ nav:
           - 博弈论: OROpt/OR/Chapter11.md
           - 多智能体寻路(MAPF): OROpt/OR/MAPF.md
       - 算法｜列生成方法: OROpt/OR/Chapter12.md
+      - 算法｜DW分解: OROpt/OR/DWDcmp.md
       - 算法｜拉格朗日松弛: OROpt/OR/LR.md
       - 算法｜分支定价: OROpt/OR/BranchAndPrice.md
       - 路径规划｜TOP: OROpt/OR/TOP.md
