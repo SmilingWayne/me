@@ -191,3 +191,68 @@ $f_t$ 是上一个状态 $h_{t -1}$ 和当前输入 $x_t$  的函数，具体而
 
 <span style="color:red">总而言之，LSTM通过一个传送带，让过去信息容易传输到下一时刻，实现了比RNN更好的长期记忆。</span>
 
+## 提升RNN的若干技巧
+
+### 多层RNN (Stacked RNN)
+
+类似于深度卷积神经网络。原先的RNN，每一个输入的状态向量都直接作为输出以及下一个状态向量，而我们可以在此基础上再堆叠一个 RNN，这个RNN的输入不再是embedding了，而是前一个RNN的状态向量，这个第二层RNN有自己的模型参数，会更新和输出自己的状态向量 $h$，而这个状态向量又会作为第三层RNN的输入，以此类推，越来越深。
+
+最上层RNN的状态向量就是最终的输出了，可以用最后一个状态 $h_t$ 可以视为从最底层的数据提取的特征。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507180056255.png)
+
+我们可以直接上堆叠一个LSTM，效果是类似的：
+
+实现如下，注意保存 `return_sequences`。最后将最后一层的状态向量丢入MLP中输出分类结果。
+
+> 计算参数量的时候，4 * 65 * 32，因为concat后有一个偏移项的参数也不能遗忘。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507180059959.png)
+
+参数统计如下。注意embedding层的参数量很大（<span style="color:red">缺少足够的数据把这部分训练好，很容易overfitting）</span>，同时，在第一和第二层，我们输出了500（文本长度）个状态向量（大小为32），也就是每个状态向量都被我们输出了。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507180101460.png)
+
+注意，上图中可以让4个阶段的向量尺寸有所不同，不一定都是相同的。
+
+
+### 双向 RNN (Bidirectional RNN)
+
+人类有阅读习惯从左向右从上倒下，但是从右往左进行阅读同样可以帮助我们对文本进行分类。对RNN而言，阅读顺序变化并么有太大区别。训练一个从后往前的RNN同样会有很好效果。
+
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507180110391.png)
+
+一个简单的想法是训练两条RNN，一个从右往左，一个从左往右。两条RNN互相独立==不共享参数，会各自输出对应的状态向量==，两个状态向量 concat 起来就形成了真正的状态向量 $y_1, y_2, ... , y_t$。如果有多层RNN，就把输出的 y 作为上层RNN的输入，以此类推。
+
+<span style="color:red">这个双向RNN的输出，就是把两条RNN分别走到最后输出的向量 $h^{'}_t, h_t$ 做一个concat，成为这段文本的特征向量。</span>
+
+> 一般而言，双向RNN效果比单向的要好很多，因为从一个方向阅读容易忘记前面的，现在可以比原先的特征多记住一些信息了（一个记得更靠左边的，一个记得更靠右边的）。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507180117820.png)
+
+我们可以发现参数量就是单层的2倍。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507180118839.png)
+
+实际做的时候，两种方法都试试（双向+stack）。
+
+### 预训练
+
+Pretrain。一种非常常用的技巧。在CNN里就有涉及。比如你的训练集不够大，但是参数又很多，于是你可以先在一个更大的数据集上训练一个模型，**让神经网络有比较好的初始化参数（尤其是embedding），避免overfitting**。
+
+
+具体做法：
+
+1. 找一个更大的数据集（最好是接近原先的任务，比如情感分析）；
+2. 搭建并训练一个大的神经网络；
+3. 只保留embedding和对应参数，训练上层的参数；**embedding这部分的参数固定住不需要训练**
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507180122940.png)
+
+
+!!! conclusion "这类问题用LSTM效果往往会好一些，应用时候可以多试试不同的结构，比如Stacked Bi-LSTM等。这几个Idea对所有的RNN都适用。而且LSTM能记住更多信息，不容易遗忘"
+
+
+## 自动文本生成
+
