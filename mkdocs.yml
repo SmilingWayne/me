@@ -247,6 +247,7 @@ nav:
           - 🇯🇵舞！舞！舞！: Literature/Novel/Dance.md
           - 🇯🇵源氏物语(ToDo): Literature/Novel/Tale_of_Genji.md
           - 🇯🇵银河铁道之夜: Literature/Novel/Galactic_railroad.md
+          - 🇯🇵世界尽头与冷酷仙境: Literature/Novel/World_end.md
           - 🇫🇷鼠疫: Literature/Novel/Plague.md
           - 🇫🇷巨人传: Literature/Novel/Giants.md
           - 🇫🇷波斯人信札: Literature/Novel/Letters_from_persian.md
@@ -544,6 +545,7 @@ nav:
           - 英文作文: Study/English/EnglishEssay.md
           - 英语文摘: Study/English/Quotes.md
           - 英语文学批评: Study/English/LiteraryCriticism.md
+      - 大模型提示词整理: Study/ChatGPT/Prompt2.md
       - 制造与服务系统分析: Study/AMASS.md
       - 一些高中笔记: Study/HighSchool.md
       - 研究生课程：智慧物流: Study/IntelligentLogistics/IntelligentLogistics1.md
