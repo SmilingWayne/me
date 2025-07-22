@@ -256,3 +256,32 @@ Pretrain。一种非常常用的技巧。在CNN里就有涉及。比如你的训
 
 ## 自动文本生成
 
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507230156683.png)
+
+输入半句话，要求预测下一个**字符**。可以训练神经网络，用one-hot embedding来表示每个字符，在大量文本上以字符维度进行训练。最终输出一个向量（用softmax做概率分布）。就可以拿到概率最大的那个字符。
+
+
+如何训练这个RNN？设置步长stride和每个切片的大小。训练时，需要基于每个切片内的文本，正确给出下一个字符（即为这个字符的概率最大）。此时下一个字符就是label，每个segment就是输入的文本，训练数据就是 (segment, char) 的pair。其实质上就是**一个多分类问题**（类别数是所有的字符数）。
+
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507230203640.png)
+
+
+> 1. 一些应用：生成名字；这说明文本生成器不是记住数据，而是能够生成新的东西。
+>
+> 2. SCIGen 
+
+### 简单字符生成器的实现
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507230209871.png)
+
+> 生成字符切片。
+
+由于我们是字符生成，因此总共可能也就几十个字符，不需要做低维的embedding了，直接用one-hot embedding即可。
+
+现在假设每个片段有60个字符，而我们需要输出的字符总共有57个（字典大小），那么每一segment就是 60 * 57 的矩阵。需要进行一个有 57 分类的多分类预测。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507230212027.png)
+
+
+【待补充】
