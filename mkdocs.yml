@@ -171,10 +171,11 @@ nav:
           - 山河袈裟: Literature/Essay/Shan_he_jia_sha.md
           - 牛棚杂忆: Literature/Essay/Cowshed_memo.md
           - 自然与人生: Literature/Essay/Nature_and_life.md
-          - 单读12: Literature/Essay/Dan_du_12.md
-          - 单读14: Literature/Essay/Dan_du_14.md
-          - 单读16: Literature/Essay/Dan_du_16.md
-          - 单读17: Literature/Essay/Dan_du_17.md
+          - 单读系列:
+              - 单读14: Literature/Essay/Dan_du_12.md
+              - 单读14: Literature/Essay/Dan_du_14.md
+              - 单读16: Literature/Essay/Dan_du_16.md
+              - 单读17: Literature/Essay/Dan_du_17.md
           - 澡堂与片场: Literature/Essay/Bath_house.md
           - 往事与随想: Literature/Essay/Memory_thoughts.md
           - 送你一颗子弹: Literature/Essay/Give_you_a_bullet.md
