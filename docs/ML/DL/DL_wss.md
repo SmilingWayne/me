@@ -284,4 +284,78 @@ Pretrain。一种非常常用的技巧。在CNN里就有涉及。比如你的训
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507230212027.png)
 
 
-【待补充】
+具体细节：
+
+
+输出了每个字符的分布之后，如何选择下一个字符呢？
+
+1. greedy selection，每次都选择概率最高的那个 （选择不够多）
+2. 从多项式分布 （multinomial distribution）中随机抽取；
+3. 介于前两种之间，有一定随机性，但是不会太大，用temperature （在 0,1之间，对概率值做幂变换，调整概率值，使得大的更大，小的更小）然后再归一化
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507310059424.png)
+
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507310101116.png)
+
+!!! note ""
+    s既然是文本生成器，必须要先给他说些什么，开个头。让他接着生成。假设固定一个片段长度为 18 字符（Token）。最初的片段称为seed。这个18字符的片段做one-hot embedding，形成矩阵，把这个矩阵输入神经网络，抽样，生成下一个字符；生成之后，把新的字符加入片段，同时删除最开始的第一个字符，这样保证新的片段依然是 18 字符 （token）长的。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507310105102.png)
+
+
+!!! conclusion ""
+    想要生成文本，首先需要训练一个RNN。
+
+    1. 划分片段成 (seg, next_chair) 的二元组；
+    2. embedding （one-hot/embedding），此时 char = $v \times 1$, seg = $v \times l$, l 为 seg 长度
+    3. 训练神经网络 （matrix - LSTM - Dense - vector）
+
+---
+
+
+## Seq2Seq 模型（机器翻译）
+
+机器翻译是一个多对多的问题，英文长度 > 1，要翻译的语言的长度 > 1，输入输出长度不固定。
+
+
+### Tokenization & Build dictionary
+
+要准备两套字典，一套是被翻译的语言，一套是要翻译语言的。又分为 word-level 和char-level，一般是 word-level，把一句话分成很多的单词构成 token。
+
+!!! question "需要两套词典的原因："
+    语言有不同的字符表，尤其是word-level tokenization。
+
+### One-hot encoding
+
+以 char-level 的模型为例，一句话的每个字符都可以被映射到原先字典里的一个数字。这样，每句话就可以用一个矩阵来表示。这个矩阵就是 RNN 的输入。
+
+> 其实你用词向量在word level进行操作，效果和这个差不多，只不过不是 one-hot的了，而是一个定长向量；
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507310112364.png)
+
+### Train seq2seq
+
+由一个 Encoder 和一个 Decoder 组成。
+
+Encoder 是一个 LSTM 或者其他 RNN，用于从输入的句子中提取特征，其最后一个状态，就是从输入状态提供的特征，包含这句话的信息，其余的状态没有用。
+
+==如果你的 Encoder 是一个 LSTM，那么输出的就是最后一个Token时候的状态向量和传送带== 。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507310118108.png)
+
+在 Decoder 层（也就是翻译成的语言），首先你需要保证这个字典里有起始符。此时我们给它的单词就是这个起始符。Decoder 会输出一个概率分布 $p$。
+
+我们知道这句话正确的下一个字符是 `m`，所以，我们的损失函数就是代表 m 的那个 one-hot 向量 y 和我们输出概率分布的交叉熵。
+
+通过损失函数反向传播计算梯度，一直传输（decoder-encoder），从而更新模型参数，让模型参数进行调整。
+
+然后的输入是两个字符，我们要做的是预测更下一个字符，同上所述找 one-hot，计算损失函数，反向传播，以此类推，不断重复，直到这句话的最后一个字符（停止符），我们会把整个被翻译好的句子输入，希望模型能输出停止符。
+
+上述这个过程是对一个 `英语-德语` 二元组进行计算的结果，事实上你的数据集里有非常多的这种二元组，你需要把这些数据丢进来进行训练。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507310124091.png)
+
+注意了，每次decoder侧走到下一个token时，前头 encoder 的参数也更新了，此时新的文本丢进去，会输出全新参数下的传送带参数和状态，根据这套新的参数，计算decoder的状态向量，得到最终的概率。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507310129918.png)
