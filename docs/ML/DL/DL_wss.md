@@ -352,10 +352,118 @@ Encoder 是一个 LSTM 或者其他 RNN，用于从输入的句子中提取特�
 
 然后的输入是两个字符，我们要做的是预测更下一个字符，同上所述找 one-hot，计算损失函数，反向传播，以此类推，不断重复，直到这句话的最后一个字符（停止符），我们会把整个被翻译好的句子输入，希望模型能输出停止符。
 
-上述这个过程是对一个 `英语-德语` 二元组进行计算的结果，事实上你的数据集里有非常多的这种二元组，你需要把这些数据丢进来进行训练。
+上述这个过程是对一个 `英语-德语` 二元组进行计算的结果，事实上你的数据集里有非常多的这种二元组，你需要把这些数据丢进来进行训练。你训练的过程实际上就是**调整这些参数矩阵**，使得输入一个英文句子后，输出的翻译句子与实际正确翻译的句子的差距（交叉熵）尽可能小。
 
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507310124091.png)
 
-注意了，每次decoder侧走到下一个token时，前头 encoder 的参数也更新了，此时新的文本丢进去，会输出全新参数下的传送带参数和状态，根据这套新的参数，计算decoder的状态向量，得到最终的概率。
+
+
+### 总结
+
+Seq2Seq做机器翻译，输入句子的时候，Encoder会在每输入一个词的时候更新状态，把输入信息记录在Encoder状态里，最后一个状态就是提取的特征。最后一个状态作为 Decoder 的初始状态传递给 Decoder，此时 Decoder 就类似一个文本生成器，基于这个 Encoder 开的头，开始继续向下生成就可。
+
+> 这里的$A$ 是 RNN Encoder 的参数矩阵； $B$ 是 Decoder 的 参数矩阵，$s_1$ 就是基于输入生成的状态向量，这个向量输入全连接层输出预测概率 $p_1$，对概率分布做抽样，得到下一个 Token $z_1$，这个 Token 当作下一个时刻的输入，继续在 Decoder RNN 中生成状态向量 $s_2$，按照类似步骤，生成再下一个时刻的 Token $z_2$ ... 
 
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507310129918.png)
+
+
+## Attention 注意力机制
+
+**Seq2Seq 模型有一个显而易见的缺陷：无法保证长序列的记忆。** Attention 则可以很好地弥补这个问题。
+
+### Attention + Simple RNN
+
+在原先的Encoder-Decoder的流程里，总是会丢弃掉Encoder中生成的所有中间状态，而我们现在希望，==Decoder 和 Attention同时开始工作，每次Decoder的时候，都会扫一遍原先的文本，去看看有没有哪个（些）Token 与当前的输入的这个 Token 的关联度更高== 。
+
+<span style="color:red">这就需要：我们有一种办法来衡量当前这个 Token（向量）和原先那些中间状态（其实就是包含了原先信息的向量）的相似度。</span>
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508010130710.png)
+
+具体做法就是，把每个状态向量用参数矩阵 $W_k$ 映射到向量 $k_i$，每个输入的向量也映射到一个向量 $q_j$，计算两个向量的内积 $\tilde{\alpha_i}$，然后对输入的句子里的所有内积取softmax映射到 0～1之间。
+
+得到 m 个向量 $\tilde{\alpha_i}$ 之后，就可以利用这些向量计算每个原先的Token对应的 状态向量，其合并起来对当前输入的影响，即计算 **Context Vector** $c_j = \alpha_1 h_1 + \alpha_2 h_2 + ... + \alpha_m h_m$，这个向量长度和 状态向量 h 是相同的。
+
+**这个 $c$ 向量记录了encoder中所有Token在当前这个输入Token的完整信息，也就是被这个输入“注意”过后的信息。**
+
+此时，我们需要在输出的 RNN 中，计算当前的状态向量 $s_j$，此时只需要把原先的最后一个状态向量、Context Vector、当前输入的Token的向量坐concat，然后乘以系数矩阵取tanh，即可得到当前的状态向量了 $s_j$ 了。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508031954989.png)
+
+再下一步 $s_{j+1}$，只需要将 $s_j$ 作为前一个状态向量，计算它和 Encoder中每一个 Token 的相似度，构成新的 $\alpha_i$ ，然后与Encoder中的每个状态向量加权，得到新的 Context Vector $c_{j+1}$，拼起来，然后乘以系数矩阵取tanh，即可得到当前的状态向量了 $s_{j+1}$ 了。
+
+!!! example "虽然上一轮计算时候有一系列 $\alpha$，但是这些 $\alpha$ 在不同 Decoder 的 Token 下是不同的。"
+
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050118951.png)
+
+简单来说，要计算 Decoder $x_4$ 这个 Token 对应的状态向量，==需要用到 $x_4, s_3, c_3$ 这三个部分，分别代表当前 Token 的 Embedding，Decoder 目前最后一个 Token 的状态，以及 Decoder 目前最后一个 Token 在 Encoder 中，经过注意力“注意”后，带有全部 Encoder 信息的 Context Vecotor==。
+
+而有了这个 Token 的状态向量后，又可以计算出这个 Token 的 Context Vector，供再后面的使用。
+
+!!! note ""
+    复杂度计算：你可以发现，在每一个 Decoder 的状态下，都需要计算这个状态和 **每个 Encoder** 状态的 Context Vector，其复杂度 $O(mt)$
+
+Attention 的可视化，也就是，通过这种 Attention，可以发现某些 Token 之间的相关性（粗表示相关度很高）。
+
+在翻译场景下：Encoder 是英语，Decoder 输出的是法语。每次翻译的时候，遇到一个法语单词，都会看一遍所有的英文单词，看它们和这个法语词的“相关度”，或者重要性。这些权重就告诉了Decoder：你应该看什么地方。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050126608.png)
+
+总结：
+
+1. 传统的seq2seq只看当前状态；
+2. Attention可以看到和 Encoder 中所有状态的关联；
+3. Attention通过关联，可以知道重点在哪里；
+4. 代价是计算复杂度。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050130317.png)
+
+
+## Self-Attention
+
+把 Attention 用在一个 RNN，而不是seq2seq的两个 RNN 上。
+
+
+=== "Step 1."
+
+    初始化 h_0 和 c_0 均为 0 向量；
+
+    ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050136977.png)
+
+=== "Step. 2"
+
+    计算当前状态向量时，把原先状态向量替换成 Context vector $c_{j-1}$
+
+    ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050137497.png)
+
+=== "Step. 3"
+    为了输出 $x_3$ 的状态向量，我们需要用 $h_2$ 与包括它自己在内的先前所有状态向量进行 Attention 计算，得到 Context Vector $c_2$，基于 $x_3$, $c_2$ 得到。
+
+    计算顺序是：先有了 $h_2$，然后计算 $c_2$，结合 $x_3$ 才能算出 $h_3$
+
+    ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050139220.png)
+
+=== "Step. 4"
+
+    ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050143345.png)
+
+通过 Self- Attention，更加不容易遗忘，同时能够关注最相关的信息。
+
+---
+
+## Transformer
+
+1. Seq2Seq， Encoder + Decoder
+2. 不是 RNN，没有循环的结构；
+3. **完全基于 Attention 和全连接层。**
+
+
+### Attention + Seq2Seq
+
+我们首先从保留 RNN + Attention 的模型入手，即Attention + Seq2Seq。这里，我们构造 Context vector 的方式更新了：不再总是用 Encoder 中所有的状态向量和 $\alpha$ 做加权平均，而是再用一个新的 参数矩阵 $W_V$，将 Encoder 的每个 状态向量都转化成新的 Value 向量 $v_i$，对这些 $v_i$ 向量按照 $\alpha_i$ 加权平均，得到我们新的 Context Vector。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050152434.png)
+
+### Attention Layer
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050157393.png)
