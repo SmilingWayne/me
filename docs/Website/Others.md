@@ -13,9 +13,9 @@ extra_css:
 
 ## 修改内容部分的宽度
 
-运营之后发现，自己的网站正文，大致呈现一种瘦长型的布局，导致周围有很多留白，空荡荡的。虽说窄窄的呈现方式也有好处（比如我一直劝自己这样向下滑动网页就类似慢慢展开一张信纸📃....)，但是毫无疑问我更喜欢灵活一点的做法。
+运营之后发现，自己的网站正文，大致呈现一种瘦长型的布局，导致周围有很多留白，空荡荡的。虽说窄窄的呈现方式也有好处（比如我一直劝自己这样向下滑动网页就类似慢慢展开一张信纸📃....)，Anyway, 我更喜欢灵活一点的方法。
 
-你可以在[这个链接](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#content-area-width)找到具体的做法。
+你可以在[这个链接](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#content-area-width)找到具体的实现。
 
 在`docs/stylesheets/`目录下，添加`extra.css`文件。并加入如下语句，即可。效果如下。
 
