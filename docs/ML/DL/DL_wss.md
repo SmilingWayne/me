@@ -426,7 +426,7 @@ Attention 的可视化，也就是，通过这种 Attention，可以发现某些
 
 === "Step 1."
 
-    初始化 h_0 和 c_0 均为 0 向量；
+    初始化 $h_0$ 和 $c_0$ 均为 0 向量；
 
     ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050136977.png)
 
@@ -463,7 +463,78 @@ Attention 的可视化，也就是，通过这种 Attention，可以发现某些
 我们首先从保留 RNN + Attention 的模型入手，即Attention + Seq2Seq。这里，我们构造 Context vector 的方式更新了：不再总是用 Encoder 中所有的状态向量和 $\alpha$ 做加权平均，而是再用一个新的 参数矩阵 $W_V$，将 Encoder 的每个 状态向量都转化成新的 Value 向量 $v_i$，对这些 $v_i$ 向量按照 $\alpha_i$ 加权平均，得到我们新的 Context Vector。
 
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050152434.png)
-
+ 
 ### Attention Layer
 
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508050157393.png)
+
+把Encoder的输入计算 Key 和 Value 向量。分别用 $W_K, W_V$ 进行变换，得到 M 个 $K$ 向量和 $V$ 向量，同样地，对于 Decoder 的输入进行类似的线性变换。映射到 $Q$ 向量。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508250119393.png)
+
+计算权重 $\alpha$ 时候，用每个 Decoder 的 q 向量与所有的 Encoder 的 k 向量的相关性，计算出 $m$ 个权重值（经过softmax），得到向量 $\alpha_1$。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508250121341.png)
+
+然后计算 Context Vector，做法是用刚刚 $\alpha$ 向量的每个元素对 Encoder 的每个 $v$ 向量做加权平均。也就等价于用最大的 $V$ 矩阵乘以刚刚的 $\alpha$ 向量。 
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508250124815.png)
+
+这里，Decoder 有 $t$ 个 Token，那么就会有 $t$ 个 c 向量 （Context Vector）。
+
+这 $t$ 个 Context vector 向量 $c$ 就是 Attention Layer 的输出。
+
+可以看到， $c_{:j} = V \cdot \text{SoftMax}(K^Tq_{:j})$
+
+也就是，对于每个 Decoder 中的 Token，想要计算它的Attention层输出的向量，都需要用到原先 Encoder 中每一个 $K$ 和 每一个 $V$。这同样意味着，比如在机器翻译中，对于每个翻译后的词 $x^{'}_j$，都可以看到原先文本里的每一个文字，看到所有文本中存储的信息。
+
+类似的，既然这个 Context Vector 可以存储如此多的信息，我们可以把它输入一个  SoftMax 分类器，输出每一个词的概率，这个词当作再下一个 Token 文本的输入。==和 RNN 用 h 向量作为特征不同，这里用 Context Vector 作为特征向量，涵盖了更多的信息==。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508250130182.png)
+
+
+### Conclusion
+
+我们可以这样总结一下 Attention 层。
+
+Encoder-Decoder 架构，两组输入 $X, X^{'}$。三组需要学习的参数矩阵。$W_Q, W_K, W_V$。
+
+Attention层的输出是一个矩阵 C，表示 Context vector。列数和 Decoder 层相同，也就是每个 c 对应一个  $x^{'}$ 向量。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508250133782.png) 
+
+
+### Self- Attention Layer 
+
+现在，我们从 Encoder-Decoder 架构中继续脱离，进入 Self-Attention 中，我们只有一个输入了，就是原先 Encoder 中的那个输入（对应机器翻译的待翻译文本）。
+
+
+
+
+=== "Step 1."
+
+    做法和前述的几乎一致，区别在于剥离了 Decoder，而 Q, K, V 矩阵都没有变，只不过这三个参数矩阵都作用于同一个输入上了。
+
+    ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508250138854.png)
+
+
+=== "Step. 2"
+
+    计算权重的时候，对于每一个 Token，都需要用到整个文本的所有 K ，以及当前 Token 的 q 向量，然后 SoftMax
+
+    ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508250139486.png)
+
+
+=== "Step. 3"
+    得到了每个输入对应的权重向量，对每个Token，计算它和其他所有文本的 V 向量的加权平均（用权重）。如此，得到了输入里每个 Token 的 Context vector。
+
+    ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508250139434.png)
+
+=== "Step. 4"
+
+    最后拼再一起，组成 C 矩阵。这就是 Self- Attention Layer 的输出结果。
+
+    ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202508250140805.png)
+
+总结一下，Self Attention 的输入是同样的两个 $X$，输出是这组向量每个元素对应的 Context Vector。注意，这里的 c 向量其实就可以类比为 RNN 输出的状态向量 h，这两者的大小正好是相同的 （都是与该层的输入有关）。由于有 Attention 机制，这里的 c 包含了更多的信息。而正因为它和 RNN 输出的 h 是相同大小的，所以可以直接把 Attention / Self- Attention 层代替 RNN。
+
