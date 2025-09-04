@@ -48,11 +48,13 @@ $$A-B = \{x \mid x \in A \text{ 且 } x \notin B\} = A\bar{B} = A-AB$$
 
 结合律：
 :   $$(A \cup B) \cup C = A \cup (B \cup C),$$
-$$(AB)C = A(BC)$$
+
+    $$(AB)C = A(BC)$$
 
 分配律：
 :   $$A \cup (B \cap C) = (A \cup B) \cap (A \cup C);$$
-$$A \cap (B \cup C) = (A \cap B) \cup (A \cap C).$$
+
+    $$A \cap (B \cup C) = (A \cap B) \cup (A \cap C).$$
 
 <span style="color:red">德 · 摩根律：</span>
 :   $$\overline{A \cup B} = \overline{A} \cap \overline{B}; \quad \overline{A \cap B} = \overline{A} \cup \overline{B}.$$
