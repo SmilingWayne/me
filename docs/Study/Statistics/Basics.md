@@ -125,9 +125,11 @@ $$\overline{A \cup B} = \overline{\{\text{A、B至少发生一个}\}} = \{\text{
 
     1. $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(AB) - P(AC) - P(BC) + P(ABC)$$
 
-    2. $$P(A_1 \cup A_2 \cup \dots \cup A_n) = \sum_{i=1}^{n} P(A_i) - \sum_{1 \le i < j \le n} P(A_i A_j) + \sum_{1 \le i < j < k \le n} P(A_i A_j A_k) + \dots + (-1)^{n-1} P(A_1 A_2 \dots A_n)$$
+    2. $$P(A_1 \cup A_2 \cup \dots \cup A_n) =$$
+    
+    $$\sum_{i=1}^{n} P(A_i) - \sum_{1 \le i < j \le n} P(A_i A_j) + \sum_{1 \le i < j < k \le n} P(A_i A_j A_k) + \dots + (-1)^{n-1} P(A_1 A_2 \dots A_n)$$
 
-    这个式子称为 "**加减偶公式**"。
+    这个式子称为 "**加奇减偶公式**"。
 
     > ==加法公式==是它的简单版：
 
@@ -146,14 +148,15 @@ $$\overline{A \cup B} = \overline{\{\text{A、B至少发生一个}\}} = \{\text{
 
     (2) $P(\overline{A}\overline{B}) = P(\overline{A \cup B})$ （根据德摩根律）
 
-    $$= 1 - P(A \cup B)$$$$= 1 - [P(A) + P(B) - P(AB)]$$
+    $= 1 - P(A \cup B)$$$$= 1 - [P(A) + P(B) - P(AB)]$
     
-    $$= 0.4$$
+    $= 0.4$
 
     (3) $P(\overline{A}B) = P(B-A)$ （根据事件差的定义）
 
-    $$= P(B) - P(AB)$$
-    $$= 0.3 - 0.2 = 0.1$$
+    $= P(B) - P(AB)$
+    
+    $= 0.3 - 0.2 = 0.1$
 
     (4) $P(\overline{A \cup B}) = P(\overline{A}\overline{B}) = 0.4$ （根据德摩根律和第(2)小题的结果）
 
