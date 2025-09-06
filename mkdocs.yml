@@ -410,8 +410,10 @@ nav:
           - 机器学习中的常用指标: ML/StatLearnMethod/AUC.md
           - K近邻算法: ML/StatLearnMethod/KNN.md
           - 朴素贝叶斯｜Gaussian贝叶斯分类: ML/StatLearnMethod/NaiveBayesian.md
-          - 线性回归｜多元线性回归: ML/StatLearnMethod/Regression.md
-          - 逻辑回归｜广义线性模型: ML/StatLearnMethod/LogisticRegression.md
+          - 回归｜多元线性回归: ML/StatLearnMethod/Regression.md
+          - 线性回归推导: ML/StatLearnMethod/LR_complex.md
+          - 回归｜逻辑回归: ML/StatLearnMethod/LogisticRegression.md
+          - 逻辑回归推导｜正则化: ML/StatLearnMethod/LogisReg_complex.md
           - 广义线性模型｜方差分析: ML/StatLearnMethod/GLM_ANOVA.md
           - PageRank算法: ML/StatLearnMethod/PageRank.md
           - SVD｜PCA: ML/StatLearnMethod/SVD.md

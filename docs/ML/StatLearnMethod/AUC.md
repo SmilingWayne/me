@@ -1,4 +1,4 @@
-# 机器学习中常用的一些评价指标：AUC, ROC, F1 Score ...
+# 机器学习｜AUC, ROC, F1 Score ...
 
 ## Confusion Matrix （混淆矩阵）
 
@@ -168,7 +168,7 @@ $$TPR = \frac{TP}{TP + FN}$$
 
 ### 二分类下的 AUC
 
-ROC曲线本身的含义还可以进一步被挖掘。比如，我们可以计算出ROC曲线下的面积。这个值对应的是，==若随机抽取一个阳性样本和一个阴性样本，分类器判断阳性样本的值高于阴性样本的概率==。
+ROC曲线本身的含义还可以进一步被挖掘。比如，我们可以计算出ROC曲线下的面积。这个值对应的是，==若随机抽取一个阳性样本和一个阴性样本，分类器判断阳性样本的得分高于阴性样本的概率==。
 
 或者，是模型正确排序一对正负样本的概率。
 
@@ -176,16 +176,17 @@ ROC曲线本身的含义还可以进一步被挖掘。比如，我们可以计�
 
 现在，一个重要的问题来了，如何计算AUC？和ROC不同，AUC是一个值。
 
+#### 面积法
+
 我们可通过梯形法则（Trapezoidal Rule）近似计算离散点的积分，也就是对阈值从高到低排序后计算每个阈值对应的FPR，TPR，然后：
 
 $$AUC = \sum^n_{i = 1} \dfrac{(FPR_i - FPR_{i-1}) \times (TPR_i + TPR_{i - 1})}{2}$$
 
 **注意，AUC反映模型对正负样本的排序能力，与样本数量无关。**
 
-我们可以把完整的代码搓出来：
+我们可以把完整的代码搓出来，这里是通过**面积法**来计算的，以每一个预测的概率值为阈值进行计算。
 
 ```python
-
 def manual_tpr_fpr(y_true, y_pred_prob, threshold):
 
     y_pred = np.where(y_pred_prob >= threshold, 1, 0)
@@ -202,20 +203,52 @@ def manual_tpr_fpr(y_true, y_pred_prob, threshold):
     
     return tpr, fpr
 
-if __name__ == "__main__":
-    threshold_np = sorted(y_score.tolist(), reverse = True)
-    y_true = y_test
+
+def cal_auc_via_area(y_true, y_pred_prob):
+    threshold_np = sorted(y_pred_prob.tolist(), reverse = True)
     auc_score_manual = 0
     prev_tpr = 0; prev_fpr = 0
     for idx, threshold in enumerate(threshold_np):
-        tpr, fpr = manual_tpr_fpr(y_true, y_score, threshold)
+        tpr, fpr = manual_tpr_fpr(y_true, y_pred_prob, threshold)
         # print(round(threshold,6), round(tpr, 6), round(fpr, 6))
         if idx > 0:
             auc_score_manual += (fpr - prev_fpr) * (tpr + prev_tpr) / 2
         prev_tpr, prev_fpr = tpr, fpr 
     print(f"Manual Check AUC: {auc_score_manual}")
-    # Is the same as above!
+
+cal_auc_via_area(y_true, y_score)
 ```
+
+#### 物理意义法
+
+同样地，我们可以找到**物理意义下的AUC值**，即 ==若随机抽取一个阳性样本和一个阴性样本，分类器判断阳性样本的得分高于阴性样本的概率==。此时如果我们阳性样本为 $m$ 阴性样本数 为 $n$，<u>我们只需要将所有样本 $(m + n)$ 个，按照模型预测概率从高到低排序，然后遍历排序后的列表，对于每一个负样本，计算有多少个正样本在它前面，然后将所有负样本的这个数值累加起来，除以所有的取数 （$m  \times n$ 种），即可。如下所示 </u>。
+
+这种算法的复杂度是排序带来的，故 $O( N \log N)$，这里的 $N$ 为正负样本总数。
+
+```python
+def cal_auc(y_true, y_pred_prob):
+    sorted_indices = np.argsort(y_pred_prob)
+    y_true = np.array(y_true)[sorted_indices]
+    y_pred_prob = np.array(y_pred_prob)[sorted_indices]
+    
+    pos_cnt = np.sum(y_true)
+    neg_cnt = len(y_true) - pos_cnt 
+    auc = 0.0 
+    cum_pos = 0.0 
+    
+    for i in range(len(y_true)):
+        if y_true[i] == 0:
+            cum_pos += 1
+        else:
+            auc += cum_pos
+    auc /= (pos_cnt * neg_cnt)
+    return auc 
+
+auc_test = cal_auc(y_true, y_score)
+print(auc_test)
+```
+
+---
 
 ### 多分类下的AUC
 
@@ -414,7 +447,7 @@ Then you got:
 
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202503232341873.png)
 
-此时你会发现，sklearn帮你算好了一个叫AP (Average Precision)的指标。实际上这个可以近似理解为**PR-AUC**，也就是这个曲线下的面积，用于量化模型在不同召回率（Recall）下的平均精确率（Precision）。其一般计算公式：
+此时你会发现，sklearn帮你算好了一个叫AP (Average Precision)的指标。实际上这个可以近似理解为**PR-AUC**，也就是这个 PR 曲线下的面积，用于量化模型在不同召回率（Recall）下的平均精确率（Precision）。其一般计算公式：
 
 $$AP = \sum_{k=1}^{N} Precision(k) \cdot \Delta Recall(k)$$
 
