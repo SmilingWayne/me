@@ -117,6 +117,7 @@ $$ \frac{\partial J}{\partial b} = \frac{1}{n} \sum_{i=1}^{n} (\hat{y}^{(i)} - y
 有了梯度，就可以用梯度下降法更新参数了（以批量梯度下降为例）：
 
 $$ w_j \leftarrow w_j - \eta \frac{\partial J}{\partial w_j} = w_j - \eta \frac{1}{n} \sum_{i=1}^{n} (\hat{y}^{(i)} - y^{(i)}) x_j^{(i)} $$
+
 $$ b \leftarrow b - \eta \frac{\partial J}{\partial b} = b - \eta \frac{1}{n} \sum_{i=1}^{n} (\hat{y}^{(i)} - y^{(i)}) $$
 
 其中 $\eta$ 是学习率。
