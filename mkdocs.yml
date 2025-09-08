@@ -409,11 +409,14 @@ nav:
           - 感知机: ML/StatLearnMethod/Perceptron.md
           - ROC｜AUC｜PR｜F1 等指标: ML/StatLearnMethod/AUC.md
           - K近邻算法: ML/StatLearnMethod/KNN.md
-          - 朴素贝叶斯｜Gaussian贝叶斯分类: ML/StatLearnMethod/NaiveBayesian.md
+          - 朴素贝叶斯｜分类器: ML/StatLearnMethod/NaiveBayesian.md
           - 线性回归｜多元: ML/StatLearnMethod/Regression.md
           - 线性回归推导｜复杂度: ML/StatLearnMethod/LR_complex.md
           - 逻辑回归推导｜正则化: ML/StatLearnMethod/LogisReg_complex.md
           - 从SVD到PCA｜复杂度: ML/StatLearnMethod/SVD.md
+          - t-SNE｜数据降维: ML/StatLearnMethod/t-SNE.md
+          - K-means｜聚类算法: ML/StatLearnMethod/Kmeans.md
+          - 支持向量机推导｜复杂度: ML/StatLearnMethod/SVM.md
           - 广义线性模型｜方差分析: ML/StatLearnMethod/GLM_ANOVA.md
           - PageRank算法: ML/StatLearnMethod/PageRank.md
           #   - 回归｜逻辑回归: ML/StatLearnMethod/LogisticRegression.md
