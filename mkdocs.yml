@@ -775,7 +775,7 @@ extra:
       link: mailto:xiaoxiaowayne@163.com
   analytics:
     provider: google
-    rpoperty: G-NVXC1ZHJ8C
+    property: G-NVXC1ZHJ8C
     feedback:
       title: Was this page helpful?
       ratings:
