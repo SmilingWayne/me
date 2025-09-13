@@ -230,6 +230,7 @@ nav:
           - 🇨🇳蛙: Literature/Novel/Frog.md
           - 🇨🇳朝闻道: Literature/Novel/Zhao_wen_dao.md
           - 🇨🇳生死疲劳: Literature/Novel/Forever_fatigue.md
+          - 🇨🇳丰乳肥臀: Literature/Novel/Feng_ru_fei_tun.md
           - 🇨🇳平凡的世界: Literature/Novel/Common_world.md
           - 🇨🇳夜晚的潜水艇: Literature/Novel/Submarine_at_night.md
           - 🇨🇳许三观卖血记: Literature/Novel/Xu_san_guan.md
@@ -324,6 +325,7 @@ nav:
           - 古罗马帝国军事史: History/Rome_military_history.md
           - 世界史就是经济史: History/Econo_history.md
           - 西印度毁灭述略: History/Destroy_western_india.md
+          - 断头王后: History/Marie_antoinette.md
           - 🇺🇸崛起的前夜: History/US.md
           - 人类的群星闪耀时: History/Human_stars.md
           - 阿拉伯伊斯兰文化史: History/Arabian_islamic_history.md
@@ -564,8 +566,13 @@ nav:
       - 研究生课程：物流优化算法: Study/IntelligentLogistics/LogisticsAlgorithm.md
       - 暑期学校-智能决策与算法: Study/fleet.md
       - Git 使用指南: Study/Git_use.md
+      - 时序预测相关:
+          - 简单滑动平均: Study/TimeSeries/MovingAverage.md
       - 工程经济学: Study/Engineering_eco.md
       - 工程管理类论文写作: Study/MEMEssay/Class1.md
+      - 基础工业工程:
+          - 质量控制 I: Study/BasicIE/Quality.md
+          - 田口方法: Study/BasicIE/Taguchi.md
       - 发展经济学:
           - 重点提纲: Study/DevelopEco/chapter1.md
       - 国际贸易: Study/IntTrad/InternationalTrade.md
