@@ -2,7 +2,11 @@
 
 前置内容 [决策树（用于回归的 CART）](./DecisionTree.md)、[AdaBoost](./AdaBoost.md)。
 
-用作回归任务。区别于Adaboost在于，不用小的 Stump 了，而是用一些尺寸相同但是限制规模的 树 （比如，8个叶子，或者32个叶子节点）组成森林。
+GBDT (Gradient Boosting Decision Tree)，即梯度提升决策树，是当今工业界和数据科学竞赛中使用最广泛、效果最好的机器学习算法之一。它也是理解 XGBoost、LightGBM 和 CatBoost 等更先进算法的基础。
+
+==与 AdaBoost 通过提升错分样本的权重来学习不同，GBDT 的核心思想是，每一棵新的树都是为了**拟合和修正上一棵树留下的残差（Residual）**。更一般地说，是拟合损失函数的**负梯度**== 。
+
+本文首先讨论用作回归任务的场景。区别于Adaboost在于，不用小的 Stump 了，而是用一些尺寸相同但是限制规模的 树 （比如，8个叶子，或者32个叶子节点）按顺序组成。
 
 **更重要的是，我们不再单单对预测值进行学习，而是对“某个预测值的残差进行学习”**。
 
@@ -12,15 +16,6 @@
 
 ---
 
-
-
-
-GBDT (Gradient Boosting Decision Tree)，即梯度提升决策树，是当今工业界和数据科学竞赛中使用最广泛、效果最好的机器学习算法之一。它也是理解 XGBoost、LightGBM 和 CatBoost 等更先进算法的基础。
-
----
-
-
-GBDT 是一种同样采用加法模型（Additive Model）和前向分步算法（Forward Stagewise Algorithm）的 Boosting 算法。与 AdaBoost 通过提升错分样本的权重来学习不同，GBDT 的核心思想是，每一棵新的树都是为了**拟合和修正上一棵树留下的残差（Residual）**。更一般地说，是拟合损失函数的**负梯度**。
 
 ## 1. 使用场景
 
@@ -37,7 +32,7 @@ GBDT 是一个非常通用的框架，既能用于**回归问题**，也能用�
 GBDT 的思想比 AdaBoost 更进了一步，也更为通用。我们可以从两个层面来理解它。
 
 1.  **直观理解（以回归为例）**：
-    假设我们正在做一个预测年龄的任务，第一个基学习器（一棵树）预测某人的年龄是30岁，但他的真实年龄是35岁。那么模型就留下了 5 岁的残差（`residual = 35 - 30 = 5`）。GBDT 的下一步就是训练第二棵树，这棵树不再以人的特征为输入、年龄为输出来学习，而是以人的特征为输入、**刚才那个5岁的残差为输出来学习**。如果第二棵树成功预测了这个残差，那么 `新预测 = 30 + 5 = 35`，就命中了真实值。当然，第二棵树也不可能完美预测，它会留下新的、更小的残差。GBDT 就是这样一轮一轮地通过训练新树来不断减少之前模型留下的总残差，从而逼近真实值。
+    假设我们正在做一个预测年龄的任务，第一个基学习器（一棵树）预测某人的年龄是30岁，但他的真实年龄是35岁。那么模型就留下了 5 岁的残差（`residual = 35 - 30 = 5`）。GBDT 的下一步就是训练第二棵树，这棵树不再以人的特征为输入、年龄为输出来学习，而是以人的特征为输入、**5岁这个残差为输出来学习**。如果第二棵树成功预测了这个残差，那么 `新预测 = 30 + 5 = 35`，就命中了真实值。当然，第二棵树也不可能完美预测，它会留下新的、更小的残差。==GBDT 就是这样一轮一轮地通过训练新树来不断减少之前模型留下的总残差，从而逼近真实值==。
 
 2.  **数学理解（梯度下降）**：
     GBDT 的精髓。GBDT 将模型的优化过程看作是在**函数空间（Function Space）中的梯度下降**。
@@ -125,10 +120,10 @@ GBDT 的思想比 AdaBoost 更进了一步，也更为通用。我们可以从�
         $$
         \text{复杂度}_{\text{inference}} = O(M \cdot D_{tree})
         $$
-        
+
     这个复杂度与训练样本数 $N$ 和特征维度 $d$ **无关**，因此推理速度很快。
 
-## 4.5 核心流程的伪代码
+## 4.5 核心流程/伪代码/推导
 
 **Input**: Data ${(x_i, y_i)}^n_{i = 1}$， Loss Function $L(y_i, F(x))$
 
@@ -136,17 +131,19 @@ GBDT 的思想比 AdaBoost 更进了一步，也更为通用。我们可以从�
 
 **Step 1:** Initialize model with const value $F_0(x) = \arg \min_{\gamma}  \sum^n_{i = 1}L(y_i, \gamma)$
 
-初始值，是那个能够最小化损失函数的值，在当前Sum of squared error 的情况下，就等于均值。
+初始值，是那个能够最小化损失函数的值，在当前 Sum of squared error 的情况下，就等于均值。
  
-**Step 2:** for $m=1 $to $M $:
+**Step 2:** for $m=1$ to $M$:
 
 - (A) Compute $r_{im} = -\left[\frac{\partial L(y_{i},F(x_{i}))}{\partial F(x_{i})}\right]_{F(x)=F_{m-1}(x)} $for $i=1,\ldots,n $
 
 > 根据当前预测值，==计算每一个样本的负梯度方向，用来表示预测残差==，由于我们用的 Sum of squared error，也就是 ： ==- (observed - pred) * (-1) = (observed - pred)==
+>
+> **这个式和逻辑回归惊人地相似！**
 
 - (B) Fit a regression tree to the $r_{im}$values and create terminal regions $R_{jm}$, for $j=1\ldots J_{m}$
 
-> 这一步的作用，是构建残差树，并且给样本数据进行划分。每个样本数据被划分到一个椰子节点中。
+> 这一步的作用，是构建残差树，并且给样本数据进行划分。每个样本数据被划分到一个叶子节点中。
 >
 
 - (C) For $j=1\ldots J_{m} $compute $\gamma_{jm} = \underset{\gamma}{\operatorname{argmin}} \sum_{x_{i} \in R_{ij}} L(y_{i},F_{m-1}(x_{i})+\gamma) $
@@ -156,9 +153,21 @@ GBDT 的思想比 AdaBoost 更进了一步，也更为通用。我们可以从�
 
     **这个输出值 $\gamma$ 的含义是，添加了这个修正之后，能够最明显地修正（用原先预测值+这个决策树处理后）的残差。体现在数学公式上，就是最小化“原先预测值 + 修正值 $\gamma$ 后”的损失函数。**
 
+    这个输出的 $\gamma$ 还可以理解为，对于现在这个决策树叶子结点（其实就是前面一步写的 $R_{jm}$ 区域内的所有样本，我需要调整多少，才能使得加上这些误差后，样本的预测误差尽可能地小？
+
+    也就是 $\arg \min \dfrac{1}{2} (y_i - (F_{m - 1}(x_i) + \gamma))^2$
+
+    用链式法则推导即可发现，$\gamma$ 取残差的均值即可。 
+
+    $\text{mean}_{x_i \in R_{jm}}(r_{im})$
+
 
 
 - (D) Update $F_{m}(x) = F_{m-1}(x) + \nu \sum_{j=1}^{J_{m}} \gamma_{m} I(x \in R_{jm}) $
+
+这里推理的时候，可以发现，其实它的迭代还是基于不断地学习前一次回归预测时的残差，不断修正来进行的。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202509151634081.png)
 
 ---
 
@@ -314,18 +323,90 @@ $$\dfrac{1}{1 + e^{- \log (odds)}}$$
 
 
 
-### 核心流程的伪代码
+### 核心流程的伪代码、推导
+
+!!! example "这里非常建议对比着前面“分类”部分的伪代码和推导来分析，可以直观感受到损失函数不同给梯度推导、叶子结点输出的残差计算方式带来的影响，以及预测概率 $p$ 与输入值 $\log(\text{odds})$ 的巧妙变换的。"
 
 **Input**: Data ${(x_i, y_i)}^n_{i = 1}$， Loss Function $L(y_i, F(x))$
 
-> 对于分类问题，损失函数选择的是 **对数损失函数 （交叉熵）？**
->
+> 对于分类问题，损失函数选择的是 **对数损失函数 （多分类下的交叉熵）**
 
 我们可把 $y_i \log p + (1-y_i) \log (1 - p)$ 的损失函数，改写成与 Log Odds 有关的公式！
 
-$y_i \log (\text{Odds}) + \log (e^{odds} + 1)$
+这里 Follow 一个重点，即，我们给出的预测概率 p，和我们输入函数的 log(odds) 之间的转换公式，为：
+
+$p = \text{sigmoid}(\log(\text{odds}))$
+
+而我们有 sigmoid 函数： $\text{sigmoid}(x) = \dfrac{1}{1 + e^{-x}}$
+
+所以，
+$p = \dfrac{e^{\log(\text{odds})}}{1 + e^{\log(\text{odds})}}$
+
+所以，我们的==损失函数==可以用 $\log (\text{odds})$ 和 $p$ 两个式子分别来表示。
+
+也就是:
+
+$$\min - ( y\log(\text{odds}) - \log (1 + e^{\log(\text{odds})}) )$$
+
+或者说：
+
+$$\min - ( y \log (\dfrac{p}{1 - p}) + \log (1 - p))$$
+
 
 我们希望交叉熵尽可能地大，所以希望**最小化负的交叉熵**。
+
+这里的 y 表示的是样本属于某类的真实概率（1或者0）。
+
+---
+
+**Step 1:** Initialize model with const value $F_0(x) = \arg \min_{\gamma}  \sum^n_{i = 1}L(y_i, \gamma)$
+
+初始值，是那个<u>现有数据中能够最小化损失函数的值</u>，在当前 Log Loss 损失函数的情况下，就等于原先所有样本的 $\log (\text{odds})$。
+
+ 
+**Step 2:** for $m=1 $to $M $:
+
+- (A) Compute $r_{im} = -\left[\frac{\partial L(y_{i},F(x_{i}))}{\partial F(x_{i})}\right]_{F(x)=F_{m-1}(x)} $for $i=1,\ldots,n $
+
+
+根据当前预测值，==计算每一个样本的负梯度方向，用来表示预测残差==，由于我们用的 Log Loss，梯度方向 ： $-($ observed $-$ $\dfrac{e^{\log(\text{odds})}}{1 + e^{\log(\text{odds})}})$，由此可得我们的残差：
+
+$$\text{observed} - \dfrac{e^{\log(\text{odds})}}{1 + e^{\log(\text{odds})}}$$
+
+
+
+- (B) Fit a regression tree to the $r_{im}$values and create terminal regions $R_{jm}$, for $j=1\ldots J_{m}$
+
+> 这一步的作用，是构建残差树，并且给样本数据进行划分。每个样本数据被划分到一个叶子节点中，并且我们也有了残差 $r_{im}$ 的数据 。
+
+
+- (C) For $j=1\ldots J_{m} $compute $\gamma_{jm} = \underset{\gamma}{\operatorname{argmin}} \sum_{x_{i} \in R_{ij}} L(y_{i},F_{m-1}(x_{i})+\gamma) $
+
+!!! note ""
+    计算出残差树中，每个叶子结点的输出值（作为一种残差的修正！）
+
+    这个输出值 $\gamma$ 的含义是，添加了这个修正之后，能够最明显地修正（用原先预测值+这个决策树处理后）的残差。==这里的 $F_{m - 1}(x_i)$ 实际上就是 $\log (\text{odds})$.==
+
+    做分类时候的叶子结点的输出比较难以计算，要用到二阶Taylor展开。这里用 $p$ (**前一棵树计算出来的它为正样本的概率**) 来写更加简洁。
+
+    $$
+    \gamma_{jm} = \frac{\sum_{x_i \in R_{jm}} r_{im}}{\sum_{x_i \in R_{jm}} [p_{i, m-1}(1 - p_{i, m-1})]}
+    $$
+
+
+    注意，这里的 $p_{i,m - 1}$ 对于每一个样本来说，在后面会是越来越不同的。
+
+
+
+- (D) Update $F_{m}(x) = F_{m-1}(x) + \nu \sum_{j=1}^{J_{m}} \gamma_{m} I(x \in R_{jm}) $
+
+在推理时，你可以发现我们始终输出的是一个 $\log (odds)$，我们的叶子结点**对残差的修正**，其实就是一种“对 $\log(\text{odds})$ 的修正。
+
+==我们整个流程，就是对原先 $\log(\text{odds})$ 的预测结果，每次建立一个稍微弱一些的 Learner，去学习它的预测残差，不断修正预测结果==。
+
+也正因为此，当我们从 $M$ 棵 Boosting 树中最终得到了新输入样本时，我们计算得到了它的 $\log (\text{odds})$，只需要加上 sigmoid 变换成最终的概率，就可以了。
+
+
 
 ---
 
