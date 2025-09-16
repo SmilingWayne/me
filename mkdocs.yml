@@ -409,6 +409,7 @@ nav:
       - ML/index.md
       - 机器学习基础:
           - 感知机: ML/StatLearnMethod/Perceptron.md
+          - Bias｜Variance: ML/StatLearnMethod/Bias_Variance.md
           - ROC｜AUC｜PR｜F1 等指标: ML/StatLearnMethod/AUC.md
           - K近邻算法: ML/StatLearnMethod/KNN.md
           - 朴素贝叶斯｜分类器: ML/StatLearnMethod/NaiveBayesian.md
@@ -422,6 +423,7 @@ nav:
           - Bagging｜随机森林: ML/StatLearnMethod/RandomForest.md
           - Boosting｜Adaboost: ML/StatLearnMethod/AdaBoost.md
           - Boosting｜GBDT: ML/StatLearnMethod/GBDT.md
+          - Boosting｜XGBoost: ML/StatLearnMethod/XGBoost.md
           - 支持向量机推导｜复杂度: ML/StatLearnMethod/SVM.md
           - 广义线性模型｜方差分析: ML/StatLearnMethod/GLM_ANOVA.md
           - PageRank算法: ML/StatLearnMethod/PageRank.md
@@ -433,6 +435,7 @@ nav:
           - 卷积神经网络: ML/DL/CNN.md
           - 循环神经网络: ML/DL/RNN.md
       - 深度学习｜王树森: ML/DL/DL_wss.md
+      - Transformer: ML/Transformer.md
   - 学习笔记:
       - Study/index.md
       - 组会与相关学术内容:
