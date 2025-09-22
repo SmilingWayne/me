@@ -135,7 +135,7 @@ GBDT 的思想比 AdaBoost 更进了一步，也更为通用。我们可以从�
  
 **Step 2:** for $m=1$ to $M$:
 
-- (A) Compute $r_{im} = -\left[\frac{\partial L(y_{i},F(x_{i}))}{\partial F(x_{i})}\right]_{F(x)=F_{m-1}(x)} $for $i=1,\ldots,n $
+- (A) Compute $r_{im} = -\left[\frac{\partial L(y_{i},F(x_{i}))}{\partial F(x_{i})}\right]_{F(x)=F_{m-1}(x)} $for $i=1,\ldots,n$
 
 > 根据当前预测值，==计算每一个样本的负梯度方向，用来表示预测残差==，由于我们用的 Sum of squared error，也就是 ： ==- (observed - pred) * (-1) = (observed - pred)==
 >
@@ -146,7 +146,7 @@ GBDT 的思想比 AdaBoost 更进了一步，也更为通用。我们可以从�
 > 这一步的作用，是构建残差树，并且给样本数据进行划分。每个样本数据被划分到一个叶子节点中。
 >
 
-- (C) For $j=1\ldots J_{m} $compute $\gamma_{jm} = \underset{\gamma}{\operatorname{argmin}} \sum_{x_{i} \in R_{ij}} L(y_{i},F_{m-1}(x_{i})+\gamma) $
+- (C) For $j=1\ldots J_{m} $compute $\gamma_{jm} = \underset{\gamma}{\operatorname{argmin}} \sum_{x_{i} \in R_{ij}} L(y_{i},F_{m-1}(x_{i})+\gamma)$
 
 !!! note ""
     计算出残差树中，每个叶子结点的输出值（作为一种残差的修正！）
@@ -163,7 +163,7 @@ GBDT 的思想比 AdaBoost 更进了一步，也更为通用。我们可以从�
 
 
 
-- (D) Update $F_{m}(x) = F_{m-1}(x) + \nu \sum_{j=1}^{J_{m}} \gamma_{m} I(x \in R_{jm}) $
+- (D) Update $F_{m}(x) = F_{m-1}(x) + \nu \sum_{j=1}^{J_{m}} \gamma_{m} I(x \in R_{jm})$
 
 这里推理的时候，可以发现，其实它的迭代还是基于不断地学习前一次回归预测时的残差，不断修正来进行的。
 
@@ -309,12 +309,14 @@ $$\dfrac{1}{1 + e^{- \log (odds)}}$$
 
 *   **训练复杂度**：与回归 GBDT **完全相同**。
     在每一轮迭代中，主要的计算开销依然是构建决策树。计算伪残差和更新叶子节点值的复杂度都是 $O(N)$，而构建树的复杂度远大于此。因此，总训练复杂度依然是：
+    
     $$
     \text{复杂度}_{\text{train}} \approx O(M \cdot (N \cdot d \cdot D_{tree}))
     $$
 
 *   **推理复杂度**：与回归 GBDT **完全相同**。
     推理时，同样需要将样本输入 $M$ 棵树并累加结果。最后多了一步 Sigmoid 函数的计算，但其开销可以忽略不计。总推理复杂度依然是：
+    
     $$
     \text{复杂度}_{\text{inference}} = O(M \cdot D_{tree})
     $$
@@ -364,9 +366,9 @@ $$\min - ( y \log (\dfrac{p}{1 - p}) + \log (1 - p))$$
 初始值，是那个<u>现有数据中能够最小化损失函数的值</u>，在当前 Log Loss 损失函数的情况下，就等于原先所有样本的 $\log (\text{odds})$。
 
  
-**Step 2:** for $m=1 $to $M $:
+**Step 2:** for $m=1$to $M$:
 
-- (A) Compute $r_{im} = -\left[\frac{\partial L(y_{i},F(x_{i}))}{\partial F(x_{i})}\right]_{F(x)=F_{m-1}(x)} $for $i=1,\ldots,n $
+- (A) Compute $r_{im} = -\left[\frac{\partial L(y_{i},F(x_{i}))}{\partial F(x_{i})}\right]_{F(x)=F_{m-1}(x)}$ for $i=1,\ldots,n$
 
 
 根据当前预测值，==计算每一个样本的负梯度方向，用来表示预测残差==，由于我们用的 Log Loss，梯度方向 ： $-($ observed $-$ $\dfrac{e^{\log(\text{odds})}}{1 + e^{\log(\text{odds})}})$，由此可得我们的残差：
@@ -375,12 +377,12 @@ $$\text{observed} - \dfrac{e^{\log(\text{odds})}}{1 + e^{\log(\text{odds})}}$$
 
 
 
-- (B) Fit a regression tree to the $r_{im}$values and create terminal regions $R_{jm}$, for $j=1\ldots J_{m}$
+- (B) Fit a regression tree to the $r_{im}$ values and create terminal regions $R_{jm}$, for $j=1\ldots J_{m}$
 
 > 这一步的作用，是构建残差树，并且给样本数据进行划分。每个样本数据被划分到一个叶子节点中，并且我们也有了残差 $r_{im}$ 的数据 。
 
 
-- (C) For $j=1\ldots J_{m} $compute $\gamma_{jm} = \underset{\gamma}{\operatorname{argmin}} \sum_{x_{i} \in R_{ij}} L(y_{i},F_{m-1}(x_{i})+\gamma) $
+- (C) For $j=1\ldots J_{m}$ compute $\gamma_{jm} = \underset{\gamma}{\operatorname{argmin}} \sum_{x_{i} \in R_{ij}} L(y_{i},F_{m-1}(x_{i})+\gamma)$
 
 !!! note ""
     计算出残差树中，每个叶子结点的输出值（作为一种残差的修正！）
@@ -398,7 +400,7 @@ $$\text{observed} - \dfrac{e^{\log(\text{odds})}}{1 + e^{\log(\text{odds})}}$$
 
 
 
-- (D) Update $F_{m}(x) = F_{m-1}(x) + \nu \sum_{j=1}^{J_{m}} \gamma_{m} I(x \in R_{jm}) $
+- (D) Update $F_{m}(x) = F_{m-1}(x) + \nu \sum_{j=1}^{J_{m}} \gamma_{m} I(x \in R_{jm})$
 
 在推理时，你可以发现我们始终输出的是一个 $\log (odds)$，我们的叶子结点**对残差的修正**，其实就是一种“对 $\log(\text{odds})$ 的修正。
 

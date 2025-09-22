@@ -392,7 +392,8 @@ nav:
       - 算法｜列生成方法: OROpt/OR/Chapter12.md
       - 算法｜DW分解: OROpt/OR/DWDcmp.md
       - 算法｜拉格朗日松弛: OROpt/OR/LR.md
-      - 算法｜分支定价: OROpt/OR/BranchAndPrice.md
+      - 算法｜分支定价-CSP: OROpt/OR/BranchAndPrice.md
+      - 算法｜分支定价-VRP: OROpt/OR/ExactVRPTW.md
       - 路径规划｜TOP: OROpt/OR/TOP.md
       - 路径规划｜TSP: OROpt/OR/TSP.md
       - 路径规划｜VRP: OROpt/OR/VRP.md
@@ -436,6 +437,8 @@ nav:
           - 循环神经网络: ML/DL/RNN.md
       - 深度学习｜王树森: ML/DL/DL_wss.md
       - Transformer: ML/Transformer.md
+      - Bert: ML/Bert.md
+      - SFT｜RLHF｜RAG｜LoRA: ML/LLM_app.md
   - 学习笔记:
       - Study/index.md
       - 组会与相关学术内容:
