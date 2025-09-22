@@ -43,7 +43,7 @@ hide:
         > (中文 / English / Français)。
 
     !!! success inline "晃晃悠悠～"
-        🌏 暂居北京[^6]，曾长居南京[^7]。
+        🌏 暂居南京[^6]。
 
         🐳 常年浸润在江南的朦胧与诗意中。
 
@@ -68,7 +68,7 @@ hide:
         - 2025.05.20  🎉 新增页面浏览量功能（统计始于 2025.05.20. 00:53:00）
         - 2025.05.01  🎉 更新网站部署方式。现在本站的 `gh-pages` 分支不再臃肿；
         - 2025.01.16  添加了一组谜题。美化了首页；
-        - 2024.11.27  首次加入Tag标记功能。[页面测试中](./Website/tags.md)；
+        - 2024.11.27  加入Tag标记功能。[页面测试中](./Website/tags.md)；
         - 2024.10.13  更新网站部署方式。
         - 2024.07.22  第一次文档目录结构调整与内容细化；
         - 2024.04.20  增补页面源码、提交记录跳转功能；
@@ -115,8 +115,7 @@ hide:
 [^3]: In personality typology, the **Myers–Briggs Type Indicator** (MBTI) is an introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions. It enjoys popularity despite being widely regarded as pseudoscience by the scientific community. <font face = "American Typewriter" >INFJ-T</font> means ==advocates==, former 4 letters indicates **"Introverted, iNtuitive, Feeling, Judging"**, the last T means **"Turbulent"**. (From [Wiki](https://en.wikipedia.org/wiki/Myers–Briggs_Type_Indicator) and [Source](https://psychreel.com/infj-t/)).
 [^4]: **Virgo** is the sixth astrological sign in the zodiac. Under the tropical zodiac, the Sun transits this area between August 23 and September 22 on average. (From [Wiki](https://en.wikipedia.org/wiki/Virgo_(astrology)))
 [^5]: Liberalism is a political and moral philosophy based on the rights of the individual, liberty, consent of the governed, political equality and equality before the law. (From [WiKi](https://en.wikipedia.org/wiki/Liberalism))
-[^6]: Capital of People's Republic of China (PRC). (From [Wiki](https://en.wikipedia.org/wiki/Beijing))
-[^7]: Capital of Jiangsu, a province in East China. (From [Wiki](https://en.wikipedia.org/wiki/Nanjing))
+[^6]: Capital of Jiangsu, a province in East China. (From [Wiki](https://en.wikipedia.org/wiki/Nanjing))
 
 
 <script>
