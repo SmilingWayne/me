@@ -7,19 +7,23 @@ nav:
   - ˗ˋˏᰔᩚˎˊ˗: index.md
   - 哲学:
       - Philosophy/index.md
-      - 精读系列:
-          - 规训与惩罚: Philosophy/Principles_and_punish.md
+      - 文本研究:
           - 景观社会: Philosophy/Society_of_spectacles.md
           - 西西弗神话: Philosophy/Sisyphus.md
-      - 哲学家词典:
-          - 阿尔都塞: Philosophy/Philosophers/Altusser.md
+          - 论人类不平等的起源与基础: Philosophy/Discours_linegalite.md
+          
+      - 福柯相关:
+          - 规训与惩罚: Philosophy/Principles_and_punish.md
           - 福柯: Philosophy/Philosophers/Foucault.md
-          - 福柯集: Philosophy/Philosophers/Foucault_collections.md
-          - 马尔库塞: Philosophy/Philosophers/Marcuse.md
-          - 罗兰巴特: Philosophy/Philosophers/RolandBarthes.md
-          - 德里达: Philosophy/Philosophers/Derrida.md
+          - 福柯集: Philosophy/Foucault_collections.md
+          - 访谈：权力的眼睛: Philosophy/Foucault_talks.md
+          - 话语: Philosophy/Foucault/Discours.md
+          - 权力: Philosophy/Foucault/Pouvoir.md
+          - 监狱: Philosophy/Foucault/Prison.md
+          - 真理: Philosophy/Foucault/Verite.md
+          - 谱系学: Philosophy/Foucault/Genealogie.md
 
-      - 主流意识形态:
+      - 意识形态:
           - 不怎么精美的毛选摘: Philosophy/Mao.md
           - 基础知识: Philosophy/basic.md
           - 马克思主义宗教观研究: Philosophy/Marxism_religion.md
@@ -55,7 +59,7 @@ nav:
           - 有闲阶级论: Philosophy/Leisure_class.md
           - 世界大国外交(US): Philosophy/Diplomacy_us.md
 
-      - 女性主义哲学:
+      - 女性主义:
           - 女性与社会权力系统: Philosophy/Women_social_power_sys.md
           - 女性与文学艺术: Philosophy/Women_literature_arts.md
           - 👩🏻‍⚖️性学三论: Philosophy/Sexuality_freud.md
@@ -78,7 +82,6 @@ nav:
           - 论犯罪与刑罚: Philosophy/About_crimes.md
           - 宗教生活的初级形式: Philosophy/Primal_format_of_religion_life.md
           - 西太平洋上的航海者: Philosophy/Voyagers_western_pacific_ocean.md
-          - 论人类不平等的起源与基础: Philosophy/Discours_linegalite.md
 
       - 其他:
           - 科学管理原理: Philosophy/Principles_of_sci_mgm.md
@@ -88,6 +91,10 @@ nav:
           - 亚里士多德的世界(牛津通识读本): Philosophy/World_of_aristotle.md
           - 如何阅读一本书: Philosophy/How_to_read.md
           - 我们时代的社会思考与阅读主张: Philosophy/Thoughts_in_our_time.md
+          - 阿尔都塞: Philosophy/Philosophers/Altusser.md
+          - 马尔库塞: Philosophy/Philosophers/Marcuse.md
+          - 罗兰巴特: Philosophy/Philosophers/RolandBarthes.md
+          - 德里达: Philosophy/Philosophers/Derrida.md
 
   - 文学:
       - Literature/index.md
