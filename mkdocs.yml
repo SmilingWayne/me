@@ -11,7 +11,7 @@ nav:
           - 景观社会: Philosophy/Society_of_spectacles.md
           - 西西弗神话: Philosophy/Sisyphus.md
           - 论人类不平等的起源与基础: Philosophy/Discours_linegalite.md
-          
+
       - 福柯相关:
           - 规训与惩罚: Philosophy/Principles_and_punish.md
           - 福柯: Philosophy/Philosophers/Foucault.md
@@ -400,7 +400,7 @@ nav:
       - 算法｜DW分解: OROpt/OR/DWDcmp.md
       - 算法｜拉格朗日松弛: OROpt/OR/LR.md
       - 算法｜分支定价-CSP: OROpt/OR/BranchAndPrice.md
-      - 算法｜分支定价-VRP: OROpt/OR/ExactVRPTW.md
+      - 算法｜分支定价-VRP: OROpt/OR/ExactVRP.md
       - 路径规划｜TOP: OROpt/OR/TOP.md
       - 路径规划｜TSP: OROpt/OR/TSP.md
       - 路径规划｜VRP: OROpt/OR/VRP.md
