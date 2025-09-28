@@ -1,5 +1,8 @@
 # Chat GPT - Prompt/LLama2 and so on
 
+!!! warning ""
+    2025.09.28 本部分的内容会尽快迁移至人工智能模块，目测会大范围修改并删减现有内容。
+
 > reference：[Llama 2 yyds!](https://ai.meta.com/llama/get-started/)
 
 !!! info "prompt是什么"

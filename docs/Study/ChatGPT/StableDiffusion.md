@@ -4,6 +4,8 @@
 !!! abstract "我的设备"
     - 2022年MacBook Pro，512GB + 16GB，Ventura 13.5， Apple Silicon M2
 
+    2025.09.28 本部分的内容会尽快迁移至人工智能模块。
+
 
 !!! note "参考链接"
     - [英文版：如何在Apple Silicon上安装webUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon)，理论上说这一份文档就够了，但是你需要一些前置知识，并不是零基础。不过，无论如何，都建议详细地阅读这个文档的每一个角落。他甚至告诉了你怎么查看模型运行时候的内存压力图。

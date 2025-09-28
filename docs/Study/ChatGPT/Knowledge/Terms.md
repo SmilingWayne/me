@@ -1,7 +1,7 @@
 # AI小词典
 
-
 !!! quote "感谢GPT-4在本页面编写过程中的协助"
+    2025.09.28 本部分的内容会尽快迁移至人工智能模块，目测会大范围修改并删减现有内容。
 
 - AI : Artificial Intelligence
 - AIGC: Artificial Intelligence Generated Contents AI生成内容
