@@ -439,10 +439,10 @@ nav:
           - 实用机器学习：笔记: ML/PracticalML/Notes.md
       - 推荐系统:
           - Lecture｜01: ML/RecmdSys/Lecture1.md
-      - 动手学深度学习｜笔记:
+      - 深度学习入门:
           - 卷积神经网络: ML/DL/CNN.md
           - 循环神经网络: ML/DL/RNN.md
-      - 深度学习｜王树森: ML/DL/DL_wss.md
+      - DL｜LSTM: ML/DL/LSTM.md
       - Transformer: ML/Transformer.md
       - Bert: ML/Bert.md
       - SFT｜RLHF｜RAG｜LoRA: ML/LLM_app.md

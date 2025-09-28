@@ -142,54 +142,8 @@
 ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507160200617.png)
 
 
-## LSTM 
+---
 
-类似RNN的一种循环神经网络，但是要复杂很多。RNN只有一个参数矩阵，LSTM有四个。
-
-- **传输带** （Conveyer Belt），过去的信息直接通过传输带传送到下一个时刻不会发生太大变化，LSTM就是借助传输带，**避免梯度消失的问题**。
-
-- <span style="color:red">遗忘门</span>
-
-![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507170137571.png)
-
-$f_t$ 是上一个状态 $h_{t -1}$ 和当前输入 $x_t$  的函数，具体而言是用 $W_f$ 和二者的concat做矩阵乘法得到一个向量，对这个向量做sigmoid激活函数，得到 $f_t$。其大小和状态向量$h_{t-1}$ 是相同的，每一个元素都在 (0, 1) 之间。
-
-这里**有一个遗忘门的参数矩阵 $W_f$，需要通过反向传播学习。**
-
-- <span style="color:red">输入门</span>
-
-需要计算一个输入向量 $i_t$，方式和遗忘门相同（用一个参数矩阵和concat后的状态向量+输入做矩阵乘法，然后sigmoid），**这里需要学习一个参数矩阵 $W_i$。**
-
-![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507170141978.png)
-
-- <span style="color:red">New Value 门</span>
-除了这个输入向量外还要计算一个New Value向量 $\tilde{C}_t$，这里做法同上，区别在于激活函数是 $\tanh$，这里的向量每个元素都在 $(-1, 1)$ 之间。注意了，这里**我们还需要学习一个参数矩阵 $W_c$。**
-
-![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507170144733.png)
-
-现在，我们有了前面几个环节的结果，是时候利用传送带了。如下图所示。我们利用遗忘门输出 $f_t$，前一个状态向量 $C_{t-1}$，输入门 $i_t$ 以及Value向量 $\tilde{C}_t$，更新传送带上的状态向量 $C_t$。由于我们先前保证了 $C_t$ 和 $f_t$ 以及 $i_t$ 的尺寸相同，因此可以做 Element Piecewise Multiplication.
-
-譬如 $f_t c_{t-1}$ 的结果表示在当前状态选择性地遗忘掉先前状态的东西；$i_t \tilde{c}_{t}$ 表示向传输带上添加某些新的信息。
-
-![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507170147885.png)
-
-- <span style="color:red">输出门</span>
-
-此时我们更新LSTM的输出。此时我们依然是把两部分做concat，然后**学习一个参数矩阵 $W_o$**，经过sigmoid 后输出一个输出向量 $o_t$，这个向量的大小，与传送带上涉及的若干向量都是相同的。
-
-
-![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507170154777.png)
-
-这个时候我们需要更新状态向量 $h_t$，对于传送带上的信息 $C_t$，做 $\tanh$ 之后与输出向量做Element Piecewise Multiplication即可。这里的 $h_t$ 既作为下一个状态的状态向量，又可以作为当前的输出结果，因此做2个copy。
-
-
-![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202507170157630.png)
-
-
-
-综上所述，这里的参数量由4个参数矩阵构成，分别属于：**遗忘门、输入门、新值门、输出门**。每个参数矩阵的参数规模 shape(h) $\times$ [shape(h) + shape(x)]，总参数规模 4 $\times$ shape(h) $\times$ [shape(h) + shape(x)]
-
-<span style="color:red">总而言之，LSTM通过一个传送带，让过去信息容易传输到下一时刻，实现了比RNN更好的长期记忆。</span>
 
 ## 提升RNN的若干技巧
 
