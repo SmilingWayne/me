@@ -7,6 +7,7 @@ nav:
   - ˗ˋˏᰔᩚˎˊ˗: index.md
   - 哲学:
       - Philosophy/index.md
+      - 哲学词典: Philosophy/Dict.md
       - 文本研究:
           - 景观社会: Philosophy/Society_of_spectacles.md
           - 西西弗神话: Philosophy/Sisyphus.md
@@ -16,7 +17,7 @@ nav:
           - 规训与惩罚: Philosophy/Principles_and_punish.md
           - 福柯: Philosophy/Philosophers/Foucault.md
           - 福柯集: Philosophy/Foucault_collections.md
-          - 访谈：权力的眼睛: Philosophy/Foucault_talks.md
+          - 福柯访谈: Philosophy/Foucault_talks.md
           - 话语: Philosophy/Foucault/Discours.md
           - 权力: Philosophy/Foucault/Pouvoir.md
           - 监狱: Philosophy/Foucault/Prison.md
