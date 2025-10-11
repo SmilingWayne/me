@@ -11,13 +11,14 @@ nav:
       - 文本研究:
           - 景观社会: Philosophy/Society_of_spectacles.md
           - 西西弗神话: Philosophy/Sisyphus.md
+          - 布尔迪厄: Philosophy/Philosophers/Bourdieu.md
           - 论人类不平等的起源与基础: Philosophy/Discours_linegalite.md
 
       - 福柯相关:
           - 规训与惩罚: Philosophy/Principles_and_punish.md
           - 福柯: Philosophy/Philosophers/Foucault.md
-          - 福柯集: Philosophy/Foucault_collections.md
-          - 福柯访谈: Philosophy/Foucault_talks.md
+          - 福柯集: Philosophy/Foucault/Foucault_collections.md
+          - 福柯访谈: Philosophy/Foucault/Foucault_talks.md
           - 话语: Philosophy/Foucault/Discours.md
           - 权力: Philosophy/Foucault/Pouvoir.md
           - 监狱: Philosophy/Foucault/Prison.md
