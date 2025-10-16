@@ -128,3 +128,46 @@ $\bar z \geq z^{*} \geq  \bar z - \hat z$
 !!! quote "来自GPT：核心逻辑一句话"
 
     在每轮迭代里，RMP 给出“当前组合最好怎么配”，CGSP 负责问“还存不存在一列能让目标再降一点？”——二者循环，直到回答是“没有”，这时 列生成 完成，得到原 LP 的最优解与严格界。
+
+
+## 代码实战
+
+这是个很经典的算法，可以用来解很经典的问题。一个典型的例子是 **[多商品网络流问题](./Chapter7_5.md)**。
+
+在[这个Github Repo](https://github.com/yuzhenfeng2002/Multi-Commodity-Network-Flow/) 能找到一份实现得相当优雅的代码，详细解释了DW分解是如何对多商品网络流问题进行分解的，为什么子问题是一个类似最短路的问题，并且用 Gurobi 进行了求解。
+
+
+摘抄了一部分原作者的算法如下。简单（详细）介绍了用 DW 分解解决多商品网络流的流程。为了方便将数学模型和代码里的实现对比起来看，下面使用的标记会略微冗长，这是为了方便初学和复习时候快速理解。如果单纯想要了解模型，移步 **[多商品网络流问题](./Chapter7_5.md)** 这个笔记。
+
+这是一个多商品流问题，每一个OD对代表着一个商品。定义网络$G(N,A)$，其中$N$为所有点的集合（代表着交叉口)，$A$ 为所有边的集合（往往代表着连接各个交叉口的路段），每条路段上的通行成本为 $t_{ij}$、最大通行容量为 $c_{ij}$，其中 $(i,j)\in A$。给定网络上需求的集合 $W$，该集合中的每一个元素 $w\in W$代表着一个起点 $o\in N$和终点$d\in N$ 对$(o,d)$；每一个OD对间有需求$\lambda_{w}$，用户可以选择的路径集合为$R_{w}$。
+
+定义决策变量$f_{ij}^{w}$，$(i,j)\in A$，$w\in W$，为OD对$w$在边$(i,j)$上的流量。上述问题可以建模为以下模型：
+
+\[
+\begin{aligned}
+ \min &  \sum_{w\in W}\sum_{(i,j)\in A}t_{ij}f_{ij}^{w} \quad{(1)} \\
+\text{ s.t.}\sum_{w\in W}f_{ij}^{w} & \leqslant c_{ij},\forall(i, j)\in A \quad{(2)} \\
+ \sum_{(o, j)\in A}f_{oj}^{w} & =\lambda_{w},\forall w=(o, d)\in W \quad{(3)}\\
+ \sum_{(i, d)\in A}f_{id}^{w} & =\lambda_{w},\forall w=(o, d)\in W \quad{(4)} \\
+ \sum_{(i, n)\in A}f_{in}^{w}-\sum_{(n, j)\in A}f_{n, j}^{w}& =0,\forall n\in N-\{o, d\}, w=(o, d)\in W \quad{(5)} \\ 
+ f_{ij}^{w}& \geqslant 0,\forall(i, j)\in A,w\in W \quad{(6)}
+\end{aligned}
+\]
+
+
+为找到一个初始可行解开始迭代，我们采用大M方法，定义$M$为一个足够大的常数，且为每条路段$(i,j)\in A$定义一个松弛变量$s_{ij}$和一个人工变量$a_{ij}$。模型变为：
+
+\[
+\begin{aligned}
+&\min \sum_{w\in W}\sum_{(i,j)\in A}t_{ij}f_{ij}^{w}+M a_{ij} \quad \text{(7)} \\
+&\text{s.t.} \quad \sum_{w\in W}f_{ij}^{w}+s_{ij}-a_{ij}=c_{ij}, \quad \forall(i, j)\in A \quad \text{(8)} \\
+&\quad \sum_{(o, j)\in A}f_{oj}^{w}=\lambda_{w}, \quad \forall w=(o, d)\in W \quad \text{(9)} \\
+&\quad \sum_{(i, d)\in A}f_{id}^{w}=\lambda_{w}, \quad \forall w=(o, d)\in W \quad \text{(10)} \\
+&\quad \sum_{(i, n)\in A}f_{in}^{w}-\sum_{(n, j)\in A}f_{n, j}^{w}=0, \quad \forall n\in N-\{o, d\}, w=(o, d)\in W \quad \text{(11)} \\
+&\quad f_{ij}^{w}\geqslant 0, \quad \forall(i, j)\in A,w\in W \quad \text{(12)} \\
+&\quad s_{ij}, a_{ij}\geqslant 0, \quad \forall(i, j)\in A \quad \text{(13)}
+\end{aligned}
+\]
+
+其中，目标函数（7）添加了对于人工变量$a_{ij}$，$(i, j)\in A$的惩罚项；约束（8）通过松弛变量$s_{ij}$，$(i, j)\in A$变为了等式，同时增加了人工变量$a_{ij}$，$(i, j)\in A$；约束（9）-（12）保持不变；约束（13）为松弛变量和人工变量的定义域。
+
