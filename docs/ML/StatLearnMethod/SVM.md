@@ -186,6 +186,7 @@ L = \frac{1}{2} \|w\|^2 + C \sum \xi_i - \sum \alpha_i y_i w^T x_i - \sum \alpha
 $$
 
 我们逐项简化：
+
 *   $\frac{1}{2} \|w\|^2 = \frac{1}{2} w^T w = \frac{1}{2} \left(\sum_i \alpha_i y_i x_i\right)^T \left(\sum_j \alpha_j y_j x_j\right) = \frac{1}{2} \sum_i \sum_j \alpha_i \alpha_j y_i y_j (x_i^T x_j)$
 *   $\sum \alpha_i y_i w^T x_i = w^T \sum \alpha_i y_i x_i = w^T w = \|w\|^2$
 *   $\sum \alpha_i y_i b = b \sum \alpha_i y_i = b \cdot 0 = 0$ (根据式(4))
@@ -206,6 +207,7 @@ $$
 现在我们得到了只关于 $\alpha$ 的表达式。对偶问题就是最大化这个表达式，并附加上我们在推导中得到的约束。
 
 **最大化目标：**
+
 $$
 \max_{\alpha} \quad W(\alpha) = \sum_{i=1}^{N} \alpha_i - \frac{1}{2} \sum_{i=1}^{N} \sum_{j=1}^{N} \alpha_i \alpha_j y_i y_j (x_i^T x_j)
 $$
@@ -236,6 +238,7 @@ $$
 ### 补充：SVM 下的 KKT条件及其含义
 
 对于这个优化问题，其 KKT (Karush-Kuhn-Tucker) 条件给出了最优解必须满足的一系列性质，这也揭示了“支持向量”的本质。KKT 条件包括：
+
 1.  **主问题可行性**: $y_i(w^T x_i + b) \ge 1 - \xi_i$ 和 $\xi_i \ge 0$
 2.  **对偶问题可行性**: $\alpha_i \ge 0, \mu_i \ge 0$
 3.  **互补松弛条件 (Complementary Slackness)**:
@@ -320,6 +323,7 @@ $$
 **核函数 $K(x_i, x_j)$ 是一个函数，它接收两个在原始低维空间中的向量 $x_i, x_j$，并能直接计算出它们经过高维映射 $\phi$ 后的内积结果。**
 
 数学表示为：
+
 $$
 K(x_i, x_j) = \langle \phi(x_i), \phi(x_j) \rangle = \phi(x_i)^T \phi(x_j)
 $$
@@ -424,11 +428,13 @@ $$
 硬间隔SVM的目标是找到一个最大间隔超平面，同时**要求所有样本点都被完美地、严格地分开**，不允许任何一个点进入间隔区，更不允许被错分。
 
 **最小化目标：**
+
 $$
 \min_{w, b} \quad \frac{1}{2} \|w\|^2
 $$
 
 **约束条件：**
+
 $$
 \text{s.t.} \quad y_i(w^T x_i + b) \ge 1, \quad i=1, ..., N
 $$
@@ -594,16 +600,19 @@ $$
     我们先把 $K(x_i, x_j)$ 完全用低维向量的分量 $a, b$ 来表示。
 
     1.  **计算内积 $x_i^T x_j$**:
+        
         $$
         x_i^T x_j = a_i a_j + b_i b_j
         $$
 
     2.  **对内积进行平方**:
+        
         $$
         K(x_i, x_j) = (x_i^T x_j)^2 = (a_i a_j + b_i b_j)^2
         $$
 
     3.  **利用初中数学的完全平方公式 $(p+q)^2 = p^2 + 2pq + q^2$ 将其展开**:
+        
         $$
         (a_i a_j + b_i b_j)^2 = (a_i a_j)^2 + 2(a_i a_j)(b_i b_j) + (b_i b_j)^2
         $$
@@ -618,6 +627,7 @@ $$
     现在我们得到了一个展开的多项式。核技巧的定义是 $K(x_i, x_j) = \phi(x_i)^T \phi(x_j)$。这意味着，我们上面得到的这个多项式，**必然可以被写成两个高维向量 $\phi(x_i)$ 和 $\phi(x_j)$ 的内积形式**。我们在SVM里不需要知道它是什么，只需用低维的结果带进去算就可以了，但是在这里多算一下：
 
     让我们来寻找这个形式。一个内积的形式是：
+    
     $$
     \phi(x_i)^T \phi(x_j) = (\text{第1分量}_i \cdot \text{第1分量}_j) + (\text{第2分量}_i \cdot \text{第2分量}_j) + \dots
     $$
@@ -637,6 +647,7 @@ $$
     如果 $x = (a, b)$，那么 $\phi(x) = (a^2, \sqrt{2} ab, b^2)$。
 
 我们来验证一下：
+
 $$
 \begin{align*}
 \phi(x_i)^T \phi(x_j) &= (a_i^2, \sqrt{2}a_ib_i, b_i^2) \cdot (a_j^2, \sqrt{2}a_jb_j, b_j^2) \\
@@ -646,6 +657,7 @@ $$
 &= K(x_i, x_j)
 \end{align*}
 $$
+
 验证成功！现在我们用这个“笨办法”来计算一遍：
 
 1.  **将 $x_1$ 和 $x_2$ 映射到高维空间**:

@@ -6,7 +6,7 @@
 
 2024年新开辟板块。正在缓慢而有序（？）地更新一些机器学习基础、深度学习基础、大模型相关的知识点等，当作一次整合。==特别感谢 Gemini 2.5 Pro. 它对这部分笔记的几乎全部内容都做出了无可替代的贡献==。
 
-同时感谢所有该板块下相关领域的知识分享者。**这些互联网时代的普罗米修斯一次次告诉我：“知识的圣火是永不熄灭的。”**
+同时感谢所有该板块下我参考过的知识分享者们。**这些互联网时代的普罗米修斯一次次告诉我：“知识的圣火是永不熄灭的。”**
 
 目前正在进行的板块：
 
@@ -22,9 +22,10 @@
     - [x] ==降维==: [t-SNE](./StatLearnMethod/t-SNE.md),
     - [x] ==分解==: [SVD, PCA](./StatLearnMethod/SVD.md).
     - [ ] ==贝叶斯==: [Naive Bayesian](./StatLearnMethod/NaiveBayesian.md).
-- [ ] 在大模型帮助下整理（中）的大模型相关：
+- [ ] 在大模型帮助下整理（中）的大模型 / 自然语言处理相关：
     - [ ] [基础扫盲](./LLM_app.md)，SFT, RAG, PPO (🐌  ... )
-    - [ ] [Transformer 大作战之变形金刚](./Transformer.md): Encoder-Decoder, Positional Encoding (RoPE), Multi Head Attention (MHA), Cross Attention (and lots of Attention!), Feed Forward Network (FFN), Skip Connection (Residual) ... Voila! $Q, K, V$ matter!
+    - [ ] [Bert](./Bert.md).
+    - [ ] [Transformer 大作战之变形金刚](./Transformer.md): Architecture, Positional Encoding (RoPE), [Attention](./Attention.md), Feed Forward Network (FFN), Skip Connection (Residual) ... Voila! $Q, K, V$ matter!
 - [ ] 王树森[《推荐系统公开课》](https://www.bilibili.com/video/BV1HZ421U77y)，争取不让它在 2025 年烂尾。
 - [ ] 王树森[《深度学习》](./DL/DL_wss.md): 争取不让它在 2025年烂尾。
 

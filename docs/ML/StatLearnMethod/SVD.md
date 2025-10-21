@@ -237,7 +237,9 @@ SVD的数值算法会隐式地选择计算代价更小的方式进行。
 
 **矩阵运算**：
 在SVD方法中，我们有一个非常高效的捷径。降维后的数据（主成分得分）可以直接由 $\mathbf{U}$ 和 $\Sigma$ 计算得到：
-$$ \mathbf{Z} = \mathbf{U}_k \Sigma_k $$
+
+$$\mathbf{Z} = \mathbf{U}_k \Sigma_k$$
+
 其中 $\mathbf{U}_k$ 是 $\mathbf{U}$ 的前 $k$ 列，$\Sigma_k$ 是 $\Sigma$ 左上角的 $k \times k$ 对角矩阵。
 
 *   **运算**: 一个 $n \times k$ 的矩阵 $\mathbf{U}_k$ 与一个 $k \times k$ 的对角矩阵 $\Sigma_k$ 相乘。这等价于将 $\mathbf{U}_k$ 的每一列分别乘以 $\Sigma_k$ 的对角线元素（即奇异值 $\sigma_1, \sigma_2, ..., \sigma_k$）。
@@ -257,7 +259,8 @@ $$ \mathbf{Z} = \mathbf{U}_k \Sigma_k $$
 | **步骤 3** | 计算降维数据 | In: $U(n \times k)$, $\Sigma(k \times k)$ <br> Out: $n \times k$                  | $O(nk)$               |
 
 **总复杂度**:
-$$ O(nm) + O(\min(n^2m, nm^2)) + O(nk) $$
+
+$$O(nm) + O(\min(n^2m, nm^2)) + O(nk)$$
 
 在典型的机器学习场景中，$k$（目标维度）远小于 $n$ 和 $m$。因此，SVD分解步骤的计算量是压倒性的瓶颈。
 

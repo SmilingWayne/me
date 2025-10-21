@@ -420,6 +420,7 @@ nav:
       - ML/index.md
       - 机器学习基础:
           - 感知机: ML/StatLearnMethod/Perceptron.md
+          - 多层感知机: ML/StatLearnMethod/MLP.md
           - Bias｜Variance: ML/StatLearnMethod/Bias_Variance.md
           - ROC｜AUC｜PR｜F1 等指标: ML/StatLearnMethod/AUC.md
           - K近邻算法: ML/StatLearnMethod/KNN.md
@@ -446,11 +447,13 @@ nav:
           - 卷积神经网络: ML/DL/CNN.md
           - 循环神经网络: ML/DL/RNN.md
       - DL｜LSTM: ML/DL/LSTM.md
-      - Transformer: ML/Transformer.md
+      - Transformer｜架构: ML/Transformer.md
+      - Transformer｜深入: ML/Transformer_2.md
       - Bert: ML/Bert.md
       - SFT｜RLHF｜RAG｜LoRA: ML/LLM_app.md
+      - GPT: ML/GPT.md
       - 激活函数: ML/ActFun.md
-      - 注意力机制的拓展: ML/Attention.md
+      - 注意力机制及拓展: ML/Attention.md
       - Code: ML/ML_code.md
   - 学习笔记:
       - Study/index.md

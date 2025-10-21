@@ -121,9 +121,8 @@ $$H(P_i) = - \sum_{j \neq i} p_{j|i} \log_2 p_{j|i}$$
 
 -   我们将高维点 $\mathbf{x}_i$ 映射到低维空间（比如2维）得到 $\mathbf{y}_i, \mathbf{y}_2, ..., \mathbf{y}_n \in \mathbb{R}^2$。这些低维点的初始位置是随机的。
 -   **关键创新**：t-SNE 在低维空间中使用自由度为1的 **t-分布 (Student's t-distribution)** 来衡量相似度。t-分布有一个“重尾巴”的特性。
-    $$
-    q_{ij} = \frac{(1 + ||\mathbf{y}_i - \mathbf{y}_j||^2)^{-1}}{\sum_{k \neq l} (1 + ||\mathbf{y}_k - \mathbf{y}_l||^2)^{-1}}
-    $$
+    
+    $$q_{ij} = \frac{(1 + ||\mathbf{y}_i - \mathbf{y}_j||^2)^{-1}}{\sum_{k \neq l} (1 + ||\mathbf{y}_k - \mathbf{y}_l||^2)^{-1}}$$
 
 !!! quote "为什么用t-分布？"
     这正是为了解决拥挤问题。
