@@ -411,6 +411,7 @@ nav:
       - 生产｜批量生产 (LSP): OROpt/OR/LotSizingProblem.md
       - 调度｜车间调度 (JSP): OROpt/OR/JSP.md
       - 调度｜发电机组调度(UCP): OROpt/OR/UnitCommitmentProblem.md
+      - 其他｜理论知识: OROpt/OR/Interview.md
       - 图划分问题｜GP: OROpt/OR/GraphPartition.md
       - 航班分配｜FAP: OROpt/OR/FAP.md
       - 机组排班｜CAP: OROpt/OR/CrewSch.md

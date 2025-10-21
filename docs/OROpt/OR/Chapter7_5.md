@@ -108,6 +108,7 @@ $$
 $$
 
 **约束条件:**
+
 $$
 \begin{align*}
 & \sum_{p \in P^k} f_p = d^k && \forall k \in K \quad &(6) \\
@@ -181,6 +182,7 @@ $$
 $$
 
 **约束条件:**
+
 $$
 \begin{align*}
 & x_{0j} = \sum_{k=1}^{K} x_{kj} && j=1, \dots, n \quad &(1) \\
