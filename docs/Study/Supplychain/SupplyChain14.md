@@ -44,6 +44,7 @@ $$O(c-s)NORMDIST(O,\mu, \sigma, 1) + O(p-c)[1 - NORMDIST(O, \mu, \sigma, 1)]$$
 $$(o - \mu)F_s(\dfrac{O  -\mu}{\sigma} )+ \sigma f_s\dfrac{O - \mu}{\sigma} \tag{4}$$
 
 - Excel表示为：
+
 $$(O - \mu)NORMDIST \left[ (O-\mu)/\sigma,0,1,1\right] + \\ \sigma NORMDIST \left[(O-\mu)/\sigma,0,1,0\right]$$
 
 - 销售季节结束时预期库存不足量：
@@ -53,6 +54,7 @@ $$(\mu-O)\left[ 1 - F_s\dfrac{O - \mu}{\sigma} \right] + \sigma f_s(\dfrac{O - \
 - Excel 表示：
 
 $$(\mu - O)\{ 1 - NORMDIST \left[(O-\mu)/\sigma, 0,1,1 \right]\} \\ + \sigma NORMDIST \left[(O-\mu)/\sigma, 0,1,0 \right]$$
+
 ## 案例
 
 - S Store正在考虑冬季销售多少套滑雪板。根据推测，需求服从正态分布，均值$\mu$ = 350，标准差$\sigma$ = 100。每个滑雪板的成本 $c =100$美元，零售价 $p = 250$ 美元，销售季节结束时，所有未售出的滑雪板将以85美元的价格处理掉。假设在销售季节每个滑雪板的库存持有成本为5美元，商店经理想要最大化预期利润，应该订购多少滑雪板？
