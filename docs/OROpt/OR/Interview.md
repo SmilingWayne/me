@@ -50,7 +50,7 @@
 
 ==**NP-Hard 问题 (NPH)**==
 
-**NP-Hard 问题** 是指那些**至少和任何 NP 问题一样难**的问题。对于一个优化问题，如果它对应的决策问题是NP- Complete的，那么这个优化就是NP-complete的
+**NP-Hard 问题** 是指那些**至少和任何 NP 问题一样难**的问题。对于一个优化问题，如果它对应的决策问题是NP- Complete的，那么这个优化就是NP-hard的.
 
 > An optimization problem is NP-hard if the corresponding decision problem is NP -complete
 
@@ -132,7 +132,7 @@ $ x = \theta_1 x_1 + \theta_2 x_2 + \dots + \theta_k x_k $
 
 一个定义在凸集 $S$ 上的函数 $f$ 是凸函数，如果对于 $S$ 中的任意两点 $x_1, x_2$ 和任意 $0 \le \theta \le 1$，都满足以下不等式（这被称为**琴生不等式 Jensen's Inequality**）：
 
-$ f(\theta x_1 + (1-\theta) x_2) \le \theta f(x_1) + (1-\theta) f(x_2) $
+$f(\theta x_1 + (1-\theta) x_2) \le \theta f(x_1) + (1-\theta) f(x_2)$
 
 *   **左边 $f(\theta x_1 + (1-\theta) x_2)$**：代表位于 $x_1$ 和 $x_2$ 之间线段上某一点 $\tilde{x} = \theta x_1 + (1-\theta) x_2$ 处的**函数值**（在函数曲线上）。
 *   **右边 $\theta f(x_1) + (1-\theta) f(x_2)$**：代表点 $(x_1, f(x_1))$ 和点 $(x_2, f(x_2))$ 连接的**弦**上对应位置的值。
