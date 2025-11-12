@@ -743,6 +743,7 @@ plugins:
       exclude:
         - index.md
       enabled: true
+      show_email_address: false
   - git-revision-date-localized:
       type: datetime
       custom_format: "%d %B %Y"
