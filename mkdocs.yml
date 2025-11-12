@@ -191,6 +191,7 @@ nav:
           - 澡堂与片场: Literature/Essay/Bath_house.md
           - 往事与随想: Literature/Essay/Memory_thoughts.md
           - 送你一颗子弹: Literature/Essay/Give_you_a_bullet.md
+          - 河流的秘密: Literature/Essay/Secret_of_river.md
           - 中国文学常识: Literature/Essay/Literature_knowledge.md
           - 一个人的村庄: Literature/Essay/Countryside_of_one.md
           - 博尔赫斯谈话录: Literature/Essay/Borges.md
@@ -598,7 +599,11 @@ nav:
       - 工程管理类论文写作: Study/MEMEssay/Class1.md
       - 基础工业工程:
           - 质量控制 I: Study/BasicIE/Quality.md
-          - 田口方法: Study/BasicIE/Taguchi.md
+          - 质量控制 II: Study/BasicIE/Quality_1.md
+          - 质量控制 III: Study/BasicIE/Quality_2.md
+          - 质量控制 IV: Study/BasicIE/Taguchi.md
+          - 人因工程 I: Study/BasicIE/HumanFactor_1.md
+          - 基础工业工程 I: Study/BasicIE/IE_docs_1.md
       - 发展经济学:
           - 重点提纲: Study/DevelopEco/chapter1.md
       - 国际贸易: Study/IntTrad/InternationalTrade.md
