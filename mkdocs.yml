@@ -42,7 +42,6 @@ nav:
           - 金色传说: Philosophy/Golden_legend.md
           - 世界宗教: Philosophy/World_religion.md
           - 犹太人与犹太教(牛津通识读本): Philosophy/Jews.md
-          - 相似之书: Philosophy/Book_of_resemblance.md
           - 我理解的伊斯兰教: Philosophy/Religion_culture.md
 
       - 政治哲学:
@@ -555,7 +554,6 @@ nav:
       - 概率论:
           - 概率论基础: Study/Statistics/Basics.md
           - 题目汇总: Study/Statistics/Quizes.md
-          #   - 统计学基础: Study/Statistics/Statistics_method.md
           - 随机变量: Study/Statistics/Random_Variables.md
           - 随机变量的数字特征: Study/Statistics/Number_characters.md
           - 大数定律和中心极限定理: Study/Statistics/Big_number.md
