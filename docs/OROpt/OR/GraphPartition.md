@@ -18,6 +18,7 @@
 
 ## 边分割（Edge Partition）
 
+
 ### Bg & Motivation
 
 **大规模图处理问题**
@@ -33,6 +34,10 @@
     可以参考：[Links](https://randall.math.gatech.edu/AlgsF05/nov7.pdf)
 
     ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202503041646230.png)
+
+### 数学模型
+
+可以参考这个 Tighten 的模型：`A strong formulation for the graph partition problem. Sunil Chopra, Sangho Shim.  https://doi.org/10.1002/net.21916`
 
 ### 边分割的优势
 
@@ -153,7 +158,6 @@ DBH的做法是，考虑新入的边 (i,j) 的两个节点 i 和 j，分别的�
 进来第五个 $(2,3)$，3 的度更小， $\{ (1,2), (1,4), (2, 4)\}, \{(1,3), (2,3)\}$；此时 1,2,4 映射到 集合 3映射到集合 2
 
 ----
-
 
 
 ### Greedy动态图划分算法
@@ -310,8 +314,74 @@ $$p^* = \arg\max_p \left[ C_{\text{REP}}^{\text{HDRF}}(v_i, v_j, p) + C_{\text{B
 
 -------
 
-
 ## 点分割（Vertex Partition）
+
+不同于前一部分侧重启发式算法，这里会先把点分割建模成一个优化问题。可以参考这个 Paper：`Nguyen, D. P., Minoux, M., Nguyen, V. H., Nguyen, T. H., & Sirdey, R. (2017). Improved compact formulations for a wide class of graph partitioning problems in sparse graphs. Discrete Optimization, 25, 175-188.`
+
+**带集合约束的图划分问题**（GPP-SC）可一般定义如下。给定一个无向连通图 $G=(V,E)$，其中 $V=\{1,\ldots,n\}$，$|E|=m$，且每条边 $e\in E$ 关联一个长度 $l_{e}\in \mathbb{Z}_{+}$，需将顶点集 $V$ 划分为不相交的集合（或簇），满足以下条件：
+
+- 每个簇 $C\subset V$ 满足形式为  $\mathcal{G}(y^{C})\leq 0$ 的约束，其中 $y^{C}$ 是 $C$在 $\{0,1\}^{n}$ 中的关联向量，$\mathcal{G}:\{0,1\}^{n}\rightarrow \mathbb{R}$ 是一个给定的单调非递减伪布尔函数（注意，$\mathcal{G}$也可视为一个集合函数：$\mathcal{P}(V)\rightarrow \mathbb{R}$，它将实数值$\mathcal{G}(y^{C})$ 与每个子集 $C\subset V$ 关联）。这一段看起来很抽象，可以参考下面的解释。
+- 连接不同簇的边的长度总和最小化。
+
+
+
+1.  **背包约束下的图划分问题（GPKC）**：当每个簇$C$需要满足==节点权重约束 $\sum_{v\in C}w_{v}\leq W$ ==，其中 $w_{v}$（对于所有 $v\in V$ ）是给定的非负节点权重，$W$是簇的总节点权重上限。这对应于考虑线性约束$\mathcal{G}(y^{C})\leq 0$，其中$\mathcal{G}$ 是由 $\sum_{v\in V}w_{v}y_{v}^{C}-W\leq 0$ 定义的非递减伪布尔函数。注意，GPP-SC 的这一特例是 Garey 和 Johnson 书中定义的经典图划分问题版本，已知是 NP-Hard 的。在本文中，我们将此特例称为背包约束下的图划分问题。
+
+2.  **容量约束下的图划分问题（GPCC）**：当每个簇$C$受限于形式为$\mathcal{G}(y^{C})\leq 0$的约束，其中$\mathcal{G}$是一个给定的非递减二次伪布尔函数$\{0,1\}^{n}\rightarrow \mathbb{R}$，定义如下：
+
+$$
+\mathcal{G}(y^{C})=\sum_{(u,v)\in E}t_{uv}(y_{u}^{C}+y_{v}^{C}-y_{u}^{C}y_{v}^{C})-T\leq 0
+$$
+
+对于给定的 $t_{uv}\in \mathbb{R}_{+}$（对所有 $(u,v)\in E$）和正常数 $T$。如果将 $t_{uv}$  视为边 $(u,v)$ 的容量，则 $\sum_{(u,v)\in E}t_{uv}(y_{u}^{C}+y_{v}^{C}-y_{u}^{C}y_{v}^{C})$ 表示至少有一个端点在簇 $C$ 中的边的总容量。该约束将此容量限制为常数 $T$。
+
+### 基本0/1规划模型
+
+后面的内容我们不考虑容量约束。
+
+我们为所有节点对 $u,v\in V,u<v$ ， 引入 $\frac{n(n-1)}{2}$ 个二进制变量 $x_{uv}$ ，使得
+
+$$
+x_{uv}=\begin{cases}0&\text{若 }u\text{ 和 }v\text{ 属于同一簇},\\1&\text{否则}.\end{cases}
+$$
+
+三角不等式与二进制约束常被用于定义图 $G$ 的划分。记 $\mathcal{T}$ 为 $V$ 中所有满足 $u<v<w$ 的节点三元组 $(u,v,w)$ 的集合， $E_{n}$ 为 $V$ 中所有有序节点对的集合（即 $|E_{n}|=\frac{n(n-1)}{2}$ ），这些约束可以写为：
+
+$$
+\begin{cases}\forall(u,v,w)\in\mathcal{T}\\\ x_{uv}+x_{uw}\geq x_{vw}\\ x_{uv}+x_{vw}\geq x_{uw}\\ x_{vw}+x_{uw}\geq x_{uv}\\ x_{uv}\in\{0,1\}\quad\forall(u,v)\in E_{n}.\end{cases}\qquad(1)
+$$
+
+系统 (I) 中三角不等式的数量为 $3\binom{n}{3}$ ，无论 $m$ 的值如何。可以证明，该问题的线性规划松弛完全刻画了 $V$ 的所有可能划分的关联向量的凸包，即所有解向量。
+
+
+对于每个节点 $u \in V$ 和包含 u 的簇 C，关联向量 $y^{C}$ 也就等于 n 维的向量 $1 - \chi^{u}$，其中，$\chi^{u}$ 可以被定义为如下：
+
+$$\chi_{v}^{u} = x_{|uv|} = \begin{cases} x_{uv} & \text{if } u < v, \\ x_{vu} & \text{if } u > v, \forall v \in V. \\ 0 & \text{if } u = v, \end{cases}$$
+
+现在，解中每个簇 C 需要满足的约束 $\mathcal{G}(y^{C}) \leq 0$ 可以等价地重新表述为 n 个单独的约束 $\mathcal{G}(\mathbb{1} - \chi^{u}) \leq 0$，对于所有 $u \in V$。记 $g_{u}(x) = \mathcal{G}(\mathbb{1} - \chi^{u}) $，对于所有 $u \in V$，GPP-SC 的 Node-Node 模型为：
+
+$$\text{ (IP) } \left\{ \begin{aligned} \min & \sum_{(u, v) \in E} l_{uv} x_{uv} \\ \text{s.t.} & \quad \forall (u, v, w) \in \mathcal{T} \\ & x_{uv} + x_{uw} \geq x_{vw} \\ & x_{uv} + x_{vw} \geq x_{uw} \\ & x_{vw} + x_{uw} \geq x_{uv} \\ & g_{u}(x) \leq 0 & \forall u \in V \\ & x_{uv} \in \{0, 1\} & (u, v) \in E_{n}. \end{aligned} \right. \qquad (1)$$
+
+注意，假设 $\mathcal{G}$ 关于 $y^{C}$ 非递减意味着每个伪布尔函数 $g_{u} : \{0,1\}^{n} \to R_{+}$ 关于 x 应该是非递增的（注意 $g_{u}$ 实际上只依赖于变量子集 $x_{ij}$，其中 $i = u$ 或 $j = u$）。令 $(\overline{\text{IP}})$ 表示 (IP) 的连续松弛。该模型有 $O(n^{2})$ 个变量和 $O(n^{3})$ 个约束。
+
+### 改进0/1规划模型
+
+**对于稀疏图的情况，三角不等式的数量可以显著减少，同时保持模型的等价性**。==思路是仅考虑那些至少有一对节点在 $E$ 中形成边的三元组，而不是考虑所有 $\mathcal{T}$ 中的三元组==。具体地，令 $\mathcal{T}^{\prime}$ 表示这些三元组的集合，即 $\mathcal{T}^{\prime}=\{(u, v, w) : u<v<w\in V \text{ 且至少有一条边 } (u, v),(u, w) \text{ 或 } (v, w)\in E\}$。然后，通过仅对 $\mathcal{T}^{\prime}$ 中的三元组表达三角不等式，从 (IP) 得到简化规划模型如下：
+
+$$\begin{array}{l}
+\text{ (RIP) }\left\{\begin{array}{ll}
+\min &\sum_{(u, v)\in E}l_{uv}x_{uv}\\
+\text {s.t.}&\forall(u, v,w)\in\mathcal{T}^{\prime}\\
+& x_{uv}+x_{uw}\geq x_{vw}\\
+& x_{uv}+x_{vw}\geq x_{uw}\\
+& x_{vw}+x_{uw}\geq x_{uv}\\
+& g_{u}(x)\leq 0\quad\forall u\in V\\
+& x_{uv}\in\{0,1\}\quad(u, v)\in E\\
+& x_{uv}\in[0,1]\quad(u, v)\in E_{n}\setminus E.
+\end{array}\right.
+\end{array}$$
+
+显然，$|\mathcal{T}^{\prime}|\leq m(n-2)$，因此 (RIP) 中三角不等式的数量最多为 $3m(n-2)$。(RIP) 的连续松弛记为 $(\overline{\mathrm{RIP}})$。由于三角不等式的减少，当应用于稀疏图时，$(\overline{\mathrm{RIP}})$ 对于 LP 求解器显然比 $(\overline{\mathrm{IP}})$ 更有利。
 
 
 
