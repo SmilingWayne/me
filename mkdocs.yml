@@ -254,6 +254,8 @@ nav:
           - 🇯🇵春雪: Literature/Novel/Spring_snow.md
           - 🇯🇵奔马: Literature/Novel/Benma.md
           - 🇯🇵晓寺: Literature/Novel/Xiaosi.md
+          - 🇯🇵绝叫: Literature/Novel/Juejiao.md
+          - 🇯🇵情书: Literature/Novel/Loves_letter.md
           - 🇯🇵天人五衰: Literature/Novel/Tianrenwushuai.md
           - 🇯🇵仲夏之死: Literature/Novel/Death_of_summer.md
           - 🇯🇵金阁寺: Literature/Novel/Jinge.md
@@ -606,8 +608,8 @@ nav:
           - 重点提纲: Study/DevelopEco/chapter1.md
       - 国际贸易: Study/IntTrad/InternationalTrade.md
       - 管理学:
-          - 管理学导论: Study/Management/Management.md
-          - 重点: Study/Management/Remain.md
+          - 管理学与领导力(Master): Study/Management/Mgm_leadership.md
+          - 管理学(Bachelor): Study/Management/Remain.md
       - VScode技巧: Study/Vscode/keys.md
       - 人工智能工具们:
           - 安装: Study/ChatGPT/Register.md
