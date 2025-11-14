@@ -1,7 +1,8 @@
-
 # 中美洲艺术
 
-!!! Abstract
+!!! warning "被列为待补充。"
+
+!!! Abstract ""
     玛雅人
 
     阿兹特克 
