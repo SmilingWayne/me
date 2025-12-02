@@ -593,6 +593,7 @@ nav:
       - 研究生课程：物流优化算法: Study/IntelligentLogistics/LogisticsAlgorithm.md
       - 暑期学校-智能决策与算法: Study/fleet.md
       - Git 使用指南: Study/Git_use.md
+      - Nano Banana 食用指南: Study/Nano_banana.md
       - 时序预测相关:
           - 简单滑动平均: Study/TimeSeries/MovingAverage.md
       - 工程经济学: Study/Engineering_eco.md
@@ -645,6 +646,7 @@ nav:
       - 神秘学手记: Talks/Occult.md
       - 铁丝网与互联网: Talks/War.md
       - 关于AI时代的文字: Talks/About_literature_AI.md
+      - 文青帝京Citywalk指南: Talks/Beijing_2025.md
       - 关于语言: Talks/About_language.md
       - 关于知识分享: Talks/Knowledge_share.md
       - 关于一位长者: Talks/About_a_great_man.md
