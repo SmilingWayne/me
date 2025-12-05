@@ -1,7 +1,7 @@
 # 📝 文学
 
 
-!!! quote "**青云衣兮白霓裳，举长矢兮射天狼。操余弧兮反沦降，援北斗兮酌桂浆。[^1]**"
+!!! quote "须知物外烟霞客，不是尘中磨镜人。[^1]"
 
 <font size = 6 face = "SnellRoundHand" >Encore un moment!</font>[^2]
 
@@ -56,5 +56,5 @@
 - 🔍 搜索：支持中文检索。
 
 
-[^1]: 出自战国·屈原《[楚辞·九歌·东君](https://baike.baidu.com/item/九歌·东君/699350)》。
+[^1]: 语出唐代吕岩[《为贾师雄发明古铁镜》](https://www.gushici.net/shici/27/39505.html)。
 [^2]: Full quotations may be `Encore un moment, monsieur le bourreau, un petit moment!` It's said to be the last words of **Comtesse Du Barry**(1743~1793), mistress of Louis XV (the King of France), before she was guillotined in Place de la Concorde, Paris. Some existentialists describe their anxiety, boredom, alienation and meaninglessness via this sentence.
