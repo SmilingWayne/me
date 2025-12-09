@@ -1,7 +1,7 @@
 # 🎨 艺术
 
 
-!!! quote "美人自古如名将，不许人间见白头[^1]"
+!!! quote "美人自古如名将，不许人间见白头。[^1]"
 
 <font size = 6 face = "SnellRoundHand" >About Me, Art and a chaos of Mind.</font>
 

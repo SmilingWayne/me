@@ -64,11 +64,7 @@
 ## 🤖 AI /LLM
 :   一个很业余的人尽力让自己不那么业余的故事。（2025.01.09 Update 其实也已经好久没正儿八经更新过了）
 
-    - [x] [本站用到的提示词整理 (2025)](./ChatGPT/Prompt2.md): 在大模型辅助下整理读书笔记。
-    - [ ] [提示词经验总结 (2023)](./ChatGPT/Prompt1.md)；（2024.03.05 Update：现在比这个先进多了！）
-    - [x] [便携小词典](./ChatGPT/Knowledge/Terms.md)：解释一些从前没有见过的名词。扫盲。
-    - [x] [Stable Diffusion部署 (2024)](./ChatGPT/StableDiffusion.md):Watch, and Learn. 
-    - [x] [Ollama本地部署 (2024)](./ChatGPT/Ollama.md): RAG + 本地文档，还需要继续学。
+    - [x] [本站用到的提示词整理 (2025)](./LLM/Prompt/Prompt2.md): 在大模型辅助下整理读书笔记。
 
 ---
 

@@ -1,7 +1,7 @@
 # 阅读是一座随身携带的避难所:毛姆读书随笔
 
 
-!!! note "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/ChatGPT/Prompt2.md)中找到我用的提示词。"
+!!! note "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/LLM/Prompt/Prompt2.md)中找到我用的提示词。"
     Gemini 的评价：清晰、理智而又带着一丝恰到好处的犬儒。
 
 

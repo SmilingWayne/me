@@ -46,7 +46,7 @@
 ## 🎨艺术篇
 
 - Midjourney: 有免费额度；效果很好；在discord上使用；
-- Stable Diffusion，想试试Apple Silicon 上可以搞定的那个SD。见[具体链接](./StableDiffusion.md)。部署在本地的webui。
+- Stable Diffusion，想试试Apple Silicon 上可以搞定的那个SD。见[具体链接](./Local/StableDiffusion.md)。部署在本地的webui。
   - [https://zhuanlan.zhihu.com/p/610580694](https://zhuanlan.zhihu.com/p/610580694)，从Mochi Diffusion 上手开始实现
 - 一些开箱即用的免费文生图： 
     - [playground AI](https://playgroundai.com)，质感特别像Canva。效果不错。支持Canvas直接导入；

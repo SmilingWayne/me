@@ -1,7 +1,7 @@
 # 往事与随想
 
 
-!!! note "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/ChatGPT/Prompt2.md)中找到我用的提示词。"
+!!! note "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/LLM/Prompt/Prompt2.md)中找到我用的提示词。"
     Gemini 评价这本书：充满了深刻的个人反思与对时代的敏锐洞察。
 
 作者是俄国人**赫尔岑**。少数可以记得阅读时间的书：2019年12月。

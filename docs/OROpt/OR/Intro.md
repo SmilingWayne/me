@@ -106,7 +106,7 @@ P.S. 如果你是前述若干专业的**本科生**，可以看看几个南大IE
 
 请善用文献阅读工具！[Zotero](https://zotero-chinese.com/user-guide/quick-start), [EndNote](https://web.endnote.com/) (NJU给大家买了，见[链接](https://itsc.nju.edu.cn/EndNote/list.htm))。
 
-**再次提醒，请善用、多用各种大模型、生成式人工智能工具**！但是不要把自己变成GPT！我的自用 Prompt 参考[链接](./../../Study/ChatGPT/Prompt2.md).
+**再次提醒，请善用、多用各种大模型、生成式人工智能工具**！但是不要把自己变成GPT！我的自用 Prompt 参考[链接](./../../Study/LLM/Prompt/Prompt2.md).
 
 
 ### 论文写作 

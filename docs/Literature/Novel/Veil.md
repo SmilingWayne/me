@@ -1,7 +1,7 @@
 # 面纱
 
 
-!!! note "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/ChatGPT/Prompt2.md)中找到我用的提示词。"
+!!! note "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/LLM/Prompt/Prompt2.md)中找到我用的提示词。"
     细腻的心理刻画和对人性深刻的洞察而著称。
 
 !!! example ""

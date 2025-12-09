@@ -488,9 +488,9 @@ nav:
               - 我的字体研究: Study/TextEdit/Markdown/Markdown.md
               - Mermaid嵌入: Study/TextEdit/Markdown/Mkdocs_Tutorials1.md
       - 小红书｜Python藏宝箱:
-          - 经（踩）验（坑）分（历）享（史）: Study/PythonPackages/Tricks.md
+          - 经验分享（踩坑黑历史）: Study/PythonPackages/Tricks.md
           - 在Jupyter中美化Pandas表格: Study/PythonPackages/PandasPrettier.md
-          - conda，你看到我们管理环境时的泪了吗: Study/PythonPackages/SOS_Conda.md
+          - conda，你看得到我们管理环境时的泪吗: Study/PythonPackages/SOS_Conda.md
           - 数据结构参考链接: Study/PythonPackages/Data_struct_recomend.md
           - PyEcharts合集: Study/PythonPackages/Pyecharts1.md
           - 小玩具：幻方｜拉丁方: Study/PythonPackages/MagicSquare.md
@@ -582,19 +582,25 @@ nav:
           - macOS下寻找电子书的一些方法: Study/Swift/FindBooks.md
       - 语言学习:
           - 法语笔记: Study/English/French.md
+          - 意大利语｜咖啡记: Study/English/Italiano.md
           - 英语笔记: Study/English/English.md
           - 英语记忆: Study/English/Words.md
           - 英文作文: Study/English/EnglishEssay.md
           - 英语文摘: Study/English/Quotes.md
           - 英语文学批评: Study/English/LiteraryCriticism.md
-      - 大模型提示词整理: Study/ChatGPT/Prompt2.md
+      - 大模型｜提示词整理: Study/LLM/Prompt/Prompt2.md
+      - 大模型｜文生图:
+          - Nano Banana 食用指南: Study/LLM/ImageGeneration/Nano_banana.md
+          - 「管科」论文绘图流程: Study/LLM/ImageGeneration/LLM_paper_figure.md
+      - 大模型｜部署与使用:
+          - 用 Ollama 接生大模型: Study/LLM/Local/Ollama.md
+          - 玩一玩 Stable Diffusion: Study/LLM/Local/StableDiffusion.md
+      - 大模型｜Awesome LLM: Study/LLM/Reference.md
       - 制造与服务系统分析: Study/AMASS.md
-      - 一些高中笔记: Study/HighSchool.md
-      - 研究生课程：智慧物流: Study/IntelligentLogistics/IntelligentLogistics1.md
-      - 研究生课程：物流优化算法: Study/IntelligentLogistics/LogisticsAlgorithm.md
-      - 暑期学校-智能决策与算法: Study/fleet.md
-      - Git 使用指南: Study/Git_use.md
-      - Nano Banana 食用指南: Study/Nano_banana.md
+      - 智慧物流: Study/IntelligentLogistics/IntelligentLogistics1.md
+      - 物流优化算法: Study/IntelligentLogistics/LogisticsAlgorithm.md
+      - 暑期学校｜智能决策与算法: Study/fleet.md
+      - Git 的打开方式: Study/Git_use.md
       - 时序预测相关:
           - 简单滑动平均: Study/TimeSeries/MovingAverage.md
       - 工程经济学: Study/Engineering_eco.md
@@ -613,17 +619,10 @@ nav:
           - 管理学与领导力(Master): Study/Management/Mgm_leadership.md
           - 管理学(Bachelor): Study/Management/Remain.md
       - VScode技巧: Study/Vscode/keys.md
-      - 人工智能工具们:
-          - 安装: Study/ChatGPT/Register.md
-          - 其他AI工具: Study/ChatGPT/Reference.md
-          - GPT Prompt技巧: Study/ChatGPT/Prompt1.md
-          - Stable Diffusion 部署管窥: Study/ChatGPT/StableDiffusion.md
-          - Ollama 本地部署: Study/ChatGPT/Ollama.md
-          - 古登堡计划:
-              - 专有名词释疑: Study/ChatGPT/Knowledge/Terms.md
       - 计算社会学｜复杂系统｜仿真:
           - Study/SimulationCSS/index.md
           - 各种笔记: Study/SimulationCSS/Notes.md
+      - 一些高中笔记: Study/HighSchool.md
       - 其他平台电子笔记:
           - 网页设计与制作: Study/Mubu/WebsiteDesign.md
           - 网页设计简单参数标注（应试用）: Study/Mubu/network.md

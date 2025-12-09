@@ -1,6 +1,6 @@
 # 撒马尔罕
 
-!!! note "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/ChatGPT/Prompt2.md)中找到我用的提示词。"
+!!! note "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/LLM/Prompt/Prompt2.md)中找到我用的提示词。"
     这是一部交织着历史、诗歌、爱情与阴谋的迷人作品。
 
 

@@ -2,7 +2,7 @@
 
 > 作者：【日】德富芦花
 
-!!! note "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/ChatGPT/Prompt2.md)中找到我用的提示词。"
+!!! note "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/LLM/Prompt/Prompt2.md)中找到我用的提示词。"
     Gemini 的评价：德富芦花散文诗般的语言之美。
 
 

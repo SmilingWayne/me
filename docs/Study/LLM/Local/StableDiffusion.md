@@ -4,7 +4,6 @@
 !!! abstract "我的设备"
     - 2022年MacBook Pro，512GB + 16GB，Ventura 13.5， Apple Silicon M2
 
-    2025.09.28 本部分的内容会尽快迁移至人工智能模块。
 
 
 !!! note "参考链接"

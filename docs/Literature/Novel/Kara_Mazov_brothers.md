@@ -1,6 +1,6 @@
 # 卡拉马佐夫兄弟
 
-!!! example "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/ChatGPT/Prompt2.md)中找到我用的提示词。"
+!!! example "感谢Gemini 2.5 Pro 对本文内容的整理。你可以在[笑笑常用的Prompt](../../Study/LLM/Prompt/Prompt2.md)中找到我用的提示词。"
     这部作品探讨了人类精神世界中最深刻、最矛盾的问题。
 
 !!! note "读后感"

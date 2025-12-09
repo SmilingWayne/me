@@ -73,7 +73,6 @@
 
     量化是一种表示模型权重的技术，通常以 32 位浮点数表示，具有较低精度的数据，例如 16 位浮点数、16 位整数、8 位整数甚至 4/3/2 位整数，节省内存带宽。量化的好处包括更小的模型大小、更快的微调和更快的推理。在资源受限的环境中，例如单 GPU 或 Mac 或移动设备（例如 https://github.com/ggerganov/llama.cpp），量化对于微调模型或运行推理是必需的。参考[PyTorch写的权威介绍](https://pytorch.org/blog/introduction-to-quantization-on-pytorch/)，
 
-    有关大模型的prompt见[这](../Prompt1.md)。 
 > clickbait: 标题党
 
 - AutoGPT
