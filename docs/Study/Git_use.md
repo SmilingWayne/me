@@ -151,7 +151,7 @@
 
     比如 https://api.github.com/repos/squidfunk/mkdocs-material 这个链接，就可以直接访问mkdocs materials 作者这个仓库的具体信息。包括仓库大小等具体统计数据。
 
-    
+
 ----
 
 ### 移动文件的同时保留原文件的git记录

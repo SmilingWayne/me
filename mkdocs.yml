@@ -464,13 +464,10 @@ nav:
   - 学习笔记:
       - Study/index.md
       - 组会与相关学术内容:
-          - 202309至202401: Study/TeamMeeting/0920.md
+          - 2024年的随笔记: Study/TeamMeeting/Collected_notes.md
           - 系统建模与优化｜20230922: Study/TeamMeeting/0922Fri.md
           - 20240122报告: Study/TeamMeeting/Articles.md
-          - 0308TeamMeeting: Study/TeamMeeting/0308Prep.md
-          - 0315TeamMeeting: Study/TeamMeeting/0315Prep.md
-          - 0322TeamMeeting: Study/TeamMeeting/0322Prep.md
-          - 2024年综合运输系统运营管理学术研讨会: Study/TeamMeeting/0329Prep.md
+
       - 小红书｜资源分享外链: Study/xhs_list.md
       - 小红书｜文本编辑:
           - Study/TextEdit/index.md
@@ -596,6 +593,10 @@ nav:
           - 用 Ollama 接生大模型: Study/LLM/Local/Ollama.md
           - 玩一玩 Stable Diffusion: Study/LLM/Local/StableDiffusion.md
       - 大模型｜Awesome LLM: Study/LLM/Reference.md
+      - 秋招相关:
+          - LeetCode 手撕: Study/FallRecruitment/LeetCode.md
+          - 笔试题: Study/FallRecruitment/Written_exam.md
+          - 面试题: Study/FallRecruitment/Oral_exam.md
       - 制造与服务系统分析: Study/AMASS.md
       - 智慧物流: Study/IntelligentLogistics/IntelligentLogistics1.md
       - 物流优化算法: Study/IntelligentLogistics/LogisticsAlgorithm.md
