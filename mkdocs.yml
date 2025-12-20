@@ -84,6 +84,7 @@ nav:
           - 古代社会: Philosophy/Ancient_society.md
           - 论犯罪与刑罚: Philosophy/About_crimes.md
           - 宗教生活的初级形式: Philosophy/Primal_format_of_religion_life.md
+          - 天真的人类学家: Philosophy/Naive_anthropologist.md
           - 西太平洋上的航海者: Philosophy/Voyagers_western_pacific_ocean.md
 
       - 其他:
@@ -103,7 +104,7 @@ nav:
       - Literature/index.md
       - 诗歌:
           - Poems/index.md
-          - 外国诗:
+          - 异域:
               - 🇫🇷愤怒与神秘: Poems/Anger_and_mystery.md
               - 🇫🇷恶之花: Poems/Fleurs_du_mal.md
               - 🇫🇷烧酒与爱情: Poems/Shochu_and_love.md
@@ -124,16 +125,17 @@ nav:
               - 🇩🇪德国，一个冬天的童话: Poems/German_winter_fairytale.md
               - 🇩🇪致后代: Poems/To_descendant.md
               - 🇩🇪死亡赋格: Poems/Death_fuge.md
-              - 世界抒情诗选: Poems/If_I_can_make_heart_unbroken.md
+              - 🌍世界抒情诗选: Poems/If_I_can_make_heart_unbroken.md
               - 🇺🇸我用古典的方式爱过你: Poems/Emily.md
-          - 中国诗:
+          - 国风:
               - 辛弃疾词: Poems/Xinqiji_ci.md
               - 木心诗选: Poems/Muxin.md
               - 花间集新注: Poems/Hua_jian_ci.md
+              - 冯至诗选: Poems/Feng_zhi.md
               - 月光停在左手上: Poems/Moonlight_left_hand.md
-              - 中国古典-诗: Poems/ClassicChinese_shi.md
-              - 中国古典-词: Poems/ClassicChinese_ci.md
-              - 中国古典-曲: Poems/ClassicChinese_qu.md
+              - 中国古典｜诗: Poems/ClassicChinese_shi.md
+              - 中国古典｜词: Poems/ClassicChinese_ci.md
+              - 中国古典｜曲: Poems/ClassicChinese_qu.md
       - 戏剧:
           - Plays/index.md
           - 戏剧:
