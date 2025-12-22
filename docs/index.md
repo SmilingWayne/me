@@ -9,8 +9,6 @@ hide:
 
 === "<font size = 6>:fontawesome-solid-paw: </font><font size = 6 face = "savoye LET" >About Me</font>"
 
-    <br> 
-
     !!! note inline ""
         🧑‍🎓 **About**: An ordinary soul striving for the extraordinary.
         
