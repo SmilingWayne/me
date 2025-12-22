@@ -4,24 +4,22 @@
 
 <font size = 6 face = "SnellRoundHand" >Simple, but useful.</font>
 
-- 将运筹相关的笔记与几年来小小的探索独立成子目录。主要内容分两个大块吧：
+主要是把运筹相关的笔记与这几年一些独立的探索分开成子目录。两个大块组成：
 
 **运筹学基础**
-:   （当然大部分大部分都是线性规划及其展开）。很久以来就打算做的东西。借助今年当TA这个契机逐渐逐渐缝缝补补、修修填填。目录可以参考[运筹学I目录](./OR/index.md)。
+:   （当然大部分大部分都是线性规划及其展开）。很久以来就打算做的东西。借助当时（2024年）当TA这个契机逐渐逐渐缝缝补补、修修填填。目录可以参考[运筹学I目录](./OR/index.md)。
 
-**其他课余的整理**
+**其他的整理**
 :   主要是一些整数规划相关的内容。可能与我做的相关一点。东一块西一块。目前还没有一个详细的目录。你可以直接看左侧导航栏。
 
 !!! example "广告一则（长期有效版）"
-    介绍一个自己搞着玩儿的GitHub仓库：**[PuzzleSolver](https://github.com/SmilingWayne/PuzzleSolver)**。旨在为一些有趣的**逻辑谜题**提供基于数学规划方法的计算机求解工具。主要以Python语言编写，借助的求解器包括：Ortools, SCIP, Gurobi[^2]。它们中的绝大多数可以被建模成规划问题。目前已经为超过50种不同谜题提供了定制化 `(problem-tailored)` 的解决方案，并针对其中的40余种，收集了总计8000多个不同规模的数值实例（包括答案）。对一些我非常感兴趣的放置类谜题，比如 [Polyiamonds](https://puzzler.sourceforge.net/docs/polyiamonds.html) 和 [Polyminoes](https://puzzler.sourceforge.net/docs/polyominoes-intro.html), 我让AI开发部署了一个可交互式的开发与可视化网页，见 [webpage (PuzzleTool)](https://smilingwayne.github.io/PuzzleTools/)。使用手册正在写（~~已经咕咕很久了~~）。
+    介绍一个自己搞着玩儿的GitHub仓库：**[PuzzleSolver](https://github.com/SmilingWayne/PuzzleSolver)**。旨在为一些有趣的**逻辑谜题**提供基于数学规划方法的计算机求解工具。主要以Python语言编写，借助的求解器包括：Ortools, SCIP, Gurobi[^2]。它们中的绝大多数可以被建模成规划问题。目前已经为超过60种不同谜题提供了定制化 `(problem-tailored)` 的解决方案，并针对总计100余种谜题，收集了总计3万多个不同规模的数值实例（包括答案）。对一些我非常感兴趣的放置类谜题，比如 [Polyiamonds](https://puzzler.sourceforge.net/docs/polyiamonds.html) 和 [Polyminoes](https://puzzler.sourceforge.net/docs/polyominoes-intro.html), 我让AI开发部署了一个可交互式的开发与可视化网页，见 [webpage (PuzzleTool)](https://smilingwayne.github.io/PuzzleTools/)。虽然我对这个不是很满意就是了。
     
     - **设计这么一个仓库<u>不是为了取代逻辑解法或者启发式解法</u>，单纯是因为我好奇，以及我觉得好玩；**
-    - 包含了线性规划、整数规划、0-1整数规划、约束优化问题等；
+    - 主要以CP-SAT求解器 ortools 进行建模与求解；
     - 一些有趣的游戏 (Slither Link, Creek, Shikaku, Heyawake, Hitori, Gappy, Sandwich Sudoku)，目前少有从数学规划角度入手的开源解决方案，主要以启发式方法居多。
     - 维护了多个与数据集获取相关的爬虫脚本。
     
-
-    如果对你有帮助，一个小小的Star就可以。有好的建议，欢迎提PR或issue。会及时更新。
 
 !!! example "广告二则（2024fall限定版）"
 

@@ -9,4 +9,5 @@
 - [x] [卡利古拉](../Plays/Caligula.md)；
 - [x] [麦田里的守望者](../Literature/Novel/Catcher_in_the_rye.md)；
 - [x] [红与黑](../Literature/Novel/Rouge_et_noir.md)；
+- [x] [那不勒斯四部曲](../Literature/Novel/Naples.md)；
 

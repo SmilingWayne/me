@@ -4,7 +4,9 @@ site_description: 笑笑的个人网站
 site_dir: site
 
 nav:
-  - ˗ˋˏᰔᩚˎˊ˗: index.md
+  - About:
+      - About: index.md
+      - 中文版: index_CN.md
   - 哲学:
       - Philosophy/index.md
       - 哲学词典: Philosophy/Dict.md
@@ -295,6 +297,7 @@ nav:
           - 🇺🇸达芬奇密码: Literature/Novel/Davinci_code.md
           - 🇺🇸麦田里的守望者: Literature/Novel/Catcher_in_the_rye.md
           - 🇺🇸了不起的盖茨比: Literature/Novel/Gatsby.md
+          - 🇮🇹那不勒斯四部曲: Literature/Novel/Naples.md
           - 侦探小说: Literature/Novel/Detective.md
           - 希腊神话合集: Literature/Novel/Greek/Myth_1.md
           - 潘神的迷宫: Literature/Novel/Labyrinth_pan.md
@@ -749,6 +752,7 @@ plugins:
       show_contribution: true
       exclude:
         - index.md
+        - index_CN.md
       enabled: true
       show_email_address: false
   - git-revision-date-localized:

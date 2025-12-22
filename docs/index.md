@@ -7,115 +7,98 @@ hide:
 # (๑• . •๑)
 
 
-<br>
-
-<p></p>
-
 === "<font size = 6>:fontawesome-solid-paw: </font><font size = 6 face = "savoye LET" >About Me</font>"
 
     <br> 
 
-    !!! note inline "关于我"
-        🧑‍🎓 一个时刻想要变得不普通的普通人。
+    !!! note inline ""
+        🧑‍🎓 **About**: An ordinary soul striving for the extraordinary.
         
-        🥰 你可以叫我 "笑笑" 。
+        🥰 **Name**: You can call me **Wayne**, or better yet, by my nickname **Xiao Xiao**[^1], which means 'Smile' in Mandarin.
 
-        🔮 浏览网站时，你已在和我促膝长谈。
+        🔮 **Hush!** Exploring these pages, we sit in quiet conversation.
 
-    !!! note inline "爱好 / 兴趣" 
-        📖 喜欢阅读，有时观影，不时创作。
+    !!! note inline "" 
+        📖  **Leisure**: An avid reader, occasional moviegoer, and sporadic creator.
+
+        💻 **Coding**: Coding for fun from time to time with :material-language-python: | :material-language-java:.
+
+        🧩 **Puzzles**: A naive yet stubborn adventurer in the world of logic puzzles. Check out [puzzlekit](https://github.com/SmilingWayne/PuzzleSolver)!
+
+    !!! success inline ""
+        🧸 **MBTI**: <font face = "American Typewriter" >INFJ-T</font>[^2], 
         
-        💻 偶尔编程 :material-language-python: | :material-language-java:。
-
-        🧩 幼稚的[解谜游戏爱好者](https://github.com/SmilingWayne/PuzzleSolver)。
-
-    !!! abstract inline "" 
-        🎻 “有柴小协[^1]的日子就是好日子。”
-
-    !!! abstract inline "" 
-        🍁 “西园公子名无忌，南国佳人号莫愁。”[^2]
-
-    !!! success inline "MBTI / 星座 / 其他"
-        🧸 <font face = "American Typewriter" >INFJ-T</font>[^3], ♍️[^4]. 
-        
-        🎀 谨慎的自由主义[^5]者 / 努力学习语言中。
+        🎀 **Life**: Language learner (Mandarin / English / Français), lost in lines and verses.
           
-        > (中文 / English / Français)。
+        🔆 **Zodiac**: Virgo ♍️[^3].
 
-    !!! success inline "晃晃悠悠～"
-        🌏 暂居南京[^6]。
+    !!! success inline ""
+        🌏 **Base**: Temporarily in **Nanjing**[^4].
 
-        🐳 常年浸润在江南的朦胧与诗意中。
+        🐳 **Vibe**: Preferring stillness, yet acting on sudden impulses to travel.
 
-        > 试图克服懒癌，不时热爱旅行。
+        ☘️ **Goal**: Cappuccino!
+
 
 === "<font size = 6>:fontawesome-solid-book: </font><font size = 6 face = "savoye LET">About The NoteBook</font>"
 
-    - 💹 网站页面总数：{{pages}} ；
+    💹 Total Pages: {{pages}};
     
-    - 🔠 总字数：{{words}} ；
+    🔠 Word Count: {{words}};
     
-    - 🤖 代码块行数：{{codes}} ；
+    🤖 Code Lines: {{codes}};
 
-    - 🛩️ 网站运行时间：<span id="web-time"></span> ；
+    🛩️ Online for: <span id="web-time"></span>;
     
-    - 🦄 本站Github仓库: [Me](https://github.com/SmilingWayne/me)。A star 🌟 is cheap, but it's also expensive.
+    🦄 Github repo: [Me](https://github.com/SmilingWayne/me). Stars, PRs and Issues are welcome.
 
-    !!! abstract indexinline "本站点溯源"
+    ??? abstract indexinline "Milestones"
 
-        最初计划是一个电子读书笔记仓库，后来什么都往里面塞：阅读感想、学习笔记、生活思考、碎碎念。现在我更喜欢称其为 ==一只兜住时间的沙漏== 。
+        This website began as a simple archive for reading notes, later evolved into a sanctuary for study, reflection and whispers of life. I now see it as ==an hourglass capturing the sands of time==.
 
-        - 2025.05.20  🎉 新增页面浏览量功能（统计始于 2025.05.20. 00:53:00）
-        - 2025.05.01  🎉 更新网站部署方式。现在本站的 `gh-pages` 分支不再臃肿；
-        - 2025.01.16  添加了一组谜题。美化了首页；
-        - 2024.11.27  加入Tag标记功能。[页面测试中](./Website/tags.md)；
-        - 2024.10.13  更新网站部署方式。
-        - 2024.07.22  第一次文档目录结构调整与内容细化；
-        - 2024.04.20  增补页面源码、提交记录跳转功能；
-        - 2024.02.27  🎉 本网站总字数首次突破80w字！
-        - 2023.12.18  第一次大规模文字内容整合与重编；
-        - 2023.10.25  🎉 搭建博客图床，CDN分发，进一步减少仓库图片；
-        - 2023.10.23  完成Git瘦身计划：清除了不必要的提交，缩小了75%的体量；
-        - 2023.06.14  ~~增补 Leetcode 刷题记录；~~ （新站点搭建完毕！[传送门](https://smilingwayne.github.io/LeetCode/)）
-        - 2023.04.17  🎉 增加全新的字数统计功能；
-        - 2023.02.xx  增补学习笔记；
-        - 2022.12.30  🎉 开始搭建电子读书笔记仓库；
-
+        - **2025.05.20** 🎉 Added Page Views text, tracking every visit since 2025.05.20 00:53:00.
+        - **2024.11.27** 🎉 Introduced the Tag system. 
+        - **2024.02.27** 🎉 **Total word count exceeded 800k!** 
+        - **2023.12.18** 📚 1st major content restructuring and editing.
+        - **2023.10.25** 🎉 Implemented CDN for images to optimize performance.
+        - **2023.06.14** 🚚 Separated LeetCode records to a [dedicated site](https://smilingwayne.github.io/LeetCode/).
+        - **2023.04.17** 🎉 Introduced the Word Count feature.
+        - **2022.12.30** 🌱 **The Beginning.** 
 
 === "<font size = 6>:fontawesome-solid-envelope: </font><font size = 6 face = "savoye LET">Contact Me</font>"
 
-    - :fontawesome-solid-envelope:  <a href="mailto:xiaoxiaowayne@163.com">个人邮箱</a>，:fontawesome-regular-envelope: <a href = "mailto:zx_wang@smail.nju.edu.cn">NJU 邮箱</a>.
+    - :fontawesome-solid-envelope:  <a href="mailto:xiaoxiaowayne@163.com">Personal e-mail</a>, :fontawesome-regular-envelope: <a href = "mailto:zx_wang@smail.nju.edu.cn">NJU e-mail</a>.
 
     >  No reply for 72h in workday: Failed to receive or accidentally omit your email, you can try to resend it.
 
-    - :fontawesome-solid-pen-nib: [我的豆瓣](https://www.douban.com/people/174239371/)，Login is required.
+    - :fontawesome-solid-pen-nib: [My DouBan](https://www.douban.com/people/174239371/)，mainly some books /movies I've read / watched.
 
-    - :simple-xiaohongshu: [Wayne是笑笑🦆](https://www.xiaohongshu.com/user/profile/5d1238860000000011038629).
+    - :simple-xiaohongshu: [Wayne是笑笑🦆](https://www.xiaohongshu.com/user/profile/5d1238860000000011038629). My xiaohongshu for knowledge sharing.
 
-!!! question indexinline ": This message is encrypted..."
+!!! question indexinline ": This message is encrypted...🔐"
 
     A Q I U C C K P B V B K R U W F W Z B N T K C X U W Y P W J Q Y Y Z X P L T N S F T O R J  Y G R J Q X S O Z F D Z A V P U U Z M K N U S P N A N U M U E P F S E V B H A I Y W Y L O Z
 
-    > **NOTE**：All the keys required to decrypt the message above are given on this page. Have Fun!
+    > **NOTE**：Two keys have been given on this page to help decrypt the message above. Have Fun!
 
 
 <!-- brands/regular/solid -->
 <br>
 
+- 💻 **Desktop**: Navigate topics via the top bar; explore the table of contents on the left.
+- 📱 **Mobile**: Tap the icon in the top-left corner to access the menu.
+- 🔍 **Search**: Supports both Chinese and English keywords.
 
-<center> <font face = "Apple chancery" size = 5>Bienvenue sur mon site! 🌼</font></center>
+[^1]: Written as "笑笑" in Chinese and pronounced roughly like **"She-ow She-ow"** ('She' + 'ow' in 'cow').
+[^2]: In personality typology, the Myers–Briggs Type Indicator (**MBTI**) is an introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions. <font face = "American Typewriter" >INFJ-T</font> means ==advocates==, former 4 letters indicates "**I**ntroverted, i**N**tuitive, **F**eeling, **J**udging", the last letter means "**T**urbulent". (From [Wiki](https://en.wikipedia.org/wiki/Myers–Briggs_Type_Indicator) and [Source](https://psychreel.com/infj-t/)).
+[^3]: **Virgo** is the sixth astrological sign in the zodiac. Under the tropical zodiac, the Sun transits this area between August 23 and September 22 on average. (From [Wiki](https://en.wikipedia.org/wiki/Virgo_(astrology))).
+[^4]: Capital of Jiangsu, a province in East China. (From [Wiki](https://en.wikipedia.org/wiki/Nanjing)).
 
-
-- 💻 PC端：点击顶部导航栏选择主题，左侧查看目录；
-- 📱 移动端：点击左上角图标选择内容；
-- 🔍 搜索：支持中文检索。
-
-[^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.(From [WiKi](https://en.wikipedia.org/wiki/Violin_Concerto_(Tchaikovsky)))
+<!-- [^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.(From [WiKi](https://en.wikipedia.org/wiki/Violin_Concerto_(Tchaikovsky)))
 [^2]: From a poem [《忆昔》](https://www.gushici.net/shici/15/33023.html) by [韦庄 (Wei Zhuang)](https://en.wikipedia.org/wiki/Wei_Zhuang), a poet of the late Tang Dynasty (618 ~ 907) in China.
-[^3]: In personality typology, the **Myers–Briggs Type Indicator** (MBTI) is an introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions. It enjoys popularity despite being widely regarded as pseudoscience by the scientific community. <font face = "American Typewriter" >INFJ-T</font> means ==advocates==, former 4 letters indicates **"Introverted, iNtuitive, Feeling, Judging"**, the last T means **"Turbulent"**. (From [Wiki](https://en.wikipedia.org/wiki/Myers–Briggs_Type_Indicator) and [Source](https://psychreel.com/infj-t/)).
 [^4]: **Virgo** is the sixth astrological sign in the zodiac. Under the tropical zodiac, the Sun transits this area between August 23 and September 22 on average. (From [Wiki](https://en.wikipedia.org/wiki/Virgo_(astrology)))
 [^5]: Liberalism is a political and moral philosophy based on the rights of the individual, liberty, consent of the governed, political equality and equality before the law. (From [WiKi](https://en.wikipedia.org/wiki/Liberalism))
-[^6]: Capital of Jiangsu, a province in East China. (From [Wiki](https://en.wikipedia.org/wiki/Nanjing))
+[^6]: Capital of Jiangsu, a province in East China. (From [Wiki](https://en.wikipedia.org/wiki/Nanjing)) -->
 
 
 <script>
@@ -132,9 +115,9 @@ function updateTime() {
     h = Math.floor(diff / (3600 * 1000) % 24);
     m = Math.floor(diff / (60 * 1000) % 60);
     if (y == 0) {
-        document.getElementById("web-time").innerHTML = d + "<span class=\"heti-spacing\"> </span>天<span class=\"heti-spacing\"> </span>" + h + "<span class=\"heti-spacing\"> </span>小时<span class=\"heti-spacing\"> </span>" + m + "<span class=\"heti-spacing\"> </span>分钟";
+        document.getElementById("web-time").innerHTML = d + "<span class=\"heti-spacing\"> </span> days <span class=\"heti-spacing\"> </span>" + h + "<span class=\"heti-spacing\"> </span> hours <span class=\"heti-spacing\"> </span>" + m + "<span class=\"heti-spacing\"> </span> minutes";
     } else {
-        document.getElementById("web-time").innerHTML = y + "<span class=\"heti-spacing\"> </span>年<span class=\"heti-spacing\"> </span>" + d + "<span class=\"heti-spacing\"> </span>天<span class=\"heti-spacing\"> </span>" + h + "<span class=\"heti-spacing\"> </span>小时<span class=\"heti-spacing\"> </span>" + m + "<span class=\"heti-spacing\"> </span>分钟";
+        document.getElementById("web-time").innerHTML = y + "<span class=\"heti-spacing\"> </span> years <span class=\"heti-spacing\"> </span>" + d + "<span class=\"heti-spacing\"> </span> days <span class=\"heti-spacing\"> </span>" + h + "<span class=\"heti-spacing\"> </span> hours <span class=\"heti-spacing\"> </span>" + m + "<span class=\"heti-spacing\"> </span> minutes";
     }
     setTimeout(updateTime, 1000 * 60);
 }
