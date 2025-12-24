@@ -9,8 +9,6 @@ hide:
 
 === "<font size = 6>:fontawesome-solid-paw: </font><font size = 6>关于我</font>"
 
-    <br> 
-
     !!! note inline ""
         🧑‍🎓 一个时刻想要变得不普通的普通人。
         
