@@ -216,7 +216,7 @@ $$\forall \lambda, L(\lambda) ≤ L^* ≤ z^* ≤ c(P)$$
 
 根据夹逼准则，如果我们碰巧拍脑袋找到了一个可行路径，其成本 $c(P)$ 等于我们拉格朗日松弛问题的成本，整个式子就可以用等号把上下界拉平了，**我们也就找到了拉格朗日乘子问题的最优解**。
 
-<span style="color:red;font-weight:bold">If $L(\lambda’) = c(P)$, then L(\lambda’) = L* = z* = c(P). In this case, $P$ is an optimal path and $\lambda’$ optimizes the Lagrangian Multiplier Problem.</span>
+If $L(\lambda’) = c(P)$, then $L(\lambda’) = L* = z* = c(P)$. In this case, $P$ is an optimal path and $\lambda’$ optimizes the Lagrangian Multiplier Problem.
 
 ## 一个严谨的数学描述
 
@@ -464,6 +464,7 @@ $$
 $$
 
 **符号说明**：
+
 | 符号     | 含义                                 |
 | -------- | ------------------------------------ |
 | $I$      | 客户集合                             |
@@ -518,13 +519,17 @@ $$
     每个子问题 $\text{(Sub}_j\text{)}$ 可以通过**枚举 $y_j$ 的取值**来求解：
     
     **情况 1：$y_j = 0$**（不开设设施 $j$）
+    
     - 此时 $x_{ij} = 0$ 对所有 $i$，子问题目标值 $= 0$
     
     **情况 2：$y_j = 1$**（开设设施 $j$）
+    
     - 子问题变为一个**连续背包问题**：
+    
     $$
     \min \sum_{i \in I} (c_{ij} - \mu_i) x_{ij} \quad \text{s.t.} \quad \sum_{i \in I} d_i x_{ij} \leq K_j, \quad 0 \leq x_{ij} \leq 1
     $$
+    
     - 修正成本 $(c_{ij} - \mu_i) < 0$ 的客户是"有利可图"的，应优先服务
     - **求解方法**：将客户按"性价比" $\frac{c_{ij} - \mu_i}{d_i}$ 排序，贪心地装入背包
     - 子问题目标值 $= F_j + \text{(背包最优值)}$
