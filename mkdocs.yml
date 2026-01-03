@@ -29,8 +29,8 @@ nav:
           - 问题化: Philosophy/Foucault/Problematiser.md
 
       - 意识形态:
+          - 主流意识形态小词典: Philosophy/basic.md
           - 不怎么精美的毛选摘: Philosophy/Mao.md
-          - 基础知识: Philosophy/basic.md
           - 共产主义ABC: Philosophy/Com_abc.md
           - 马克思主义宗教观研究: Philosophy/Marxism_religion.md
           - 苏联解体与颜色革命: Philosophy/Color_revolution.md
@@ -603,6 +603,7 @@ nav:
           - LeetCode 手撕: Study/FallRecruitment/LeetCode.md
           - 笔试题: Study/FallRecruitment/Written_exam.md
           - 面试题: Study/FallRecruitment/Oral_exam.md
+          - 其他: Study/FallRecruitment/Other_notes.md
       - 制造与服务系统分析: Study/AMASS.md
       - 智慧物流: Study/IntelligentLogistics/IntelligentLogistics1.md
       - 物流优化算法: Study/IntelligentLogistics/LogisticsAlgorithm.md
