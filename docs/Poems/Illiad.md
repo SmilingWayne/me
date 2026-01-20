@@ -2,7 +2,7 @@
 
 
 !!! abstract ""
-    如果想要了解整个故事，可以移步[特洛伊与三大史诗](../History/Troy_and_three_epics.md)。
+    如果想要了解整个故事，可以移步[特洛伊与三大史诗](../Poems/Troy_and_three_epics.md)。
 
     荷马史诗。西方文明襁褓般的存在，自从创造出来起被无数人吊过书袋的伟大的厚重的作品。
 
