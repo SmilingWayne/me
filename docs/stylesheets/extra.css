@@ -13,7 +13,7 @@
   
 .md-typeset .admonition,
 .md-typeset details {
-    font-size: 15px
+    font-size: 16px
 }
 
 .md-grid {
@@ -23,13 +23,18 @@
 .md-typeset .admonition.inline {
     width: 358px;   
     column-width: auto;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .md-typeset .admonition.indexinline {
     width: 732px;   
     column-width: auto;
-    font-size: 15px;
+    font-size: 16px;
+}
+
+.md-typeset td,
+.md-typeset th {
+    font-size: 16px;
 }
 
 /* 
