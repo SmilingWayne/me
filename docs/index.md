@@ -26,7 +26,7 @@ hide:
     !!! success inline ""
         🧸 **MBTI**: <font face = "American Typewriter" >INFJ-T</font>[^2], 
         
-        🎀 **Life**: Language learner (Mandarin / English / Français), lost in lines and verses.
+        🎀 **Life**: Language learner (Mandarin / English / Français), lines and verses lover.
           
         🔆 **Zodiac**: Virgo ♍️[^3].
 
@@ -77,7 +77,7 @@ hide:
 
     A Q I U C C K P B V B K R U W F W Z B N T K C X U W Y P W J Q Y Y Z X P L T N S F T O R J  Y G R J Q X S O Z F D Z A V P U U Z M K N U S P N A N U M U E P F S E V B H A I Y W Y L O Z
 
-    > **NOTE**：Two keys have been given on this page to help decrypt the message above. Have Fun!
+    > **NOTE**：Two keys have been given on this page to help decrypt the message. Have Fun!
 
 
 <!-- brands/regular/solid -->
