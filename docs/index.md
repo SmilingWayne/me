@@ -24,7 +24,7 @@ hide:
         🧩 **Puzzles**: A naive yet stubborn adventurer in the world of logic puzzles. Check out [puzzlekit](https://github.com/SmilingWayne/PuzzleSolver)!
 
     !!! success inline ""
-        🧸 **MBTI**: <font face = "American Typewriter" >INFJ-T</font>[^2], 
+        🧸 **MBTI**: <font face = "American Typewriter" >INFJ-T</font>[^2]. 
         
         🎀 **Life**: Language learner (Mandarin / English / Français), lines and verses lover.
           
