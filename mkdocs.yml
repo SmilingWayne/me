@@ -248,6 +248,7 @@ nav:
           - Literature/Novel/index.md
           - 🇨🇳蛙: Literature/Novel/Frog.md
           - 🇨🇳朝闻道: Literature/Novel/Zhao_wen_dao.md
+          - 🇨🇳檀香刑: Literature/Novel/Tan_xiang_xing.md
           - 🇨🇳生死疲劳: Literature/Novel/Forever_fatigue.md
           - 🇨🇳丰乳肥臀: Literature/Novel/Feng_ru_fei_tun.md
           - 🇨🇳平凡的世界: Literature/Novel/Common_world.md
@@ -646,11 +647,11 @@ nav:
   - 我的碎碎念:
       - Talks/index.md
       - 关于我的101问｜疑问集: Talks/101_asks.md
-      - 2021年底的无病呻吟: Talks/2021_talks.md
-      - 请回答，2022｜2022年终总结: Talks/My2022.md
-      - 从经天路到小粉桥｜2023年终总结: Talks/2023_con.md
-      - 岁月何曾败美人｜2024年终总结: Talks/2024_con.md
-      - 请亲吻砖墙｜2025年终总结: Talks/2025_con.md
+      - 2021年终总结｜无病呻吟: Talks/2021_talks.md
+      - 2022年终总结｜请回答，2022: Talks/My2022.md
+      - 2023年终总结｜从经天路到小粉桥: Talks/2023_con.md
+      - 2024年终总结｜岁月何曾败美人: Talks/2024_con.md
+      - 2025年终总结｜请亲吻砖墙: Talks/2025_con.md
       - “圣母无染原罪”: Talks/Religion.md
       - “洛可可缪斯”: Talks/About_Rococo.md
       - “枪决行刑队”: Talks/Time_and_kill.md
