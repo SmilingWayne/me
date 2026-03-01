@@ -284,3 +284,121 @@ Git 提交规范（特别是 Angular 规范，这是 Conventional Commits 规范
     * **示例**: `ci: fix deployment script for staging environment`
 * **`revert`**:
     * **含义**：撤销之前的某个提交。通常会自动生成，格式类似 `revert: feat(auth): add SSO login`，并在 body 中说明撤销了哪个 commit hash。
+
+
+## 开源许可证速览
+
+开源许可证（Open Source License）是法律合同，规定了他人如何使用、修改和分发你的代码。选择合适的许可证对于保护你的权益以及促进社区协作至关重要。
+
+### MIT 许可证 (The MIT License)
+
+“极度宽松，只要你保留我的署名，你想怎么用都行。”
+
+<span style="color:red;font-weight:bold">主要权限</span>
+- ✅ **商业使用：** 允许将代码用于商业产品。
+- ✅ **修改代码：** 允许任意修改源代码。
+- ✅ **分发：** 允许复制和分发代码。
+- ✅ **私有化：** 允许将修改后的代码闭源，作为私有软件发布。
+- ✅ **合并：** 允许与其他许可证（包括 GPL）的代码合并。
+
+<span style="color:red;font-weight:bold">主要义务</span>
+- ⚠️ **保留声明：** 在代码副本中必须包含原始的版权声明和许可证全文。
+- ⚠️ **无担保：** 作者不对代码的使用后果承担任何责任。
+
+<span style="color:red;font-weight:bold">优点</span>
+- **简单易懂：** 文本很短，法律术语少。
+- **兼容性极强：** 几乎可以与任何其它许可证（包括 GPL）兼容。
+- **采用率高：** 许多知名项目（如 React, Vue, jQuery, .NET Core）使用此协议，社区接受度高。
+
+<span style="color:red;font-weight:bold">缺点</span>
+- **无专利保护：** 没有明确的专利授权条款。如果贡献者拥有代码相关的专利，理论上他们日后可以起诉使用者侵权（虽然实际案例极少）。
+- **无传染性：** 别人拿了你的代码去闭源赚钱，你无法强制他们开源改进部分。
+
+<span style="color:red;font-weight:bold">使用场景</span>
+- 希望代码被尽可能广泛地使用（包括商业公司）。
+- 小型工具库、插件、前端组件。
+- 不希望给使用者增加法律负担。
+
+---
+
+### Apache License 2.0
+
+**核心理念：** “宽松使用，保留署名，并且明确授予专利权限，保护大家不被专利诉讼。”
+
+<span style="color:red;font-weight:bold">主要权限</span>
+- ✅ **商业使用：** 允许用于商业产品。
+- ✅ **修改代码：** 允许任意修改。
+- ✅ **分发：** 允许复制和分发。
+- ✅ **私有化：** 允许将修改后的代码闭源。
+- ✅ **专利授权：** **（核心区别）** 贡献者明确授予使用者专利许可。
+
+<span style="color:red;font-weight:bold">主要义务</span>
+- ⚠️ **保留声明：** 必须保留原始版权、专利、商标和归属声明。
+- ⚠️ **状态变更说明：** 如果被修改的文件，需要在文件中添加显著的说明（例如“此文件已被修改”）。
+- ⚠️ **NOTICE 文件：** 如果原项目包含 `NOTICE` 文件，你必须在你的分发版本中保留其中的归属信息。
+- ⚠️ **无担保：** 作者不承担责任。
+
+<span style="color:red;font-weight:bold">优点</span>
+- **专利保护：** 明确解决了专利诉讼风险，对大公司更友好。
+- **兼容性良好：** 与 GPL v3 兼容（Apache 代码可以合入 GPL v3 项目）。
+- **宽松：** 和 MIT 一样，允许闭源商用。
+
+<span style="color:red;font-weight:bold">缺点</span>
+- **文本较长：** 法律条款比 MIT 复杂，阅读成本稍高。
+- **不兼容 GPL v2：** Apache 2.0 代码不能合入 GPL v2 项目（因为专利条款冲突）。
+
+<span style="color:red;font-weight:bold">适用场景</span>
+- 大型开源项目、企业级软件。
+- 担心专利纠纷的项目（如 Android, Kubernetes, TensorFlow）。
+- 希望平衡宽松性与法律保护的项目。
+
+---
+
+### GPL 许可证 (GNU General Public License)
+
+**核心理念：** “著作权（Copyright）。如果你用了我的代码，你的项目也必须开源，且必须使用相同的许可证。”
+
+<span style="color:red;font-weight:bold">版本区别</span>
+- **GPL v2：** 经典版本（Linux 内核使用）。
+- **GPL v3：** 增加了专利保护条款，并防止“硬件锁定”（Tivoization）。
+
+<span style="color:red;font-weight:bold">权限</span>
+- ✅ **商业使用：** 允许用于商业产品（但必须提供源码）。
+- ✅ **修改代码：** 允许任意修改。
+- ✅ **分发：** 允许复制和分发。
+
+<span style="color:red;font-weight:bold">义务</span>
+- ⚠️ **开源义务：** 如果你分发基于 GPL 代码的软件（包括修改版或链接了 GPL 库），**整个软件必须开源**。
+- ⚠️ **许可证继承：** 衍生作品必须也使用 **GPL 协议**（不能改为 MIT 或 Apache）。
+- ⚠️ **提供源码：** 必须向接收者提供完整的源代码。
+- ⚠️ **专利授权：** (v3 版本明确包含)。
+
+<span style="color:red;font-weight:bold">优点</span>
+- **保护自由：** 确保代码及其改进版本永远保持开源，防止被私有化垄断。
+- **社区贡献：** 强制使用者回馈社区（通过开源代码）。
+
+<span style="color:red;font-weight:bold">缺点</span>
+- **传染性强（病毒式）：** 一旦你的项目依赖了 GPL 库，你的项目通常也必须变成 GPL。这会导致商业公司不敢使用。
+- **兼容性差：** 不能与宽松协议（MIT/Apache）的代码简单混合后闭源。
+- **法律风险高：** 合规要求严格，容易无意中违规。
+
+<span style="color:red;font-weight:bold">使用场景</span>
+- 桌面应用程序、系统工具。
+- 希望强制所有改进都回馈给社区的项目（如 Linux, Git, WordPress）。
+- 不希望自己的代码被用于专有闭源软件。
+
+---
+
+### 📊 三种协议对比总结表
+
+| 特性             | MIT                 | Apache 2.0                 | GPL (v2/v3)             |
+| :--------------- | :------------------ | :------------------------- | :---------------------- |
+| **类型**         | 宽松型 (Permissive) | 宽松型 (Permissive)        | 著佐权型 (Copyleft)     |
+| **商业闭源使用** | ✅ 允许              | ✅ 允许                     | ❌ 不允许 (分发时需开源) |
+| **修改后需开源** | ❌ 不需要            | ❌ 不需要                   | ✅ 必须 (如果分发)       |
+| **专利授权**     | ❌ 无明确条款        | ✅ 明确授予                 | ✅ 明确授予 (v3)         |
+| **传染性**       | 无                  | 无                         | **强 (病毒式)**         |
+| **保留版权声明** | ✅ 必须              | ✅ 必须                     | ✅ 必须                  |
+| **兼容性**       | 极高                | 高 (兼容 GPL v3)           | 低 (排斥闭源)           |
+| **代表项目**     | React, Vue, jQuery  | Android, Kubernetes, Swift | Linux, Git, WordPress   |
+
