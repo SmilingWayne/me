@@ -73,10 +73,33 @@ You are running an emulated version of Visual Studio Code. For better performanc
 
 --------
 
-## 快捷输入方式
+## 技巧
 
+展示你能选择的任务（各种插件的都有，属于百搭快捷键）：Shift ++command++ ++p++
+
+> 可以输入 settings.json 找到你的默认配置，可以快速打开最近关闭的项目，等等等等；
+
+快速分半屏：++command++ ++\\++
 
 快速选择范围内的行：
 
 ++command++ ++shift++ + 鼠标点选
+
+（下面是我自己设置的一些快捷键）：
+
+在Vscode 中，多个项目不同 Window 中切换：
+
+++command++ ++[++ (向前)
+
+++command++ ++]++ (向后)
+
+在同一个Window下的不同文件（已经打开的）中切换：
+
+++command++ ++:++ (向前)
+
+++command++ ++'++ (向后)
+
+合并多个分散的窗口到一个window中：
+
+Shift ++command++ ++m++
 
