@@ -608,6 +608,7 @@ nav:
       - 大模型｜部署与使用:
           - 用 Ollama 接生大模型: Study/LLM/Local/Ollama.md
           - 玩一玩 Stable Diffusion: Study/LLM/Local/StableDiffusion.md
+          - Claude Code入坑安装指南: Study/LLM/Local/ClaudeCode.md
       - 大模型｜Awesome LLM: Study/LLM/Reference.md
       - 秋招相关:
           - LeetCode 手撕: Study/FallRecruitment/LeetCode.md
