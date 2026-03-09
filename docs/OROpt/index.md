@@ -13,7 +13,7 @@
 :   主要是一些整数规划相关的内容。可能与我做的相关一点。东一块西一块。目前还没有一个详细的目录。你可以直接看左侧导航栏。
 
 !!! example "广告一则（长期有效版）"
-    介绍一个自己搞着玩儿的GitHub仓库：**[PuzzleSolver](https://github.com/SmilingWayne/PuzzleSolver)**。旨在为一些有趣的**逻辑谜题**提供基于数学规划方法的计算机求解工具。主要以Python语言编写，借助的求解器包括：Ortools, SCIP, Gurobi[^2]。它们中的绝大多数可以被建模成规划问题。目前已经为超过60种不同谜题提供了定制化 `(problem-tailored)` 的解决方案，并针对总计100余种谜题，收集了总计3万多个不同规模的数值实例（包括答案）。对一些我非常感兴趣的放置类谜题，比如 [Polyiamonds](https://puzzler.sourceforge.net/docs/polyiamonds.html) 和 [Polyminoes](https://puzzler.sourceforge.net/docs/polyominoes-intro.html), 我让AI开发部署了一个可交互式的开发与可视化网页，见 [webpage (PuzzleTool)](https://smilingwayne.github.io/PuzzleTools/)。虽然我对这个不是很满意就是了。
+    介绍一个自己搞着玩儿的GitHub仓库：**[Puzzlekit](https://github.com/SmilingWayne/PuzzleSolver)**。旨在为一些有趣的**逻辑谜题**提供基于数学规划方法的计算机求解工具。主要以Python语言编写，借助开源求解器 Or-Tools，为超过100种不同谜题提供了定制化 `(problem-tailored)` 的解决方案，并针对总计130余种谜题，收集了总计4万多个不同规模的数值实例（包括答案）。
     
     - **设计这么一个仓库<u>不是为了取代逻辑解法或者启发式解法</u>，单纯是因为我好奇，以及我觉得好玩；**
     - 主要以CP-SAT求解器 ortools 进行建模与求解；
