@@ -54,6 +54,7 @@ hide:
 
         This website began as a simple archive for reading notes, later evolved into a sanctuary for study, reflection and whispers of life. I now see it as ==an hourglass capturing the sands of time==.
 
+        - **2026.03.09** 🎉 Claude Code is now helping me revise and polish notes!
         - **2025.05.20** 🎉 Added Page Views text, tracking every visit since 2025.05.20 00:53:00.
         - **2024.11.27** 🎉 Introduced the Tag system. 
         - **2024.02.27** 🎉 **Total word count exceeded 800k!** 
