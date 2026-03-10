@@ -221,7 +221,8 @@ Voila！大功告成，你现在不止可以在终端里用 VS Code （谁还记
 ??? question "这个添加的 macOS zsh 命令啥意思呢？豆包说："
     这段配置的核心是：**强制 VSCode 内置的 zsh 终端以「登录交互式 shell」的方式启动**，这样它就会加载和系统终端完全一样的环境配置（比如 `.zshrc`/`.zprofile`），解决 `claude` 命令找不到的问题。
 
-    ### 逐行拆解含义
+    逐行拆解含义
+    
     ```json
     "terminal.integrated.profiles.osx": {
     "zsh": {
@@ -250,12 +251,12 @@ Voila！大功告成，你现在不止可以在终端里用 VS Code （谁还记
     | `-l` | `--login`       | 以「登录 shell」模式启动 zsh → 会自动加载 `~/.zprofile`、`~/.zlogin` 等登录配置文件（nvm、claude 的路径通常写在这些文件里）。       |
     | `-i` | `--interactive` | 以「交互式 shell」模式启动 zsh → 会加载 `~/.zshrc`（你自定义的 alias、PATH 等都在这里），并允许你和终端交互（输入命令、执行操作）。 |
 
-    ### 为什么默认 VSCode 终端不行？
+    为什么默认 VSCode 终端不行？
     - VSCode 内置终端默认启动 zsh 时，**不加 `-l` 和 `-i` 参数**，属于「非登录非交互式 shell」，只会加载 `~/.zshenv`（极少人会把配置写在这里），不会加载 `.zshrc`/`.zprofile` → 导致 `PATH` 里没有 claude、nvm 的路径，命令就找不到。
     - 加上这两个参数后，VSCode 终端就和你手动打开的系统终端（比如「终端.app」）启动方式完全一致，环境变量、命令路径也就都匹配了。
 
     
-    ### 总结
+    总结
     1. 这段配置的核心是给 VSCode 的 zsh 终端加了 `-l`（登录）和 `-i`（交互式）参数；
     2. `-l` 让终端加载登录配置，`-i` 让终端加载交互式配置，两者结合补全了环境变量；
     3. 最终效果：VSCode 终端和系统终端的环境完全一致，能找到 `claude` 等依赖配置的命令。

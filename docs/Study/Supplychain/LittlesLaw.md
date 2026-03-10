@@ -11,6 +11,7 @@
 \[ L = \lambda W \]
 
 其中：
+
 - \( L \) 表示系统中的**平均在制品数量**（`Average number of items in the system`）。这可能是在生产线上的平均在制品数量、在服务系统中等待服务的顾客数量等。
 - \( \lambda \) 是**单位时间内到达系统的平均项目数或请求的到达率**（`Average arrival rate`）。
 - \( W \) 是产品/顾客**在系统中的平均等待时间**（`Average time an item spends in the system`）。
