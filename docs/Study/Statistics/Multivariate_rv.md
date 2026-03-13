@@ -197,10 +197,12 @@ $$ F_{X|Y}(x|y) = \int_{-\infty}^x f_{X|Y}(u|y) \, \mathrm{d}u $$
 **步骤**：
 
 1. 求分布函数：
-   $$ F_Z(z) = P\{Z \le z\} = P\{g(X, Y) \le z\} = \iint_{g(x,y) \le z} f(x, y) \, \mathrm{d}x \mathrm{d}y $$
+
+$$ F_Z(z) = P\{Z \le z\} = P\{g(X, Y) \le z\} = \iint_{g(x,y) \le z} f(x, y) \, \mathrm{d}x \mathrm{d}y $$
 
 2. 求密度函数：
-   $$ f_Z(z) = F_Z'(z) $$
+
+$$ f_Z(z) = F_Z'(z) $$
 
 ### 2. 和的分布 ($Z = X + Y$)
 
