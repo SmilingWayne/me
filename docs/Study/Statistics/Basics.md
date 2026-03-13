@@ -1,7 +1,5 @@
 # 概率基础
 
-
-
 ## 从零开始 ...
 
 | 概念             | 辨析                                                                                |
@@ -44,25 +42,25 @@ $$A-B = \{x \mid x \in A \text{ 且 } x \notin B\} = A\bar{B} = A-AB$$
 
 
 交换律
-:   $$A \cup B = B \cup A; \quad A \cap B = B \cap A.$$
+:  $$A \cup B = B \cup A; \quad A \cap B = B \cap A.$$
 
 结合律：
-:   $$(A \cup B) \cup C = A \cup (B \cup C),$$
+:  $$(A \cup B) \cup C = A \cup (B \cup C),$$
 
-    $$(AB)C = A(BC)$$
+   $$(AB)C = A(BC)$$
 
 分配律：
-:   $$A \cup (B \cap C) = (A \cup B) \cap (A \cup C);$$
+:  $$A \cup (B \cap C) = (A \cup B) \cap (A \cup C);$$
 
-    $$A \cap (B \cup C) = (A \cap B) \cup (A \cap C).$$
+   $$A \cap (B \cup C) = (A \cap B) \cup (A \cap C).$$
 
 <span style="color:red">德 · 摩根律：</span>
-:   $$\overline{A \cup B} = \overline{A} \cap \overline{B}; \quad \overline{A \cap B} = \overline{A} \cup \overline{B}.$$
+:  $$\overline{A \cup B} = \overline{A} \cap \overline{B}; \quad \overline{A \cap B} = \overline{A} \cup \overline{B}.$$
 
 $$\overline{A \cup B} = \overline{\{\text{A、B至少发生一个}\}} = \{\text{A、B都不发生}\} = \overline{A} \cap \overline{B}.$$
 
 <span style="color:red">摩根律推广：</span>
-:   $$\overline{\bigcup_i A_i} = \bigcap_i \overline{A_i}, \quad \overline{\bigcap_i A_i} = \bigcup_i \overline{A_i}.$$
+:  $$\overline{\bigcup_i A_i} = \bigcap_i \overline{A_i}, \quad \overline{\bigcap_i A_i} = \bigcup_i \overline{A_i}.$$
 
 ### 频率到概率
 
@@ -77,7 +75,7 @@ $$\overline{A \cup B} = \overline{\{\text{A、B至少发生一个}\}} = \{\text{
 
     $$f_n(A \cup B) = f_n(A) + f_n(B)$$
 
-    ---
+    -----
 
     **频率的稳定值 $P(A)$ ，反映了事件 $A$ 在一次试验中发生的可能性大小，称 $P(A)$ 为事件 $A$ 的概率。**
 
@@ -99,11 +97,11 @@ $$\overline{A \cup B} = \overline{\{\text{A、B至少发生一个}\}} = \{\text{
 
     <span style="color:red">有限可加性</span>，$A_i$ **互不相容！**
 
-    $$P\left(\bigcup_{i=1}^{n} A_i\right) = \sum_{i=1}^{n} P(A_i)$$
+   $$P\left(\bigcup_{i=1}^{n} A_i\right) = \sum_{i=1}^{n} P(A_i)$$
 
     **证：** 令$A_{n+1}=A_{n+2}=\dots=\emptyset$，则有$A_i A_j=\emptyset$，由可列可加性可得：
 
-    $$P\left(\bigcup_{i=1}^{n} A_i\right) = P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i) = \sum_{i=1}^{n} P(A_i) + \sum_{i=n+1}^{\infty} P(A_i) = \sum_{i=1}^{n} P(A_i)$$
+   $$P\left(\bigcup_{i=1}^{n} A_i\right) = P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i) = \sum_{i=1}^{n} P(A_i) + \sum_{i=n+1}^{\infty} P(A_i) = \sum_{i=1}^{n} P(A_i)$$
 
     可列可加性：$P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)$
 
@@ -123,17 +121,17 @@ $$\overline{A \cup B} = \overline{\{\text{A、B至少发生一个}\}} = \{\text{
 
     可以作如下推广：
 
-    1. $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(AB) - P(AC) - P(BC) + P(ABC)$$
+    1.$$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(AB) - P(AC) - P(BC) + P(ABC)$$
 
-    2. $$P(A_1 \cup A_2 \cup \dots \cup A_n) =$$
+    2.$$P(A_1 \cup A_2 \cup \dots \cup A_n) =$$
     
-    $$\sum_{i=1}^{n} P(A_i) - \sum_{1 \le i < j \le n} P(A_i A_j) + \sum_{1 \le i < j < k \le n} P(A_i A_j A_k) + \dots + (-1)^{n-1} P(A_1 A_2 \dots A_n)$$
+   $$\sum_{i=1}^{n} P(A_i) - \sum_{1 \le i < j \le n} P(A_i A_j) + \sum_{1 \le i < j < k \le n} P(A_i A_j A_k) + \dots + (-1)^{n-1} P(A_1 A_2 \dots A_n)$$
 
     这个式子称为 "**加奇减偶公式**"。
 
     > ==加法公式==是它的简单版：
 
-    $$P(A \cup B) = P(A) + P(B) - P(AB)$$
+   $$P(A \cup B) = P(A) + P(B) - P(AB)$$
 
 
 !!! example ""
@@ -198,7 +196,7 @@ $$\overline{A \cup B} = \overline{\{\text{A、B至少发生一个}\}} = \{\text{
 
 ==设 $A$，$B$ 是两个事件，且 $P(A) > 0$，称 $P(B \mid A)$ 为在事件 $A$ 发生的条件下事件 $B$ 发生的条件概率==。
 
-$$ P(B \mid A) = \frac{P(AB)}{P(A)} $$
+$$P(B \mid A) = \frac{P(AB)}{P(A)}$$
 
 > **直观含义**：求这个条件概率，$A$发生是一大前提，在这个空间中求$B$发生的概率，因此$P(B|A) = P(AB)/P(A)$.
 
@@ -211,7 +209,7 @@ $$ P(B \mid A) = \frac{P(AB)}{P(A)} $$
 2.  **规范性**：$P(S \mid A) = 1$。
 3.  **可列可加性**：设 $B_1$，$B_2$，$\dots$ 两两互不相容，则
 
-$$ P\left( \bigcup_{i=1}^{\infty} B_i \mid A \right) = \sum_{i=1}^{\infty} P(B_i \mid A) $$
+$$P\left( \bigcup_{i=1}^{\infty} B_i \mid A \right) = \sum_{i=1}^{\infty} P(B_i \mid A)$$
 
 此外，**条件概率具有无条件概率类似性质**.例如：
 
@@ -219,7 +217,7 @@ $$ P\left( \bigcup_{i=1}^{\infty} B_i \mid A \right) = \sum_{i=1}^{\infty} P(B_i
 
 (2) 设 $B_{1},B_{2},\ldots,B_{n}$ 两两互不相容，则
 
-$$ P\left( \bigcup_{i=1}^{n} B_{i} \mid A \right) = \sum_{i=1}^{n} P(B_{i} \mid A). $$
+$$P\left( \bigcup_{i=1}^{n} B_{i} \mid A \right) = \sum_{i=1}^{n} P(B_{i} \mid A).$$
 
 (3) $P(\neg B \mid A) = 1 - P(B \mid A)$.
 
@@ -257,16 +255,16 @@ $$P(A_{1}A_{2} \ldots A_{n}) = P(A_{1}) P(A_{2} | A_{1}) \ldots P(A_{n-1} | A_{1
 
 全概率公式是概率论中的重要工具，用于计算事件 $A$ 的概率，当样本空间 $S$ 被划分为互斥且完备的事件组 $B_1, B_2, \ldots, B_n$ 时。公式如下：
 
-$$ P(A) = \sum_{i=1}^{n} P(B_i) P(A \mid B_i) $$
+$$P(A) = \sum_{i=1}^{n} P(B_i) P(A \mid B_i)$$
 
 ??? example "推导过程"
     1. **事件分解**：由于 $B_1, B_2, \ldots, B_n$ 构成样本空间 $S$ 的划分，有 $S = \bigcup_{i=1}^{n} B_i$ 且 $B_i \cap B_j = \varnothing$（$i \neq j$）。因此，事件 $A$ 可以表示为：
-       $$ A = A \cap S = A \cap \left( \bigcup_{i=1}^{n} B_i \right) = \bigcup_{i=1}^{n} (A \cap B_i) $$
+      $$A = A \cap S = A \cap \left( \bigcup_{i=1}^{n} B_i \right) = \bigcup_{i=1}^{n} (A \cap B_i)$$
     2. **互斥性**：由于 $B_i$ 互斥，事件 $A \cap B_i$ 也互斥，即 $(A \cap B_i) \cap (A \cap B_j) = \varnothing$ 对于 $i \neq j$。
     3. **概率可加性**：根据概率的有限可加性，互斥事件的并集概率等于概率之和：
-       $$ P(A) = P\left( \bigcup_{i=1}^{n} (A \cap B_i) \right) = \sum_{i=1}^{n} P(A \cap B_i) $$
+      $$P(A) = P\left( \bigcup_{i=1}^{n} (A \cap B_i) \right) = \sum_{i=1}^{n} P(A \cap B_i)$$
     4. **乘法定理**：利用条件概率公式 $P(A \cap B_i) = P(B_i) P(A \mid B_i)$，代入上式得：
-       $$ P(A) = \sum_{i=1}^{n} P(B_i) P(A \mid B_i) $$
+      $$P(A) = \sum_{i=1}^{n} P(B_i) P(A \mid B_i)$$
 
 
 下面的韦恩图直观展示了这一推导：正方形代表样本空间 $S$，被分割成互斥区域 $B_1, B_2, \ldots$，绿色圆形代表事件 $A$，与各 $B_i$ 的交集 $A \cap B_i$ 即为概率求和的部分。
@@ -289,5 +287,37 @@ $$P(A)=\sum_{i=1}^{n} P(B_{i})P(A\mid B_{i}).$$
 
 **全概率公式是“由因导果”的一个过程，贝叶斯公式则是“由果溯因”的一个推断公式。**
 
-$$ P\left(B_{i}\mid A\right)=\frac{P\left(B_{i}\right) P\left(A\mid B_{i}\right)}{\sum_{j=1}^{n} P\left(B_{j}\right) P\left(A\mid B_{j}\right)} $$
+$$P\left(B_{i}\mid A\right)=\frac{P\left(B_{i}\right) P\left(A\mid B_{i}\right)}{\sum_{j=1}^{n} P\left(B_{j}\right) P\left(A\mid B_{j}\right)}$$
+
+## 独立性 (Independence)
+
+**知识点：**
+*   **定义**：设 $A, B$ 是两个事件，如果满足 $P(AB) = P(A)P(B)$，则称事件 $A, B$ **相互独立**。
+*   **直观意义**：若 $A, B$ 独立，则 $A$ 的发生不影响 $B$ 发生的概率，即 $P(B|A) = P(B)$。
+*   **多个事件的独立性**：对于三个事件 $A, B, C$，需满足以下四个等式才称其**相互独立**：
+
+1. $P(AB) = P(A)P(B)$
+2. $P(AC) = P(A)P(C)$
+3. $P(BC) = P(B)P(C)$
+4. $P(ABC) = P(A)P(B)P(C)$
+
+*注意：前三个条件仅表示“两两独立”，不一定能推导出相互独立。*
+
+**习题：**
+1.  **例：** 均匀正四面体第一、二、三面分别染红、白、黑三色，第四面染红白黑三色。设 $A, B, C$ 分别为投掷一次出现红、白、黑的事件。证明 $A, B, C$ 两两独立，但并不相互独立。
+2.  **例：** 甲、乙两人向同一目标射击，甲击中率为 0.9，乙为 0.8。求目标被击中的概率（假设两人射击相互独立）。
+
+> 解：$P(C) = P(A \cup B) = P(A) + P(B) - P(A)P(B) = 0.9 + 0.8 - 0.72 = 0.98$。
+
+## 伯努利试验 (Bernoulli Trials)
+
+**知识点：**
+*   **定义**：试验结果只有两种可能（发生 $A$ 或不发生 $\bar{A}$）的随机试验称为**伯努利试验**。
+*   **n 重伯努利试验**：将伯努利试验独立重复进行 $n$ 次。
+*   **计算公式**：设一次试验中 $A$ 发生的概率为 $p$，则 $n$ 次试验中 $A$ 恰好发生 $k$ 次的概率为：
+    $$P_n(k) = C_n^k p^k (1-p)^{n-k}, \quad k=0, 1, \dots, n$$
+
+**习题：**
+1.  **例：** 一张试卷有 10 道四选一单选题，某生随机瞎猜。求他至少答对 6 道题的概率。
+    *解：$P(B) = \sum_{k=6}^{10} C_{10}^k (1/4)^k (3/4)^{10-k} \approx 0.0197$。由实际推断原理知，这种小概率事件几乎不会发生。*
 

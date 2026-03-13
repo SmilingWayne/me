@@ -295,7 +295,6 @@ nav:
           - 🇬🇧东方快车谋杀案: Literature/Novel/Oriental_express.md
           - 🇬🇧尼罗河上的惨案: Literature/Novel/Tragedy_niro.md
           - 🇬🇧查令十字街84号: Literature/Novel/Charline_84.md
-          - 🇨🇴百年孤独: Literature/Novel/100_years_solitude.md
           - 🇺🇸野棕榈: Literature/Novel/Wild_palm.md
           - 🇺🇸同情者: Literature/Novel/Sympathatic.md
           - 🇺🇸华氏451: Literature/Novel/Fahrenheit_451.md
@@ -304,13 +303,15 @@ nav:
           - 🇺🇸达芬奇密码: Literature/Novel/Davinci_code.md
           - 🇺🇸麦田里的守望者: Literature/Novel/Catcher_in_the_rye.md
           - 🇺🇸了不起的盖茨比: Literature/Novel/Gatsby.md
+          - 🇷🇺卡拉马佐夫兄弟: Literature/Novel/Kara_Mazov_brothers.md
+          - 🇷🇺大师与玛格丽特: Literature/Novel/Master_Margaret.md
           - 🇮🇹那不勒斯四部曲: Literature/Novel/Naples.md
           - 侦探小说: Literature/Novel/Detective.md
           - 希腊神话合集: Literature/Novel/Greek/Myth_1.md
           - 潘神的迷宫: Literature/Novel/Labyrinth_pan.md
+          - 🇨🇴百年孤独: Literature/Novel/100_years_solitude.md
           - 🇦🇺树叶裙: Literature/Novel/Leaves_dress.md
           - 🇵🇹失明症漫记: Literature/Novel/Ensaio_sobre_a_cegueira.md
-          - 🇷🇺卡拉马佐夫兄弟: Literature/Novel/Kara_Mazov_brothers.md
       - 语料库:
           - Literature/Corpus/index.md
           - 修辞、文字与形象化: Literature/Corpus/Metaphor.md
@@ -567,12 +568,18 @@ nav:
           - MIT | Course_13: Study/LinearAlgebra/MIT_course_13.md
           - MIT | Course_14: Study/LinearAlgebra/MIT_course_14.md
       - 概率论与统计学:
-          - 概率论基础: Study/Statistics/Basics.md
-          - 题目汇总: Study/Statistics/Quizes.md
-          - 随机变量: Study/Statistics/Random_Variables.md
-          - 随机变量的数字特征: Study/Statistics/Number_characters.md
-          - 大数定律和中心极限定理: Study/Statistics/Big_number.md
-          - 马氏链蒙特卡洛方法（MCMC）: Study/Statistics/MCMC.md
+          - Study/Statistics/index.md
+          - 题目汇总:
+              - Qz01｜古典概型: Study/Statistics/Quiz/Quizes.md
+              - Qz03｜多维随机变量及分布: Study/Statistics/Quiz/Multivariate_rv_q.md
+              - Qz04｜随机变量的数字特征: Study/Statistics/Quiz/Number_characters_q.md
+          - Ch01｜概率论基础: Study/Statistics/Basics.md
+          - Ch02｜随机变量及其分布: Study/Statistics/Random_Variables.md
+          - Ch03｜多维随机变量及分布: Study/Statistics/Multivariate_rv.md
+          - Ch04｜随机变量的数字特征: Study/Statistics/Number_characters.md
+          - Ch05｜特征函数: Study/Statistics/Character_func.md
+          - Ch06｜大数定律和中心极限定理: Study/Statistics/Large_number_CLT.md
+          - AP01｜MCMC 方法: Study/Statistics/MCMC.md
       - 供应链管理理论与案例:
           - 第一章｜导论: Study/SCMTheory/Chapter1.md
           - 第二章｜采购-I: Study/SCMTheory/Chapter2.md
