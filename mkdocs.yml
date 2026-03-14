@@ -107,6 +107,7 @@ nav:
       - 诗歌:
           - Poems/index.md
           - 异域:
+              - 🇮🇳薄伽梵歌: Poems/Bhagavadgita.md
               - 🇫🇷愤怒与神秘: Poems/Anger_and_mystery.md
               - 🇫🇷恶之花: Poems/Fleurs_du_mal.md
               - 🇫🇷烧酒与爱情: Poems/Shochu_and_love.md
