@@ -171,3 +171,58 @@ x_{ij} \in \{0, 1 \} \quad \\
 
 这里解释一下引入的新辅助变量 $y_{ij}$，可以视为边 $(i, j)$ 上载着的货物的流量。由于总共访问 $n$ 个节点，可以视为访问一个节点后，就在这个节点上卸下一个货，所以从该节点出发的那个边的流量就一定比到达该节点的那个边的流量小1 （对应Constr 5），同理，从起点出发的那个边的流量就一定是 $n - 1$ （对应Constr 4）。
 
+
+----
+
+## 一些好玩的结论
+
+### Beardwood-Halton-Hammersley 定理
+
+当点在单位面积中均匀随机分布时，TSP 最优解长度会渐近于 $\beta \sqrt{N}$ ，其中 $\beta$ 是常数，$N$ 为区域面积。
+
+
+| 符号               | 含义            | 数学定义                                                                        |
+| ------------------ | --------------- | ------------------------------------------------------------------------------- |
+| $\mathcal{X}_n$    | n个随机点的集合 | $\mathcal{X}_n = \{X_1, X_2, ..., X_n\}$                                        |
+| $X_i$              | 第i个随机点     | $X_i \sim \text{Uniform}([0,1]^d)$                                              |
+| $L(\mathcal{X}_n)$ | 最短TSP路径长度 | $\min\limits_{\pi \in S_n} \sum\limits_{i=1}^{n} \|X_{\pi(i)} - X_{\pi(i+1)}\|$ |
+| $d$                | 空间维度        | $d \in \mathbb{N}^+$                                                            |
+| $\beta_d$          | d维TSP常数      | $\beta_d > 0$ (依赖于d)                                                         |
+| $\|\cdot\|$        | 欧几里得范数    | $\|x\| = \sqrt{\sum_{i=1}^d x_i^2}$                                             |
+
+
+==二维平面形式（原始形式）==
+
+$$\boxed{\lim_{n \to \infty} \frac{L(\mathcal{X}_n)}{\sqrt{n}} = \beta \cdot \sqrt{A} \quad \text{a.s.}}$$
+
+其中：
+- **a.s.** = almost surely（几乎必然）
+- $A$ = 区域面积
+- $\beta \approx 0.7120 \pm 0.0002$（数值估计值）
+
+==d维推广形式==
+
+$$\boxed{\lim_{n \to \infty} \frac{L(\mathcal{X}_n)}{n^{(d-1)/d}} = \beta_d \quad \text{a.s.}}$$
+
+**缩放指数解释：**
+
+$$\frac{d-1}{d} = \begin{cases} 
+1/2 & (d=2, \text{平面}) \\
+2/3 & (d=3, \text{空间}) \\
+3/4 & (d=4) \\
+\vdots & \vdots
+\end{cases}$$
+
+
+完整定理陈述（数学严谨版）
+
+> **Theorem (Beardwood-Halton-Hammersley, 1959)**
+> 
+> 设 $X_1, X_2, ...$ 是 $[0,1]^d$ 上独立同分布的随机变量序列，具有绝对连续的概率密度函数 $f$。令 $L_n$ 表示经过 $\{X_1, ..., X_n\}$ 的最短欧几里得TSP路径长度。则存在常数 $\beta_d > 0$（仅依赖于维度d），使得：
+> 
+> $$\frac{L_n}{n^{(d-1)/d}} \xrightarrow[n \to \infty]{\text{a.s.}} \beta_d \cdot \int_{[0,1]^d} f(x)^{(d-1)/d} \, dx$$
+> 
+> 且该收敛在 $L^1$ 意义下也成立，即：
+> 
+> $$\lim_{n \to \infty} \mathbb{E}\left[\left|\frac{L_n}{n^{(d-1)/d}} - \beta_d \cdot \int f^{(d-1)/d}\right|\right] = 0$$
+
