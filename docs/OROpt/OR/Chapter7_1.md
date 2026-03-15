@@ -216,6 +216,69 @@ flowchart LR
 
 - 目标函数中，\(\sum b_i \pi_i\) 来自原始等式右端项，\(-\sum u_{ij} w_{ij}\) 来自上界约束的右端项（因为不等式方向是 \(x_{ij} \le u_{ij}\)，对偶后取负号）。
 
+
+### 最大加权闭合子图 (Maximum Weight Closure)
+
+
+给定有向图 $G = (N, A)$，其中每个节点 $i \in N$ 有权重 $w_i$。
+
+**闭合子图（Closure）**：子集 $S \subseteq N$ 称为闭合子图，当且仅当：
+
+$$\text{若 } i \in S \text{ 且 } (i,j) \in A, \text{ 则 } j \in S$$
+
+即：没有弧从 $S$ 指向 $N \setminus S$。
+
+
+**决策变量**：
+
+$$y_i = \begin{cases} 1, & \text{节点 } i \text{ 被选入闭合子图} \\ 0, & \text{否则} \end{cases}$$
+
+**完整模型**：
+
+$$
+\begin{aligned}
+\max \quad & \sum_{i \in N} w_i y_i \\
+\text{s.t.} \quad & y_i - y_j \leq 0, & \forall (i,j) \in A \\
+& 0 \leq y_i \leq 1, & \forall i \in N \\
+& y_i \in \mathbb{Z}, & \forall i \in N
+\end{aligned}
+$$
+
+**约束解释**：
+
+- $y_i - y_j \leq 0$ 等价于 $y_i \leq y_j$，即：若选 $i$（$y_i=1$），则必选 $j$（$y_j=1$）
+- 这恰好刻画了闭合子图的定义
+
+-----
+
+最大权闭合子图问题可以转换为**最小割问题**（最大流问题的对偶）：
+
+1. **构造网络**：
+   - 添加源点 $s$ 和汇点 $t$
+   - 若 $w_i > 0$：添加弧 $(s, i)$，容量为 $w_i$
+   - 若 $w_i < 0$：添加弧 $(i, t)$，容量为 $-w_i$
+   - 原图弧 $(i,j) \in A$：容量设为 $+\infty$
+
+2. **求解最小 $s$-$t$ 割** $(S^*, T^*)$
+
+3. **最大权闭合子图**：$S^* \setminus \{s\}$
+
+对着标准的最小费用流问题做一些特殊的设置：
+
+- 所有费用 $c_{ij} = 0$（零费用）
+- 源点 $s$ 的供应 $b_s = \sum_{w_i > 0} w_i$
+- 汇点 $t$ 的需求 $b_t = -\sum_{w_i > 0} w_i$
+- 其他节点 $b_i = 0$
+- 弧容量按上述规则设置
+
+此时，**最小割的对偶问题**恰好给出：
+
+$$\pi_i - \pi_j \leq 0 \quad \forall (i,j) \in A$$
+
+这与闭合子图约束 $y_i - y_j \leq 0$ 形式一致（令 $y_i = \pi_i$）。
+
+因此，**最大权闭合子图 = 最小割 = 最大流的对偶**，是最小费用流在零费用、特定供需下的特例。
+
 ---
 
 ### 最优性条件 (Optimality Conditions)

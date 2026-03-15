@@ -4,7 +4,7 @@ slug: part2-plugins
 summary: 涵盖联合分布、边缘密度、条件分布、函数变换等核心题型，系统掌握二维随机变量计算方法
 ---
 
-# 第三章 多维随机变量及其分布
+# 第3章 多维随机变量及其分布
 
 !!! example "本章概览"
 
@@ -841,4 +841,159 @@ $$f_Z(z) = 2 \cdot \frac{1}{(z+2)^2} = \frac{2}{(z+2)^2}$$
 综上：
 
 $$f_Z(z) = \begin{cases} \frac{2}{(z+2)^2}, & z > 0 \\ 0, & z \le 0 \end{cases}$$
+
+----
+
+
+## 补遗
+
+### 补充题1 射击手射击问题（离散型条件分布综合）
+
+一射击手进行射击，击中目标的概率为 $p(0<p<1)$，射击到击中目标两次为止。设以 $X$ 表示首次击中目标进行的射击次数，以 $Y$ 表示总共进行的射击次数，试求：(1) $X$ 和 $Y$ 的联合分布律；(2) 边缘分布律；(3) 条件分布律。
+
+- $X$ 取值小于 $Y$，$m \ge n$ 时联合概率为0；
+- 首次击中次数服从几何分布，单次击中概率为$p$，未击中为$q=1-p$；
+- 条件分布律需满足归一性，所有概率之和为1。
+
+----
+
+记单次射击未击中概率为$q=1-p$，$X$ 取值为$1,2,\dots$，$Y$ 取值为$2,3,\dots$且满足$1 \le m < n$。
+
+事件$\{X=m,Y=n\}$表示前$n-1$次第$m$次首次击中、其余未击中，且第$n$次第二次击中，由乘法公式
+
+$$P(X=m, Y=n) = P(X=m)P(Y=n | X=m) = pq^{m-1} \cdot pq^{n-m-1} = p^2 q^{n-2}$$
+
+其中$n=2,3,\dots$，$m=1,2,\dots,n-1$；$m \ge n$时，$P(X=m,Y=n)=0$。
+
+关于$X$的边缘分布律，对联合概率按$n$求和
+
+$$P(X=m) = \sum_{n=m+1}^{+\infty} p^2 q^{n-2} = pq^{m-1}$$
+
+其中$m=1,2,\dots$，$X$服从几何分布；
+
+关于$Y$的边缘分布律，对联合概率按$m$求和
+
+$$P(Y=n) = \sum_{m=1}^{n-1} p^2 q^{n-2} = (n-1)p^2 q^{n-2}$$
+
+其中$n=2,3,\dots$。
+
+
+给定$Y=n$时，由条件分布律定义得
+
+$$P(X=m | Y=n) = \frac{P(X=m,Y=n)}{P(Y=n)} = \frac{p^2 q^{n-2}}{(n-1)p^2 q^{n-2}} = \frac{1}{n-1}$$
+
+$m=1,2,\dots,n-1$，$X$在$1,2,\dots,n-1$上等可能分布；
+
+给定$X=m$时，由条件分布律定义得
+
+$$P(Y=n | X=m) = \frac{P(X=m,Y=n)}{P(X=m)} = \frac{p^2 q^{n-2}}{pq^{m-1}} = pq^{n-m-1}$$
+
+$n=m+1,m+2,\dots$，$Y$服从平移后的几何分布。
+
+---
+
+### 补充题2 蒲丰投针问题（二维均匀分布实际应用）
+
+桌面上画着相邻距离为$D$的平行线，向桌面随意投掷长度为$L$的针（$L \le D$），求此针与桌面上某一根平行线相交的概率。
+
+
+> 本题考查二维均匀分布与几何概型的结合应用，核心是将投针位置转化为二维随机变量（中点到平行线的距离$X$、针与垂线的夹角$\theta$），确定二者的均匀分布与独立性，推导针与线相交的几何条件，通过联合密度的二重积分计算概率。
+
+
+- 投针位置由$X$和$\theta$唯一确定，二者相互独立且均服从均匀分布；
+- 将“针与线相交”转化为不等式约束$X < \frac{L}{2}\cos\theta$是解题关键；
+- $X \sim U(0,\frac{D}{2})$，$\theta \sim U(0,\frac{\pi}{2})$，联合密度为边缘密度的乘积。
+
+
+设$X$为针的中点到最近平行线的垂直距离，$\theta$为针与该垂线的夹角，由投针的随意性，$X$与$\theta$相互独立且均服从均匀分布，$X \sim U\left(0,\frac{D}{2}\right)$，$\theta \sim U\left(0,\frac{\pi}{2}\right)$。
+
+二者的边缘密度分别为
+
+$$f_X(x) = \begin{cases} \frac{2}{D}, & 0 < x < \frac{D}{2} \\ 0, & \text{其它} \end{cases}, \quad f_\theta(\theta) = \begin{cases} \frac{2}{\pi}, & 0 < \theta < \frac{\pi}{2} \\ 0, & \text{其它} \end{cases}$$
+
+由独立性，联合概率密度为
+
+$$f(x,\theta) = f_X(x)f_\theta(\theta) = \begin{cases} \frac{4}{\pi D}, & 0 < x < \frac{D}{2}, 0 < \theta < \frac{\pi}{2} \\ 0, & \text{其它} \end{cases}$$
+
+针与平行线相交的充要条件为$X < \frac{L}{2}\cos\theta$，设该事件为$A$，则概率为联合密度在条件区域的二重积分
+
+$$P(A) = \iint_{x < \frac{L}{2}\cos\theta} f(x,\theta) dx d\theta = \int_{0}^{\frac{\pi}{2}} \int_{0}^{\frac{L}{2}\cos\theta} \frac{4}{\pi D} dx d\theta$$
+
+先对$x$积分再对$\theta$积分，得
+
+$$P(A) = \frac{4}{\pi D} \int_{0}^{\frac{\pi}{2}} \frac{L}{2}\cos\theta d\theta = \frac{2L}{\pi D} \int_{0}^{\frac{\pi}{2}} \cos\theta d\theta$$
+
+$$P(A) = \frac{2L}{\pi D} \cdot \sin\theta \bigg|_{0}^{\frac{\pi}{2}} = \frac{2L}{\pi D}$$
+
+即针与平行线相交的概率为$\frac{2L}{\pi D}$。
+
+---
+
+### 补充题3 负责人与秘书到达办公室时间问题
+
+一负责人到达办公室的时间均匀分布在8~12时，其秘书到达办公室的时间均匀分布在7~9时，两人到达时间相互独立，求他们到达办公室的时间相差不超过5分钟（$\frac{1}{12}$小时）的概率。
+
+- 统一时间单位为小时，避免单位不一致导致计算错误；
+- 独立均匀分布的联合密度为常数，概率=联合密度×积分区域面积；
+- 积分区域为长方形与带形区域$|x-y| \le \frac{1}{12}$的公共四边形，利用三角形面积差计算其面积。
+
+设$X$为负责人到达时间，$X \sim U(8,12)$；$Y$为秘书到达时间，$Y \sim U(7,9)$，二者的边缘密度为
+
+$$f_X(x) = \begin{cases} \frac{1}{4}, & 8 < x < 12 \\ 0, & \text{其它} \end{cases}, \quad f_Y(y) = \begin{cases} \frac{1}{2}, & 7 < y < 9 \\ 0, & \text{其它} \end{cases}$$
+
+由独立性，联合概率密度为
+
+$$f(x,y) = f_X(x)f_Y(y) = \begin{cases} \frac{1}{8}, & 8 < x < 12, 7 < y < 9 \\ 0, & \text{其它} \end{cases}$$
+
+设事件$A$为两人到达时间相差不超过$\frac{1}{12}$小时，即$|X-Y| \le \frac{1}{12}$，积分区域$G$为$8<x<12,7<y<9$与$|x-y| \le \frac{1}{12}$的公共部分，其面积通过三角形面积差计算得
+
+$$S_G = \frac{1}{2}\left(\frac{13}{12}\right)^2 - \frac{1}{2}\left(\frac{11}{12}\right)^2 = \frac{1}{6}$$
+
+联合密度为常数，因此概率为
+
+$$P(A) = \iint_G f(x,y)dxdy = \frac{1}{8} \times S_G$$
+
+$$P(A) = \frac{1}{8} \times \frac{1}{6} = \frac{1}{48}$$
+
+即两人到达时间相差不超过5分钟的概率为$\frac{1}{48}$。
+
+---
+
+### 补充题4 瑞利分布的推导（二维正态变量函数的分布）
+
+
+设随机变量$X$和$Y$相互独立，且都服从正态分布$N(0,\sigma^2)$，求$Z = \sqrt{X^2 + Y^2}$的概率密度函数。
+
+> 本题考查二维连续型随机变量函数的分布求解，核心用分布函数法结合极坐标变换，先求$Z$的分布函数$F_Z(z)=P(\sqrt{X^2+Y^2} \le z)$，分段讨论后将圆域积分通过极坐标变换简化，最后对分布函数求导得到概率密度。
+
+
+- 分布函数法是求解非单调随机变量函数分布的通用方法；
+- 平方和型积分适合极坐标变换，变换公式为$x=r\cos\theta$，$y=r\sin\theta$，$dxdy=rdrd\theta$；
+- $Z \ge 0$，$z \le 0$时分布函数为0，$z > 0$时积分区域为圆域$x^2+y^2 \le z^2$。
+
+----
+
+$X \sim N(0,\sigma^2)$，$Y \sim N(0,\sigma^2)$且相互独立，二者的联合概率密度为
+
+$$f(x,y) = f_X(x)f_Y(y) = \frac{1}{2\pi\sigma^2}e^{-\frac{x^2+y^2}{2\sigma^2}}, \quad -\infty < x,y < +\infty$$
+
+由$Z = \sqrt{X^2+Y^2}$知$Z \ge 0$，分两段求分布函数$F_Z(z)=P(Z \le z)$：
+$z \le 0$时，$F_Z(z) = 0$；
+$z > 0$时，$F_Z(z) = P(X^2+Y^2 \le z^2)$，转化为圆域的二重积分
+
+$$F_Z(z) = \iint_{x^2+y^2 \le z^2} \frac{1}{2\pi\sigma^2}e^{-\frac{x^2+y^2}{2\sigma^2}} dxdy$$
+
+做极坐标变换$x=r\cos\theta$，$y=r\sin\theta$，积分区域为$0 \le r \le z$，$0 \le \theta \le 2\pi$，面积元$dxdy=rdrd\theta$，代入得
+
+$$F_Z(z) = \int_{0}^{2\pi} \int_{0}^{z} \frac{1}{2\pi\sigma^2}e^{-\frac{r^2}{2\sigma^2}} \cdot r dr d\theta$$
+
+分离变量积分后得
+
+$$F_Z(z) = \frac{1}{2\pi\sigma^2} \cdot 2\pi \cdot \left[ -\sigma^2 e^{-\frac{r^2}{2\sigma^2}} \right]_{0}^{z} = 1 - e^{-\frac{z^2}{2\sigma^2}}$$
+
+对分布函数$F_Z(z)$关于$z$求导，得到$Z$的概率密度
+
+$$f_Z(z) = F_Z'(z) = \begin{cases} \frac{z}{\sigma^2}e^{-\frac{z^2}{2\sigma^2}}, & z > 0 \\ 0, & z \le 0 \end{cases}$$
+
+即$Z$服从参数为$\sigma$的瑞利分布。
 

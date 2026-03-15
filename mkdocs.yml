@@ -407,6 +407,7 @@ nav:
           - 非线性规划、凸规划理论: OROpt/OR/Chapter5.md
           - 最优化基础（锥锥们觉得很赞）: OROpt/OR/Chapter5_1.md
           - 动态规划: OROpt/OR/Chapter6.md
+          - 图的搜索: OROpt/OR/Chapter7_0.md
           - 图论算法:最短路问题: OROpt/OR/Chapter7.md
           - 图论算法:最小费用流与推广: OROpt/OR/Chapter7_1.md
           - 图论算法:最大流与最小割: OROpt/OR/Chapter7_2.md
@@ -525,23 +526,23 @@ nav:
       - 小红书｜供应链管理:
           - 利特尔定律: Study/Supplychain/LittlesLaw.md
           - 研究生课程：供应链管理与物流: Study/Supplychain/202401SupplyChain.md
-          - 三种工厂选址模型(Chapter_5.4): Study/Supplychain/Supplychain1.md
-          - 时间序列预测：静态方法(Chapter_7.5.1): Study/Supplychain/SupplyChain13.md
-          - 时间序列预测模型与框架：ARMA/Winter(Chapter_7.5/7.6): Study/Supplychain/SupplyChain3.md
-          - 经济订货批量模型(EOQ)(Chapter_11.3): Study/Supplychain/SupplyChain4.md
-          - EOQ模型的订货量确定与周期盘点(Chapter_11.3.2): Study/Supplychain/SupplyChain9.md
-          - 供应链综合计划策略I(Chapter_8.4): Study/Supplychain/SupplyChain7.md
-          - 供应链综合计划策略II：案例分析(Chapter_8.5): Study/Supplychain/SupplyChain11.md
-          - 规模经济管理：数量折扣I(Chapter_11.4): Study/Supplychain/SupplyChain5.md
-          - 规模经济管理：数量折扣II(Chapter_11.4): Study/Supplychain/SupplyChain8.md
+          - 三种工厂选址模型(Ch_5.4): Study/Supplychain/Supplychain1.md
+          - 时序预测：静态方法(Ch_7.5.1): Study/Supplychain/SupplyChain13.md
+          - 时序预测模型与框架：ARMA/Winter(Ch_7.5/7.6): Study/Supplychain/SupplyChain3.md
+          - 经济订货批量模型(EOQ)(Ch_11.3): Study/Supplychain/SupplyChain4.md
+          - EOQ模型的订货量确定与周期盘点(Ch_11.3.2): Study/Supplychain/SupplyChain9.md
+          - 供应链综合计划策略I(Ch_8.4): Study/Supplychain/SupplyChain7.md
+          - 供应链综合计划策略II：案例分析(Ch_8.5): Study/Supplychain/SupplyChain11.md
+          - 规模经济管理：数量折扣I(Ch_11.4): Study/Supplychain/SupplyChain5.md
+          - 规模经济管理：数量折扣II(Ch_11.4): Study/Supplychain/SupplyChain8.md
           - 运营管理：排队论: Study/Supplychain/SupplyChain6.md
-          - 安全库存：基于给定策略(Chapter_12.2): Study/Supplychain/SupplyChain10.md
-          - 安全库存：聚集/供给不确定/零件的情况(Chapter_12.3): Study/Supplychain/SupplyChain12.md
-          - 报童模型I：最优可获得性水平的确定(Chapter_13.2): Study/Supplychain/SupplyChain14.md
-          - 报童模型II：沃尔玛案例分析(Chapter_13.2): Study/Supplychain/SupplyChain15.md
-          - Excel进行供应链绩效模拟(Chapter_13.Appendix): Study/Supplychain/SupplyChain16.md
-          - 提高供应链盈利能力的杠杆(Chapter_13.3): Study/Supplychain/SupplyChain17.md
-          - 供应链中的运输(Chapter_14_1): Study/Supplychain/SupplyChain18.md
+          - 安全库存：基于给定策略(Ch_12.2): Study/Supplychain/SupplyChain10.md
+          - 安全库存：聚集/供给不确定/零件的情况(Ch_12.3): Study/Supplychain/SupplyChain12.md
+          - 报童模型I：最优可获得性水平的确定(Ch_13.2): Study/Supplychain/SupplyChain14.md
+          - 报童模型II：沃尔玛案例分析(Ch_13.2): Study/Supplychain/SupplyChain15.md
+          - Excel进行供应链绩效模拟(Ch_13.Apdx): Study/Supplychain/SupplyChain16.md
+          - 提高供应链盈利能力的杠杆(Ch_13.3): Study/Supplychain/SupplyChain17.md
+          - 供应链中的运输(Ch_14_1): Study/Supplychain/SupplyChain18.md
           - 供应链采购合同分析: Study/Supplychain/SupplyChain19.md
       - 微积分:
           - Chapter1: Study/Calculus/Math2.md
@@ -572,8 +573,11 @@ nav:
           - Study/Statistics/index.md
           - 题目汇总:
               - Qz01｜古典概型: Study/Statistics/Quiz/Quizes.md
+              - Qz02｜随机变量及其分布: Study/Statistics/Random_Variables_q.md
               - Qz03｜多维随机变量及分布: Study/Statistics/Quiz/Multivariate_rv_q.md
               - Qz04｜随机变量的数字特征: Study/Statistics/Quiz/Number_characters_q.md
+              - Qz05｜特征函数: Study/Statistics/Quiz/Character_func_q.md
+              - Qz06｜大数定律和中心极限定理: Study/Statistics/Quiz/Large_number_CLT_q.md
           - Ch01｜概率论基础: Study/Statistics/Basics.md
           - Ch02｜随机变量及其分布: Study/Statistics/Random_Variables.md
           - Ch03｜多维随机变量及分布: Study/Statistics/Multivariate_rv.md

@@ -2,6 +2,7 @@
 
 !!! quote "照例，先上链接"
     - 首先**强烈推荐** 计算机系 jyy（yyds！）老师的[B站教程](https://www.bilibili.com/video/BV1Q7411R7ie)。目前我所见的中文教程中，讲授最大流/最小割效果最好、信息含量足够大、信息密度足够高的。**本篇笔记不过是对上述这个短短1h的授课视频的拙劣模仿。**
+    - 笔记的第一个部分侧重于直觉，因此数学推导的部分不多，第二部分会从更加严谨的数学 + 算法角度进行展开。(20260315)
 
 这个笔记会从几个部分展开。我很早以前就想写这部分内容了。没想到2024年都快结束了才堪堪开始。首先，你需要知道，**最大流问题实际上可以认为是最小费用流的一个特例（可参考[最小费用流的拓展](./Chapter7_2.md)。而最小费用流又可以视作一种线性规划问题的特例。我们会在后面简单讨论一下这个对偶问题的形式与含义）。**
 
@@ -380,3 +381,394 @@ y_v - y_u + y_{u,v} \geq 0 \qquad \forall (u,v) \in E, u \neq s, v \neq t \qquad
 （别忘了右端项！）
 
 !!! abstract "这部分拖了几乎一年，在2025.02.14终于完成了内容整合。不容易！"
+
+---
+
+
+## 更加学院派的 Ford-Fulkerson 算法整理
+
+以下是基于 MIT 讲义内容，为你现有的 `Chapter7_2.md` 笔记补充的**严谨学院派分析部分**。你可以直接将以下内容接在你原有笔记的末尾（即 `Ford-Fulkerson 算法` 标题之后）。
+
+这部分内容侧重于**形式化定义、算法伪代码、正确性证明逻辑以及复杂度分析**，弥补了原有笔记在算法落地和理论严谨性上的不足。
+
+---
+
+## Ford-Fulkerson 算法：形式化描述与复杂度分析
+
+!!! note ""
+    基于前文的直观理解，本节我们将给出 Ford-Fulkerson 算法，前置的残差网络理论、形式化定义、伪代码描述，并基于再次证明其正确性（最大流最小割定理）及有限性。同时分析其时间复杂度缺陷及改进方向。
+
+### The Residual Network
+
+为了在算法过程中动态地寻找增广路径并允许“撤销”之前的流量决策，我们需要引入**残差网络 (Residual Network)** 的概念。
+
+给定网络 $G=(N, A)$，容量 $u_{ij}$，当前可行流 $x$。对于每条弧 $(i, j) \in A$，定义其**残差容量 (Residual Capacity)** $r_{ij}$ 为：
+
+$$
+r_{ij} = \begin{cases} 
+u_{ij} - x_{ij} & \text{若 } (i, j) \in A \text{ (前向弧)} \\
+x_{ji} & \text{若 } (j, i) \in A \text{ (后向弧)}
+\end{cases}
+$$
+
+**残差网络 $G(x)$** 是由所有 $r_{ij} > 0$ 的弧组成的网络。
+*   **物理意义**：$r_{ij}$ 表示在弧 $(i, j)$ 上还能增加多少流量；后向弧的残差容量表示可以“退回”多少流量。下图，中黑色的部分就是前向弧，红色的，一方面代表当前可行流量，一方面也能标注后向弧的量（可以回退的）。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/202603151343957.png)
+
+### Augmenting Path Theorem
+
+!!! theorem "增广路径定理"
+    一个可行流 $x$ 是最大流，当且仅当残差网络 $G(x)$ 中不存在从源点 $s$ 到汇点 $t$ 的有向路径（即增广路径）。
+
+    **这个的直观证明见前一部分**。
+
+    *   **充分性**：如果存在增广路径，我们可以沿该路径增加流量，故当前流不是最大流。
+    *   **必要性**：如果不存在增广路径，则当前流为最大流（证明见下文最大流最小割定理）。
+
+### Ford-Fulkerson Algorithm
+
+基于增广路径定理，Ford-Fulkerson 算法通过不断寻找增广路径来迭代更新流。
+
+```python
+Algorithm Ford-Fulkerson:
+    Input: Network G=(N, A), capacities u, source s, sink t
+    Output: Maximum flow x
+
+    1. Initialization:
+        x := 0  (所有弧流量初始化为 0)
+        Construct residual network G(x)
+
+    2. Augmentation Loop:
+        while there exists a directed path P from s to t in G(x) do
+            // 计算路径 P 的残差容量（瓶颈容量）
+            δ := min { r_ij : (i, j) ∈ P }
+            
+            // 沿路径增广
+            for each arc (i, j) in P do
+                if (i, j) is a forward arc in G then
+                    x_ij := x_ij + δ
+                else // (i, j) is a backward arc corresponding to (j, i) in G
+                    x_ji := x_ji - δ
+            
+            // 更新残差网络 G(x)
+            Update residual capacities r_ij accordingly
+            
+    3. Termination:
+        return x
+```
+
+!!! example "Integrality Lemma"
+    如果所有容量 $u_{ij}$ 均为整数，则 Ford-Fulkerson 算法在每一步迭代中保持所有流量 $x_{ij}$ 和残差容量 $r_{ij}$ 为整数。
+
+    **Trivial**：初始时 $x=0$ 为整数。每次增广量 $\delta$ 是路径上残差容量的最小值，故 $\delta$ 为整数。更新操作仅涉及整数加减，故整数性保持不变。
+
+!!! theorem "Finiteness"
+    若容量均为有限整数，Ford-Fulkerson 算法**必在有限步内终止**。
+
+    *   **证明**：
+        1.  由整数性引理，每次增广量 $\delta \geq 1$。
+        2.  每次增广后，从源点 $s$ 流出的总流量至少增加 1。
+        3.  最大流值 $v^*$ 有上界（例如所有出弧容量之和）。
+        4.  因此，增广次数最多为 $O(v^*)$ 或 $O(nU)$（其中 $U$ 为最大容量）。
+
+!!! warning "无理数容量的陷阱"
+    如果容量为无理数，Ford-Fulkerson 算法**可能无法终止**，甚至收敛到错误的流值（参见 Lec 09 中的反例构造）。但在实际应用中容量通常为整数或有理数。
+
+### Max-Flow Min-Cut Theorem
+
+这是网络流理论的核心对偶定理。
+
+!!! theorem "最大流最小割定理的严格证明"
+    在任何网络中，从 $s$ 到 $t$ 的最大流值等于最小 $s-t$ 割的容量。
+    $$ \max \{ v \} = \min \{ CAP(S, T) \} $$
+
+
+    设 $x^*$ 为算法终止时的流（即无增广路径），$S^* = \{ j : s \to j \text{ 在 } G(x^*) \text{ 中可达} \}$，$T^* = N \setminus S^*$。
+
+    1.  **引理 1**：对于任意流 $x$ 和任意割 $(S, T)$，流出 $s$ 的净流量等于穿过割的净流量 $F_x(S, T)$。
+        *   *证明*：对 $S \setminus \{s\}$ 中所有节点应用流量守恒约束求和即可得。
+    2.  **引理 2**：对于任意流 $x$ 和任意割 $(S, T)$，$F_x(S, T) \leq CAP(S, T)$。
+        *   *证明*：$F_x(S, T) = \sum_{i \in S, j \in T} x_{ij} - \sum_{i \in T, j \in S} x_{ji}$。由于 $x_{ij} \leq u_{ij}$ 且 $x_{ji} \geq 0$，故得证。
+    3.  **引理 3**：对于算法终止时的流 $x^*$ 和构造的割 $(S^*, T^*)$，$F_{x^*}(S^*, T^*) = CAP(S^*, T^*)$。
+        *   *证明*：由于 $G(x^*)$ 中不存在从 $S^*$ 到 $T^*$ 的弧（否则 $T^*$ 中的点应属于 $S^*$），这意味着对于所有跨越割的弧 $(i, j)$（$i \in S^*, j \in T^*$），必有 $x_{ij} = u_{ij}$ 且 $x_{ji} = 0$。因此净流量等于容量。
+
+    **综上**：
+
+    $$ \text{Max Flow } v^* = F_{x^*}(S^*, T^*) = CAP(S^*, T^*) \geq \text{Min Cut} $$
+    
+    又因为任意流 $\leq$ 任意割，故 $v^*$ 即为最大流，$(S^*, T^*)$ 即为最小割。
+
+### Complexity & Improvements
+
+虽然 Ford-Fulkerson 算法逻辑简单，==但其复杂度依赖于容量值 $U$==，属于**伪多项式时间 (Pseudo-polynomial time)**。
+
+| 算法变体                      | 增广路径选择策略       | 增广次数上限        | 总时间复杂度           | 备注                   |
+| :---------------------------- | :--------------------- | :------------------ | :--------------------- | :--------------------- |
+| **Ford-Fulkerson**            | 任意路径 (DFS)         | $O(nU)$ 或 $O(v^*)$ | $O(m \cdot v^*)$       | 容量大时效率极低       |
+| **Edmonds-Karp** (Lec 10)     | **最短增广路径** (BFS) | $O(nm)$             | $O(n^2 m)$             | 多项式时间，与容量无关 |
+| **Capacity Scaling** (Lec 12) | 容量缩放               | $O(m \log U)$       | $O(nm \log U)$         | 适合大容量网络         |
+| **Preflow-Push** (Lec 11)     | 预流推进 (无路径)      | -                   | $O(n^2 m)$ 或 $O(n^3)$ | 实际效率通常最高       |
+
+以下是基于 MIT Lec 10 讲义内容，为你现有的 `Chapter7_2.md` 笔记补充的 **Edmonds-Karp 算法详解**。
+
+这部分内容紧接在你原有笔记的 `Ford-Fulkerson 算法` 部分之后。它侧重于**算法的具体实现流程（BFS）、伪代码、以及基于距离标号（Distance Labels）的复杂度证明**，弥补了原有笔记在“多项式时间算法”方面的空白。
+
+---
+
+### Edmonds-Karp 算法：最短增广路
+
+!!! note "算法背景"
+    Ford-Fulkerson 算法的最大缺陷在于增广路径的选择是任意的。如果选择不当（如 Lec 09 中的坏例子），算法可能需要指数次增广。**Edmonds-Karp 算法** 是 Ford-Fulkerson 算法的一种具体实现，它规定：**每次始终选择残差网络中边数最少的增广路径（即最短路径）**。
+
+Edmonds-Karp 算法通过 **BFS (广度优先搜索)** 来寻找增广路径。
+*   **策略**：在残差网络 $G(x)$ 中，寻找从 $s$ 到 $t$ 的最短路径（以边数衡量距离）。
+*   **目的**：保证距离标号单调不减，从而限制增广次数的上界，使算法在多项式时间内终止。
+
+伪代码如下：
+
+```python
+Algorithm Edmonds-Karp:
+    Input: Network G=(N, A), capacities u, source s, sink t
+    Output: Maximum flow x
+
+    1. Initialization:
+        x := 0  (所有弧流量初始化为 0)
+        
+    2. Main Loop:
+        while True do
+            // 使用 BFS 寻找最短增广路径
+            parent := array of size |N| initialized to NULL
+            queue := [s]
+            parent[s] := s
+            
+            found := False
+            while queue is not empty do
+                u := queue.pop()
+                if u == t then
+                    found := True
+                    break
+                for each vertex v adjacent to u in residual network G(x) do
+                    if parent[v] == NULL and residual_capacity(u, v) > 0 then
+                        parent[v] := u
+                        queue.push(v)
+            
+            if not found then
+                break  // 找不到增广路，算法终止
+            
+            // 路径回溯与流量增广
+            path_flow := infinity
+            curr := t
+            while curr != s do
+                prev := parent[curr]
+                path_flow := min(path_flow, residual_capacity(prev, curr))
+                curr := prev
+            
+            // 更新残差网络
+            curr := t
+            while curr != s do
+                prev := parent[curr]
+                x[prev][curr] := x[prev][curr] + path_flow
+                x[curr][prev] := x[curr][prev] - path_flow  // 反向边
+                curr := prev
+                
+    3. Termination:
+        return x
+```
+
+Edmonds-Karp 算法的关键在于证明其增广次数是有限的，且与容量值 $U$ 无关。首先引入了 Distance Labels，便于在反向的时候能找到“最短路径”。
+
+**Distance Labels**
+
+定义 $d(i)$ 为残差网络 $G(x)$ 中从源点 $s$ 到节点 $i$ 的最短路径长度（边数）。
+*   **性质 1**：对于残差网络中的任意弧 $(i, j)$，满足 $d(j) \leq d(i) + 1$。
+*   **性质 2**：增广路径 $P$ 上的每一条弧 $(i, j)$ 都满足 $d(j) = d(i) + 1$（即都是“有效弧”）。
+
+
+引理 1：距离标号单调不减
+:    随着算法的进行，每个节点 $i$ 的距离标号 $d(i)$ 是非递减的。
+    *   **证明思路**：增广操作可能会引入反向边，但反向边 $(j, i)$ 的加入意味着 $d(i) = d(j) + 1$，这不会减少 $s$ 到其他节点的最短距离。删除饱和边只会增加距离或保持不变。
+
+引理 2：每条弧成为瓶颈的次数有限
+:   每条弧 $(i, j)$ 成为增广路径上的**瓶颈弧 (Critical Arc)**（即被饱和的弧）的次数最多为 $n/2$ 次。
+    *   **证明思路**：
+        1.  当 $(i, j)$ 被饱和时，它在残差网络中消失，此时 $d(j) = d(i) + 1$。
+        2.  要使 $(i, j)$ 再次出现在残差网络中，必须沿反向边 $(j, i)$ 推流，这要求 $d(i) = d(j) + 1$。
+        3.  结合距离标号单调不减，再次饱和时 $d(i)$ 至少增加了 2。
+        4.  因为 $d(i) < n$，所以每条弧最多饱和 $n/2$ 次。
+
+
+!!! theorem "Edmonds-Karp 复杂度定理"
+    1.  **增广次数**：最多为 $O(nm)$ 次。（共有 $m$ 条弧，每条弧最多成为瓶颈 $n/2$ 次，每次增广至少饱和一条弧）。
+    2.  **时间复杂度**：每次 BFS 耗时 $O(m)$，总时间为 **$O(nm^2)$**。通常文献记为 $O(VE^2)$）。
+
+
+!!! abstract "最大容量增广路 (Largest Augmenting Path)"
+    除了最短路径策略，Edmonds-Karp 在其原始论文中也分析了**最大容量增广路**策略。
+    *   **策略**：每次选择残差容量最大的增广路径。
+    *   **实现**：可通过修改 Dijkstra 算法或二分搜索容量阈值实现。
+    *   **复杂度**：增广次数为 $O(m \log U)$，总时间复杂度 $O(m^2 \log m \log U)$。
+    *   **对比**：虽然依赖容量 $U$，但在某些大容量稀疏图中可能表现良好，但**最短增广路 (BFS)** 是更严格的多项式时间算法。
+
+
+| 特性             | Ford-Fulkerson (DFS/任意)       | Edmonds-Karp (BFS/最短)    |
+| :--------------- | :------------------------------ | :------------------------- |
+| **增广路选择**   | 任意路径                        | 边数最少的路径 (BFS)       |
+| **增广次数**     | $O(v^*)$ (依赖容量，可能指数级) | $O(nm)$ (多项式级)         |
+| **总复杂度**     | $O(m \cdot v^*)$                | $O(nm^2)$                  |
+| **适用场景**     | 小容量整数网络                  | 一般网络，理论保证更强     |
+| **核心证明工具** | 整数性引理                      | 距离标号单调性、瓶颈弧分析 |
+
+### Preflow-Push
+
+!!! abstract "算法范式转变"
+    不同于增广路径算法（如 Ford-Fulkerson, Edmonds-Karp）始终维护**可行流（Flow）**（即除源汇外所有节点流量守恒），预流推进算法（Preflow-Push）在中间过程维护**预流（Preflow）**。
+    *   **核心放松**：允许中间节点存在**超额流量 (Excess)**，即流入量 $\ge$ 流出量。
+    *   **推进机制**：通过局部操作（Push/Relabel）将超额流量逐步推向汇点，直到所有中间节点超额量为 0，预流变为可行流。
+    *   **优势**：无需寻找全局增广路径，适合并行计算及大规模稀疏图。
+
+
+预流 (Preflow)：一个函数 $x: A \to \mathbb{R}$ 称为预流，如果满足：
+
+1.  **容量约束**：$0 \leq x_{ij} \leq u_{ij}, \forall (i, j) \in E$
+2.  **超额非负**：对于所有中间节点 $i \in V \setminus \{s, t\}$，其超额流量 $e(i)$ 满足：
+    $$ e(i) = \sum_{j \in N} x_{ji} - \sum_{j \in N} x_{ij} \geq 0 $$
+*   **物理意义**：中间节点可以“暂时存储”流量，不要求即时守恒。源点 $s$ 可以有净流出，汇点 $t$ 可以有净流入。
+
+**Distance Labels**
+
+为了指导流量向汇点推进，算法维护一个距离标号函数 $d: N \to \mathbb{Z}_{\geq 0}$。
+
+!!! note "有效距离标号 (Valid Distance Labels)"
+    对于残差网络 $G(x)$，距离标号 $d$ 是有效的，如果满足：
+    
+    1.  $d(t) = 0$
+    2.  对于所有残差弧 $(i, j) \in G(x)$，满足 $d(i) \leq d(j) + 1$
+
+    若 $d$ 是有效标号，则 $d(i)$ 是残差网络中节点 $i$ 到汇点 $t$ 的**最短路径长度的下界**。
+    *   **推论**：若 $d(i) \geq n$，则残差网络中不存在从 $i$ 到 $t$ 的路径。
+
+    ----
+    
+    残差网络中的弧 $(i, j)$ 称为**容许弧**，如果：
+    
+    1.  残差容量 $r_{ij} > 0$
+    2.  满足 tight 约束：$d(i) = d(j) + 1$
+    
+    *   **意义**：流量只能沿着距离标号严格递减 1 的方向推进（即“下坡”）。
+
+
+算法通过两种基本操作来消除超额流量：
+
+#### 1) 推进操作 (Push)
+
+!!! note "Push(i, j)"
+    若节点 $i$ 是活跃节点（$e(i) > 0$）且存在容许弧 $(i, j)$：
+    *   **推进量**：$\delta = \min \{ e(i), r_{ij} \}$
+    *   **更新**：
+        *   $x_{ij} \leftarrow x_{ij} + \delta$
+        *   $e(i) \leftarrow e(i) - \delta$
+        *   $e(j) \leftarrow e(j) + \delta$
+        *   更新残差容量 $r_{ij}, r_{ji}$
+    *   **分类**：
+        *   **饱和推进 (Saturating Push)**：若 $\delta = r_{ij}$，弧 $(i, j)$ 被饱和，从残差网络消失。
+        *   **非饱和推进 (Non-saturating Push)**：若 $\delta = e(i) < r_{ij}$，节点 $i$ 不再活跃。
+
+#### 2) 重标号操作 (Relabel)
+
+!!! note "Relabel(i)"
+    若节点 $i$ 是活跃节点（$e(i) > 0$）但**不存在**容许弧：
+    
+    *   **操作**：升高 $i$ 的标号，使其能够向邻居推流。
+    *   **更新**：$d(i) \leftarrow \min \{ d(j) + 1 : (i, j) \in A, r_{ij} > 0 \}$
+    *   **性质**：重标号后，至少产生一条新的容许弧。$d(i)$ 单调不减。
+
+
+```python
+Algorithm Preflow-Push (Goldberg-Tarjan):
+    Input: Network G=(N, A), capacities u, source s, sink t
+    Output: Maximum flow x
+
+    1. Preprocessing:
+        x := 0
+        d(s) := n, d(i) := 0 for all i != s  (或反向 BFS 初始化)
+        for each arc (s, j) do
+            x_sj := u_sj  (饱和源点出弧)
+            e(j) := u_sj
+            e(s) := e(s) - u_sj
+            
+    2. Main Loop:
+        while there exists an active node i (e(i) > 0, i != s, t) do
+            if exists admissible arc (i, j) then
+                Push(i, j)
+            else
+                Relabel(i)
+                
+    3. Termination:
+        Convert preflow to flow (将 s 上方多余流量退回，或直接忽略)
+        return x
+```
+
+**分析概要**：
+1.  **Relabel 操作**：每个节点最多重标号 $2n$ 次，总时间 $O(nm)$。
+2.  **饱和推进 (Saturating Pushes)**：每条弧最多饱和 $O(n)$ 次，总次数 $O(nm)$。
+3.  **非饱和推进 (Non-saturating Pushes)**：这是瓶颈。
+    *   **势函数**：$\Phi = \sum_{i \in Active} d(i)$。
+    *   **变化分析**：
+        *   每次非饱和推进，$\Phi$ 至少减少 1（活跃节点 $i$ 消失或 $d(i)$ 减小）。
+        *   Relabel 和饱和推进会增加 $\Phi$，但总增加量受限（$O(n^2 m)$）。
+    *   **结论**：非饱和推进总次数为 $O(n^2 m)$。
+
+#### Advanced Variants
+
+为了进一步降低复杂度， 有两种基于**缩放 (Scaling)** 和**启发式选择**的改进。
+
+| 算法变体                  | 策略                     | 非饱和推进次数    | 总复杂度             | 备注         |
+| :------------------------ | :----------------------- | :---------------- | :------------------- | :----------- |
+| **Generic Preflow-Push**  | 任意活跃节点             | $O(n^2 m)$        | $O(n^2 m)$           | 基础版本     |
+| **Highest Level Pushing** | 选 $d(i)$ 最大的活跃节点 | $O(n^2 \sqrt{m})$ | $O(n^2 \sqrt{m})$    | 理论最优之一 |
+| **Excess Scaling**        | 限制超额量 $\Delta$ 缩放 | $O(n^2 \log U)$   | $O(nm + n^2 \log U)$ | 适合大容量图 |
+
+==最高标号预流推进 (Highest Level Pushing)==
+
+!!! abstract "策略"
+    每次选择距离标号 $d(i)$ **最大**的活跃节点进行推进。
+    *   **复杂度**：$O(n^2 \sqrt{m})$。
+    *   **分析工具**：更复杂的势函数 $\Phi = \sum_{j} (\text{active nodes } i \text{ with } d(i) \geq d(j))$。
+    *   **阶段分析**：将操作分为“阶段 (Phases)"，每个阶段内最高标号不变。
+
+==超额缩放算法 (Excess Scaling Algorithm)==
+
+!!! abstract "策略"
+    引入参数 $\Delta$，仅处理超额量 $e(i) \geq \Delta/2$ 的节点。
+    *   **流程**：初始 $\Delta$ 为大容量，逐步减半 ($\Delta \leftarrow \Delta/2$)。
+    *   **复杂度**：$O(nm + n^2 \log U)$。
+    *   **优势**：避免了小流量多次推进，类似容量缩放思想。
+
+
+没问题，将之前的三个表格合并为一个**综合对比总表**是一个非常好的主意。这样可以一目了然地看到所有算法的演进路线、复杂度差异以及适用场景。
+
+以下是为你整理的**最大流算法综合对比总表**，建议放在笔记的**最后部分**作为总结。
+
+---
+
+## 总结 
+
+涵盖了从基础 Ford-Fulkerson 到高级预流推进算法的核心对比。
+
+| 算法家族                            | 算法名称                              | 核心策略                                   | 维护状态              | 关键操作                             | 操作次数界限                      | 总时间复杂度         | 证明工具/备注                                                                |
+| :---------------------------------- | :------------------------------------ | :----------------------------------------- | :-------------------- | :----------------------------------- | :-------------------------------- | :------------------- | :--------------------------------------------------------------------------- |
+| **增广路径法**<br>(Augmenting Path) | **Ford-Fulkerson**<br>(Lec 09)        | 任意增广路径<br>(DFS/任意)                 | **可行流**<br>(Flow)  | 寻找路径<br>增广 (Augment)           | 增广次数：<br>$O(v^*)$ 或 $O(nU)$ | $O(m \cdot v^*)$     | **整数性引理**。<br>容量为无理数时可能不收敛；适合小容量整数网络。           |
+| ^                                   | **Edmonds-Karp**<br>(Lec 10)          | **最短增广路径**<br>(BFS)                  | **可行流**<br>(Flow)  | 寻找最短路径<br>增广 (Augment)       | 增广次数：<br>$O(nm)$             | $O(n^2 m)$           | **距离标号单调性**。<br>多项式时间保证，与容量无关；适合一般网络。           |
+| ^                                   | **Capacity Scaling**<br>(Lec 12)      | 容量缩放<br>(只选容量 $\ge \Delta$ 的路径) | **可行流**<br>(Flow)  | 寻找 $\Delta$-路径<br>增广 (Augment) | 增广次数：<br>$O(m \log U)$       | $O(nm \log U)$       | **几何收敛性**。<br>适合大容量网络；避免小流量多次增广。                     |
+| **预流推进法**<br>(Preflow-Push)    | **Generic Preflow-Push**<br>(Lec 11)  | 任意活跃节点<br>(Active Node)              | **预流**<br>(Preflow) | 推进 (Push)<br>重标号 (Relabel)      | 非饱和推进：<br>$O(n^2 m)$        | $O(n^2 m)$           | **势函数 $\Phi=\sum d(i)$**。<br>基础版本；理论分析基准；局部操作。          |
+| ^                                   | **Highest Level Pushing**<br>(Lec 12) | 选 $d(i)$ **最大**的活跃节点               | **预流**<br>(Preflow) | 推进 (Push)<br>重标号 (Relabel)      | 非饱和推进：<br>$O(n^2 \sqrt{m})$ | $O(n^2 \sqrt{m})$    | **阶段分析 (Phases)**。<br>理论最优之一；实际效率极高；适合大规模图。        |
+| ^                                   | **Excess Scaling**<br>(Lec 12)        | 限制超额量 $\Delta$ 缩放                   | **预流**<br>(Preflow) | 推进 (Push)<br>重标号 (Relabel)      | 非饱和推进：<br>$O(n^2 \log U)$   | $O(nm + n^2 \log U)$ | **势函数 $\Phi=\sum e(i)d(i)/\Delta$**。<br>结合缩放与推进；适合大容量网络。 |
+
+符号说明
+
+*   $n$: 节点数 (Nodes)
+*   $m$: 弧数 (Arcs)
+*   $U$: 最大容量 (Max Capacity)
+*   $v^*$: 最大流值 (Max Flow Value)
+
