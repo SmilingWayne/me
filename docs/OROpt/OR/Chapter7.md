@@ -5,7 +5,7 @@
     参考：
     
     1. [Stanford Course](https://web.stanford.edu/~ashishg/cs261/win21/notes/)
-    2. [MIT Course (Old version)](https://ocw.mit.edu/courses/15-082j-network-optimization-fall-2010/download/)
+    2. [MIT Course (Old version)](https://ocw.mit.edu/courses/15-082j-network-optimization-fall-2010/download/)，顺带说一嘴，虽然是上古PPT了，但是信息量不小，而且很侧重模型 + 理论推导。
 
 ## 概念
 

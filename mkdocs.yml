@@ -418,6 +418,7 @@ nav:
           - 仓储论（EOQ模型和它的一万个分身）: OROpt/OR/Chapter10.md
           - 博弈论: OROpt/OR/Chapter11.md
           - 多智能体寻路(MAPF): OROpt/OR/MAPF.md
+      - 建模｜最大割: OROpt/OR/Max_k_cut.md
       - 建模｜拉格朗日松弛: OROpt/OR/LR.md
       - 算法｜拉格朗日松弛: OROpt/OR/LR_2.md
       - 算法｜列生成方法: OROpt/OR/Chapter12.md
@@ -578,6 +579,7 @@ nav:
               - Qz04｜随机变量的数字特征: Study/Statistics/Quiz/Number_characters_q.md
               - Qz05｜特征函数: Study/Statistics/Quiz/Character_func_q.md
               - Qz06｜大数定律和中心极限定理: Study/Statistics/Quiz/Large_number_CLT_q.md
+              - Ap02｜复变函数补充: Study/Statistics/Quiz/Complex_analysis_q.md
           - Ch01｜概率论基础: Study/Statistics/Basics.md
           - Ch02｜随机变量及其分布: Study/Statistics/Random_Variables.md
           - Ch03｜多维随机变量及分布: Study/Statistics/Multivariate_rv.md
