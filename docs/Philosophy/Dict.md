@@ -1,46 +1,35 @@
 # 哲学词典
 
-## 存在 (Being)
-
-Being, (大写或不可数名词) **指的是 “存在”本身，即存在的状态、行为、本质或“是”的属性。它是一个抽象的、统一的概念**。也会写作 existence.
-
-beings / a being (小写、可数名词) **指的是 “存在物” 或 “存在者”，即一个个具体或抽象的、存在着的东西。**
-
-## 本体论 (Ontology) 
-
-<span style="color:red;font-weight:bold">本体论是一门以哲学方式研究“存在”本身究竟为何物的学问</span>。它通过审视各种各样的“存在者”（beings），来试图理解和阐明所有存在者得以“存在（Being）”的那个根本属性和结构。
-
-为了研究这个抽象的 Being，必须通过分析具体的 beings（存在者）来进行。本体论的全部工作都围绕着 Being 这个中心概念展开，而这个展开的过程必然涉及对 beings 的考察。
-
-<span style="color:red;font-weight:bold">它回答最根本的问题：“世界是什么样的？” 或 “什么东西真实存在？”</span>
-
-这是哲学探索的起点和基础。在我们讨论任何其他问题之前，我们必须对“存在”本身有一个预设或探究。
-
-
-!!! quote ""
-    e.g. <span style="color:purple;font-weight:bold">To be is to be perceived. </span>
-    
-    by 乔治·贝克莱（George Berkeley，1685-1753）：“存在就是被感知”。强调存在都是精神上的 (mental).
-
+或许可以算我的个人词典，用于一些哲学概念的整理。力求先覆盖广度、切合我的阅读经历。
 
 ## 形而上学 (Metaphysics)
 
-形而上学 (Metaphysics) 是一个广阔的王国，它关注所有关于“终极实在”(ultimate reality) 的问题。
+形而上学 (Metaphysics) 是一个臭名昭著的概念。
 
-> Metaphysics is <span style="color:red;font-weight:bold">the branch of philosophy that examines the basic structure of reality</span>.
+从古希腊亚里士多德、中世纪哲学家，甚至一直到17世纪人们的观点看，形而上学是研究"**being as such**"（存在本身）或者事物的第一原因 (**the first causes of things**) 或者 不变事物 (**things that do not change**) 的科学 (so called 'science')。它研究事物的根本原因和原理。但是<u>毫无疑问这个定义在现代已经陈旧且不再适用了。</u>
 
-本体论是形而上学中一个重要、核心的问题，<u>但是形而上学不等于本体论</u>，**形而上学**是总括性的学科，研究一切关于终极实在的问题，还包括其他和现实、存在有关的问题，是一个更大的分支。
+我挺喜欢斯坦福哲学辞典的这个解释：
 
-e.g. 在你讨论“时间”、“因果”、“心灵”等问题之前，你必须先预设了有一些“东西”（beings）存在于时间之中、参与因果链条、拥有心灵。
+> An anti-metaphysician ... but rather a philosopher who ==denies the legitimacy of the question whether there are objects of those sorts==.
 
-因此，关于“什么东西存在，什么是存在”（本体论）的问题，在逻辑上先于“这些东西之间有何关系”（形而上学的其他部分）的问题。
+现代意义上的“反形而上学”，不是说去质疑过去哲学家所说的那些概念、形式、东西，是否真的构成了形而上学的‘那个答案’，譬如我们不再质疑某物是否是什么不变事物、第一原因、存在 ... ，<span style="color:red;font-weight:bold"> 而是在现代，问“有没有第一原因、什么是存在本身、什么是不变事物”这类问题本身是没有合法性的</span> (denies the legitimacy of the question whether ...)。
 
-> Metaphysics encompasses a wide range of general and abstract topics. <span style="color:red;font-weight:bold">It investigates the nature of existence</span>, the features all entities have in common, and their division into categories of being.
+所以萨特这句话说得很巧：
+
+> I do not think myself any less a metaphysician in denying the existence of God than Leibniz was in affirming it.
 >
-> 第一点，就意味着形而上学包括了本体论研究的内容。
+> 我不认为自己称在否认上帝存在的时候，就比莱布尼茨在承认上帝存在的时候，更加“不形而上”。
 
-!!! quote ""
-    第一哲学 (First Philosophy): 亚里士多德称形而上学其为“第一哲学”，因为它所研究的原理是所有其他科学和哲学分支（“第二哲学”）的基础。比如，生物学家研究生命，但他通常不问“生命体作为一种‘存在者’与其他‘存在者’有何不同？”。这些“元问题”都属于形而下学。
+当然如果这个笔记是为了罗列现代意义上的“形而上学”究竟是什么——那绝非这个笔记的本意，也不可能做到。==在这里用有限的文本可以做到的是，我们静态地、分条目地梳一梳古板的形而上学的主要论题==，为后文会从哲学史角度梳理不同的概念、争论、哲学观点做铺垫。
+
+<span style="color:red;font-weight:bold">存在 (Being)</span>
+:   “存在”是什么？存在与不存在有何区别？无论形而上学的定义如何演变，对“存在”本身的探讨始终是其题中应有之义。甚至对“非存在”（如虚构对象）的研究也属于此范畴。
+
+<span style="color:red;font-weight:bold">存在的分类范畴与共相 (Categories, Universals)</span>
+:   世界上的事物最根本的分类是什么？是仅仅分为“物质”和“精神”，还是有更细致的分类（如实体、属性、关系等），事物的共相（普遍性） (Universals) 是否存在？见唯名论和实在论的争论。
+
+<span style="color:red;font-weight:bold">实体 (Substance)</span>
+:   实体是那些“独立存在”的东西，它们不依附于其他事物（区别于“微笑”依附于脸，“洞”依附于物体）。什么是根本性的独立存在？
 
 ----
 
@@ -113,6 +102,47 @@ e.g. 在你讨论“时间”、“因果”、“心灵”等问题之前，你
 | 共相存在   | 仅是名称，无独立存在 | 真实存在，独立于个别事物     |
 | 何者为先   | 个别事物先于普遍概念 | 普遍概念先于或等同于个别事物 |
 | 本体论立场 | 只有形而下的个体存在 | 承认形而上的普遍本质存在     |
+
+----
+
+### 存在 (Being)
+
+Being, (大写或不可数名词) **指的是 “存在”本身，即存在的状态、行为、本质或“是”的属性。它是一个抽象的、统一的概念**。也会写作 existence.
+
+beings / a being (小写、可数名词) **指的是 “存在物” 或 “存在者”，即一个个具体或抽象的、存在着的东西。**
+
+
+### 本体论 (Ontology)
+
+<span style="color:red;font-weight:bold">本体论是一门以哲学方式研究“存在”本身究竟为何物的学问</span>。它通过审视各种各样的“存在者”（beings），来试图理解和阐明所有存在者得以“存在（Being）”的那个根本属性和结构。
+
+为了研究这个抽象的 Being，必须通过分析具体的 beings（存在者）来进行。本体论的全部工作都围绕着 Being 这个中心概念展开，而这个展开的过程必然涉及对 beings 的考察。
+
+<span style="color:red;font-weight:bold">它回答最根本的问题：“世界是什么样的？” 或 “什么东西真实存在？”</span>
+
+这是哲学探索的起点和基础。在我们讨论任何其他问题之前，我们必须对“存在”本身有一个预设或探究。
+
+
+!!! quote ""
+    e.g. <span style="color:purple;font-weight:bold">To be is to be perceived. </span>
+    
+    by 乔治·贝克莱（George Berkeley，1685-1753）：“存在就是被感知”。强调存在都是精神上的 (mental).
+
+
+
+本体论是形而上学中一个重要、核心的问题，<u>但是形而上学不等于本体论</u>，**形而上学**是总括性的学科，研究一切关于终极实在的问题，还包括其他和现实、存在有关的问题，是一个更大的分支。
+
+e.g. 在你讨论“时间”、“因果”、“心灵”等问题之前，你必须先预设了有一些“东西”（beings）存在于时间之中、参与因果链条、拥有心灵。
+
+因此，关于“什么东西存在，什么是存在”（本体论）的问题，在逻辑上先于“这些东西之间有何关系”（形而上学的其他部分）的问题。
+
+> Metaphysics encompasses a wide range of general and abstract topics. <span style="color:red;font-weight:bold">It investigates the nature of existence</span>, the features all entities have in common, and their division into categories of being.
+>
+> 第一点，就意味着形而上学包括了本体论研究的内容。
+
+!!! quote ""
+    第一哲学 (First Philosophy): 亚里士多德称形而上学其为“第一哲学”，因为它所研究的原理是所有其他科学和哲学分支（“第二哲学”）的基础。比如，生物学家研究生命，但他通常不问“生命体作为一种‘存在者’与其他‘存在者’有何不同？”。这些“元问题”都属于形而下学。
+
 
 -----
 
