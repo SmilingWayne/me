@@ -647,7 +647,12 @@ nav:
           - 人因工程 I: Study/BasicIE/HumanFactor_1.md
           - 基础工业工程 I: Study/BasicIE/IE_docs_1.md
       - 发展经济学:
-          - 重点提纲: Study/DevelopEco/chapter1.md
+          - ch0｜重点提纲: Study/DevelopEco/chapter1.md
+          - ch1｜基本内容: Study/DevelopEco/chapter2.md
+          - Ch2｜二元经济模型: Study/DevelopEco/chapter3.md
+          - Ch3｜托达罗模型: Study/DevelopEco/chapter4.md
+          - Ch4｜区域发展与变革: Study/DevelopEco/chapter5.md
+          - Ch5｜新时代布局与战略: Study/DevelopEco/chapter6.md
       - 国际贸易: Study/IntTrad/InternationalTrade.md
       - 管理学:
           - 管理学与领导力(Master): Study/Management/Mgm_leadership.md
