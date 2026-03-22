@@ -99,3 +99,13 @@
 |   6   | Economic Theory and Under-developed Regions            | Myrdal, G.      | 1957 | 第四讲    |
 |   7   | The Strategy of Economic Development                   | Hirschman, A.O. | 1958 | 第四讲    |
 |   8   | 农业与工业化                                           | 张培刚          | 1949 | 第二/三讲 |
+
+## 课后题目总结
+
+Q：试述新发展理念的主要内容和各个理念之间的关系。
+
+Q: 全要素生产率的含义和估算方法
+
+Q: 1990年以来全球反贫困状况与成就如何？
+
+Q: 内生增长理论的特征是什么？
