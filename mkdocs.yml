@@ -628,6 +628,7 @@ nav:
           - 英语文摘: Study/English/Quotes.md
           - 英语文学批评: Study/English/LiteraryCriticism.md
       - 大模型｜提示词整理: Study/LLM/Prompt/Prompt2.md
+      - 大模型｜Skills之美化markdown: Study/LLM/Skills/Skill_1.md
       - 大模型｜文生图:
           - Nano Banana 食用指南: Study/LLM/ImageGeneration/Nano_banana.md
           - 「管科」论文绘图流程: Study/LLM/ImageGeneration/LLM_paper_figure.md
