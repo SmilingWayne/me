@@ -91,6 +91,7 @@ nav:
 
       - 其他:
           - 科学管理原理: Philosophy/Principles_of_sci_mgm.md
+          - 改变世界的机器: Philosophy/Machine_that_change.md
           - 日本思想小史: Philosophy/Japan_philosophers.md
           - 哲思与海——一部诗意的哲学随笔: Philosophy/Phi_and_sea.md
           - 实用主义: Philosophy/Pragmatism.md
@@ -271,6 +272,7 @@ nav:
           - 🇯🇵仲夏之死: Literature/Novel/Death_of_summer.md
           - 🇯🇵金阁寺: Literature/Novel/Jinge.md
           - 🇯🇵罗生门: Literature/Novel/Rashomon.md
+          - 🇯🇵千只鹤: Literature/Novel/Thousand_cranes.md
           - 🇯🇵舞！舞！舞！: Literature/Novel/Dance.md
           - 🇯🇵源氏物语(ToDo): Literature/Novel/Tale_of_Genji.md
           - 🇯🇵银河铁道之夜: Literature/Novel/Galactic_railroad.md
@@ -440,6 +442,7 @@ nav:
           - TSP: OROpt/OR/TSP.md
           - VRP: OROpt/OR/VRP.md
           - PDP: OROpt/OR/PDP.md
+          - IRP: OROpt/OR/IRP.md
       - 不确定性｜SAA: OROpt/OR/SAA.md
       - 约束规划:
           - 一种高效求解环路类逻辑谜题的方法: OROpt/OR/CPSAT/CPSAT_1.md
