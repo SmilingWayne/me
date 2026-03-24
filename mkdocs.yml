@@ -425,6 +425,10 @@ nav:
           - 复习｜复杂度理论: OROpt/DiscreteOpt/Ch_01.md
           - 复习｜更整洁的图论基础: OROpt/DiscreteOpt/Ch_02.md
           - 复习｜更干货的线性规划: OROpt/DiscreteOpt/Ch_03.md
+          - 知识｜更紧凑的模型表达: OROpt/DiscreteOpt/Ch_04.md
+          - 知识｜更详细的分支定界: OROpt/DiscreteOpt/Ch_05.md
+          - 知识｜更易解的组合优化: OROpt/DiscreteOpt/Ch_06.md
+          - 知识｜更深入的平面切割: OROpt/DiscreteOpt/Ch_07.md
       - 建模:
           - 最大割问题｜MaxCut: OROpt/OR/Max_k_cut.md
           - 航班分配｜FAP: OROpt/OR/FAP.md
