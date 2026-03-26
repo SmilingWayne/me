@@ -81,6 +81,7 @@ nav:
           - 哲学美学: Philosophy/Phi_and_aesthic.md
 
       - 人类学/社会学/法学:
+          - 想象的共同体: Philosophy/Imagined_community.md
           - 倦怠社会: Philosophy/Society_of_fatigue.md
           - 乡土中国: Philosophy/Rural_china.md
           - 古代社会: Philosophy/Ancient_society.md
@@ -429,6 +430,8 @@ nav:
           - 知识｜更详细的分支定界: OROpt/DiscreteOpt/Ch_05.md
           - 知识｜更易解的组合优化: OROpt/DiscreteOpt/Ch_06.md
           - 知识｜更深入的平面切割: OROpt/DiscreteOpt/Ch_07.md
+          - 知识｜更巧妙的分解方法: OROpt/DiscreteOpt/Ch_08.md
+          - 知识｜更灵活的动态规划: OROpt/DiscreteOpt/Ch_09.md
       - 建模:
           - 最大割问题｜MaxCut: OROpt/OR/Max_k_cut.md
           - 航班分配｜FAP: OROpt/OR/FAP.md
