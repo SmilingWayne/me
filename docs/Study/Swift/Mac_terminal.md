@@ -102,3 +102,19 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 
+-----
+
+
+## 关于 macOS 版本更新的问题
+
+假设我现在是 Sonoma 14.5 （20260327）， macOS 在设置里的更新，默认只会显示：
+
+- 本系列最新：Sonoma 14.8.5（小更新）
+- 下一代最新大版本：macOS 26 Tahoe（大升级）
+
+这时候就有个小问题。Sequoia 开始的 Xcode 支持了 Swift 的 6.x 大版本更新，因此一些本地源码构建的软件就需要同步到版本更高的 Xcode，但这更高的 Xcode ，Sonoma 又不支持，因此你想要稍稍微微提高一下系统版本。不过 Tahoe 采用了我极度不感冒的液态玻璃屏等一系列比较抽风更新我不想升级，就尴尬了。
+
+所以我想只迈一小步，升级到 Sequoia 的最新版本。怎么办？
+
+这时候不要在系统设置的 Settings 中升级，而是在 App Store 里搜索 macOS Sequoia —— 就可以了！
+
