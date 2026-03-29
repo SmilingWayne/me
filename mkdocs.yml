@@ -148,6 +148,7 @@ nav:
       - 戏剧:
           - Plays/index.md
           - 戏剧:
+              - 🇷🇺契诃夫戏剧集 I: Plays/Chekhov_plays.md
               - 💖浮士德: Plays/Faust.md
               - 🇫🇷广岛之恋: Plays/Hiroshima.md
               - 🇫🇷卡利古拉: Plays/Caligula.md
@@ -318,6 +319,8 @@ nav:
           - 🇨🇴百年孤独: Literature/Novel/100_years_solitude.md
           - 🇦🇺树叶裙: Literature/Novel/Leaves_dress.md
           - 🇵🇹失明症漫记: Literature/Novel/Ensaio_sobre_a_cegueira.md
+      - 作者集:
+          - 契诃夫: Literature/People/Chekhov.md
       - 语料库:
           - Literature/Corpus/index.md
           - 修辞、文字与形象化: Literature/Corpus/Metaphor.md
