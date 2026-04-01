@@ -226,11 +226,9 @@ nav:
           - 文学回忆录: Literature/Literacy/Literature_memo.md
           - 女人的食指: Literature/Literacy/Womens_index_finger.md
           - 文字的力量: Literature/Literacy/Power_of_words.md
-          - 日本文学史: Literature/Literacy/Japan_literature_2.md
           - 日本文学札记: Literature/Literacy/Japan_literature.md
           - 沉默的大多数: Literature/Literacy/Silent_most.md
           - 给青年诗人的信: Literature/Literacy/To_young_poets.md
-          - 英国文学中的海洋: Literature/Literacy/British_literature_sea.md
           - 普鲁斯特的凝视: Literature/Literacy/Prust_gaze.md
           - 西方人文主义精神:
               - 课后阅读材料总结与摘录: Literature/Literacy/Western_humanist/afterClassReading.md
@@ -321,6 +319,10 @@ nav:
           - 🇵🇹失明症漫记: Literature/Novel/Ensaio_sobre_a_cegueira.md
       - 作者集:
           - 契诃夫: Literature/People/Chekhov.md
+      - 文学史:
+          - 🇷🇺俄国文学史: Literature/Literacy/Russian_literature.md
+          - 🇯🇵日本文学史: Literature/Literacy/Japan_literature_2.md
+          - 🇬🇧英国文学中的海洋: Literature/Literacy/British_literature_sea.md
       - 语料库:
           - Literature/Corpus/index.md
           - 修辞、文字与形象化: Literature/Corpus/Metaphor.md
@@ -640,7 +642,9 @@ nav:
           - 英语文摘: Study/English/Quotes.md
           - 英语文学批评: Study/English/LiteraryCriticism.md
       - 大模型｜提示词整理: Study/LLM/Prompt/Prompt2.md
-      - 大模型｜Skills之美化markdown: Study/LLM/Skills/Skill_1.md
+      - 大模型｜Skills:
+          - md 笔记格式与风格美化: Study/LLM/Skills/Skill_1.md
+          - md 笔记核心提取与格式整理: Study/LLM/Skills/Skill_2.md
       - 大模型｜文生图:
           - Nano Banana 食用指南: Study/LLM/ImageGeneration/Nano_banana.md
           - 「管科」论文绘图流程: Study/LLM/ImageGeneration/LLM_paper_figure.md
