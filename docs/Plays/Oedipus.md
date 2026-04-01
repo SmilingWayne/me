@@ -12,6 +12,7 @@
 - 神话与悲剧的“底比斯王家灾厄”基本都以此为舞台（《俄狄浦斯王》《安提戈涅》《七将攻忒拜》等）。([britannica.com](https://www.britannica.com/place/Thebes-Greece?utm_source=openai))  
 
 **关键地点节点（按俄狄浦斯人生轨迹）**
+
 - **德尔斐 Delphi**：神谕中心；预言“弑父娶母”的命运机制在此启动/确认。([britannica.com](https://www.britannica.com/topic/Oedipus-Greek-mythology?utm_source=openai))  
 - **基泰戎山 Mount Cithaeron**：俄狄浦斯婴儿被弃置之地（“弃婴—存活—命运回旋”的典型母题场景）。([britannica.com](https://www.britannica.com/topic/Oedipus-Greek-mythology?utm_source=openai))  
 - **科林斯 Corinth**：俄狄浦斯被收养成长的城邦（他以为自己要弑父娶母，于是为逃命离开这里）。([britannica.com](https://www.britannica.com/topic/Oedipus-Greek-mythology?utm_source=openai))  

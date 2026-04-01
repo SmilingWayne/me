@@ -18,7 +18,6 @@ nav:
 
       - 福柯相关:
           - 规训与惩罚: Philosophy/Principles_and_punish.md
-          - 福柯: Philosophy/Philosophers/Foucault.md
           - 福柯集: Philosophy/Foucault/Foucault_collections.md
           - 福柯访谈: Philosophy/Foucault/Foucault_talks.md
           - 话语: Philosophy/Foucault/Discours.md
@@ -100,10 +99,7 @@ nav:
           - 亚里士多德的世界(牛津通识读本): Philosophy/World_of_aristotle.md
           - 如何阅读一本书: Philosophy/How_to_read.md
           - 我们时代的社会思考与阅读主张: Philosophy/Thoughts_in_our_time.md
-          - 阿尔都塞: Philosophy/Philosophers/Altusser.md
-          - 马尔库塞: Philosophy/Philosophers/Marcuse.md
-          - 罗兰巴特: Philosophy/Philosophers/RolandBarthes.md
-          - 德里达: Philosophy/Philosophers/Derrida.md
+          - 待补全的哲学家摘录: Philosophy/Philosophers/Summary.md
 
   - 文学:
       - Literature/index.md
@@ -126,9 +122,6 @@ nav:
               - 🇮🇹耶路撒冷的解放: Poems/Jerusalem_liberation.md
               - 🇷🇺普希金诗选: Poems/Pushkin.md
               - 🇳🇮生命与希望之歌: Poems/Poems_de_life_hope.md
-              - 🇬🇷伊利亚特: Poems/Illiad.md
-              - 🇬🇷特洛伊到三大史诗: Poems/Troy_and_three_epics.md
-              - 🇬🇷奥德赛: Poems/Odyssey.md
               - 🇱🇧纪伯伦诗选: Poems/Gibran.md
               - 🇩🇪德国，一个冬天的童话: Poems/German_winter_fairytale.md
               - 🇩🇪致后代: Poems/To_descendant.md
@@ -152,19 +145,10 @@ nav:
               - 💖浮士德: Plays/Faust.md
               - 🇫🇷广岛之恋: Plays/Hiroshima.md
               - 🇫🇷卡利古拉: Plays/Caligula.md
-              - 🇬🇧爱的徒劳: Plays/Loves_labors_lost.md
               - 🇬🇧奥赛罗: Plays/Othello.md
               - 🇬🇧麦克白: Plays/Macbeth.md
               - 💝哈姆雷特: Plays/Hamlet.md
-              - 🇬🇧亨利四世: Plays/HenryIV.md
-              - 🇬🇧理查二世: Plays/Richard_II.md
-              - 🇬🇧暴风雨: Plays/Storms.md
-              - 🇬🇧仲夏夜之梦: Plays/Mid_summer_nights_dream.md
-              - 🇷🇺海鸥: Plays/Seagull.md
-              - 🇬🇷美狄亚: Plays/Media.md
-              - 🇬🇷忒修斯及其悲剧: Plays/Theseus.md
-              - 🇬🇷俄狄浦斯及其悲剧: Plays/Oedipus.md
-              - 🇬🇷安提戈涅及其悲剧: Plays/Antigone.md
+              - 🇬🇧莎士比亚戏剧选: Plays/Shakespeare_others.md
               - 🇨🇳牡丹亭: Plays/Mu_dan_ting.md
               - 🇨🇳桃花扇: Plays/Tao_hua_shan.md
               - 🇨🇳铸剑·哈姆雷特: Plays/Swords_hamlet.md
@@ -323,6 +307,14 @@ nav:
           - 🇷🇺俄国文学史: Literature/Literacy/Russian_literature.md
           - 🇯🇵日本文学史: Literature/Literacy/Japan_literature_2.md
           - 🇬🇧英国文学中的海洋: Literature/Literacy/British_literature_sea.md
+      - 古希腊古典文学:
+          - 🇬🇷特洛伊｜情节概述: Poems/Troy_and_three_epics.md
+          - 🇬🇷特洛伊｜伊利亚特｜摘录: Poems/Illiad.md
+          - 🇬🇷特洛伊｜奥德赛｜摘录: Poems/Odyssey.md
+          - 🇬🇷传说｜美狄亚: Plays/Medea.md
+          - 🇬🇷传说｜忒修斯: Plays/Theseus.md
+          - 🇬🇷悲剧｜俄狄浦斯: Plays/Oedipus.md
+          - 🇬🇷悲剧｜安提戈涅: Plays/Antigone.md
       - 语料库:
           - Literature/Corpus/index.md
           - 修辞、文字与形象化: Literature/Corpus/Metaphor.md
@@ -369,12 +361,11 @@ nav:
           - 人类的群星闪耀时: History/Human_stars.md
           - 阿拉伯伊斯兰文化史: History/Arabian_islamic_history.md
           - 🇫🇷法国资产阶级史(上): History/Bourgeoisie.md
+          - 🇫🇷法国知识分子摘录: History/French_intellectuals_summary.md
           - 🇧🇪利奥波德国王的鬼魂: History/King_leopolds_ghost.md
-          - 🇫🇷法国知识分子的世纪: History/Century_of_intellects_in_France.md
           - 🇺🇾拉丁美洲被切开的血管: History/Latin_american_blood.md
           - 🇷🇺一个大国的崛起与崩溃: History/Rise_and_fall.md
           - 🇯🇵现代日本(牛津通识读本): History/Modern_japan.md
-          - 🇫🇷东风——法国知识分子与60年代的遗产: History/Eastern_wind.md
   - 艺术:
       - Arts/index.md
       - 艺术与设计史:
@@ -600,7 +591,7 @@ nav:
           - Study/Statistics/index.md
           - 题目汇总:
               - Qz01｜古典概型: Study/Statistics/Quiz/Quizes.md
-              - Qz02｜随机变量及其分布: Study/Statistics/Random_Variables_q.md
+              - Qz02｜随机变量及其分布: Study/Statistics/Quiz/Random_Variables_q.md
               - Qz03｜多维随机变量及分布: Study/Statistics/Quiz/Multivariate_rv_q.md
               - Qz04｜随机变量的数字特征: Study/Statistics/Quiz/Number_characters_q.md
               - Qz05｜特征函数: Study/Statistics/Quiz/Character_func_q.md
