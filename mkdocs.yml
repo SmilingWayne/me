@@ -453,6 +453,7 @@ nav:
       - 不确定性｜SAA: OROpt/OR/SAA.md
       - 约束规划:
           - 一种高效求解环路类逻辑谜题的方法: OROpt/OR/CPSAT/CPSAT_1.md
+          - 涂色类谜题连通性的两种刻画方法: OROpt/OR/CPSAT/CPSAT_2.md
       - 调度:
           - 车间调度 (JSP): OROpt/OR/JSP.md
           - 发电机组调度(UCP): OROpt/OR/UnitCommitmentProblem.md
