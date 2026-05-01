@@ -44,7 +44,9 @@ nav:
           - 基督教: Philosophy/Christian.md
           - 金色传说: Philosophy/Golden_legend.md
           - 世界宗教: Philosophy/World_religion.md
-          - 关于诺斯替主义的总结: Philosophy/Gnosticism.md
+          - 诺斯替主义:
+              - 概述｜总结: Philosophy/Gnosticism.md
+              - 话语｜意向: Philosophy/Gnosticism_discourse.md
           - 犹太人与犹太教(牛津通识读本): Philosophy/Jews.md
           - 我理解的伊斯兰教: Philosophy/Religion_culture.md
 
@@ -265,6 +267,7 @@ nav:
           - 🇯🇵银河铁道之夜: Literature/Novel/Galactic_railroad.md
           - 🇯🇵世界尽头与冷酷仙境: Literature/Novel/World_end.md
           - 🇫🇷鼠疫: Literature/Novel/Plague.md
+          - 🇫🇷萌芽: Literature/Novel/Germinal.md
           - 🇫🇷红与黑: Literature/Novel/Rouge_et_noir.md
           - 🇫🇷巨人传: Literature/Novel/Giants.md
           - 🇫🇷波斯人信札: Literature/Novel/Letters_from_persian.md
