@@ -300,7 +300,8 @@ nav:
           - 🇷🇺卡拉马佐夫兄弟: Literature/Novel/Kara_Mazov_brothers.md
           - 🇷🇺七个被绞死的人: Literature/Novel/Andreyev.md
           - 🇷🇺大师与玛格丽特: Literature/Novel/Master_Margaret.md
-          - 🇷🇺契诃夫小说选: Literature/Novel/Chekhov_novels.md
+          - 🇷🇺契诃夫｜小说选: Literature/Novel/Chekhov_novels.md
+          - 🇷🇺屠格涅夫｜小说选: Literature/Novel/Turgenev_novels.md
           - 🇮🇹那不勒斯四部曲: Literature/Novel/Naples.md
           - 侦探小说: Literature/Novel/Detective.md
           - 希腊神话合集: Literature/Novel/Greek/Myth_1.md
@@ -309,8 +310,7 @@ nav:
           - 🇦🇺树叶裙: Literature/Novel/Leaves_dress.md
           - 🇵🇹失明症漫记: Literature/Novel/Ensaio_sobre_a_cegueira.md
       - 作者集:
-          - 契诃夫: Literature/People/Chekhov.md
-          - 屠格涅夫: Literature/People/Turgenev.md
+          - 🇷🇺契诃夫: Literature/People/Chekhov.md
       - 文学史:
           - 🇷🇺俄国文学史: Literature/Literacy/Russian_literature.md
           - 🇯🇵日本文学史: Literature/Literacy/Japan_literature_2.md
