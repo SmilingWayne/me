@@ -9,3 +9,5 @@
 <span style="color:orange;font-weight:bold">扶摇</span>：传说中一种神木的名字。
 
 <span style="color:orange;font-weight:bold">若华、若木</span>：指日光。《淮南子》说，若木在建木西，末有七日，其华下照地。**若木是神话中长在日入处的一种树木**。
+
+<span style="color:orange;font-weight:bold">曜灵</span>：指太阳。<span style="color:orange;font-weight:bold">蒙汜</span>：古代称太阳沉没的地方。<span style="color:orange;font-weight:bold">望舒</span>：古代指月亮。

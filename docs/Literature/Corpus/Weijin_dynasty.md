@@ -36,6 +36,12 @@
 > 潘，西晋文学家潘岳，陆，西晋文学家陆机；颜，指南朝刘宋刘文学家颜延之，谢，指南朝刘宋文学家谢灵运，
 
 
+<span style="color:orange;font-weight:bold">沈诗任笔</span>：文学家**沈约**，南朝著名诗人，历任宋、齐、梁三朝。其诗着意雕琢，时号**永明体**，所创四声八病之说。以诗闻名，**任昉**，南朝文学家，历仕宋、齐、梁三朝，以善作朝廷表奏书记著称。当时王公表奏，朝廷文库，多出其手。
+
+<span style="color:orange;font-weight:bold">石崇</span>：晋国人，常抢劫远路客商致富，于河阳置**金谷园**，园中植果树数万棵，奢靡成风。
+
+<span style="color:orange;font-weight:bold">五胡</span>：指西晋末年入侵中原的<span style="color:orange;font-weight:bold">匈奴、鲜卑、羯、氐、羌</span>五个少数民族政权。
+
 ## 地理、事物
 
 永宁寺，
