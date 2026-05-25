@@ -327,7 +327,7 @@ Propagate():
 | 11  | Shingoki    | 103  | **41x41** | 0.083    | 1.220     | 103  |
 | 12  | Yajilin     | 610  | **39x57** | 0.052    | **0.520** | 610  |
 
-上述谜题的求解代码封装在我自己开发的Python包[puzzlekit](https://github.com/SmilingWayne/PuzzleSolver) 中，提供了一个简短可靠的API与可视化脚本供测试；所有谜题的数据开源在 Github [puzzlekit-dataset](https://github.com/SmilingWayne/puzzlekit-dataset) 中。
+上述谜题的求解代码封装在我自己开发的Python包[puzzlekit](https://github.com/SmilingWayne/puzzlekit) 中，提供了一个简短可靠的API与可视化脚本供测试；所有谜题的数据开源在 Github [puzzlekit-dataset](https://github.com/SmilingWayne/puzzlekit-dataset) 中。
 
 ```shell
 pip install puzzlekit
