@@ -200,8 +200,8 @@
     - 夏尔·勒孔特·德·李勒（`Charles Leconte de Lisle`）
     - 提奥菲勒·戈蒂埃（`Théophile Gautier`）
     - 约瑟·玛丽亚·德·埃雷迪亚（`José María de Heredia`）、
-    - 泰奥多尔·德·班维尔（`Théodore de Banville`）、
-    - 苏利·普吕多姆（`Sully Prudhomme`）
+    - 泰奥多尔·德·班维尔（`Théodore de Banville`）作品审查委员，负责审定帕尔纳斯派的作品、
+    - 苏利·普吕多姆（`Sully Prudhomme`），第一届诺贝尔文学奖得主、
     - 斯特凡·马拉美（`Stéphane Mallarmé`）等。
 
     1866, 1871, 1876 年法国一批年轻诗人联合起来出版了三卷抒情诗集，均以《当代帕尔纳斯》命名，<span style="color:orange;font-weight:bold">他们反对浪漫主义的狂放情感和浓重色彩，主张冷静客观和形式的完美</span>。
