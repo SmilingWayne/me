@@ -292,6 +292,7 @@ nav:
           - 🇬🇧东方快车谋杀案: Literature/Novel/Oriental_express.md
           - 🇬🇧尼罗河上的惨案: Literature/Novel/Tragedy_niro.md
           - 🇬🇧查令十字街84号: Literature/Novel/Charline_84.md
+          - 🇺🇸红字: Literature/Novel/The_scarlet_letter.md
           - 🇺🇸野棕榈: Literature/Novel/Wild_palm.md
           - 🇺🇸同情者: Literature/Novel/Sympathatic.md
           - 🇺🇸华氏451: Literature/Novel/Fahrenheit_451.md
@@ -306,6 +307,7 @@ nav:
           - 🇷🇺契诃夫｜小说选: Literature/Novel/Chekhov_novels.md
           - 🇷🇺屠格涅夫｜小说选: Literature/Novel/Turgenev_novels.md
           - 🇷🇺象征主义｜小说选: Literature/Novel/Russian_symbolism.md
+          - 🇩🇪西线无战事: Literature/Novel/Nothing_in_west_front.md
           - 🇮🇹那不勒斯四部曲: Literature/Novel/Naples.md
           - 侦探小说: Literature/Novel/Detective.md
           - 希腊神话合集: Literature/Novel/Greek/Myth_1.md
@@ -743,6 +745,7 @@ nav:
       - 第二篇｜主题和美化: Website/Step2.md
       - 第三篇｜字体和文本: Website/Step3.md
       - 第四篇｜插件和扩展: Website/Step4.md
+      - 番外一｜后续的计划: Website/Appendix1.md
 
 site_author: SmilingWayne
 repo_name: SmilingWayne/me
