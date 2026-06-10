@@ -2,7 +2,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-
+site/
 # Icon must end with two \r
 Icon
 
@@ -25,5 +25,5 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
+.codex/
 .obsidian/
