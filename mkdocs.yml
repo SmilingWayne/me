@@ -813,7 +813,8 @@ extra_javascript:
 #   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
-  - statistics
+  # The custom statistics plugin is intentionally disabled on migration.
+  # Re-enable it only after Zensical exposes a stable third-party module API.
   #   - mermaid2:
   #       version: 10.2.0
   #       arguments:

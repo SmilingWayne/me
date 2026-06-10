@@ -27,3 +27,6 @@ Temporary Items
 .apdisk
 
 .obsidian/
+.venv/
+.zensical/
+site/

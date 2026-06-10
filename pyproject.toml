@@ -1,0 +1,11 @@
+[project]
+name = "smilingwayne-site-migration"
+version = "0.1.0"
+description = "Zensical compatibility track for SmilingWayne's personal site"
+requires-python = ">=3.14,<3.15"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "zensical==0.0.45",
+]
