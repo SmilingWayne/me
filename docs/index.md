@@ -21,7 +21,7 @@ hide:
 
         💻 **Coding**: Coding for fun from time to time with :material-language-python: | :material-language-java:.
 
-        🧩 **Puzzles**: A naive yet stubborn adventurer in the world of logic puzzles. Check out [puzzlekit](https://github.com/SmilingWayne/PuzzleSolver)!
+        🧩 **Puzzles**: A naive adventurer in the world of logic puzzles. Check out [puzzlekit](https://github.com/SmilingWayne/puzzlekit) and the [web-app](https://github.com/SmilingWayne/puzzlekit-web)!
 
     !!! success inline ""
         🧸 **MBTI**: <font face = "American Typewriter" >INFJ-T</font>[^2]. 
@@ -31,7 +31,7 @@ hide:
         🔆 **Zodiac**: Virgo ♍️[^3].
 
     !!! success inline ""
-        🌏 **Base**: Temporarily in **Nanjing**[^4].
+        🌏 **Base**: Temporarily in **Beijing**[^4].
 
         🐳 **Vibe**: Preferring stillness, yet acting on sudden impulses to travel.
 
@@ -91,13 +91,7 @@ hide:
 [^1]: Written as "笑笑" in Chinese and pronounced roughly like **"She-ow She-ow"** ('She' + 'ow' in 'cow').
 [^2]: In personality typology, the Myers–Briggs Type Indicator (**MBTI**) is an introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions. <font face = "American Typewriter" >INFJ-T</font> means ==advocates==, former 4 letters indicates "**I**ntroverted, i**N**tuitive, **F**eeling, **J**udging", the last letter means "**T**urbulent". (From [Wiki](https://en.wikipedia.org/wiki/Myers–Briggs_Type_Indicator) and [Source](https://psychreel.com/infj-t/)).
 [^3]: **Virgo** is the sixth astrological sign in the zodiac. Under the tropical zodiac, the Sun transits this area between August 23 and September 22 on average. (From [Wiki](https://en.wikipedia.org/wiki/Virgo_(astrology))).
-[^4]: Capital of Jiangsu, a province in East China. (From [Wiki](https://en.wikipedia.org/wiki/Nanjing)).
-
-<!-- [^1]: The Violin Concerto in D major, Op. 35 was the only concerto for violin composed by Pyotr Ilyich __Tchaikovsky__. Composed in 1878, it is one of the best-known violin concertos.(From [WiKi](https://en.wikipedia.org/wiki/Violin_Concerto_(Tchaikovsky)))
-[^2]: From a poem [《忆昔》](https://www.gushici.net/shici/15/33023.html) by [韦庄 (Wei Zhuang)](https://en.wikipedia.org/wiki/Wei_Zhuang), a poet of the late Tang Dynasty (618 ~ 907) in China.
-[^4]: **Virgo** is the sixth astrological sign in the zodiac. Under the tropical zodiac, the Sun transits this area between August 23 and September 22 on average. (From [Wiki](https://en.wikipedia.org/wiki/Virgo_(astrology)))
-[^5]: Liberalism is a political and moral philosophy based on the rights of the individual, liberty, consent of the governed, political equality and equality before the law. (From [WiKi](https://en.wikipedia.org/wiki/Liberalism))
-[^6]: Capital of Jiangsu, a province in East China. (From [Wiki](https://en.wikipedia.org/wiki/Nanjing)) -->
+[^4]: The capital city of China. (From [Wiki](https://en.wikipedia.org/wiki/Beijing)).
 
 
 <script>
