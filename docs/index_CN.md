@@ -21,7 +21,7 @@ hide:
         
         💻 偶尔编程 :material-language-python: | :material-language-java:。
 
-        🧩 幼稚但顽固的[解谜游戏爱好者](https://github.com/SmilingWayne/puzzlekit)。
+        🧩 幼稚的[解谜游戏爱好者](https://github.com/SmilingWayne/puzzlekit)，参考[web-app](https://smilingwayne.github.io/puzzlekit-web/)。
 
     !!! abstract inline "" 
         🎻 “有柴小协[^1]的日子就是好日子！”

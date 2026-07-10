@@ -21,7 +21,7 @@ hide:
 
         💻 **Coding**: Coding for fun from time to time with :material-language-python: | :material-language-java:.
 
-        🧩 **Puzzles**: A naive adventurer in the world of logic puzzles. Check out [puzzlekit](https://github.com/SmilingWayne/puzzlekit) and the [web-app](https://github.com/SmilingWayne/puzzlekit-web)!
+        🧩 **Puzzles**: A naive adventurer in the world of logic puzzles. Check out [puzzlekit](https://github.com/SmilingWayne/puzzlekit) and the [web-app](https://smilingwayne.github.io/puzzlekit-web/)!
 
     !!! success inline ""
         🧸 **MBTI**: <font face = "American Typewriter" >INFJ-T</font>[^2]. 
