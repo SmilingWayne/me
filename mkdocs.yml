@@ -142,6 +142,7 @@ nav:
               - 中国古典｜诗: Poems/ClassicChinese_shi.md
               - 中国古典｜词: Poems/ClassicChinese_ci.md
               - 中国古典｜曲: Poems/ClassicChinese_qu.md
+
       - 戏剧:
           - Plays/index.md
           - 戏剧:
@@ -333,6 +334,8 @@ nav:
           - Literature/Corpus/index.md
           - 修辞、文字与形象化: Literature/Corpus/Metaphor.md
           - 诡辩、哲思与抽象化: Literature/Corpus/Phi.md
+          - 古典｜春秋时期故事: Literature/Corpus/Chunqiu_zhanguo_dynasty.md
+          - 古典｜两汉时期故事: Literature/Corpus/Han_dynasty.md
 
   - 历史:
       - History/index.md
@@ -346,6 +349,7 @@ nav:
           - 🇷🇺苏联笔记: History/Soviet_union.md
           - 🇨🇳南北朝笔记: Hisotry/North_south_dynasty.md
           - 🇨🇳十年历史: History/Culture_revo.md
+          - ✝️殉道史: History/Martyrdom_history.md
           - 🇪🇺欧洲笔记: History/Europe.md
           - 🇪🇸卡斯蒂利亚的伊莎贝拉: History/Isabella.md
           - 🕌中东笔记: History/Mid_east.md
@@ -523,7 +527,6 @@ nav:
           - 2024年的随笔记: Study/TeamMeeting/Collected_notes.md
           - 系统建模与优化｜20230922: Study/TeamMeeting/0922Fri.md
           - 20240122报告: Study/TeamMeeting/Articles.md
-
       - 小红书｜资源分享外链: Study/xhs_list.md
       - 小红书｜文本编辑:
           - Study/TextEdit/index.md

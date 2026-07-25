@@ -154,3 +154,38 @@
 - **公门桃李争荣日。法国荷兰比利时**
 
 > 见《楹联新话》。这是流传较广的无情对。上联，为唐诗名句。下联为欧洲三个国名。上下联笔不相干，连相反都谈不上，啵分解皮单闹单字，按词义、字义、词性考虑对仗，法与公、国与门、荷、兰与桃、李，比利与争荣，时与日，却极为工處，以而产生浓厚的“对趣”。这也是典型的无情对例句。
+
+---
+
+|     花名     |         英文         |
+| :----------: | :------------------: |
+|    山茶花    |       camellia       |
+|     棣棠     |        kerria        |
+|    康乃馨    |      carnation       |
+|    水仙花    |      narcissus       |
+|    矢车菊    |      cornflower      |
+|    花贝母    |        crown         | imperial |
+|     百合     |        orange        | lily     |
+|    杜鹃花    |     rhododendron     |
+|    马蹄莲    |         arum         | lily     |
+| 虞美人common |        poppy         |
+|    蒲公英    |      dandelion       |
+|     芍药     |     double-peony     | peony    |
+|    犬蔷薇    |       dog rose       |
+|   狐狸手套   |       foxglove       |
+|    鸢尾花    |         iris         |
+|     雏菊     |        daisy         |
+|    金钱花    |       honesty        |
+|    帚石楠    |        Heath         |
+|    山楂花    | hawthorn（五月花？） |
+|     蓟花     |     milk-thistle     |
+|     冬青     |  holly（好莱坞？）   |
+|    雪花莲    |       snowdrop       |
+|    车前草    |       plantain       |
+|    天竺葵    |       geranium       |
+|    报春花    |       primrose       |
+|    风铃草    |      bellflower      |
+|    郁金香    |        tulipa        |
+|     亚麻     |     common flax      |
+|     女贞     |        privet        |
+|    风信子    |       hyacinth       |
