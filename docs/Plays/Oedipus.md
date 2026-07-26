@@ -25,6 +25,10 @@
     
     这个谜题的答案是**人**（婴儿爬行用四肢，成年直立用双腿，老年拄杖用三条腿）。斯芬克斯因谜底被破而羞愤交加，坠崖而死，提比斯终于重获自由，而俄狄浦斯也因为从女妖手中解救底比斯而成为国王，迎娶了寡居王后约卡斯塔。
 
+    ![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/20260726172050607.png)
+
+    > 俄狄浦斯与斯芬克斯, 1827,  Ingres (安格尔), 巴黎卢浮宫。
+
 ==**俄狄浦斯痛苦地意识到，他不仅杀死了自己的生父，还娶了自己的生母约卡斯塔**== [[24](https://www.scribd.com/document/491576364/READING-SELECTION-OEDIPUS-REX)]，==也就是说，所有的神谕都应验了==。屋漏偏逢连夜雨，约卡斯塔冲进内室自杀身亡 [[48](https://www.scribd.com/document/890520269/PROLOGUE)]。当俄狄浦斯得知真相后，他用王后胸前的金别针刺瞎了自己的双眼，开始了流放生涯，完成了对自己罪行的惩罚 [[24](https://www.scribd.com/document/491576364/READING-SELECTION-OEDIPUS-REX)]。
 
 
@@ -77,6 +81,10 @@
 在哲学意蕴方面，《俄狄浦斯王》触及了人类存在的终极命题。正如剧中反复叩问的：“知晓自己的所作所为，倒不如不识自己” [[36](https://www.researchgate.net/publication/376751268_'To_know_my_deed_'twere_best_not_know_myself'_A_psychoanalytical_reading_of_Sophocles'_Oedipus_Rex_and_Shakespeare's_Macbeth)]。这句话精准地概括了悲剧的核心主题：**知识与毁灭的二重性**。俄狄浦斯对自我身份的探寻，是一场关于“认识你自己”的德尔斐神谕的极端回应。他付出了惨痛的代价，以失明的残躯换来了对自身真实身份的认知。这引发了对知识本质的深刻反思：<u>绝对的真理是否总是有益的？追求纯粹的知识，是否会摧毁承载它的那个“自我”？俄狄浦斯的经历表明，当知识的重量超出了人类所能承受的极限时，它便不再是启蒙的工具，而变成了毁灭的利剑。</u>
 
 总而言之，《俄狄浦斯王》通过一个家族的毁灭史，探讨了命运、自由意志、知识、真理、家庭伦理等一系列永恒主题，其深刻的哲学内涵使其远远超越了一部古代戏剧，成为一面映照人类灵魂的镜子。
+
+![](https://cdn.jsdelivr.net/gh/SmilingWayne/picsrepo/20260726172502374.png)
+
+> Oedipus at Colonus, 1798, Fulchran Jean Harriet. France.
 
 ----
 
