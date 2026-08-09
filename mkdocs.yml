@@ -474,6 +474,9 @@ nav:
           - 一种高效求解环路类逻辑谜题的方法: OROpt/OR/CPSAT/CPSAT_1.md
           - 涂色类谜题连通性的两种刻画方法: OROpt/OR/CPSAT/CPSAT_2.md
           - 让LLM逐步解决纸笔逻辑谜题: Puzzles/Pencil_puzzle_bench.md
+          - pzprjs编码规则详解:
+              - 总览｜pzprjs的URL构成: Puzzles/Pzprjs_ch1.md
+              - 4Cell｜数回的紧凑编码: Puzzles/Pzprjs_ch2.md
           - 「应该」如何求解数回｜一: Puzzles/Slither_how1.md
           - 「应该」如何求解数回｜二: Puzzles/Slither_how2.md
       - 调度:
