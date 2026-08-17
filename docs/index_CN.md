@@ -9,39 +9,43 @@ hide:
 
 === "<font size = 6>:fontawesome-solid-paw: </font><font size = 6>关于我</font>"
 
-    !!! note inline ""
+    <div class="grid profile" markdown>
+
+    !!! note ""
         🧑‍🎓 一个时刻想要变得不普通的普通人。
         
         🥰 你可以叫我 "笑笑" 。
 
         🔮 浏览网站时，你已在和我促膝长谈。
 
-    !!! note inline "" 
+    !!! note ""
         📖 喜欢阅读，有时观影，不时创作。
         
         💻 偶尔编程 :material-language-python: | :material-language-java:。
 
         🧩 幼稚的[解谜游戏爱好者](https://github.com/SmilingWayne/puzzlekit)，参考[web-app](https://smilingwayne.github.io/puzzlekit-web/)。
 
-    !!! abstract inline "" 
+    !!! abstract ""
         🎻 “有柴小协[^1]的日子就是好日子！”
 
-    !!! abstract inline "" 
+    !!! abstract ""
         🍁 “西园公子名无忌，南国佳人号莫愁。”[^2]
 
-    !!! success inline ""
+    !!! success ""
         🧸 <font face = "American Typewriter" >INFJ-T</font>[^3], ♍️[^4]. 
         
         🎀 文学信徒，努力学习语言中。
           
         > (中文 / 英语 / 法语)。
 
-    !!! success inline ""
+    !!! success ""
         🌏 暂居北京，打工人。
 
         🐳 曾常年浸润在江南的朦胧诗意中。
 
         > 总试图克服懒癌，不时热爱旅行。
+
+    </div>
 
 === "<font size = 6>:fontawesome-solid-book: </font><font size = 6>  关于本站  </font>"
 
@@ -55,7 +59,7 @@ hide:
     
     - 🦄 本站Github仓库: [Me](https://github.com/SmilingWayne/me)。如果喜欢，欢迎来 Star 🌟 / PR / issue～
 
-    ??? abstract indexinline "本站点历史"
+    ??? abstract "本站点历史"
 
         最初计划是一个电子读书笔记仓库，后来什么都往里面放：阅读感想、学习笔记、生活思考、碎碎念。现在我更喜欢称其为 ==一只兜住时间的沙漏== 。
 
@@ -80,7 +84,7 @@ hide:
 
     - :simple-xiaohongshu: [Wayne是笑笑🦆](https://www.xiaohongshu.com/user/profile/5d1238860000000011038629)，一些以前的知识分享。
 
-!!! question indexinline ": 以下是一段加密信息 🔐"
+!!! question ": 以下是一段加密信息 🔐"
 
     A Q I U C C K P B V B K R U W F W Z B N T K C X U W Y P W J Q Y Y Z X P L T N S F T O R J  Y G R J Q X S O Z F D Z A V P U U Z M K N U S P N A N U M U E P F S E V B H A I Y W Y L O Z
 

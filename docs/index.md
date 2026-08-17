@@ -9,33 +9,37 @@ hide:
 
 === "<font size = 6>:fontawesome-solid-paw: </font><font size = 6 face = "savoye LET" >About Me</font>"
 
-    !!! note inline ""
+    <div class="grid profile" markdown>
+
+    !!! note ""
         🧑‍🎓 **About**: An ordinary soul striving for the extraordinary.
         
         🥰 **Name**: You can call me **Wayne**, or better yet, by my nickname **Xiao Xiao**[^1], which means 'Smile' in Mandarin.
 
         🔮 **Hush!** Exploring these pages, we sit in quiet conversation.
 
-    !!! note inline "" 
+    !!! note ""
         📖  **Leisure**: An avid reader, occasional moviegoer, and sporadic creator.
 
         💻 **Coding**: Coding for fun from time to time with :material-language-python: | :material-language-java:.
 
         🧩 **Puzzles**: A naive adventurer in the world of logic puzzles. Check out [puzzlekit](https://github.com/SmilingWayne/puzzlekit) and the [web-app](https://smilingwayne.github.io/puzzlekit-web/)!
 
-    !!! success inline ""
+    !!! success ""
         🧸 **MBTI**: <font face = "American Typewriter" >INFJ-T</font>[^2]. 
         
         🎀 **Life**: Language learner (Mandarin / English / Français), lines and verses lover.
           
         🔆 **Zodiac**: Virgo ♍️[^3].
 
-    !!! success inline ""
+    !!! success ""
         🌏 **Base**: Temporarily in **Beijing**[^4].
 
         🐳 **Vibe**: Preferring stillness, yet acting on sudden impulses to travel.
 
         ☘️ **Goal**: Cappuccino!
+
+    </div>
 
 
 === "<font size = 6>:fontawesome-solid-book: </font><font size = 6 face = "savoye LET">About The NoteBook</font>"
@@ -50,7 +54,7 @@ hide:
     
     🦄 Github repo: [Me](https://github.com/SmilingWayne/me). Stars, PRs and Issues are welcome.
 
-    ??? abstract indexinline "Milestones"
+    ??? abstract "Milestones"
 
         This website began as a simple archive for reading notes, later evolved into a sanctuary for study, reflection and whispers of life. I now see it as ==an hourglass capturing the sands of time==.
 
@@ -74,7 +78,7 @@ hide:
 
     - :simple-xiaohongshu: [Wayne是笑笑🦆](https://www.xiaohongshu.com/user/profile/5d1238860000000011038629). My xiaohongshu for knowledge sharing.
 
-!!! question indexinline ": This message is encrypted...🔐"
+!!! question ": This message is encrypted...🔐"
 
     A Q I U C C K P B V B K R U W F W Z B N T K C X U W Y P W J Q Y Y Z X P L T N S F T O R J  Y G R J Q X S O Z F D Z A V P U U Z M K N U S P N A N U M U E P F S E V B H A I Y W Y L O Z
 

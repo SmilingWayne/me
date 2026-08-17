@@ -20,16 +20,23 @@
     max-width: 1280px;   
 }
 
-.md-typeset .admonition.inline {
-    width: 358px;   
-    column-width: auto;
-    font-size: 16px;
+.md-typeset .grid.profile {
+    grid-template-columns: 1fr;
 }
 
-.md-typeset .admonition.indexinline {
-    width: 732px;   
-    column-width: auto;
-    font-size: 16px;
+@media screen and (min-width: 45em) {
+    .md-typeset .grid.profile {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.md-typeset .grid.profile > .admonition,
+.md-typeset .grid.profile > details {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
 }
 
 .md-typeset td,
