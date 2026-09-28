@@ -1,0 +1,13 @@
+.md-typeset figure img {
+    display: inline;
+}
+
+
+:root {
+    --md-text-font: "LXGW"; 
+}
+@font-face {  	
+    font-family: 'LXGW';  	
+    src: url('./LXGWWenKaiGBScreen.woff') format('woff');/*IE*/  	
+}
+
