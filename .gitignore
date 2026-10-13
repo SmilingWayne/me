@@ -28,3 +28,6 @@ Temporary Items
 .codex/
 .obsidian/
 .venv/
+
+# opencode：Skill not included for now
+.opencode/
