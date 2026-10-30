@@ -339,6 +339,8 @@ nav:
           - 🇬🇷传说｜忒修斯: Plays/Theseus.md
           - 🇬🇷悲剧｜俄狄浦斯: Plays/Oedipus.md
           - 🇬🇷悲剧｜安提戈涅: Plays/Antigone.md
+      - 中国古典:
+          - 洛阳伽蓝记: Literature/Classics/Luoyang_qielan.md
       - 语料库:
           - Literature/Corpus/index.md
           - 修辞、文字与形象化: Literature/Corpus/Metaphor.md
